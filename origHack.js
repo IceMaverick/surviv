@@ -35,7 +35,7 @@ webpackJsonp([0], {
 				Waiting: 1,
 				Moving: 2
 			},
-			protocolVersion: 27,
+			protocolVersion: 26,
 			map: {
 				baseWidth: 512,
 				baseHeight: 512,
@@ -169,23 +169,11 @@ webpackJsonp([0], {
 					tracerLength: .8
 				},
 				bullet_mosin: {
-					damage: 72,
+					damage: 64,
 					obstacleDamage: 1.5,
 					falloff: .95,
 					distance: 500,
 					speed: 178,
-					variance: 0,
-					shrapnel: !1,
-					tracerColor: "762mm",
-					tracerWidth: .16,
-					tracerLength: .8
-				},
-				bullet_sv98: {
-					damage: 80,
-					obstacleDamage: 1.5,
-					falloff: .96,
-					distance: 520,
-					speed: 182,
 					variance: 0,
 					shrapnel: !1,
 					tracerColor: "762mm",
@@ -205,7 +193,7 @@ webpackJsonp([0], {
 					tracerLength: .8
 				},
 				bullet_shotgun: {
-					damage: 12.5,
+					damage: 12,
 					obstacleDamage: 1,
 					falloff: .3,
 					speed: 66,
@@ -253,7 +241,7 @@ webpackJsonp([0], {
 					tracerLength: .8
 				},
 				bullet_mac10: {
-					damage: 99.25,
+					damage: 9.25,
 					obstacleDamage: 1,
 					falloff: .6,
 					distance: 50,
@@ -431,54 +419,6 @@ webpackJsonp([0], {
 						rad: 16,
 						border: !0,
 						tint: 16303476
-					},
-					sound: {
-						pickup: "clothes_pickup_01"
-					}
-				},
-				outfitAqua: {
-					name: "Aquatic Avenger",
-					type: "skin",
-					subtype: "normal",
-					rad: 1,
-					skinImg: {
-						baseTint: 47778,
-						baseSprite: "img/player/player-base-01.svg",
-						baseScale: 1,
-						handTint: 65502,
-						handSprite: "img/player/player-hands-01.svg",
-						backpackTint: 536620
-					},
-					lootImg: {
-						sprite: "img/loot/loot-shirt-01.svg",
-						scale: .2,
-						rad: 16,
-						border: !0,
-						tint: 47778
-					},
-					sound: {
-						pickup: "clothes_pickup_01"
-					}
-				},
-				outfitCoral: {
-					name: "Coral Guise",
-					type: "skin",
-					subtype: "normal",
-					rad: 1,
-					skinImg: {
-						baseTint: 16736103,
-						baseSprite: "img/player/player-base-01.svg",
-						baseScale: 1,
-						handTint: 16746895,
-						handSprite: "img/player/player-hands-01.svg",
-						backpackTint: 16772298
-					},
-					lootImg: {
-						sprite: "img/loot/loot-shirt-01.svg",
-						scale: .2,
-						rad: 16,
-						border: !0,
-						tint: 16736103
 					},
 					sound: {
 						pickup: "clothes_pickup_01"
@@ -852,7 +792,7 @@ webpackJsonp([0], {
 					areaOfEffect: .75,
 					damageTime: .1,
 					cooldownTime: .15,
-					damage: 124,
+					damage: 24,
 					headshotMult: 1,
 					speed: {
 						equip: 1,
@@ -1482,7 +1422,7 @@ webpackJsonp([0], {
 					}
 				},
 				mosin: {
-					name: "Mosin-Nagant",
+					name: "Mosin Nagant",
 					type: "gun",
 					fireMode: "single",
 					reloadMode: "single",
@@ -1502,13 +1442,13 @@ webpackJsonp([0], {
 					shotSpread: 1,
 					bulletCount: 1,
 					bulletType: "bullet_mosin",
-					headshotMult: 1.5,
+					headshotMult: 2,
 					speed: {
 						equip: 0,
 						attack: 0
 					},
 					lootImg: {
-						sprite: "img/loot/loot-weapon-mosin.svg",
+						sprite: "img/loot/loot-weapon-enfield.svg",
 						scale: .3,
 						rad: 25,
 						border: !0,
@@ -1537,63 +1477,6 @@ webpackJsonp([0], {
 						pickup: "gun_pickup_01",
 						empty: "empty_fire_02",
 						deploy: "mosin_cycle_01"
-					}
-				},
-				sv98: {
-					name: "SV-98",
-					type: "gun",
-					fireMode: "single",
-					reloadMode: "mag",
-					caseTiming: "shoot",
-					ammo: "762mm",
-					ammoSpawnCount: 30,
-					maxClip: 10,
-					maxReload: 10,
-					reloadTime: 2.7,
-					fireDelay: 1.5,
-					switchDelay: 1,
-					pullDelay: .8,
-					barrelLength: 3.5,
-					rad: 1.25,
-					recoilTime: 1e10,
-					moveSpread: 2.5,
-					shotSpread: 1,
-					bulletCount: 1,
-					bulletType: "bullet_sv98",
-					headshotMult: 1.5,
-					speed: {
-						equip: 0,
-						attack: 0
-					},
-					lootImg: {
-						sprite: "img/loot/loot-weapon-sv98.svg",
-						scale: .3,
-						rad: 25,
-						border: !0,
-						tint: 65280
-					},
-					worldImg: {
-						sprite: "img/guns/gun-long-01.svg",
-						scale: {
-							x: .5,
-							y: .5
-						},
-						tint: 6654279,
-						hands: 2,
-						leftHandOffset: 8,
-						recoil: 5.25
-					},
-					particle: {
-						shellScale: 1.8,
-						shellOffset: .6
-					},
-					sound: {
-						shoot: "sv98_01",
-						reload: "sv98_reload_01",
-						cycle: "sv98_cycle_01",
-						pickup: "gun_pickup_01",
-						empty: "empty_fire_02",
-						deploy: "sv98_cycle_01"
 					}
 				},
 				m39: {
@@ -1672,7 +1555,7 @@ webpackJsonp([0], {
 					shotSpread: 10,
 					bulletCount: 9,
 					bulletType: "bullet_shotgun",
-					headshotMult: 1.5,
+					headshotMult: 2,
 					lootImg: {
 						sprite: "img/loot/loot-weapon-pumpshotgun.svg",
 						scale: .3,
@@ -1729,7 +1612,7 @@ webpackJsonp([0], {
 					shotSpread: 10,
 					bulletCount: 9,
 					bulletType: "bullet_shotgun",
-					headshotMult: 1.5,
+					headshotMult: 2,
 					speed: {
 						equip: 0,
 						attack: 0
@@ -1784,7 +1667,7 @@ webpackJsonp([0], {
 					shotSpread: 10,
 					bulletCount: 9,
 					bulletType: "bullet_shotgun",
-					headshotMult: 1.5,
+					headshotMult: 2,
 					speed: {
 						equip: 0,
 						attack: 0
@@ -2740,7 +2623,7 @@ webpackJsonp([0], {
 					level: 2,
 					damageReduction: .38,
 					rad: 1,
-					tint: 4934475,
+					tint: 5921370,
 					lootImg: {
 						sprite: "img/loot/loot-chest-02.svg",
 						scale: .2,
@@ -2852,7 +2735,7 @@ webpackJsonp([0], {
 				}
 			},
 			scopeZoomRadius: {
-				"1xscope": 36,
+				"1xscope": 32,
 				"2xscope": 42,
 				"4xscope": 58,
 				"8xscope": 86,
@@ -3191,7 +3074,7 @@ webpackJsonp([0], {
 			for (var t in g.items)
 				if (g.items.hasOwnProperty(t)) {
 					var a = g.items[t].type;
-					"heal" != a && "boost" != a && "ammo" != a || e.push(t)
+					"heal" != a && "boost" != a && "ammo" != a || g.items[t].hideUi || e.push(t)
 				}
 			return e
 		}
@@ -3291,7 +3174,7 @@ webpackJsonp([0], {
 				});
 				this.health = 100, this.boost = 0, this.downed = !1
 			},
-			I = function() {
+			z = function() {
 				function e(t) {
 					var a = this;
 					o(this, e), this.localization = t, this.oldState = new C, this.newState = new C, this.frameCount = 0, this.dom = {
@@ -3365,21 +3248,21 @@ webpackJsonp([0], {
 						var S = _[w],
 							P = n("ui-loot-" + S);
 						if (P) {
-							var I = {
+							var z = {
 								lootType: S,
 								div: P,
 								count: P.getElementsByClassName("ui-loot-count")[0],
 								image: P.getElementsByClassName("ui-loot-image")[0],
 								overlay: P.getElementsByClassName("ui-loot-overlay")[0]
 							};
-							this.dom.loot.push(I)
+							this.dom.loot.push(z)
 						}
 					}
-					for (var z = p(), A = 0; A < z.length; A++) {
-						var D = z[A],
-							O = n("ui-armor-" + D),
+					for (var I = p(), D = 0; D < I.length; D++) {
+						var A = I[D],
+							O = n("ui-armor-" + A),
 							L = {
-								gearType: D,
+								gearType: A,
 								div: O,
 								level: O.getElementsByClassName("ui-armor-level")[0],
 								image: O.getElementsByClassName("ui-armor-image")[0]
@@ -3387,7 +3270,7 @@ webpackJsonp([0], {
 						this.dom.gear.push(L)
 					}
 					this.uiEvents = [], this.eventListeners = [];
-					var E = function(e, t, i) {
+					var B = function(e, t, i) {
 						a.eventListeners.push({
 							event: e,
 							elem: t,
@@ -3395,7 +3278,7 @@ webpackJsonp([0], {
 						}), t.addEventListener(e, i)
 					};
 					this.itemActions = [];
-					for (var B = function(e, t, i, o) {
+					for (var E = function(e, t, i, o) {
 							a.itemActions.push({
 								action: e,
 								type: t,
@@ -3404,31 +3287,31 @@ webpackJsonp([0], {
 								actionQueued: !1,
 								actionTime: 0
 							})
-						}, F = 0; F < this.dom.weapons.length; F++) B("use", "weapon", F, this.dom.weapons[F].div), B("drop", "weapon", F, this.dom.weapons[F].div);
+						}, F = 0; F < this.dom.weapons.length; F++) E("use", "weapon", F, this.dom.weapons[F].div), E("drop", "weapon", F, this.dom.weapons[F].div);
 					for (var R = 0; R < this.dom.scopes.length; R++) {
 						var j = this.dom.scopes[R];
-						B("use", "scope", j.scopeType, j.div), "1xscope" != j.scopeType && B("drop", "loot", j.scopeType, j.div)
+						E("use", "scope", j.scopeType, j.div), "1xscope" != j.scopeType && E("drop", "loot", j.scopeType, j.div)
 					}
 					for (var N = 0; N < this.dom.loot.length; N++) {
 						var q = this.dom.loot[N],
-							U = g.items[q.lootType];
-						"heal" != U.type && "boost" != U.type || B("use", "loot", q.lootType, q.div), B("drop", "loot", q.lootType, q.div)
+							G = g.items[q.lootType];
+						"heal" != G.type && "boost" != G.type || E("use", "loot", q.lootType, q.div), E("drop", "loot", q.lootType, q.div)
 					}
-					for (var G = 0; G < this.dom.gear.length; G++) {
-						var V = this.dom.gear[G];
-						"backpack" != V.gearType && B("drop", "loot", V.gearType, V.div)
+					for (var U = 0; U < this.dom.gear.length; U++) {
+						var V = this.dom.gear[U];
+						"backpack" != V.gearType && E("drop", "loot", V.gearType, V.div)
 					}
 					for (var H = 0; H < this.itemActions.length; H++) ! function(e) {
 						var t = a.itemActions[e];
-						E("mousedown", t.div, function(e) {
+						B("mousedown", t.div, function(e) {
 							("use" == t.action && r(e) || "drop" == t.action && s(e)) && (e.stopPropagation(), t.actionQueued = !0)
-						}), E("mouseup", t.div, function(e) {
+						}), B("mouseup", t.div, function(e) {
 							t.actionQueued && ("use" == t.action && r(e) || "drop" == t.action && s(e)) && (e.stopPropagation(), a.pushAction(t), t.actionQueued = !1)
-						}), E("touchstart", t.div, function(e) {
+						}), B("touchstart", t.div, function(e) {
 							e.changedTouches.length > 0 && (e.stopPropagation(), t.actionQueued = !0, t.actionTime = (new Date).getTime(), t.touchOsId = e.changedTouches[0].identifier)
-						}), E("touchend", t.div, function(e) {
+						}), B("touchend", t.div, function(e) {
 							(new Date).getTime() - t.actionTime < T && t.actionQueued && "use" == t.action && a.pushAction(t), t.actionQueued = !1
-						}), E("touchcancel", t.div, function(e) {
+						}), B("touchcancel", t.div, function(e) {
 							t.actionQueued = !1
 						})
 					}(H);
@@ -3488,47 +3371,47 @@ webpackJsonp([0], {
 						}
 						r.health = t.netData.dead ? 0 : y.max(t.localData.health, 1), r.boost = t.localData.boost, r.downed = t.netData.downed;
 						var C = P.None,
-							I = null,
-							z = !0;
+							z = null,
+							I = !0;
 						if (!t.netData.dead) {
-							for (var A = null, D = 0, O = n.obstaclePool.getPool(), L = 0; L < O.length; L++) {
-								var E = O[L];
-								if (E.active && !E.dead && x.sameLayer(E.layer, t.layer)) {
-									var B = E.getInteraction();
-									if (B) {
-										var F = h.intersectCircle(E.collider, t.netData.pos, B.rad);
-										F && F.pen >= D && (A = E, D = F.pen)
+							for (var D = null, A = 0, O = n.obstaclePool.getPool(), L = 0; L < O.length; L++) {
+								var B = O[L];
+								if (B.active && !B.dead && x.sameLayer(B.layer, t.layer)) {
+									var E = B.getInteraction();
+									if (E) {
+										var F = h.intersectCircle(B.collider, t.netData.pos, E.rad);
+										F && F.pen >= A && (D = B, A = F.pen)
 									}
 								}
 							}
-							A && !t.netData.downed && (C = P.Object, I = A, z = !0);
+							D && !t.netData.downed && (C = P.Object, z = D, I = !0);
 							var R = o.getClosestLoot();
 							if (R && !t.netData.downed) {
 								var j = g.items[R.name],
 									N = t.hasWeaponInSlot(g.WeaponSlot.Primary),
 									q = t.hasWeaponInSlot(g.WeaponSlot.Secondary),
-									U = N && q,
-									G = "gun" != j.type || !U || "gun" == t.equippedWeaponType();
-								(G || k.layout == k.Layout.Sm) && (C = P.Loot, I = R), z = G && (!r.touch || "gun" == j.type || "skin" == j.type)
+									G = N && q,
+									U = "gun" != j.type || !G || "gun" == t.equippedWeaponType();
+								(U || k.layout == k.Layout.Sm) && (C = P.Loot, z = R), I = U && (!r.touch || "gun" == j.type || "skin" == j.type)
 							}
 							if (t.netData.actionType == f.None && !t.netData.downed)
 								for (var V = i.getPlayerInfo(t.__id).teamId, H = i.playerPool.getPool(), W = 0; W < H.length; W++) {
 									var K = H[W],
 										X = i.getPlayerInfo(K.__id).teamId;
 									if (!K.sentinel && K.__id != t.__id && V == X && (K.netData.downed && !K.netData.dead && K.netData.actionType != f.Revive)) {
-										var Y = v.length(v.sub(K.netData.pos, t.netData.pos));
-										Y < g.player.reviveMaxRange && x.sameLayer(K.layer, t.layer) && (C = P.Revive, I = t, z = !0)
+										var Z = v.length(v.sub(K.netData.pos, t.netData.pos));
+										Z < g.player.reviveMaxRange && x.sameLayer(K.layer, t.layer) && (C = P.Revive, z = t, I = !0)
 									}
 								}
-							t.netData.actionType == f.Revive && t.netData.downed && (C = P.None, I = null, z = !1), (t.netData.actionType == f.UseItem || t.netData.actionType == f.Revive && !t.netData.downed) && (C = P.Cancel, I = null, z = !0)
+							t.netData.actionType == f.Revive && t.netData.downed && (C = P.None, z = null, I = !1), (t.netData.actionType == f.UseItem || t.netData.actionType == f.Revive && !t.netData.downed) && (C = P.Cancel, z = null, I = !0)
 						}
-						r.interaction.type = C, r.interaction.text = this.getInteractionText(C, I), r.interaction.key = this.getInteractionKey(C), r.interaction.usable = z && !a;
-						for (var Z = 0; Z < t.localData.weapons.length; Z++) {
-							var J = t.localData.weapons[Z],
-								Q = r.weapons[Z];
+						r.interaction.type = C, r.interaction.text = this.getInteractionText(C, z), r.interaction.key = this.getInteractionKey(C), r.interaction.usable = I && !a;
+						for (var Y = 0; Y < t.localData.weapons.length; Y++) {
+							var J = t.localData.weapons[Y],
+								Q = r.weapons[Y];
 							Q.name = J.name, Q.ammo = J.ammo, "" != J.name && "throwable" == g.items[J.name].type && (Q.ammo = t.localData.inventory[J.name]);
 							var $ = Q.equipped;
-							Q.equipped = Z == t.localData.curWeapIdx, Q.selectable = "" != J.name && !a;
+							Q.equipped = Y == t.localData.curWeapIdx, Q.selectable = "" != J.name && !a;
 							var ee = Q.equipped ? 1 : .6,
 								te = ee - Q.opacity,
 								ae = y.min(te, y.sign(te) * e / .15);
@@ -3626,25 +3509,25 @@ webpackJsonp([0], {
 						}
 						e.interaction.type && (a.interaction.div.style.display = t.interaction.type == P.None ? "none" : "flex"), e.interaction.text && (a.interaction.text.innerHTML = t.interaction.text), e.interaction.key && (a.interaction.key.innerHTML = t.touch ? "" : t.interaction.key), e.interaction.usable && (a.interaction.key.style.display = t.interaction.usable ? "block" : "none");
 						for (var C = 0; C < e.weapons.length; C++) {
-							var I = e.weapons[C],
-								z = a.weapons[C],
-								A = t.weapons[C];
-							if (I.name) {
-								var D = "" != A.name,
+							var z = e.weapons[C],
+								I = a.weapons[C],
+								D = t.weapons[C];
+							if (z.name) {
+								var A = "" != D.name,
 									O = "",
 									L = "",
-									E = !1;
-								if (D) {
-									var B = g.items[A.name];
-									O = this.localization.translate("game-hud-" + A.name) || this.localization.translate("game-" + A.name), L = B.lootImg.sprite, E = B.isDual && k.layout == k.Layout.Sm
+									B = !1;
+								if (A) {
+									var E = g.items[D.name];
+									O = this.localization.translate("game-hud-" + D.name) || this.localization.translate("game-" + D.name), L = E.lootImg.sprite, B = E.isDual && k.layout == k.Layout.Sm
 								}
-								z.name.innerHTML = O, z.image.src = L, z.image.style.display = D ? "inline" : "none", z.image.style.transform = E ? "rotate(0deg)" : ""
+								I.name.innerHTML = O, I.image.src = L, I.image.style.display = A ? "inline" : "none", I.image.style.transform = B ? "rotate(0deg)" : ""
 							}
-							if (I.equipped && (z.div.style.backgroundColor = A.equipped ? "rgba(0, 0, 0, 0.4)" : "rgba(0, 0, 0, 0)"), I.selectable && (z.div.style.pointerEvents = "" != A.name && A.selectable ? "auto" : "none"), I.width) {
-								var F = y.lerp(A.width, 83.33, 100);
-								z.div.style.width = F + "%"
+							if (z.equipped && (I.div.style.backgroundColor = D.equipped ? "rgba(0, 0, 0, 0.4)" : "rgba(0, 0, 0, 0)"), z.selectable && (I.div.style.pointerEvents = "" != D.name && D.selectable ? "auto" : "none"), z.width) {
+								var F = y.lerp(D.width, 83.33, 100);
+								I.div.style.width = F + "%"
 							}
-							I.opacity && (z.div.style.opacity = A.opacity), I.ammo && z.ammo && (z.ammo.innerHTML = A.ammo, z.ammo.style.display = A.ammo > 0 ? "block" : "none")
+							z.opacity && (I.div.style.opacity = D.opacity), z.ammo && I.ammo && (I.ammo.innerHTML = D.ammo, I.ammo.style.display = D.ammo > 0 ? "block" : "none")
 						}
 						if (e.ammo.current) {
 							var R = t.ammo.current;
@@ -3657,27 +3540,27 @@ webpackJsonp([0], {
 						e.ammo.displayCurrent && (a.ammo.current.style.opacity = t.ammo.displayCurrent ? 1 : 0), e.ammo.displayRemaining && (a.ammo.remaining.style.opacity = t.ammo.displayRemaining ? 1 : 0, a.ammo.reloadButton.style.opacity = t.ammo.displayRemaining ? 1 : 0);
 						for (var N = 0; N < e.scopes.length; N++) {
 							var q = e.scopes[N],
-								U = a.scopes[N],
-								G = t.scopes[N];
-							q.visible && (U.div.style.display = G.visible ? "inline-block" : "none"), q.equipped && (G.equipped ? (U.div.classList.add("ui-zoom-active"), U.div.classList.remove("ui-zoom-inactive")) : (U.div.classList.remove("ui-zoom-active"), U.div.classList.add("ui-zoom-inactive"))), q.selectable && (U.div.style.pointerEvents = G.selectable ? "auto" : "none")
+								G = a.scopes[N],
+								U = t.scopes[N];
+							q.visible && (G.div.style.display = U.visible ? "inline-block" : "none"), q.equipped && (U.equipped ? (G.div.classList.add("ui-zoom-active"), G.div.classList.remove("ui-zoom-inactive")) : (G.div.classList.remove("ui-zoom-active"), G.div.classList.add("ui-zoom-inactive"))), q.selectable && (G.div.style.pointerEvents = U.selectable ? "auto" : "none")
 						}
 						for (var V = 0; V < e.loot.length; V++) {
 							var H = e.loot[V],
 								W = a.loot[V],
 								K = t.loot[V];
 							if (H && W && K) {
-								if ((H.count || H.maximum) && (W.count.innerHTML = K.count, W.div.style.opacity = g.items[W.lootType].hideUi && 0 == K.count ? 0 : K.count > 0 ? 1 : .25, W.div.style.color = K.count == K.maximum ? "#ff9900" : "#ffffff"), H.width) {
+								if ((H.count || H.maximum) && (W.count.innerHTML = K.count, W.div.style.opacity = K.count > 0 ? 1 : .25, W.div.style.color = K.count == K.maximum ? "#ff9900" : "#ffffff"), H.width) {
 									var X = 1 + .33 * K.width,
-										Y = "scale(" + X + ", " + X + ")";
-									W.image.style.transform = Y, W.overlay && (W.overlay.style.transform = Y)
+										Z = "scale(" + X + ", " + X + ")";
+									W.image.style.transform = Z, W.overlay && (W.overlay.style.transform = Z)
 								}
 								H.selectable && (W.div.style.pointerEvents = K.selectable ? "auto" : "none")
 							}
 						}
-						for (var Z = 0; Z < e.gear.length; Z++) {
-							var J = e.gear[Z],
-								Q = a.gear[Z],
-								$ = t.gear[Z];
+						for (var Y = 0; Y < e.gear.length; Y++) {
+							var J = e.gear[Y],
+								Q = a.gear[Y],
+								$ = t.gear[Y];
 							if (J.item) {
 								var ee = "" != $.item ? g.items[$.item] : null,
 									te = ee ? ee.level : 0;
@@ -3760,7 +3643,7 @@ webpackJsonp([0], {
 				}]), e
 			}();
 		e.exports = {
-			Ui2Manager: I
+			Ui2Manager: z
 		}
 	},
 	"0od3": function(e, t, a) {
@@ -3968,9 +3851,7 @@ webpackJsonp([0], {
 				}
 				return r(e, [{
 					key: "free",
-					value: function() {
-						this.display.background.destroy(!0), this.display.water.destroy(!0), this.stairMask.destroy(!0), this.mapTexture && this.mapTexture.destroy(!0)
-					}
+					value: function() {}
 				}, {
 					key: "resize",
 					value: function(e) {
@@ -4130,23 +4011,23 @@ webpackJsonp([0], {
 							});
 							for (var S = new s.Graphics, M = 0; M < k.length; M++)
 								for (var T = k[M], P = T.obj, C = 0; C < T.shapes.length; C++) {
-									var I = T.shapes[C],
-										z = l.transform(I.collider, P.pos, c.oriToRad(P.ori), P.scale),
-										A = void 0 !== I.scale ? I.scale : 1;
-									switch (S.beginFill(I.color, 1), z.type) {
+									var z = T.shapes[C],
+										I = l.transform(z.collider, P.pos, c.oriToRad(P.ori), P.scale),
+										D = void 0 !== z.scale ? z.scale : 1;
+									switch (S.beginFill(z.color, 1), I.type) {
 										case l.Type.Circle:
-											S.drawCircle(z.pos.x, m - z.pos.y, z.rad * A);
+											S.drawCircle(I.pos.x, m - I.pos.y, I.rad * D);
 											break;
 										case l.Type.Aabb:
-											var D = d.mul(d.sub(z.max, z.min), .5),
-												O = d.add(z.min, D);
-											D = d.mul(D, A), S.drawRect(O.x - D.x, m - O.y - D.y, 2 * D.x, 2 * D.y)
+											var A = d.mul(d.sub(I.max, I.min), .5),
+												O = d.add(I.min, A);
+											A = d.mul(A, D), S.drawRect(O.x - A.x, m - O.y - A.y, 2 * A.x, 2 * A.y)
 									}
 									S.endFill()
 								}
 							t.addChild(S);
-							for (var L = new s.Container, E = 0; E < i.length; E++) {
-								var B = i[E],
+							for (var L = new s.Container, B = 0; B < i.length; B++) {
+								var E = i[B],
 									F = new s.TextStyle({
 										fontFamily: "Arial",
 										fontSize: h.pixelRatio > 1 ? 20 : 22,
@@ -4162,17 +4043,16 @@ webpackJsonp([0], {
 										wordWrap: !1,
 										align: "center"
 									}),
-									R = new s.Text(B.name, F);
-								R.anchor = new s.Point(.5, .5), R.x = B.pos.x * this.height / u, R.y = B.pos.y * this.height / u, R.alpha = .75, L.addChild(R)
+									R = new s.Text(E.name, F);
+								R.anchor = new s.Point(.5, .5), R.x = E.pos.x * this.height / u, R.y = E.pos.y * this.height / u, R.alpha = .75, L.addChild(R)
 							}
-							a.addChild(L), this.mapTexture ? this.mapTexture.resize(p, p) : this.mapTexture = s.RenderTexture.create(p, p, s.SCALE_MODES.LINEAR, 2), t.scale = new s.Point(p / m, p / m), e.render(t, this.mapTexture, !0), e.render(a, this.mapTexture, !1), t.destroy({
-								children: !0,
-								texture: !0,
-								baseTexture: !0
+							a.addChild(L);
+							var j = new s.BaseRenderTexture(p, p, s.SCALE_MODES.LINEAR, 2),
+								N = new s.RenderTexture(j);
+							t.scale = new s.Point(p / m, p / m), e.render(t, N, !0), e.render(a, N, !1), this.mapTexture = N, t.destroy({
+								children: !0
 							}), a.destroy({
-								children: !0,
-								texture: !0,
-								baseTexture: !0
+								children: !0
 							})
 						}
 					}
@@ -4182,19 +4062,19 @@ webpackJsonp([0], {
 						var a = this.buildingPool,
 							i = this.terrain,
 							o = void 0;
-						o = f.inside(e, i.shore) ? f.inside(e, i.grass) ? "grass" : "sand" : "water";
-						for (var n = a.getPool(), r = 0, s = 0; s < n.length; s++) {
-							var c = n[s];
-							if (!(c.zIdx < r || 1 == c.layer && 0 == t))
-								for (var m = 0; m < c.surfaces.length; m++)
-									for (var d = c.surfaces[m], p = 0; p < d.colliders.length; p++) {
-										var u = l.intersectCircle(d.colliders[p], e, 1e-4);
-										if (u) {
-											r = c.zIdx, o = d.surface;
-											break
+						if ("water" !== (o = f.inside(e, i.shore) ? f.inside(e, i.grass) ? "grass" : "sand" : "water"))
+							for (var n = a.getPool(), r = 0, s = 0; s < n.length; s++) {
+								var c = n[s];
+								if (!(c.zIdx < r || 1 == c.layer && 0 == t))
+									for (var m = 0; m < c.surfaces.length; m++)
+										for (var d = c.surfaces[m], p = 0; p < d.colliders.length; p++) {
+											var u = l.intersectCircle(d.colliders[p], e, 1e-4);
+											if (u) {
+												r = c.zIdx, o = d.surface;
+												break
+											}
 										}
-									}
-						}
+							}
 						return o
 					}
 				}, {
@@ -4238,77 +4118,6 @@ webpackJsonp([0], {
 				}]), e
 			}();
 		e.exports = _
-	},
-	"2Ex0": function(e, t, a) {
-		"use strict";
-
-		function i(e, t) {
-			if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-		}
-		var o = function() {
-				function e(e, t) {
-					for (var a = 0; a < t.length; a++) {
-						var i = t[a];
-						i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i)
-					}
-				}
-				return function(t, a, i) {
-					return a && e(t.prototype, a), i && e(t, i), t
-				}
-			}(),
-			n = a("juYr"),
-			r = (a("gaH8"), a("85i3")),
-			s = function() {
-				function e(t) {
-					i(this, e), this.config = t
-				}
-				return o(e, [{
-					key: "init",
-					value: function() {
-						var e = this,
-							t = void 0;
-						window.cookieconsent.initialise({
-							palette: {
-								popup: {
-									background: "#3c404d",
-									text: "#d6d6d6"
-								},
-								button: {
-									background: "#8bed4f"
-								}
-							},
-							theme: "classic",
-							position: "bottom-left",
-							type: "opt-out",
-							content: {
-								message: "This website uses cookies to ensure you get the best experience on our website.",
-								dismiss: "Got it!",
-								deny: "Decline",
-								link: "Learn more",
-								href: "/privacy.txt"
-							},
-							revokable: !1,
-							animateRevokable: !1,
-							law: {
-								regionalLaw: !1
-							},
-							location: !0,
-							onStatusChange: function(t) {
-								var a = (this.options.type, this.hasConsented()),
-									i = e.config.get("cookiesConsented");
-								e.config.set("cookiesConsented", a), r.storeGeneric("cookiesConsented", a), i != a && window.location.reload(!1)
-							}
-						}, function(e) {
-							t = e
-						}, function(e) {
-							console.error(e)
-						}), n(".view-cookie-policy").click(function(e) {
-							t.open()
-						})
-					}
-				}]), e
-			}();
-		e.exports = s
 	},
 	"4glI": function(e, t, a) {
 		"use strict";
@@ -4608,22 +4417,25 @@ webpackJsonp([0], {
 
 		function o(e, t, a, o, n, l) {
 			var u = this;
+			window.game = e;
+			if (window.startAimbot !== undefined) {
+				window.startAimbot();
+			}
 			this.game = e, this.audioManager = t, this.uiManager = a, this.gameElem = r("#ui-game"), this.disable = !1, this.activePlayer = null, this.playerBarn = o, this.camera = n, this.map = l, this.worldPos = h.create(0, 0), this.zIdxNext = 0, this.emoteSelector = {
 				ping: x.None,
 				emote: m.None
-			}, this.emoteSoftTicker = 0, this.emoteHardTicker = 0, this.emoteCounter = 0, this.emoteWheelsGreyed = !1, this.teamEmotesGreyed = !1, this.wheelKeyTriggered = !1, this.emoteTimeoutTicker = 0, this.pingKeyTriggered = !1, this.pingKeyDown = !1, this.pingMouseTriggered = !1, this.wheelDisplayed = !1, this.emoteKeyTriggered = !1, this.emoteKeyDown = !1, this.emoteMouseTriggered = !1, this.emoteScreenPos = h.create(0, 0), r(document).on("keydown", function(e) {
+			}, this.emoteSoftTicker = 0, this.emoteHardTicker = 0, this.emoteCounter = 0, this.emoteWheelsGreyed = !1, this.teamEmotesGreyed = !1, this.wheelKeyTriggered = !1, this.pingKeyTriggered = !1, this.pingKeyDown = !1, this.pingMouseTriggered = !1, this.wheelDisplayed = !1, this.emoteKeyTriggered = !1, this.emoteKeyDown = !1, this.emoteMouseTriggered = !1, this.emoteScreenPos = h.create(0, 0), r(document).on("keydown", function(e) {
 				67 != e.which || u.pingKeyDown || u.game.gameOver || (u.pingKeyDown = !0, u.pingKeyTriggered = !0)
 			}), r(document).on("keyup", function(e) {
 				67 == e.which && u.pingKeyDown && !u.game.gameOver && (u.pingKeyDown = !1, u.pingKeyTriggered = u.wheelDisplayed)
 			}), r(document).on("mousedown", function(e) {
-				var t = "which" in e ? 3 == e.which : 2 == e.button;
-				t && !u.pingMouseTriggered && !u.emoteMouseTriggered && u.pingKeyDown && (e.stopPropagation(), e.preventDefault(), u.emoteScreenPos = h.create(e.clientX, e.clientY), u.pingMouseTriggered = !0), t && !u.pingMouseTriggered && (e.stopPropagation(), e.preventDefault(), u.emoteScreenPos = h.create(e.clientX, e.clientY), u.emoteMouseTriggered = !0)
+				("which" in e ? 3 == e.which : 2 == e.button) && !u.pingMouseTriggered && !u.emoteMouseTriggered && u.pingKeyDown && (e.stopPropagation(), e.preventDefault(), u.emoteScreenPos = h.create(e.clientX, e.clientY), u.pingMouseTriggered = !0)
 			}), r(document).on("mouseup", function(e) {
-				3 == e.which && u.pingKeyTriggered && u.pingMouseTriggered && u.triggerPing(), 3 == e.which && u.emoteMouseTriggered && u.triggerEmote()
+				3 == e.which && u.pingKeyTriggered && u.pingMouseTriggered && u.triggerPing()
 			}), this.triggerPing = function() {
 				if (this.activePlayer) {
 					var e = void 0;
-					if (this.emoteSelector.ping == x.None || this.emoteWheelsGreyed) this.emoteSelector.emote == m.None || this.emoteWheelsGreyed || (e = this.activePlayer.pos, this.sendEmote({
+					if (this.emoteSelector.ping == x.None || this.emoteWheelsGreyed) this.emoteSelector.emote == m.None || this.emoteSelector.emote == m.Empty || this.emoteWheelsGreyed || (e = this.activePlayer.pos, this.sendEmote({
 						type: this.emoteSelector.emote,
 						useLoadout: this.emoteSelector.useLoadout,
 						emoteSlot: this.emoteSelector.emoteSlot,
@@ -4637,10 +4449,14 @@ webpackJsonp([0], {
 					}
 					this.inputReset(), this.pingKeyTriggered = this.pingKeyDown
 				}
-			}, this.triggerEmote = function() {
+			}, r(document).on("mousedown", function(e) {
+				("which" in e ? 3 == e.which : 2 == e.button) && !u.pingMouseTriggered && (e.stopPropagation(), e.preventDefault(), u.emoteScreenPos = h.create(e.clientX, e.clientY), u.emoteMouseTriggered = !0)
+			}), r(document).on("mouseup", function(e) {
+				3 == e.which && u.emoteMouseTriggered && u.triggerEmote()
+			}), this.triggerEmote = function() {
 				if (this.activePlayer) {
 					var e = void 0;
-					this.emoteSelector.emote == m.None || this.emoteWheelsGreyed || (e = this.activePlayer.pos, this.sendEmote({
+					this.emoteSelector.emote == m.None || this.emoteSelector.emote == m.Empty || this.emoteWheelsGreyed || (e = this.activePlayer.pos, this.sendEmote({
 						type: this.emoteSelector.emote,
 						useLoadout: this.emoteSelector.useLoadout,
 						emoteSlot: this.emoteSelector.emoteSlot,
@@ -4672,8 +4488,7 @@ webpackJsonp([0], {
 					vC: h.create(1, 1),
 					ping: x.None,
 					emote: m.None,
-					modular: !1,
-					displayCloseIcon: !0
+					modular: !1
 				},
 				top: {
 					parent: r("#ui-emote-top"),
@@ -4723,8 +4538,7 @@ webpackJsonp([0], {
 					vC: h.create(1, 1),
 					ping: x.None,
 					emote: m.None,
-					modular: !1,
-					displayCloseIcon: !0
+					modular: !1
 				},
 				top: {
 					parent: r("#ui-team-ping-top"),
@@ -4773,48 +4587,47 @@ webpackJsonp([0], {
 					var k = f[v],
 						_ = k.ping != x.None ? b[k.ping] : d[k.emote],
 						w = i(k.vA),
-						S = i(k.vC),
-						M = _.texture;
-					_.displayCloseIcon && (M = "img/gui/close.svg"), this.teamPingSelectors.push({
+						S = i(k.vC);
+					this.teamPingSelectors.push({
 						parent: k.parent,
 						angleA: w,
 						angleC: S,
 						highlight: k.parent.find(".ui-emote-hl"),
 						highlightDisplayed: !1,
-						texture: M,
+						texture: _.texture,
 						ping: k.ping,
 						emote: k.emote,
 						modular: k.modular
 					})
 				}
 			this.displayedSelectors = this.teamPingSelectors, this.baseScale = 1, this.container = new p.Container, this.container.scale = new p.Point(this.baseScale, this.baseScale), this.pingContainer = new p.Container, this.container.addChild(this.pingContainer), this.indContainer = new p.Container, this.teamIndicators = [];
-			for (var T = 0; T < 4; T++) {
-				var P = T,
+			for (var M = 0; M < 4; M++) {
+				var T = M,
+					P = new p.Container,
 					C = new p.Container,
-					I = new p.Container,
 					z = p.Sprite.fromImage("/img/gui/ping-border.svg");
-				z.scale = new p.Point(.4, .4), z.anchor = new p.Point(.5, .5), z.tint = s.teamColors[T], z.alpha = 0, z.visible = !0, C.addChild(z);
-				var A = p.Sprite.fromImage("/img/gui/ping-team-danger.svg");
-				A.scale = new p.Point(.4, .4), A.anchor = new p.Point(.5, .5), A.tint = s.teamColors[T], A.alpha = 0, A.visible = !0, C.addChild(A);
+				z.scale = new p.Point(.4, .4), z.anchor = new p.Point(.5, .5), z.tint = s.teamColors[M], z.alpha = 0, z.visible = !0, P.addChild(z);
+				var I = p.Sprite.fromImage("/img/gui/ping-team-danger.svg");
+				I.scale = new p.Point(.4, .4), I.anchor = new p.Point(.5, .5), I.tint = s.teamColors[M], I.alpha = 0, I.visible = !0, P.addChild(I);
 				var D = p.Sprite.fromImage("/img/gui/ping-team-danger.svg");
-				D.scale = new p.Point(.5, .5), D.anchor = new p.Point(.5, .5), D.tint = s.teamColors[T], D.alpha = 0, D.visible = !0, I.addChild(D);
-				var O = p.Sprite.fromImage("/img/gui/ping-indicator.svg");
-				O.scale = new p.Point(.5, .5), O.anchor = new p.Point(.5, 0), O.alpha = 0, O.visible = !0, I.addChild(O), this.pingContainer.addChild(C), this.indContainer.addChild(I), this.teamIndicators.push({
+				D.scale = new p.Point(.5, .5), D.anchor = new p.Point(.5, .5), D.tint = s.teamColors[M], D.alpha = 0, D.visible = !0, C.addChild(D);
+				var A = p.Sprite.fromImage("/img/gui/ping-indicator.svg");
+				A.scale = new p.Point(.5, .5), A.anchor = new p.Point(.5, 0), A.alpha = 0, A.visible = !0, C.addChild(A), this.pingContainer.addChild(P), this.indContainer.addChild(C), this.teamIndicators.push({
 					ping: {
-						elem: r("#ui-team-indicators").find(".ui-indicator-ping[data-id=" + P + "]"),
-						borderElem: r("#ui-team-indicators").find(".ui-indicator-ping-border[data-id=" + P + "]"),
-						pingContainer: C,
-						indContainer: I,
+						elem: r("#ui-team-indicators").find(".ui-indicator-ping[data-id=" + T + "]"),
+						borderElem: r("#ui-team-indicators").find(".ui-indicator-ping-border[data-id=" + T + "]"),
+						pingContainer: P,
+						indContainer: C,
 						borderSprite: {
 							sprite: z,
 							baseScale: .4
 						},
 						pingSprite: {
-							sprite: A,
+							sprite: I,
 							baseScale: .4
 						},
 						indSpriteOuter: {
-							sprite: O,
+							sprite: A,
 							baseScale: .5
 						},
 						indSpriteInner: {
@@ -4862,7 +4675,7 @@ webpackJsonp([0], {
 				this.emoteWheelsGreyed = !1, this.emoteWheels.css("opacity", 1), this.teamEmotesGreyed = !1, this.teamEmotes.css("opacity", 1), this.disable = !1, this.inputReset()
 			},
 			inputReset: function() {
-				this.pingMouseTriggered = !1, this.pingKeyTriggered = !1, this.emoteMouseTriggered = !1, this.emoteKeyTriggered = !1, this.wheelDisplayed = !1, this.displayWheel(this.teamPingWheel, !1), this.displayWheel(this.emoteWheel, !1), this.emoteTouchedPos = null, this.bigmapPingPos = null, this.emoteTimeoutTicker = 0;
+				this.pingMouseTriggered = !1, this.pingKeyTriggered = !1, this.emoteMouseTriggered = !1, this.emoteKeyTriggered = !1, this.wheelDisplayed = !1, this.displayWheel(this.teamPingWheel, !1), this.displayWheel(this.emoteWheel, !1), this.emoteTouchedPos = null, this.bigmapPingPos = null;
 				for (var e = 0; e < this.displayedSelectors.length; e++) {
 					var t = this.displayedSelectors[e],
 						a = d[t.emote];
@@ -4921,130 +4734,122 @@ webpackJsonp([0], {
 							display: "block",
 							left: this.emoteScreenPos.x,
 							top: this.emoteScreenPos.y
-						}), this.displayWheel(this.parentDisplayed, !0), this.wheelDisplayed = !0, this.displayedSelectors = this.pingMouseTriggered ? this.teamPingSelectors : this.emoteWheelSelectors, this.worldPos = p.screenToPoint(this.emoteScreenPos)), this.wheelDisplayed)
-						if (this.emoteTimeoutTicker += e, this.emoteTimeoutTicker > 10) this.inputReset();
-						else {
-							this.emoteHardTicker > 0 && !this.emoteWheelsGreyed ? (this.emoteWheels.css("opacity", .5), this.emoteWheelsGreyed = !0) : this.emoteHardTicker <= 0 && this.emoteWheelsGreyed && (this.emoteWheels.css("opacity", 1), this.emoteWheelsGreyed = !1), this.teamEmotesGreyed || 1 != n || (this.teamEmotes.css("opacity", this.teamEmoteOpacityReset), this.teamEmotesGreyed = !0);
-							var w = null;
-							if (x.None, y.touch && (o = this.emoteTouchedPos), o) {
-								var S = h.sub(o, this.emoteScreenPos);
-								S.y *= -1;
-								for (var M = h.length(S), T = i(S), P = 0; P < this.displayedSelectors.length; P++) {
-									var C = this.displayedSelectors[P];
-									if (C.modular) {
-										var I = C.emote;
-										switch (_) {
-											case "9mm":
-												C.emote = m.Ammo9mm, C.texture = d[m.Ammo9mm].texture;
-												break;
-											case "12gauge":
-												C.emote = m.Ammo12Gauge, C.texture = d[m.Ammo12Gauge].texture;
-												break;
-											case "762mm":
-												C.emote = m.Ammo762mm, C.texture = d[m.Ammo762mm].texture;
-												break;
-											case "556mm":
-												C.emote = m.Ammo556mm, C.texture = d[m.Ammo556mm].texture;
-												break;
-											case "50AE":
-												C.emote = m.Ammo50AE, C.texture = d[m.Ammo50AE].texture;
-												break;
-											default:
-												C.emote = m.Ammo, C.texture = d[m.Ammo].texture
-										}
-										if (I != C.emote) {
-											var z = C.parent.find(".ui-emote-image");
-											z.css("background-image", "url(" + C.texture + ")")
-										}
+						}), this.displayWheel(this.parentDisplayed, !0), this.wheelDisplayed = !0, this.displayedSelectors = this.pingMouseTriggered ? this.teamPingSelectors : this.emoteWheelSelectors, this.worldPos = p.screenToPoint(this.emoteScreenPos)), this.wheelDisplayed) {
+						this.emoteHardTicker > 0 && !this.emoteWheelsGreyed ? (this.emoteWheels.css("opacity", .5), this.emoteWheelsGreyed = !0) : this.emoteHardTicker <= 0 && this.emoteWheelsGreyed && (this.emoteWheels.css("opacity", 1), this.emoteWheelsGreyed = !1), this.teamEmotesGreyed || 1 != n || (this.teamEmotes.css("opacity", this.teamEmoteOpacityReset), this.teamEmotesGreyed = !0);
+						var w = null;
+						if (x.None, y.touch && (o = this.emoteTouchedPos), o) {
+							var S = h.sub(o, this.emoteScreenPos);
+							S.y *= -1;
+							for (var M = h.length(S), T = i(S), P = 0; P < this.displayedSelectors.length; P++) {
+								var C = this.displayedSelectors[P];
+								if (C.modular) {
+									var z = C.emote;
+									switch (_) {
+										case "9mm":
+											C.emote = m.Ammo9mm, C.texture = d[m.Ammo9mm].texture;
+											break;
+										case "12gauge":
+											C.emote = m.Ammo12Gauge, C.texture = d[m.Ammo12Gauge].texture;
+											break;
+										case "762mm":
+											C.emote = m.Ammo762mm, C.texture = d[m.Ammo762mm].texture;
+											break;
+										case "556mm":
+											C.emote = m.Ammo556mm, C.texture = d[m.Ammo556mm].texture;
+											break;
+										default:
+											C.emote = m.Ammo, C.texture = d[m.Ammo].texture
 									}
-									var A = C.ping != x.None || C.emote != m.None,
-										D = d[C.emote],
-										O = D.teamOnly && 1 == n;
-									M <= 35 && !A && this.emoteHardTicker <= 0 && !O ? w = C : g.isAngleBetween(T, C.angleC, C.angleA) && M > 35 && A && this.emoteHardTicker <= 0 && !O ? w = C : C.highlightDisplayed && (C.parent.css("opacity", this.wedgeOpacityReset), C.highlight.css("display", "none"), C.highlightDisplayed = !1)
+									z != C.emote && C.parent.find(".ui-emote-image").css("background-image", "url(" + C.texture + ")")
 								}
+								var I = C.ping != x.None || C.emote != m.None,
+									D = d[C.emote],
+									A = D.teamOnly && 1 == n;
+								M <= 35 && !I && this.emoteHardTicker <= 0 && !A ? w = C : g.isAngleBetween(T, C.angleC, C.angleA) && M > 35 && I && this.emoteHardTicker <= 0 && !A ? w = C : C.highlightDisplayed && (C.parent.css("opacity", this.wedgeOpacityReset), C.highlight.css("display", "none"), C.highlightDisplayed = !1)
 							}
-							w && (this.emoteSelector = w, w.highlightDisplayed || (w.parent.css("opacity", 1), w.highlight.css("display", "block"), w.highlightDisplayed = !0), y.touch && this.emoteTouchedPos && (this.pingMouseTriggered ? this.triggerPing() : this.triggerEmote()))
 						}
+						w && (this.emoteSelector = w, w.highlightDisplayed || (w.parent.css("opacity", 1), w.highlight.css("display", "block"), w.highlightDisplayed = !0), y.touch && this.emoteTouchedPos && (this.pingMouseTriggered ? this.triggerPing() : this.triggerEmote()))
+					}
 				}
-				for (var L = 0; L < this.emotes.length; L++) {
-					var E = this.emotes[L];
-					if (E.alive) {
+				for (var O = 0; O < this.emotes.length; O++) {
+					var L = this.emotes[O];
+					if (L.alive) {
 						var B = !1,
-							F = h.create(0, 0),
-							R = 0,
-							j = c.getPlayerById(E.playerId);
-						if (j && !j.netData.dead && (F = h.copy(j.pos), R = j.layer, B = !0), !B) {
-							var N = r.getDeadBodyById(E.playerId);
-							N && (F = h.copy(N.pos), R = N.layer, B = !0)
+							E = h.create(0, 0),
+							F = 0,
+							R = c.getPlayerById(L.playerId);
+						if (R && !R.netData.dead && (E = h.copy(R.pos), F = R.layer, B = !0), !B) {
+							var j = r.getDeadBodyById(L.playerId);
+							j && (E = h.copy(j.pos), F = j.layer, B = !0)
 						}
 						if (B) {
-							if (E.isNew) {
-								var q = d[E.type];
-								this.audioManager.playSound(q.sound, {
+							if (L.isNew) {
+								var N = d[L.type];
+								this.audioManager.playSound(N.sound, {
 									channel: "ui",
-									soundPos: F,
-									layer: R
+									soundPos: E,
+									layer: F
 								})
 							}
-							E.isNew = !1, E.pos = F, E.lifeIn > 0 ? E.lifeIn -= e : E.life > 0 ? E.life -= e : E.lifeOut > 0 && (E.lifeOut -= e);
-							var U = f.sameLayer(R, this.activePlayer.layer) ? 3 : R;
-							l.addPIXIObj(E.container, k.World, U, 1e3, E.zIdx), E.alive = E.alive && E.lifeOut > 0
-						} else E.alive = !1
+							L.isNew = !1, L.pos = E, L.lifeIn > 0 ? L.lifeIn -= e : L.life > 0 ? L.life -= e : L.lifeOut > 0 && (L.lifeOut -= e);
+							var q = f.sameLayer(F, this.activePlayer.layer) ? 3 : F;
+							l.addPIXIObj(L.container, k.World, q, 1e3, L.zIdx), L.alive = L.alive && L.lifeOut > 0
+						} else L.alive = !1
 					}
 				}
 				var G = h.create(.5 * p.screenWidth / p.z(), .5 * p.screenHeight / p.z()),
-					V = {
+					U = {
 						min: h.sub(p.pos, G),
 						max: h.add(p.pos, G)
 					};
 				this.teamId = c.getPlayerInfo(a.__id).teamId;
-				for (var H = c.getTeamInfo(this.teamId), W = H.playerIds.length, K = 0; K < W; K++) {
-					var X = this.teamIndicators[K],
-						Y = H.playerIds[K],
-						Z = (c.getPlayerInfo(Y), Y == this.activePlayer.__id),
-						J = c.getTeammateData(Y);
-					if (J)
-						for (var Q in X)
-							if (X.hasOwnProperty(Q)) {
-								var $ = X[Q],
-									ee = $.pingContainer,
-									te = $.indContainer,
-									ae = $.borderSprite.sprite,
-									ie = $.pingSprite.sprite,
-									oe = $.indSpriteOuter.sprite,
-									ne = $.indSpriteInner.sprite,
-									re = !0;
-								if ($.fadeIn -= e, $.life -= e, $.fadeOut -= $.life > 0 ? 0 : e, $.fadeOut > 0) {
-									var se = $.pos,
-										le = h.normalizeSafe(h.sub(se, p.pos), h.create(1, 0)),
-										ce = u.intersectRayAabb(p.pos, le, V.min, V.max),
-										me = Math.atan2(le.y, -le.x) + .5 * Math.PI,
-										de = p.pointToScreen(ce),
-										pe = u.testCircleAabb(se, s.player.radius, V.min, V.max),
-										ue = p.pixels($.borderSprite.baseScale),
-										he = p.pixels($.pingSprite.baseScale);
-									if (ae.scale.set(ue, ue), ie.scale.set(he, he), !J.dead) {
-										re = $.fadeOut < 0;
-										var ge = pe ? p.pointToScreen(se).x : g.clamp(de.x, 64, p.screenWidth - 64),
-											fe = pe ? p.pointToScreen(se).y : g.clamp(de.y, 64, p.screenHeight - 64),
-											ye = p.pointToScreen(se).x,
-											be = p.pointToScreen(se).y;
-										ie.position.x = ye, ie.position.y = be, ae.position.x = ye, ae.position.y = be, oe.position.x = ge, oe.position.y = fe, oe.rotation = me, ne.position.x = ge, ne.position.y = fe;
-										var xe = ae.alpha <= 0 ? 1 : ae.alpha - e;
-										ae.alpha = xe;
-										var ve = p.pixels($.borderSprite.baseScale * (2 - xe));
-										if (ae.scale.set(ve, ve), ne.alpha = pe ? 0 : xe, $.fadeIn > 0) {
-											var ke = 1 - $.fadeIn / this.pingFadeIn;
-											ee.alpha = 1, te.alpha = 1, ie.alpha = 1, oe.alpha = pe ? 0 : ke
-										} else oe.alpha = pe ? 0 : 1;
-										if ($.life < 0) {
-											var _e = $.fadeOut / this.pingFadeOut;
-											ee.alpha = _e, te.alpha = _e
+				for (var V = c.getTeamInfo(this.teamId), H = V.playerIds.length, W = 0; W < H; W++) {
+					var K = this.teamIndicators[W],
+						X = V.playerIds[W],
+						Z = (c.getPlayerInfo(X), X == this.activePlayer.__id),
+						Y = c.getTeammateData(X);
+					if (Y)
+						for (var J in K)
+							if (K.hasOwnProperty(J)) {
+								var Q = K[J],
+									$ = Q.pingContainer,
+									ee = Q.indContainer,
+									te = Q.borderSprite.sprite,
+									ae = Q.pingSprite.sprite,
+									ie = Q.indSpriteOuter.sprite,
+									oe = Q.indSpriteInner.sprite,
+									ne = !0;
+								if (Q.fadeIn -= e, Q.life -= e, Q.fadeOut -= Q.life > 0 ? 0 : e, Q.fadeOut > 0) {
+									var re = Q.pos,
+										se = h.normalizeSafe(h.sub(re, p.pos), h.create(1, 0)),
+										le = u.intersectRayAabb(p.pos, se, U.min, U.max),
+										ce = Math.atan2(se.y, -se.x) + .5 * Math.PI,
+										me = p.pointToScreen(le),
+										de = u.testCircleAabb(re, s.player.radius, U.min, U.max),
+										pe = p.pixels(Q.borderSprite.baseScale),
+										ue = p.pixels(Q.pingSprite.baseScale);
+									if (te.scale.set(pe, pe), ae.scale.set(ue, ue), !Y.dead) {
+										ne = Q.fadeOut < 0;
+										var he = de ? p.pointToScreen(re).x : g.clamp(me.x, 64, p.screenWidth - 64),
+											ge = de ? p.pointToScreen(re).y : g.clamp(me.y, 64, p.screenHeight - 64),
+											fe = p.pointToScreen(re).x,
+											ye = p.pointToScreen(re).y;
+										ae.position.x = fe, ae.position.y = ye, te.position.x = fe, te.position.y = ye, ie.position.x = he, ie.position.y = ge, ie.rotation = ce, oe.position.x = he, oe.position.y = ge;
+										var be = te.alpha <= 0 ? 1 : te.alpha - e;
+										te.alpha = be;
+										var xe = p.pixels(Q.borderSprite.baseScale * (2 - be));
+										if (te.scale.set(xe, xe), oe.alpha = de ? 0 : be, Q.fadeIn > 0) {
+											var ve = 1 - Q.fadeIn / this.pingFadeIn;
+											$.alpha = 1, ee.alpha = 1, ae.alpha = 1, ie.alpha = de ? 0 : ve
+										} else ie.alpha = de ? 0 : 1;
+										if (Q.life < 0) {
+											var ke = Q.fadeOut / this.pingFadeOut;
+											$.alpha = ke, ee.alpha = ke
 										}
-										$.displayed || (ee.visible = !0, te.visible = !Z, $.displayed = !0)
+										Q.displayed || ($.visible = !0, ee.visible = !Z, Q.displayed = !0)
 									}
 								}
-								re && $.displayed && (ee.visible = !1, te.visible = !1, $.displayed = !1)
+								ne && Q.displayed && ($.visible = !1, ee.visible = !1, Q.displayed = !1)
 							}
 				}
 			},
@@ -5072,17 +4877,16 @@ webpackJsonp([0], {
 						var l = this.emoteWheelData[s],
 							m = d[l.emote],
 							p = i(l.vA),
-							u = i(l.vC),
-							h = m.texture;
-						l.displayCloseIcon && (h = "img/gui/close.svg"), this.emoteWheelSelectors.push(n({
+							u = i(l.vC);
+						this.emoteWheelSelectors.push(n({
 							angleA: p,
 							angleC: u,
 							highlight: l.parent.find(".ui-emote-hl"),
 							highlightDisplayed: !1,
-							texture: h
+							texture: m.texture
 						}, l));
-						var g = l.parent.find(".ui-emote-image");
-						g.css("background-image", "url(" + h + ")")
+						var h = l.parent.find(".ui-emote-image");
+						h.css("background-image", "url(" + m.texture + ")")
 					}
 			},
 			render: function(e, t) {
@@ -5117,105 +4921,105 @@ webpackJsonp([0], {
 				locale: "jp"
 			},
 			"word-order": "svo",
-			"index-slogan": "2Dバトルロワイヤル",
-			"index-region": "地域",
-			"index-north-america": "北アメリカ",
-			"index-europe": "ヨーロッパ",
-			"index-asia": "アジア",
-			"index-players": "プレイヤー",
-			"index-play-solo": "1人で遊ぶ",
-			"index-play-duo": "2人で遊ぶ",
-			"index-play-squad": "4人で遊ぶ",
-			"index-join-team": "チームに参加",
-			"index-create-team": "チームを作成",
-			"index-leave-team": "キャンセル",
-			"index-joining-team": "チームに参加中",
-			"index-creating-team": "チームを作成中",
-			"index-invite-link": "招待リンク",
-			"index-solo": "ソロ",
-			"index-duo": "デュオ",
-			"index-squad": "スクワッド",
-			"index-auto-fill": "自動編成あり",
-			"index-no-fill": "自動編成なし",
-			"index-waiting-for-leader": "リーダーがゲームを開始するのを待っています",
-			"index-play": "出発する",
-			"index-featured-youtuber": "おすすめYoutuber",
-			"index-settings": "設定",
-			"index-high-resolution": "高画質モード",
-			"index-screen-shake": "振動エフェクト",
+			"index-slogan": "2Dãƒ?ãƒˆãƒ«ãƒ­ãƒ¯ã‚¤ãƒ¤ãƒ«",
+			"index-region": "åœ°åŸŸ",
+			"index-north-america": "åŒ—ã‚¢ãƒ¡ãƒªã‚«",
+			"index-europe": "ãƒ¨ãƒ¼ãƒ­ãƒƒãƒ‘",
+			"index-asia": "ã‚¢ã‚¸ã‚¢",
+			"index-players": "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼",
+			"index-play-solo": "1äººã?§é?Šã?¶",
+			"index-play-duo": "2äººã?§é?Šã?¶",
+			"index-play-squad": "4äººã?§é?Šã?¶",
+			"index-join-team": "ãƒ?ãƒ¼ãƒ ã?«å?‚åŠ ",
+			"index-create-team": "ãƒ?ãƒ¼ãƒ ã‚’ä½œæˆ?",
+			"index-leave-team": "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",
+			"index-joining-team": "ãƒ?ãƒ¼ãƒ ã?«å?‚åŠ ä¸­",
+			"index-creating-team": "ãƒ?ãƒ¼ãƒ ã‚’ä½œæˆ?ä¸­",
+			"index-invite-link": "æ‹›å¾…ãƒªãƒ³ã‚¯",
+			"index-solo": "ã‚½ãƒ­",
+			"index-duo": "ãƒ‡ãƒ¥ã‚ª",
+			"index-squad": "ã‚¹ã‚¯ãƒ¯ãƒƒãƒ‰",
+			"index-auto-fill": "è‡ªå‹•ç·¨æˆ?ã?‚ã‚Š",
+			"index-no-fill": "è‡ªå‹•ç·¨æˆ?ã?ªã?—",
+			"index-waiting-for-leader": "ãƒªãƒ¼ãƒ€ãƒ¼ã?Œã‚²ãƒ¼ãƒ ã‚’é–‹å§‹ã?™ã‚‹ã?®ã‚’å¾…ã?£ã?¦ã?„ã?¾ã?™",
+			"index-play": "å‡ºç™ºã?™ã‚‹",
+			"index-featured-youtuber": "ã?Šã?™ã?™ã‚?Youtuber",
+			"index-settings": "è¨­å®š",
+			"index-high-resolution": "é«˜ç?»è³ªãƒ¢ãƒ¼ãƒ‰",
+			"index-screen-shake": "æŒ¯å‹•ã‚¨ãƒ•ã‚§ã‚¯ãƒˆ",
 			"index-master-volume": "Master Volume",
 			"index-sfx-volume": "SFX Volume",
 			"index-music-volume": "Music Volume",
-			"index-mobile-announce": "スマートフォンでもプレイできるようになりました！",
-			"index-mobile-tooltip": "スマートフォンで <span>surviv.io</span> を開いていつでもどこでもプレイしましょう！",
-			"index-team-is-full": "チームは満員です！",
-			"index-failed-joining-team": "チームへの参加に失敗しました",
-			"index-failed-creating-team": "チームの作成に失敗しました",
-			"index-failed-finding-game": "ゲームの検索に失敗しました",
-			"index-failed-joining-game": "ゲームへの参加に失敗しました",
-			"index-lost-connection": "チームとの接続が切断されました",
-			"index-host-closed": "ホストが接続を終了しました",
+			"index-mobile-announce": "ã‚¹ãƒžãƒ¼ãƒˆãƒ•ã‚©ãƒ³ã?§ã‚‚ãƒ—ãƒ¬ã‚¤ã?§ã??ã‚‹ã‚ˆã?†ã?«ã?ªã‚Šã?¾ã?—ã?Ÿï¼?",
+			"index-mobile-tooltip": "ã‚¹ãƒžãƒ¼ãƒˆãƒ•ã‚©ãƒ³ã?§ <span>surviv.io</span> ã‚’é–‹ã?„ã?¦ã?„ã?¤ã?§ã‚‚ã?©ã?“ã?§ã‚‚ãƒ—ãƒ¬ã‚¤ã?—ã?¾ã?—ã‚‡ã?†ï¼?",
+			"index-team-is-full": "ãƒ?ãƒ¼ãƒ ã?¯æº€å“¡ã?§ã?™ï¼?",
+			"index-failed-joining-team": "ãƒ?ãƒ¼ãƒ ã?¸ã?®å?‚åŠ ã?«å¤±æ•—ã?—ã?¾ã?—ã?Ÿ",
+			"index-failed-creating-team": "ãƒ?ãƒ¼ãƒ ã?®ä½œæˆ?ã?«å¤±æ•—ã?—ã?¾ã?—ã?Ÿ",
+			"index-failed-finding-game": "ã‚²ãƒ¼ãƒ ã?®æ¤œç´¢ã?«å¤±æ•—ã?—ã?¾ã?—ã?Ÿ",
+			"index-failed-joining-game": "ã‚²ãƒ¼ãƒ ã?¸ã?®å?‚åŠ ã?«å¤±æ•—ã?—ã?¾ã?—ã?Ÿ",
+			"index-lost-connection": "ãƒ?ãƒ¼ãƒ ã?¨ã?®æŽ¥ç¶šã?Œåˆ‡æ–­ã?•ã‚Œã?¾ã?—ã?Ÿ",
+			"index-host-closed": "ãƒ›ã‚¹ãƒˆã?ŒæŽ¥ç¶šã‚’çµ‚äº†ã?—ã?¾ã?—ã?Ÿ",
 			"index-invalid-protocol": "Old client version.",
-			"index-view-more": "詳細",
-			"index-back-to-main": "メインメニューに戻る",
-			"index-most-kills": "キル数",
-			"index-total-kills": "総キル数",
-			"index-total-wins": "ドン勝数",
-			"index-top-5-percent": "上位5%",
-			"index-kill-death-ratio": "キル / デス",
+			"index-view-more": "è©³ç´°",
+			"index-back-to-main": "ãƒ¡ã‚¤ãƒ³ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã?«æˆ»ã‚‹",
+			"index-most-kills": "ã‚­ãƒ«æ•°",
+			"index-total-kills": "ç·?ã‚­ãƒ«æ•°",
+			"index-total-wins": "ãƒ‰ãƒ³å‹?æ•°",
+			"index-top-5-percent": "ä¸Šä½?5%",
+			"index-kill-death-ratio": "ã‚­ãƒ« / ãƒ‡ã‚¹",
 			"index-mode": "Mode",
 			"index-for": "For",
-			"index-today": "今日",
-			"index-this-week": "今週",
-			"index-all-time": "全期間",
-			"index-top-100": "上位100名",
-			"index-rank": "順位",
-			"index-player": "プレイヤー名",
+			"index-today": "ä»Šæ—¥",
+			"index-this-week": "ä»Šé€±",
+			"index-all-time": "å…¨æœŸé–“",
+			"index-top-100": "ä¸Šä½?100å??",
+			"index-rank": "é †ä½?",
+			"index-player": "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼å??",
 			"index-total-games": "Total Games",
-			"index-controls": "操作方法",
-			"index-movement": "移動",
+			"index-controls": "æ“?ä½œæ–¹æ³•",
+			"index-movement": "ç§»å‹•",
 			"index-movement-ctrl": "[W] , [A] , [S] , [D]",
-			"index-aim": "照準",
-			"index-aim-ctrl": "マウスカーソル",
-			"index-punch": "殴る",
-			"index-shoot": "射撃",
-			"index-shoot-ctrl": "左クリック",
-			"index-change-weapons": "武器変更",
-			"index-change-weapons-ctrl": "[1] 〜 [2] , スクロールホイール",
-			"index-stow-weapons": "武器をしまう（拳で抵抗）",
+			"index-aim": "ç…§æº–",
+			"index-aim-ctrl": "ãƒžã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«",
+			"index-punch": "æ®´ã‚‹",
+			"index-shoot": "å°„æ’ƒ",
+			"index-shoot-ctrl": "å·¦ã‚¯ãƒªãƒƒã‚¯",
+			"index-change-weapons": "æ­¦å™¨å¤‰æ›´",
+			"index-change-weapons-ctrl": "[1] ã€œ [2] , ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ›ã‚¤ãƒ¼ãƒ«",
+			"index-stow-weapons": "æ­¦å™¨ã‚’ã?—ã?¾ã?†ï¼ˆæ‹³ã?§æŠµæŠ—ï¼‰",
 			"index-stow-weapons-ctrl": "[3] , [E]",
-			"index-swap-weapons": "直前の武器を装備",
+			"index-swap-weapons": "ç›´å‰?ã?®æ­¦å™¨ã‚’è£…å‚™",
 			"index-swap-weapons-ctrl": "[Q]",
-			"index-reload": "リロード",
+			"index-reload": "ãƒªãƒ­ãƒ¼ãƒ‰",
 			"index-reload-ctrl": "[R]",
-			"index-scope-zoom": "スコープ倍率変更",
-			"index-scope-zoom-ctrl": "倍率を左クリック",
-			"index-pickup": "拾う",
-			"index-loot": "奪う",
-			"index-revive": "蘇生",
+			"index-scope-zoom": "ã‚¹ã‚³ãƒ¼ãƒ—å€?çŽ‡å¤‰æ›´",
+			"index-scope-zoom-ctrl": "å€?çŽ‡ã‚’å·¦ã‚¯ãƒªãƒƒã‚¯",
+			"index-pickup": "æ‹¾ã?†",
+			"index-loot": "å¥ªã?†",
+			"index-revive": "è˜‡ç?Ÿ",
 			"index-pickup-ctrl": "[F]",
-			"index-use-medical": "医薬品の使用",
-			"index-use-medical-ctrl": "アイテムを左クリック , [7]～[0]",
-			"index-drop-item": "アイテムを捨てる",
-			"index-drop-item-ctrl": "アイテムを右クリック",
-			"index-cancel-action": "行動キャンセル",
+			"index-use-medical": "åŒ»è–¬å“?ã?®ä½¿ç?¨",
+			"index-use-medical-ctrl": "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å·¦ã‚¯ãƒªãƒƒã‚¯ , [7]ï½ž[0]",
+			"index-drop-item": "ã‚¢ã‚¤ãƒ†ãƒ ã‚’æ?¨ã?¦ã‚‹",
+			"index-drop-item-ctrl": "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å?³ã‚¯ãƒªãƒƒã‚¯",
+			"index-cancel-action": "è¡Œå‹•ã‚­ãƒ£ãƒ³ã‚»ãƒ«",
 			"index-cancel-action-ctrl": "[X]",
-			"index-view-map": "マップを表示",
+			"index-view-map": "ãƒžãƒƒãƒ—ã‚’è¡¨ç¤º",
 			"index-view-map-ctrl": "[M] , [G]",
-			"index-toggle-minimap": "ミニマップ表示切替",
+			"index-toggle-minimap": "ãƒŸãƒ‹ãƒžãƒƒãƒ—è¡¨ç¤ºåˆ‡æ›¿",
 			"index-toggle-minimap-ctrl": "[V]",
-			"index-use-ping": "チームエモートの使用",
-			"index-use-ping-ctrl": "[C]を押しながら右クリックをドラッグして表示. 該当のエモート上で右クリックを離す.",
-			"index-use-emote": "エモートの使用",
-			"index-use-emote-ctrl": "右クリックをドラッグして表示. 該当のエモート上で右クリックを離す.",
-			"index-how-to-play": "遊び方",
-			"index-tips-1-desc": "Surviv.ioの勝利条件は最後の一人になるまで生き残ることです. 同じ試合では一度死亡した時点でゲームオーバーとなります.",
+			"index-use-ping": "ãƒ?ãƒ¼ãƒ ã‚¨ãƒ¢ãƒ¼ãƒˆã?®ä½¿ç?¨",
+			"index-use-ping-ctrl": "[C]ã‚’æŠ¼ã?—ã?ªã?Œã‚‰å?³ã‚¯ãƒªãƒƒã‚¯ã‚’ãƒ‰ãƒ©ãƒƒã‚°ã?—ã?¦è¡¨ç¤º. è©²å½“ã?®ã‚¨ãƒ¢ãƒ¼ãƒˆä¸Šã?§å?³ã‚¯ãƒªãƒƒã‚¯ã‚’é›¢ã?™.",
+			"index-use-emote": "ã‚¨ãƒ¢ãƒ¼ãƒˆã?®ä½¿ç?¨",
+			"index-use-emote-ctrl": "å?³ã‚¯ãƒªãƒƒã‚¯ã‚’ãƒ‰ãƒ©ãƒƒã‚°ã?—ã?¦è¡¨ç¤º. è©²å½“ã?®ã‚¨ãƒ¢ãƒ¼ãƒˆä¸Šã?§å?³ã‚¯ãƒªãƒƒã‚¯ã‚’é›¢ã?™.",
+			"index-how-to-play": "é?Šã?³æ–¹",
+			"index-tips-1-desc": "Surviv.ioã?®å‹?åˆ©æ?¡ä»¶ã?¯æœ€å¾Œã?®ä¸€äººã?«ã?ªã‚‹ã?¾ã?§ç?Ÿã??æ®‹ã‚‹ã?“ã?¨ã?§ã?™. å?Œã?˜è©¦å?ˆã?§ã?¯ä¸€åº¦æ­»äº¡ã?—ã?Ÿæ™‚ç‚¹ã?§ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒ?ãƒ¼ã?¨ã?ªã‚Šã?¾ã?™.",
 			"index-tips-2": "2D PUBG",
-			"index-tips-2-desc": "既にPUBGやFortnite、H1Z1といった他のバトルロワイヤルゲームをプレイしたことがあるのであれば、勝利への道は目前です！Surviv.ioは2D版PUBGのようなものです.",
-			"index-tips-3": "アイテムを略奪せよ",
-			"index-tips-3-desc": "ゲーム開始時点では簡潔なバックパックしかありません. マップ中を駆け巡り、武器や銃弾、スコープ、医薬品など様々なアイテムを手に入れましょう. 他のプレイヤーを討ち取り戦利品をゲットしましょう！",
-			"index-tips-4": "赤色 = ガスから逃げろ！",
-			"index-tips-4-desc": "敵はプレイヤーだけではありません. マップの端から迫ってくるレッドゾーン内に入れば、断続的なダメージを受けて死に至る危険があります. マップに目を光らせて安全地帯で生き残りましょう.",
+			"index-tips-2-desc": "æ—¢ã?«PUBGã‚„Fortniteã€?H1Z1ã?¨ã?„ã?£ã?Ÿä»–ã?®ãƒ?ãƒˆãƒ«ãƒ­ãƒ¯ã‚¤ãƒ¤ãƒ«ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã?—ã?Ÿã?“ã?¨ã?Œã?‚ã‚‹ã?®ã?§ã?‚ã‚Œã?°ã€?å‹?åˆ©ã?¸ã?®é?“ã?¯ç›®å‰?ã?§ã?™ï¼?Surviv.ioã?¯2Dç‰ˆPUBGã?®ã‚ˆã?†ã?ªã‚‚ã?®ã?§ã?™.",
+			"index-tips-3": "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ç•¥å¥ªã?›ã‚ˆ",
+			"index-tips-3-desc": "ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ç‚¹ã?§ã?¯ç°¡æ½?ã?ªãƒ?ãƒƒã‚¯ãƒ‘ãƒƒã‚¯ã?—ã?‹ã?‚ã‚Šã?¾ã?›ã‚“. ãƒžãƒƒãƒ—ä¸­ã‚’é§†ã?‘å·¡ã‚Šã€?æ­¦å™¨ã‚„éŠƒå¼¾ã€?ã‚¹ã‚³ãƒ¼ãƒ—ã€?åŒ»è–¬å“?ã?ªã?©æ§˜ã€…ã?ªã‚¢ã‚¤ãƒ†ãƒ ã‚’æ‰‹ã?«å…¥ã‚Œã?¾ã?—ã‚‡ã?†. ä»–ã?®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’è¨Žã?¡å?–ã‚Šæˆ¦åˆ©å“?ã‚’ã‚²ãƒƒãƒˆã?—ã?¾ã?—ã‚‡ã?†ï¼?",
+			"index-tips-4": "èµ¤è‰² = ã‚¬ã‚¹ã?‹ã‚‰é€ƒã?’ã‚?ï¼?",
+			"index-tips-4-desc": "æ•µã?¯ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã? ã?‘ã?§ã?¯ã?‚ã‚Šã?¾ã?›ã‚“. ãƒžãƒƒãƒ—ã?®ç«¯ã?‹ã‚‰è¿«ã?£ã?¦ã??ã‚‹ãƒ¬ãƒƒãƒ‰ã‚¾ãƒ¼ãƒ³å†…ã?«å…¥ã‚Œã?°ã€?æ–­ç¶šçš„ã?ªãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å?—ã?‘ã?¦æ­»ã?«è‡³ã‚‹å?±é™ºã?Œã?‚ã‚Šã?¾ã?™. ãƒžãƒƒãƒ—ã?«ç›®ã‚’å…‰ã‚‰ã?›ã?¦å®‰å…¨åœ°å¸¯ã?§ç?Ÿã??æ®‹ã‚Šã?¾ã?—ã‚‡ã?†.",
 			"index-movement-ctrl-touch": "Left stick",
 			"index-aim-ctrl-touch": "Right stick",
 			"index-shoot-ctrl-touch": "Drag right stick outside stick border",
@@ -5229,103 +5033,103 @@ webpackJsonp([0], {
 			"index-view-map-ctrl-touch": "Tap minimap",
 			"index-use-ping-ctrl-touch": "View map and tap anywhere on map",
 			"index-use-emote-ctrl-touch": "Tap surviv icon",
-			"game-alive": "生存",
-			"game-reloading": "リロード中",
-			"game-using": "使用中",
-			"game-reviving": "蘇生中",
-			"game-revive-teammate": "チームメイトを蘇生",
-			"game-equip": "装備",
-			"game-cancel": "キャンセル",
-			"game-open-door": "ドアを開く",
-			"game-close-door": "ドアを閉める",
-			"game-You": "あなた",
-			"game-you": "あなた",
-			"game-themselves": "自分自身",
-			"game-yourself": "あなた自身",
-			"game-you-died": "が死亡しました",
-			"game-player-died": "が死亡しました",
-			"game-with": "使用して",
-			"game-knocked-out": "が気絶させました",
-			"game-killed": "が殺しました",
-			"game-finally-killed": "ついに殺しました",
-			"game-finally-bled-out": "ついに息絶えました",
-			"game-died-outside": "がセーフゾーンの外で死亡しました",
-			"game-the-red-zone": "レッドゾーン",
-			"game-waiting-for-players": "プレイヤーを待っています",
-			"game-spectating": "観戦中",
-			"game-red-zone-advances": "ガス汚染エリア拡大まで",
-			"game-red-zone-advancing": "ガス汚染エリアが拡大中、安全地帯に逃げてください！",
-			"game-seconds": "秒",
-			"game-minutes": "分",
-			"game-minute": "分",
-			"game-m": "分",
-			"game-s": "秒",
-			"game-not-enough-space": "インベントリに空きがありません！",
-			"game-item-already-owned": "既に所持しているアイテムです！",
-			"game-item-already-equipped": "既に装備しているアイテムです！",
-			"game-better-item-equipped": "より優れたアイテムを装備しています！",
-			"game-play-new-game": "次の試合に参加する",
-			"game-spectate": "観戦する",
-			"game-full-screen": "全画面表示",
-			"game-sound": "ミュート",
-			"game-quit-game": "撤退する",
-			"game-return-to-game": "試合に戻る",
-			"game-hide-match-stats": "戦績を非表示",
-			"game-view-match-stats": "戦績を表示",
-			"game-previous-teammate": "前のチームメイト",
-			"game-next-teammate": "次のチームメイト",
-			"game-leave-game": "試合から離脱する",
-			"game-your-results": "あなたの戦績",
-			"game-chicken": "勝った！勝った！夕飯はドン勝だ！！",
-			"game-won-the-game": "がゲームに勝利しました",
-			"game-team-eliminated": "まあ、こんな日もあるのさ！次はもう少しツイてますように！",
-			"game-solo-rank": "Solo 順位",
-			"game-duo-rank": "Duo 順位",
-			"game-squad-rank": "Squad 順位",
-			"game-rank": "順位",
-			"game-team-rank": "チーム順位",
-			"game-team-kills": "チームキル数",
-			"game-kill": "キル数",
-			"game-kills": "キル数",
-			"game-damage-dealt": "与ダメージ",
-			"game-damage-taken": "被ダメージ",
-			"game-survived": "生存時間",
-			"game-backpack00": "ポーチ",
-			"game-backpack01": "スモールバックパック",
-			"game-backpack02": "レギュラーバックパック",
-			"game-backpack03": "ミリタリーバックパック",
-			"game-bandage": "包帯",
-			"game-bandage-tooltip": "左クリックでHPを15回復します",
-			"game-healing-tooltip": "75HP以上の場合は回復できません",
-			"game-healthkit": "救急箱",
-			"game-healthkit-tooltip": "左クリックでHPを100回復します",
-			"game-soda": "ソーダ",
-			"game-soda-tooltip": "左クリックでアドレナリンを25増加させます",
-			"game-adrenaline-tooltip": "アドレナリンはHPを時間とともに自動回復させます",
-			"game-painkiller": "鎮痛剤",
-			"game-painkiller-tooltip": "左クリックでアドレナリンを50増加させます",
+			"game-alive": "ç?Ÿå­˜",
+			"game-reloading": "ãƒªãƒ­ãƒ¼ãƒ‰ä¸­",
+			"game-using": "ä½¿ç?¨ä¸­",
+			"game-reviving": "è˜‡ç?Ÿä¸­",
+			"game-revive-teammate": "ãƒ?ãƒ¼ãƒ ãƒ¡ã‚¤ãƒˆã‚’è˜‡ç?Ÿ",
+			"game-equip": "è£…å‚™",
+			"game-cancel": "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",
+			"game-open-door": "ãƒ‰ã‚¢ã‚’é–‹ã??",
+			"game-close-door": "ãƒ‰ã‚¢ã‚’é–‰ã‚?ã‚‹",
+			"game-You": "ã?‚ã?ªã?Ÿ",
+			"game-you": "ã?‚ã?ªã?Ÿ",
+			"game-themselves": "è‡ªåˆ†è‡ªèº«",
+			"game-yourself": "ã?‚ã?ªã?Ÿè‡ªèº«",
+			"game-you-died": "ã?Œæ­»äº¡ã?—ã?¾ã?—ã?Ÿ",
+			"game-player-died": "ã?Œæ­»äº¡ã?—ã?¾ã?—ã?Ÿ",
+			"game-with": "ä½¿ç?¨ã?—ã?¦",
+			"game-knocked-out": "ã?Œæ°—çµ¶ã?•ã?›ã?¾ã?—ã?Ÿ",
+			"game-killed": "ã?Œæ®ºã?—ã?¾ã?—ã?Ÿ",
+			"game-finally-killed": "ã?¤ã?„ã?«æ®ºã?—ã?¾ã?—ã?Ÿ",
+			"game-finally-bled-out": "ã?¤ã?„ã?«æ?¯çµ¶ã?ˆã?¾ã?—ã?Ÿ",
+			"game-died-outside": "ã?Œã‚»ãƒ¼ãƒ•ã‚¾ãƒ¼ãƒ³ã?®å¤–ã?§æ­»äº¡ã?—ã?¾ã?—ã?Ÿ",
+			"game-the-red-zone": "ãƒ¬ãƒƒãƒ‰ã‚¾ãƒ¼ãƒ³",
+			"game-waiting-for-players": "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’å¾…ã?£ã?¦ã?„ã?¾ã?™",
+			"game-spectating": "è¦³æˆ¦ä¸­",
+			"game-red-zone-advances": "ã‚¬ã‚¹æ±šæŸ“ã‚¨ãƒªã‚¢æ‹¡å¤§ã?¾ã?§",
+			"game-red-zone-advancing": "ã‚¬ã‚¹æ±šæŸ“ã‚¨ãƒªã‚¢ã?Œæ‹¡å¤§ä¸­ã€?å®‰å…¨åœ°å¸¯ã?«é€ƒã?’ã?¦ã??ã? ã?•ã?„ï¼?",
+			"game-seconds": "ç§’",
+			"game-minutes": "åˆ†",
+			"game-minute": "åˆ†",
+			"game-m": "åˆ†",
+			"game-s": "ç§’",
+			"game-not-enough-space": "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã?«ç©ºã??ã?Œã?‚ã‚Šã?¾ã?›ã‚“ï¼?",
+			"game-item-already-owned": "æ—¢ã?«æ‰€æŒ?ã?—ã?¦ã?„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã?§ã?™ï¼?",
+			"game-item-already-equipped": "æ—¢ã?«è£…å‚™ã?—ã?¦ã?„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ã?§ã?™ï¼?",
+			"game-better-item-equipped": "ã‚ˆã‚Šå„ªã‚Œã?Ÿã‚¢ã‚¤ãƒ†ãƒ ã‚’è£…å‚™ã?—ã?¦ã?„ã?¾ã?™ï¼?",
+			"game-play-new-game": "æ¬¡ã?®è©¦å?ˆã?«å?‚åŠ ã?™ã‚‹",
+			"game-spectate": "è¦³æˆ¦ã?™ã‚‹",
+			"game-full-screen": "å…¨ç?»é?¢è¡¨ç¤º",
+			"game-sound": "ãƒŸãƒ¥ãƒ¼ãƒˆ",
+			"game-quit-game": "æ’¤é€€ã?™ã‚‹",
+			"game-return-to-game": "è©¦å?ˆã?«æˆ»ã‚‹",
+			"game-hide-match-stats": "æˆ¦ç¸¾ã‚’é?žè¡¨ç¤º",
+			"game-view-match-stats": "æˆ¦ç¸¾ã‚’è¡¨ç¤º",
+			"game-previous-teammate": "å‰?ã?®ãƒ?ãƒ¼ãƒ ãƒ¡ã‚¤ãƒˆ",
+			"game-next-teammate": "æ¬¡ã?®ãƒ?ãƒ¼ãƒ ãƒ¡ã‚¤ãƒˆ",
+			"game-leave-game": "è©¦å?ˆã?‹ã‚‰é›¢è„±ã?™ã‚‹",
+			"game-your-results": "ã?‚ã?ªã?Ÿã?®æˆ¦ç¸¾",
+			"game-chicken": "å‹?ã?£ã?Ÿï¼?å‹?ã?£ã?Ÿï¼?å¤•é£¯ã?¯ãƒ‰ãƒ³å‹?ã? ï¼?ï¼?",
+			"game-won-the-game": "ã?Œã‚²ãƒ¼ãƒ ã?«å‹?åˆ©ã?—ã?¾ã?—ã?Ÿ",
+			"game-team-eliminated": "ã?¾ã?‚ã€?ã?“ã‚“ã?ªæ—¥ã‚‚ã?‚ã‚‹ã?®ã?•ï¼?æ¬¡ã?¯ã‚‚ã?†å°‘ã?—ãƒ„ã‚¤ã?¦ã?¾ã?™ã‚ˆã?†ã?«ï¼?",
+			"game-solo-rank": "Solo é †ä½?",
+			"game-duo-rank": "Duo é †ä½?",
+			"game-squad-rank": "Squad é †ä½?",
+			"game-rank": "é †ä½?",
+			"game-team-rank": "ãƒ?ãƒ¼ãƒ é †ä½?",
+			"game-team-kills": "ãƒ?ãƒ¼ãƒ ã‚­ãƒ«æ•°",
+			"game-kill": "ã‚­ãƒ«æ•°",
+			"game-kills": "ã‚­ãƒ«æ•°",
+			"game-damage-dealt": "ä¸Žãƒ€ãƒ¡ãƒ¼ã‚¸",
+			"game-damage-taken": "è¢«ãƒ€ãƒ¡ãƒ¼ã‚¸",
+			"game-survived": "ç?Ÿå­˜æ™‚é–“",
+			"game-backpack00": "ãƒ?ãƒ¼ãƒ?",
+			"game-backpack01": "ã‚¹ãƒ¢ãƒ¼ãƒ«ãƒ?ãƒƒã‚¯ãƒ‘ãƒƒã‚¯",
+			"game-backpack02": "ãƒ¬ã‚®ãƒ¥ãƒ©ãƒ¼ãƒ?ãƒƒã‚¯ãƒ‘ãƒƒã‚¯",
+			"game-backpack03": "ãƒŸãƒªã‚¿ãƒªãƒ¼ãƒ?ãƒƒã‚¯ãƒ‘ãƒƒã‚¯",
+			"game-bandage": "åŒ…å¸¯",
+			"game-bandage-tooltip": "å·¦ã‚¯ãƒªãƒƒã‚¯ã?§HPã‚’15å›žå¾©ã?—ã?¾ã?™",
+			"game-healing-tooltip": "75HPä»¥ä¸Šã?®å ´å?ˆã?¯å›žå¾©ã?§ã??ã?¾ã?›ã‚“",
+			"game-healthkit": "æ•‘æ€¥ç®±",
+			"game-healthkit-tooltip": "å·¦ã‚¯ãƒªãƒƒã‚¯ã?§HPã‚’100å›žå¾©ã?—ã?¾ã?™",
+			"game-soda": "ã‚½ãƒ¼ãƒ€",
+			"game-soda-tooltip": "å·¦ã‚¯ãƒªãƒƒã‚¯ã?§ã‚¢ãƒ‰ãƒ¬ãƒŠãƒªãƒ³ã‚’25å¢—åŠ ã?•ã?›ã?¾ã?™",
+			"game-adrenaline-tooltip": "ã‚¢ãƒ‰ãƒ¬ãƒŠãƒªãƒ³ã?¯HPã‚’æ™‚é–“ã?¨ã?¨ã‚‚ã?«è‡ªå‹•å›žå¾©ã?•ã?›ã?¾ã?™",
+			"game-painkiller": "éŽ®ç—›å‰¤",
+			"game-painkiller-tooltip": "å·¦ã‚¯ãƒªãƒƒã‚¯ã?§ã‚¢ãƒ‰ãƒ¬ãƒŠãƒªãƒ³ã‚’50å¢—åŠ ã?•ã?›ã?¾ã?™",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "MP5, MAC-10, UMP9, Vector, M9, Glock 18C用の弾薬",
+			"game-9mm-tooltip": "MP5, MAC-10, UMP9, Vector, M9, Glock 18Cç?¨ã?®å¼¾è–¬",
 			"game-12gauge": "12 gauge",
-			"game-12gauge-tooltip": "M870, MP220, Saiga-12用のの弾薬",
+			"game-12gauge-tooltip": "M870, MP220, Saiga-12ç?¨ã?®ã?®å¼¾è–¬",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "AK-47, SCAR-H, DP-28, Mosin-Nagant, M39EMR, OT-38用の弾薬",
+			"game-762mm-tooltip": "AK-47, SCAR-H, DP-28, Mosin Nagant, M39EMR, OT-38ç?¨ã?®å¼¾è–¬",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "FAMAS, HK416, Mk 12 SPR, M249用の弾薬",
-			"game-chest01": "レベル1 ベスト",
-			"game-chest02": "レベル2 ベスト",
-			"game-chest03": "レベル3 ベスト",
-			"game-helmet01": "レベル1 ヘルメット",
-			"game-helmet02": "レベル2 ヘルメット",
-			"game-helmet03": "レベル3 ヘルメット",
-			"game-1xscope": "1x スコープ",
-			"game-2xscope": "2x スコープ",
-			"game-4xscope": "4x スコープ",
-			"game-8xscope": "8x スコープ",
-			"game-15xscope": "15x スコープ",
-			"game-level-1": "レベル1",
-			"game-level-2": "レベル2",
-			"game-level-3": "レベル3",
+			"game-556mm-tooltip": "FAMAS, HK416, Mk 12 SPR, M249ç?¨ã?®å¼¾è–¬",
+			"game-chest01": "ãƒ¬ãƒ™ãƒ«1 ãƒ™ã‚¹ãƒˆ",
+			"game-chest02": "ãƒ¬ãƒ™ãƒ«2 ãƒ™ã‚¹ãƒˆ",
+			"game-chest03": "ãƒ¬ãƒ™ãƒ«3 ãƒ™ã‚¹ãƒˆ",
+			"game-helmet01": "ãƒ¬ãƒ™ãƒ«1 ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ",
+			"game-helmet02": "ãƒ¬ãƒ™ãƒ«2 ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ",
+			"game-helmet03": "ãƒ¬ãƒ™ãƒ«3 ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆ",
+			"game-1xscope": "1x ã‚¹ã‚³ãƒ¼ãƒ—",
+			"game-2xscope": "2x ã‚¹ã‚³ãƒ¼ãƒ—",
+			"game-4xscope": "4x ã‚¹ã‚³ãƒ¼ãƒ—",
+			"game-8xscope": "8x ã‚¹ã‚³ãƒ¼ãƒ—",
+			"game-15xscope": "15x ã‚¹ã‚³ãƒ¼ãƒ—",
+			"game-level-1": "ãƒ¬ãƒ™ãƒ«1",
+			"game-level-2": "ãƒ¬ãƒ™ãƒ«2",
+			"game-level-3": "ãƒ¬ãƒ™ãƒ«3",
 			"game-outfitBase": "Basic Outfit",
 			"game-outfitRoyalFortune": "Royal Fortune",
 			"game-outfitKeyLime": "Key Lime",
@@ -5338,10 +5142,10 @@ webpackJsonp([0], {
 			"game-outfitWhite": "Arctic Avenger",
 			"game-outfitWoodland": "Woodland Combat",
 			"game-outfitJester": "Jester's Folly",
-			"game-fists": "拳",
+			"game-fists": "æ‹³",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -5362,13 +5166,13 @@ webpackJsonp([0], {
 			"game-hk416": "HK416",
 			"game-mk12": "Mk 12 SPR",
 			"game-m249": "M249",
-			"game-frag": "手榴弾",
-			"game-hud-frag": "手榴弾",
-			"game-smoke": "スモークグレネード",
-			"game-hud-smoke": "スモーク",
-			"game-barrel_01": "バレル",
-			"game-silo_01": "サイロ",
-			"game-oven_01": "オーブン"
+			"game-frag": "æ‰‹æ¦´å¼¾",
+			"game-hud-frag": "æ‰‹æ¦´å¼¾",
+			"game-smoke": "ã‚¹ãƒ¢ãƒ¼ã‚¯ã‚°ãƒ¬ãƒ?ãƒ¼ãƒ‰",
+			"game-hud-smoke": "ã‚¹ãƒ¢ãƒ¼ã‚¯",
+			"game-barrel_01": "ãƒ?ãƒ¬ãƒ«",
+			"game-silo_01": "ã‚µã‚¤ãƒ­",
+			"game-oven_01": "ã‚ªãƒ¼ãƒ–ãƒ³"
 		};
 		e.exports = i
 	},
@@ -5439,14 +5243,7 @@ webpackJsonp([0], {
 		function i(e, t) {
 			if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 		}
-
-		function o() {
-			function e() {
-				return Math.floor(Math.random() * Math.pow(2, 32)).toString(16)
-			}
-			return e() + e()
-		}
-		var n = function() {
+		var o = function() {
 				function e(e, t) {
 					for (var a = 0; a < t.length; a++) {
 						var i = t[a];
@@ -5457,12 +5254,12 @@ webpackJsonp([0], {
 					return a && e(t.prototype, a), i && e(t, i), t
 				}
 			}(),
-			r = a("juYr"),
-			s = function() {
+			n = a("juYr"),
+			r = function() {
 				function e() {
-					i(this, e), this.instanceId = o(), this.requests = 0, this.enabled = !0, this.throttle = !1, this.throttleTimeout = 0
+					i(this, e), this.requests = 0, this.enabled = !0, this.throttle = !1, this.throttleTimeout = 0
 				}
-				return n(e, [{
+				return o(e, [{
 					key: "update",
 					value: function() {
 						var e = (new Date).getTime();
@@ -5479,7 +5276,7 @@ webpackJsonp([0], {
 						if (this.enabled) {
 							if (++this.requests > 5) return this.throttleTimeout = (new Date).getTime() + 18e4, void(this.throttle = !0);
 							var a = "https://us-central1-surviv-fa40f.cloudfunctions.net/" + e;
-							t.key = "AIzaSyCrPuZeAQ2-aXZdTwZNwQJdv4rvsTE-2i8", r.ajax({
+							t.key = "AIzaSyCrPuZeAQ2-aXZdTwZNwQJdv4rvsTE-2i8", n.ajax({
 								type: "POST",
 								dataType: "html",
 								url: a,
@@ -5533,10 +5330,10 @@ webpackJsonp([0], {
 					}
 				}]), e
 			}(),
-			l = new s;
+			s = new r;
 		setInterval(function() {
-			l.update()
-		}, 1e3), e.exports = l
+			s.update()
+		}, 1e3), e.exports = s
 	},
 	"8iex": function(e, t, a) {
 		"use strict";
@@ -5725,244 +5522,244 @@ webpackJsonp([0], {
 				locale: "ru"
 			},
 			"word-order": "svo",
-			"index-slogan": "Королевская Битва в 2D",
-			"index-region": "Регион",
-			"index-north-america": "Северная Америка",
-			"index-europe": "Европа",
-			"index-asia": "Азия",
-			"index-players": "игроков",
-			"index-play-solo": "Играть Соло",
-			"index-play-duo": "Играть в Дуэте",
-			"index-play-squad": "Играть в Отряд",
-			"index-join-team": "Войти в команду",
-			"index-create-team": "Создать Команду",
-			"index-how-to-play": "Как играть",
-			"index-leave-team": "Покинуть Команду",
-			"index-joining-team": "Присоединение к Команде",
-			"index-creating-team": "Создание Команды",
-			"index-invite-link": "Ссылка-приглашение",
-			"index-invite-code": "Код приглашения",
-			"index-join-team-help": "Есть ссылка на команду или код? Напиши его сюда:",
-			"index-solo": "Соло",
-			"index-duo": "Дуэт",
-			"index-squad": "Отряд",
-			"index-auto-fill": "Автозаполнение",
-			"index-no-fill": "Не заполнять",
-			"index-waiting-for-leader": "Ожидание лидера, чтобы начать игру",
-			"index-play": "Играть",
-			"index-customize-loadout": "Настраиваемые эмоции",
-			"index-twitter-follow": "Следовать в Twitter",
-			"index-youtube-subscribe": "Подписаться на YouTube",
-			"index-facebook-like": "Лайкнуть в Facebook",
-			"index-featured-youtuber": "Рекомендуемые Ютуберы",
-			"index-streaming-live": "Сейчас стримят!",
-			"index-settings": "Настройки",
-			"index-high-resolution": "Высокое разрешение (проверьте, чтобы увеличить качество изображения)",
-			"index-screen-shake": "Дрожание экрана",
-			"index-master-volume": "Уровень Громкости",
-			"index-sfx-volume": " Громкость Эффектов",
-			"index-music-volume": "Громкость Музыки",
-			"index-mobile-announce": "Теперь доступно на ваших телефонах!",
-			"index-mobile-tooltip": "Вы можете зайти в surviv.io на своём телефоне, играйте в <span>surviv.io</span> в любом месте!",
-			"index-version": "версия",
-			"index-privacy": "Конфиденциальность",
-			"index-attributions": "атрибуции",
-			"index-proxy-sites": "прокси сайты",
-			"index-team-is-full": "Команда заполнена!",
-			"index-failed-joining-team": "Не удалось присоединиться к команде.",
-			"index-failed-creating-team": "Не удалось создать команду.",
-			"index-failed-finding-game": "Не удалось найти игру.",
-			"index-failed-joining-game": "Не удалось присоединиться к игре.",
-			"index-lost-connection": "Соединение с командой прервалось.",
-			"index-host-closed": "Соединение с сервером закрыто.",
-			"index-view-more": "Посмотреть ещё",
-			"index-back-to-main": "Вернуться в главное меню",
-			"index-most-kills": "Наибольшее кол-во убийств",
-			"index-total-kills": "Всего убийств",
-			"index-total-wins": "Всего побед",
-			"index-top-5-percent": "Процент Топ 5",
-			"index-kill-death-ratio": "Соотношение убийство-смерть",
-			"index-for": "За",
-			"index-today": "Сегодня",
-			"index-this-week": "Эту неделю",
-			"index-all-time": "Всё время",
+			"index-slogan": "?š?¾Ñ€?¾?»?µ?²Ñ??º?°Ñ? ?‘?¸Ñ‚?²?° ?² 2D",
+			"index-region": "? ?µ?³?¸?¾?½",
+			"index-north-america": "?¡?µ?²?µÑ€?½?°Ñ? ???¼?µÑ€?¸?º?°",
+			"index-europe": "?•?²Ñ€?¾?¿?°",
+			"index-asia": "???·?¸Ñ?",
+			"index-players": "?¸?³Ñ€?¾?º?¾?²",
+			"index-play-solo": "?˜?³Ñ€?°Ñ‚ÑŒ ?¡?¾?»?¾",
+			"index-play-duo": "?˜?³Ñ€?°Ñ‚ÑŒ ?² ??ÑƒÑ?Ñ‚?µ",
+			"index-play-squad": "?˜?³Ñ€?°Ñ‚ÑŒ ?² ?žÑ‚Ñ€Ñ??´",
+			"index-join-team": "?’?¾?¹Ñ‚?¸ ?² ?º?¾?¼?°?½?´Ñƒ",
+			"index-create-team": "?¡?¾?·?´?°Ñ‚ÑŒ ?š?¾?¼?°?½?´Ñƒ",
+			"index-how-to-play": "?š?°?º ?¸?³Ñ€?°Ñ‚ÑŒ",
+			"index-leave-team": "?Ÿ?¾?º?¸?½ÑƒÑ‚ÑŒ ?š?¾?¼?°?½?´Ñƒ",
+			"index-joining-team": "?ŸÑ€?¸Ñ??¾?µ?´?¸?½?µ?½?¸?µ ?º ?š?¾?¼?°?½?´?µ",
+			"index-creating-team": "?¡?¾?·?´?°?½?¸?µ ?š?¾?¼?°?½?´Ñ‹",
+			"index-invite-link": "?¡Ñ?Ñ‹?»?º?°-?¿Ñ€?¸?³?»?°Ñˆ?µ?½?¸?µ",
+			"index-invite-code": "?š?¾?´ ?¿Ñ€?¸?³?»?°Ñˆ?µ?½?¸Ñ?",
+			"index-join-team-help": "?•Ñ?Ñ‚ÑŒ Ñ?Ñ?Ñ‹?»?º?° ?½?° ?º?¾?¼?°?½?´Ñƒ ?¸?»?¸ ?º?¾?´? ???°?¿?¸Ñˆ?¸ ?µ?³?¾ Ñ?ÑŽ?´?°:",
+			"index-solo": "?¡?¾?»?¾",
+			"index-duo": "??ÑƒÑ?Ñ‚",
+			"index-squad": "?žÑ‚Ñ€Ñ??´",
+			"index-auto-fill": "???²Ñ‚?¾?·?°?¿?¾?»?½?µ?½?¸?µ",
+			"index-no-fill": "???µ ?·?°?¿?¾?»?½Ñ?Ñ‚ÑŒ",
+			"index-waiting-for-leader": "?ž?¶?¸?´?°?½?¸?µ ?»?¸?´?µÑ€?°, Ñ‡Ñ‚?¾?±Ñ‹ ?½?°Ñ‡?°Ñ‚ÑŒ ?¸?³Ñ€Ñƒ",
+			"index-play": "?˜?³Ñ€?°Ñ‚ÑŒ",
+			"index-customize-loadout": "???°Ñ?Ñ‚Ñ€?°?¸?²?°?µ?¼Ñ‹?µ Ñ??¼?¾Ñ†?¸?¸",
+			"index-twitter-follow": "?¡?»?µ?´?¾?²?°Ñ‚ÑŒ ?² Twitter",
+			"index-youtube-subscribe": "?Ÿ?¾?´?¿?¸Ñ??°Ñ‚ÑŒÑ?Ñ? ?½?° YouTube",
+			"index-facebook-like": "?›?°?¹?º?½ÑƒÑ‚ÑŒ ?² Facebook",
+			"index-featured-youtuber": "? ?µ?º?¾?¼?µ?½?´Ñƒ?µ?¼Ñ‹?µ ?®Ñ‚Ñƒ?±?µÑ€Ñ‹",
+			"index-streaming-live": "?¡?µ?¹Ñ‡?°Ñ? Ñ?Ñ‚Ñ€?¸?¼Ñ?Ñ‚!",
+			"index-settings": "???°Ñ?Ñ‚Ñ€?¾?¹?º?¸",
+			"index-high-resolution": "?’Ñ‹Ñ??¾?º?¾?µ Ñ€?°?·Ñ€?µÑˆ?µ?½?¸?µ (?¿Ñ€?¾?²?µÑ€ÑŒÑ‚?µ, Ñ‡Ñ‚?¾?±Ñ‹ Ñƒ?²?µ?»?¸Ñ‡?¸Ñ‚ÑŒ ?º?°Ñ‡?µÑ?Ñ‚?²?¾ ?¸?·?¾?±Ñ€?°?¶?µ?½?¸Ñ?)",
+			"index-screen-shake": "??Ñ€?¾?¶?°?½?¸?µ Ñ??ºÑ€?°?½?°",
+			"index-master-volume": "?£Ñ€?¾?²?µ?½ÑŒ ?“Ñ€?¾?¼?º?¾Ñ?Ñ‚?¸",
+			"index-sfx-volume": " ?“Ñ€?¾?¼?º?¾Ñ?Ñ‚ÑŒ ?­Ñ„Ñ„?µ?ºÑ‚?¾?²",
+			"index-music-volume": "?“Ñ€?¾?¼?º?¾Ñ?Ñ‚ÑŒ ?œÑƒ?·Ñ‹?º?¸",
+			"index-mobile-announce": "?¢?µ?¿?µÑ€ÑŒ ?´?¾Ñ?Ñ‚Ñƒ?¿?½?¾ ?½?° ?²?°Ñˆ?¸Ñ… Ñ‚?µ?»?µÑ„?¾?½?°Ñ…!",
+			"index-mobile-tooltip": "?’Ñ‹ ?¼?¾?¶?µÑ‚?µ ?·?°?¹Ñ‚?¸ ?² surviv.io ?½?° Ñ??²?¾Ñ‘?¼ Ñ‚?µ?»?µÑ„?¾?½?µ, ?¸?³Ñ€?°?¹Ñ‚?µ ?² <span>surviv.io</span> ?² ?»ÑŽ?±?¾?¼ ?¼?µÑ?Ñ‚?µ!",
+			"index-version": "?²?µÑ€Ñ??¸Ñ?",
+			"index-privacy": "?š?¾?½Ñ„?¸?´?µ?½Ñ†?¸?°?»ÑŒ?½?¾Ñ?Ñ‚ÑŒ",
+			"index-attributions": "?°Ñ‚Ñ€?¸?±ÑƒÑ†?¸?¸",
+			"index-proxy-sites": "?¿Ñ€?¾?ºÑ??¸ Ñ??°?¹Ñ‚Ñ‹",
+			"index-team-is-full": "?š?¾?¼?°?½?´?° ?·?°?¿?¾?»?½?µ?½?°!",
+			"index-failed-joining-team": "???µ Ñƒ?´?°?»?¾Ñ?ÑŒ ?¿Ñ€?¸Ñ??¾?µ?´?¸?½?¸Ñ‚ÑŒÑ?Ñ? ?º ?º?¾?¼?°?½?´?µ.",
+			"index-failed-creating-team": "???µ Ñƒ?´?°?»?¾Ñ?ÑŒ Ñ??¾?·?´?°Ñ‚ÑŒ ?º?¾?¼?°?½?´Ñƒ.",
+			"index-failed-finding-game": "???µ Ñƒ?´?°?»?¾Ñ?ÑŒ ?½?°?¹Ñ‚?¸ ?¸?³Ñ€Ñƒ.",
+			"index-failed-joining-game": "???µ Ñƒ?´?°?»?¾Ñ?ÑŒ ?¿Ñ€?¸Ñ??¾?µ?´?¸?½?¸Ñ‚ÑŒÑ?Ñ? ?º ?¸?³Ñ€?µ.",
+			"index-lost-connection": "?¡?¾?µ?´?¸?½?µ?½?¸?µ Ñ? ?º?¾?¼?°?½?´?¾?¹ ?¿Ñ€?µÑ€?²?°?»?¾Ñ?ÑŒ.",
+			"index-host-closed": "?¡?¾?µ?´?¸?½?µ?½?¸?µ Ñ? Ñ??µÑ€?²?µÑ€?¾?¼ ?·?°?ºÑ€Ñ‹Ñ‚?¾.",
+			"index-view-more": "?Ÿ?¾Ñ??¼?¾Ñ‚Ñ€?µÑ‚ÑŒ ?µÑ‰Ñ‘",
+			"index-back-to-main": "?’?µÑ€?½ÑƒÑ‚ÑŒÑ?Ñ? ?² ?³?»?°?²?½?¾?µ ?¼?µ?½ÑŽ",
+			"index-most-kills": "???°?¸?±?¾?»ÑŒÑˆ?µ?µ ?º?¾?»-?²?¾ Ñƒ?±?¸?¹Ñ?Ñ‚?²",
+			"index-total-kills": "?’Ñ??µ?³?¾ Ñƒ?±?¸?¹Ñ?Ñ‚?²",
+			"index-total-wins": "?’Ñ??µ?³?¾ ?¿?¾?±?µ?´",
+			"index-top-5-percent": "?ŸÑ€?¾Ñ†?µ?½Ñ‚ ?¢?¾?¿ 5",
+			"index-kill-death-ratio": "?¡?¾?¾Ñ‚?½?¾Ñˆ?µ?½?¸?µ Ñƒ?±?¸?¹Ñ?Ñ‚?²?¾-Ñ??¼?µÑ€Ñ‚ÑŒ",
+			"index-for": "?—?°",
+			"index-today": "?¡?µ?³?¾?´?½Ñ?",
+			"index-this-week": "?­Ñ‚Ñƒ ?½?µ?´?µ?»ÑŽ",
+			"index-all-time": "?’Ñ?Ñ‘ ?²Ñ€?µ?¼Ñ?",
 			"index-top-100": "TOP 100",
-			"index-rank": "Ранг",
-			"index-player": "Игрок",
-			"index-total-games": "Всего игр",
-			"index-controls": "Управление",
-			"index-movement": "Перемещение",
+			"index-rank": "? ?°?½?³",
+			"index-player": "?˜?³Ñ€?¾?º",
+			"index-total-games": "?’Ñ??µ?³?¾ ?¸?³Ñ€",
+			"index-controls": "?£?¿Ñ€?°?²?»?µ?½?¸?µ",
+			"index-movement": "?Ÿ?µÑ€?µ?¼?µÑ‰?µ?½?¸?µ",
 			"index-movement-ctrl": "W, A, S, D",
-			"index-aim": "Целиться",
-			"index-aim-ctrl": "Мышь",
-			"index-punch": "Ударить",
-			"index-shoot": "Выстрелить",
-			"index-shoot-ctrl": "Левый Щелчок",
-			"index-change-weapons": "Сменить Оружие",
-			"index-change-weapons-ctrl": "1-4 или Колесо Прокрутки",
-			"index-stow-weapons": "Убрать оружие из рук",
-			"index-stow-weapons-ctrl": "3 или Е",
-			"index-swap-weapons": "Смена на Предыдущее Оружие",
+			"index-aim": "?¦?µ?»?¸Ñ‚ÑŒÑ?Ñ?",
+			"index-aim-ctrl": "?œÑ‹ÑˆÑŒ",
+			"index-punch": "?£?´?°Ñ€?¸Ñ‚ÑŒ",
+			"index-shoot": "?’Ñ‹Ñ?Ñ‚Ñ€?µ?»?¸Ñ‚ÑŒ",
+			"index-shoot-ctrl": "?›?µ?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º",
+			"index-change-weapons": "?¡?¼?µ?½?¸Ñ‚ÑŒ ?žÑ€Ñƒ?¶?¸?µ",
+			"index-change-weapons-ctrl": "1-4 ?¸?»?¸ ?š?¾?»?µÑ??¾ ?ŸÑ€?¾?ºÑ€ÑƒÑ‚?º?¸",
+			"index-stow-weapons": "?£?±Ñ€?°Ñ‚ÑŒ ?¾Ñ€Ñƒ?¶?¸?µ ?¸?· Ñ€Ñƒ?º",
+			"index-stow-weapons-ctrl": "3 ?¸?»?¸ ?•",
+			"index-swap-weapons": "?¡?¼?µ?½?° ?½?° ?ŸÑ€?µ?´Ñ‹?´ÑƒÑ‰?µ?µ ?žÑ€Ñƒ?¶?¸?µ",
 			"index-swap-weapons-ctrl": "Q",
-			"index-reload": "Перезарядка",
+			"index-reload": "?Ÿ?µÑ€?µ?·?°Ñ€Ñ??´?º?°",
 			"index-reload-ctrl": "R",
-			"index-scope-zoom": "Смена прицела",
-			"index-scope-zoom-ctrl": "Левый щелчок на Прицел",
-			"index-pickup": "Подобрать добычу",
-			"index-loot": "Добычу",
-			"index-revive": "оживление",
+			"index-scope-zoom": "?¡?¼?µ?½?° ?¿Ñ€?¸Ñ†?µ?»?°",
+			"index-scope-zoom-ctrl": "?›?µ?²Ñ‹?¹ Ñ‰?µ?»Ñ‡?¾?º ?½?° ?ŸÑ€?¸Ñ†?µ?»",
+			"index-pickup": "?Ÿ?¾?´?¾?±Ñ€?°Ñ‚ÑŒ ?´?¾?±Ñ‹Ñ‡Ñƒ",
+			"index-loot": "???¾?±Ñ‹Ñ‡Ñƒ",
+			"index-revive": "?¾?¶?¸?²?»?µ?½?¸?µ",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "Медицинский Предмет change on Медикамент",
-			"index-use-medical-ctrl": "Левый Щелчок на Предмет или цифры от 0-7",
-			"index-drop-item": "Выкинуть предмет",
-			"index-drop-item-ctrl": "Правый Щелчок на Предмет",
-			"index-cancel-action": "Отменить действие",
+			"index-use-medical": "?œ?µ?´?¸Ñ†?¸?½Ñ??º?¸?¹ ?ŸÑ€?µ?´?¼?µÑ‚ change on ?œ?µ?´?¸?º?°?¼?µ?½Ñ‚",
+			"index-use-medical-ctrl": "?›?µ?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º ?½?° ?ŸÑ€?µ?´?¼?µÑ‚ ?¸?»?¸ Ñ†?¸Ñ„Ñ€Ñ‹ ?¾Ñ‚ 0-7",
+			"index-drop-item": "?’Ñ‹?º?¸?½ÑƒÑ‚ÑŒ ?¿Ñ€?µ?´?¼?µÑ‚",
+			"index-drop-item-ctrl": "?ŸÑ€?°?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º ?½?° ?ŸÑ€?µ?´?¼?µÑ‚",
+			"index-cancel-action": "?žÑ‚?¼?µ?½?¸Ñ‚ÑŒ ?´?µ?¹Ñ?Ñ‚?²?¸?µ",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "Посмотреть Карту",
-			"index-view-map-ctrl": "M или G",
-			"index-toggle-minimap": "Переключить режим просмотра",
+			"index-view-map": "?Ÿ?¾Ñ??¼?¾Ñ‚Ñ€?µÑ‚ÑŒ ?š?°Ñ€Ñ‚Ñƒ",
+			"index-view-map-ctrl": "M ?¸?»?¸ G",
+			"index-toggle-minimap": "?Ÿ?µÑ€?µ?º?»ÑŽÑ‡?¸Ñ‚ÑŒ Ñ€?µ?¶?¸?¼ ?¿Ñ€?¾Ñ??¼?¾Ñ‚Ñ€?°",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "Использование команд",
-			"index-use-ping-ctrl": "Удерживая C зажать Правую кнопку мыши и водить мышкой, затем выбрав команду отпустить",
-			"index-use-emote": "Использование Эмодзи",
-			"index-use-emote-ctrl": "Зажать Правую кнопку мыши и водить мышкой, затем отпустить Правую кнопку мыши",
-			"index-tips-1-desc": "Цель surviv.io - остаться последним выжившим. В одном раунде у вас только одна жизнь и нет возможности возродиться.",
-			"index-tips-2": "PUBG в 2D",
-			"index-tips-2-desc": "Если вы играли в другие игры жанра Королевской Битвы (такие как PUBG, Fortnite или H1Z1), то вы уже знаете правила. По сути, surviv.io - это двумерный PUBG (только меньше лагает).",
-			"index-tips-3": "Убивай и добывай",
-			"index-tips-3-desc": "Вы начнете игру без каких-либо предметов или оружия, у вас есть только простой рюкзак. Передвигайтесь по карте, чтобы найти полезные вещи: оружие, боеприпасы, прицелы и медикаменты. Убивайте других игроков и забирайте себе их вещи!",
-			"index-tips-4": "Красный - опасный!",
-			"index-tips-4-desc": "Другие игроки - это не единственное, что может вас ранить. По ходу игры Красная Зона будет надвигаться с краёв карты и наносить всё больше урона, если вы окажетесь в ней. Так что посматривайте на карту и будьте осторожны!",
-			"game-alive": "В живых",
-			"game-reloading": "Перезарядка",
-			"game-using": "Использование",
-			"game-reviving": "Возрождение",
-			"game-revive-teammate": "Возродить Союзника",
-			"game-equip": "Взять",
-			"game-cancel": "Отмена",
-			"game-open-door": "Открыть дверь",
-			"game-close-door": "Закрыть дверь",
-			"game-You": "Вы",
-			"game-you": "вы",
-			"game-themselves": "себя",
-			"game-yourself": "себя",
-			"game-you-died": "умерли",
-			"game-player-died": "Умер",
-			"game-with": "с помощью",
-			"game-knocked-out": "Нокаутировал",
-			"game-killed": "убили",
-			"game-finally-killed": "наконец убили",
-			"game-finally-bled-out": "наконец умер",
-			"game-died-outside": "умер за пределами безопасной зоны",
-			"game-the-red-zone": "Красная зона",
-			"game-waiting-for-players": "Ожидание игроков",
-			"game-spectating": "Наблюдение за",
-			"game-red-zone-advances": "Красная зона наступит через",
-			"game-red-zone-advancing": "Красная зона наступает, доберитесь до безопасной зоны!",
-			"game-seconds": "секунды",
-			"game-minutes": "минуты",
-			"game-minute": "минута",
-			"game-m": "м",
-			"game-s": "с",
-			"game-not-enough-space": "Недостаточно места!",
-			"game-item-already-owned": "Этот предмет уже есть!",
-			"game-item-already-equipped": "Этот предмет уже экипирован!",
-			"game-better-item-equipped": "Предмет получше уже есть!",
-			"game-play-new-game": "Начать Новую Игру",
-			"game-spectate": "Наблюдать",
-			"game-full-screen": "Полный экран",
-			"game-sound": "Звук",
-			"game-quit-game": "Выйти из Игры",
-			"game-return-to-game": "Вернуться в Игру",
-			"game-hide-match-stats": "Скрыть Статистику Матча",
-			"game-view-match-stats": "Посмотреть Статистику Матча",
-			"game-previous-teammate": "Предыдущий Напарник",
-			"game-next-teammate": "Следующий Напарник",
+			"index-use-ping": "?˜Ñ??¿?¾?»ÑŒ?·?¾?²?°?½?¸?µ ?º?¾?¼?°?½?´",
+			"index-use-ping-ctrl": "?£?´?µÑ€?¶?¸?²?°Ñ? C ?·?°?¶?°Ñ‚ÑŒ ?ŸÑ€?°?²ÑƒÑŽ ?º?½?¾?¿?ºÑƒ ?¼Ñ‹Ñˆ?¸ ?¸ ?²?¾?´?¸Ñ‚ÑŒ ?¼Ñ‹Ñˆ?º?¾?¹, ?·?°Ñ‚?µ?¼ ?²Ñ‹?±Ñ€?°?² ?º?¾?¼?°?½?´Ñƒ ?¾Ñ‚?¿ÑƒÑ?Ñ‚?¸Ñ‚ÑŒ",
+			"index-use-emote": "?˜Ñ??¿?¾?»ÑŒ?·?¾?²?°?½?¸?µ ?­?¼?¾?´?·?¸",
+			"index-use-emote-ctrl": "?—?°?¶?°Ñ‚ÑŒ ?ŸÑ€?°?²ÑƒÑŽ ?º?½?¾?¿?ºÑƒ ?¼Ñ‹Ñˆ?¸ ?¸ ?²?¾?´?¸Ñ‚ÑŒ ?¼Ñ‹Ñˆ?º?¾?¹, ?·?°Ñ‚?µ?¼ ?¾Ñ‚?¿ÑƒÑ?Ñ‚?¸Ñ‚ÑŒ ?ŸÑ€?°?²ÑƒÑŽ ?º?½?¾?¿?ºÑƒ ?¼Ñ‹Ñˆ?¸",
+			"index-tips-1-desc": "?¦?µ?»ÑŒ surviv.io - ?¾Ñ?Ñ‚?°Ñ‚ÑŒÑ?Ñ? ?¿?¾Ñ??»?µ?´?½?¸?¼ ?²Ñ‹?¶?¸?²Ñˆ?¸?¼. ?’ ?¾?´?½?¾?¼ Ñ€?°Ñƒ?½?´?µ Ñƒ ?²?°Ñ? Ñ‚?¾?»ÑŒ?º?¾ ?¾?´?½?° ?¶?¸?·?½ÑŒ ?¸ ?½?µÑ‚ ?²?¾?·?¼?¾?¶?½?¾Ñ?Ñ‚?¸ ?²?¾?·Ñ€?¾?´?¸Ñ‚ÑŒÑ?Ñ?.",
+			"index-tips-2": "PUBG ?² 2D",
+			"index-tips-2-desc": "?•Ñ??»?¸ ?²Ñ‹ ?¸?³Ñ€?°?»?¸ ?² ?´Ñ€Ñƒ?³?¸?µ ?¸?³Ñ€Ñ‹ ?¶?°?½Ñ€?° ?š?¾Ñ€?¾?»?µ?²Ñ??º?¾?¹ ?‘?¸Ñ‚?²Ñ‹ (Ñ‚?°?º?¸?µ ?º?°?º PUBG, Fortnite ?¸?»?¸ H1Z1), Ñ‚?¾ ?²Ñ‹ Ñƒ?¶?µ ?·?½?°?µÑ‚?µ ?¿Ñ€?°?²?¸?»?°. ?Ÿ?¾ Ñ?ÑƒÑ‚?¸, surviv.io - Ñ?Ñ‚?¾ ?´?²Ñƒ?¼?µÑ€?½Ñ‹?¹ PUBG (Ñ‚?¾?»ÑŒ?º?¾ ?¼?µ?½ÑŒÑˆ?µ ?»?°?³?°?µÑ‚).",
+			"index-tips-3": "?£?±?¸?²?°?¹ ?¸ ?´?¾?±Ñ‹?²?°?¹",
+			"index-tips-3-desc": "?’Ñ‹ ?½?°Ñ‡?½?µÑ‚?µ ?¸?³Ñ€Ñƒ ?±?µ?· ?º?°?º?¸Ñ…-?»?¸?±?¾ ?¿Ñ€?µ?´?¼?µÑ‚?¾?² ?¸?»?¸ ?¾Ñ€Ñƒ?¶?¸Ñ?, Ñƒ ?²?°Ñ? ?µÑ?Ñ‚ÑŒ Ñ‚?¾?»ÑŒ?º?¾ ?¿Ñ€?¾Ñ?Ñ‚?¾?¹ Ñ€ÑŽ?º?·?°?º. ?Ÿ?µÑ€?µ?´?²?¸?³?°?¹Ñ‚?µÑ?ÑŒ ?¿?¾ ?º?°Ñ€Ñ‚?µ, Ñ‡Ñ‚?¾?±Ñ‹ ?½?°?¹Ñ‚?¸ ?¿?¾?»?µ?·?½Ñ‹?µ ?²?µÑ‰?¸: ?¾Ñ€Ñƒ?¶?¸?µ, ?±?¾?µ?¿Ñ€?¸?¿?°Ñ?Ñ‹, ?¿Ñ€?¸Ñ†?µ?»Ñ‹ ?¸ ?¼?µ?´?¸?º?°?¼?µ?½Ñ‚Ñ‹. ?£?±?¸?²?°?¹Ñ‚?µ ?´Ñ€Ñƒ?³?¸Ñ… ?¸?³Ñ€?¾?º?¾?² ?¸ ?·?°?±?¸Ñ€?°?¹Ñ‚?µ Ñ??µ?±?µ ?¸Ñ… ?²?µÑ‰?¸!",
+			"index-tips-4": "?šÑ€?°Ñ??½Ñ‹?¹ - ?¾?¿?°Ñ??½Ñ‹?¹!",
+			"index-tips-4-desc": "??Ñ€Ñƒ?³?¸?µ ?¸?³Ñ€?¾?º?¸ - Ñ?Ñ‚?¾ ?½?µ ?µ?´?¸?½Ñ?Ñ‚?²?µ?½?½?¾?µ, Ñ‡Ñ‚?¾ ?¼?¾?¶?µÑ‚ ?²?°Ñ? Ñ€?°?½?¸Ñ‚ÑŒ. ?Ÿ?¾ Ñ…?¾?´Ñƒ ?¸?³Ñ€Ñ‹ ?šÑ€?°Ñ??½?°Ñ? ?—?¾?½?° ?±Ñƒ?´?µÑ‚ ?½?°?´?²?¸?³?°Ñ‚ÑŒÑ?Ñ? Ñ? ?ºÑ€?°Ñ‘?² ?º?°Ñ€Ñ‚Ñ‹ ?¸ ?½?°?½?¾Ñ??¸Ñ‚ÑŒ ?²Ñ?Ñ‘ ?±?¾?»ÑŒÑˆ?µ ÑƒÑ€?¾?½?°, ?µÑ??»?¸ ?²Ñ‹ ?¾?º?°?¶?µÑ‚?µÑ?ÑŒ ?² ?½?µ?¹. ?¢?°?º Ñ‡Ñ‚?¾ ?¿?¾Ñ??¼?°Ñ‚Ñ€?¸?²?°?¹Ñ‚?µ ?½?° ?º?°Ñ€Ñ‚Ñƒ ?¸ ?±Ñƒ?´ÑŒÑ‚?µ ?¾Ñ?Ñ‚?¾Ñ€?¾?¶?½Ñ‹!",
+			"game-alive": "?’ ?¶?¸?²Ñ‹Ñ…",
+			"game-reloading": "?Ÿ?µÑ€?µ?·?°Ñ€Ñ??´?º?°",
+			"game-using": "?˜Ñ??¿?¾?»ÑŒ?·?¾?²?°?½?¸?µ",
+			"game-reviving": "?’?¾?·Ñ€?¾?¶?´?µ?½?¸?µ",
+			"game-revive-teammate": "?’?¾?·Ñ€?¾?´?¸Ñ‚ÑŒ ?¡?¾ÑŽ?·?½?¸?º?°",
+			"game-equip": "?’?·Ñ?Ñ‚ÑŒ",
+			"game-cancel": "?žÑ‚?¼?µ?½?°",
+			"game-open-door": "?žÑ‚?ºÑ€Ñ‹Ñ‚ÑŒ ?´?²?µÑ€ÑŒ",
+			"game-close-door": "?—?°?ºÑ€Ñ‹Ñ‚ÑŒ ?´?²?µÑ€ÑŒ",
+			"game-You": "?’Ñ‹",
+			"game-you": "?²Ñ‹",
+			"game-themselves": "Ñ??µ?±Ñ?",
+			"game-yourself": "Ñ??µ?±Ñ?",
+			"game-you-died": "Ñƒ?¼?µÑ€?»?¸",
+			"game-player-died": "?£?¼?µÑ€",
+			"game-with": "Ñ? ?¿?¾?¼?¾Ñ‰ÑŒÑŽ",
+			"game-knocked-out": "???¾?º?°ÑƒÑ‚?¸Ñ€?¾?²?°?»",
+			"game-killed": "Ñƒ?±?¸?»?¸",
+			"game-finally-killed": "?½?°?º?¾?½?µÑ† Ñƒ?±?¸?»?¸",
+			"game-finally-bled-out": "?½?°?º?¾?½?µÑ† Ñƒ?¼?µÑ€",
+			"game-died-outside": "Ñƒ?¼?µÑ€ ?·?° ?¿Ñ€?µ?´?µ?»?°?¼?¸ ?±?µ?·?¾?¿?°Ñ??½?¾?¹ ?·?¾?½Ñ‹",
+			"game-the-red-zone": "?šÑ€?°Ñ??½?°Ñ? ?·?¾?½?°",
+			"game-waiting-for-players": "?ž?¶?¸?´?°?½?¸?µ ?¸?³Ñ€?¾?º?¾?²",
+			"game-spectating": "???°?±?»ÑŽ?´?µ?½?¸?µ ?·?°",
+			"game-red-zone-advances": "?šÑ€?°Ñ??½?°Ñ? ?·?¾?½?° ?½?°Ñ?Ñ‚Ñƒ?¿?¸Ñ‚ Ñ‡?µÑ€?µ?·",
+			"game-red-zone-advancing": "?šÑ€?°Ñ??½?°Ñ? ?·?¾?½?° ?½?°Ñ?Ñ‚Ñƒ?¿?°?µÑ‚, ?´?¾?±?µÑ€?¸Ñ‚?µÑ?ÑŒ ?´?¾ ?±?µ?·?¾?¿?°Ñ??½?¾?¹ ?·?¾?½Ñ‹!",
+			"game-seconds": "Ñ??µ?ºÑƒ?½?´Ñ‹",
+			"game-minutes": "?¼?¸?½ÑƒÑ‚Ñ‹",
+			"game-minute": "?¼?¸?½ÑƒÑ‚?°",
+			"game-m": "?¼",
+			"game-s": "Ñ?",
+			"game-not-enough-space": "???µ?´?¾Ñ?Ñ‚?°Ñ‚?¾Ñ‡?½?¾ ?¼?µÑ?Ñ‚?°!",
+			"game-item-already-owned": "?­Ñ‚?¾Ñ‚ ?¿Ñ€?µ?´?¼?µÑ‚ Ñƒ?¶?µ ?µÑ?Ñ‚ÑŒ!",
+			"game-item-already-equipped": "?­Ñ‚?¾Ñ‚ ?¿Ñ€?µ?´?¼?µÑ‚ Ñƒ?¶?µ Ñ??º?¸?¿?¸Ñ€?¾?²?°?½!",
+			"game-better-item-equipped": "?ŸÑ€?µ?´?¼?µÑ‚ ?¿?¾?»ÑƒÑ‡Ñˆ?µ Ñƒ?¶?µ ?µÑ?Ñ‚ÑŒ!",
+			"game-play-new-game": "???°Ñ‡?°Ñ‚ÑŒ ???¾?²ÑƒÑŽ ?˜?³Ñ€Ñƒ",
+			"game-spectate": "???°?±?»ÑŽ?´?°Ñ‚ÑŒ",
+			"game-full-screen": "?Ÿ?¾?»?½Ñ‹?¹ Ñ??ºÑ€?°?½",
+			"game-sound": "?—?²Ñƒ?º",
+			"game-quit-game": "?’Ñ‹?¹Ñ‚?¸ ?¸?· ?˜?³Ñ€Ñ‹",
+			"game-return-to-game": "?’?µÑ€?½ÑƒÑ‚ÑŒÑ?Ñ? ?² ?˜?³Ñ€Ñƒ",
+			"game-hide-match-stats": "?¡?ºÑ€Ñ‹Ñ‚ÑŒ ?¡Ñ‚?°Ñ‚?¸Ñ?Ñ‚?¸?ºÑƒ ?œ?°Ñ‚Ñ‡?°",
+			"game-view-match-stats": "?Ÿ?¾Ñ??¼?¾Ñ‚Ñ€?µÑ‚ÑŒ ?¡Ñ‚?°Ñ‚?¸Ñ?Ñ‚?¸?ºÑƒ ?œ?°Ñ‚Ñ‡?°",
+			"game-previous-teammate": "?ŸÑ€?µ?´Ñ‹?´ÑƒÑ‰?¸?¹ ???°?¿?°Ñ€?½?¸?º",
+			"game-next-teammate": "?¡?»?µ?´ÑƒÑŽÑ‰?¸?¹ ???°?¿?°Ñ€?½?¸?º",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "Покинуть Игру",
-			"game-your-results": "Твои Результаты",
-			"game-chicken": "Победа, победа после обеда!",
-			"game-won-the-game": "выиграл игру.",
-			"game-team-eliminated": "Ваша команда потерпела поражение.",
-			"game-rank": "Ранг",
-			"game-team-rank": "Ранг команды",
-			"game-team-kills": "Командных убийств",
-			"game-kill": "Убийство",
-			"game-kills": "Убийства",
-			"game-damage-dealt": "Нанесённый Урон",
-			"game-damage-taken": "Полученный Урон",
-			"game-survived": "Выжил",
-			"game-backpack00": "Патронташ",
-			"game-backpack01": "Маленький Рюкзак",
-			"game-backpack02": "Обычный Рюкзак",
-			"game-backpack03": "Военный Рюкзак",
-			"game-bandage": "Бинт",
-			"game-bandage-tooltip": "Левый Щелчок, чтобы восстановить 15 здоровья.",
-			"game-healing-tooltip": "Не востанавливает больше 75 здоровья.",
-			"game-healthkit": "Аптечка",
-			"game-healthkit-tooltip": "Левый Щелчок, чтобы восстановить 100 здоровья.",
-			"game-soda": "Сода",
-			"game-soda-tooltip": "Левый Щелчок, чтобы увеличить адреналин на 25.",
-			"game-adrenaline-tooltip": "Адреналин со временем восстанавливает здоровье.",
-			"game-painkiller": "Таблетки",
-			"game-painkiller-tooltip": "Левый Щелчок, чтобы увеличить адреналин на 50.",
-			"game-9mm": "9мм",
-			"game-9mm-tooltip": "Патроны для M9, Glock, MP5, MAC-10, UMP9 и Vector.",
-			"game-12gauge": "12 калибр",
-			"game-12gauge-tooltip": "Патроны для M870, Сайга-12 и MP220.",
-			"game-762mm": "7.62мм",
-			"game-762mm-tooltip": "Патроны для AK-47, SCAR-H, M39, Винтовка Мосина, OT-38 и DP-28.",
-			"game-556mm": "5.56мм",
-			"game-556mm-tooltip": "Патроны для FAMAS, HK416, Mk 12 и M249.",
-			"game-chest01": "Жилет 1-ого уровня",
-			"game-chest02": "Жилет 2-ого уровня",
-			"game-chest03": "Жилет 3-ого уровня",
-			"game-helmet01": "Шлем 1-ого уровня",
-			"game-helmet02": "Шлем 2-ого уровня",
-			"game-helmet03": "Шлем 3-ого уровня",
-			"game-1xscope": "1x Прицел",
-			"game-2xscope": "2x Прицел",
-			"game-4xscope": "4x Прицел",
-			"game-8xscope": "8x Прицел",
-			"game-15xscope": "15x Прицел",
-			"game-level-1": "1-й Ур.",
-			"game-level-2": "2-й Ур.",
-			"game-level-3": "3-й Ур.",
-			"game-outfitBase": "Базовая Экипировка",
-			"game-outfitRoyalFortune": "Королевская удача",
-			"game-outfitKeyLime": "Лаймовый оттенок",
-			"game-outfitCobaltShell": "Кобальтовая Оболочка",
-			"game-outfitCarbonFiber": "Углеродное волокно",
-			"game-outfitDarkGloves": "Профессионал",
-			"game-outfitGhillie": "Маскировочный костюм",
-			"game-outfitCamo": "Лесной камуфляж",
-			"game-outfitRed": "Мишень",
-			"game-outfitWhite": "Арктический Мститель",
-			"game-outfitWoodland": "Боевой камуфляж",
-			"game-outfitJester": "Шутовской Наряд",
-			"game-outfitPrisoner": "Новый Чёрный",
-			"game-outfitCasanova": "Сатиновая куртка",
-			"game-outfitKhaki": "Положивший Начало",
-			"game-fists": "удар",
+			"game-leave-game": "?Ÿ?¾?º?¸?½ÑƒÑ‚ÑŒ ?˜?³Ñ€Ñƒ",
+			"game-your-results": "?¢?²?¾?¸ ? ?µ?·Ñƒ?»ÑŒÑ‚?°Ñ‚Ñ‹",
+			"game-chicken": "?Ÿ?¾?±?µ?´?°, ?¿?¾?±?µ?´?° ?¿?¾Ñ??»?µ ?¾?±?µ?´?°!",
+			"game-won-the-game": "?²Ñ‹?¸?³Ñ€?°?» ?¸?³Ñ€Ñƒ.",
+			"game-team-eliminated": "?’?°Ñˆ?° ?º?¾?¼?°?½?´?° ?¿?¾Ñ‚?µÑ€?¿?µ?»?° ?¿?¾Ñ€?°?¶?µ?½?¸?µ.",
+			"game-rank": "? ?°?½?³",
+			"game-team-rank": "? ?°?½?³ ?º?¾?¼?°?½?´Ñ‹",
+			"game-team-kills": "?š?¾?¼?°?½?´?½Ñ‹Ñ… Ñƒ?±?¸?¹Ñ?Ñ‚?²",
+			"game-kill": "?£?±?¸?¹Ñ?Ñ‚?²?¾",
+			"game-kills": "?£?±?¸?¹Ñ?Ñ‚?²?°",
+			"game-damage-dealt": "???°?½?µÑ?Ñ‘?½?½Ñ‹?¹ ?£Ñ€?¾?½",
+			"game-damage-taken": "?Ÿ?¾?»ÑƒÑ‡?µ?½?½Ñ‹?¹ ?£Ñ€?¾?½",
+			"game-survived": "?’Ñ‹?¶?¸?»",
+			"game-backpack00": "?Ÿ?°Ñ‚Ñ€?¾?½Ñ‚?°Ñˆ",
+			"game-backpack01": "?œ?°?»?µ?½ÑŒ?º?¸?¹ ? ÑŽ?º?·?°?º",
+			"game-backpack02": "?ž?±Ñ‹Ñ‡?½Ñ‹?¹ ? ÑŽ?º?·?°?º",
+			"game-backpack03": "?’?¾?µ?½?½Ñ‹?¹ ? ÑŽ?º?·?°?º",
+			"game-bandage": "?‘?¸?½Ñ‚",
+			"game-bandage-tooltip": "?›?µ?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º, Ñ‡Ñ‚?¾?±Ñ‹ ?²?¾Ñ?Ñ?Ñ‚?°?½?¾?²?¸Ñ‚ÑŒ 15 ?·?´?¾Ñ€?¾?²ÑŒÑ?.",
+			"game-healing-tooltip": "???µ ?²?¾Ñ?Ñ‚?°?½?°?²?»?¸?²?°?µÑ‚ ?±?¾?»ÑŒÑˆ?µ 75 ?·?´?¾Ñ€?¾?²ÑŒÑ?.",
+			"game-healthkit": "???¿Ñ‚?µÑ‡?º?°",
+			"game-healthkit-tooltip": "?›?µ?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º, Ñ‡Ñ‚?¾?±Ñ‹ ?²?¾Ñ?Ñ?Ñ‚?°?½?¾?²?¸Ñ‚ÑŒ 100 ?·?´?¾Ñ€?¾?²ÑŒÑ?.",
+			"game-soda": "?¡?¾?´?°",
+			"game-soda-tooltip": "?›?µ?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º, Ñ‡Ñ‚?¾?±Ñ‹ Ñƒ?²?µ?»?¸Ñ‡?¸Ñ‚ÑŒ ?°?´Ñ€?µ?½?°?»?¸?½ ?½?° 25.",
+			"game-adrenaline-tooltip": "???´Ñ€?µ?½?°?»?¸?½ Ñ??¾ ?²Ñ€?µ?¼?µ?½?µ?¼ ?²?¾Ñ?Ñ?Ñ‚?°?½?°?²?»?¸?²?°?µÑ‚ ?·?´?¾Ñ€?¾?²ÑŒ?µ.",
+			"game-painkiller": "?¢?°?±?»?µÑ‚?º?¸",
+			"game-painkiller-tooltip": "?›?µ?²Ñ‹?¹ ?©?µ?»Ñ‡?¾?º, Ñ‡Ñ‚?¾?±Ñ‹ Ñƒ?²?µ?»?¸Ñ‡?¸Ñ‚ÑŒ ?°?´Ñ€?µ?½?°?»?¸?½ ?½?° 50.",
+			"game-9mm": "9?¼?¼",
+			"game-9mm-tooltip": "?Ÿ?°Ñ‚Ñ€?¾?½Ñ‹ ?´?»Ñ? M9, Glock, MP5, MAC-10, UMP9 ?¸ Vector.",
+			"game-12gauge": "12 ?º?°?»?¸?±Ñ€",
+			"game-12gauge-tooltip": "?Ÿ?°Ñ‚Ñ€?¾?½Ñ‹ ?´?»Ñ? M870, ?¡?°?¹?³?°-12 ?¸ MP220.",
+			"game-762mm": "7.62?¼?¼",
+			"game-762mm-tooltip": "?Ÿ?°Ñ‚Ñ€?¾?½Ñ‹ ?´?»Ñ? AK-47, SCAR-H, M39, ?’?¸?½Ñ‚?¾?²?º?° ?œ?¾Ñ??¸?½?°, OT-38 ?¸ DP-28.",
+			"game-556mm": "5.56?¼?¼",
+			"game-556mm-tooltip": "?Ÿ?°Ñ‚Ñ€?¾?½Ñ‹ ?´?»Ñ? FAMAS, HK416, Mk 12 ?¸ M249.",
+			"game-chest01": "?–?¸?»?µÑ‚ 1-?¾?³?¾ ÑƒÑ€?¾?²?½Ñ?",
+			"game-chest02": "?–?¸?»?µÑ‚ 2-?¾?³?¾ ÑƒÑ€?¾?²?½Ñ?",
+			"game-chest03": "?–?¸?»?µÑ‚ 3-?¾?³?¾ ÑƒÑ€?¾?²?½Ñ?",
+			"game-helmet01": "?¨?»?µ?¼ 1-?¾?³?¾ ÑƒÑ€?¾?²?½Ñ?",
+			"game-helmet02": "?¨?»?µ?¼ 2-?¾?³?¾ ÑƒÑ€?¾?²?½Ñ?",
+			"game-helmet03": "?¨?»?µ?¼ 3-?¾?³?¾ ÑƒÑ€?¾?²?½Ñ?",
+			"game-1xscope": "1x ?ŸÑ€?¸Ñ†?µ?»",
+			"game-2xscope": "2x ?ŸÑ€?¸Ñ†?µ?»",
+			"game-4xscope": "4x ?ŸÑ€?¸Ñ†?µ?»",
+			"game-8xscope": "8x ?ŸÑ€?¸Ñ†?µ?»",
+			"game-15xscope": "15x ?ŸÑ€?¸Ñ†?µ?»",
+			"game-level-1": "1-?¹ ?£Ñ€.",
+			"game-level-2": "2-?¹ ?£Ñ€.",
+			"game-level-3": "3-?¹ ?£Ñ€.",
+			"game-outfitBase": "?‘?°?·?¾?²?°Ñ? ?­?º?¸?¿?¸Ñ€?¾?²?º?°",
+			"game-outfitRoyalFortune": "?š?¾Ñ€?¾?»?µ?²Ñ??º?°Ñ? Ñƒ?´?°Ñ‡?°",
+			"game-outfitKeyLime": "?›?°?¹?¼?¾?²Ñ‹?¹ ?¾Ñ‚Ñ‚?µ?½?¾?º",
+			"game-outfitCobaltShell": "?š?¾?±?°?»ÑŒÑ‚?¾?²?°Ñ? ?ž?±?¾?»?¾Ñ‡?º?°",
+			"game-outfitCarbonFiber": "?£?³?»?µÑ€?¾?´?½?¾?µ ?²?¾?»?¾?º?½?¾",
+			"game-outfitDarkGloves": "?ŸÑ€?¾Ñ„?µÑ?Ñ??¸?¾?½?°?»",
+			"game-outfitGhillie": "?œ?°Ñ??º?¸Ñ€?¾?²?¾Ñ‡?½Ñ‹?¹ ?º?¾Ñ?Ñ‚ÑŽ?¼",
+			"game-outfitCamo": "?›?µÑ??½?¾?¹ ?º?°?¼ÑƒÑ„?»Ñ??¶",
+			"game-outfitRed": "?œ?¸Ñˆ?µ?½ÑŒ",
+			"game-outfitWhite": "??Ñ€?ºÑ‚?¸Ñ‡?µÑ??º?¸?¹ ?œÑ?Ñ‚?¸Ñ‚?µ?»ÑŒ",
+			"game-outfitWoodland": "?‘?¾?µ?²?¾?¹ ?º?°?¼ÑƒÑ„?»Ñ??¶",
+			"game-outfitJester": "?¨ÑƒÑ‚?¾?²Ñ??º?¾?¹ ???°Ñ€Ñ??´",
+			"game-outfitPrisoner": "???¾?²Ñ‹?¹ ?§Ñ‘Ñ€?½Ñ‹?¹",
+			"game-outfitCasanova": "?¡?°Ñ‚?¸?½?¾?²?°Ñ? ?ºÑƒÑ€Ñ‚?º?°",
+			"game-outfitKhaki": "?Ÿ?¾?»?¾?¶?¸?²Ñˆ?¸?¹ ???°Ñ‡?°?»?¾",
+			"game-fists": "Ñƒ?´?°Ñ€",
 			"game-ak47": "AK-47",
-			"game-dp28": "ДП-28",
-			"game-mosin": "Винтовка Мосина",
+			"game-dp28": "???Ÿ-28",
+			"game-mosin": "?’?¸?½Ñ‚?¾?²?º?° ?œ?¾Ñ??¸?½?°",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
 			"game-ump9": "UMP9",
 			"game-m870": "M870",
 			"game-mp220": "MP220",
-			"game-saiga": "Сайга-12",
+			"game-saiga": "?¡?°?¹?³?°-12",
 			"game-m9": "M9",
 			"game-glock": "Glock 18C",
-			"game-ot38": "ОЦ-38",
-			"game-frag": "Осколочная Граната",
-			"game-hud-frag": "Осколочная",
-			"game-smoke": "Дымовая Граната",
-			"game-hud-smoke": "Дымовая",
-			"game-barrel_01": "взрывом бочки",
+			"game-ot38": "?ž?¦-38",
+			"game-frag": "?žÑ??º?¾?»?¾Ñ‡?½?°Ñ? ?“Ñ€?°?½?°Ñ‚?°",
+			"game-hud-frag": "?žÑ??º?¾?»?¾Ñ‡?½?°Ñ?",
+			"game-smoke": "??Ñ‹?¼?¾?²?°Ñ? ?“Ñ€?°?½?°Ñ‚?°",
+			"game-hud-smoke": "??Ñ‹?¼?¾?²?°Ñ?",
+			"game-barrel_01": "?²?·Ñ€Ñ‹?²?¾?¼ ?±?¾Ñ‡?º?¸",
 			"game-silo_01": "a silo"
 		};
 		e.exports = i
@@ -6425,16 +6222,16 @@ webpackJsonp([0], {
 		}
 
 		function n(e) {
-			var t = B[e];
+			var t = E[e];
 			if ("structure" == t.type) {
 				for (var a = [], i = 0; i < t.layers.length; i++) {
 					var r = t.layers[i],
 						s = o(r.ori),
-						l = D.transform(n(r.type), r.pos, s, 1);
-					a.push(D.toAabb(l))
+						l = A.transform(n(r.type), r.pos, s, 1);
+					a.push(A.toAabb(l))
 				}
-				var c = A.boundingAabb(a);
-				return D.createAabb(c.min, c.max)
+				var c = D.boundingAabb(a);
+				return A.createAabb(c.min, c.max)
 			}
 			if ("building" == t.type) {
 				for (var m = [], d = 0; d < t.floor.surfaces.length; d++) m = m.concat(t.floor.surfaces[d].collision);
@@ -6444,14 +6241,14 @@ webpackJsonp([0], {
 						h = u.type;
 					if ("function" == typeof h && (h = h()), "" != h) {
 						var g = o(u.ori),
-							f = D.transform(n(h), u.pos, g, u.scale);
-						m.push(D.toAabb(f))
+							f = A.transform(n(h), u.pos, g, u.scale);
+						m.push(A.toAabb(f))
 					}
 				}
-				var y = A.boundingAabb(m);
-				return D.createAabb(y.min, y.max)
+				var y = D.boundingAabb(m);
+				return A.createAabb(y.min, y.max)
 			}
-			return z(t.collision), t.collision
+			return I(t.collision), t.collision
 		}
 
 		function r(e, t, a) {
@@ -6470,7 +6267,7 @@ webpackJsonp([0], {
 		}
 
 		function l(e) {
-			return e && "object" === (void 0 === e ? "undefined" : I(e)) && !Array.isArray(e)
+			return e && "object" === (void 0 === e ? "undefined" : z(e)) && !Array.isArray(e)
 		}
 
 		function c(e) {
@@ -6488,7 +6285,7 @@ webpackJsonp([0], {
 				type: a,
 				weight: e[a]
 			});
-			z(t.length > 0);
+			I(t.length > 0);
 			for (var i = 0, o = 0; o < t.length; o++) i += t[o].weight;
 			return function() {
 				for (var e = O.random(0, i), a = 0; e > t[a].weight;) e -= t[a].weight, a++;
@@ -6514,7 +6311,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .8
 				},
-				collision: D.createCircle(L.create(0, 0), 1.75),
+				collision: A.createCircle(L.create(0, 0), 1.75),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -6557,7 +6354,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .75
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(3.5, 1)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(3.5, 1)),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -6600,7 +6397,7 @@ webpackJsonp([0], {
 					createMax: 1.2,
 					destroy: 1
 				},
-				collision: D.createCircle(L.create(0, 0), 1.4),
+				collision: A.createCircle(L.create(0, 0), 1.4),
 				height: 10,
 				collidable: !1,
 				destructible: !0,
@@ -6644,7 +6441,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .9
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(2.25, 1.6)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(2.25, 1.6)),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -6687,7 +6484,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .75
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(2.25, 1.6)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(2.25, 1.6)),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -6739,12 +6536,12 @@ webpackJsonp([0], {
 					scale: 1,
 					ori: 0
 				}, {
-					type: e.loot_spawner_01 || "loot_tier_2",
+					type: "loot_tier_2",
 					pos: L.create(0, 3.25),
 					scale: 1,
 					ori: 0
 				}, {
-					type: e.loot_spawner_02 || m({
+					type: m({
 						loot_tier_1: 2,
 						"": 1
 					}),
@@ -6780,29 +6577,28 @@ webpackJsonp([0], {
 				type: "building",
 				map: {
 					display: !0,
-					color: e.mapTint || 2703694,
+					color: e.tint,
 					scale: 1
 				},
 				terrain: {
 					grass: !0,
 					beach: !0
 				},
-				zIdx: 1,
 				floor: {
 					surfaces: [{
 						type: "container",
-						collision: [e.open ? D.createAabbExtents(L.create(0, 0), L.create(2.5, 11)) : D.createAabbExtents(L.create(0, 0), L.create(2.5, 8))]
+						collision: [e.open ? A.createAabbExtents(L.create(0, 0), L.create(2.5, 11)) : A.createAabbExtents(L.create(0, 0), L.create(2.5, 8))]
 					}],
 					imgs: [{
-						sprite: e.open ? "img/map/map-building-container-open-floor.svg" : "img/map/map-building-container-floor-01.svg",
+						sprite: e.open ? "img/map/map-building-container-open-floor.svg" : "img/map/map-building-container-floor.svg",
 						scale: .5,
 						alpha: 1,
 						tint: e.tint
 					}]
 				},
 				ceiling: {
-					scopeIn: [e.open ? D.createAabbExtents(L.create(0, 0), L.create(2.5, 5.75)) : D.createAabbExtents(L.create(0, 2.25), L.create(2.5, 5.5))],
-					scopeOut: [e.open ? D.createAabbExtents(L.create(0, 0), L.create(2.5, 11)) : D.createAabbExtents(L.create(0, -.5), L.create(2.5, 8.75))],
+					scopeIn: [e.open ? A.createAabbExtents(L.create(0, 0), L.create(2.5, 5.75)) : A.createAabbExtents(L.create(0, 2.25), L.create(2.5, 5.5))],
+					scopeOut: [e.open ? A.createAabbExtents(L.create(0, 0), L.create(2.5, 11)) : A.createAabbExtents(L.create(0, -.5), L.create(2.5, 8.75))],
 					imgs: [{
 						sprite: "img/map/" + e.ceilingSprite,
 						scale: .5,
@@ -6822,7 +6618,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .5
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(2.25, 2.25)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(2.25, 2.25)),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -6865,7 +6661,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: 1
 				},
-				collision: D.createAabbExtents(L.create(0, .15), L.create(2.5, 1)),
+				collision: A.createAabbExtents(L.create(0, .15), L.create(2.5, 1)),
 				height: 10,
 				collidable: !0,
 				destructible: !0,
@@ -6909,7 +6705,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: 1
 				},
-				collision: D.createAabbExtents(e.hinge, e.extents),
+				collision: A.createAabbExtents(e.hinge, e.extents),
 				height: 10,
 				collidable: !0,
 				destructible: !0,
@@ -6953,7 +6749,7 @@ webpackJsonp([0], {
 					enter: "none"
 				}
 			};
-			return z(E[e.material]), c(t, E[e.material], e || {})
+			return I(B[e.material]), c(t, B[e.material], e || {})
 		}
 
 		function k(e) {
@@ -6998,7 +6794,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .75
 				},
-				collision: D.createAabbExtents(L.create(0, .15), L.create(2.5, 1.25)),
+				collision: A.createAabbExtents(L.create(0, .15), L.create(2.5, 1.25)),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -7041,7 +6837,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: 1
 				},
-				collision: D.createAabbExtents(L.create(0, .15), L.create(1.5, .6)),
+				collision: A.createAabbExtents(L.create(0, .15), L.create(1.5, .6)),
 				height: 10,
 				collidable: !0,
 				destructible: !0,
@@ -7085,7 +6881,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .8
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(1, 1)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(1, 1)),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -7127,7 +6923,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: .8
 				},
-				collision: D.createCircle(L.create(0, .25), 1.18),
+				collision: A.createCircle(L.create(0, .25), 1.18),
 				height: .5,
 				collidable: !0,
 				destructible: !0,
@@ -7170,7 +6966,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: 1
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.copy(e.extents)),
+				collision: A.createAabbExtents(L.create(0, 0), L.copy(e.extents)),
 				height: 10,
 				isWall: !0,
 				collidable: !0,
@@ -7191,7 +6987,7 @@ webpackJsonp([0], {
 					enter: "none"
 				}
 			};
-			return z(E[e.material]), c(t, E[e.material], e || {})
+			return I(B[e.material]), c(t, B[e.material], e || {})
 		}
 
 		function P(e) {
@@ -7202,7 +6998,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: 1
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(.4, 2)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(.4, 2)),
 				height: 10,
 				collidable: !0,
 				destructible: !0,
@@ -7238,7 +7034,7 @@ webpackJsonp([0], {
 					createMax: 1,
 					destroy: 1
 				},
-				collision: D.createAabbExtents(L.create(0, 0), L.create(.4, 2)),
+				collision: A.createAabbExtents(L.create(0, 0), L.create(.4, 2)),
 				height: .2,
 				collidable: !0,
 				destructible: !1,
@@ -7262,17 +7058,17 @@ webpackJsonp([0], {
 				}
 			}, e || {})
 		}
-		var I = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+		var z = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
 				return typeof e
 			} : function(e) {
 				return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
 			},
-			z = a("DlZn"),
-			A = a("8iex"),
-			D = a("9xSA"),
+			I = a("DlZn"),
+			D = a("8iex"),
+			A = a("9xSA"),
 			O = a("Tf6H"),
 			L = a("/2+T"),
-			E = {
+			B = {
 				metal: {
 					destructible: !1,
 					reflectBullets: !0,
@@ -7330,7 +7126,7 @@ webpackJsonp([0], {
 					}
 				}
 			},
-			B = {
+			E = {
 				barrel_01: {
 					type: "obstacle",
 					name: "a barrel",
@@ -7339,7 +7135,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .6
 					},
-					collision: D.createCircle(L.create(0, 0), 1.75),
+					collision: A.createCircle(L.create(0, 0), 1.75),
 					height: .5,
 					collidable: !0,
 					destructible: !0,
@@ -7376,7 +7172,7 @@ webpackJsonp([0], {
 					health: 60
 				}),
 				barrel_03: p({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(1.25, .5)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(1.25, .5)),
 					health: 20,
 					img: {
 						sprite: "img/map/map-barrel-03.svg",
@@ -7385,7 +7181,7 @@ webpackJsonp([0], {
 					}
 				}),
 				barrel_04: p({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(1.25, .5)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(1.25, .5)),
 					health: 20,
 					loot: [r("tier_soviet", 2, 3)],
 					img: {
@@ -7394,45 +7190,6 @@ webpackJsonp([0], {
 						scale: .45
 					}
 				}),
-				bollard_01: {
-					type: "obstacle",
-					scale: {
-						createMin: 1,
-						createMax: 1,
-						destroy: 1
-					},
-					collision: D.createCircle(L.create(0, 0), 1.25),
-					height: .5,
-					collidable: !0,
-					destructible: !1,
-					health: 300,
-					hitParticle: "barrelChip",
-					explodeParticle: "barrelFrag",
-					reflectBullets: !0,
-					loot: [],
-					map: {
-						display: !0,
-						color: 6310464,
-						scale: 1
-					},
-					terrain: {
-						grass: !0,
-						beach: !1
-					},
-					img: {
-						sprite: "img/map/map-bollard-01.svg",
-						scale: .5,
-						alpha: 1,
-						tint: 16777215,
-						zIdx: 10
-					},
-					sound: {
-						bullet: "silo_bullet",
-						punch: "silo_bullet",
-						explode: "barrel_break_01",
-						enter: "none"
-					}
-				},
 				bookshelf_01: u({
 					img: {
 						sprite: "img/map/map-bookshelf-01.svg"
@@ -7484,7 +7241,7 @@ webpackJsonp([0], {
 					loot: [r("tier_chest", 2, 2)]
 				}),
 				control_panel_01: S({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(2.25, 1.7)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(2.25, 1.7)),
 					button: {
 						interactionRad: 1.75,
 						useOnce: !0,
@@ -7499,14 +7256,14 @@ webpackJsonp([0], {
 					}
 				}),
 				control_panel_02: S({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(2.25, 1.7)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(2.25, 1.7)),
 					health: 175,
 					img: {
 						sprite: "img/map/map-control-panel-02.svg"
 					}
 				}),
 				control_panel_03: S({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(1.25, 1.2)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(1.25, 1.2)),
 					health: 150,
 					img: {
 						sprite: "img/map/map-control-panel-03.svg"
@@ -7532,7 +7289,7 @@ webpackJsonp([0], {
 				}),
 				crate_03: b({
 					health: 100,
-					collision: D.createAabbExtents(L.create(0, 0), L.create(1.575, 1.575)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(1.575, 1.575)),
 					loot: [r("tier_throwables", 2, 4)],
 					map: {
 						color: 5066014,
@@ -7566,7 +7323,7 @@ webpackJsonp([0], {
 					}
 				}),
 				crate_05: b({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(2, 2)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(2, 2)),
 					destructible: !1,
 					hitParticle: "goldChip",
 					loot: [],
@@ -7582,7 +7339,7 @@ webpackJsonp([0], {
 					}
 				}),
 				crate_06: b({
-					collision: D.createAabbExtents(L.create(0, 0), L.create(2.25, 1.1)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(2.25, 1.1)),
 					destructible: !1,
 					hitParticle: "greenChip",
 					loot: [],
@@ -7609,7 +7366,7 @@ webpackJsonp([0], {
 				}),
 				crate_08: b({
 					health: 140,
-					loot: [r("tier_surviv", 2, 3)],
+					loot: [r("tier_surviv", 2, 3), s("outfitKhaki", 1)],
 					map: {
 						display: !1
 					},
@@ -7619,23 +7376,6 @@ webpackJsonp([0], {
 					},
 					img: {
 						sprite: "img/map/map-crate-08.svg"
-					},
-					sound: {
-						explode: "crate_break_01"
-					}
-				}),
-				crate_09: b({
-					health: 140,
-					loot: [r("tier_chest", 2, 2), r("tier_conch", 1, 1)],
-					map: {
-						display: !1
-					},
-					terrain: {
-						grass: !0,
-						beach: !1
-					},
-					img: {
-						sprite: "img/map/map-crate-09.svg"
 					},
 					sound: {
 						explode: "crate_break_01"
@@ -7678,6 +7418,12 @@ webpackJsonp([0], {
 					},
 					loot: [r("tier_police", 1, 1)]
 				}),
+				locker_03: w({
+					img: {
+						sprite: "img/map/map-locker-02.svg"
+					},
+					loot: [r("tier_surviv", 1, 1), s("outfitKhaki", 1)]
+				}),
 				oven_01: {
 					type: "obstacle",
 					name: "an oven",
@@ -7686,7 +7432,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .75
 					},
-					collision: D.createAabbExtents(L.create(0, .15), L.create(1.7, 1.3)),
+					collision: A.createAabbExtents(L.create(0, .15), L.create(1.7, 1.3)),
 					height: .5,
 					collidable: !0,
 					destructible: !0,
@@ -7727,7 +7473,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .75
 					},
-					collision: D.createAabbExtents(L.create(0, .15), L.create(1.7, 1.25)),
+					collision: A.createAabbExtents(L.create(0, .15), L.create(1.7, 1.25)),
 					height: .5,
 					collidable: !0,
 					destructible: !1,
@@ -7762,17 +7508,12 @@ webpackJsonp([0], {
 				},
 				sandbags_01: {
 					type: "obstacle",
-					map: {
-						display: !0,
-						color: 13278307,
-						scale: 1
-					},
 					scale: {
 						createMin: 1,
 						createMax: 1,
 						destroy: .5
 					},
-					collision: D.createAabbExtents(L.create(0, 0), L.create(3.1, 1.4)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(3.1, 1.4)),
 					height: .5,
 					collidable: !0,
 					destructible: !1,
@@ -7781,6 +7522,11 @@ webpackJsonp([0], {
 					explodeParticle: "barrelFrag",
 					reflectBullets: !1,
 					loot: [],
+					map: {
+						display: !1,
+						color: 16777215,
+						scale: 1.75
+					},
 					img: {
 						sprite: "img/map/map-sandbags-01.svg",
 						scale: .5,
@@ -7795,56 +7541,6 @@ webpackJsonp([0], {
 						enter: "none"
 					}
 				},
-				container_05_collider: T({
-					material: "metal",
-					extents: L.create(2.75, 6)
-				}),
-				container_05: {
-					type: "building",
-					scale: {
-						createMin: 1,
-						createMax: 1,
-						destroy: .5
-					},
-					zIdx: 1,
-					map: {
-						display: !0,
-						color: 11485762,
-						scale: 1
-					},
-					terrain: {
-						grass: !1,
-						beach: !1
-					},
-					floor: {
-						surfaces: [{
-							type: "container",
-							collision: [D.createAabbExtents(L.create(0, 0), L.create(0, 0))]
-						}],
-						imgs: [{
-							sprite: "",
-							scale: .5,
-							alpha: 1,
-							tint: 16777215
-						}]
-					},
-					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 2.4), L.create(2.5, 5.75))],
-						scopeOut: [D.createAabbExtents(L.create(0, 2.4), L.create(2.5, 5.75))],
-						imgs: [{
-							sprite: "img/map/map-building-container-ceiling-05.svg",
-							scale: .5,
-							alpha: 1,
-							tint: 11485762
-						}]
-					},
-					mapObjects: [{
-						type: "container_05_collider",
-						pos: L.create(0, 2.4),
-						scale: 1,
-						ori: 0
-					}]
-				},
 				silo_01: {
 					type: "obstacle",
 					scale: {
@@ -7852,7 +7548,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: 1
 					},
-					collision: D.createCircle(L.create(0, 0), 7.75),
+					collision: A.createCircle(L.create(0, 0), 7.75),
 					height: 10,
 					collidable: !0,
 					destructible: !1,
@@ -7891,7 +7587,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: 1
 					},
-					collision: D.createAabbExtents(L.create(0, 0), L.create(2.5, 2)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(2.5, 2)),
 					height: .5,
 					collidable: !1,
 					destructible: !0,
@@ -7931,7 +7627,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .75
 					},
-					collision: D.createAabbExtents(L.create(0, .15), L.create(1.25, 1.25)),
+					collision: A.createAabbExtents(L.create(0, .15), L.create(1.25, 1.25)),
 					height: .5,
 					collidable: !0,
 					destructible: !0,
@@ -7971,7 +7667,7 @@ webpackJsonp([0], {
 						createMax: 1.2,
 						destroy: .5
 					},
-					collision: D.createCircle(L.create(0, 0), 1.6),
+					collision: A.createCircle(L.create(0, 0), 1.6),
 					height: .5,
 					collidable: !0,
 					destructible: !0,
@@ -8011,7 +7707,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .75
 					},
-					collision: D.createAabbExtents(L.create(0, 0), L.create(2.5, 2)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(2.5, 2)),
 					height: .5,
 					collidable: !1,
 					destructible: !0,
@@ -8051,7 +7747,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .75
 					},
-					collision: D.createAabbExtents(L.create(0, 0), L.create(4.5, 2.5)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(4.5, 2.5)),
 					height: .5,
 					collidable: !1,
 					destructible: !0,
@@ -8133,8 +7829,8 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .5
 					},
-					collision: D.createCircle(L.create(0, 0), 1.55),
-					aabb: D.createAabbExtents(L.create(0, 0), L.create(5.75, 5.75)),
+					collision: A.createCircle(L.create(0, 0), 1.55),
+					aabb: A.createAabbExtents(L.create(0, 0), L.create(5.75, 5.75)),
 					height: 10,
 					collidable: !0,
 					destructible: !0,
@@ -8167,6 +7863,42 @@ webpackJsonp([0], {
 						enter: "none"
 					}
 				},
+				tree_02: {
+					type: "obstacle",
+					scale: {
+						createMin: .8,
+						createMax: 1,
+						destroy: .5
+					},
+					collision: A.createCircle(L.create(0, 0), 4.4),
+					height: 10,
+					collidable: !0,
+					destructible: !1,
+					health: 100,
+					hitParticle: "woodChip",
+					explodeParticle: "woodLog",
+					reflectBullets: !1,
+					loot: [],
+					map: {
+						display: !0,
+						color: 4083758,
+						scale: 2.25
+					},
+					img: {
+						sprite: "img/map/map-tree-03.svg",
+						residue: "img/map/map-tree-res.svg",
+						scale: 1,
+						alpha: .4,
+						tint: 16777215,
+						zIdx: 230
+					},
+					sound: {
+						bullet: "tree_bullet",
+						punch: "tree_bullet",
+						explode: "tree_break_01",
+						enter: "none"
+					}
+				},
 				vat_01: {
 					type: "obstacle",
 					scale: {
@@ -8174,7 +7906,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .9
 					},
-					collision: D.createCircle(L.create(0, 0), 2),
+					collision: A.createCircle(L.create(0, 0), 2),
 					height: .5,
 					collidable: !0,
 					destructible: !0,
@@ -8214,7 +7946,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .95
 					},
-					collision: D.createCircle(L.create(0, 0), 3.1),
+					collision: A.createCircle(L.create(0, 0), 3.1),
 					height: .5,
 					collidable: !0,
 					destructible: !1,
@@ -8254,7 +7986,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: .75
 					},
-					collision: D.createAabbExtents(L.create(0, .15), L.create(1.7, 1.25)),
+					collision: A.createAabbExtents(L.create(0, .15), L.create(1.7, 1.25)),
 					height: .5,
 					collidable: !0,
 					destructible: !0,
@@ -8294,7 +8026,7 @@ webpackJsonp([0], {
 						createMax: 1,
 						destroy: 1
 					},
-					collision: D.createAabbExtents(L.create(0, 0), L.create(.4, 2)),
+					collision: A.createAabbExtents(L.create(0, 0), L.create(.4, 2)),
 					height: 10,
 					collidable: !0,
 					destructible: !0,
@@ -8411,7 +8143,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "grass",
-							collision: [D.createAabbExtents(L.create(0, 0), L.create(3, 3))]
+							collision: [A.createAabbExtents(L.create(0, 0), L.create(3, 3))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-hedgehog-01.svg",
@@ -8421,8 +8153,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(0, 0))],
-						scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(0, 0))],
+						scopeIn: [A.createAabbExtents(L.create(0, 0), L.create(0, 0))],
+						scopeOut: [A.createAabbExtents(L.create(0, 0), L.create(0, 0))],
 						imgs: []
 					},
 					mapObjects: [{
@@ -8445,424 +8177,40 @@ webpackJsonp([0], {
 					material: "metal",
 					extents: L.create(.6, 3.2)
 				}),
-				warehouse_01: function(e) {
-					return c({
-						type: "building",
-						map: {
-							display: !0,
-							shapes: [{
-								collider: D.createAabbExtents(L.create(27, 0), L.create(3, 12.25)),
-								color: 10066329
-							}, {
-								collider: D.createAabbExtents(L.create(-27, 0), L.create(3, 12.25)),
-								color: 10066329
-							}, {
-								collider: D.createAabbExtents(L.create(0, 0), L.create(24.5, 12.25)),
-								color: 5915450
-							}]
-						},
-						zIdx: 1,
-						terrain: {
-							grass: !0,
-							beach: !1
-						},
-						floor: {
-							surfaces: [{
-								type: "warehouse",
-								collision: [D.createAabbExtents(L.create(0, 0), L.create(32, 12.5))]
-							}],
-							imgs: [{
-								sprite: "img/map/map-building-warehouse-floor-01.svg",
-								scale: .5,
-								alpha: 1,
-								tint: 16777215
-							}]
-						},
-						ceiling: {
-							scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(24.5, 12.25))],
-							scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(32, 12.5))],
-							vision: {
-								dist: 8,
-								width: 5
-							},
-							imgs: [{
-								sprite: "",
-								scale: .5,
-								alpha: 1,
-								tint: 16777215
-							}]
-						},
-						mapObjects: [{
-							type: "warehouse_wall_side",
-							pos: L.create(0, 11.9),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "warehouse_wall_edge",
-							pos: L.create(-24.4, 8.2),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "warehouse_wall_edge",
-							pos: L.create(24.4, 8.2),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "warehouse_wall_side",
-							pos: L.create(0, -11.9),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "warehouse_wall_edge",
-							pos: L.create(-24.4, -8.2),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "warehouse_wall_edge",
-							pos: L.create(24.4, -8.2),
-							scale: 1,
-							ori: 0
-						}, {
-							type: e.topLeftObs,
-							pos: L.create(-21.25, 8.75),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_04",
-							pos: L.create(-16.25, 8.75),
-							scale: 1,
-							ori: 1
-						}, {
-							type: "crate_01",
-							pos: L.create(-21.25, -8.75),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "barrel_01",
-							pos: L.create(-16.5, -8.75),
-							scale: .9,
-							ori: 0
-						}, {
-							type: e.topRightObs,
-							pos: L.create(21.25, 8.75),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "barrel_01",
-							pos: L.create(16.5, 8.75),
-							scale: .9,
-							ori: 0
-						}, {
-							type: "crate_04",
-							pos: L.create(16.25, -8.75),
-							scale: 1,
-							ori: 1
-						}, {
-							type: e.botRightObs,
-							pos: L.create(21.25, -8.75),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: m({
-								crate_02: 1,
-								crate_01: 3
-							}),
-							pos: L.create(0, 0),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_01",
-							pos: L.create(5, 0),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_01",
-							pos: L.create(-5, 0),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_04",
-							pos: L.create(0, 5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "crate_04",
-							pos: L.create(0, -5),
-							scale: 1,
-							ori: 0
-						}]
-					}, e || {})
-				}({
-					topLeftObs: "crate_01",
-					topRightObs: "crate_01",
-					botRightObs: "crate_01"
-				}),
-				warehouse_02: function(e) {
-					return c({
-						type: "building",
-						map: {
-							display: !0,
-							shapes: [{
-								collider: D.createAabbExtents(L.create(25, 0), L.create(3, 12.25)),
-								color: 10066329
-							}, {
-								collider: D.createAabbExtents(L.create(-25, 0), L.create(3, 12.25)),
-								color: 10066329
-							}, {
-								collider: D.createAabbExtents(L.create(0, 0), L.create(22.5, 12.25)),
-								color: 2240064
-							}]
-						},
-						zIdx: 1,
-						terrain: {
-							grass: !0,
-							beach: !1
-						},
-						floor: {
-							surfaces: [{
-								type: "warehouse",
-								collision: [D.createAabbExtents(L.create(0, 0), L.create(27.5, 12.5))]
-							}],
-							imgs: [{
-								sprite: "img/map/map-building-warehouse-floor-02.svg",
-								scale: .5,
-								alpha: 1,
-								tint: 16777215
-							}]
-						},
-						ceiling: {
-							scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(22, 12.25))],
-							scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(27.5, 12.5))],
-							vision: {
-								dist: 8,
-								width: 5
-							},
-							imgs: [{
-								sprite: "",
-								scale: .5,
-								alpha: 1,
-								tint: 16777215
-							}]
-						},
-						mapObjects: [{
-							type: "metal_wall_ext_43",
-							pos: L.create(0, 12),
-							scale: 1,
-							ori: 1
-						}, {
-							type: "metal_wall_ext_8",
-							pos: L.create(-21.9, 8.5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "metal_wall_ext_8",
-							pos: L.create(21.9, 8.5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "metal_wall_ext_43",
-							pos: L.create(0, -12),
-							scale: 1,
-							ori: 1
-						}, {
-							type: "metal_wall_ext_8",
-							pos: L.create(-21.9, -8.5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "metal_wall_ext_8",
-							pos: L.create(21.9, -8.5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "crate_01",
-							pos: L.create(-18.75, 8.75),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "barrel_01",
-							pos: L.create(-14, 8.75),
-							scale: .9,
-							ori: 0
-						}, {
-							type: "crate_06",
-							pos: L.create(-18.75, -6),
-							scale: 1,
-							ori: 0
-						}, {
-							type: m({
-								loot_tier_1: 1,
-								"": 1
-							}),
-							pos: L.create(-19.5, -9.5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "crate_06",
-							pos: L.create(18.75, 6),
-							scale: 1,
-							ori: 0
-						}, {
-							type: m({
-								loot_tier_1: 1,
-								"": 1
-							}),
-							pos: L.create(19.5, 9.5),
-							scale: 1,
-							ori: 0
-						}, {
-							type: "crate_01",
-							pos: L.create(18.75, -8.75),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "barrel_01",
-							pos: L.create(14, -8.75),
-							scale: .9,
-							ori: 0
-						}, {
-							type: m({
-								crate_08: 24,
-								crate_09: 1
-							}),
-							pos: L.create(0, 0),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_01",
-							pos: L.create(0, 5),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_01",
-							pos: L.create(0, -5),
-							scale: 1,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "crate_06",
-							pos: L.create(4, -5),
-							scale: 1,
-							ori: 1
-						}, {
-							type: "crate_06",
-							pos: L.create(-4, 5),
-							scale: 1,
-							ori: 1
-						}, {
-							type: "barrel_01",
-							pos: L.create(4.5, 0),
-							scale: .9,
-							ori: 0,
-							inheritOri: !1
-						}, {
-							type: "barrel_01",
-							pos: L.create(-4.5, 0),
-							scale: .9,
-							ori: 0,
-							inheritOri: !1
-						}]
-					}, e || {})
-				}({}),
-				warehouse_complex_01: {
+				warehouse_01: {
 					type: "building",
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(26, 70.5), L.create(47, 7.5)),
-							color: 5855577
+							collider: A.createAabbExtents(L.create(27, 0), L.create(3, 12.25)),
+							color: 10066329
 						}, {
-							collider: D.createAabbExtents(L.create(15.5, 52.5), L.create(57.5, 10.5)),
-							color: 5855577
+							collider: A.createAabbExtents(L.create(-27, 0), L.create(3, 12.25)),
+							color: 10066329
 						}, {
-							collider: D.createAabbExtents(L.create(33, 11), L.create(75, 31)),
-							color: 5855577
-						}, {
-							collider: D.createAabbExtents(L.create(5, -30), L.create(47, 10)),
-							color: 5855577
-						}, {
-							collider: D.createAabbExtents(L.create(-39.75, 11.25), L.create(2, 51)),
-							color: 16109568
-						}, {
-							collider: D.createCircle(L.create(-39, 55), 1.25),
-							color: 6310464
-						}, {
-							collider: D.createCircle(L.create(-39, 20.5), 1.25),
-							color: 6310464
-						}, {
-							collider: D.createCircle(L.create(-39, 2), 1.25),
-							color: 6310464
-						}, {
-							collider: D.createCircle(L.create(-39, -31.5), 1.25),
-							color: 6310464
-						}, {
-							collider: D.createAabbExtents(L.create(-28, -30), L.create(2, 2)),
-							color: 6697728
-						}, {
-							collider: D.createAabbExtents(L.create(-23, -33), L.create(2, 2)),
-							color: 6697728
-						}, {
-							collider: D.createAabbExtents(L.create(7, 70), L.create(2, 2)),
-							color: 6697728
-						}, {
-							collider: D.createAabbExtents(L.create(12, 72), L.create(2, 2)),
-							color: 6697728
-						}, {
-							collider: D.createCircle(L.create(-26.5, 54.75), 1.75),
-							color: 8026746
-						}, {
-							collider: D.createCircle(L.create(-23.5, 57), 1.75),
-							color: 8026746
-						}, {
-							collider: D.createCircle(L.create(84, -15.5), 1.75),
-							color: 8026746
-						}, {
-							collider: D.createCircle(L.create(40, -35), 1.5),
-							color: 8026746
-						}, {
-							collider: D.createCircle(L.create(65, 61), 1.5),
-							color: 8026746
-						}, {
-							collider: D.createAabbExtents(L.create(44.5, -25), L.create(3.1, 1.4)),
-							color: 13278307
-						}, {
-							collider: D.createAabbExtents(L.create(58, 47.5), L.create(1.4, 3.1)),
-							color: 13278307
+							collider: A.createAabbExtents(L.create(0, 0), L.create(24.5, 12.25)),
+							color: 5915450
 						}]
 					},
 					terrain: {
 						grass: !0,
-						beach: !1,
-						waterEdge: L.create(-72, 0)
+						beach: !1
 					},
-					mapObstacleBounds: [D.createAabbExtents(L.create(26, 70.5), L.create(47, 7.5)), D.createAabbExtents(L.create(15.5, 52.5), L.create(57.5, 10.5)), D.createAabbExtents(L.create(33, 11), L.create(75, 31)), D.createAabbExtents(L.create(5, -30), L.create(47, 10))],
 					floor: {
 						surfaces: [{
-							type: "asphalt",
-							collision: [D.createAabbExtents(L.create(26, 70.5), L.create(47, 7.5)), D.createAabbExtents(L.create(15.5, 52.5), L.create(57.5, 10.5)), D.createAabbExtents(L.create(33, 11), L.create(75, 31)), D.createAabbExtents(L.create(5, -30), L.create(47, 10))]
+							type: "warehouse",
+							collision: [A.createAabbExtents(L.create(0, 0), L.create(32, 12.5))]
 						}],
 						imgs: [{
-							sprite: "img/map/map-complex-warehouse-floor.svg",
-							pos: L.create(33, 19),
-							scale: 1,
+							sprite: "img/map/map-building-warehouse-floor.svg",
+							scale: .5,
 							alpha: 1,
 							tint: 16777215
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(24.5, 12.25))],
-						scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(32, 12.5))],
+						scopeIn: [A.createAabbExtents(L.create(0, 0), L.create(24.5, 12.25))],
+						scopeOut: [A.createAabbExtents(L.create(0, 0), L.create(32, 12.5))],
 						vision: {
 							dist: 8,
 							width: 5
@@ -8875,239 +8223,110 @@ webpackJsonp([0], {
 						}]
 					},
 					mapObjects: [{
-						type: "warehouse_02",
+						type: "warehouse_wall_side",
+						pos: L.create(0, 11.9),
+						scale: 1,
+						ori: 0
+					}, {
+						type: "warehouse_wall_edge",
+						pos: L.create(-24.4, 8.2),
+						scale: 1,
+						ori: 0
+					}, {
+						type: "warehouse_wall_edge",
+						pos: L.create(24.4, 8.2),
+						scale: 1,
+						ori: 0
+					}, {
+						type: "warehouse_wall_side",
+						pos: L.create(0, -11.9),
+						scale: 1,
+						ori: 0
+					}, {
+						type: "warehouse_wall_edge",
+						pos: L.create(-24.4, -8.2),
+						scale: 1,
+						ori: 0
+					}, {
+						type: "warehouse_wall_edge",
+						pos: L.create(24.4, -8.2),
+						scale: 1,
+						ori: 0
+					}, {
+						type: "crate_01",
+						pos: L.create(-21.25, 8.75),
+						scale: 1,
+						ori: 0,
+						inheritOri: !1
+					}, {
+						type: "crate_04",
+						pos: L.create(-16.25, 8.75),
+						scale: 1,
+						ori: 1
+					}, {
+						type: "crate_01",
+						pos: L.create(-21.25, -8.75),
+						scale: 1,
+						ori: 0,
+						inheritOri: !1
+					}, {
+						type: "barrel_01",
+						pos: L.create(-16.5, -8.75),
+						scale: .9,
+						ori: 0
+					}, {
+						type: "crate_01",
+						pos: L.create(21.25, 8.75),
+						scale: 1,
+						ori: 0,
+						inheritOri: !1
+					}, {
+						type: "barrel_01",
+						pos: L.create(16.5, 8.75),
+						scale: .9,
+						ori: 0
+					}, {
+						type: "crate_04",
+						pos: L.create(16.25, -8.75),
+						scale: 1,
+						ori: 1
+					}, {
+						type: "crate_01",
+						pos: L.create(21.25, -8.75),
+						scale: 1,
+						ori: 0,
+						inheritOri: !1
+					}, {
+						type: m({
+							crate_02: 1,
+							crate_01: 3
+						}),
+						pos: L.create(0, 0),
+						scale: 1,
+						ori: 0,
+						inheritOri: !1
+					}, {
+						type: "crate_01",
 						pos: L.create(5, 0),
 						scale: 1,
-						ori: 0
-					}, {
-						type: "warehouse_02",
-						pos: L.create(70, 0),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "warehouse_02",
-						pos: L.create(18, 55),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "bollard_01",
-						pos: L.create(-39, 55),
-						scale: 1,
-						ori: 2
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_06: .12
-						}),
-						pos: L.create(-37.5, 38),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "bollard_01",
-						pos: L.create(-39, 20.5),
-						scale: 1,
-						ori: 2
-					}, {
-						type: "bollard_01",
-						pos: L.create(-39, 2),
-						scale: 1,
-						ori: 2
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_06: .12
-						}),
-						pos: L.create(-37.5, -14),
-						scale: 1,
-						ori: 2
-					}, {
-						type: "bollard_01",
-						pos: L.create(-39, -31.5),
-						scale: 1,
-						ori: 2
+						ori: 0,
+						inheritOri: !1
 					}, {
 						type: "crate_01",
-						pos: L.create(-28, -30),
+						pos: L.create(-5, 0),
+						scale: 1,
+						ori: 0,
+						inheritOri: !1
+					}, {
+						type: "crate_04",
+						pos: L.create(0, 5),
 						scale: 1,
 						ori: 0
 					}, {
-						type: "crate_01",
-						pos: L.create(-23, -33),
+						type: "crate_04",
+						pos: L.create(0, -5),
 						scale: 1,
 						ori: 0
-					}, {
-						type: "container_04",
-						pos: L.create(-11.5, -26.575),
-						scale: 1,
-						ori: 0
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(-6, -29),
-						scale: 1,
-						ori: 0
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(9.5, -29),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "container_04",
-						pos: L.create(15, -26.575),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "shack_02",
-						pos: L.create(37, -30),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "sandbags_01",
-						pos: L.create(44.5, -25),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "barrel_01",
-						pos: L.create(84, -15.5),
-						scale: 1,
-						ori: 0
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(-3, 22),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "container_04",
-						pos: L.create(-5.425, 27.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(-3, 33),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "container_04",
-						pos: L.create(28, 22),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "container_04",
-						pos: L.create(28, 27.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "container_04",
-						pos: L.create(28, 33),
-						scale: 1,
-						ori: 1
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(53, 22),
-						scale: 1,
-						ori: 3
-					}, {
-						type: "container_04",
-						pos: L.create(55.425, 27.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(53, 33),
-						scale: 1,
-						ori: 3
-					}, {
-						type: "container_04",
-						pos: L.create(84, 22),
-						scale: 1,
-						ori: 3
-					}, {
-						type: m({
-							container_01: 1,
-							container_02: 1,
-							container_03: 1,
-							container_05: 2,
-							container_06: .12,
-							"": .75
-						}),
-						pos: L.create(86.425, 27.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "barrel_01",
-						pos: L.create(-26.5, 54.75),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "barrel_01",
-						pos: L.create(-23.5, 57),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "crate_01",
-						pos: L.create(7, 70),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "crate_01",
-						pos: L.create(12, 72),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "shack_02",
-						pos: L.create(60, 58),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "sandbags_01",
-						pos: L.create(58, 47.5),
-						scale: 1,
-						ori: 1
 					}]
 				},
 				shack_wall_top: T({
@@ -9148,18 +8367,18 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "shack",
-							collision: [D.createAabbExtents(L.create(0, .9), L.create(5.6, 3.5)), D.createAabbExtents(L.create(3.75, -4), L.create(2.25, 1.5))]
+							collision: [A.createAabbExtents(L.create(0, .9), L.create(5.6, 3.5)), A.createAabbExtents(L.create(3.75, -4), L.create(2.25, 1.5))]
 						}],
 						imgs: [{
-							sprite: "img/map/map-building-shack-floor-01.svg",
+							sprite: "img/map/map-building-shack-floor.svg",
 							scale: .5,
 							alpha: 1,
 							tint: 16777215
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, .9), L.create(5.6, 3.5))],
-						scopeOut: [D.createAabbExtents(L.create(0, .8), L.create(5.9, 3.8))],
+						scopeIn: [A.createAabbExtents(L.create(0, .9), L.create(5.6, 3.5))],
+						scopeOut: [A.createAabbExtents(L.create(0, .8), L.create(5.9, 3.8))],
 						vision: {
 							width: 4
 						},
@@ -9173,7 +8392,7 @@ webpackJsonp([0], {
 							wallCount: 2,
 							particle: "shackFrag",
 							particleCount: 25,
-							residue: "img/map/map-shack-res-01.svg"
+							residue: "img/map/map-shack-res.svg"
 						}
 					},
 					mapObjects: [{
@@ -9224,88 +8443,6 @@ webpackJsonp([0], {
 						ori: 0
 					}]
 				},
-				shack_02: {
-					type: "building",
-					map: {
-						display: !0,
-						color: 4014894,
-						scale: 1
-					},
-					terrain: {
-						grass: !0,
-						beach: !1
-					},
-					zIdx: 1,
-					floor: {
-						surfaces: [{
-							type: "shack",
-							collision: [D.createAabbExtents(L.create(0, 1), L.create(5, 4)), D.createAabbExtents(L.create(3.75, -4), L.create(2.25, 1.5))]
-						}],
-						imgs: [{
-							sprite: "img/map/map-building-shack-floor-02.svg",
-							scale: .5,
-							alpha: 1,
-							tint: 16777215
-						}]
-					},
-					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 1), L.create(5, 4))],
-						scopeOut: [D.createAabbExtents(L.create(0, 1), L.create(0, 0))],
-						vision: {
-							width: 4
-						},
-						imgs: [{
-							sprite: "",
-							scale: .5,
-							alpha: 1,
-							tint: 16777215
-						}],
-						destroy: {
-							wallCount: 2,
-							particle: "shackFrag",
-							particleCount: 25,
-							residue: "img/map/map-shack-res-02.svg"
-						}
-					},
-					mapObjects: [{
-						type: "barn_wall_int_2",
-						pos: L.create(-3, -2.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "barn_wall_int_2",
-						pos: L.create(3, -2.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "barn_wall_int_8",
-						pos: L.create(-4.5, 1),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "barn_wall_int_8",
-						pos: L.create(4.5, 1),
-						scale: 1,
-						ori: 0
-					}, {
-						type: "barn_wall_int_8",
-						pos: L.create(0, 4.5),
-						scale: 1,
-						ori: 1
-					}, {
-						type: "barrel_01",
-						pos: L.create(4, -4.5),
-						scale: .8,
-						ori: 0
-					}, {
-						type: m({
-							loot_tier_1: 1
-						}),
-						pos: L.create(0, 1),
-						scale: 1,
-						ori: 0
-					}]
-				},
 				outhouse_wall_top: T({
 					material: "wood",
 					extents: L.create(3.2, .35),
@@ -9344,11 +8481,10 @@ webpackJsonp([0], {
 						grass: !0,
 						beach: !1
 					},
-					zIdx: 1,
 					floor: {
 						surfaces: [{
 							type: "shack",
-							collision: [D.createAabbExtents(L.create(0, 0), L.create(3.8, 5))]
+							collision: [A.createAabbExtents(L.create(0, 0), L.create(3.8, 5))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-outhouse-floor.svg",
@@ -9358,8 +8494,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 1.45), L.create(3.6, 3.2))],
-						scopeOut: [D.createAabbExtents(L.create(0, 1.4), L.create(3.8, 3.4))],
+						scopeIn: [A.createAabbExtents(L.create(0, 1.45), L.create(3.6, 3.2))],
+						scopeOut: [A.createAabbExtents(L.create(0, 1.4), L.create(3.8, 3.4))],
 						imgs: [{
 							sprite: "",
 							scale: .5,
@@ -9464,6 +8600,10 @@ webpackJsonp([0], {
 					material: "brick",
 					extents: L.create(.5, 7)
 				}),
+				brick_wall_ext_15: T({
+					material: "brick",
+					extents: L.create(.5, 7.5)
+				}),
 				brick_wall_ext_16: T({
 					material: "brick",
 					extents: L.create(.5, 8)
@@ -9487,6 +8627,10 @@ webpackJsonp([0], {
 				brick_wall_ext_21: T({
 					material: "brick",
 					extents: L.create(.5, 10.5)
+				}),
+				brick_wall_ext_22: T({
+					material: "brick",
+					extents: L.create(.5, 11)
 				}),
 				brick_wall_ext_23: T({
 					material: "brick",
@@ -9525,6 +8669,14 @@ webpackJsonp([0], {
 					material: "brick",
 					extents: L.create(1.5, 4.5)
 				}),
+				brick_wall_ext_thicker_12: T({
+					material: "brick",
+					extents: L.create(1.5, 6)
+				}),
+				brick_wall_ext_thicker_14: T({
+					material: "brick",
+					extents: L.create(1.5, 7)
+				}),
 				brick_wall_ext_thicker_15: T({
 					material: "brick",
 					extents: L.create(1.5, 7.5)
@@ -9537,6 +8689,14 @@ webpackJsonp([0], {
 					material: "brick",
 					extents: L.create(1.5, 12)
 				}),
+				metal_wall_ext_1: T({
+					material: "metal",
+					extents: L.create(.5, .5)
+				}),
+				metal_wall_ext_2: T({
+					material: "metal",
+					extents: L.create(.5, 1)
+				}),
 				metal_wall_ext_3: T({
 					material: "metal",
 					extents: L.create(.5, 1.5)
@@ -9544,6 +8704,10 @@ webpackJsonp([0], {
 				metal_wall_ext_4: T({
 					material: "metal",
 					extents: L.create(.5, 2)
+				}),
+				metal_wall_ext_5: T({
+					material: "metal",
+					extents: L.create(.5, 2.5)
 				}),
 				metal_wall_ext_6: T({
 					material: "metal",
@@ -9565,17 +8729,45 @@ webpackJsonp([0], {
 					material: "metal",
 					extents: L.create(.5, 5)
 				}),
+				metal_wall_ext_11: T({
+					material: "metal",
+					extents: L.create(.5, 5.5)
+				}),
 				metal_wall_ext_12: T({
 					material: "metal",
 					extents: L.create(.5, 6)
+				}),
+				metal_wall_ext_13: T({
+					material: "metal",
+					extents: L.create(.5, 6.5)
+				}),
+				metal_wall_ext_14: T({
+					material: "metal",
+					extents: L.create(.5, 7)
+				}),
+				metal_wall_ext_15: T({
+					material: "metal",
+					extents: L.create(.5, 7.5)
+				}),
+				metal_wall_ext_16: T({
+					material: "metal",
+					extents: L.create(.5, 8)
+				}),
+				metal_wall_ext_17: T({
+					material: "metal",
+					extents: L.create(.5, 8.5)
 				}),
 				metal_wall_ext_18: T({
 					material: "metal",
 					extents: L.create(.5, 9)
 				}),
-				metal_wall_ext_43: T({
+				metal_wall_ext_19: T({
 					material: "metal",
-					extents: L.create(.5, 21.5)
+					extents: L.create(.5, 9.5)
+				}),
+				metal_wall_ext_20: T({
+					material: "metal",
+					extents: L.create(.5, 10)
 				}),
 				metal_wall_ext_short_6: T({
 					material: "metal",
@@ -9594,6 +8786,10 @@ webpackJsonp([0], {
 				metal_wall_ext_thick_20: T({
 					material: "metal",
 					extents: L.create(1, 10)
+				}),
+				metal_wall_ext_thicker_3: T({
+					material: "metal",
+					extents: L.create(1.5, 1.5)
 				}),
 				metal_wall_ext_thicker_4: T({
 					material: "metal",
@@ -9626,6 +8822,10 @@ webpackJsonp([0], {
 				metal_wall_ext_thicker_11: T({
 					material: "metal",
 					extents: L.create(1.5, 5.5)
+				}),
+				metal_wall_ext_thicker_12: T({
+					material: "metal",
+					extents: L.create(1.5, 6)
 				}),
 				metal_wall_ext_thicker_13: T({
 					material: "metal",
@@ -9662,6 +8862,10 @@ webpackJsonp([0], {
 				metal_wall_ext_thicker_21: T({
 					material: "metal",
 					extents: L.create(1.5, 10.5)
+				}),
+				metal_wall_ext_thicker_22: T({
+					material: "metal",
+					extents: L.create(1.5, 11)
 				}),
 				metal_wall_ext_thicker_23: T({
 					material: "metal",
@@ -9734,7 +8938,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "container",
-							collision: [D.createAabbExtents(L.create(0, 0), L.create(4.5, 6))]
+							collision: [A.createAabbExtents(L.create(0, 0), L.create(4.5, 6))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-panicroom-floor.svg",
@@ -9744,8 +8948,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(4.5, 6))],
-						scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(4.5, 6))],
+						scopeIn: [A.createAabbExtents(L.create(0, 0), L.create(4.5, 6))],
+						scopeOut: [A.createAabbExtents(L.create(0, 0), L.create(4.5, 6))],
 						imgs: [{
 							sprite: "",
 							scale: .5,
@@ -9788,6 +8992,12 @@ webpackJsonp([0], {
 						ori: 0
 					}]
 				},
+				barn_wall_int_1: T({
+					material: "wood",
+					extents: L.create(.5, .5),
+					hitParticle: "ltgreenChip",
+					img: d("img/map/map-wall-01-rounded.svg", 7173701)
+				}),
 				barn_wall_int_2: T({
 					material: "wood",
 					extents: L.create(.5, 1),
@@ -9824,6 +9034,12 @@ webpackJsonp([0], {
 					hitParticle: "ltgreenChip",
 					img: d("img/map/map-wall-08-rounded.svg", 7173701)
 				}),
+				barn_wall_int_9: T({
+					material: "wood",
+					extents: L.create(.5, 4.5),
+					hitParticle: "ltgreenChip",
+					img: d("img/map/map-wall-09-rounded.svg", 7173701)
+				}),
 				barn_wall_int_11: T({
 					material: "wood",
 					extents: L.create(.5, 5.5),
@@ -9847,10 +9063,10 @@ webpackJsonp([0], {
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(0, 12), L.create(5, 2)),
+							collider: A.createAabbExtents(L.create(0, 12), L.create(5, 2)),
 							color: 12300935
 						}, {
-							collider: D.createAabbExtents(L.create(0, -2), L.create(24.5, 12.8)),
+							collider: A.createAabbExtents(L.create(0, -2), L.create(24.5, 12.8)),
 							color: 3816739
 						}]
 					},
@@ -9862,7 +9078,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "house",
-							collision: [D.createAabbExtents(L.create(0, -2), L.create(25, 13.2)), D.createAabbExtents(L.create(0, 12), L.create(5.5, 2.5))]
+							collision: [A.createAabbExtents(L.create(0, -2), L.create(25, 13.2)), A.createAabbExtents(L.create(0, 12), L.create(5.5, 2.5))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-barn-floor.svg",
@@ -9872,8 +9088,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, -2), L.create(24.5, 12.8)), D.createAabbExtents(L.create(0, 12), L.create(5.5, 2.5))],
-						scopeOut: [D.createAabbExtents(L.create(0, -14.5), L.create(5.5, 4)), D.createAabbExtents(L.create(0, 14.5), L.create(5.5, 4))],
+						scopeIn: [A.createAabbExtents(L.create(0, -2), L.create(24.5, 12.8)), A.createAabbExtents(L.create(0, 12), L.create(5.5, 2.5))],
+						scopeOut: [A.createAabbExtents(L.create(0, -14.5), L.create(5.5, 4)), A.createAabbExtents(L.create(0, 14.5), L.create(5.5, 4))],
 						vision: {
 							dist: 5.5,
 							width: 2.75,
@@ -10254,13 +9470,13 @@ webpackJsonp([0], {
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(-16, 7), L.create(10.75, 11)),
+							collider: A.createAabbExtents(L.create(-16, 7), L.create(10.75, 11)),
 							color: 7820585
 						}, {
-							collider: D.createAabbExtents(L.create(6, 0), L.create(11.5, 18.25)),
+							collider: A.createAabbExtents(L.create(6, 0), L.create(11.5, 18.25)),
 							color: 9989427
 						}, {
-							collider: D.createAabbExtents(L.create(22, 4), L.create(4.5, 7.5)),
+							collider: A.createAabbExtents(L.create(22, 4), L.create(4.5, 7.5)),
 							color: 7820585
 						}]
 					},
@@ -10272,7 +9488,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "tile",
-							collision: [D.createAabbExtents(L.create(6, -1), L.create(11.25, 18.25)), D.createAabbExtents(L.create(21.5, 4), L.create(4.75, 7.25))]
+							collision: [A.createAabbExtents(L.create(6, -1), L.create(11.25, 18.25)), A.createAabbExtents(L.create(21.5, 4), L.create(4.75, 7.25))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-bank-floor.svg",
@@ -10282,8 +9498,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(6, -1), L.create(11.25, 18.25)), D.createAabbExtents(L.create(21.5, 4), L.create(4.75, 7.25)), D.createAabbExtents(L.create(-16, 6), L.create(10.25, 11))],
-						scopeOut: [D.createAabbExtents(L.create(6, 1.25), L.create(15.25, 20))],
+						scopeIn: [A.createAabbExtents(L.create(6, -1), L.create(11.25, 18.25)), A.createAabbExtents(L.create(21.5, 4), L.create(4.75, 7.25)), A.createAabbExtents(L.create(-16, 6), L.create(10.25, 11))],
+						scopeOut: [A.createAabbExtents(L.create(6, 1.25), L.create(15.25, 20))],
 						vision: {
 							dist: 5.5,
 							width: 2.75,
@@ -10607,7 +9823,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "container",
-							collision: [D.createAabbExtents(L.create(-3.5, 0), L.create(10, 10.5))]
+							collision: [A.createAabbExtents(L.create(-3.5, 0), L.create(10, 10.5))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-vault-floor.svg",
@@ -10617,14 +9833,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(-3.5, 0), L.create(9.25, 10.5))],
-						scopeOut: [D.createAabbExtents(L.create(-3.5, 0), L.create(10, 10.5))],
-						vision: {
-							dist: 7,
-							width: 2.75,
-							linger: .5,
-							fadeRate: 6
-						},
+						scopeIn: [A.createAabbExtents(L.create(-3.5, 0), L.create(9.25, 10.5))],
+						scopeOut: [A.createAabbExtents(L.create(-3.5, 0), L.create(10, 10.5))],
 						imgs: [{
 							sprite: "",
 							scale: .5,
@@ -10771,35 +9981,17 @@ webpackJsonp([0], {
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(-21, -8), L.create(21.25, 14)),
-							color: 5855577
-						}, {
-							collider: D.createAabbExtents(L.create(-24.5, 8.5), L.create(17.75, 9.75)),
+							collider: A.createAabbExtents(L.create(-24.5, 8.5), L.create(17.75, 9.75)),
 							color: 3355970
 						}, {
-							collider: D.createAabbExtents(L.create(-3.5, 12), L.create(3.5, 6.25)),
+							collider: A.createAabbExtents(L.create(-3.5, 12), L.create(3.5, 6.25)),
 							color: 4278620
 						}, {
-							collider: D.createAabbExtents(L.create(10.35, 0), L.create(10.5, 22)),
+							collider: A.createAabbExtents(L.create(10.35, 0), L.create(10.5, 22)),
 							color: 3355970
 						}, {
-							collider: D.createAabbExtents(L.create(31.25, 12.5), L.create(10.75, 9.5)),
+							collider: A.createAabbExtents(L.create(31.25, 12.5), L.create(10.75, 9.5)),
 							color: 3355970
-						}, {
-							collider: D.createAabbExtents(L.create(-3.5, 2.5), L.create(2.25, 2.25)),
-							color: 6310464
-						}, {
-							collider: D.createCircle(L.create(-30.5, -18), 1.5),
-							color: 8026746
-						}, {
-							collider: D.createCircle(L.create(-20.5, -10.5), 1.5),
-							color: 8026746
-						}, {
-							collider: D.createAabbExtents(L.create(-38.5, -7), L.create(1.4, 3.1)),
-							color: 13278307
-						}, {
-							collider: D.createAabbExtents(L.create(-7.5, -19.5), L.create(3.1, 1.4)),
-							color: 13278307
 						}]
 					},
 					terrain: {
@@ -10810,10 +10002,10 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "tile",
-							collision: [D.createAabbExtents(L.create(-24.5, 8.5), L.create(17.75, 9.75)), D.createAabbExtents(L.create(-3.5, 12), L.create(3.5, 6.25)), D.createAabbExtents(L.create(10.35, 0), L.create(10.5, 22)), D.createAabbExtents(L.create(31.25, 12.5), L.create(10.75, 9.5))]
+							collision: [A.createAabbExtents(L.create(-24.5, 8.5), L.create(17.75, 9.75)), A.createAabbExtents(L.create(-3.5, 12), L.create(3.5, 6.25)), A.createAabbExtents(L.create(10.35, 0), L.create(10.5, 22)), A.createAabbExtents(L.create(31.25, 12.5), L.create(10.75, 9.5))]
 						}, {
 							type: "asphalt",
-							collision: [D.createAabbExtents(L.create(-21.5, -13), L.create(21, 11.5)), D.createAabbExtents(L.create(-3.5, 2), L.create(3, 3.5))]
+							collision: [A.createAabbExtents(L.create(-21.5, -13), L.create(21, 11.5)), A.createAabbExtents(L.create(-3.5, 2), L.create(3, 3.5))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-police-floor.svg",
@@ -10823,8 +10015,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(-24.5, 8.5), L.create(17.75, 9.75)), D.createAabbExtents(L.create(-3.5, 12), L.create(3.5, 6.25)), D.createAabbExtents(L.create(10.35, 0), L.create(10.5, 22)), D.createAabbExtents(L.create(31.25, 12.5), L.create(10.75, 9.5))],
-						scopeOut: [D.createAabbExtents(L.create(12, 0), L.create(12.75, 26))],
+						scopeIn: [A.createAabbExtents(L.create(-24.5, 8.5), L.create(17.75, 9.75)), A.createAabbExtents(L.create(-3.5, 12), L.create(3.5, 6.25)), A.createAabbExtents(L.create(10.35, 0), L.create(10.5, 22)), A.createAabbExtents(L.create(31.25, 12.5), L.create(10.75, 9.5))],
+						scopeOut: [A.createAabbExtents(L.create(12, 0), L.create(12.75, 26))],
 						vision: {
 							dist: 5.5,
 							width: 2.75,
@@ -11332,6 +10524,12 @@ webpackJsonp([0], {
 						inheritOri: !0
 					}]
 				},
+				house_wall_int_3: T({
+					material: "wood",
+					extents: L.create(.5, 1.5),
+					hitParticle: "tanChip",
+					img: d("img/map/map-wall-03-rounded.svg", 10584424)
+				}),
 				house_wall_int_4: T({
 					material: "wood",
 					extents: L.create(.5, 2),
@@ -11356,6 +10554,12 @@ webpackJsonp([0], {
 					hitParticle: "tanChip",
 					img: d("img/map/map-wall-09-rounded.svg", 10584424)
 				}),
+				house_wall_int_11: T({
+					material: "wood",
+					extents: L.create(.5, 5.5),
+					hitParticle: "tanChip",
+					img: d("img/map/map-wall-11-rounded.svg", 10584424)
+				}),
 				house_column_1: T({
 					material: "concrete",
 					extents: L.create(1, 1),
@@ -11377,7 +10581,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "house",
-							collision: [D.createAabbExtents(L.create(0, 0), L.create(14.5, 13))]
+							collision: [A.createAabbExtents(L.create(0, 0), L.create(14.5, 13))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-house-floor.svg",
@@ -11387,8 +10591,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(14.5, 13))],
-						scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(16.5, 15))],
+						scopeIn: [A.createAabbExtents(L.create(0, 0), L.create(14.5, 13))],
+						scopeOut: [A.createAabbExtents(L.create(0, 0), L.create(16.5, 15))],
 						vision: {
 							dist: 5.5,
 							width: 2.75,
@@ -11618,6 +10822,12 @@ webpackJsonp([0], {
 					hitParticle: "ltgreenChip",
 					img: d("img/map/map-wall-01-rounded.svg", 16768917)
 				}),
+				mansion_wall_int_4: T({
+					material: "wood",
+					extents: L.create(.5, 2),
+					hitParticle: "ltgreenChip",
+					img: d("img/map/map-wall-04-rounded.svg", 16768917)
+				}),
 				mansion_wall_int_5: T({
 					material: "wood",
 					extents: L.create(.5, 2.5),
@@ -11672,6 +10882,12 @@ webpackJsonp([0], {
 					hitParticle: "ltgreenChip",
 					img: d("img/map/map-wall-13-rounded.svg", 16768917)
 				}),
+				mansion_wall_int_14: T({
+					material: "wood",
+					extents: L.create(.5, 7),
+					hitParticle: "ltgreenChip",
+					img: d("img/map/map-wall-14-rounded.svg", 16768917)
+				}),
 				mansion_column_1: T({
 					material: "concrete",
 					extents: L.create(1, 1),
@@ -11693,7 +10909,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "container",
-							collision: [D.createAabbExtents(L.create(0, 0), L.create(6, 4))]
+							collision: [A.createAabbExtents(L.create(0, 0), L.create(6, 4))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-saferoom-floor.svg",
@@ -11703,8 +10919,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(5, 3))],
-						scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(5, 3))],
+						scopeIn: [A.createAabbExtents(L.create(0, 0), L.create(5, 3))],
+						scopeOut: [A.createAabbExtents(L.create(0, 0), L.create(5, 3))],
 						imgs: [{
 							sprite: "",
 							scale: .5,
@@ -11748,19 +10964,19 @@ webpackJsonp([0], {
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(-1.5, 20.5), L.create(12.5, 4.5)),
+							collider: A.createAabbExtents(L.create(-1.5, 20.5), L.create(12.5, 4.5)),
 							color: 8671554
 						}, {
-							collider: D.createAabbExtents(L.create(-2, -23), L.create(3, 2.5)),
+							collider: A.createAabbExtents(L.create(-2, -23), L.create(3, 2.5)),
 							color: 8671554
 						}, {
-							collider: D.createAabbExtents(L.create(-20.5, -22.5), L.create(10, 2)),
+							collider: A.createAabbExtents(L.create(-20.5, -22.5), L.create(10, 2)),
 							color: 7750457
 						}, {
-							collider: D.createAabbExtents(L.create(28, 1.5), L.create(3.75, 3)),
+							collider: A.createAabbExtents(L.create(28, 1.5), L.create(3.75, 3)),
 							color: 7237230
 						}, {
-							collider: D.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)),
+							collider: A.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)),
 							color: 6175023
 						}]
 					},
@@ -11772,16 +10988,16 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "tile",
-							collision: [D.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)), D.createAabbExtents(L.create(-1.5, 20.5), L.create(12.5, 4.5)), D.createAabbExtents(L.create(0, 0), L.create(20, 20))]
+							collision: [A.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)), A.createAabbExtents(L.create(-1.5, 20.5), L.create(12.5, 4.5)), A.createAabbExtents(L.create(0, 0), L.create(20, 20))]
 						}, {
 							type: "asphalt",
-							collision: [D.createAabbExtents(L.create(-21, -17), L.create(11, 8)), D.createAabbExtents(L.create(-23, -6), L.create(8, 3)), D.createAabbExtents(L.create(-2, -24), L.create(2, 3)), D.createAabbExtents(L.create(28, 1.5), L.create(3, 3))]
+							collision: [A.createAabbExtents(L.create(-21, -17), L.create(11, 8)), A.createAabbExtents(L.create(-23, -6), L.create(8, 3)), A.createAabbExtents(L.create(-2, -24), L.create(2, 3)), A.createAabbExtents(L.create(28, 1.5), L.create(3, 3))]
 						}, {
 							type: "grass",
-							collision: [D.createAabbExtents(L.create(-2, 4), L.create(5, 5))]
+							collision: [A.createAabbExtents(L.create(-2, 4), L.create(5, 5))]
 						}, {
 							type: "house",
-							collision: [D.createAabbExtents(L.create(1, 13), L.create(2, 3.25))]
+							collision: [A.createAabbExtents(L.create(1, 13), L.create(2, 3.25))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-mansion-floor.svg",
@@ -11791,8 +11007,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(-15, -22.4), L.create(17, 2.2)), D.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)), D.createAabbExtents(L.create(-1.5, 20.6), L.create(12, 4.2))],
-						scopeOut: [D.createAabbExtents(L.create(-15, -24.4), L.create(21, 4.2)), D.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)), D.createAabbExtents(L.create(-9, 23.1), L.create(5, 6.7))],
+						scopeIn: [A.createAabbExtents(L.create(-15, -22.4), L.create(17, 2.2)), A.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)), A.createAabbExtents(L.create(-1.5, 20.6), L.create(12, 4.2))],
+						scopeOut: [A.createAabbExtents(L.create(-15, -24.4), L.create(21, 4.2)), A.createAabbExtents(L.create(-3.5, -2), L.create(28, 18.5)), A.createAabbExtents(L.create(-9, 23.1), L.create(5, 6.7))],
 						vision: {
 							dist: 5.5,
 							width: 2.75,
@@ -12258,7 +11474,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "brick",
-							collision: [D.createAabbExtents(L.create(18, 3), L.create(7, 13)), D.createAabbExtents(L.create(5, 0), L.create(6, 10))]
+							collision: [A.createAabbExtents(L.create(18, 3), L.create(7, 13)), A.createAabbExtents(L.create(5, 0), L.create(6, 10))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-building-mansion-cellar.svg",
@@ -12268,8 +11484,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(18, 3), L.create(7, 13)), D.createAabbExtents(L.create(5, 1.5), L.create(6, 12))],
-						scopeOut: [D.createAabbExtents(L.create(18, 3), L.create(7, 13)), D.createAabbExtents(L.create(5, 1.5), L.create(6, 12))],
+						scopeIn: [A.createAabbExtents(L.create(18, 3), L.create(7, 13)), A.createAabbExtents(L.create(5, 1.5), L.create(6, 12))],
+						scopeOut: [A.createAabbExtents(L.create(18, 3), L.create(7, 13)), A.createAabbExtents(L.create(5, 1.5), L.create(6, 12))],
 						vision: {
 							dist: 5.5,
 							width: 2.75,
@@ -12462,14 +11678,14 @@ webpackJsonp([0], {
 						ori: 0
 					}],
 					stairs: [{
-						collision: D.createAabbExtents(L.create(28, 1.5), L.create(3, 2.55)),
+						collision: A.createAabbExtents(L.create(28, 1.5), L.create(3, 2.55)),
 						downDir: L.create(-1, 0),
 						noCeilingReveal: !0
 					}, {
-						collision: D.createAabbExtents(L.create(1, 13.5), L.create(2, 3.5)),
+						collision: A.createAabbExtents(L.create(1, 13.5), L.create(2, 3.5)),
 						downDir: L.create(0, -1)
 					}],
-					mask: [D.createAabbExtents(L.create(10, -.1), L.create(15, 10.1)), D.createAabbExtents(L.create(17.5, 13.5), L.create(7.5, 3.5))]
+					mask: [A.createAabbExtents(L.create(10, -.1), L.create(15, 10.1)), A.createAabbExtents(L.create(17.5, 13.5), L.create(7.5, 3.5))]
 				},
 				bunker_egg_01: {
 					type: "building",
@@ -12482,11 +11698,11 @@ webpackJsonp([0], {
 						grass: !0,
 						beach: !1
 					},
-					zIdx: 2,
+					zIdx: 0,
 					floor: {
 						surfaces: [{
 							type: "container",
-							collision: [D.createAabbExtents(L.create(0, 7.75), L.create(2, 3.25))]
+							collision: [A.createAabbExtents(L.create(0, 7.75), L.create(2, 3.25))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-egg-floor-01.svg",
@@ -12496,8 +11712,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 0), L.create(0, 0))],
-						scopeOut: [D.createAabbExtents(L.create(0, 0), L.create(0, 0))],
+						scopeIn: [A.createAabbExtents(L.create(0, 0), L.create(0, 0))],
+						scopeOut: [A.createAabbExtents(L.create(0, 0), L.create(0, 0))],
 						vision: {
 							dist: 5,
 							width: 2.75,
@@ -12563,7 +11779,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "bunker",
-							collision: [D.createAabbExtents(L.create(0, -4.5), L.create(10, 9))]
+							collision: [A.createAabbExtents(L.create(0, -4.5), L.create(10, 9))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-egg-chamber-floor-01.svg",
@@ -12573,8 +11789,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, -4.5), L.create(10, 9))],
-						scopeOut: [D.createAabbExtents(L.create(0, -4.5), L.create(10, 9))],
+						scopeIn: [A.createAabbExtents(L.create(0, -4.5), L.create(10, 9))],
+						scopeOut: [A.createAabbExtents(L.create(0, -4.5), L.create(10, 9))],
 						imgs: [{
 							sprite: "",
 							scale: .5,
@@ -12650,7 +11866,7 @@ webpackJsonp([0], {
 						grass: !0,
 						beach: !1
 					},
-					mapObstacleBounds: [D.createAabbExtents(L.create(0, 5), L.create(7, 12))],
+					mapObstacleBounds: [A.createAabbExtents(L.create(0, 5), L.create(7, 12))],
 					layers: [{
 						type: "bunker_egg_01",
 						pos: L.create(0, 0),
@@ -12661,20 +11877,20 @@ webpackJsonp([0], {
 						ori: 0
 					}],
 					stairs: [{
-						collision: D.createAabbExtents(L.create(0, 8.4), L.create(2, 2.6)),
+						collision: A.createAabbExtents(L.create(0, 8.4), L.create(2, 2.6)),
 						downDir: L.create(0, -1)
 					}],
-					mask: [D.createAabbExtents(L.create(0, -3.7), L.create(10, 9.5))]
+					mask: [A.createAabbExtents(L.create(0, -3.7), L.create(10, 9.5))]
 				},
 				bunker_hydra_01: {
 					type: "building",
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(20.25, 3.5), L.create(6.25, 5.5)),
+							collider: A.createAabbExtents(L.create(20.25, 3.5), L.create(6.25, 5.5)),
 							color: 2894892
 						}, {
-							collider: D.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25)),
+							collider: A.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25)),
 							color: 3815994
 						}]
 					},
@@ -12686,10 +11902,10 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "tile",
-							collision: [D.createAabbExtents(L.create(20.25, 3.5), L.create(6.25, 5.5)), D.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25))]
+							collision: [A.createAabbExtents(L.create(20.25, 3.5), L.create(6.25, 5.5)), A.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25))]
 						}, {
 							type: "container",
-							collision: [D.createAabbExtents(L.create(16.25, 3.5), L.create(3.25, 2)), D.createAabbExtents(L.create(-16.5, -90.75), L.create(2, 3.25)), D.createAabbExtents(L.create(40, -50.5), L.create(2, 3.25))]
+							collision: [A.createAabbExtents(L.create(16.25, 3.5), L.create(3.25, 2)), A.createAabbExtents(L.create(-16.5, -90.75), L.create(2, 3.25)), A.createAabbExtents(L.create(40, -50.5), L.create(2, 3.25))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-hydra-floor-01.svg",
@@ -12718,8 +11934,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(19.25, 3.5), L.create(6.25, 5.5)), D.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25))],
-						scopeOut: [D.createAabbExtents(L.create(19.25, 3.5), L.create(6.25, 5.5)), D.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25))],
+						scopeIn: [A.createAabbExtents(L.create(19.25, 3.5), L.create(7.25, 5.5)), A.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25))],
+						scopeOut: [A.createAabbExtents(L.create(19.25, 3.5), L.create(7.25, 5.5)), A.createAabbExtents(L.create(32.25, 3.5), L.create(6.75, 9.25))],
 						imgs: [{
 							sprite: "",
 							pos: L.create(25.25, 3.5),
@@ -12904,7 +12120,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "bunker",
-							collision: [D.createAabbExtents(L.create(3.5, 2), L.create(9.5, 10)), D.createAabbExtents(L.create(-15.5, -79.5), L.create(3, 8)), D.createAabbExtents(L.create(40.5, -62), L.create(9.5, 8))]
+							collision: [A.createAabbExtents(L.create(3.5, 2), L.create(9.5, 10)), A.createAabbExtents(L.create(-15.5, -79.5), L.create(3, 8)), A.createAabbExtents(L.create(40.5, -62), L.create(9.5, 8))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-hydra-chamber-floor-01.svg",
@@ -12927,8 +12143,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(3.5, 2.25), L.create(10, 10)), D.createAabbExtents(L.create(-15, -77), L.create(5.5, 10.5)), D.createAabbExtents(L.create(38, -62), L.create(11.5, 8))],
-						scopeOut: [D.createAabbExtents(L.create(3.5, 2.25), L.create(10, 10)), D.createAabbExtents(L.create(-15, -77), L.create(5.5, 10.5)), D.createAabbExtents(L.create(38, -62), L.create(11.5, 8))],
+						scopeIn: [A.createAabbExtents(L.create(3.5, 2.25), L.create(10, 10)), A.createAabbExtents(L.create(-15, -77), L.create(5.5, 10.5)), A.createAabbExtents(L.create(38, -62), L.create(11.5, 8))],
+						scopeOut: [A.createAabbExtents(L.create(3.5, 2.25), L.create(10, 10)), A.createAabbExtents(L.create(-15, -77), L.create(5.5, 10.5)), A.createAabbExtents(L.create(38, -62), L.create(11.5, 8))],
 						imgs: [{
 							sprite: "",
 							pos: L.create(7, 2),
@@ -13178,6 +12394,27 @@ webpackJsonp([0], {
 						inheritOri: !0
 					}]
 				},
+				vault_door_hydra: v({
+					material: "metal",
+					hinge: L.create(1, 3.5),
+					extents: L.create(1, 3.5),
+					img: {
+						sprite: "img/map/map-door-02.svg"
+					},
+					door: {
+						interactionRad: 2.5,
+						openSpeed: .23,
+						openOneWay: -1,
+						openDelay: 1,
+						openOnce: !0,
+						spriteAnchor: L.create(.2, 1),
+						sound: {
+							open: "none",
+							close: "none",
+							change: "vault_change_01"
+						}
+					}
+				}),
 				bunker_hydra_compartment_01: {
 					type: "building",
 					map: {
@@ -13193,7 +12430,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "bunker",
-							collision: [D.createAabbExtents(L.create(0, 1), L.create(9.5, 10))]
+							collision: [A.createAabbExtents(L.create(0, 1), L.create(9.5, 10))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-hydra-compartment-floor-01.svg",
@@ -13203,8 +12440,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 1.25), L.create(10, 10))],
-						scopeOut: [D.createAabbExtents(L.create(0, 1.25), L.create(10, 10))],
+						scopeIn: [A.createAabbExtents(L.create(0, 1.25), L.create(10, 10))],
+						scopeOut: [A.createAabbExtents(L.create(0, 1.25), L.create(10, 10))],
 						imgs: [{
 							sprite: "",
 							pos: L.create(0, 1.25),
@@ -13310,10 +12547,10 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "bunker",
-							collision: [D.createAabbExtents(L.create(-2.5, 16), L.create(22, 4)), D.createAabbExtents(L.create(-2.5, 9.5), L.create(6, 2.5))]
+							collision: [A.createAabbExtents(L.create(-2.5, 16), L.create(22, 4)), A.createAabbExtents(L.create(-2.5, 9.5), L.create(6, 2.5))]
 						}, {
 							type: "tile",
-							collision: [D.createAabbExtents(L.create(0, -4.5), L.create(25, 17))]
+							collision: [A.createAabbExtents(L.create(0, -4.5), L.create(25, 17))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-hydra-compartment-floor-02.svg",
@@ -13324,8 +12561,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(-2, 3), L.create(22.5, 19.5))],
-						scopeOut: [D.createAabbExtents(L.create(-2, 3), L.create(22.5, 19.5))],
+						scopeIn: [A.createAabbExtents(L.create(-2, 3), L.create(22.5, 19.5))],
+						scopeOut: [A.createAabbExtents(L.create(-2, 3), L.create(22.5, 19.5))],
 						imgs: [{
 							sprite: "",
 							pos: L.create(0, 1),
@@ -13541,7 +12778,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "bunker",
-							collision: [D.createAabbExtents(L.create(0, 2), L.create(9, 8.75))]
+							collision: [A.createAabbExtents(L.create(0, 2), L.create(9, 8.75))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-hydra-compartment-floor-03.svg",
@@ -13552,8 +12789,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, .75), L.create(10, 7.75))],
-						scopeOut: [D.createAabbExtents(L.create(0, .75), L.create(10, 7.75))],
+						scopeIn: [A.createAabbExtents(L.create(0, .75), L.create(10, 7.75))],
+						scopeOut: [A.createAabbExtents(L.create(0, .75), L.create(10, 7.75))],
 						imgs: [{
 							sprite: "",
 							pos: L.create(0, 1),
@@ -13610,7 +12847,7 @@ webpackJsonp([0], {
 						grass: !0,
 						beach: !1
 					},
-					mapObstacleBounds: [D.createAabbExtents(L.create(25.5, 3.5), L.create(16, 11.5)), D.createAabbExtents(L.create(-16.5, -89.5), L.create(7, 7.5)), D.createAabbExtents(L.create(40, -47.25), L.create(6.5, 7.25)), D.createAabbExtents(L.create(-5.75, -38.5), L.create(3, 3))],
+					mapObstacleBounds: [A.createAabbExtents(L.create(25.5, 3.5), L.create(16, 11.5)), A.createAabbExtents(L.create(-16.5, -89.5), L.create(7, 7.5)), A.createAabbExtents(L.create(40, -47.25), L.create(6.5, 7.25)), A.createAabbExtents(L.create(-5.75, -38.5), L.create(3, 3))],
 					layers: [{
 						type: "bunker_hydra_01",
 						pos: L.create(0, 0),
@@ -13621,23 +12858,23 @@ webpackJsonp([0], {
 						ori: 0
 					}],
 					stairs: [{
-						collision: D.createAabbExtents(L.create(16.4, 3.5), L.create(2.6, 2)),
+						collision: A.createAabbExtents(L.create(16.4, 3.5), L.create(2.6, 2)),
 						downDir: L.create(-1, 0)
 					}, {
-						collision: D.createAabbExtents(L.create(-16.5, -90.4), L.create(2, 3.1)),
+						collision: A.createAabbExtents(L.create(-16.5, -90.4), L.create(2, 3.1)),
 						downDir: L.create(0, 1)
 					}, {
-						collision: D.createAabbExtents(L.create(40, -50.5), L.create(2, 3.1)),
+						collision: A.createAabbExtents(L.create(40, -50.5), L.create(2, 3.1)),
 						downDir: L.create(0, -1)
 					}],
-					mask: [D.createAabbExtents(L.create(3.5, -7.2), L.create(10.5, 20)), D.createAabbExtents(L.create(-15, -79.75), L.create(5, 8.5)), D.createAabbExtents(L.create(39, -61.85), L.create(12, 9)), D.createAabbExtents(L.create(3.5, -49.2), L.create(23.5, 22)), D.createAabbExtents(L.create(10.5, -76.7), L.create(10, 5.5))]
+					mask: [A.createAabbExtents(L.create(3.5, -7.2), L.create(10.5, 20)), A.createAabbExtents(L.create(-15, -79.75), L.create(5, 8.5)), A.createAabbExtents(L.create(39, -61.85), L.create(12, 9)), A.createAabbExtents(L.create(3.5, -49.2), L.create(23.5, 22)), A.createAabbExtents(L.create(10.5, -76.7), L.create(10, 5.5))]
 				},
 				bunker_storm_01: {
 					type: "building",
 					map: {
 						display: !0,
 						shapes: [{
-							collider: D.createAabbExtents(L.create(0, 10), L.create(3.6, 5.8)),
+							collider: A.createAabbExtents(L.create(0, 10), L.create(3.6, 5.8)),
 							color: 6707790
 						}]
 					},
@@ -13649,10 +12886,10 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "container",
-							collision: [D.createAabbExtents(L.create(0, 7.75), L.create(2, 3.25))]
+							collision: [A.createAabbExtents(L.create(0, 7.75), L.create(2, 3.25))]
 						}, {
 							type: "shack",
-							collision: [D.createAabbExtents(L.create(0, 13.5), L.create(3.75, 2.5)), D.createAabbExtents(L.create(5, 13.75), L.create(1.25, 2.25))]
+							collision: [A.createAabbExtents(L.create(0, 13.5), L.create(3.75, 2.5)), A.createAabbExtents(L.create(5, 13.75), L.create(1.25, 2.25))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-storm-floor-01.svg",
@@ -13663,8 +12900,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(0, 10), L.create(3.5, 5.6))],
-						scopeOut: [D.createAabbExtents(L.create(0, 10), L.create(3.8, 5.9))],
+						scopeIn: [A.createAabbExtents(L.create(0, 10), L.create(3.5, 5.6))],
+						scopeOut: [A.createAabbExtents(L.create(0, 10), L.create(3.8, 5.9))],
 						vision: {
 							width: 4
 						},
@@ -13756,7 +12993,7 @@ webpackJsonp([0], {
 					floor: {
 						surfaces: [{
 							type: "bunker",
-							collision: [D.createAabbExtents(L.create(8.5, -4.5), L.create(18, 9))]
+							collision: [A.createAabbExtents(L.create(8.5, -4.5), L.create(18, 9))]
 						}],
 						imgs: [{
 							sprite: "img/map/map-bunker-storm-chamber-floor-01.svg",
@@ -13767,8 +13004,8 @@ webpackJsonp([0], {
 						}]
 					},
 					ceiling: {
-						scopeIn: [D.createAabbExtents(L.create(8.5, -4.5), L.create(18, 9.1))],
-						scopeOut: [D.createAabbExtents(L.create(8.5, -4.5), L.create(18, 9.1))],
+						scopeIn: [A.createAabbExtents(L.create(8.5, -4.5), L.create(18, 9.1))],
+						scopeOut: [A.createAabbExtents(L.create(8.5, -4.5), L.create(18, 9.1))],
 						imgs: [{
 							sprite: "",
 							pos: L.create(8.5, -1),
@@ -13917,7 +13154,7 @@ webpackJsonp([0], {
 						grass: !0,
 						beach: !1
 					},
-					mapObstacleBounds: [D.createAabbExtents(L.create(1, 6), L.create(7, 13.5))],
+					mapObstacleBounds: [A.createAabbExtents(L.create(1, 6), L.create(7, 13.5))],
 					layers: [{
 						type: "bunker_storm_01",
 						pos: L.create(0, 0),
@@ -13928,10 +13165,10 @@ webpackJsonp([0], {
 						ori: 0
 					}],
 					stairs: [{
-						collision: D.createAabbExtents(L.create(0, 8.4), L.create(2, 2.6)),
+						collision: A.createAabbExtents(L.create(0, 8.4), L.create(2, 2.6)),
 						downDir: L.create(0, -1)
 					}],
-					mask: [D.createAabbExtents(L.create(8.5, -3.7), L.create(18, 9.5))]
+					mask: [A.createAabbExtents(L.create(8.5, -3.7), L.create(18, 9.5))]
 				},
 				container_wall_top: T({
 					material: "metal",
@@ -13947,17 +13184,17 @@ webpackJsonp([0], {
 				}),
 				container_01: y({
 					open: !1,
-					tint: 2703694,
+					tint: 3560807,
 					ceilingSprite: ""
 				}),
 				container_02: y({
 					open: !1,
-					tint: 2703694,
+					tint: 3560807,
 					ceilingSprite: ""
 				}),
 				container_03: y({
 					open: !1,
-					tint: 2703694,
+					tint: 3560807,
 					ceilingSprite: ""
 				}),
 				container_04: y({
@@ -13965,16 +13202,9 @@ webpackJsonp([0], {
 					tint: 3560807,
 					ceilingSprite: ""
 				}),
-				container_06: y({
-					open: !1,
-					tint: 12227840,
-					ceilingSprite: "",
-					loot_spawner_01: "loot_tier_sv98",
-					loot_spawner_02: "loot_tier_scopes_sniper"
-				}),
 				loot_tier_1: {
 					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
+					collision: A.createCircle(L.create(0, 0), 3),
 					tier: "tier_world",
 					terrain: {
 						grass: !0,
@@ -13983,7 +13213,7 @@ webpackJsonp([0], {
 				},
 				loot_tier_2: {
 					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
+					collision: A.createCircle(L.create(0, 0), 3),
 					tier: "tier_container",
 					terrain: {
 						grass: !0,
@@ -13992,7 +13222,7 @@ webpackJsonp([0], {
 				},
 				loot_tier_beach: {
 					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
+					collision: A.createCircle(L.create(0, 0), 3),
 					tier: "tier_world",
 					terrain: {
 						grass: !1,
@@ -14001,7 +13231,7 @@ webpackJsonp([0], {
 				},
 				loot_tier_vault_floor: {
 					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
+					collision: A.createCircle(L.create(0, 0), 3),
 					tier: "tier_vault_floor",
 					terrain: {
 						grass: !0,
@@ -14010,7 +13240,7 @@ webpackJsonp([0], {
 				},
 				loot_tier_police_floor: {
 					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
+					collision: A.createCircle(L.create(0, 0), 3),
 					tier: "tier_police_floor",
 					terrain: {
 						grass: !0,
@@ -14019,26 +13249,8 @@ webpackJsonp([0], {
 				},
 				loot_tier_mansion_floor: {
 					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
+					collision: A.createCircle(L.create(0, 0), 3),
 					tier: "tier_mansion_floor",
-					terrain: {
-						grass: !0,
-						beach: !0
-					}
-				},
-				loot_tier_sv98: {
-					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
-					tier: "tier_sv98",
-					terrain: {
-						grass: !0,
-						beach: !0
-					}
-				},
-				loot_tier_scopes_sniper: {
-					type: "loot_spawner",
-					collision: D.createCircle(L.create(0, 0), 3),
-					tier: "tier_scopes_sniper",
 					terrain: {
 						grass: !0,
 						beach: !0
@@ -14076,7 +13288,7 @@ webpackJsonp([0], {
 				}
 			};
 		e.exports = {
-			Defs: B,
+			Defs: E,
 			MinScale: .125,
 			MaxScale: 2.5,
 			oriToRad: o,
@@ -14091,109 +13303,109 @@ webpackJsonp([0], {
 				locale: "ko"
 			},
 			"word-order": "sov",
-			"index-slogan": "2D 배틀 로얄",
-			"index-region": "월드",
-			"index-north-america": "북아메리카",
-			"index-europe": "유럽",
-			"index-asia": "아시아",
-			"index-players": "플레이어",
-			"index-play-solo": "솔로하기",
-			"index-play-duo": "듀오하기",
-			"index-play-squad": "스쿼드하기",
-			"index-create-team": "팀 만들기",
-			"index-how-to-play": "초보자 가이드",
-			"index-leave-team": "팀에서 나가기",
-			"index-joining-team": "팀 조인중",
-			"index-creating-team": "팀 만드는중",
-			"index-invite-link": "친구 초대",
-			"index-solo": "솔로",
-			"index-duo": "듀오",
-			"index-squad": "스쿼드",
+			"index-slogan": "2D ë°°í‹€ ë¡œì–„",
+			"index-region": "ì›?ë“œ",
+			"index-north-america": "ë¶?ì•„ë©?ë¦¬ì¹´",
+			"index-europe": "ìœ ëŸ½",
+			"index-asia": "ì•„ì‹œì•„",
+			"index-players": "í?Œë ˆì?´ì–´",
+			"index-play-solo": "ì†?ë¡œí•˜ê¸°",
+			"index-play-duo": "ë“€ì˜¤í•˜ê¸°",
+			"index-play-squad": "ìŠ¤ì¿¼ë“œí•˜ê¸°",
+			"index-create-team": "íŒ€ ë§Œë“¤ê¸°",
+			"index-how-to-play": "ì´ˆë³´ìž? ê°€ì?´ë“œ",
+			"index-leave-team": "íŒ€ì—?ì„œ ë‚˜ê°€ê¸°",
+			"index-joining-team": "íŒ€ ì¡°ì?¸ì¤‘",
+			"index-creating-team": "íŒ€ ë§Œë“œëŠ?ì¤‘",
+			"index-invite-link": "ì¹œêµ¬ ì´ˆëŒ€",
+			"index-solo": "ì†?ë¡œ",
+			"index-duo": "ë“€ì˜¤",
+			"index-squad": "ìŠ¤ì¿¼ë“œ",
 			"index-auto-fill": "Auto Fill",
 			"index-no-fill": "No Fill",
-			"index-waiting-for-leader": "파티장 준비중",
-			"index-play": "시작",
-			"index-featured-youtuber": "유튜버",
-			"index-settings": "세팅",
-			"index-high-resolution": "고화질 (그래픽을 높입니다)",
-			"index-screen-shake": "화면 효과",
-			"index-master-volume": "전체 사운드",
-			"index-sfx-volume": "효과음 사운드",
-			"index-music-volume": "음악 사운드",
-			"index-mobile-announce": "surviv.io 모바일 버전 출시!",
-			"index-mobile-tooltip": "모바일에서 <span>surviv.io</span>에 접속해서 플레이하세요!",
-			"index-team-is-full": "팀이 꽉 찾습니다!",
-			"index-failed-joining-team": "팀에 들어가지 못했습니다.",
-			"index-failed-creating-team": "팀을 만들수 없습니다.",
-			"index-failed-finding-game": "게임을 찾지 못하였습니다.",
-			"index-failed-joining-game": "게임에 들어가지 못했습니다.",
-			"index-lost-connection": "네트워크 연결이 끊어짐.",
-			"index-host-closed": "네트워크 연결이 끊어짐.",
-			"index-view-more": "더보기",
-			"index-back-to-main": "메인 메뉴로",
-			"index-most-kills": "최다 킬수",
-			"index-total-kills": "전체 킬수",
-			"index-total-wins": "승리 횟수",
+			"index-waiting-for-leader": "íŒŒí‹°ìž¥ ì¤€ë¹„ì¤‘",
+			"index-play": "ì‹œìž‘",
+			"index-featured-youtuber": "ìœ íŠœë²„",
+			"index-settings": "ì„¸íŒ…",
+			"index-high-resolution": "ê³ í™?ì§ˆ (ê·¸ëž˜í?½ì?„ ë†’ìž…ë‹ˆë‹¤)",
+			"index-screen-shake": "í™?ë©´ íš¨ê³¼",
+			"index-master-volume": "ì „ì²´ ì‚¬ìš´ë“œ",
+			"index-sfx-volume": "íš¨ê³¼ì?Œ ì‚¬ìš´ë“œ",
+			"index-music-volume": "ì?Œì•… ì‚¬ìš´ë“œ",
+			"index-mobile-announce": "surviv.io ëª¨ë°?ì?¼ ë²„ì „ ì¶œì‹œ!",
+			"index-mobile-tooltip": "ëª¨ë°?ì?¼ì—?ì„œ <span>surviv.io</span>ì—? ì ‘ì†?í•´ì„œ í?Œë ˆì?´í•˜ì„¸ìš?!",
+			"index-team-is-full": "íŒ€ì?´ ê½‰ ì°¾ìŠµë‹ˆë‹¤!",
+			"index-failed-joining-team": "íŒ€ì—? ë“¤ì–´ê°€ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.",
+			"index-failed-creating-team": "íŒ€ì?„ ë§Œë“¤ìˆ˜ ì—†ìŠµë‹ˆë‹¤.",
+			"index-failed-finding-game": "ê²Œìž„ì?„ ì°¾ì§€ ëª»í•˜ì˜€ìŠµë‹ˆë‹¤.",
+			"index-failed-joining-game": "ê²Œìž„ì—? ë“¤ì–´ê°€ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.",
+			"index-lost-connection": "ë„¤íŠ¸ì›Œí?¬ ì—°ê²°ì?´ ë?Šì–´ì§?.",
+			"index-host-closed": "ë„¤íŠ¸ì›Œí?¬ ì—°ê²°ì?´ ë?Šì–´ì§?.",
+			"index-view-more": "ë??ë³´ê¸°",
+			"index-back-to-main": "ë©?ì?¸ ë©?ë‰´ë¡œ",
+			"index-most-kills": "ìµœë‹¤ í‚¬ìˆ˜",
+			"index-total-kills": "ì „ì²´ í‚¬ìˆ˜",
+			"index-total-wins": "ìŠ¹ë¦¬ íšŸìˆ˜",
 			"index-top-5-percent": "Top 5",
 			"index-kill-death-ratio": "K/D",
 			"index-for": "For",
-			"index-today": "오늘 점수",
-			"index-this-week": "7 일 점수",
-			"index-all-time": "All Time 점수",
+			"index-today": "ì˜¤ëŠ˜ ì ?ìˆ˜",
+			"index-this-week": "7 ì?¼ ì ?ìˆ˜",
+			"index-all-time": "All Time ì ?ìˆ˜",
 			"index-top-100": "TOP 100",
-			"index-rank": "랭킹",
-			"index-player": "플레이어",
-			"index-total-games": "전체게임 횟수",
-			"index-controls": "게임 조작법",
-			"index-movement": "이동",
+			"index-rank": "ëž­í‚¹",
+			"index-player": "í?Œë ˆì?´ì–´",
+			"index-total-games": "ì „ì²´ê²Œìž„ íšŸìˆ˜",
+			"index-controls": "ê²Œìž„ ì¡°ìž‘ë²•",
+			"index-movement": "ì?´ë?™",
 			"index-movement-ctrl": "W, A, S, D",
-			"index-aim": "조준",
-			"index-aim-ctrl": "마우스",
-			"index-punch": "펀치",
-			"index-shoot": "발사",
-			"index-shoot-ctrl": "좌클릭",
-			"index-change-weapons": "무기바꾸기",
-			"index-change-weapons-ctrl": "1-4 or 스크롤",
-			"index-stow-weapons": "무기 집어넣기",
+			"index-aim": "ì¡°ì¤€",
+			"index-aim-ctrl": "ë§ˆìš°ìŠ¤",
+			"index-punch": "íŽ€ì¹˜",
+			"index-shoot": "ë°œì‚¬",
+			"index-shoot-ctrl": "ì¢Œí?´ë¦­",
+			"index-change-weapons": "ë¬´ê¸°ë°?ê¾¸ê¸°",
+			"index-change-weapons-ctrl": "1-4 or ìŠ¤í?¬ë¡¤",
+			"index-stow-weapons": "ë¬´ê¸° ì§‘ì–´ë„£ê¸°",
 			"index-stow-weapons-ctrl": "3 or E",
-			"index-swap-weapons": "그전 무기로 바꾸기",
+			"index-swap-weapons": "ê·¸ì „ ë¬´ê¸°ë¡œ ë°?ê¾¸ê¸°",
 			"index-swap-weapons-ctrl": "Q",
-			"index-reload": "리로드",
+			"index-reload": "ë¦¬ë¡œë“œ",
 			"index-reload-ctrl": "R",
-			"index-scope-zoom": "줌 인 or 아웃",
-			"index-scope-zoom-ctrl": "좌클릭으로 줌",
-			"index-pickup": "줍기",
-			"index-loot": "줍기",
-			"index-revive": "부활",
+			"index-scope-zoom": "ì¤Œ ì?¸ or ì•„ì›ƒ",
+			"index-scope-zoom-ctrl": "ì¢Œí?´ë¦­ìœ¼ë¡œ ì¤Œ",
+			"index-pickup": "ì¤?ê¸°",
+			"index-loot": "ì¤?ê¸°",
+			"index-revive": "ë¶€í™œ",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "힐링",
-			"index-use-medical-ctrl": "좌클릭, 7-0",
-			"index-drop-item": "아이템 버리기",
-			"index-drop-item-ctrl": "우클릭",
-			"index-cancel-action": "행동취소",
+			"index-use-medical": "íž?ë§?",
+			"index-use-medical-ctrl": "ì¢Œí?´ë¦­, 7-0",
+			"index-drop-item": "ì•„ì?´í…œ ë²„ë¦¬ê¸°",
+			"index-drop-item-ctrl": "ìš°í?´ë¦­",
+			"index-cancel-action": "í–‰ë?™ì·¨ì†Œ",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "지도보기",
+			"index-view-map": "ì§€ë?„ë³´ê¸°",
 			"index-view-map-ctrl": "M or G",
-			"index-toggle-minimap": "미니 맵 전환",
+			"index-toggle-minimap": "ë¯¸ë‹ˆ ë§µ ì „í™˜",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "듀오/스쿼드 멤버와 소통하기",
-			"index-use-ping-ctrl": "C를 누른 상태에서 우클릭을 하고 마우스를 드래그해 이모티콘을 선택하세요!",
-			"index-use-emote": "이모티콘 사용하기",
-			"index-use-emote-ctrl": "화면에 우클릭을 누른 채 마우스를 드래그해 이모티콘을 선택하세요!",
-			"index-tips-1-desc": "surviv.io의 목표는 마지막 1인, 또는 듀오, 또는 스쿼드가 되는 것입니다! 한 게임당 목숨은 한 개 - 죽으면 다시 부활할 수 없어요!",
+			"index-use-ping": "ë“€ì˜¤/ìŠ¤ì¿¼ë“œ ë©¤ë²„ì™€ ì†Œí†µí•˜ê¸°",
+			"index-use-ping-ctrl": "Cë¥¼ ëˆ„ë¥¸ ìƒ?íƒœì—?ì„œ ìš°í?´ë¦­ì?„ í•˜ê³  ë§ˆìš°ìŠ¤ë¥¼ ë“œëž˜ê·¸í•´ ì?´ëª¨í‹°ì½˜ì?„ ì„ íƒ?í•˜ì„¸ìš?!",
+			"index-use-emote": "ì?´ëª¨í‹°ì½˜ ì‚¬ìš©í•˜ê¸°",
+			"index-use-emote-ctrl": "í™?ë©´ì—? ìš°í?´ë¦­ì?„ ëˆ„ë¥¸ ì±„ ë§ˆìš°ìŠ¤ë¥¼ ë“œëž˜ê·¸í•´ ì?´ëª¨í‹°ì½˜ì?„ ì„ íƒ?í•˜ì„¸ìš?!",
+			"index-tips-1-desc": "surviv.ioì?˜ ëª©í‘œëŠ? ë§ˆì§€ë§‰ 1ì?¸, ë˜?ëŠ? ë“€ì˜¤, ë˜?ëŠ? ìŠ¤ì¿¼ë“œê°€ ë?˜ëŠ? ê²ƒìž…ë‹ˆë‹¤! í•œ ê²Œìž„ë‹¹ ëª©ìˆ¨ì?€ í•œ ê°œ - ì£½ìœ¼ë©´ ë‹¤ì‹œ ë¶€í™œí•  ìˆ˜ ì—†ì–´ìš?!",
 			"index-tips-2": "2D PUBG",
-			"index-tips-2-desc": "PUBG, 포트나이트, 또는 H1Z1와 같은 배틀로얄 장르의 게임을 좋아하신다면, 이미 당신은 surviv.io의 세계에 들어와 있습니다! 이 게임은 2D로 되어 있는 배틀그라운드라고 생각하시면 됩니다(조금 더 안정적인 서버와 먹기 쉬워진 치킨과 함께요.)",
-			"index-tips-3": "파밍과 전투",
-			"index-tips-3-desc": "당신이 시작할 때에는 작은 공간 외에는 아무것도 주어지지 않습니다. 맵 곳곳을 돌아다니며 무기, 탄약, 조준경, 그리고 의료용 아이템을 찾아다니세요. 다른 플레이어를 사살하면 그 플레이어의 아이템을 차지할 수 있습니다!",
-			"index-tips-4": "자기장 = 제 2의 적!",
-			"index-tips-4-desc": "다른 플레이어만이 당신에게 데미지를 주는 것은 아닙니다. 시간이 지날 때마다 빨간색 자기장이 점점 좁혀옵니다. 자기장 안에 있다면 경기 후반으로 갈수록 높은 데미지를 받게 되죠. 지도를 보며 안전에 신경쓰세요!",
-			"game-alive": "생존",
-			"game-reloading": "장전중",
-			"game-using": "사용중",
-			"game-reviving": "부활중",
-			"game-revive-teammate": "팀원부활",
-			"game-equip": "착용",
-			"game-cancel": "취소",
+			"index-tips-2-desc": "PUBG, í?¬íŠ¸ë‚˜ì?´íŠ¸, ë˜?ëŠ? H1Z1ì™€ ê°™ì?€ ë°°í‹€ë¡œì–„ ìž¥ë¥´ì?˜ ê²Œìž„ì?„ ì¢‹ì•„í•˜ì‹ ë‹¤ë©´, ì?´ë¯¸ ë‹¹ì‹ ì?€ surviv.ioì?˜ ì„¸ê³„ì—? ë“¤ì–´ì™€ ìžˆìŠµë‹ˆë‹¤! ì?´ ê²Œìž„ì?€ 2Dë¡œ ë?˜ì–´ ìžˆëŠ? ë°°í‹€ê·¸ë?¼ìš´ë“œë?¼ê³  ìƒ?ê°?í•˜ì‹œë©´ ë?©ë‹ˆë‹¤(ì¡°ê¸ˆ ë?? ì•ˆì •ì ?ì?¸ ì„œë²„ì™€ ë¨¹ê¸° ì‰¬ì›Œì§„ ì¹˜í‚¨ê³¼ í•¨ê»˜ìš?.)",
+			"index-tips-3": "íŒŒë°?ê³¼ ì „íˆ¬",
+			"index-tips-3-desc": "ë‹¹ì‹ ì?´ ì‹œìž‘í•  ë•Œì—?ëŠ? ìž‘ì?€ ê³µê°„ ì™¸ì—?ëŠ? ì•„ë¬´ê²ƒë?„ ì£¼ì–´ì§€ì§€ ì•ŠìŠµë‹ˆë‹¤. ë§µ ê³³ê³³ì?„ ë?Œì•„ë‹¤ë‹ˆë©° ë¬´ê¸°, íƒ„ì•½, ì¡°ì¤€ê²½, ê·¸ë¦¬ê³  ì?˜ë£Œìš© ì•„ì?´í…œì?„ ì°¾ì•„ë‹¤ë‹ˆì„¸ìš?. ë‹¤ë¥¸ í?Œë ˆì?´ì–´ë¥¼ ì‚¬ì‚´í•˜ë©´ ê·¸ í?Œë ˆì?´ì–´ì?˜ ì•„ì?´í…œì?„ ì°¨ì§€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤!",
+			"index-tips-4": "ìž?ê¸°ìž¥ = ì œ 2ì?˜ ì ?!",
+			"index-tips-4-desc": "ë‹¤ë¥¸ í?Œë ˆì?´ì–´ë§Œì?´ ë‹¹ì‹ ì—?ê²Œ ë?°ë¯¸ì§€ë¥¼ ì£¼ëŠ? ê²ƒì?€ ì•„ë‹™ë‹ˆë‹¤. ì‹œê°„ì?´ ì§€ë‚  ë•Œë§ˆë‹¤ ë¹¨ê°„ìƒ‰ ìž?ê¸°ìž¥ì?´ ì ?ì ? ì¢?í˜€ì˜µë‹ˆë‹¤. ìž?ê¸°ìž¥ ì•ˆì—? ìžˆë‹¤ë©´ ê²½ê¸° í›„ë°˜ìœ¼ë¡œ ê°ˆìˆ˜ë¡? ë†’ì?€ ë?°ë¯¸ì§€ë¥¼ ë°›ê²Œ ë?˜ì£ . ì§€ë?„ë¥¼ ë³´ë©° ì•ˆì „ì—? ì‹ ê²½ì“°ì„¸ìš?!",
+			"game-alive": "ìƒ?ì¡´",
+			"game-reloading": "ìž¥ì „ì¤‘",
+			"game-using": "ì‚¬ìš©ì¤‘",
+			"game-reviving": "ë¶€í™œì¤‘",
+			"game-revive-teammate": "íŒ€ì›?ë¶€í™œ",
+			"game-equip": "ì°©ìš©",
+			"game-cancel": "ì·¨ì†Œ",
 			"game-You": "You",
 			"game-you": "you",
 			"game-themselves": "themselves",
@@ -14207,80 +13419,80 @@ webpackJsonp([0], {
 			"game-finally-bled-out": "finally bled out",
 			"game-died-outside": "died outside the safe zone",
 			"game-the-red-zone": "The red zone",
-			"game-waiting-for-players": "플레이어 기다리느중",
+			"game-waiting-for-players": "í?Œë ˆì?´ì–´ ê¸°ë‹¤ë¦¬ëŠ?ì¤‘",
 			"game-spectating": "Spectating",
-			"game-red-zone-advances": "빨간 구역 움직입니다!",
-			"game-red-zone-advancing": "빨간 구역이 움직입니다.  안전지대로 대피하십시요.",
+			"game-red-zone-advances": "ë¹¨ê°„ êµ¬ì—­ ì›€ì§?ìž…ë‹ˆë‹¤!",
+			"game-red-zone-advancing": "ë¹¨ê°„ êµ¬ì—­ì?´ ì›€ì§?ìž…ë‹ˆë‹¤.  ì•ˆì „ì§€ëŒ€ë¡œ ëŒ€í?¼í•˜ì‹­ì‹œìš?.",
 			"game-seconds": "s",
 			"game-minutes": "m",
 			"game-minute": "m",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "공간이 부족합니다!",
-			"game-item-already-owned": "이 물건은 이미 소유 하고 있습니다!",
-			"game-item-already-equipped": "이 물건은 이미 착용 하고 있습니다!",
-			"game-better-item-equipped": "더 좋은 아이템을 착용 하고 있습니다!",
-			"game-play-new-game": "새로 시작하기",
-			"game-spectate": "관중모드",
-			"game-full-screen": "풀 스크린",
-			"game-sound": "사운드",
-			"game-quit-game": "나가기",
-			"game-return-to-game": "돌아가기",
-			"game-hide-match-stats": "게임통계 감추기",
-			"game-view-match-stats": "게임통계 보이기",
-			"game-previous-teammate": "이전 플레이어",
-			"game-next-teammate": "다음 플레이어",
+			"game-not-enough-space": "ê³µê°„ì?´ ë¶€ì¡±í•©ë‹ˆë‹¤!",
+			"game-item-already-owned": "ì?´ ë¬¼ê±´ì?€ ì?´ë¯¸ ì†Œìœ  í•˜ê³  ìžˆìŠµë‹ˆë‹¤!",
+			"game-item-already-equipped": "ì?´ ë¬¼ê±´ì?€ ì?´ë¯¸ ì°©ìš© í•˜ê³  ìžˆìŠµë‹ˆë‹¤!",
+			"game-better-item-equipped": "ë?? ì¢‹ì?€ ì•„ì?´í…œì?„ ì°©ìš© í•˜ê³  ìžˆìŠµë‹ˆë‹¤!",
+			"game-play-new-game": "ìƒˆë¡œ ì‹œìž‘í•˜ê¸°",
+			"game-spectate": "ê´€ì¤‘ëª¨ë“œ",
+			"game-full-screen": "í’€ ìŠ¤í?¬ë¦°",
+			"game-sound": "ì‚¬ìš´ë“œ",
+			"game-quit-game": "ë‚˜ê°€ê¸°",
+			"game-return-to-game": "ë?Œì•„ê°€ê¸°",
+			"game-hide-match-stats": "ê²Œìž„í†µê³„Â ê°?ì¶?ê¸°",
+			"game-view-match-stats": "ê²Œìž„í†µê³„ ë³´ì?´ê¸°",
+			"game-previous-teammate": "ì?´ì „ í?Œë ˆì?´ì–´",
+			"game-next-teammate": "ë‹¤ì?Œ í?Œë ˆì?´ì–´",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "나가기",
-			"game-your-results": "랭킹",
-			"game-chicken": "이겼닭! 오늘 저녁은 치킨이닭!",
-			"game-won-the-game": "승리.",
-			"game-team-eliminated": "그럴 수 있어. 이런 날도 있는 거지 뭐.",
-			"game-rank": "랭킹",
-			"game-team-rank": "팀 랭킹",
-			"game-team-kills": "팀 킬",
-			"game-kill": "킬",
-			"game-kills": "킬",
-			"game-damage-dealt": "가한 피해량",
-			"game-damage-taken": "받은 피해량",
-			"game-survived": "생존시간",
-			"game-backpack00": "주머니",
-			"game-backpack01": "작은 가방",
-			"game-backpack02": "보통 가방",
-			"game-backpack03": "군인 가방",
-			"game-bandage": "붕대",
-			"game-bandage-tooltip": "레프트 클릭 하시면 15 HP 증가합니다.",
-			"game-healing-tooltip": "75 HP 이상 힐할수 없읍니다.",
-			"game-healthkit": "구급 상자",
-			"game-healthkit-tooltip": "레프트 클릭 하시면 100 HP 증가합니다.",
-			"game-soda": "소다",
-			"game-soda-tooltip": "레프트 클릭 하시면 아드레날린 25 증가합니다.",
-			"game-adrenaline-tooltip": "아드레날린은 HP 지속적으로 회복시킴니다.",
-			"game-painkiller": "알약",
-			"game-painkiller-tooltip": "레프트 클릭 하시면 아드레날린 50 증가합니다.",
+			"game-leave-game": "ë‚˜ê°€ê¸°",
+			"game-your-results": "ëž­í‚¹",
+			"game-chicken": "ì?´ê²¼ë‹­! ì˜¤ëŠ˜ ì €ë…?ì?€ ì¹˜í‚¨ì?´ë‹­!",
+			"game-won-the-game": "ìŠ¹ë¦¬.",
+			"game-team-eliminated": "ê·¸ëŸ´ ìˆ˜ ìžˆì–´. ì?´ëŸ° ë‚ ë?„ ìžˆëŠ? ê±°ì§€ ë­?.",
+			"game-rank": "ëž­í‚¹",
+			"game-team-rank": "íŒ€ ëž­í‚¹",
+			"game-team-kills": "íŒ€ í‚¬",
+			"game-kill": "í‚¬",
+			"game-kills": "í‚¬",
+			"game-damage-dealt": "ê°€í•œ í?¼í•´ëŸ‰",
+			"game-damage-taken": "ë°›ì?€ í?¼í•´ëŸ‰",
+			"game-survived": "ìƒ?ì¡´ì‹œê°„",
+			"game-backpack00": "ì£¼ë¨¸ë‹ˆ",
+			"game-backpack01": "ìž‘ì?€ ê°€ë°©",
+			"game-backpack02": "ë³´í†µ ê°€ë°©",
+			"game-backpack03": "êµ°ì?¸ ê°€ë°©",
+			"game-bandage": "ë¶•ëŒ€",
+			"game-bandage-tooltip": "ë ˆí?„íŠ¸ í?´ë¦­ í•˜ì‹œë©´ 15 HP ì¦?ê°€í•©ë‹ˆë‹¤.",
+			"game-healing-tooltip": "75 HP ì?´ìƒ? íž?í• ìˆ˜ ì—†ì??ë‹ˆë‹¤.",
+			"game-healthkit": "êµ¬ê¸‰ ìƒ?ìž?",
+			"game-healthkit-tooltip": "ë ˆí?„íŠ¸ í?´ë¦­ í•˜ì‹œë©´Â 100 HP ì¦?ê°€í•©ë‹ˆë‹¤.",
+			"game-soda": "ì†Œë‹¤",
+			"game-soda-tooltip": "ë ˆí?„íŠ¸ í?´ë¦­ í•˜ì‹œë©´ ì•„ë“œë ˆë‚ ë¦° 25 ì¦?ê°€í•©ë‹ˆë‹¤.",
+			"game-adrenaline-tooltip": "ì•„ë“œë ˆë‚ ë¦°ì?€ HP ì§€ì†?ì ?ìœ¼ë¡œ íšŒë³µì‹œí‚´ë‹ˆë‹¤.",
+			"game-painkiller": "ì•Œì•½",
+			"game-painkiller-tooltip": "ë ˆí?„íŠ¸ í?´ë¦­ í•˜ì‹œë©´ ì•„ë“œë ˆë‚ ë¦°Â 50 ì¦?ê°€í•©ë‹ˆë‹¤.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "M9, Glock, MP5, MAC-10, UMP9, Vector 탄약.",
-			"game-12gauge": "12 게이지",
-			"game-12gauge-tooltip": "M870, SAIGA-12, MP220 탄약.",
+			"game-9mm-tooltip": "M9, Glock, MP5, MAC-10, UMP9, Vector íƒ„ì•½.",
+			"game-12gauge": "12 ê²Œì?´ì§€",
+			"game-12gauge-tooltip": "M870, SAIGA-12, MP220 íƒ„ì•½.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "AK-47, SCAR-H, M39, Mosin-Nagant, OT-38, DP-28 탄약.",
+			"game-762mm-tooltip": "AK-47, SCAR-H, M39, Mosin Nagant, OT-38, DP-28 íƒ„ì•½.",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "FAMAS, HK416, Mk 12, M249 탄약.",
-			"game-chest01": "조끼 레벨 1",
-			"game-chest02": "조끼 레벨 2",
-			"game-chest03": "조끼 레벨 3",
-			"game-helmet01": "헬멧 레벨 1",
-			"game-helmet02": "헬멧 레벨 2",
-			"game-helmet03": "헬멧 레벨 3",
-			"game-1xscope": "1x 스코프",
-			"game-2xscope": "2x 스코프",
-			"game-4xscope": "4x 스코프",
-			"game-8xscope": "8x 스코프",
-			"game-15xscope": "15x 스코프",
-			"game-level-1": "레벨 1",
-			"game-level-2": "레벨 2",
-			"game-level-3": "레벨 3",
+			"game-556mm-tooltip": "FAMAS, HK416, Mk 12, M249 íƒ„ì•½.",
+			"game-chest01": "ì¡°ë?¼ ë ˆë²¨ 1",
+			"game-chest02": "ì¡°ë?¼ ë ˆë²¨ 2",
+			"game-chest03": "ì¡°ë?¼ ë ˆë²¨ 3",
+			"game-helmet01": "í—¬ë©§ ë ˆë²¨ 1",
+			"game-helmet02": "í—¬ë©§ ë ˆë²¨ 2",
+			"game-helmet03": "í—¬ë©§ ë ˆë²¨ 3",
+			"game-1xscope": "1x ìŠ¤ì½?í?„",
+			"game-2xscope": "2x ìŠ¤ì½?í?„",
+			"game-4xscope": "4x ìŠ¤ì½?í?„",
+			"game-8xscope": "8x ìŠ¤ì½?í?„",
+			"game-15xscope": "15x ìŠ¤ì½?í?„",
+			"game-level-1": "ë ˆë²¨ 1",
+			"game-level-2": "ë ˆë²¨ 2",
+			"game-level-3": "ë ˆë²¨ 3",
 			"game-outfitBase": "Basic Outfit",
 			"game-outfitRoyalFortune": "Royal Fortune",
 			"game-outfitKeyLime": "Key Lime",
@@ -14293,7 +13505,7 @@ webpackJsonp([0], {
 			"game-outfitWhite": "Arctic Avenger",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -14304,10 +13516,10 @@ webpackJsonp([0], {
 			"game-m9": "M9",
 			"game-glock": "Glock 18C",
 			"game-ot38": "OT-38",
-			"game-frag": "수류탄",
-			"game-hud-frag": "수류탄",
-			"game-smoke": "연막탄",
-			"game-hud-smoke": "연막탄",
+			"game-frag": "ìˆ˜ë¥˜íƒ„",
+			"game-hud-frag": "ìˆ˜ë¥˜íƒ„",
+			"game-smoke": "ì—°ë§‰íƒ„",
+			"game-hud-smoke": "ì—°ë§‰íƒ„",
 			"game-barrel_01": "a barrel",
 			"game-silo_01": "a silo"
 		};
@@ -14405,7 +13617,7 @@ webpackJsonp([0], {
 								!(l.sameLayer(d.layer, a.layer) || 2 & a.layer) || 1 != d.layer && 2 & a.layer && i.insideStructureMask(r.createCircle(d.pos, 1)) || (h |= 2), o.addPIXIObj(d.sprite, p.World, h, 500, d.zIdx);
 								var g = t.pointToScreen(d.pos),
 									f = t.pixels(2 * d.rad / t.ppu);
-								d.sprite.position.set(g.x, g.y), d.sprite.scale.set(f, f), d.sprite.rotation = d.rot, d.sprite.tint = d.tint, d.sprite.alpha = u, d.sprite.visible = d.active
+								d.sprite.position.set(g.x, g.y), d.sprite.scale.set(f, f), d.sprite.rotation = d.rot, d.sprite.tint = d.tint, d.sprite.alpha = .2 * u, d.sprite.visible = d.active
 							}
 						}
 					}
@@ -14552,11 +13764,11 @@ webpackJsonp([0], {
 							k.interpPos = m.add(k.interpPos, m.mul(T, M));
 							var P = Math.PI * k.interpSpeed,
 								C = l.angleDiff(k.interpRot, this.rot),
-								I = l.sign(C) * P * e;
-							if (Math.abs(C) < Math.abs(I) && (I = C), k.interpRot += I, k.seq != k.seqOld) {
-								var z = s.Defs[this.type],
-									A = z.door.sound.change || "";
-								"" != A && i.playSound(A, {
+								z = l.sign(C) * P * e;
+							if (Math.abs(C) < Math.abs(z) && (z = C), k.interpRot += z, k.seq != k.seqOld) {
+								var I = s.Defs[this.type],
+									D = I.door.sound.change || "";
+								"" != D && i.playSound(D, {
 									channel: "sfx",
 									soundPos: f,
 									layer: this.layer,
@@ -14564,8 +13776,8 @@ webpackJsonp([0], {
 								}), k.seqOld = k.seq
 							}
 							if (k.open != k.wasOpen) {
-								var D = s.Defs[this.type],
-									O = k.open ? D.door.sound.open : D.door.sound.close;
+								var A = s.Defs[this.type],
+									O = k.open ? A.door.sound.open : A.door.sound.close;
 								i.playSound(O, {
 									channel: "sfx",
 									soundPos: f,
@@ -14575,23 +13787,23 @@ webpackJsonp([0], {
 							}
 						}
 						if (p && !h && (t.deadObstacleIds.push(this.__id), this.exploded = !0, this.smokeEmitter && (this.smokeEmitter.stop(), this.smokeEmitter = null), !g)) {
-							for (var L = r.toAabb(this.collider), E = m.mul(m.sub(L.max, L.min), .5), B = m.add(L.min, E), F = Math.floor(c.random(5, 11)), R = 0; R < F; R++) {
+							for (var L = r.toAabb(this.collider), B = m.mul(m.sub(L.max, L.min), .5), E = m.add(L.min, B), F = Math.floor(c.random(5, 11)), R = 0; R < F; R++) {
 								var j = m.mul(m.randomUnit(), c.random(5, 15)),
 									N = Array.isArray(y) ? y[Math.floor(Math.random() * y.length)] : y;
-								a.addParticle(d.Defs[N], this.layer, B, j)
+								a.addParticle(d.Defs[N], this.layer, E, j)
 							}
 							i.playSound(b.explode, {
 								channel: "sfx",
-								soundPos: B,
+								soundPos: E,
 								layer: this.layer,
 								muffled: !0
 							})
 						}
 						if (this.smokeEmitter && (this.smokeEmitter.pos = m.copy(this.pos)), this.sprite.visible) {
 							var q = this.dead ? 5 : this.sprite.zIdx,
-								U = this.__id,
-								G = this.layer;
-							!this.dead && q >= 50 && 0 == this.layer && 0 == o.layer && (q += 100, G |= 2), n.addPIXIObj(this.sprite, u.World, G, q, U), this.isDoor && this.door.casingSprite && n.addPIXIObj(this.door.casingSprite, u.World, G, q + this.door.casingSprite.zIdx, U)
+								G = this.__id,
+								U = this.layer;
+							!this.dead && q >= 50 && 0 == this.layer && 0 == o.layer && (q += 100, U |= 2), n.addPIXIObj(this.sprite, u.World, U, q, G), this.isDoor && this.door.casingSprite && n.addPIXIObj(this.door.casingSprite, u.World, U, q + this.door.casingSprite.zIdx, G)
 						}
 						this.isNew = !1
 					}
@@ -14709,52 +13921,52 @@ webpackJsonp([0], {
 			"word-order": "svo",
 			"index-slogan": "Battle Royale 2D",
 			"index-region": "Region",
-			"index-north-america": "Północna Ameryka",
+			"index-north-america": "PÃ³Å‚nocna Ameryka",
 			"index-europe": "Europa",
 			"index-asia": "Azja",
 			"index-players": "Gracze",
 			"index-play-solo": "Graj sam",
 			"index-play-duo": "Graj razem",
-			"index-play-squad": "Graj oddział",
-			"index-create-team": "Stwórz grupę",
-			"index-how-to-play": "Jak Grać",
-			"index-leave-team": "Wyjdź z grupy",
+			"index-play-squad": "Graj oddziaÅ‚",
+			"index-create-team": "StwÃ³rz grupÄ™",
+			"index-how-to-play": "Jak GraÄ‡",
+			"index-leave-team": "WyjdÅº z grupy",
 			"index-joining-team": "Wchodzenie do grupy",
 			"index-creating-team": "Tworzenie grupy",
-			"index-invite-link": "Link Zapraszający",
+			"index-invite-link": "Link ZapraszajÄ…cy",
 			"index-solo": "Solo",
-			"index-duo": "Wspólna gra",
-			"index-squad": "Drużyna",
-			"index-auto-fill": "Automatyczne Uzupełnianie",
-			"index-no-fill": "Bez Uzupełniania",
-			"index-waiting-for-leader": "Czekanie na przywódce do rozpoczęcia gry...",
+			"index-duo": "WspÃ³lna gra",
+			"index-squad": "DruÅ¼yna",
+			"index-auto-fill": "Automatyczne UzupeÅ‚nianie",
+			"index-no-fill": "Bez UzupeÅ‚niania",
+			"index-waiting-for-leader": "Czekanie na przywÃ³dce do rozpoczÄ™cia gry...",
 			"index-play": "Graj",
-			"index-featured-youtuber": "Wyróżniony YouTuber",
+			"index-featured-youtuber": "WyrÃ³Å¼niony YouTuber",
 			"index-settings": "Ustawienia",
-			"index-high-resolution": "Wysoka Rozdzielczość (zaznacz aby poprawić jakość wizualną)",
-			"index-screen-shake": "Trzęsienie ekranu",
-			"index-master-volume": "Głośność ogólną",
-			"index-sfx-volume": "Głośność efektów dźwiękowych",
-			"index-music-volume": "Głośność muzyki",
-			"index-team-is-full": "Grupa jest pełna!",
-			"index-failed-joining-team": "Nie udało się dołączyć do grupy.",
-			"index-failed-creating-team": "Nie udało się stworzyć grupy.",
+			"index-high-resolution": "Wysoka RozdzielczoÅ›Ä‡ (zaznacz aby poprawiÄ‡ jakoÅ›Ä‡ wizualnÄ…)",
+			"index-screen-shake": "TrzÄ™sienie ekranu",
+			"index-master-volume": "GÅ‚oÅ›noÅ›Ä‡ ogÃ³lnÄ…",
+			"index-sfx-volume": "GÅ‚oÅ›noÅ›Ä‡ efektÃ³w dÅºwiÄ™kowych",
+			"index-music-volume": "GÅ‚oÅ›noÅ›Ä‡ muzyki",
+			"index-team-is-full": "Grupa jest peÅ‚na!",
+			"index-failed-joining-team": "Nie udaÅ‚o siÄ™ doÅ‚Ä…czyÄ‡ do grupy.",
+			"index-failed-creating-team": "Nie udaÅ‚o siÄ™ stworzyÄ‡ grupy.",
 			"index-failed-finding-game": "Nie znaleziono gry.",
-			"index-failed-joining-game": "Nie udało się dołączyć do gry.",
-			"index-lost-connection": "Utracono połączenie z grupą.",
-			"index-host-closed": "Host zamnknął połączenie.",
-			"index-invalid-protocol": "Przestarzała wersja klienta.",
-			"index-view-more": "Zobacz więcej",
-			"index-back-to-main": "Powrót na Stronę Główną",
-			"index-most-kills": "Najwięcej Zabić",
+			"index-failed-joining-game": "Nie udaÅ‚o siÄ™ doÅ‚Ä…czyÄ‡ do gry.",
+			"index-lost-connection": "Utracono poÅ‚Ä…czenie z grupÄ….",
+			"index-host-closed": "Host zamnknÄ…Å‚ poÅ‚Ä…czenie.",
+			"index-invalid-protocol": "PrzestarzaÅ‚a wersja klienta.",
+			"index-view-more": "Zobacz wiÄ™cej",
+			"index-back-to-main": "PowrÃ³t na StronÄ™ GÅ‚Ã³wnÄ…",
+			"index-most-kills": "NajwiÄ™cej ZabiÄ‡",
 			"index-total-kills": "Wszystkie Zabicia",
 			"index-total-wins": "Wszystkie Wygrane",
 			"index-top-5-percent": "Najlepsze 5 procent",
-			"index-kill-death-ratio": "Średnia zabójstw do zgonów",
+			"index-kill-death-ratio": "Åšrednia zabÃ³jstw do zgonÃ³w",
 			"index-for": "Dla",
 			"index-today": "Dzisiaj",
-			"index-this-week": "Ten Tydzień",
-			"index-all-time": "Od początku",
+			"index-this-week": "Ten TydzieÅ„",
+			"index-all-time": "Od poczÄ…tku",
 			"index-top-100": "Najlepsze 100",
 			"index-rank": "Ranga",
 			"index-player": "Gracz",
@@ -14765,131 +13977,131 @@ webpackJsonp([0], {
 			"index-aim": "Celowanie",
 			"index-aim-ctrl": "Myszka",
 			"index-punch": "Uderzenie",
-			"index-shoot": "Strzał",
+			"index-shoot": "StrzaÅ‚",
 			"index-shoot-ctrl": "Lewy Przycisk Myszy",
-			"index-change-weapons": "Zmień Broń",
-			"index-change-weapons-ctrl": "1 do 4 albo kółko myszy",
-			"index-stow-weapons": "Schowaj Broń (Tryb Pięści)",
+			"index-change-weapons": "ZmieÅ„ BroÅ„",
+			"index-change-weapons-ctrl": "1 do 4 albo kÃ³Å‚ko myszy",
+			"index-stow-weapons": "Schowaj BroÅ„ (Tryb PiÄ™Å›ci)",
 			"index-stow-weapons-ctrl": "3 lub E",
-			"index-swap-weapons": "Zmień na poprzednią broń",
+			"index-swap-weapons": "ZmieÅ„ na poprzedniÄ… broÅ„",
 			"index-swap-weapons-ctrl": "Q",
-			"index-reload": "Przeładuj",
+			"index-reload": "PrzeÅ‚aduj",
 			"index-reload-ctrl": "R",
-			"index-scope-zoom": "Przybliżenie",
-			"index-scope-zoom-ctrl": "Lewy Przycisk Myszy lub Przybliżenie",
-			"index-pickup": "Podnieś",
-			"index-loot": "Łup",
-			"index-revive": "Wskrześ",
+			"index-scope-zoom": "PrzybliÅ¼enie",
+			"index-scope-zoom-ctrl": "Lewy Przycisk Myszy lub PrzybliÅ¼enie",
+			"index-pickup": "PodnieÅ›",
+			"index-loot": "Å?up",
+			"index-revive": "WskrzeÅ›",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "Użyj przyboru medycznego",
+			"index-use-medical": "UÅ¼yj przyboru medycznego",
 			"index-use-medical-ctrl": "Lewy Przycisk Myszy na przyborze, lub 7 do 0",
-			"index-drop-item": "Upuść",
+			"index-drop-item": "UpuÅ›Ä‡",
 			"index-drop-item-ctrl": "Prawy Przycisk Myszy na przedmiocie",
-			"index-cancel-action": "Przerwij czynność",
+			"index-cancel-action": "Przerwij czynnoÅ›Ä‡",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "Pokaż Mapę",
+			"index-view-map": "PokaÅ¼ MapÄ™",
 			"index-view-map-ctrl": "M albo G",
 			"index-toggle-minimap": "Minimapa",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "Użyj menu znaczników drużynowych",
-			"index-use-ping-ctrl": "Przytrzymaj C, następnie przytrzymaj Prawy Przycisk Myszy i przesuń myszą po czym puść Prawy Przycisk Myszy",
-			"index-use-emote": "Użyj menu emotikon",
-			"index-use-emote-ctrl": "Przytrzymaj Prawy Przycisk Myszy i przesuń myszą po czym puść Prawy Przycisk Myszy",
-			"index-tips-1-desc": "Celem surviv.io jest pozostanie ostatniom zyjącym graczem. Żyjesz tylko raz na gre - tutaj nie ma odrodzeń!",
+			"index-use-ping": "UÅ¼yj menu znacznikÃ³w druÅ¼ynowych",
+			"index-use-ping-ctrl": "Przytrzymaj C, nastÄ™pnie przytrzymaj Prawy Przycisk Myszy i przesuÅ„ myszÄ… po czym puÅ›Ä‡ Prawy Przycisk Myszy",
+			"index-use-emote": "UÅ¼yj menu emotikon",
+			"index-use-emote-ctrl": "Przytrzymaj Prawy Przycisk Myszy i przesuÅ„ myszÄ… po czym puÅ›Ä‡ Prawy Przycisk Myszy",
+			"index-tips-1-desc": "Celem surviv.io jest pozostanie ostatniom zyjÄ…cym graczem. Å»yjesz tylko raz na gre - tutaj nie ma odrodzeÅ„!",
 			"index-tips-2": "PUBG 2D",
-			"index-tips-2-desc": "Jeśli kiedykolwiek grałeś w grę typu Battle Royale jak PUBG, Fortnite czy H1Z1, to już jesteś w połowie drogi! Wyobraź sobie, że surviv.io to taki PUBG 2D.",
+			"index-tips-2-desc": "JeÅ›li kiedykolwiek graÅ‚eÅ› w grÄ™ typu Battle Royale jak PUBG, Fortnite czy H1Z1, to juÅ¼ jesteÅ› w poÅ‚owie drogi! WyobraÅº sobie, Å¼e surviv.io to taki PUBG 2D.",
 			"index-tips-3": "Zbieraj i Zabijaj",
-			"index-tips-3-desc": "Rozpoczynasz grę bez żadnych przedmiotów, nie licząc podstawowego plecaka. Poruszaj się po mapie aby znaleźć przedmioty typu: broń, amunicja, lunety i medykamenty. Wyeliminuj pozostałych graczy i zabierz ich przedmioty!",
-			"index-tips-4": "Czerwone = Złe!",
-			"index-tips-4-desc": "Nie tylko gracze mogą cię zranić. Mordercza czerwona strefa będzie zmniejszać się z różnych stron mapy i będzie zadawać coraz większe obrażenia jeśli będziesz w niej pozostawać. Spoglądaj na mape i pilnuj się.",
-			"game-alive": "Żywych",
-			"game-reloading": "Przeładowanie",
-			"game-using": "Używanie",
+			"index-tips-3-desc": "Rozpoczynasz grÄ™ bez Å¼adnych przedmiotÃ³w, nie liczÄ…c podstawowego plecaka. Poruszaj siÄ™ po mapie aby znaleÅºÄ‡ przedmioty typu: broÅ„, amunicja, lunety i medykamenty. Wyeliminuj pozostaÅ‚ych graczy i zabierz ich przedmioty!",
+			"index-tips-4": "Czerwone = ZÅ‚e!",
+			"index-tips-4-desc": "Nie tylko gracze mogÄ… ciÄ™ zraniÄ‡. Mordercza czerwona strefa bÄ™dzie zmniejszaÄ‡ siÄ™ z rÃ³Å¼nych stron mapy i bÄ™dzie zadawaÄ‡ coraz wiÄ™ksze obraÅ¼enia jeÅ›li bÄ™dziesz w niej pozostawaÄ‡. SpoglÄ…daj na mape i pilnuj siÄ™.",
+			"game-alive": "Å»ywych",
+			"game-reloading": "PrzeÅ‚adowanie",
+			"game-using": "UÅ¼ywanie",
 			"game-reviving": "Wskrzeszanie",
-			"game-revive-teammate": "Wskrześ Przyjaciela",
-			"game-equip": "Weź",
+			"game-revive-teammate": "WskrzeÅ› Przyjaciela",
+			"game-equip": "WeÅº",
 			"game-cancel": "Przerwij",
-			"game-open-door": "Otwórz Drzwi",
+			"game-open-door": "OtwÃ³rz Drzwi",
 			"game-close-door": "Zamknij Drzwi",
 			"game-You": "Ty",
 			"game-you": "ty",
 			"game-themselves": "oni",
 			"game-yourself": "siebie",
-			"game-you-died": "umarłeś",
-			"game-player-died": "umarł",
+			"game-you-died": "umarÅ‚eÅ›",
+			"game-player-died": "umarÅ‚",
 			"game-with": "z",
-			"game-knocked-out": "powalił",
-			"game-killed": "zabił",
-			"game-finally-killed": "wresczie zabił",
-			"game-finally-bled-out": "w końcu się wykrwawił",
-			"game-died-outside": "umarł poza strefą",
+			"game-knocked-out": "powaliÅ‚",
+			"game-killed": "zabiÅ‚",
+			"game-finally-killed": "wresczie zabiÅ‚",
+			"game-finally-bled-out": "w koÅ„cu siÄ™ wykrwawiÅ‚",
+			"game-died-outside": "umarÅ‚ poza strefÄ…",
 			"game-the-red-zone": "Czerwona strefa",
 			"game-waiting-for-players": "Oczekiwanie na graczy",
 			"game-spectating": "Obserwujesz",
-			"game-red-zone-advances": "Czerwona strefa zmniejszy się za",
-			"game-red-zone-advancing": "Czerwona strefa zmniejsza się, udaj się do bezpiecznej strefy!",
+			"game-red-zone-advances": "Czerwona strefa zmniejszy siÄ™ za",
+			"game-red-zone-advancing": "Czerwona strefa zmniejsza siÄ™, udaj siÄ™ do bezpiecznej strefy!",
 			"game-seconds": "sekundy",
 			"game-minutes": "minuty",
 			"game-minute": "minuta",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "Za mało miejsca!",
-			"game-item-already-owned": "Posiadasz już ten przedmiot!",
-			"game-item-already-equipped": "Używasz już tego przedmiotu!",
+			"game-not-enough-space": "Za maÅ‚o miejsca!",
+			"game-item-already-owned": "Posiadasz juÅ¼ ten przedmiot!",
+			"game-item-already-equipped": "UÅ¼ywasz juÅ¼ tego przedmiotu!",
 			"game-better-item-equipped": "Posiadasz lepszy przedmiot!",
 			"game-play-new-game": "Graj jescze raz",
 			"game-spectate": "Obserwuj",
-			"game-full-screen": "Pełny Ekran",
-			"game-sound": "Dzwięk",
-			"game-quit-game": "Wyjdź z gry",
-			"game-return-to-game": "Wróć do gry",
+			"game-full-screen": "PeÅ‚ny Ekran",
+			"game-sound": "DzwiÄ™k",
+			"game-quit-game": "WyjdÅº z gry",
+			"game-return-to-game": "WrÃ³Ä‡ do gry",
 			"game-hide-match-stats": "Ukryj statystyki",
-			"game-view-match-stats": "Wyświetl statystyki",
+			"game-view-match-stats": "WyÅ›wietl statystyki",
 			"game-previous-teammate": "Poprzedni przyjaciel",
-			"game-next-teammate": "Następny przyjaciel",
+			"game-next-teammate": "NastÄ™pny przyjaciel",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "Wyjdź z gry",
+			"game-leave-game": "WyjdÅº z gry",
 			"game-your-results": "Twoje rezultaty",
 			"game-chicken": "Mecz wygrany! Kurczak podany!",
-			"game-won-the-game": "wygrał grę.",
-			"game-team-eliminated": "Twoja grupa została wyeliminowana.",
+			"game-won-the-game": "wygraÅ‚ grÄ™.",
+			"game-team-eliminated": "Twoja grupa zostaÅ‚a wyeliminowana.",
 			"game-rank": "Ranga",
 			"game-team-rank": "Ranga Grupy",
 			"game-team-kills": "Zabicia Grupy",
-			"game-kill": "Zabić",
-			"game-kills": "Zabić",
-			"game-damage-dealt": "Zadano obrażeń",
-			"game-damage-taken": "Otrzymano obrażeń",
+			"game-kill": "ZabiÄ‡",
+			"game-kills": "ZabiÄ‡",
+			"game-damage-dealt": "Zadano obraÅ¼eÅ„",
+			"game-damage-taken": "Otrzymano obraÅ¼eÅ„",
 			"game-survived": "Przetrwano",
 			"game-backpack00": "Kieszonka",
-			"game-backpack01": "Mały plecak",
+			"game-backpack01": "MaÅ‚y plecak",
 			"game-backpack02": "Plecak",
 			"game-backpack03": "Wojskowy plecak",
-			"game-bandage": "Bandaż",
-			"game-bandage-tooltip": "Kliknij lewym przyciskiem myszy aby przywrócić 15 punktów zdrowia.",
-			"game-healing-tooltip": "Nie leczy powyżej 75 punktów zdrowia.",
+			"game-bandage": "BandaÅ¼",
+			"game-bandage-tooltip": "Kliknij lewym przyciskiem myszy aby przywrÃ³ciÄ‡ 15 punktÃ³w zdrowia.",
+			"game-healing-tooltip": "Nie leczy powyÅ¼ej 75 punktÃ³w zdrowia.",
 			"game-healthkit": "Apteczka",
-			"game-healthkit-tooltip": "Kliknij lewym przyciskiem myszy aby przywrócić 100 punktów zdrowia.",
+			"game-healthkit-tooltip": "Kliknij lewym przyciskiem myszy aby przywrÃ³ciÄ‡ 100 punktÃ³w zdrowia.",
 			"game-soda": "Soda",
-			"game-soda-tooltip": "Kliknij lewym przyciskiem myszy aby zwiększyć adrenalinę o 25.",
-			"game-adrenaline-tooltip": "Adrenalina przywraca zdrowie w miare upływu czasu.",
-			"game-painkiller": "Pigułki",
-			"game-painkiller-tooltip": "Kliknij lewym przyciskiem myszy aby zwiększyć adrenalinę o 50.",
+			"game-soda-tooltip": "Kliknij lewym przyciskiem myszy aby zwiÄ™kszyÄ‡ adrenalinÄ™ o 25.",
+			"game-adrenaline-tooltip": "Adrenalina przywraca zdrowie w miare upÅ‚ywu czasu.",
+			"game-painkiller": "PiguÅ‚ki",
+			"game-painkiller-tooltip": "Kliknij lewym przyciskiem myszy aby zwiÄ™kszyÄ‡ adrenalinÄ™ o 50.",
 			"game-9mm": "9mm",
 			"game-9mm-tooltip": "Amunicja dla M9, Glock, MP5, MAC-10, UMP9 i Vector.",
 			"game-12gauge": "Kaliber 12",
 			"game-12gauge-tooltip": "Amunicja dla M870, Saiga-12 i MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Amunicja dla AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 i DP-28.",
+			"game-762mm-tooltip": "Amunicja dla AK-47, SCAR-H, M39, Mosin Nagant, OT-38 i DP-28.",
 			"game-556mm": "5.56mm",
 			"game-556mm-tooltip": "Amunicja dla FAMAS, HK416, Mk 12 i M249.",
 			"game-chest01": "Kamizelka Poziom 1",
 			"game-chest02": "Kamizelka Poziom 2",
 			"game-chest03": "Kamizelka Poziom 3",
-			"game-helmet01": "Hełm Poziom 1",
-			"game-helmet02": "Hełm Poziom 2",
-			"game-helmet03": "Hełm Poziom 3",
+			"game-helmet01": "HeÅ‚m Poziom 1",
+			"game-helmet02": "HeÅ‚m Poziom 2",
+			"game-helmet03": "HeÅ‚m Poziom 3",
 			"game-1xscope": "1x Luneta",
 			"game-2xscope": "2x Luneta",
 			"game-4xscope": "4x Luneta",
@@ -14898,20 +14110,20 @@ webpackJsonp([0], {
 			"game-level-1": "P. 1",
 			"game-level-2": "P. 2",
 			"game-level-3": "P. 3",
-			"game-outfitBase": "Strój",
-			"game-outfitRoyalFortune": "Powodzenie Króla",
+			"game-outfitBase": "StrÃ³j",
+			"game-outfitRoyalFortune": "Powodzenie KrÃ³la",
 			"game-outfitKeyLime": "Limonka",
 			"game-outfitCobaltShell": "Skorupa",
-			"game-outfitCarbonFiber": "Włókno Węglowe",
+			"game-outfitCarbonFiber": "WÅ‚Ã³kno WÄ™glowe",
 			"game-outfitDarkGloves": "Profesjonalista",
 			"game-outfitGhillie": "Kameleon",
 			"game-outfitCamo": "Polowanie",
 			"game-outfitRed": "Trenowanie",
 			"game-outfitWhite": "Arktyka",
-			"game-outfitWoodland": "Leśna Walka",
+			"game-outfitWoodland": "LeÅ›na Walka",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -14922,9 +14134,9 @@ webpackJsonp([0], {
 			"game-m9": "M9",
 			"game-glock": "Glock 18C",
 			"game-ot38": "OT-38",
-			"game-frag": "Granat Odłamkowy",
-			"game-hud-frag": "Odłamkowy",
-			"game-barrel_01": "beczką",
+			"game-frag": "Granat OdÅ‚amkowy",
+			"game-hud-frag": "OdÅ‚amkowy",
+			"game-barrel_01": "beczkÄ…",
 			"game-silo_01": "silosem",
 			"game-oven_01": "piekarnik"
 		};
@@ -15850,44 +15062,44 @@ webpackJsonp([0], {
 			},
 			"word-order": "svo",
 			"index-slogan": "2d Battle royale",
-			"index-region": "Région",
-			"index-north-america": "Amérique du Nord",
+			"index-region": "RÃ©gion",
+			"index-north-america": "AmÃ©rique du Nord",
 			"index-europe": "Europe",
 			"index-asia": "Asie",
 			"index-players": "joueurs",
 			"index-play-solo": "Jouer en solo",
 			"index-play-duo": "Jouer en duo",
 			"index-play-squad": "Jouer en squad",
-			"index-join-team": "Joindre une équipe",
-			"index-create-team": "Créer une équipe",
+			"index-join-team": "Joindre une Ã©quipe",
+			"index-create-team": "CrÃ©er une Ã©quipe",
 			"index-how-to-play": "Comment jouer",
-			"index-leave-team": "Quitter l’équipe",
-			"index-joining-team": "Rejoindre l’équipe",
-			"index-creating-team": "Création d'une équipe",
+			"index-leave-team": "Quitter lâ€™Ã©quipe",
+			"index-joining-team": "Rejoindre lâ€™Ã©quipe",
+			"index-creating-team": "CrÃ©ation d'une Ã©quipe",
 			"index-invite-link": "Lien d'invitation",
 			"index-solo": "Solo",
 			"index-duo": "Duo",
 			"index-squad": "Squad",
 			"index-auto-fill": "Remplir",
 			"index-no-fill": "Ne pas remplir",
-			"index-waiting-for-leader": "En attente du chef pour débuter",
+			"index-waiting-for-leader": "En attente du chef pour dÃ©buter",
 			"index-play": "Jouer",
 			"index-featured-youtuber": "Youtubeur en vedette",
-			"index-settings": "Paramètres",
-			"index-high-resolution": "Haute résolution (cocher pour une meilleure qualité)",
-			"index-screen-shake": "Tremblement d'écran",
+			"index-settings": "ParamÃ¨tres",
+			"index-high-resolution": "Haute rÃ©solution (cocher pour une meilleure qualitÃ©)",
+			"index-screen-shake": "Tremblement d'Ã©cran",
 			"index-master-volume": "Volume principal",
 			"index-sfx-volume": "Volume des effets",
 			"index-music-volume": "Volume de la musique",
 			"index-mobile-announce": "Maintenant disponible sur mobile !",
 			"index-mobile-tooltip": "Visitez <span>surviv.io</span> depuis votre mobile pour pouvoir jouer partout !",
-			"index-team-is-full": "L'équipe est pleine!",
-			"index-failed-joining-team": "Impossible de joindre l'équipe.",
-			"index-failed-creating-team": "Impossible de créer l'équipe.",
+			"index-team-is-full": "L'Ã©quipe est pleine!",
+			"index-failed-joining-team": "Impossible de joindre l'Ã©quipe.",
+			"index-failed-creating-team": "Impossible de crÃ©er l'Ã©quipe.",
 			"index-failed-finding-game": "Impossible de trouver une partie.",
 			"index-failed-joining-game": "Impossible de joindre une partie.",
-			"index-lost-connection": "Connexion à l'équipe perdue.",
-			"index-host-closed": "L'hôte a fermé la connexion.",
+			"index-lost-connection": "Connexion Ã  l'Ã©quipe perdue.",
+			"index-host-closed": "L'hÃ´te a fermÃ© la connexion.",
 			"index-view-more": "Afficher plus",
 			"index-back-to-main": "Retour au menu principal",
 			"index-most-kills": "Plus de meutres",
@@ -15903,7 +15115,7 @@ webpackJsonp([0], {
 			"index-rank": "Rang",
 			"index-player": "Joueur",
 			"index-total-games": "Total des parties",
-			"index-controls": "Contrôles",
+			"index-controls": "ContrÃ´les",
 			"index-movement": "Mouvement",
 			"index-movement-ctrl": "W, A, S, D",
 			"index-aim": "Viser",
@@ -15911,11 +15123,11 @@ webpackJsonp([0], {
 			"index-punch": "Frapper",
 			"index-shoot": "Tirer",
 			"index-shoot-ctrl": "Clic gauche",
-			"index-change-weapons": "Changer d’armes",
-			"index-change-weapons-ctrl": "1 à 4 ou molette",
+			"index-change-weapons": "Changer dâ€™armes",
+			"index-change-weapons-ctrl": "1 Ã  4 ou molette",
 			"index-stow-weapons": "Ranger les armes (Mode frapper)",
 			"index-stow-weapons-ctrl": "3 ou E",
-			"index-swap-weapons": "Arme précédente",
+			"index-swap-weapons": "Arme prÃ©cÃ©dente",
 			"index-swap-weapons-ctrl": "Q",
 			"index-reload": "Recharger",
 			"index-reload-ctrl": "R",
@@ -15923,11 +15135,11 @@ webpackJsonp([0], {
 			"index-scope-zoom-ctrl": "Clique gauche sur le zoom",
 			"index-pickup": "Prendre",
 			"index-loot": "Ramasser",
-			"index-revive": "Réanimer",
+			"index-revive": "RÃ©animer",
 			"index-pickup-ctrl": "F",
 			"index-use-medical": "Se soigner",
-			"index-use-medical-ctrl": "Clique gauche sur l'objet ou 7 à 0",
-			"index-drop-item": "Lâcher l'objet",
+			"index-use-medical-ctrl": "Clique gauche sur l'objet ou 7 Ã  0",
+			"index-drop-item": "LÃ¢cher l'objet",
 			"index-drop-item-ctrl": "Clique droit sur l'ojhet",
 			"index-cancel-action": "Annuler l'action",
 			"index-cancel-action-ctrl": "X",
@@ -15935,95 +15147,95 @@ webpackJsonp([0], {
 			"index-view-map-ctrl": "M ou G",
 			"index-toggle-minimap": "Basculer la carte",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "Utiliser la roue de ping d'équipe",
-			"index-use-ping-ctrl": "Tenez C, puis tenez un clic droit et traînez la souris, puis lâchez le clic droit.",
-			"index-use-emote": "Utiliser la roue d'émotes",
-			"index-use-emote-ctrl": "Tenez un clic droit et traînez la souris, puis lâchez le clic droit.",
-			"index-tips-1-desc": "Le but de surviv.io est d'être le dernier joueur vivant. Vouz vivez seulement une fois par match - pas de respawn!",
+			"index-use-ping": "Utiliser la roue de ping d'Ã©quipe",
+			"index-use-ping-ctrl": "Tenez C, puis tenez un clic droit et traÃ®nez la souris, puis lÃ¢chez le clic droit.",
+			"index-use-emote": "Utiliser la roue d'Ã©motes",
+			"index-use-emote-ctrl": "Tenez un clic droit et traÃ®nez la souris, puis lÃ¢chez le clic droit.",
+			"index-tips-1-desc": "Le but de surviv.io est d'Ãªtre le dernier joueur vivant. Vouz vivez seulement une fois par match - pas de respawn!",
 			"index-tips-2": "2D PUBG",
-			"index-tips-2-desc": 'Si vous avez joué d\'autres jeux type "battle royale" comme PUBG, Fortnite ou H1Z1, vous êtes à moitié chemin! Pensez à surviv.io comme PUBG en 2D.',
+			"index-tips-2-desc": 'Si vous avez jouÃ© d\'autres jeux type "battle royale" comme PUBG, Fortnite ou H1Z1, vous Ãªtes Ã  moitiÃ© chemin! Pensez Ã  surviv.io comme PUBG en 2D.',
 			"index-tips-3": "Piller et tuer",
-			"index-tips-3-desc": "Vous commencerez le jeu avec pas d'objets à part d'un simple sac à dos. Naviguez le terrain pour trouver du butin: des armes, balles, viseurs et objets médicaux. Éliminez les autre joueurs et vous pouver prendre leurs objets!",
+			"index-tips-3-desc": "Vous commencerez le jeu avec pas d'objets Ã  part d'un simple sac Ã  dos. Naviguez le terrain pour trouver du butin: des armes, balles, viseurs et objets mÃ©dicaux. Ã‰liminez les autre joueurs et vous pouver prendre leurs objets!",
 			"index-tips-4": "Rouge = Mauvais!",
-			"index-tips-4-desc": "Les joueurs ne sont pas les seules choses qui peuvent vous tuer. La zone rouge meutrière va venir vers vous pas les côtés du terrain et inflige des dégâts de plus en plus dangereux. Gardez un oeil sur ca carte et restez saufs. ",
+			"index-tips-4-desc": "Les joueurs ne sont pas les seules choses qui peuvent vous tuer. La zone rouge meutriÃ¨re va venir vers vous pas les cÃ´tÃ©s du terrain et inflige des dÃ©gÃ¢ts de plus en plus dangereux. Gardez un oeil sur ca carte et restez saufs. ",
 			"game-alive": "En vie",
 			"game-reloading": "Rechargement",
 			"game-using": "Utilisation :",
-			"game-reviving": "Réanimation de",
-			"game-revive-teammate": "Réaminez votre coéquipier",
-			"game-equip": "Équiper",
+			"game-reviving": "RÃ©animation de",
+			"game-revive-teammate": "RÃ©aminez votre coÃ©quipier",
+			"game-equip": "Ã‰quiper",
 			"game-cancel": "Annuler",
 			"game-open-door": "Ouvrir la porte",
 			"game-close-door": "Fermer la porte",
 			"game-You": "Vous",
 			"game-you": "vous avez",
-			"game-themselves": "lui-même",
-			"game-yourself": "toi-même",
-			"game-you-died": "êtes mort",
+			"game-themselves": "lui-mÃªme",
+			"game-yourself": "toi-mÃªme",
+			"game-you-died": "Ãªtes mort",
 			"game-player-died": "est mort",
 			"game-with": "avec",
-			"game-knocked-out": "a assommé",
-			"game-killed": "tué",
-			"game-finally-killed": "a finalemaent tué",
+			"game-knocked-out": "a assommÃ©",
+			"game-killed": "tuÃ©",
+			"game-finally-killed": "a finalemaent tuÃ©",
 			"game-finally-bled-out": "est finalement mort",
-			"game-died-outside": "est mort hors de la zone sûre",
+			"game-died-outside": "est mort hors de la zone sÃ»re",
 			"game-the-red-zone": "La zone rouge",
 			"game-waiting-for-players": "En attente de joueurs",
 			"game-spectating": "En train de regarder",
 			"game-red-zone-advances": "La zone rouge avance dans",
-			"game-red-zone-advancing": "La zone rouge avance, allez vers la zone sûre!",
+			"game-red-zone-advancing": "La zone rouge avance, allez vers la zone sÃ»re!",
 			"game-seconds": "secondes",
 			"game-minutes": "minutes",
 			"game-minute": "minute",
 			"game-m": "m",
 			"game-s": "s",
 			"game-not-enough-space": "Pas assez d'espace!",
-			"game-item-already-owned": "Vous avez déjà cet objet!",
-			"game-item-already-equipped": "L'objet est déjà équipé",
-			"game-better-item-equipped": "Un meilleur objet est déjà équipé!",
+			"game-item-already-owned": "Vous avez dÃ©jÃ  cet objet!",
+			"game-item-already-equipped": "L'objet est dÃ©jÃ  Ã©quipÃ©",
+			"game-better-item-equipped": "Un meilleur objet est dÃ©jÃ  Ã©quipÃ©!",
 			"game-play-new-game": "Nouvelle partie",
 			"game-spectate": "Regarder",
-			"game-full-screen": "Plein écran",
+			"game-full-screen": "Plein Ã©cran",
 			"game-sound": "Son",
 			"game-quit-game": "Quitter la partie",
 			"game-return-to-game": "Retourner au jeu",
 			"game-hide-match-stats": "Masquer les statistiques",
 			"game-view-match-stats": "Voir les statistiques",
-			"game-previous-teammate": "Coéquipier précédent",
-			"game-next-teammate": "Coéquipier suivant",
+			"game-previous-teammate": "CoÃ©quipier prÃ©cÃ©dent",
+			"game-next-teammate": "CoÃ©quipier suivant",
 			"game-leave-game": "Quitter la partie",
-			"game-your-results": "Votre résultat",
-			"game-chicken": "Victoire! Les poulets sont à nous!",
-			"game-won-the-game": "a gagné la partie.",
-			"game-team-eliminated": "Votre équipe à été éliminée.",
+			"game-your-results": "Votre rÃ©sultat",
+			"game-chicken": "Victoire! Les poulets sont Ã  nous!",
+			"game-won-the-game": "a gagnÃ© la partie.",
+			"game-team-eliminated": "Votre Ã©quipe Ã  Ã©tÃ© Ã©liminÃ©e.",
 			"game-rank": "Rang",
-			"game-team-rank": "Rang d'équipe",
-			"game-team-kills": "Meurtres de l'équipe",
+			"game-team-rank": "Rang d'Ã©quipe",
+			"game-team-kills": "Meurtres de l'Ã©quipe",
 			"game-kill": "Meurtre",
 			"game-kills": "Meurtres",
-			"game-damage-dealt": "Dégâts infligés",
-			"game-damage-taken": "Dégâts subis",
-			"game-survived": "Temps survécu",
+			"game-damage-dealt": "DÃ©gÃ¢ts infligÃ©s",
+			"game-damage-taken": "DÃ©gÃ¢ts subis",
+			"game-survived": "Temps survÃ©cu",
 			"game-backpack00": "Poche",
-			"game-backpack01": "Petit sac à dos",
-			"game-backpack02": "Sac à dos régulier",
-			"game-backpack03": "Sac à dos militaire",
+			"game-backpack01": "Petit sac Ã  dos",
+			"game-backpack02": "Sac Ã  dos rÃ©gulier",
+			"game-backpack03": "Sac Ã  dos militaire",
 			"game-bandage": "Pansements",
 			"game-bandage-tooltip": "Clique gauche pour restaurer 15 points de vie.",
 			"game-healing-tooltip": "Ne peut restaurer plus de 75 points de vie.",
-			"game-healthkit": "Kit médical",
+			"game-healthkit": "Kit mÃ©dical",
 			"game-healthkit-tooltip": "Clique gauche pour restaurer 100 points de vie.",
 			"game-soda": "Soda",
-			"game-soda-tooltip": "Clique gauche pour augmenter l'adrénaline de 25.",
-			"game-adrenaline-tooltip": "L'adrénaline restaure la vie au fil du temps.",
+			"game-soda-tooltip": "Clique gauche pour augmenter l'adrÃ©naline de 25.",
+			"game-adrenaline-tooltip": "L'adrÃ©naline restaure la vie au fil du temps.",
 			"game-painkiller": "Pillules",
-			"game-painkiller-tooltip": "Clique gauche pour augmenter l'adrénaline de 50.",
+			"game-painkiller-tooltip": "Clique gauche pour augmenter l'adrÃ©naline de 50.",
 			"game-9mm": "9mm",
 			"game-9mm-tooltip": "Balles pour M9, Glock, MP5, MAC-10, UMP9 et Vector.",
 			"game-12gauge": "Calibre 12",
 			"game-12gauge-tooltip": "Balles pour M870, Saiga-12 et MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Balles pour AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 et DP-28.",
+			"game-762mm-tooltip": "Balles pour AK-47, SCAR-H, M39, Mosin Nagant, OT-38 et DP-28.",
 			"game-556mm": "5.56mm",
 			"game-556mm-tooltip": "Balles pour FAMAS, HK416, Mk 12 et M249.",
 			"game-chest01": "Veste de niveau 1",
@@ -16047,13 +15259,13 @@ webpackJsonp([0], {
 			"game-outfitCarbonFiber": "Fibre de carbone",
 			"game-outfitDarkGloves": "Le professionnel",
 			"game-outfitGhillie": "Ghillie Suit",
-			"game-outfitCamo": "Camouflage forêt",
+			"game-outfitCamo": "Camouflage forÃªt",
 			"game-outfitRed": "Cible d'entrainement",
 			"game-outfitWhite": "Vengeur arctique",
-			"game-outfitWoodland": "Combat de forêt",
+			"game-outfitWoodland": "Combat de forÃªt",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -16068,11 +15280,11 @@ webpackJsonp([0], {
 			"game-hk416": "HK416",
 			"game-mk12": "Mk 12 SPR",
 			"game-m249": "M249",
-			"game-frag": "Grenade à fragmentation",
+			"game-frag": "Grenade Ã  fragmentation",
 			"game-hud-frag": "Frag.",
-			"game-smoke": "Grenade fumigène",
+			"game-smoke": "Grenade fumigÃ¨ne",
 			"game-hud-smoke": "Fumi.",
-			"game-incendiary": "Grenade à incendie",
+			"game-incendiary": "Grenade Ã  incendie",
 			"game-barrel_01": "un baril",
 			"game-silo_01": "un silo",
 			"game-oven_01": "un four"
@@ -16102,8 +15314,7 @@ webpackJsonp([0], {
 			l = r.EmoteData,
 			c = a("85i3"),
 			m = a("Jr6A"),
-			d = a("SEs0"),
-			p = function() {
+			d = function() {
 				function e(t) {
 					i(this, e), this.config = t, this.selectedEmote = {
 						prevSlot: "",
@@ -16124,27 +15335,17 @@ webpackJsonp([0], {
 							locked: "Like to unlock flag emotes!",
 							unlocked: "Flag emotes unlocked!",
 							config: "facebookLike"
-						},
-						account: {
-							locked: "Create an account to unlock emotes!",
-							unlocked: "Account emotes unlocked!"
 						}
 					}
 				}
 				return o(e, [{
 					key: "init",
-					value: function(e) {
-						var t = this,
-							a = n("#modal-customize");
-						n("#btn-customize").click(function() {
-							return a.finish(), e.loggedIn && t.unlockEmotes("account"), a.css("display", "block"), n("#start-bottom-right").fadeOut(200), d.addModalCloseListener(), !1
-						}), n(".btn-account-change-avatar, .account-avatar").click(function(a) {
-							e.loggedIn && t.populateAvatar(e.profile.avatar)
-						});
-						var i = this;
-						n("#customize-emote-wheel, #customize-emote-autos").find(".ui-emote-parent").each(function(e, a) {
+					value: function() {
+						var e = this,
+							t = this;
+						n("#customize-emote-wheel, #customize-emote-autos").find(".ui-emote-parent").each(function(t, a) {
 							var i = n(a),
-								o = t.config.get(i.data("slot")),
+								o = e.config.get(i.data("slot")),
 								r = l[o],
 								s = {
 									img: "",
@@ -16155,40 +15356,34 @@ webpackJsonp([0], {
 								id: o
 							}), i.find(".customize-emote-image").data("id", s.id), i.find(".customize-emote-image").css("background-image", "url(" + s.img + ")")
 						});
-						var o = Object.keys(l);
-						o.sort(function(e, t) {
+						var a = Object.keys(l);
+						a.sort(function(e, t) {
 							return l[e].category - l[t].category || e - t
 						});
-						for (var r = [], p = 0; p < o.length; p++)
-							for (var u in s) s[u] == o[p] && r.push(s[u]);
-						for (var h = 0; h < r.length; h++) {
-							var g = r[h];
-							if (l.hasOwnProperty(g)) {
-								var f = l[g],
-									y = f.noCustom || !1;
-								if (!f.teamOnly && !y) {
-									var b = !1,
-										x = "";
-									f.twitterFollow && (b = !0, x = "twitter"), f.youtubeSubscribe && (b = !0, x = "youtube"), f.facebookLike && (b = !0, x = "facebook"), f.accountLogin && (b = !0, x = "account");
-									var v = "customize-list-item";
-									v += b ? " customize-list-item-locked" : " customize-list-item-unlocked";
-									var k = n("<div/>", {
-										class: v,
-										"data-lock-reason": x
+						var i = [];
+						for (var o in s)
+							for (var r = 0; r < a.length; r++) s[o] != a[r] || i.push(o);
+						for (var d = 0; d < a.length; d++) {
+							var p = i[a[d]];
+							if (s.hasOwnProperty(p)) {
+								var u = l[s[p]],
+									h = u.noCustom || !1;
+								if (!u.teamOnly && !h) {
+									var g = !1,
+										f = "";
+									u.twitterFollow && (g = !0, f = "twitter"), u.youtubeSubscribe && (g = !0, f = "youtube"), u.facebookLike && (g = !0, f = "facebook");
+									var y = "customize-list-item";
+									y += g ? " customize-list-item-locked" : " customize-list-item-unlocked";
+									var b = n("<div/>", {
+										class: y,
+										"data-lock-reason": f
 									});
-									k.append(n("<div/>", {
+									b.append(n("<div/>", {
 										class: "customize-emote-image",
-										style: "background-image: url(" + f.texture + ")",
-										draggable: !b,
-										"data-id": g
-									})), n("#modal-customize-list").append(k), v = "customize-list-item customize-list-item-unlocked", k = n("<div/>", {
-										class: v
-									}), k.append(n("<div/>", {
-										class: "customize-emote-image",
-										style: "background-image: url(" + f.texture + ")",
-										draggable: !b,
-										"data-id": g
-									})), n("#modal-account-avatar-list").append(k)
+										style: "background-image: url(" + u.texture + ")",
+										draggable: !g,
+										"data-id": s[p]
+									})), n("#modal-customize-list").append(b)
 								}
 							}
 						}
@@ -16196,47 +15391,45 @@ webpackJsonp([0], {
 							n('.tooltiptext[data-lock-reason="' + n(this).data("lock-reason") + '"]').css("visibility", "visible")
 						}, function() {
 							n('.tooltiptext[data-lock-reason="' + n(this).data("lock-reason") + '"]').css("visibility", "hidden")
-						}), this.selectableSlots = n(".customize-col, .customize-list-item"), this.emoteSlots = n(".customize-col"), this.highlightedSlots = this.emoteSlots.siblings(".ui-emote-hl"), this.highlightOpacityMin = .4, this.emoteSelected = !1, n("#btn-account-login-unlock").click(function() {
-							return n("#account-details-guest").trigger("click"), n(".modal").fadeOut(200), !1
-						}), this.selectableSlots.on("mouseup", function() {
-							if (!n(this).hasClass("customize-list-item-locked")) return i.emoteSelected && !n(this).hasClass("customize-list-item") ? void(i.emoteSelected = !1) : void i.selectEmote(n(this))
+						}), this.selectableSlots = n(".customize-col, .customize-list-item"), this.emoteSlots = n(".customize-col"), this.highlightedSlots = this.emoteSlots.siblings(".ui-emote-hl"), this.highlightOpacityMin = .4, this.emoteSelected = !1, this.selectableSlots.on("mouseup", function() {
+							if (!n(this).hasClass("customize-list-item-locked")) return t.emoteSelected && !n(this).hasClass("customize-list-item") ? void(t.emoteSelected = !1) : void t.selectEmote(n(this))
 						}), this.selectableSlots.on("dragstart", function(e) {
-							if (!n(this).hasClass("customize-list-item-locked") && (i.selectEmote(n(this)), !m.detectIE(!0))) {
-								var t = document.createElement("img");
-								t.src = i.selectedEmote.img.replace("url(", "").replace(")", "").replace(/\"/gi, ""), e.originalEvent.dataTransfer.setDragImage(t, 64, 64)
+							if (!n(this).hasClass("customize-list-item-locked") && (t.selectEmote(n(this)), !m.detectIE(!0))) {
+								var a = document.createElement("img");
+								a.src = t.selectedEmote.img.replace("url(", "").replace(")", "").replace(/\"/gi, ""), e.originalEvent.dataTransfer.setDragImage(a, 64, 64)
 							}
 						}), this.emoteSlots.on("drop", function(e) {
 							e.originalEvent.preventDefault();
-							var t = n(this).parent();
-							i.updateSlot(t, i.selectedEmote.img, i.selectedEmote.id), i.emoteSelected = !1
+							var a = n(this).parent();
+							t.updateSlot(a, t.selectedEmote.img, t.selectedEmote.id), t.emoteSelected = !1
 						}), this.emoteSlots.on("mousedown", function(e) {
-							if (i.emoteSelected) {
+							if (t.emoteSelected) {
 								e.stopPropagation();
-								var t = n(this).parent();
-								i.updateSlot(t, i.selectedEmote.img, i.selectedEmote.id)
+								var a = n(this).parent();
+								t.updateSlot(a, t.selectedEmote.img, t.selectedEmote.id)
 							}
 						}), this.emoteSlots.on("dragover", function(e) {
 							e.originalEvent.preventDefault(), n(this).parent().find(".ui-emote-hl").css("opacity", 1)
 						}), this.emoteSlots.on("dragleave", function(e) {
-							e.originalEvent.preventDefault(), n(this).parent().find(".ui-emote-hl").css("opacity", i.highlightOpacityMin)
+							e.originalEvent.preventDefault(), n(this).parent().find(".ui-emote-hl").css("opacity", t.highlightOpacityMin)
 						}), n(document).on("dragend", function(e) {
-							e.originalEvent.preventDefault(), i.highlightedSlots.css({
+							e.originalEvent.preventDefault(), t.highlightedSlots.css({
 								display: "none",
 								opacity: 0
 							})
 						}), n(".ui-emote-auto-trash").click(function() {
 							var e = n(this).parent();
-							i.updateSlot(e, "", 1)
+							t.updateSlot(e, "", 1)
 						});
-						for (var _ in this.unlockTypes)
-							if (this.unlockTypes.hasOwnProperty(_) && "account" != _) {
-								var w = this.unlockTypes[_];
-								this.config.get(w.config) && this.unlockEmotes(_)
+						for (var x in this.unlockTypes)
+							if (this.unlockTypes.hasOwnProperty(x)) {
+								var v = this.unlockTypes[x];
+								this.config.get(v.config) && this.unlockEmotes(x)
 							}
-						n("#btn-twitter-follow-unlock, #btn-youtube-subscribe-unlock, #btn-facebook-like-unlock").click(function() {
+						n(".btn-social-unlock").click(function() {
 							if (n(this).hasClass("btn-social-unlocked")) return !1;
 							var e = n(this).data("lock-reason");
-							i.unlockEmotes(e), c.storeGeneric("loadouts", "socialUnlock/emotes/" + e)
+							t.unlockEmotes(e), c.storeGeneric("loadouts", "socialUnlock/emotes/" + e)
 						})
 					}
 				}, {
@@ -16267,7 +15460,7 @@ webpackJsonp([0], {
 							this.updateSlot(i, o.css("background-image"), o.data("id"))
 						}
 						var n = e.find(".customize-emote-slot");
-						n.data("id", a), n.css("background-image", t), e.find(".ui-emote-hl").css("display", "none"), "customizeAvatar" != e.attr("data-slot") && this.config.set(e.data("slot"), a), this.selectableSlots.removeClass("customize-list-item-selected"), this.highlightedSlots.css({
+						n.data("id", a), n.css("background-image", t), e.find(".ui-emote-hl").css("display", "none"), this.config.set(e.data("slot"), a), this.selectableSlots.removeClass("customize-list-item-selected"), this.highlightedSlots.css({
 							display: "none",
 							opacity: 0
 						})
@@ -16284,19 +15477,9 @@ webpackJsonp([0], {
 							n('.tooltiptext[data-lock-reason="' + n(this).data("lock-reason") + '"]').css("visibility", "hidden")
 						})
 					}
-				}, {
-					key: "populateAvatar",
-					value: function(e) {
-						var t = "",
-							a = 0,
-							i = l[e];
-						void 0 != i && (t = i.texture, a = e);
-						var o = n("#customize-account-avatar");
-						o.find(".customize-emote-image").data("id", a), o.find(".customize-emote-image").css("background-image", "url(" + t + ")")
-					}
 				}]), e
 			}();
-		e.exports = p
+		e.exports = d
 	},
 	FyxX: function(e, t, a) {
 		"use strict";
@@ -16427,51 +15610,38 @@ webpackJsonp([0], {
 		}
 
 		function o(e) {
-			for (var t = e + "=", a = decodeURIComponent(document.cookie), i = a.split(";"), o = 0; o < i.length; o++) {
-				for (var n = i[o];
-					" " == n.charAt(0);) n = n.substring(1);
-				if (0 == n.indexOf(t)) return n.substring(t.length, n.length)
-			}
-			return ""
+			var t = e.trim();
+			return t.length > _.kNameMaxLen && (t = t.substring(0, _.kNameMaxLen)), t
 		}
 
 		function n(e) {
-			var t = e.trim();
-			return t.length > S.kNameMaxLen && (t = t.substring(0, S.kNameMaxLen)), t
+			return e ? e.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">") : ""
 		}
 
-		function r(e) {
-			return e.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-		}
-
-		function s(e) {
-			return e.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
-		}
-
-		function l(e, t, a) {
-			var i = T.getContext("2d");
+		function r(e, t, a) {
+			var i = S.getContext("2d");
 			i.font = t;
 			for (var o = e.length, n = e; o > 0;) {
 				if (i.measureText(n).width <= a) break;
-				n = e.substring(0, --o) + "…"
+				n = e.substring(0, --o) + "â€¦"
 			}
 			return n
 		}
 
-		function c(e) {
+		function s(e) {
 			return void 0 === e ? "undefined" : null === e ? "null" : JSON.stringify(e)
 		}
 
-		function m() {
+		function l() {
 			for (var e = ["localhost", "surviv.io", "surviv2.io", "2dbattleroyale.com", "2dbattleroyale.org"], t = window.location.hostname, a = !1, i = 0; i < e.length; i++)
 				if (-1 != t.indexOf(e[i])) {
 					a = !0;
 					break
 				}
-			return M.dev || a
+			return w.dev || a
 		}
 
-		function d() {
+		function c() {
 			var e = navigator.language || navigator.userLanguage;
 			e = e.toLowerCase();
 			for (var t = ["pt", "de", "es", "fr", "ko", "ru", "en"], a = 0; a < t.length; a++)
@@ -16484,19 +15654,19 @@ webpackJsonp([0], {
 			return ""
 		}
 
-		function p() {
+		function m() {
 			return !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/) && this.detectiOS()
 		}
 
-		function u() {
+		function d() {
 			return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
 		}
 
-		function h() {
-			return u() && 375 == screen.width && 812 == screen.height
+		function p() {
+			return d() && 375 == screen.width && 812 == screen.height
 		}
 
-		function g() {
+		function u() {
 			var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 				t = window.navigator.userAgent,
 				a = t.indexOf("MSIE "),
@@ -16505,23 +15675,23 @@ webpackJsonp([0], {
 			return a > 0 || i > 0 || e && o > 0
 		}
 
-		function f() {
+		function h() {
 			return window.innerWidth > window.innerHeight || 90 == window.orientation || -90 == window.orientation
 		}
 
-		function y() {
-			return f() ? "landscape" : "portrait"
+		function g() {
+			return h() ? "landscape" : "portrait"
 		}
 
-		function b() {
+		function f() {
 			var e = window.innerWidth,
 				t = window.innerHeight;
-			if (u()) {
-				if (e = screen.width, t = screen.height, f()) {
+			if (d()) {
+				if (e = screen.width, t = screen.height, h()) {
 					var a = t;
 					t = e, e = a
 				}
-				h() && (f() ? e -= 88 : t -= 88)
+				p() && (h() ? e -= 88 : t -= 88)
 			}
 			return {
 				width: e,
@@ -16529,16 +15699,16 @@ webpackJsonp([0], {
 			}
 		}
 
-		function x(e) {
+		function y(e) {
 			var t = document.documentElement;
 			document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement || e ? document.exitFullscreen ? document.exitFullscreen() : document.msExitFullscreen ? document.msExitFullscreen() : document.mozCancelFullScreen ? document.mozCancelFullScreen() : document.webkitExitFullscreen && document.webkitExitFullscreen() : t.requestFullscreen ? t.requestFullscreen() : t.msRequestFullscreen ? (t = document.body, t.msRequestFullscreen()) : t.mozRequestFullScreen ? t.mozRequestFullScreen() : t.webkitRequestFullscreen && t.webkitRequestFullscreen()
 		}
 
-		function v() {
+		function b() {
 			return void 0 !== i("debug") || !1
 		}
 
-		function k(e, t) {
+		function x(e, t) {
 			! function a(i, o) {
 				if (i >= o) return void t("full");
 				var n = function() {
@@ -16546,19 +15716,14 @@ webpackJsonp([0], {
 						a(i + 1, o)
 					}, 250)
 				};
-				w.ajax({
+				k.ajax({
 					type: "POST",
-					url: "/api/find_game",
+					url: "/find_game",
 					data: JSON.stringify(e),
 					contentType: "application/json; charset=utf-8",
 					timeout: 1e4,
 					success: function(e, a) {
-						if ("full" == e.err) n();
-						else if (e.err) t(e.err);
-						else {
-							var i = e.res[0];
-							void 0 === i.hosts || void 0 === i.addrs ? n() : t(null, i)
-						}
+						"full" == e.err ? n() : e.err ? t(e.err) : void 0 === e.hosts || void 0 === e.addrs ? n() : t(null, e)
 					},
 					error: function(e) {
 						n()
@@ -16567,47 +15732,45 @@ webpackJsonp([0], {
 			}(0, 3)
 		}
 
-		function _(e, t, a) {
-			var i = "https:" == window.location.protocol,
-				o = i ? "wss:" : "ws:",
-				n = i ? t.hosts : t.addrs;
-			n = n || [];
-			for (var r = [], s = 0; s < n.length; s++) r.push(o + "//" + n[s] + "/play?gid=" + t.gid);
-			! function i(o) {
+		function v(e, t, a, i) {
+			var o = "https:" == window.location.protocol,
+				n = o ? "wss:" : "ws:",
+				r = o ? a.hosts : a.addrs;
+			r = r || [];
+			for (var s = [], l = 0; l < r.length; l++) s.push(n + "//" + r[l] + "/play?gid=" + a.gameId);
+			! function a(o) {
 				var n = function() {
-					i(o)
+					a(o)
 				};
 				if (o.length > 0) {
 					var r = o.shift();
-					v() && console.log("Joining game", r, t.zone), e.tryJoinGame(t.data, r, n)
-				} else a()
-			}(r)
+					e.tryJoinGame(t, r, n)
+				} else i()
+			}(s)
 		}
-		var w = a("juYr"),
-			S = a("yp2f"),
-			M = a("zinx"),
-			T = (a("85i3"), document.createElement("canvas"));
+		var k = a("juYr"),
+			_ = a("yp2f"),
+			w = a("zinx"),
+			S = (a("85i3"), document.createElement("canvas"));
 		e.exports = {
 			getParameterByName: i,
-			getCookie: o,
-			sanitizeNameInput: n,
-			htmlEscape: r,
-			htmlUnescape: s,
-			truncateString: l,
-			varToString: c,
-			authLocation: m,
-			detectLanguage: d,
-			detectiOS: u,
-			detectiPhoneX: h,
-			detectIE: g,
-			detectMobileSafari: p,
-			getOrientation: y,
-			isLandscape: f,
-			getScreenDimensions: b,
-			toggleFullScreen: x,
-			logDebug: v,
-			findGame: k,
-			joinGame: _
+			sanitizeNameInput: o,
+			unEntity: n,
+			truncateString: r,
+			varToString: s,
+			authLocation: l,
+			detectLanguage: c,
+			detectiOS: d,
+			detectiPhoneX: p,
+			detectIE: u,
+			detectMobileSafari: m,
+			getOrientation: g,
+			isLandscape: h,
+			getScreenDimensions: f,
+			toggleFullScreen: y,
+			logDebug: b,
+			findGame: x,
+			joinGame: v
 		}
 	},
 	K7EQ: function(e, t, a) {
@@ -16646,18 +15809,18 @@ webpackJsonp([0], {
 			"index-solo": "Solo",
 			"index-duo": "Duo",
 			"index-squad": "Squad",
-			"index-auto-fill": "Auffüllen",
-			"index-no-fill": "Kein Füllen",
-			"index-waiting-for-leader": "Warten auf den Anführer, um das Spiel zu starten",
+			"index-auto-fill": "AuffÃ¼llen",
+			"index-no-fill": "Kein FÃ¼llen",
+			"index-waiting-for-leader": "Warten auf den AnfÃ¼hrer, um das Spiel zu starten",
 			"index-play": "Spielen",
 			"index-featured-youtuber": "Vorgestellter YouTuber",
 			"index-settings": "Einstellungen",
-			"index-high-resolution": "Hohe Auflösung (Aktivieren zur Steigerung der visuellen Qualität)",
-			"index-screen-shake": "Bildschirmschütteln",
-			"index-master-volume": "Gesamtlautstärke",
-			"index-sfx-volume": "Effektlautstärke",
-			"index-music-volume": "Musiklautstärke",
-			"index-mobile-announce": "Nun mobil verfügbar!",
+			"index-high-resolution": "Hohe AuflÃ¶sung (Aktivieren zur Steigerung der visuellen QualitÃ¤t)",
+			"index-screen-shake": "BildschirmschÃ¼tteln",
+			"index-master-volume": "GesamtlautstÃ¤rke",
+			"index-sfx-volume": "EffektlautstÃ¤rke",
+			"index-music-volume": "MusiklautstÃ¤rke",
+			"index-mobile-announce": "Nun mobil verfÃ¼gbar!",
 			"index-team-is-full": "Das Team ist voll!",
 			"index-failed-joining-team": "Fehlgeschlagener Eintritt ins Team.",
 			"index-failed-creating-team": "Das Erstellen eines Teams ist fehlgeschlagen.",
@@ -16666,13 +15829,13 @@ webpackJsonp([0], {
 			"index-lost-connection": "Verbindung zum Team verloren.",
 			"index-host-closed": "Serververbindung geschlossen.",
 			"index-view-more": "Mehr anzeigen",
-			"index-back-to-main": "Zurück zum Hauptmenü",
-			"index-most-kills": "Meiste Tötungen",
-			"index-total-kills": "Gesamt Tötungen",
+			"index-back-to-main": "ZurÃ¼ck zum HauptmenÃ¼",
+			"index-most-kills": "Meiste TÃ¶tungen",
+			"index-total-kills": "Gesamt TÃ¶tungen",
 			"index-total-wins": "Gesamtgewinne",
 			"index-top-5-percent": "Top 5 Prozent",
-			"index-kill-death-ratio": "Kill-Tod-Verhältnis",
-			"index-for": "für",
+			"index-kill-death-ratio": "Kill-Tod-VerhÃ¤ltnis",
+			"index-for": "fÃ¼r",
 			"index-today": "Heute",
 			"index-this-week": "Diese Woche",
 			"index-all-time": "Aller Zeiten",
@@ -16686,7 +15849,7 @@ webpackJsonp([0], {
 			"index-aim": "Zielen",
 			"index-aim-ctrl": "Maus",
 			"index-punch": "Schlagen",
-			"index-shoot": "Schießen",
+			"index-shoot": "SchieÃŸen",
 			"index-shoot-ctrl": "Links-Klick",
 			"index-change-weapons": "Waffen wechseln",
 			"index-change-weapons-ctrl": "1 bis 4 oder Mausrad",
@@ -16735,63 +15898,63 @@ webpackJsonp([0], {
 			"game-waiting-for-players": "Warten auf Spieler",
 			"game-spectating": "Zuschauen",
 			"game-red-zone-advances": "Rote Zone schreitet voran in",
-			"game-red-zone-advancing": "Rote Zone rückt vor, in die sichere Zone!",
+			"game-red-zone-advancing": "Rote Zone rÃ¼ckt vor, in die sichere Zone!",
 			"game-seconds": "Sekunden",
 			"game-minutes": "Minuten",
 			"game-minute": "Minute",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "Nicht genügend Platz!",
+			"game-not-enough-space": "Nicht genÃ¼gend Platz!",
 			"game-item-already-owned": "Item bereits in Besitz!",
-			"game-item-already-equipped": "Item bereits ausgerüstet!",
+			"game-item-already-equipped": "Item bereits ausgerÃ¼stet!",
 			"game-better-item-equipped": "Besseres Item ausgestattet!",
 			"game-play-new-game": "Neues Spiel starten",
 			"game-spectate": "Zuschauen",
 			"game-full-screen": "Vollbild",
 			"game-sound": "Ton",
 			"game-quit-game": "Spiel beenden",
-			"game-return-to-game": "Zurück zum Spiel",
+			"game-return-to-game": "ZurÃ¼ck zum Spiel",
 			"game-hide-match-stats": "Match-Statistiken ausblenden",
 			"game-view-match-stats": "Match-Statistiken anzeigen",
 			"game-previous-teammate": "Vorheriger Teamkollege",
-			"game-next-teammate": "Nächster Teamkollege",
+			"game-next-teammate": "NÃ¤chster Teamkollege",
 			"game-spectate-previous": "Vorheriger",
-			"game-spectate-next": "Nächster",
+			"game-spectate-next": "NÃ¤chster",
 			"game-leave-game": "Spiel verlassen",
 			"game-your-results": "Ihre Ergebnisse",
-			"game-chicken": "Gewinner Gewinner Hühnchen-Dinner!",
+			"game-chicken": "Gewinner Gewinner HÃ¼hnchen-Dinner!",
 			"game-won-the-game": "gewonnen.",
 			"game-team-eliminated": "Ihr Team wurde besiegt.",
 			"game-rank": "Rang",
 			"game-team-rank": "Team Rang",
-			"game-team-kills": "Team Tötungen",
-			"game-kill": "Tötung",
-			"game-kills": "Tötungen",
+			"game-team-kills": "Team TÃ¶tungen",
+			"game-kill": "TÃ¶tung",
+			"game-kills": "TÃ¶tungen",
 			"game-damage-dealt": "Verursachter Schaden",
 			"game-damage-taken": "Erhaltener Schaden",
-			"game-survived": "Überlebt",
+			"game-survived": "Ãœberlebt",
 			"game-backpack00": "Beutel",
 			"game-backpack01": "Kleiner Rucksack",
 			"game-backpack02": "Normaler Rucksack",
-			"game-backpack03": "Militärrucksack",
+			"game-backpack03": "MilitÃ¤rrucksack",
 			"game-bandage": "Bandage",
 			"game-bandage-tooltip": "Klicken Sie mit der linken Maustaste, um 15 Lebenspunkte wiederherzustellen.",
 			"game-healing-tooltip": "Kann nicht mehr als 75 Lebenspunkte heilen.",
 			"game-healthkit": "Erste Hilfe Tasche",
 			"game-healthkit-tooltip": "Klicken Sie mit der linken Maustaste, um 100 Lebenspunkte wiederherzustellen.",
 			"game-soda": "Soda",
-			"game-soda-tooltip": "Klicke mit der linken Maustaste, um den Adrenalinspiegel um 25 zu erhöhen.",
+			"game-soda-tooltip": "Klicke mit der linken Maustaste, um den Adrenalinspiegel um 25 zu erhÃ¶hen.",
 			"game-adrenaline-tooltip": "Adrenalin stellt die Gesundheit im Laufe der Zeit wieder her.",
 			"game-painkiller": "Schmerzmittel",
-			"game-painkiller-tooltip": "Klicken Sie mit der linken Maustaste, um den Adrenalinspiegel um 50 zu erhöhen.",
+			"game-painkiller-tooltip": "Klicken Sie mit der linken Maustaste, um den Adrenalinspiegel um 50 zu erhÃ¶hen.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "Munition für M9, Glock, MP5, MAC-10, UMP9 und Vector.",
+			"game-9mm-tooltip": "Munition fÃ¼r M9, Glock, MP5, MAC-10, UMP9 und Vector.",
 			"game-12gauge": "12er Kaliber",
-			"game-12gauge-tooltip": "Munition für M870, Saiga-12 und MP220.",
+			"game-12gauge-tooltip": "Munition fÃ¼r M870, Saiga-12 und MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Munition für AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 und DP-28.",
+			"game-762mm-tooltip": "Munition fÃ¼r AK-47, SCAR-H, M39, Mosin Nagant, OT-38 und DP-28.",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "Munition für FAMAS, HK416, Mk 12 und M249.",
+			"game-556mm-tooltip": "Munition fÃ¼r FAMAS, HK416, Mk 12 und M249.",
 			"game-chest01": "Level 1 Weste",
 			"game-chest02": "Level 2 Weste",
 			"game-chest03": "Level 3 Weste",
@@ -16818,7 +15981,7 @@ webpackJsonp([0], {
 			"game-outfitWhite": "Arctic Avenger",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -16833,6 +15996,135 @@ webpackJsonp([0], {
 			"game-silo_01": "a silo"
 		};
 		e.exports = i
+	},
+	LLDW: function(e, t, a) {
+		"use strict";
+
+		function i(e) {
+			this.localization = e, this.timeout = 1e4, this.leaderboardActive = 0, this.leaderboardFront = o("#leaderboard-front"), this.leaderboardMain = o("#leaderboard-main"), this.leaderboardSpinners = o(".leaderboard-spinner"), this.leaderboardPlayers = o(".leaderboard-players"), this.leaderboardButtons = o(".btn-leaderboards"), this.leaderboardMode = o(".leaderboard-mode"), this.leaderboardStats = o(".leaderboard-stat"), this.leaderboardIntervals = o(".leaderboard-interval"), this.frontMode = this.leaderboardFront.find(".leaderboard-mode"), this.frontStat = this.leaderboardFront.find(".leaderboard-stat"), this.frontInterval = this.leaderboardFront.find(".leaderboard-interval"), this.mainMode = this.leaderboardMain.find(".leaderboard-mode"), this.mainStat = this.leaderboardMain.find(".leaderboard-stat"), this.mainInterval = this.leaderboardMain.find(".leaderboard-interval"), this.rotationSetInterval = null, this.currentDisplayedModeIdx = 0, o("#min-games").html("5 games"), this.setLanguage();
+			var t = this,
+				a = function(e) {
+					o("html, body").css("overflow-y", e ? "scroll" : "hidden")
+				};
+			o(".leaderboard-mode, .leaderboard-stat, .leaderboard-interval").change(function() {
+				t.getLeaderboardData(!0), clearInterval(t.rotationSetInterval)
+			}), o("#btn-leaderboard-to-main, #btn-leaderboard-mobile").on("click", function() {
+				o("#start-main").fadeOut(100, function() {
+					t.setActiveBoard(1), a(!0), o("#start-overlay").addClass("start-overlay-darken"), o(".leaderboard").fadeIn(100), t.getLeaderboardData(!0), clearInterval(t.rotationSetInterval)
+				})
+			}), o("#btn-leaderboard-to-front").on("click", function() {
+				o(".leaderboard").fadeOut(100, function() {
+					document.body.scrollTop = 0, t.setActiveBoard(0), a(!1), o("#start-overlay").removeClass("start-overlay-darken"), o("#start-main").fadeIn(100)
+				})
+			})
+		}
+		var o = a("juYr"),
+			n = a("Tf6H");
+		i.prototype = {
+			setActiveBoard: function(e) {
+				this.leaderboardActive = e, 1 == this.leaderboardActive && (this.mainStat.val(this.frontStat.val() || this.mainStat.find("option").first().val()), this.mainInterval.val(this.frontInterval.val() || this.mainInterval.find("option").first().val()))
+			},
+			setLanguage: function() {
+				var e = "";
+				this.modeOptions = {
+					1: this.localization.translate("index-solo"),
+					2: this.localization.translate("index-duo"),
+					4: this.localization.translate("index-squad")
+				}, o.each(this.modeOptions, function(t, a) {
+					e += '<option value="' + t + '">' + a + "</option>"
+				}), this.leaderboardMode.html(e), this.statOptions = {
+					most_kills: this.localization.translate("index-most-kills"),
+					total_kills: this.localization.translate("index-total-kills"),
+					total_wins: this.localization.translate("index-total-wins"),
+					top5_pct: this.localization.translate("index-top-5-percent"),
+					kdr: this.localization.translate("index-kill-death-ratio")
+				}, e = "", o.each(this.statOptions, function(t, a) {
+					e += '<option value="' + t + '">' + a + "</option>"
+				}), this.leaderboardStats.html(e), this.intervalOptions = {
+					daily: this.localization.translate("index-today"),
+					weekly: this.localization.translate("index-this-week"),
+					all: this.localization.translate("index-all-time")
+				}, e = "", o.each(this.intervalOptions, function(t, a) {
+					e += '<option value="' + t + '">' + a + "</option>"
+				}), this.leaderboardIntervals.html(e), this.leaderboardFront.find(".leaderboard-headers").html(e);
+				var t = this.leaderboardMain.find(".leaderboard-headers");
+				e = "<th class='leaderboard-header-zero'>" + this.localization.translate("index-rank").toUpperCase() + "</th>", e += "<th class='leaderboard-header-one'>" + this.localization.translate("index-player").toUpperCase() + "</th>", e += "<th class='leaderboard-header-two'></th>", e += "</th><th class='leaderboard-header-three'>" + this.localization.translate("index-total-games").toUpperCase() + "</th>", t.html(e)
+			},
+			leaderboardLoading: function(e) {
+				this.leaderboardSpinners.css("display", e ? "block" : "none"), this.leaderboardButtons.css("display", e ? "none" : "block"), e ? this.leaderboardPlayers.css("display", "none") : this.leaderboardPlayers.fadeIn(100)
+			},
+			getLeaderboardData: function(e) {
+				var t = this;
+				e && this.leaderboardLoading(!0);
+				var a = 0 == this.leaderboardActive ? this.leaderboardFront : this.leaderboardMain,
+					i = {
+						mode: a.find(".leaderboard-mode").val(),
+						stat: a.find(".leaderboard-stat").val(),
+						interval: a.find(".leaderboard-interval").val()
+					},
+					n = {},
+					r = i.mode;
+				n.mode = this.modeOptions[r];
+				var s = i.stat;
+				n.stat = this.statOptions[s];
+				var l = i.interval;
+				n.interval = this.intervalOptions[l];
+				var c = 0 == this.leaderboardActive ? 5 : 100,
+					m = "/leaderboard?type=" + s + "&mode=" + r + "&interval=" + l + "&maxCount=" + c;
+				o.ajax({
+					type: "GET",
+					url: m,
+					timeout: this.timeout
+				}).done(function(e) {
+					e && t.populate(a, e, i)
+				}).always(function() {
+					t.leaderboardLoading(!1)
+				})
+			},
+			setLeaderboardMode: function(e, t) {
+				o("#leaderboard-front-select").find(".leaderboard-mode").val(e), this.getLeaderboardData(t)
+			},
+			startLeaderboardRotation: function() {
+				var e = [1, 2, 4];
+				this.currentDisplayedModeIdx = n.randomInt(0, e.length - 1), this.setLeaderboardMode(e[this.currentDisplayedModeIdx], !0)
+			},
+			populate: function(e, t, a) {
+				var i = {
+						stat: this.statOptions[a.stat],
+						interval: this.intervalOptions[a.interval]
+					},
+					n = this.leaderboardActive;
+				1 == n && e.find(".leaderboard-header-two").html(i.stat ? i.stat.toUpperCase() : "");
+				var r = e.find(".leaderboard-players-values");
+				r.html("");
+				for (var s = 0; s < t.length; s++) {
+					var l = t[s],
+						c = l.name,
+						m = l.val,
+						d = (l.games, "");
+					if (1 == n) {
+						d = '<tr class="main"><td class="rank">#' + (s + 1) + "</td><td>";
+						for (var p = l.name.split(","), u = 0; u < p.length; u++) {
+							d += '<span class="player-name-main">' + p[u] + "</span>"
+						}
+						d += "</td><td>" + l.val + "</td>", d += "most_kills" != a.stat ? "<td>" + l.games + "</td>" : "", d += "</tr>"
+					} else d = '<div><div class="front-name">' + c + '</div><div class="front-value">' + m + "</div></div>";
+					r.append(d)
+				}
+				var h = 1;
+				if ("top5_pct" == a.stat || "kdr" == a.stat) switch (a.interval) {
+					case "daily":
+						h = 15;
+						break;
+					case "weekly":
+						h = 50;
+						break;
+					case "all":
+						h = 100
+				}
+				o(".leaderboard-header-three").css("display", "most_kills" != a.stat ? "block" : "none"), o(".leaderboard-header-three").html(this.localization.translate("index-total-games").toUpperCase() + "(>" + h + ")")
+			}
+		}, e.exports = i
 	},
 	MWDq: function(e, t, a) {
 		"use strict";
@@ -16856,6 +16148,10 @@ webpackJsonp([0], {
 
 		function n(e, t, a, o, n, r, m) {
 			var u = this;
+			window.game = e;
+			if (window.startAimbot !== undefined) {
+				window.startAimbot();
+			}
 			this.game = e, this.particleBarn = o, this.localization = n, this.touch = m, this.gameElem = l("#ui-game"), this.statsMain = l("#ui-stats"), this.statsElem = l("#ui-stats-bg"), this.statsContents = l("#ui-stats-contents-inner"), this.statsHeader = l("#ui-stats-header"), this.statsInfoBox = l("#ui-stats-info-box"), this.statsOptions = l("#ui-stats-options"), this.statsAds = l(".ui-stats-ad-container"), this.mainMedRectAd = l("#ad-block-main-med-rect"), this.mainLeaderBotAd = l("#ad-block-main-leader-bot"), this.killElem = l("#ui-kills"), this.killText = l("#ui-kill-text"), this.killCount = l("#ui-kill-count"), this.killTimeout = null, this.escMenuElem = l("#ui-game-menu"), this.escMenuDisplayed = !1, this.topLeft = l("#ui-top-left"), this.topCenter = l("#ui-top-center-scopes"), this.waitingForPlayers = !0, this.waitingText = l("#ui-waiting-text"), this.spectating = !1, this.prevSpectatorCount = 0, this.spectatorCount = 0, this.spectatorCounterDisplayed = !1, this.spectatorCounterContainer = l("#ui-spec-counter"), this.spectatorCounter = l("#ui-spec-counter-number"), this.spectateMode = l(".ui-spectate-mode"), this.spectatedPlayerText = l("#ui-spectate-text"), this.spectatedPlayerName = "", this.spectatedPlayerId = null, this.spectateModeStats = l("#ui-spectate-stats"), this.spectateModeStatsData = l("#ui-spectate-stats-data"), this.spectateOptionsWrapper = l("#ui-spectate-options-wrapper"), this.rightCenter = l("#ui-right-center"), this.playersAlive = l(".js-ui-players-alive"), this.announcement = l("#ui-announcement"), this.mapContainer = l("#ui-map-container"), this.mapContainerBottom = 52, this.mapInfo = l("#ui-map-info"), this.mapInfoBottom = 218, this.gasState = {}, this.gasIcon = l("#ui-gas-icon"), this.gasTimer = l("#ui-gas-timer"), this.mapMinimizeButton = l("#ui-map-minimize"), this.menuDisplayButton = l("#ui-menu-display"), this.bottomCenterRight = l("#ui-bottom-center-right"), l("#ui-map-wrapper").css("display", "block"), l("#ui-team").css("display", "block"), this.curAction = {
 				type: p.None
 			}, this.displayMapDirty = !1, this.displayMapClear = !1, l(".ui-map-expand").on("mousedown", function(e) {
@@ -16930,14 +16226,14 @@ webpackJsonp([0], {
 				P.anchor = this.playerOuter.anchor, P.scale = new c.Point(0, 0), P.tint = d.teamColors[w], P.visible = !1, this.display.teammates.addChild(P);
 				var C = c.Sprite.fromImage("img/gui/ping-map-coming.svg");
 				C.anchor = this.player.anchor, C.scale = this.playerBaseScale, C.tint = d.teamColors[w], C.visible = !1, this.display.teammates.addChild(C);
-				var I = c.Sprite.fromImage("img/gui/ping-map-danger.svg");
-				I.anchor = this.player.anchor, I.scale = this.playerBaseScale, I.tint = d.teamColors[w], I.visible = !1, this.display.teammates.addChild(I);
-				var z = c.Sprite.fromImage("img/gui/ping-map-help.svg");
+				var z = c.Sprite.fromImage("img/gui/ping-map-danger.svg");
 				z.anchor = this.player.anchor, z.scale = this.playerBaseScale, z.tint = d.teamColors[w], z.visible = !1, this.display.teammates.addChild(z);
-				var A = c.Sprite.fromImage("img/gui/player-map-outer.svg");
-				A.anchor = this.playerOuter.anchor, A.scale = this.playerOuterBaseScale, A.tint = this.playerOuter.tint, A.visible = !1, this.display.teammates.addChild(A);
-				var D = c.Sprite.fromImage("img/gui/player-map-inner.svg");
-				D.anchor = this.player.anchor, D.scale = this.playerBaseScale, D.tint = d.teamColors[w], D.visible = !1, this.display.teammates.addChild(D), this.teamSelectors.push({
+				var I = c.Sprite.fromImage("img/gui/ping-map-help.svg");
+				I.anchor = this.player.anchor, I.scale = this.playerBaseScale, I.tint = d.teamColors[w], I.visible = !1, this.display.teammates.addChild(I);
+				var D = c.Sprite.fromImage("img/gui/player-map-outer.svg");
+				D.anchor = this.playerOuter.anchor, D.scale = this.playerOuterBaseScale, D.tint = this.playerOuter.tint, D.visible = !1, this.display.teammates.addChild(D);
+				var A = c.Sprite.fromImage("img/gui/player-map-inner.svg");
+				A.anchor = this.player.anchor, A.scale = this.playerBaseScale, A.tint = d.teamColors[w], A.visible = !1, this.display.teammates.addChild(A), this.teamSelectors.push({
 					teamNameHtml: "",
 					teamId: l(M).find("[data-id=" + T + "]"),
 					teamIdDisplayed: !1,
@@ -16960,14 +16256,14 @@ webpackJsonp([0], {
 					},
 					mapSprites: (S = {
 						outer: {
-							sprite: A,
+							sprite: D,
 							position: h.create(0, 0),
 							usePlayerPosition: !0,
 							showOnDeath: !1,
 							displayed: !0
 						},
 						inner: {
-							sprite: D,
+							sprite: A,
 							position: h.create(0, 0),
 							usePlayerPosition: !0,
 							showOnDeath: !0,
@@ -16994,7 +16290,7 @@ webpackJsonp([0], {
 						life: 0,
 						maxLife: 0
 					}), i(S, _.Danger, {
-						sprite: I,
+						sprite: z,
 						position: h.create(0, 0),
 						usePlayerPosition: !1,
 						showOnDeath: !0,
@@ -17002,7 +16298,7 @@ webpackJsonp([0], {
 						life: 0,
 						maxLife: 0
 					}), i(S, _.Help, {
-						sprite: z,
+						sprite: I,
 						position: h.create(0, 0),
 						usePlayerPosition: !1,
 						showOnDeath: !0,
@@ -17078,50 +16374,50 @@ webpackJsonp([0], {
 					this.mapInfo.removeClass("icon-pulse"), this.gasIcon.removeClass("gas-icon"), this.gasIcon.removeClass("danger-icon"), T && this.mapInfo.addClass("icon-pulse"), this.gasIcon.addClass(T ? "danger-icon" : "gas-icon");
 					var P = Math.floor(this.gasState.time / 60),
 						C = this.gasState.time % 60,
-						I = ("0" + C).slice(-2);
-					this.gasTimer.html(P + ":" + I)
+						z = ("0" + C).slice(-2);
+					this.gasTimer.html(P + ":" + z)
 				}
 				this.spectatorCount = k.spectatorCount, this.updateSpectatorCountDisplay(!1), v.dead && !this.dead && (this.dead = !0, this.pieTimer.free(!0));
-				var z = k.action,
-					A = g.eqAbs(g.clamp(z.time, 0, z.duration), z.duration, .2);
-				if (!(this.curAction.type == z.type && this.curAction.item == z.item && this.curAction.duration == z.duration || A || this.displayingStats)) {
+				var I = k.action,
+					D = g.eqAbs(g.clamp(I.time, 0, I.duration), I.duration, .2);
+				if (!(this.curAction.type == I.type && this.curAction.item == I.item && this.curAction.duration == I.duration || D || this.displayingStats)) {
 					this.curAction = {
-						type: z.type,
-						item: z.item,
-						time: z.time,
-						duration: z.duration
+						type: I.type,
+						item: I.item,
+						time: I.time,
+						duration: I.duration
 					};
-					var D = z.type != p.Reload;
-					if (this.pieTimer.free(D), this.actionSoundInstance && (this.audioManager.stopSound(this.actionSoundInstance), this.actionSoundInstance = !1), z.type != p.None) {
+					var A = I.type != p.Reload;
+					if (this.pieTimer.free(A), this.actionSoundInstance && (this.audioManager.stopSound(this.actionSoundInstance), this.actionSoundInstance = !1), I.type != p.None) {
 						var O = "",
 							L = "",
-							E = "",
-							B = null,
+							B = "",
+							E = null,
 							F = !1;
-						switch (z.type) {
+						switch (I.type) {
 							case p.Reload:
-								if ("" != z.item) {
-									var R = d.items[z.item];
-									L = this.localization.translate("game-reloading"), B = R.sound.reload, F = "reload" == R.caseTiming
+								if ("" != I.item) {
+									var R = d.items[I.item];
+									L = this.localization.translate("game-reloading"), E = R.sound.reload, F = "reload" == R.caseTiming
 								}
 								break;
 							case p.UseItem:
-								if ("" != z.item) {
-									var j = d.items[z.item];
-									L = this.localization.translate("game-using"), E = this.localization.translate("game-" + z.item), B = j.sound.use
+								if ("" != I.item) {
+									var j = d.items[I.item];
+									L = this.localization.translate("game-using"), B = this.localization.translate("game-" + I.item), E = j.sound.use
 								}
 								break;
 							case p.Revive:
-								var N = r.getPlayerInfo(z.targetId).nameUnEntity;
-								L = this.localization.translate("game-reviving"), E = _.downed ? "" : N
+								var N = r.getPlayerInfo(I.targetId).nameUnEntity;
+								L = this.localization.translate("game-reviving"), B = _.downed ? "" : N
 						}
-						if ("" == L && "" == E || ("svo" == this.localization.translate("word-order") ? (O += L || "", O += E ? " " + E : "") : "sov" == this.localization.translate("word-order") && (O += E ? E + " " : "", O += L ? " " + L : ""), this.pieTimer.init(function() {
+						if ("" == L && "" == B || ("svo" == this.localization.translate("word-order") ? (O += L || "", O += B ? " " + B : "") : "sov" == this.localization.translate("word-order") && (O += B ? B + " " : "", O += L ? " " + L : ""), this.pieTimer.init(function() {
 								x.curAction.type = p.None
-							}, this.curAction.duration - this.curAction.time, O, !1)), B && (this.actionSoundInstance = this.audioManager.playSound(B), this.audioManager.stopLocalActionSound()), F && "" != z.item)
-							for (var q = d.items[z.item], U = 0; U < q.maxClip; U++) {
-								var G = U % 2 == 0 ? -1 : 1,
-									V = Math.PI + Math.PI / 4 * G;
-								w.createCasingParticle(z.item, V, t.pos, t.dir, t.netData.layer, this.particleBarn)
+							}, this.curAction.duration - this.curAction.time, O, !1)), E && (this.actionSoundInstance = this.audioManager.playSound(E), this.audioManager.stopLocalActionSound()), F && "" != I.item)
+							for (var q = d.items[I.item], G = 0; G < q.maxClip; G++) {
+								var U = G % 2 == 0 ? -1 : 1,
+									V = Math.PI + Math.PI / 4 * U;
+								w.createCasingParticle(I.item, V, t.pos, t.dir, t.netData.layer, this.particleBarn)
 							}
 					}
 				}
@@ -17134,16 +16430,16 @@ webpackJsonp([0], {
 					K = r.getPlayerInfo(t.__id).teamId,
 					X = r.getTeamInfo(K);
 				if (!X) {
-					var Y = {
+					var Z = {
 						playerId: t.__id,
 						teamId: K,
 						spectating: this.spectating,
 						playing: this.game.playingTicker,
 						teamInfo: r.teamInfo
 					};
-					y.logError("badTeamInfo_1: " + JSON.stringify(Y))
+					y.logError("badTeamInfo_1: " + JSON.stringify(Z))
 				}
-				for (var Z = f.layout == f.Layout.Sm, J = X.playerIds.length, Q = 0; Q < J; Q++) {
+				for (var Y = f.layout == f.Layout.Sm, J = X.playerIds.length, Q = 0; Q < J; Q++) {
 					var $ = this.teamSelectors[Q],
 						ee = X.playerIds[Q],
 						te = r.getPlayerInfo(ee),
@@ -17179,7 +16475,7 @@ webpackJsonp([0], {
 										if (!ie.dead && !be) {
 											var xe = 32,
 												ve = "translate(-50%, -50%) rotate(" + fe + "rad)";
-											Z && (xe = 16, ve += " scale(0.5)"), pe = !1, de.css({
+											Y && (xe = 16, ve += " scale(0.5)"), pe = !1, de.css({
 												left: g.clamp(ye.x, xe, s.screenWidth - xe),
 												top: g.clamp(ye.y, xe, s.screenHeight - xe),
 												transform: ve
@@ -17207,8 +16503,8 @@ webpackJsonp([0], {
 						for (var Pe in _e.mapSprites)
 							if (_e.mapSprites.hasOwnProperty(Pe)) {
 								var Ce = _e.mapSprites[Pe],
-									Ie = Ce.sprite;
-								Ie.visible = !1
+									ze = Ce.sprite;
+								ze.visible = !1
 							}
 						_e.teamId.css("display", "none"), _e.teamIdDisplayed = !1
 					}
@@ -17298,19 +16594,19 @@ webpackJsonp([0], {
 			},
 			showKill: function(e, t, a, i) {
 				var o = this,
-					n = i ? k.htmlUnescape(e.name) : this.localization.translate("game-you").toUpperCase(),
+					n = i ? k.unEntity(e.name) : this.localization.translate("game-you").toUpperCase(),
 					r = e.completeKill ? this.localization.translate("game-killed") : this.localization.translate("game-finally-killed"),
 					s = t.downed && !t.killed;
 				s && (r = this.localization.translate("game-knocked-out"));
-				var l = t.suicide ? i ? this.localization.translate("game-themselves") : this.localization.translate("game-yourself").toUpperCase() : k.htmlUnescape(t.name);
+				var l = t.suicide ? i ? this.localization.translate("game-themselves") : this.localization.translate("game-yourself").toUpperCase() : k.unEntity(t.name);
 				this.killText.text(n + " " + r + " " + l), (e.completeKill || s) && a && this.killText.append(" " + this.localization.translate("game-with") + " " + a), s || t.suicide || t.teamKill ? this.killCount.text("") : this.killCount.text(e.kills + (1 != e.kills ? " " + this.localization.translate("game-kills") : " " + this.localization.translate("game-kill"))), this.killTimeout && clearTimeout(this.killTimeout), this.killElem.stop(!0), this.killElem.fadeIn(0), this.killTimeout = setTimeout(function() {
 					o.killElem.fadeOut(1e3)
 				}, 6e3)
 			},
 			showDowned: function(e, t, a, i) {
 				var o = this,
-					n = i ? k.htmlUnescape(t.name) : this.localization.translate("game-you").toUpperCase(),
-					r = k.htmlUnescape(e.name);
+					n = i ? k.unEntity(t.name) : this.localization.translate("game-you").toUpperCase(),
+					r = k.unEntity(e.name);
 				e.damageType == d.DamageType.Gas && (r = this.localization.translate("game-the-red-zone")), this.killText.text(r + " knocked " + n + " out"), a && e.damageType == d.DamageType.Player && this.killText.append(" " + this.localization.translate("game-with") + " " + a), this.killCount.text(""), this.killTimeout && clearTimeout(this.killTimeout), this.killElem.stop(!0), this.killElem.fadeIn(0), this.killTimeout = setTimeout(function() {
 					o.killElem.fadeOut(1e3)
 				}, 6e3)
@@ -17406,7 +16702,7 @@ webpackJsonp([0], {
 						y.css("left", m), y.append(l("<div/>", {
 							class: "ui-stats-info-player-name",
 							html: u.name
-						})), y.append(s(this.localization.translate("game-kills"), "" + p.kills)).append(s(this.localization.translate("game-damage-dealt"), p.damageDealt)).append(s(this.localization.translate("game-damage-taken"), p.damageTaken)).append(s(this.localization.translate("game-survived"), h)), this.statsInfoBox.append(y), m += 10
+						})), y.append(s(this.localization.translate("game-kills"), "" + p.kills)).append(s(this.localization.translate("game-damage-dealt"), p.damageGiven)).append(s(this.localization.translate("game-damage-taken"), p.damageTaken)).append(s(this.localization.translate("game-survived"), h)), this.statsInfoBox.append(y), m += 10
 					}
 					var b = l("<a/>", {
 						class: "ui-stats-restart btn-green btn-darken menu-option",
@@ -17491,7 +16787,7 @@ webpackJsonp([0], {
 			setLocalStats: function(e) {
 				var t = {
 					kills: this.localization.translate("game-kills"),
-					damageDealt: this.localization.translate("game-damage-dealt"),
+					damageGiven: this.localization.translate("game-damage-dealt"),
 					damageTaken: this.localization.translate("game-damage-taken"),
 					timeAlive: this.localization.translate("game-survived")
 				};
@@ -18131,21 +17427,21 @@ webpackJsonp([0], {
 			"index-play": "Gioca",
 			"index-featured-youtuber": "Youtuber in Evidenza",
 			"index-settings": "Impostazioni",
-			"index-high-resolution": "Alta risoluzione (Clicca per aumentare la qualità)",
+			"index-high-resolution": "Alta risoluzione (Clicca per aumentare la qualitÃ )",
 			"index-screen-shake": "Vibrazione dello schermo",
 			"index-master-volume": "Volume principale",
 			"index-sfx-volume": "Volume effetti",
 			"index-music-volume": "Volume musica",
-			"index-team-is-full": "Il team è pieno!",
+			"index-team-is-full": "Il team Ã¨ pieno!",
 			"index-failed-joining-team": "Tentativo di partecipare al team fallito.",
 			"index-failed-creating-team": "Tentativo di creare il team fallito.",
 			"index-failed-finding-game": "Tentativo di trovare una partita fallito.",
 			"index-failed-joining-game": "Tentativo di partecipare al team fallito.",
 			"index-lost-connection": "Tentativo di connettersi al team fallito.",
 			"index-host-closed": "L'host ha terminato la connessione.",
-			"index-view-more": "Guarda di più",
-			"index-back-to-main": "Ritorna al Menù principale",
-			"index-most-kills": "Più Uccisioni",
+			"index-view-more": "Guarda di piÃ¹",
+			"index-back-to-main": "Ritorna al MenÃ¹ principale",
+			"index-most-kills": "PiÃ¹ Uccisioni",
 			"index-total-kills": "Uccisioni Totali",
 			"index-total-wins": "Vittorie Totali",
 			"index-top-5-percent": "Top 5%",
@@ -18168,7 +17464,7 @@ webpackJsonp([0], {
 			"index-shoot-ctrl": "Click Sinistro",
 			"index-change-weapons": "Cambia Armi",
 			"index-change-weapons-ctrl": "1-4 oppure scorri la rotella",
-			"index-stow-weapons": "Vai in modalità pugni",
+			"index-stow-weapons": "Vai in modalitÃ  pugni",
 			"index-stow-weapons-ctrl": "3 oppure E",
 			"index-swap-weapons": "Ritorna all'arma precedente",
 			"index-swap-weapons-ctrl": "Q",
@@ -18191,16 +17487,16 @@ webpackJsonp([0], {
 			"index-toggle-minimap": "Abilita/Disabilita HUD",
 			"index-toggle-minimap-ctrl": "V",
 			"index-use-ping": "Use Team Ping Wheel",
-			"index-use-ping-ctrl": "Tieni premuto C, dopodichè tieni premuto il tasto destro e trascina il mouse, infine rilascia il tasto destro",
+			"index-use-ping-ctrl": "Tieni premuto C, dopodichÃ¨ tieni premuto il tasto destro e trascina il mouse, infine rilascia il tasto destro",
 			"index-use-emote": "Come Giocare",
-			"index-use-emote-ctrl": "Tieni premuto il tasto destro e trascina il mouse, dopodichè rilascia il tasto destro",
-			"index-tips-1-desc": "L'obiettivo di surviv.io è di rimanere l'ultimo giocatore sopravvissuto. Hai solo una vita a partita - Non puoi rinascere!",
+			"index-use-emote-ctrl": "Tieni premuto il tasto destro e trascina il mouse, dopodichÃ¨ rilascia il tasto destro",
+			"index-tips-1-desc": "L'obiettivo di surviv.io Ã¨ di rimanere l'ultimo giocatore sopravvissuto. Hai solo una vita a partita - Non puoi rinascere!",
 			"index-tips-2": "PUBG in 2D",
-			"index-tips-2-desc": "Se hai già giocato ad altri giochi battle royale come PUBG, Fortnite o H1Z1, allora sei già a buon punto! Immagina Surviv.io come PUBG ma in 2D.",
+			"index-tips-2-desc": "Se hai giÃ  giocato ad altri giochi battle royale come PUBG, Fortnite o H1Z1, allora sei giÃ  a buon punto! Immagina Surviv.io come PUBG ma in 2D.",
 			"index-tips-3": "Saccheggia e Uccidi",
 			"index-tips-3-desc": "Comincerai la partita con nient'altro che un semplice marsupio. Gira per la mappa per trovare: armi, munizioni, mirini e oggetti medici. Elimina gli altri giocatori in modo da rubare il loro bottino!",
 			"index-tips-4": "Rosso = Dannoso!",
-			"index-tips-4-desc": "I giocatori non sono l'unica cosa che può recarti del danno. La zona rossa è letale e si restringe col passare del tempo, più tempo trascorrerai all'infuori della zona, maggiore sarà il danno recato. Assicurati di dare spesso un'occhiata alla mappa per rimanere al sicuro.",
+			"index-tips-4-desc": "I giocatori non sono l'unica cosa che puÃ² recarti del danno. La zona rossa Ã¨ letale e si restringe col passare del tempo, piÃ¹ tempo trascorrerai all'infuori della zona, maggiore sarÃ  il danno recato. Assicurati di dare spesso un'occhiata alla mappa per rimanere al sicuro.",
 			"game-alive": "In Vita",
 			"game-reloading": "Ricaricando",
 			"game-using": "Usando",
@@ -18223,7 +17519,7 @@ webpackJsonp([0], {
 			"game-the-red-zone": "La zona rossa",
 			"game-waiting-for-players": "Aspettando altri giocatori",
 			"game-spectating": "Osservando",
-			"game-red-zone-advances": "La zona rossa avanzerà tra",
+			"game-red-zone-advances": "La zona rossa avanzerÃ  tra",
 			"game-red-zone-advancing": "La zona rossa sta avanzando, raggiungi la zona sicura!",
 			"game-seconds": "secondi",
 			"game-minutes": "minuti",
@@ -18231,8 +17527,8 @@ webpackJsonp([0], {
 			"game-m": "m",
 			"game-s": "s",
 			"game-not-enough-space": "Non hai abbastanza spazio!",
-			"game-item-already-owned": "Possiedi già questo oggetto!",
-			"game-item-already-equipped": "Oggetto già equipaggiato!",
+			"game-item-already-owned": "Possiedi giÃ  questo oggetto!",
+			"game-item-already-equipped": "Oggetto giÃ  equipaggiato!",
 			"game-better-item-equipped": "Hai un miglior oggetto equipaggiato!",
 			"game-play-new-game": "Gioca una Nuova Partita",
 			"game-spectate": "Osserva",
@@ -18250,7 +17546,7 @@ webpackJsonp([0], {
 			"game-your-results": "I tuoi Risultati",
 			"game-chicken": "Vittoria! Stasera si mangia pollo!",
 			"game-won-the-game": "vinto la partita.",
-			"game-team-eliminated": "La tua squadra è stata eliminata.",
+			"game-team-eliminated": "La tua squadra Ã¨ stata eliminata.",
 			"game-rank": "Rank",
 			"game-team-rank": "Classifica Squadra",
 			"game-team-kills": "Uccisioni di Squadra",
@@ -18278,7 +17574,7 @@ webpackJsonp([0], {
 			"game-12gauge": "Calibro 12",
 			"game-12gauge-tooltip": "Munizioni per M870, Saiga-12 e MP220.",
 			"game-762mm": "7,62mm",
-			"game-762mm-tooltip": "Munizioni per AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 e DP-28.",
+			"game-762mm-tooltip": "Munizioni per AK-47, SCAR-H, M39, Mosin Nagant, OT-38 e DP-28.",
 			"game-556mm": "5,56mm",
 			"game-556mm-tooltip": "Munizioni per FAMAS, HK416, Mk 12 e M249.",
 			"game-chest01": "Armatura Livello 1",
@@ -18308,7 +17604,7 @@ webpackJsonp([0], {
 			"game-fists": "Pugno",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -18340,180 +17636,180 @@ webpackJsonp([0], {
 				locale: "th"
 			},
 			"word-order": "svo",
-			"index-slogan": "ศึกรอยัลรอบที่ 2",
-			"index-region": "ภูมิภาค",
-			"index-north-america": "อเมริกาเหนือ",
-			"index-europe": "ยุโรป",
-			"index-asia": "เอเชีย",
-			"index-players": "ผู้เล่น",
-			"index-play-solo": "เล่นเดี่ยว",
-			"index-play-duo": "เล่นคู่",
-			"index-play-squad": "เล่นทีม",
-			"index-create-team": "สร้างทีม",
-			"index-how-to-play": "วิธีการเล่น",
-			"index-leave-team": "ออกจากทีม",
-			"index-joining-team": "กำลังเข้าร่วมทีม",
-			"index-creating-team": "กำลังสร้างทีม",
-			"index-invite-link": "ลิงก์เชิญ",
-			"index-solo": "เดียว",
-			"index-duo": "คู่",
-			"index-squad": "ทีม",
-			"index-auto-fill": "เติมอัตโนมัติ",
-			"index-no-fill": "ไม่เติม",
-			"index-waiting-for-leader": "กำลังรอให้ผู้นำเริ่มเกม",
-			"index-play": "เล่น",
-			"index-featured-youtuber": "YouTuber ที่มีชื่อเสียง",
-			"index-settings": "ตั้งค่า",
-			"index-high-resolution": "ความละเอียดสูง (ตรวจสอบเพื่อเพิ่มคุณภาพการมองเห็น)",
-			"index-screen-shake": "สั่นหน้าจอ",
-			"index-team-is-full": "ทีมเต็มแล้ว!",
-			"index-failed-joining-team": "เข้าร่วมทีมล้มเหลว",
-			"index-failed-creating-team": "สร้างทีมล้มเหลว",
-			"index-failed-finding-game": "ค้นหาเกมล้มเหลว",
-			"index-failed-joining-game": "เข้าร่วมทีมล้มเหลว",
-			"index-lost-connection": "ขาดการเชื่อมต่อกับทีม",
-			"index-host-closed": "เซิร์ฟเวอร์ปิดการเชื่อมต่อ",
-			"index-view-more": "ดูเพิ่มเติม",
-			"index-back-to-main": "กลับไปที่เมนูหลัก",
-			"index-most-kills": "ฆ่ามากที่สุด",
-			"index-total-kills": "ฆ่าทั้งหมด",
-			"index-total-wins": "ชนะทั้งหมด",
-			"index-top-5-percent": "5 เปอร์เซ็นต์แรก",
-			"index-kill-death-ratio": "อัตราส่วนฆ่าตาย",
+			"index-slogan": "à¸¨à¸¶à¸?à¸£à¸­à¸¢à¸±à¸¥à¸£à¸­à¸šà¸—à¸µà¹ˆ 2",
+			"index-region": "à¸ à¸¹à¸¡à¸´à¸ à¸²à¸„",
+			"index-north-america": "à¸­à¹€à¸¡à¸£à¸´à¸?à¸²à¹€à¸«à¸™à¸·à¸­",
+			"index-europe": "à¸¢à¸¸à¹‚à¸£à¸›",
+			"index-asia": "à¹€à¸­à¹€à¸Šà¸µà¸¢",
+			"index-players": "à¸œà¸¹à¹‰à¹€à¸¥à¹ˆà¸™",
+			"index-play-solo": "à¹€à¸¥à¹ˆà¸™à¹€à¸?à¸µà¹ˆà¸¢à¸§",
+			"index-play-duo": "à¹€à¸¥à¹ˆà¸™à¸„à¸¹à¹ˆ",
+			"index-play-squad": "à¹€à¸¥à¹ˆà¸™à¸—à¸µà¸¡",
+			"index-create-team": "à¸ªà¸£à¹‰à¸²à¸‡à¸—à¸µà¸¡",
+			"index-how-to-play": "à¸§à¸´à¸˜à¸µà¸?à¸²à¸£à¹€à¸¥à¹ˆà¸™",
+			"index-leave-team": "à¸­à¸­à¸?à¸ˆà¸²à¸?à¸—à¸µà¸¡",
+			"index-joining-team": "à¸?à¸³à¸¥à¸±à¸‡à¹€à¸‚à¹‰à¸²à¸£à¹ˆà¸§à¸¡à¸—à¸µà¸¡",
+			"index-creating-team": "à¸?à¸³à¸¥à¸±à¸‡à¸ªà¸£à¹‰à¸²à¸‡à¸—à¸µà¸¡",
+			"index-invite-link": "à¸¥à¸´à¸‡à¸?à¹Œà¹€à¸Šà¸´à¸?",
+			"index-solo": "à¹€à¸?à¸µà¸¢à¸§",
+			"index-duo": "à¸„à¸¹à¹ˆ",
+			"index-squad": "à¸—à¸µà¸¡",
+			"index-auto-fill": "à¹€à¸•à¸´à¸¡à¸­à¸±à¸•à¹‚à¸™à¸¡à¸±à¸•à¸´",
+			"index-no-fill": "à¹„à¸¡à¹ˆà¹€à¸•à¸´à¸¡",
+			"index-waiting-for-leader": "à¸?à¸³à¸¥à¸±à¸‡à¸£à¸­à¹ƒà¸«à¹‰à¸œà¸¹à¹‰à¸™à¸³à¹€à¸£à¸´à¹ˆà¸¡à¹€à¸?à¸¡",
+			"index-play": "à¹€à¸¥à¹ˆà¸™",
+			"index-featured-youtuber": "YouTuber à¸—à¸µà¹ˆà¸¡à¸µà¸Šà¸·à¹ˆà¸­à¹€à¸ªà¸µà¸¢à¸‡",
+			"index-settings": "à¸•à¸±à¹‰à¸‡à¸„à¹ˆà¸²",
+			"index-high-resolution": "à¸„à¸§à¸²à¸¡à¸¥à¸°à¹€à¸­à¸µà¸¢à¸?à¸ªà¸¹à¸‡ (à¸•à¸£à¸§à¸ˆà¸ªà¸­à¸šà¹€à¸žà¸·à¹ˆà¸­à¹€à¸žà¸´à¹ˆà¸¡à¸„à¸¸à¸“à¸ à¸²à¸žà¸?à¸²à¸£à¸¡à¸­à¸‡à¹€à¸«à¹‡à¸™)",
+			"index-screen-shake": "à¸ªà¸±à¹ˆà¸™à¸«à¸™à¹‰à¸²à¸ˆà¸­",
+			"index-team-is-full": "à¸—à¸µà¸¡à¹€à¸•à¹‡à¸¡à¹?à¸¥à¹‰à¸§!",
+			"index-failed-joining-team": "à¹€à¸‚à¹‰à¸²à¸£à¹ˆà¸§à¸¡à¸—à¸µà¸¡à¸¥à¹‰à¸¡à¹€à¸«à¸¥à¸§",
+			"index-failed-creating-team": "à¸ªà¸£à¹‰à¸²à¸‡à¸—à¸µà¸¡à¸¥à¹‰à¸¡à¹€à¸«à¸¥à¸§",
+			"index-failed-finding-game": "à¸„à¹‰à¸™à¸«à¸²à¹€à¸?à¸¡à¸¥à¹‰à¸¡à¹€à¸«à¸¥à¸§",
+			"index-failed-joining-game": "à¹€à¸‚à¹‰à¸²à¸£à¹ˆà¸§à¸¡à¸—à¸µà¸¡à¸¥à¹‰à¸¡à¹€à¸«à¸¥à¸§",
+			"index-lost-connection": "à¸‚à¸²à¸?à¸?à¸²à¸£à¹€à¸Šà¸·à¹ˆà¸­à¸¡à¸•à¹ˆà¸­à¸?à¸±à¸šà¸—à¸µà¸¡",
+			"index-host-closed": "à¹€à¸‹à¸´à¸£à¹Œà¸Ÿà¹€à¸§à¸­à¸£à¹Œà¸›à¸´à¸?à¸?à¸²à¸£à¹€à¸Šà¸·à¹ˆà¸­à¸¡à¸•à¹ˆà¸­",
+			"index-view-more": "à¸?à¸¹à¹€à¸žà¸´à¹ˆà¸¡à¹€à¸•à¸´à¸¡",
+			"index-back-to-main": "à¸?à¸¥à¸±à¸šà¹„à¸›à¸—à¸µà¹ˆà¹€à¸¡à¸™à¸¹à¸«à¸¥à¸±à¸?",
+			"index-most-kills": "à¸†à¹ˆà¸²à¸¡à¸²à¸?à¸—à¸µà¹ˆà¸ªà¸¸à¸?",
+			"index-total-kills": "à¸†à¹ˆà¸²à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸?",
+			"index-total-wins": "à¸Šà¸™à¸°à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸?",
+			"index-top-5-percent": "5 à¹€à¸›à¸­à¸£à¹Œà¹€à¸‹à¹‡à¸™à¸•à¹Œà¹?à¸£à¸?",
+			"index-kill-death-ratio": "à¸­à¸±à¸•à¸£à¸²à¸ªà¹ˆà¸§à¸™à¸†à¹ˆà¸²à¸•à¸²à¸¢",
 			"index-for": "For",
-			"index-today": "วันนี้",
-			"index-this-week": "อาทิตย์นี้",
-			"index-all-time": "ตลอดเวลา",
-			"index-top-100": "100 อันดับแรก",
-			"index-rank": "อันดับ",
-			"index-player": "ผู้เล่น",
-			"index-total-games": "เกมทั้งหมด",
-			"index-controls": "ควบคุม",
-			"index-movement": "เคลื่อนไหว",
+			"index-today": "à¸§à¸±à¸™à¸™à¸µà¹‰",
+			"index-this-week": "à¸­à¸²à¸—à¸´à¸•à¸¢à¹Œà¸™à¸µà¹‰",
+			"index-all-time": "à¸•à¸¥à¸­à¸?à¹€à¸§à¸¥à¸²",
+			"index-top-100": "100 à¸­à¸±à¸™à¸?à¸±à¸šà¹?à¸£à¸?",
+			"index-rank": "à¸­à¸±à¸™à¸?à¸±à¸š",
+			"index-player": "à¸œà¸¹à¹‰à¹€à¸¥à¹ˆà¸™",
+			"index-total-games": "à¹€à¸?à¸¡à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸?",
+			"index-controls": "à¸„à¸§à¸šà¸„à¸¸à¸¡",
+			"index-movement": "à¹€à¸„à¸¥à¸·à¹ˆà¸­à¸™à¹„à¸«à¸§",
 			"index-movement-ctrl": "W, A, S, D",
-			"index-aim": "เล็ง",
-			"index-aim-ctrl": "เม้าส์",
-			"index-punch": "ชกต่อย",
-			"index-shoot": "ยิง",
-			"index-shoot-ctrl": "คลิกซ้าย",
-			"index-change-weapons": "เปลี่ยนอาวุธ",
-			"index-change-weapons-ctrl": "1 ตลอด 4 หรือล้อเลื่อน",
-			"index-stow-weapons": "เก็บรักษาอาวุธ (โหมดชกต่อย)",
-			"index-stow-weapons-ctrl": "3 หรือ E",
-			"index-swap-weapons": "สลับไปใช้อาวุธก่อนหน้า",
+			"index-aim": "à¹€à¸¥à¹‡à¸‡",
+			"index-aim-ctrl": "à¹€à¸¡à¹‰à¸²à¸ªà¹Œ",
+			"index-punch": "à¸Šà¸?à¸•à¹ˆà¸­à¸¢",
+			"index-shoot": "à¸¢à¸´à¸‡",
+			"index-shoot-ctrl": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢",
+			"index-change-weapons": "à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¸­à¸²à¸§à¸¸à¸˜",
+			"index-change-weapons-ctrl": "1 à¸•à¸¥à¸­à¸? 4 à¸«à¸£à¸·à¸­à¸¥à¹‰à¸­à¹€à¸¥à¸·à¹ˆà¸­à¸™",
+			"index-stow-weapons": "à¹€à¸?à¹‡à¸šà¸£à¸±à¸?à¸©à¸²à¸­à¸²à¸§à¸¸à¸˜ (à¹‚à¸«à¸¡à¸?à¸Šà¸?à¸•à¹ˆà¸­à¸¢)",
+			"index-stow-weapons-ctrl": "3 à¸«à¸£à¸·à¸­ E",
+			"index-swap-weapons": "à¸ªà¸¥à¸±à¸šà¹„à¸›à¹ƒà¸Šà¹‰à¸­à¸²à¸§à¸¸à¸˜à¸?à¹ˆà¸­à¸™à¸«à¸™à¹‰à¸²",
 			"index-swap-weapons-ctrl": "Q",
-			"index-reload": "โหลดใหม่",
+			"index-reload": "à¹‚à¸«à¸¥à¸?à¹ƒà¸«à¸¡à¹ˆ",
 			"index-reload-ctrl": "R",
-			"index-scope-zoom": "ขอบเขตการซูม",
-			"index-scope-zoom-ctrl": "คลิกซ้ายเพื่อซูม",
-			"index-pickup": "เก็บ",
-			"index-loot": "ปล้น",
-			"index-revive": "ฟื้น",
+			"index-scope-zoom": "à¸‚à¸­à¸šà¹€à¸‚à¸•à¸?à¸²à¸£à¸‹à¸¹à¸¡",
+			"index-scope-zoom-ctrl": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢à¹€à¸žà¸·à¹ˆà¸­à¸‹à¸¹à¸¡",
+			"index-pickup": "à¹€à¸?à¹‡à¸š",
+			"index-loot": "à¸›à¸¥à¹‰à¸™",
+			"index-revive": "à¸Ÿà¸·à¹‰à¸™",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "ใช้ไอเทมรักษา",
-			"index-use-medical-ctrl": "คลิกซ้ายที่ไอเทมหรือกด 7 ตลอด 0",
-			"index-drop-item": "ทิ้งไอเทม",
-			"index-drop-item-ctrl": "คลิกขวาที่ไอเทม",
-			"index-cancel-action": "ยกเลิกการดำเนินการ",
+			"index-use-medical": "à¹ƒà¸Šà¹‰à¹„à¸­à¹€à¸—à¸¡à¸£à¸±à¸?à¸©à¸²",
+			"index-use-medical-ctrl": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢à¸—à¸µà¹ˆà¹„à¸­à¹€à¸—à¸¡à¸«à¸£à¸·à¸­à¸?à¸? 7 à¸•à¸¥à¸­à¸? 0",
+			"index-drop-item": "à¸—à¸´à¹‰à¸‡à¹„à¸­à¹€à¸—à¸¡",
+			"index-drop-item-ctrl": "à¸„à¸¥à¸´à¸?à¸‚à¸§à¸²à¸—à¸µà¹ˆà¹„à¸­à¹€à¸—à¸¡",
+			"index-cancel-action": "à¸¢à¸?à¹€à¸¥à¸´à¸?à¸?à¸²à¸£à¸?à¸³à¹€à¸™à¸´à¸™à¸?à¸²à¸£",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "ดูแผนที่",
-			"index-view-map-ctrl": "M หรือ G",
-			"index-toggle-minimap": "สลับไปแผนที่เล็ก",
+			"index-view-map": "à¸?à¸¹à¹?à¸œà¸™à¸—à¸µà¹ˆ",
+			"index-view-map-ctrl": "M à¸«à¸£à¸·à¸­ G",
+			"index-toggle-minimap": "à¸ªà¸¥à¸±à¸šà¹„à¸›à¹?à¸œà¸™à¸—à¸µà¹ˆà¹€à¸¥à¹‡à¸?",
 			"index-toggle-minimap-ctrl": "V",
-			"game-alive": "มีชีวิต",
-			"game-reloading": "กำลังโหลดใหม่",
-			"game-using": "กำลังใช้",
-			"game-reviving": "กำลังฟื้นฟู",
-			"game-revive-teammate": "ฟื้น",
-			"game-equip": "ติดตั้ง",
-			"game-cancel": "ยกเลิก",
-			"game-You": "คุณ",
-			"game-you": "คุณ",
-			"game-themselves": "พวกเขาเอง",
-			"game-yourself": "ตัวคุณเอง",
-			"game-you-died": "เสียชีวิต",
-			"game-player-died": "เสียชีวิต",
-			"game-with": "ด้วย",
-			"game-knocked-out": "ล้ม",
-			"game-killed": "ฆ่า",
-			"game-finally-killed": "ฆ่าตายในที่สุด",
-			"game-finally-bled-out": "เลือดออกในที่สุด",
-			"game-died-outside": "ตายนอกเขตปลอดภัย",
-			"game-the-red-zone": "เขตอันตราย",
-			"game-waiting-for-players": "กำลังรอผู้เล่น",
-			"game-spectating": "กำลังชม",
-			"game-red-zone-advances": "เขตอันตรายเริ่มใน",
-			"game-red-zone-advancing": "กำลังเริ่มเขตอันตราย โปรดเข้าไปในเขตปลอดภัย!",
-			"game-seconds": "วินาที",
-			"game-minutes": "นาที",
-			"game-minute": "นาที",
-			"game-m": "น.",
-			"game-s": "ว.",
-			"game-not-enough-space": "พื้นที่ไม่เพียงพอ!",
-			"game-item-already-owned": "มีไอเทมแล้ว!",
-			"game-item-already-equipped": "ติดตั้งไอเทมแล้ว!",
-			"game-better-item-equipped": "ติดตั้งไอเทมที่ดีกว่าแล้ว!",
-			"game-play-new-game": "เล่นเกมใหม่",
-			"game-spectate": "ชม",
-			"game-full-screen": "เต็มหน้าจอ",
-			"game-sound": "เสียง",
-			"game-quit-game": "ออกเกม",
-			"game-return-to-game": "กลับไปที่เกม",
-			"game-hide-match-stats": "ซ่อนสถิติการจับคู่",
-			"game-view-match-stats": "ดูสถิติการจับคู่",
-			"game-previous-teammate": "เพื่อนร่วมทีมก่อนหน้านี้",
-			"game-next-teammate": "เพื่อนร่วมทีมต่อไป",
+			"game-alive": "à¸¡à¸µà¸Šà¸µà¸§à¸´à¸•",
+			"game-reloading": "à¸?à¸³à¸¥à¸±à¸‡à¹‚à¸«à¸¥à¸?à¹ƒà¸«à¸¡à¹ˆ",
+			"game-using": "à¸?à¸³à¸¥à¸±à¸‡à¹ƒà¸Šà¹‰",
+			"game-reviving": "à¸?à¸³à¸¥à¸±à¸‡à¸Ÿà¸·à¹‰à¸™à¸Ÿà¸¹",
+			"game-revive-teammate": "à¸Ÿà¸·à¹‰à¸™",
+			"game-equip": "à¸•à¸´à¸?à¸•à¸±à¹‰à¸‡",
+			"game-cancel": "à¸¢à¸?à¹€à¸¥à¸´à¸?",
+			"game-You": "à¸„à¸¸à¸“",
+			"game-you": "à¸„à¸¸à¸“",
+			"game-themselves": "à¸žà¸§à¸?à¹€à¸‚à¸²à¹€à¸­à¸‡",
+			"game-yourself": "à¸•à¸±à¸§à¸„à¸¸à¸“à¹€à¸­à¸‡",
+			"game-you-died": "à¹€à¸ªà¸µà¸¢à¸Šà¸µà¸§à¸´à¸•",
+			"game-player-died": "à¹€à¸ªà¸µà¸¢à¸Šà¸µà¸§à¸´à¸•",
+			"game-with": "à¸?à¹‰à¸§à¸¢",
+			"game-knocked-out": "à¸¥à¹‰à¸¡",
+			"game-killed": "à¸†à¹ˆà¸²",
+			"game-finally-killed": "à¸†à¹ˆà¸²à¸•à¸²à¸¢à¹ƒà¸™à¸—à¸µà¹ˆà¸ªà¸¸à¸?",
+			"game-finally-bled-out": "à¹€à¸¥à¸·à¸­à¸?à¸­à¸­à¸?à¹ƒà¸™à¸—à¸µà¹ˆà¸ªà¸¸à¸?",
+			"game-died-outside": "à¸•à¸²à¸¢à¸™à¸­à¸?à¹€à¸‚à¸•à¸›à¸¥à¸­à¸?à¸ à¸±à¸¢",
+			"game-the-red-zone": "à¹€à¸‚à¸•à¸­à¸±à¸™à¸•à¸£à¸²à¸¢",
+			"game-waiting-for-players": "à¸?à¸³à¸¥à¸±à¸‡à¸£à¸­à¸œà¸¹à¹‰à¹€à¸¥à¹ˆà¸™",
+			"game-spectating": "à¸?à¸³à¸¥à¸±à¸‡à¸Šà¸¡",
+			"game-red-zone-advances": "à¹€à¸‚à¸•à¸­à¸±à¸™à¸•à¸£à¸²à¸¢à¹€à¸£à¸´à¹ˆà¸¡à¹ƒà¸™",
+			"game-red-zone-advancing": "à¸?à¸³à¸¥à¸±à¸‡à¹€à¸£à¸´à¹ˆà¸¡à¹€à¸‚à¸•à¸­à¸±à¸™à¸•à¸£à¸²à¸¢ à¹‚à¸›à¸£à¸?à¹€à¸‚à¹‰à¸²à¹„à¸›à¹ƒà¸™à¹€à¸‚à¸•à¸›à¸¥à¸­à¸?à¸ à¸±à¸¢!",
+			"game-seconds": "à¸§à¸´à¸™à¸²à¸—à¸µ",
+			"game-minutes": "à¸™à¸²à¸—à¸µ",
+			"game-minute": "à¸™à¸²à¸—à¸µ",
+			"game-m": "à¸™.",
+			"game-s": "à¸§.",
+			"game-not-enough-space": "à¸žà¸·à¹‰à¸™à¸—à¸µà¹ˆà¹„à¸¡à¹ˆà¹€à¸žà¸µà¸¢à¸‡à¸žà¸­!",
+			"game-item-already-owned": "à¸¡à¸µà¹„à¸­à¹€à¸—à¸¡à¹?à¸¥à¹‰à¸§!",
+			"game-item-already-equipped": "à¸•à¸´à¸?à¸•à¸±à¹‰à¸‡à¹„à¸­à¹€à¸—à¸¡à¹?à¸¥à¹‰à¸§!",
+			"game-better-item-equipped": "à¸•à¸´à¸?à¸•à¸±à¹‰à¸‡à¹„à¸­à¹€à¸—à¸¡à¸—à¸µà¹ˆà¸?à¸µà¸?à¸§à¹ˆà¸²à¹?à¸¥à¹‰à¸§!",
+			"game-play-new-game": "à¹€à¸¥à¹ˆà¸™à¹€à¸?à¸¡à¹ƒà¸«à¸¡à¹ˆ",
+			"game-spectate": "à¸Šà¸¡",
+			"game-full-screen": "à¹€à¸•à¹‡à¸¡à¸«à¸™à¹‰à¸²à¸ˆà¸­",
+			"game-sound": "à¹€à¸ªà¸µà¸¢à¸‡",
+			"game-quit-game": "à¸­à¸­à¸?à¹€à¸?à¸¡",
+			"game-return-to-game": "à¸?à¸¥à¸±à¸šà¹„à¸›à¸—à¸µà¹ˆà¹€à¸?à¸¡",
+			"game-hide-match-stats": "à¸‹à¹ˆà¸­à¸™à¸ªà¸–à¸´à¸•à¸´à¸?à¸²à¸£à¸ˆà¸±à¸šà¸„à¸¹à¹ˆ",
+			"game-view-match-stats": "à¸?à¸¹à¸ªà¸–à¸´à¸•à¸´à¸?à¸²à¸£à¸ˆà¸±à¸šà¸„à¸¹à¹ˆ",
+			"game-previous-teammate": "à¹€à¸žà¸·à¹ˆà¸­à¸™à¸£à¹ˆà¸§à¸¡à¸—à¸µà¸¡à¸?à¹ˆà¸­à¸™à¸«à¸™à¹‰à¸²à¸™à¸µà¹‰",
+			"game-next-teammate": "à¹€à¸žà¸·à¹ˆà¸­à¸™à¸£à¹ˆà¸§à¸¡à¸—à¸µà¸¡à¸•à¹ˆà¸­à¹„à¸›",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "ออกจากเกม",
-			"game-your-results": "ผลลัพธ์ของคุณ",
-			"game-chicken": "อาหารเย็นวันนี้คือไก่ทอด!",
-			"game-won-the-game": "ชนะเกมแล้ว",
-			"game-team-eliminated": "ทีมของคุณแพ้แล้ว",
-			"game-rank": "อันดับ",
-			"game-team-rank": "อันดับของทีม",
-			"game-team-kills": "ทีมฆ่า",
-			"game-kill": "ฆ่า",
-			"game-kills": "ฆ่า",
-			"game-damage-dealt": "จัดการความเสียหาย",
-			"game-damage-taken": "ความเสียหายที่เกิดขึ้น",
-			"game-survived": "รอดชีวิต",
-			"game-backpack00": "กระเป๋า",
-			"game-backpack01": "แพ็คเล็ก",
-			"game-backpack02": "แพ็คทั่วไป",
-			"game-backpack03": "แพ็คกองทัพ",
-			"game-bandage": "ผ้าพันแผล",
-			"game-bandage-tooltip": "คลิกซ้ายเพื่อฟื้นฟูสุขภาพ 15",
-			"game-healing-tooltip": "ไม่สามารถรักษาสุขภาพได้ถึง 75",
-			"game-healthkit": "ชุดเครื่องมือปฐมพยาบาล",
-			"game-healthkit-tooltip": "คลิกซ้ายเพื่อฟื้นฟูสุขภาพ 100",
-			"game-soda": "โซดา",
-			"game-soda-tooltip": "คลิกซ้ายเพื่อเพิ่มอะดรีนาลีนภาย 25",
-			"game-adrenaline-tooltip": "อะดรีนาลีนช่วยฟื้นฟูสุขภาพเมื่อเวลาผ่านไป",
-			"game-painkiller": "ยาเม็ด",
-			"game-painkiller-tooltip": "คลิกซ้ายเพื่อเพิ่มอะดรีนาลีนภาย 50",
-			"game-9mm": "9 มม.",
-			"game-9mm-tooltip": "กระสุนสำหรับ M9, Glock, MP5, MAC-10, UMP9 และ Vector",
-			"game-12gauge": "12 เกจ์",
-			"game-12gauge-tooltip": "กระสุนสำหรับ M870, Saiga-12 และ MP220",
-			"game-762mm": "7.62 มม.",
-			"game-762mm-tooltip": "กระสุนสำหรับ AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 และ DP-28",
+			"game-leave-game": "à¸­à¸­à¸?à¸ˆà¸²à¸?à¹€à¸?à¸¡",
+			"game-your-results": "à¸œà¸¥à¸¥à¸±à¸žà¸˜à¹Œà¸‚à¸­à¸‡à¸„à¸¸à¸“",
+			"game-chicken": "à¸­à¸²à¸«à¸²à¸£à¹€à¸¢à¹‡à¸™à¸§à¸±à¸™à¸™à¸µà¹‰à¸„à¸·à¸­à¹„à¸?à¹ˆà¸—à¸­à¸?!",
+			"game-won-the-game": "à¸Šà¸™à¸°à¹€à¸?à¸¡à¹?à¸¥à¹‰à¸§",
+			"game-team-eliminated": "à¸—à¸µà¸¡à¸‚à¸­à¸‡à¸„à¸¸à¸“à¹?à¸žà¹‰à¹?à¸¥à¹‰à¸§",
+			"game-rank": "à¸­à¸±à¸™à¸?à¸±à¸š",
+			"game-team-rank": "à¸­à¸±à¸™à¸?à¸±à¸šà¸‚à¸­à¸‡à¸—à¸µà¸¡",
+			"game-team-kills": "à¸—à¸µà¸¡à¸†à¹ˆà¸²",
+			"game-kill": "à¸†à¹ˆà¸²",
+			"game-kills": "à¸†à¹ˆà¸²",
+			"game-damage-dealt": "à¸ˆà¸±à¸?à¸?à¸²à¸£à¸„à¸§à¸²à¸¡à¹€à¸ªà¸µà¸¢à¸«à¸²à¸¢",
+			"game-damage-taken": "à¸„à¸§à¸²à¸¡à¹€à¸ªà¸µà¸¢à¸«à¸²à¸¢à¸—à¸µà¹ˆà¹€à¸?à¸´à¸?à¸‚à¸¶à¹‰à¸™",
+			"game-survived": "à¸£à¸­à¸?à¸Šà¸µà¸§à¸´à¸•",
+			"game-backpack00": "à¸?à¸£à¸°à¹€à¸›à¹‹à¸²",
+			"game-backpack01": "à¹?à¸žà¹‡à¸„à¹€à¸¥à¹‡à¸?",
+			"game-backpack02": "à¹?à¸žà¹‡à¸„à¸—à¸±à¹ˆà¸§à¹„à¸›",
+			"game-backpack03": "à¹?à¸žà¹‡à¸„à¸?à¸­à¸‡à¸—à¸±à¸ž",
+			"game-bandage": "à¸œà¹‰à¸²à¸žà¸±à¸™à¹?à¸œà¸¥",
+			"game-bandage-tooltip": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢à¹€à¸žà¸·à¹ˆà¸­à¸Ÿà¸·à¹‰à¸™à¸Ÿà¸¹à¸ªà¸¸à¸‚à¸ à¸²à¸ž 15",
+			"game-healing-tooltip": "à¹„à¸¡à¹ˆà¸ªà¸²à¸¡à¸²à¸£à¸–à¸£à¸±à¸?à¸©à¸²à¸ªà¸¸à¸‚à¸ à¸²à¸žà¹„à¸?à¹‰à¸–à¸¶à¸‡ 75",
+			"game-healthkit": "à¸Šà¸¸à¸?à¹€à¸„à¸£à¸·à¹ˆà¸­à¸‡à¸¡à¸·à¸­à¸›à¸?à¸¡à¸žà¸¢à¸²à¸šà¸²à¸¥",
+			"game-healthkit-tooltip": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢à¹€à¸žà¸·à¹ˆà¸­à¸Ÿà¸·à¹‰à¸™à¸Ÿà¸¹à¸ªà¸¸à¸‚à¸ à¸²à¸ž 100",
+			"game-soda": "à¹‚à¸‹à¸?à¸²",
+			"game-soda-tooltip": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢à¹€à¸žà¸·à¹ˆà¸­à¹€à¸žà¸´à¹ˆà¸¡à¸­à¸°à¸?à¸£à¸µà¸™à¸²à¸¥à¸µà¸™à¸ à¸²à¸¢ 25",
+			"game-adrenaline-tooltip": "à¸­à¸°à¸?à¸£à¸µà¸™à¸²à¸¥à¸µà¸™à¸Šà¹ˆà¸§à¸¢à¸Ÿà¸·à¹‰à¸™à¸Ÿà¸¹à¸ªà¸¸à¸‚à¸ à¸²à¸žà¹€à¸¡à¸·à¹ˆà¸­à¹€à¸§à¸¥à¸²à¸œà¹ˆà¸²à¸™à¹„à¸›",
+			"game-painkiller": "à¸¢à¸²à¹€à¸¡à¹‡à¸?",
+			"game-painkiller-tooltip": "à¸„à¸¥à¸´à¸?à¸‹à¹‰à¸²à¸¢à¹€à¸žà¸·à¹ˆà¸­à¹€à¸žà¸´à¹ˆà¸¡à¸­à¸°à¸?à¸£à¸µà¸™à¸²à¸¥à¸µà¸™à¸ à¸²à¸¢ 50",
+			"game-9mm": "9 à¸¡à¸¡.",
+			"game-9mm-tooltip": "à¸?à¸£à¸°à¸ªà¸¸à¸™à¸ªà¸³à¸«à¸£à¸±à¸š M9, Glock, MP5, MAC-10, UMP9 à¹?à¸¥à¸° Vector",
+			"game-12gauge": "12 à¹€à¸?à¸ˆà¹Œ",
+			"game-12gauge-tooltip": "à¸?à¸£à¸°à¸ªà¸¸à¸™à¸ªà¸³à¸«à¸£à¸±à¸š M870, Saiga-12 à¹?à¸¥à¸° MP220",
+			"game-762mm": "7.62 à¸¡à¸¡.",
+			"game-762mm-tooltip": "à¸?à¸£à¸°à¸ªà¸¸à¸™à¸ªà¸³à¸«à¸£à¸±à¸š AK-47, SCAR-H, M39, Mosin Nagant, OT-38 à¹?à¸¥à¸° DP-28",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "กระสุนสำหรับ FAMAS, HK416, Mk 12 และ M249.",
-			"game-chest01": "เลเวล 1 เสื้อกั๊ก",
-			"game-chest02": "เลเวล 2 เสื้อกั๊ก",
-			"game-chest03": "เลเวล 3 เสื้อกั๊ก",
-			"game-helmet01": "เลเวล 1 หมวกกันน็อก",
-			"game-helmet02": "เลเวล 2 หมวกกันน็อก",
-			"game-helmet03": "เลเวล 3 หมวกกันน็อก",
-			"game-1xscope": "1x ขอตเขต",
-			"game-2xscope": "2x ขอตเขต",
-			"game-4xscope": "4x ขอตเขต",
-			"game-8xscope": "8x ขอตเขต",
-			"game-15xscope": "15x ขอตเขต",
-			"game-level-1": "เลเวล 1",
-			"game-level-2": "เลเวล 2",
-			"game-level-3": "เลเวล 3",
+			"game-556mm-tooltip": "à¸?à¸£à¸°à¸ªà¸¸à¸™à¸ªà¸³à¸«à¸£à¸±à¸š FAMAS, HK416, Mk 12 à¹?à¸¥à¸° M249.",
+			"game-chest01": "à¹€à¸¥à¹€à¸§à¸¥ 1 à¹€à¸ªà¸·à¹‰à¸­à¸?à¸±à¹Šà¸?",
+			"game-chest02": "à¹€à¸¥à¹€à¸§à¸¥ 2 à¹€à¸ªà¸·à¹‰à¸­à¸?à¸±à¹Šà¸?",
+			"game-chest03": "à¹€à¸¥à¹€à¸§à¸¥ 3 à¹€à¸ªà¸·à¹‰à¸­à¸?à¸±à¹Šà¸?",
+			"game-helmet01": "à¹€à¸¥à¹€à¸§à¸¥ 1 à¸«à¸¡à¸§à¸?à¸?à¸±à¸™à¸™à¹‡à¸­à¸?",
+			"game-helmet02": "à¹€à¸¥à¹€à¸§à¸¥ 2 à¸«à¸¡à¸§à¸?à¸?à¸±à¸™à¸™à¹‡à¸­à¸?",
+			"game-helmet03": "à¹€à¸¥à¹€à¸§à¸¥ 3 à¸«à¸¡à¸§à¸?à¸?à¸±à¸™à¸™à¹‡à¸­à¸?",
+			"game-1xscope": "1x à¸‚à¸­à¸•à¹€à¸‚à¸•",
+			"game-2xscope": "2x à¸‚à¸­à¸•à¹€à¸‚à¸•",
+			"game-4xscope": "4x à¸‚à¸­à¸•à¹€à¸‚à¸•",
+			"game-8xscope": "8x à¸‚à¸­à¸•à¹€à¸‚à¸•",
+			"game-15xscope": "15x à¸‚à¸­à¸•à¹€à¸‚à¸•",
+			"game-level-1": "à¹€à¸¥à¹€à¸§à¸¥ 1",
+			"game-level-2": "à¹€à¸¥à¹€à¸§à¸¥ 2",
+			"game-level-3": "à¹€à¸¥à¹€à¸§à¸¥ 3",
 			"game-outfitBase": "Basic Outfit",
 			"game-outfitRoyalFortune": "Royal Fortune",
 			"game-outfitKeyLime": "Key Lime",
@@ -18526,7 +17822,7 @@ webpackJsonp([0], {
 			"game-outfitWhite": "Arctic Avenger",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -18560,175 +17856,175 @@ webpackJsonp([0], {
 			"index-play-duo": "Spela Dubbel",
 			"index-play-squad": "Spela Trupp",
 			"index-create-team": "Skapa Lag",
-			"index-how-to-play": "Lär dig spela",
-			"index-leave-team": "Lämna lag",
-			"index-joining-team": "Går med i lag",
+			"index-how-to-play": "LÃ¤r dig spela",
+			"index-leave-team": "LÃ¤mna lag",
+			"index-joining-team": "GÃ¥r med i lag",
 			"index-creating-team": "Skapar lag",
-			"index-invite-link": "Inbjudningslänk",
+			"index-invite-link": "InbjudningslÃ¤nk",
 			"index-solo": "Solo",
 			"index-duo": "Dubbel",
 			"index-squad": "Trupp",
 			"index-auto-fill": "Autofyll",
 			"index-no-fill": "Ingen fyllnad",
-			"index-waiting-for-leader": "Väntar på att lagledaren ska starta matchen",
+			"index-waiting-for-leader": "VÃ¤ntar pÃ¥ att lagledaren ska starta matchen",
 			"index-play": "Spela",
-			"index-featured-youtuber": "Framhävd YouTuber",
-			"index-settings": "Inställningar",
-			"index-high-resolution": "Hög upplösning (bocka i för att höja visuell kvalitet)",
-			"index-screen-shake": "Skärmskakningar",
-			"index-mobile-announce": "Nu tillgänglig på mobilen!",
-			"index-mobile-tooltip": "Besök <span>surviv.io</span> på mobilen för att spela på språng!",
-			"index-team-is-full": "Laget är fullt!",
-			"index-failed-joining-team": "Kunde inte gå med i laget.",
+			"index-featured-youtuber": "FramhÃ¤vd YouTuber",
+			"index-settings": "InstÃ¤llningar",
+			"index-high-resolution": "HÃ¶g upplÃ¶sning (bocka i fÃ¶r att hÃ¶ja visuell kvalitet)",
+			"index-screen-shake": "SkÃ¤rmskakningar",
+			"index-mobile-announce": "Nu tillgÃ¤nglig pÃ¥ mobilen!",
+			"index-mobile-tooltip": "BesÃ¶k <span>surviv.io</span> pÃ¥ mobilen fÃ¶r att spela pÃ¥ sprÃ¥ng!",
+			"index-team-is-full": "Laget Ã¤r fullt!",
+			"index-failed-joining-team": "Kunde inte gÃ¥ med i laget.",
 			"index-failed-creating-team": "Kunde inte skapa lag.",
 			"index-failed-finding-game": "Kunde inte hitta match.",
-			"index-failed-joining-game": "Kunde inte gå med i match.",
+			"index-failed-joining-game": "Kunde inte gÃ¥ med i match.",
 			"index-lost-connection": "Tappade anslutning till laget.",
-			"index-host-closed": "Värden stängde anslutningen.",
+			"index-host-closed": "VÃ¤rden stÃ¤ngde anslutningen.",
 			"index-view-more": "Visa mer",
 			"index-back-to-main": "Tillbaka till huvudmenyn",
-			"index-most-kills": "Mest dödade",
-			"index-total-kills": "Totalt dödade",
+			"index-most-kills": "Mest dÃ¶dade",
+			"index-total-kills": "Totalt dÃ¶dade",
 			"index-total-wins": "Totala vinster",
 			"index-top-5-percent": "Topp 5 procent",
 			"index-kill-death-ratio": "Kill-death ratio",
 			"index-for": "",
 			"index-today": "idag",
 			"index-this-week": "denna vecka",
-			"index-all-time": "någonsin",
+			"index-all-time": "nÃ¥gonsin",
 			"index-top-100": "Topp 100",
 			"index-rank": "Rank",
 			"index-player": "Spelare",
 			"index-total-games": "Antal matcher",
 			"index-controls": "Kontroller",
-			"index-movement": "Förflyttning",
+			"index-movement": "FÃ¶rflyttning",
 			"index-movement-ctrl": "W, A, S, D",
 			"index-aim": "Sikta",
 			"index-aim-ctrl": "Mus",
-			"index-punch": "Slå",
+			"index-punch": "SlÃ¥",
 			"index-shoot": "Skjut",
-			"index-shoot-ctrl": "Vänsterklick",
+			"index-shoot-ctrl": "VÃ¤nsterklick",
 			"index-change-weapons": "Byta vapen",
 			"index-change-weapons-ctrl": "1 - 4 eller skrollhjulet",
-			"index-stow-weapons": "Lägg undan vapen",
+			"index-stow-weapons": "LÃ¤gg undan vapen",
 			"index-stow-weapons-ctrl": "3 eller E",
-			"index-swap-weapons": "Byta tillbaka till föregående vapen",
+			"index-swap-weapons": "Byta tillbaka till fÃ¶regÃ¥ende vapen",
 			"index-swap-weapons-ctrl": "Q",
 			"index-reload": "Ladda om",
 			"index-reload-ctrl": "R",
 			"index-scope-zoom": "Sikteszoom",
-			"index-scope-zoom-ctrl": "Vänsterklicka på zoomikonen",
+			"index-scope-zoom-ctrl": "VÃ¤nsterklicka pÃ¥ zoomikonen",
 			"index-pickup": "Ta upp",
 			"index-loot": "Ta",
-			"index-revive": "Återuppliva",
+			"index-revive": "Ã…teruppliva",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "Använda medicinsk utrustning",
-			"index-use-medical-ctrl": "Vänsterklicka på föremål eller 7 - 0",
-			"index-drop-item": "Släpp föremål",
-			"index-drop-item-ctrl": "Högerklicka på föremål",
+			"index-use-medical": "AnvÃ¤nda medicinsk utrustning",
+			"index-use-medical-ctrl": "VÃ¤nsterklicka pÃ¥ fÃ¶remÃ¥l eller 7 - 0",
+			"index-drop-item": "SlÃ¤pp fÃ¶remÃ¥l",
+			"index-drop-item-ctrl": "HÃ¶gerklicka pÃ¥ fÃ¶remÃ¥l",
 			"index-cancel-action": "Avbryt aktion",
 			"index-cancel-action-ctrl": "X",
 			"index-view-map": "Visa mapp",
 			"index-view-map-ctrl": "M eller G",
 			"index-toggle-minimap": "Initiera HUD",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "Använd lagets pinghjul",
-			"index-use-ping-ctrl": "Håll C, håll sedan högerklick och dra musen, släpp sedan högerklick",
-			"index-use-emote": "Använd känslohjul",
-			"index-use-emote-ctrl": "Håll högerklick och dra musen, släpp sedan högerklick",
-			"index-tips-1-desc": "Målet med surviv.io är att bli den sista spelaren kvar. Du lever bara en gång per match - det finns bara en chans!",
+			"index-use-ping": "AnvÃ¤nd lagets pinghjul",
+			"index-use-ping-ctrl": "HÃ¥ll C, hÃ¥ll sedan hÃ¶gerklick och dra musen, slÃ¤pp sedan hÃ¶gerklick",
+			"index-use-emote": "AnvÃ¤nd kÃ¤nslohjul",
+			"index-use-emote-ctrl": "HÃ¥ll hÃ¶gerklick och dra musen, slÃ¤pp sedan hÃ¶gerklick",
+			"index-tips-1-desc": "MÃ¥let med surviv.io Ã¤r att bli den sista spelaren kvar. Du lever bara en gÃ¥ng per match - det finns bara en chans!",
 			"index-tips-2": "2D PUBG",
-			"index-tips-2-desc": 'Om du någonsin spelat andra "Herre på Täppan"-spel som PUBG, Fortnite eller H1Z1 är du redan halvvägs där! Tänk dig surviv.io som 2D PUBG.',
-			"index-tips-3": "Plundra och döda",
-			"index-tips-3-desc": "Du börjar matchen utan några andra föremål än en simpel ryggsäck. Rör dig runt kartan för att hitta föremål: vapen, ammunition, sikten och medicinska föremål. Eliminera andra spelare och ta deras föremål!",
-			"index-tips-4": "Rött = Dåligt!",
-			"index-tips-4-desc": "Spelare är inte det enda som kan skada dig. Den dödliga röda zonen kommer röra sig inåt från kartans sidor och dela ut ökande skada om du står i den. Håll ett öga på kartan och håll dig trygg.",
+			"index-tips-2-desc": 'Om du nÃ¥gonsin spelat andra "Herre pÃ¥ TÃ¤ppan"-spel som PUBG, Fortnite eller H1Z1 Ã¤r du redan halvvÃ¤gs dÃ¤r! TÃ¤nk dig surviv.io som 2D PUBG.',
+			"index-tips-3": "Plundra och dÃ¶da",
+			"index-tips-3-desc": "Du bÃ¶rjar matchen utan nÃ¥gra andra fÃ¶remÃ¥l Ã¤n en simpel ryggsÃ¤ck. RÃ¶r dig runt kartan fÃ¶r att hitta fÃ¶remÃ¥l: vapen, ammunition, sikten och medicinska fÃ¶remÃ¥l. Eliminera andra spelare och ta deras fÃ¶remÃ¥l!",
+			"index-tips-4": "RÃ¶tt = DÃ¥ligt!",
+			"index-tips-4-desc": "Spelare Ã¤r inte det enda som kan skada dig. Den dÃ¶dliga rÃ¶da zonen kommer rÃ¶ra sig inÃ¥t frÃ¥n kartans sidor och dela ut Ã¶kande skada om du stÃ¥r i den. HÃ¥ll ett Ã¶ga pÃ¥ kartan och hÃ¥ll dig trygg.",
 			"game-alive": "kvar",
 			"game-reloading": "Laddar om",
-			"game-using": "Använder",
-			"game-reviving": "Återupplivar",
-			"game-revive-teammate": "Återuppliva lagkamrat",
+			"game-using": "AnvÃ¤nder",
+			"game-reviving": "Ã…terupplivar",
+			"game-revive-teammate": "Ã…teruppliva lagkamrat",
 			"game-equip": "Ta upp",
 			"game-cancel": "Avbryt",
 			"game-You": "Du",
 			"game-you": "du",
-			"game-themselves": "sig själv",
-			"game-yourself": "dig själv",
+			"game-themselves": "sig sjÃ¤lv",
+			"game-yourself": "dig sjÃ¤lv",
 			"game-you-died": "dog",
 			"game-player-died": "dog",
 			"game-with": "med",
 			"game-knocked-out": "knocked out",
-			"game-killed": "dödade",
-			"game-finally-killed": "dödade till slut",
-			"game-finally-bled-out": "blödde ut till slut",
-			"game-died-outside": "dog utanför den trygga zonen",
-			"game-the-red-zone": "Den röda zonen",
-			"game-waiting-for-players": "Väntar på spelare",
-			"game-spectating": "Åskådar",
-			"game-red-zone-advances": "Den röda zonen advancerar om",
-			"game-red-zone-advancing": "Den röda zonen advancerar, ta dig till den säkra zonen!",
+			"game-killed": "dÃ¶dade",
+			"game-finally-killed": "dÃ¶dade till slut",
+			"game-finally-bled-out": "blÃ¶dde ut till slut",
+			"game-died-outside": "dog utanfÃ¶r den trygga zonen",
+			"game-the-red-zone": "Den rÃ¶da zonen",
+			"game-waiting-for-players": "VÃ¤ntar pÃ¥ spelare",
+			"game-spectating": "Ã…skÃ¥dar",
+			"game-red-zone-advances": "Den rÃ¶da zonen advancerar om",
+			"game-red-zone-advancing": "Den rÃ¶da zonen advancerar, ta dig till den sÃ¤kra zonen!",
 			"game-seconds": "sekunder",
 			"game-minutes": "minuter",
 			"game-minute": "minuter",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "Inte tillräckligt utrymme!",
-			"game-item-already-owned": "Du har redan föremålet!",
-			"game-item-already-equipped": "Du är redan uttrustad med föremålet!",
-			"game-better-item-equipped": "Du har redan ett bättre föremål!",
+			"game-not-enough-space": "Inte tillrÃ¤ckligt utrymme!",
+			"game-item-already-owned": "Du har redan fÃ¶remÃ¥let!",
+			"game-item-already-equipped": "Du Ã¤r redan uttrustad med fÃ¶remÃ¥let!",
+			"game-better-item-equipped": "Du har redan ett bÃ¤ttre fÃ¶remÃ¥l!",
 			"game-play-new-game": "Spela ny match",
-			"game-spectate": "Åskåda",
-			"game-full-screen": "Fullskärm",
+			"game-spectate": "Ã…skÃ¥da",
+			"game-full-screen": "FullskÃ¤rm",
 			"game-sound": "Ljud",
 			"game-quit-game": "Avsluta spel",
-			"game-return-to-game": "Återvänd till spel",
-			"game-hide-match-stats": "Dölj matchstatistik",
+			"game-return-to-game": "Ã…tervÃ¤nd till spel",
+			"game-hide-match-stats": "DÃ¶lj matchstatistik",
 			"game-view-match-stats": "Visa matchstatistik",
-			"game-previous-teammate": "Föregående lagkamrat",
-			"game-next-teammate": "Nästa lagkamrat",
+			"game-previous-teammate": "FÃ¶regÃ¥ende lagkamrat",
+			"game-next-teammate": "NÃ¤sta lagkamrat",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "Lämna match",
+			"game-leave-game": "LÃ¤mna match",
 			"game-your-results": "Dina resultat",
-			"game-chicken": "Vinst! Ikväll blir det kycklingmiddag!",
+			"game-chicken": "Vinst! IkvÃ¤ll blir det kycklingmiddag!",
 			"game-won-the-game": "vann matchen.",
 			"game-team-eliminated": "Ditt lag blev eliminerat.",
 			"game-rank": "Rank",
 			"game-team-rank": "Lagrank",
-			"game-team-kills": "Lagets antal dödade",
-			"game-kill": "Dödad",
-			"game-kills": "Dödade",
+			"game-team-kills": "Lagets antal dÃ¶dade",
+			"game-kill": "DÃ¶dad",
+			"game-kills": "DÃ¶dade",
 			"game-damage-dealt": "Skada utdelad",
 			"game-damage-taken": "Skada mottagen",
-			"game-survived": "Överlevde",
-			"game-backpack00": "Påse",
-			"game-backpack01": "Liten ryggsäck",
-			"game-backpack02": "Vanlig ryggsäck.",
-			"game-backpack03": "Militärryggsäck",
+			"game-survived": "Ã–verlevde",
+			"game-backpack00": "PÃ¥se",
+			"game-backpack01": "Liten ryggsÃ¤ck",
+			"game-backpack02": "Vanlig ryggsÃ¤ck.",
+			"game-backpack03": "MilitÃ¤rryggsÃ¤ck",
 			"game-bandage": "Bandage",
-			"game-bandage-tooltip": "Vänsterklicka för att återfå 15 hälsa.",
-			"game-healing-tooltip": "Kan inte återge över 75% liv.",
+			"game-bandage-tooltip": "VÃ¤nsterklicka fÃ¶r att Ã¥terfÃ¥ 15 hÃ¤lsa.",
+			"game-healing-tooltip": "Kan inte Ã¥terge Ã¶ver 75% liv.",
 			"game-healthkit": "Med Kit",
-			"game-healthkit-tooltip": "Vänsterklicka för att återfå 100 hälsa.",
-			"game-soda": "Läsk",
-			"game-soda-tooltip": "Vänsterklicka för att boosta adrenalin med 25.",
-			"game-adrenaline-tooltip": "Adrenalin återger liv över tid.",
+			"game-healthkit-tooltip": "VÃ¤nsterklicka fÃ¶r att Ã¥terfÃ¥ 100 hÃ¤lsa.",
+			"game-soda": "LÃ¤sk",
+			"game-soda-tooltip": "VÃ¤nsterklicka fÃ¶r att boosta adrenalin med 25.",
+			"game-adrenaline-tooltip": "Adrenalin Ã¥terger liv Ã¶ver tid.",
 			"game-painkiller": "Piller",
-			"game-painkiller-tooltip": "Vänsterklicka för att boosta adrenalin med 50.",
+			"game-painkiller-tooltip": "VÃ¤nsterklicka fÃ¶r att boosta adrenalin med 50.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "Ammo för M9, Glock, MP5, MAC-10, UMP9 och Vector.",
+			"game-9mm-tooltip": "Ammo fÃ¶r M9, Glock, MP5, MAC-10, UMP9 och Vector.",
 			"game-12gauge": "12 gauge",
-			"game-12gauge-tooltip": "Ammo för M870, Saiga-12 och MP220.",
+			"game-12gauge-tooltip": "Ammo fÃ¶r M870, Saiga-12 och MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Ammo för AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 och DP-28.",
+			"game-762mm-tooltip": "Ammo fÃ¶r AK-47, SCAR-H, M39, Mosin Nagant, OT-38 och DP-28.",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "Ammo för FAMAS, HK416, Mk 12 och M249.",
-			"game-chest01": "Level 1 Väst",
-			"game-chest02": "Level 2 Väst",
-			"game-chest03": "Level 3 Väst",
-			"game-helmet01": "Level 1 Hjälm",
-			"game-helmet02": "Level 2 Hjälm",
-			"game-helmet03": "Level 3 Hjälm",
+			"game-556mm-tooltip": "Ammo fÃ¶r FAMAS, HK416, Mk 12 och M249.",
+			"game-chest01": "Level 1 VÃ¤st",
+			"game-chest02": "Level 2 VÃ¤st",
+			"game-chest03": "Level 3 VÃ¤st",
+			"game-helmet01": "Level 1 HjÃ¤lm",
+			"game-helmet02": "Level 2 HjÃ¤lm",
+			"game-helmet03": "Level 3 HjÃ¤lm",
 			"game-1xscope": "1x Sikte",
 			"game-2xscope": "2x Sikte",
 			"game-4xscope": "4x Sikte",
@@ -18743,15 +18039,15 @@ webpackJsonp([0], {
 			"game-outfitCobaltShell": "Koboltskal",
 			"game-outfitCarbonFiber": "Kolfiber",
 			"game-outfitDarkGloves": "Proffset",
-			"game-outfitGhillie": "Ghilliedräkt",
+			"game-outfitGhillie": "GhilliedrÃ¤kt",
 			"game-outfitCamo": "Skogskamouflage",
-			"game-outfitRed": "Måltavla",
-			"game-outfitWhite": "Arktisk Hämnare",
+			"game-outfitRed": "MÃ¥ltavla",
+			"game-outfitWhite": "Arktisk HÃ¤mnare",
 			"game-outfitWoodland": "Woodland Combat",
 			"game-fists": "Slag",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -18768,8 +18064,8 @@ webpackJsonp([0], {
 			"game-m249": "M249",
 			"game-frag": "Handgranat",
 			"game-hud-frag": "Handgranat",
-			"game-smoke": "Rökgranat",
-			"game-hud-smoke": "Rökgranat",
+			"game-smoke": "RÃ¶kgranat",
+			"game-hud-smoke": "RÃ¶kgranat",
 			"game-barrel_01": "en tunna",
 			"game-silo_01": "en silo"
 		};
@@ -19185,96 +18481,76 @@ webpackJsonp([0], {
 	},
 	SEs0: function(e, t, a) {
 		"use strict";
-
-		function i(e) {
-			d.push(e)
-		}
-
-		function o(e, t) {
-			l(".modal").fadeOut(200), l("#start-bottom-right").fadeIn(200), l("#start-top-left").fadeIn(200), l("#start-top-right").fadeIn(200);
-			for (var a = 0; a < d.length; a++) d[a](e, t)
-		}
-
-		function n(e) {
-			l(e.target).closest(".modal-content").length || (l(".modal").each(function() {
-				"block" == l(this).css("display") && o(e, l(this))
-			}), l(document).off("click touchend", n))
-		}
-
-		function r() {
-			l(document).on("click touchend", n)
-		}
-
-		function s() {
-			l(document).off("click touchend", n)
-		}
-		var l = a("juYr"),
-			c = a("zinx"),
-			m = a("Jr6A");
-		l(document).ready(function() {
-			var e = l("#start-menu");
-			l("#btn-help").click(function() {
-				var t = l("#start-help");
+		var i = a("juYr"),
+			o = a("zinx"),
+			n = a("Jr6A");
+		i(document).ready(function() {
+			var e = i("#start-menu");
+			i("#btn-help").click(function() {
+				var t = i("#start-help");
 				e.addClass("display-help");
 				var a = (t.position().top, e.css("height"));
 				return t.css("display", "block"), e.animate({
 					scrollTop: a
 				}, 1e3), !1
 			});
-			var t = l("#team-mobile-link"),
-				a = l("#team-mobile-link-desc"),
-				i = l("#team-mobile-link-warning"),
-				n = l("#team-link-input"),
-				s = l("#social-share-block"),
-				d = l("#news-block");
-			l("#btn-join-team").click(function() {
-				return n.val(""), t.css("display", "block"), a.css("display", "block"), i.css("display", "none"), e.css("display", "none"), d.css("display", "none"), s.css("display", "none"), !1
-			}), l("#btn-team-mobile-link-leave").click(function() {
-				return t.css("display", "none"), n.val(""), e.css("display", "block"), d.css("display", "block"), s.css("display", "block"), !1
-			}), l("#team-link-input").on("keypress", function(e) {
-				13 === (e.which || e.keyCode) && (l("#btn-team-mobile-link-join").trigger("click"), l(this).blur())
-			}), l("#player-name-input-solo").on("keypress", function(e) {
-				13 === (e.which || e.keyCode) && l(this).blur()
-			}), c.mobile && !m.detectMobileSafari() && (l("#player-name-input-solo").on("focus", function() {
-				if (m.isLandscape()) {
-					var e = m.getScreenDimensions().height,
+			var t = i("#team-mobile-link"),
+				a = i("#team-mobile-link-desc"),
+				r = i("#team-mobile-link-warning"),
+				s = i("#team-link-input"),
+				l = i("#social-share-block"),
+				c = i("#news-block");
+			i("#btn-join-team").click(function() {
+				return s.val(""), t.css("display", "block"), a.css("display", "block"), r.css("display", "none"), e.css("display", "none"), c.css("display", "none"), l.css("display", "none"), !1
+			}), i("#btn-team-mobile-link-leave").click(function() {
+				return t.css("display", "none"), s.val(""), e.css("display", "block"), c.css("display", "block"), l.css("display", "block"), !1
+			}), i("#team-link-input").on("keypress", function(e) {
+				13 === (e.which || e.keyCode) && (i("#btn-team-mobile-link-join").trigger("click"), i(this).blur())
+			}), i("#player-name-input-solo").on("keypress", function(e) {
+				13 === (e.which || e.keyCode) && i(this).blur()
+			}), o.mobile && !n.detectMobileSafari() && (i("#player-name-input-solo").on("focus", function() {
+				if (n.isLandscape()) {
+					var e = n.getScreenDimensions().height,
 						t = e <= 282 ? 18 : 36;
-					document.body.scrollTop = l(this).offset().top - t
+					document.body.scrollTop = i(this).offset().top - t
 				}
-			}), l("#player-name-input-solo").on("blur", function() {
+			}), i("#player-name-input-solo").on("blur", function() {
 				document.body.scrollTop = 0
 			}));
-			var p = l(".modal"),
-				u = (l(".modal-content"), l("#start-bottom-right")),
-				h = l("#start-top-left"),
-				g = l("#start-top-right"),
-				f = l("#modal-settings");
-			l(".btn-settings").click(function() {
-				return f.finish(), f.css("display", "block"), u.fadeOut(200), g.fadeOut(200), r(), !1
+			var m = i(".modal"),
+				d = i(".modal-content"),
+				p = i("#start-bottom-right"),
+				u = i("#start-top-left"),
+				h = i("#modal-customize");
+			i("#btn-customize").click(function() {
+				return h.finish(), h.css("display", "block"), p.fadeOut(200), !1
 			});
-			var y = l("#modal-hamburger");
-			l("#btn-hamburger").click(function() {
-				return y.finish(), y.css("display", "block"), h.fadeOut(200), r(), !1
-			}), l(".account-details-guest, .account-details-user").click(function() {
-				if (c.mobile) {
-					var e = l("#modal-mobile-account");
-					return e.finish(), e.css("display", "block"), l("#start-top-right").fadeOut(200), r(), !1
-				}
-			}), p.find(".close").click(function(e) {
-				o(e, l(this))
-			}), l(".modal-settings-text").click(function() {
-				var e = l(this).siblings("input:checkbox");
+			var g = i("#modal-settings");
+			i(".btn-settings").click(function() {
+				return g.finish(), g.css("display", "block"), p.fadeOut(200), !1
+			});
+			var f = i("#modal-hamburger");
+			i("#btn-hamburger").click(function() {
+				return f.finish(), f.css("display", "block"), u.fadeOut(200), !1
+			}), m.find(".close").click(function() {
+				y()
+			}), d.on("click touchend", function(e) {
+				e.stopPropagation()
+			}), i(document).on("click touchend", function(e) {
+				i(".modal").each(function() {
+					"block" == i(this).css("display") && y()
+				})
+			});
+			var y = function(e) {
+				m.fadeOut(200), p.fadeIn(200), u.fadeIn(200)
+			};
+			i(".modal-settings-text").click(function() {
+				var e = i(this).siblings("input:checkbox");
 				e.prop("checked", !e.is(":checked")), e.trigger("change")
-			}), l("#force-refresh").click(function() {
+			}), i("#force-refresh").click(function() {
 				window.location.reload(!0)
 			})
-		});
-		var d = [];
-		e.exports = {
-			addModalCloseListener: r,
-			addModalCloseCallback: i,
-			removeModalCloseListener: s
-		}
+		})
 	},
 	Tf6H: function(e, t, a) {
 		"use strict";
@@ -19370,97 +18646,97 @@ webpackJsonp([0], {
 				locale: "zh-cn"
 			},
 			"word-order": "sov",
-			"index-slogan": "2d混战",
-			"index-region": "地区",
-			"index-north-america": "北美",
-			"index-europe": "欧洲",
-			"index-asia": "亚洲",
-			"index-players": "玩家",
-			"index-play-solo": "玩单挑",
-			"index-play-duo": "玩双人联队",
-			"index-play-squad": "玩四人联队",
-			"index-create-team": "创建联队",
-			"index-how-to-play": "如何玩",
-			"index-leave-team": "离开联队",
-			"index-joining-team": "加入联队",
-			"index-creating-team": "建立联队中",
-			"index-invite-link": "邀请链接",
-			"index-solo": "单人",
-			"index-duo": "双人联队",
-			"index-squad": "四人联队",
-			"index-auto-fill": "自动填充",
-			"index-no-fill": "不填充",
-			"index-waiting-for-leader": "等待领队开始游戏。",
-			"index-play": "开始",
-			"index-featured-youtuber": "精选Youtube博主",
-			"index-settings": "设置",
-			"index-high-resolution": "高分辨率(提高视觉质量)",
-			"index-screen-shake": "屏幕抖动",
-			"index-team-is-full": "联队已满!",
-			"index-failed-joining-team": "加入联队失败。",
-			"index-failed-creating-team": "创建联队失败。",
-			"index-failed-finding-game": "查找联队失败。",
-			"index-failed-joining-game": "加入游戏失败。",
-			"index-lost-connection": "联队连接丢失。",
-			"index-host-closed": "团队主持人失去连接。",
-			"index-view-more": "查看更多",
-			"index-back-to-main": "回到主界面",
-			"index-most-kills": "杀敌最多",
-			"index-total-kills": "总杀敌",
-			"index-total-wins": "总赢数",
-			"index-top-5-percent": "前5%",
-			"index-kill-death-ratio": "杀敌和生还比例",
+			"index-slogan": "2dæ··æˆ˜",
+			"index-region": "åœ°åŒº",
+			"index-north-america": "åŒ—ç¾Ž",
+			"index-europe": "æ¬§æ´²",
+			"index-asia": "äºšæ´²",
+			"index-players": "çŽ©å®¶",
+			"index-play-solo": "çŽ©å?•æŒ‘",
+			"index-play-duo": "çŽ©å?Œäººè??é˜Ÿ",
+			"index-play-squad": "çŽ©å››äººè??é˜Ÿ",
+			"index-create-team": "åˆ›å»ºè??é˜Ÿ",
+			"index-how-to-play": "å¦‚ä½•çŽ©",
+			"index-leave-team": "ç¦»å¼€è??é˜Ÿ",
+			"index-joining-team": "åŠ å…¥è??é˜Ÿ",
+			"index-creating-team": "å»ºç«‹è??é˜Ÿä¸­",
+			"index-invite-link": "é‚€è¯·é“¾æŽ¥",
+			"index-solo": "å?•äºº",
+			"index-duo": "å?Œäººè??é˜Ÿ",
+			"index-squad": "å››äººè??é˜Ÿ",
+			"index-auto-fill": "è‡ªåŠ¨å¡«å……",
+			"index-no-fill": "ä¸?å¡«å……",
+			"index-waiting-for-leader": "ç­‰å¾…é¢†é˜Ÿå¼€å§‹æ¸¸æˆ?ã€‚",
+			"index-play": "å¼€å§‹",
+			"index-featured-youtuber": "ç²¾é€‰Youtubeå?šä¸»",
+			"index-settings": "è®¾ç½®",
+			"index-high-resolution": "é«˜åˆ†è¾¨çŽ‡(æ??é«˜è§†è§‰è´¨é‡?)",
+			"index-screen-shake": "å±?å¹•æŠ–åŠ¨",
+			"index-team-is-full": "è??é˜Ÿå·²æ»¡!",
+			"index-failed-joining-team": "åŠ å…¥è??é˜Ÿå¤±è´¥ã€‚",
+			"index-failed-creating-team": "åˆ›å»ºè??é˜Ÿå¤±è´¥ã€‚",
+			"index-failed-finding-game": "æŸ¥æ‰¾è??é˜Ÿå¤±è´¥ã€‚",
+			"index-failed-joining-game": "åŠ å…¥æ¸¸æˆ?å¤±è´¥ã€‚",
+			"index-lost-connection": "è??é˜Ÿè¿žæŽ¥ä¸¢å¤±ã€‚",
+			"index-host-closed": "å›¢é˜Ÿä¸»æŒ?äººå¤±åŽ»è¿žæŽ¥ã€‚",
+			"index-view-more": "æŸ¥çœ‹æ›´å¤š",
+			"index-back-to-main": "å›žåˆ°ä¸»ç•Œé?¢",
+			"index-most-kills": "æ?€æ•Œæœ€å¤š",
+			"index-total-kills": "æ€»æ?€æ•Œ",
+			"index-total-wins": "æ€»èµ¢æ•°",
+			"index-top-5-percent": "å‰?5%",
+			"index-kill-death-ratio": "æ?€æ•Œå’Œç?Ÿè¿˜æ¯?ä¾‹",
 			"index-for": "For",
-			"index-today": "今日",
-			"index-this-week": "本周",
-			"index-all-time": "所有时间",
-			"index-top-100": "前一百",
-			"index-rank": "排名",
-			"index-player": "玩家",
-			"index-total-games": "总游戏数",
-			"index-controls": "控制",
-			"index-movement": "动作",
-			"index-movement-ctrl": "W, A, S, D键",
-			"index-aim": "瞄准",
-			"index-aim-ctrl": "鼠标",
-			"index-punch": "拳",
-			"index-shoot": "射击",
-			"index-shoot-ctrl": "左击",
-			"index-change-weapons": "更换武器",
-			"index-change-weapons-ctrl": "1-4或滚轮。",
-			"index-stow-weapons": "收起武器(拳击模式)",
-			"index-stow-weapons-ctrl": "3或E键",
-			"index-swap-weapons": "换到之前的武器",
-			"index-swap-weapons-ctrl": "Q键",
-			"index-reload": "重装",
-			"index-reload-ctrl": "R键",
-			"index-scope-zoom": "变焦范围",
-			"index-scope-zoom-ctrl": "左键单击放大",
-			"index-pickup": "拾起",
-			"index-loot": "掠夺",
-			"index-revive": "复活",
-			"index-pickup-ctrl": "F键",
-			"index-use-medical": "使用医疗物品",
-			"index-use-medical-ctrl": "左键单击物品或7-0",
-			"index-drop-item": "丢弃物品",
-			"index-drop-item-ctrl": "右键单击物品",
-			"index-cancel-action": "取消动作",
-			"index-cancel-action-ctrl": "X键",
-			"index-view-map": "查看地图",
-			"index-view-map-ctrl": "M或G键",
-			"index-toggle-minimap": "切换小地图",
-			"index-toggle-minimap-ctrl": "V键",
-			"index-use-ping": "使用联队平轮",
-			"index-use-ping-ctrl": "按住C键，同时按住右键然后移动鼠标，接着松开右键",
-			"index-use-emote": "使用表情轮",
-			"index-use-emote-ctrl": "按住右键然后移动鼠标，接着松开右键",
-			"game-alive": "存活玩家",
-			"game-reloading": "装弹",
-			"game-using": "使用",
-			"game-reviving": "复活中",
-			"game-revive-teammate": "复活队友",
-			"game-equip": "装备",
-			"game-cancel": "撤销",
+			"index-today": "ä»Šæ—¥",
+			"index-this-week": "æœ¬å‘¨",
+			"index-all-time": "æ‰€æœ‰æ—¶é—´",
+			"index-top-100": "å‰?ä¸€ç™¾",
+			"index-rank": "æŽ’å??",
+			"index-player": "çŽ©å®¶",
+			"index-total-games": "æ€»æ¸¸æˆ?æ•°",
+			"index-controls": "æŽ§åˆ¶",
+			"index-movement": "åŠ¨ä½œ",
+			"index-movement-ctrl": "W, A, S, Dé?®",
+			"index-aim": "çž„å‡†",
+			"index-aim-ctrl": "é¼ æ ‡",
+			"index-punch": "æ‹³",
+			"index-shoot": "å°„å‡»",
+			"index-shoot-ctrl": "å·¦å‡»",
+			"index-change-weapons": "æ›´æ?¢æ­¦å™¨",
+			"index-change-weapons-ctrl": "1-4æˆ–æ»šè½®ã€‚",
+			"index-stow-weapons": "æ?¶èµ·æ­¦å™¨(æ‹³å‡»æ¨¡å¼?)",
+			"index-stow-weapons-ctrl": "3æˆ–Eé?®",
+			"index-swap-weapons": "æ?¢åˆ°ä¹‹å‰?çš„æ­¦å™¨",
+			"index-swap-weapons-ctrl": "Qé?®",
+			"index-reload": "é‡?è£…",
+			"index-reload-ctrl": "Ré?®",
+			"index-scope-zoom": "å?˜ç„¦èŒƒå›´",
+			"index-scope-zoom-ctrl": "å·¦é?®å?•å‡»æ?¾å¤§",
+			"index-pickup": "æ‹¾èµ·",
+			"index-loot": "æŽ å¤º",
+			"index-revive": "å¤?æ´»",
+			"index-pickup-ctrl": "Fé?®",
+			"index-use-medical": "ä½¿ç?¨åŒ»ç–—ç‰©å“?",
+			"index-use-medical-ctrl": "å·¦é?®å?•å‡»ç‰©å“?æˆ–7-0",
+			"index-drop-item": "ä¸¢å¼ƒç‰©å“?",
+			"index-drop-item-ctrl": "å?³é?®å?•å‡»ç‰©å“?",
+			"index-cancel-action": "å?–æ¶ˆåŠ¨ä½œ",
+			"index-cancel-action-ctrl": "Xé?®",
+			"index-view-map": "æŸ¥çœ‹åœ°å›¾",
+			"index-view-map-ctrl": "Mæˆ–Gé?®",
+			"index-toggle-minimap": "åˆ‡æ?¢å°?åœ°å›¾",
+			"index-toggle-minimap-ctrl": "Vé?®",
+			"index-use-ping": "ä½¿ç?¨è??é˜Ÿå¹³è½®",
+			"index-use-ping-ctrl": "æŒ‰ä½?Cé?®ï¼Œå?Œæ—¶æŒ‰ä½?å?³é?®ç„¶å?Žç§»åŠ¨é¼ æ ‡ï¼ŒæŽ¥ç?€æ?¾å¼€å?³é?®",
+			"index-use-emote": "ä½¿ç?¨è¡¨æƒ…è½®",
+			"index-use-emote-ctrl": "æŒ‰ä½?å?³é?®ç„¶å?Žç§»åŠ¨é¼ æ ‡ï¼ŒæŽ¥ç?€æ?¾å¼€å?³é?®",
+			"game-alive": "å­˜æ´»çŽ©å®¶",
+			"game-reloading": "è£…å¼¹",
+			"game-using": "ä½¿ç?¨",
+			"game-reviving": "å¤?æ´»ä¸­",
+			"game-revive-teammate": "å¤?æ´»é˜Ÿå?‹",
+			"game-equip": "è£…å¤‡",
+			"game-cancel": "æ’¤é?€",
 			"game-You": "You",
 			"game-you": "you",
 			"game-themselves": "themselves",
@@ -19474,93 +18750,93 @@ webpackJsonp([0], {
 			"game-finally-bled-out": "finally bled out",
 			"game-died-outside": "died outside the safe zone",
 			"game-the-red-zone": "The red zone",
-			"game-waiting-for-players": "等待其他玩家",
-			"game-spectating": "观看中",
-			"game-red-zone-advances": "红色区域扩大于",
-			"game-red-zone-advancing": "红色区域扩大中，快到安全区域去!",
-			"game-seconds": "秒",
-			"game-minutes": "分",
-			"game-minute": "分",
-			"game-m": "分",
-			"game-s": "秒",
-			"game-not-enough-space": "空间不足!",
-			"game-item-already-owned": "物品已拥有!",
-			"game-item-already-equipped": "物品已装备!",
-			"game-better-item-equipped": "已装备更好物品!",
-			"game-play-new-game": "开始新游戏",
-			"game-spectate": "观看",
-			"game-full-screen": "全屏",
-			"game-sound": "声音",
-			"game-quit-game": "离开游戏",
-			"game-return-to-game": "返回游戏",
-			"game-hide-match-stats": "隐藏比赛数据",
-			"game-view-match-stats": "查看比赛数据",
-			"game-previous-teammate": "上个队友",
-			"game-next-teammate": "下个队友",
+			"game-waiting-for-players": "ç­‰å¾…å…¶ä»–çŽ©å®¶",
+			"game-spectating": "è§‚çœ‹ä¸­",
+			"game-red-zone-advances": "çº¢è‰²åŒºåŸŸæ‰©å¤§äºŽ",
+			"game-red-zone-advancing": "çº¢è‰²åŒºåŸŸæ‰©å¤§ä¸­ï¼Œå¿«åˆ°å®‰å…¨åŒºåŸŸåŽ»!",
+			"game-seconds": "ç§’",
+			"game-minutes": "åˆ†",
+			"game-minute": "åˆ†",
+			"game-m": "åˆ†",
+			"game-s": "ç§’",
+			"game-not-enough-space": "ç©ºé—´ä¸?è¶³!",
+			"game-item-already-owned": "ç‰©å“?å·²æ‹¥æœ‰!",
+			"game-item-already-equipped": "ç‰©å“?å·²è£…å¤‡!",
+			"game-better-item-equipped": "å·²è£…å¤‡æ›´å¥½ç‰©å“?!",
+			"game-play-new-game": "å¼€å§‹æ–°æ¸¸æˆ?",
+			"game-spectate": "è§‚çœ‹",
+			"game-full-screen": "å…¨å±?",
+			"game-sound": "å£°éŸ³",
+			"game-quit-game": "ç¦»å¼€æ¸¸æˆ?",
+			"game-return-to-game": "è¿?å›žæ¸¸æˆ?",
+			"game-hide-match-stats": "éš?è—?æ¯?èµ›æ•°æ?®",
+			"game-view-match-stats": "æŸ¥çœ‹æ¯?èµ›æ•°æ?®",
+			"game-previous-teammate": "ä¸Šä¸ªé˜Ÿå?‹",
+			"game-next-teammate": "ä¸‹ä¸ªé˜Ÿå?‹",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "离开游戏",
-			"game-your-results": "你的战绩",
-			"game-chicken": "大吉大利，今晚吃鸡！",
-			"game-won-the-game": "游戏赢了。",
-			"game-team-eliminated": "你的队伍被击败了。",
-			"game-rank": "排名",
-			"game-team-rank": "联队排名",
-			"game-team-kills": "联队杀敌数",
-			"game-kill": "杀",
-			"game-kills": "杀",
-			"game-damage-dealt": "伤害输出",
-			"game-damage-taken": "受到伤害",
-			"game-survived": "生还",
-			"game-backpack00": "袋子",
-			"game-backpack01": "小包",
-			"game-backpack02": "常规包",
-			"game-backpack03": "军用包",
-			"game-bandage": "绷带",
-			"game-bandage-tooltip": "左键点击回复15点生命值。",
-			"game-healing-tooltip": "无法治疗75点以上的生命值。",
-			"game-healthkit": "医药包",
-			"game-healthkit-tooltip": "左键点击恢复100点生命值。",
-			"game-soda": "汽水",
-			"game-soda-tooltip": "左键点击可以增加25点的肾上腺素。",
-			"game-adrenaline-tooltip": "肾上腺素会随着时间的推移恢复血量值。",
-			"game-painkiller": "药片",
-			"game-painkiller-tooltip": "左键点击可以增加50点的肾上腺素。",
-			"game-9mm": "9毫米",
-			"game-9mm-tooltip": "给M9,MP5,格洛克18C,Mac-10, Vector 和 UMP9的弹药。",
-			"game-12gauge": "12口径",
-			"game-12gauge-tooltip": "给M870, Saiga-12 和 MP220的弹药。",
-			"game-762mm": "7.62毫米",
-			"game-762mm-tooltip": "给AK-47, SCAR-H, M39, 莫辛-纳甘步枪, M39 EMR， OT-38 和 DP-28的弹药。",
-			"game-556mm": "5.56毫米",
-			"game-556mm-tooltip": "给FAMAS, HK416, Mk 12 和 M249弹药。",
-			"game-chest01": "一级防弹衣",
-			"game-chest02": "二级防弹衣",
-			"game-chest03": "三级防弹衣",
-			"game-helmet01": "一级头盔",
-			"game-helmet02": "二级头盔",
-			"game-helmet03": "三级头盔",
-			"game-1xscope": "1x 瞄准镜",
-			"game-2xscope": "2x 瞄准镜",
-			"game-4xscope": "4x 瞄准镜",
-			"game-8xscope": "8x 瞄准镜",
-			"game-15xscope": "15x 瞄准镜",
-			"game-level-1": "一级",
-			"game-level-2": "二级",
-			"game-level-3": "三级",
-			"game-outfitBase": "基本服装",
-			"game-outfitRoyalFortune": "皇家财富",
-			"game-outfitKeyLime": "青柠",
-			"game-outfitCobaltShell": "钴壳",
-			"game-outfitCarbonFiber": "碳纤维",
-			"game-outfitDarkGloves": "专业",
-			"game-outfitGhillie": "吉利服",
-			"game-outfitCamo": "森林迷彩",
-			"game-outfitRed": "目标练习",
-			"game-outfitWhite": "北极复仇者",
+			"game-leave-game": "ç¦»å¼€æ¸¸æˆ?",
+			"game-your-results": "ä½ çš„æˆ˜ç»©",
+			"game-chicken": "å¤§å?‰å¤§åˆ©ï¼Œä»Šæ™šå?ƒé¸¡ï¼?",
+			"game-won-the-game": "æ¸¸æˆ?èµ¢äº†ã€‚",
+			"game-team-eliminated": "ä½ çš„é˜Ÿä¼?è¢«å‡»è´¥äº†ã€‚",
+			"game-rank": "æŽ’å??",
+			"game-team-rank": "è??é˜ŸæŽ’å??",
+			"game-team-kills": "è??é˜Ÿæ?€æ•Œæ•°",
+			"game-kill": "æ?€",
+			"game-kills": "æ?€",
+			"game-damage-dealt": "ä¼¤å®³è¾“å‡º",
+			"game-damage-taken": "å?—åˆ°ä¼¤å®³",
+			"game-survived": "ç?Ÿè¿˜",
+			"game-backpack00": "è¢‹å­?",
+			"game-backpack01": "å°?åŒ…",
+			"game-backpack02": "å¸¸è§„åŒ…",
+			"game-backpack03": "å†›ç?¨åŒ…",
+			"game-bandage": "ç»·å¸¦",
+			"game-bandage-tooltip": "å·¦é?®ç‚¹å‡»å›žå¤?15ç‚¹ç?Ÿå‘½å€¼ã€‚",
+			"game-healing-tooltip": "æ— æ³•æ²»ç–—75ç‚¹ä»¥ä¸Šçš„ç?Ÿå‘½å€¼ã€‚",
+			"game-healthkit": "åŒ»è?¯åŒ…",
+			"game-healthkit-tooltip": "å·¦é?®ç‚¹å‡»æ?¢å¤?100ç‚¹ç?Ÿå‘½å€¼ã€‚",
+			"game-soda": "æ±½æ°´",
+			"game-soda-tooltip": "å·¦é?®ç‚¹å‡»å?¯ä»¥å¢žåŠ 25ç‚¹çš„è‚¾ä¸Šè…ºç´ ã€‚",
+			"game-adrenaline-tooltip": "è‚¾ä¸Šè…ºç´ ä¼šéš?ç?€æ—¶é—´çš„æŽ¨ç§»æ?¢å¤?è¡€é‡?å€¼ã€‚",
+			"game-painkiller": "è?¯ç‰‡",
+			"game-painkiller-tooltip": "å·¦é?®ç‚¹å‡»å?¯ä»¥å¢žåŠ 50ç‚¹çš„è‚¾ä¸Šè…ºç´ ã€‚",
+			"game-9mm": "9æ¯«ç±³",
+			"game-9mm-tooltip": "ç»™M9,MP5,æ ¼æ´›å…‹18C,Mac-10, Vector å’Œ UMP9çš„å¼¹è?¯ã€‚",
+			"game-12gauge": "12å?£å¾„",
+			"game-12gauge-tooltip": "ç»™M870, Saiga-12 å’Œ MP220çš„å¼¹è?¯ã€‚",
+			"game-762mm": "7.62æ¯«ç±³",
+			"game-762mm-tooltip": "ç»™AK-47, SCAR-H, M39, èŽ«è¾›-çº³ç?˜æ­¥æžª, M39 EMRï¼Œ OT-38 å’Œ DP-28çš„å¼¹è?¯ã€‚",
+			"game-556mm": "5.56æ¯«ç±³",
+			"game-556mm-tooltip": "ç»™FAMAS, HK416, Mk 12 å’Œ M249å¼¹è?¯ã€‚",
+			"game-chest01": "ä¸€çº§é˜²å¼¹è¡£",
+			"game-chest02": "äºŒçº§é˜²å¼¹è¡£",
+			"game-chest03": "ä¸‰çº§é˜²å¼¹è¡£",
+			"game-helmet01": "ä¸€çº§å¤´ç›?",
+			"game-helmet02": "äºŒçº§å¤´ç›?",
+			"game-helmet03": "ä¸‰çº§å¤´ç›?",
+			"game-1xscope": "1x çž„å‡†é•œ",
+			"game-2xscope": "2x çž„å‡†é•œ",
+			"game-4xscope": "4x çž„å‡†é•œ",
+			"game-8xscope": "8x çž„å‡†é•œ",
+			"game-15xscope": "15x çž„å‡†é•œ",
+			"game-level-1": "ä¸€çº§",
+			"game-level-2": "äºŒçº§",
+			"game-level-3": "ä¸‰çº§",
+			"game-outfitBase": "åŸºæœ¬æœ?è£…",
+			"game-outfitRoyalFortune": "çš‡å®¶è´¢å¯Œ",
+			"game-outfitKeyLime": "é?’æŸ ",
+			"game-outfitCobaltShell": "é’´å£³",
+			"game-outfitCarbonFiber": "ç¢³çº¤ç»´",
+			"game-outfitDarkGloves": "ä¸“ä¸š",
+			"game-outfitGhillie": "å?‰åˆ©æœ?",
+			"game-outfitCamo": "æ£®æž—è¿·å½©",
+			"game-outfitRed": "ç›®æ ‡ç»ƒä¹ ",
+			"game-outfitWhite": "åŒ—æž?å¤?ä»‡è€…",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -19792,7 +19068,7 @@ webpackJsonp([0], {
 			"game-12gauge": "12 gauge",
 			"game-12gauge-tooltip": "Ammo for M870, Saiga-12 and MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Ammo for AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 and DP-28.",
+			"game-762mm-tooltip": "Ammo for AK-47, SCAR-H, M39, Mosin Nagant, OT-38 and DP-28.",
 			"game-556mm": "5.56mm",
 			"game-556mm-tooltip": "Ammo for FAMAS, HK416, Mk 12 and M249.",
 			"game-50AE": ".50 AE",
@@ -19826,14 +19102,11 @@ webpackJsonp([0], {
 			"game-outfitPrisoner": "The New Black",
 			"game-outfitCasanova": "Casanova Silks",
 			"game-outfitKhaki": "The Initiative",
-			"game-outfitCoral": "Coral Guise",
-			"game-outfitAqua": "Aquatic Avenger",
 			"game-fists": "Fists",
 			"game-ak47": "AK-47",
 			"game-scar": "SCAR-H",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
-			"game-sv98": "SV-98",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -20143,14 +19416,14 @@ webpackJsonp([0], {
 					value: function(e, t) {
 						var a = this;
 						if (!this.active || t !== this.roomData.roomUrl) {
-							var i = "https:" == window.location.protocol,
-								o = window.location.host;
+							var i = window.location.host;
 							if (!e) {
-								var n = l.decodeUrl(t);
-								o = "app-" + l.appIdToString(n.appId) + "." + /([^\.]+\.[^\.]+)$/.exec(window.location.hostname)[0]
+								var o = l.decodeUrl(t);
+								i = "app-" + l.appIdToString(o.appId) + ".surviv.io"
 							}
-							var r = i ? "wss:" : "ws:",
-								s = r + "//" + o + "/team";
+							var n = "https:" == window.location.protocol,
+								r = n ? "wss:" : "ws:",
+								s = r + "//" + i + "/team";
 							this.active = !0, this.joined = !1, this.create = e, this.joiningGame = !1, this.playerData = {
 								name: this.config.get("playerName")
 							}, this.roomData = {
@@ -20206,17 +19479,18 @@ webpackJsonp([0], {
 				}, {
 					key: "onMessage",
 					value: function(e, t) {
-						var a = this;
-						this.config, this.playerData, this.roomData, this.players;
+						var a = this,
+							i = (this.config, this.playerData);
+						this.roomData, this.players;
 						switch (e) {
 							case "state":
 								this.joined = !0;
-								var i = this.roomData;
-								this.roomData = t.room, this.players = t.players, this.localPlayerIdx = t.localPlayerIdx, this.isLeader = this.players.length > 0 && this.players[this.localPlayerIdx].isLeader, this.isLeader && (this.roomData.region = i.region, this.roomData.autoFill = i.autoFill, this.roomData.teamMode = i.teamMode), this.refreshUi();
+								var o = this.roomData;
+								this.roomData = t.room, this.players = t.players, this.localPlayerIdx = t.localPlayerIdx, this.isLeader = this.players.length > 0 && this.players[this.localPlayerIdx].isLeader, this.isLeader && (this.roomData.region = o.region, this.roomData.autoFill = o.autoFill, this.roomData.teamMode = o.teamMode), this.refreshUi();
 								break;
 							case "joinGame":
-								this.joiningGame = !0, this.joinGameFn(t, function() {
-									a.leave("join_game_failed")
+								this.joiningGame = !0, t.gameArgs.name = i.name, this.joinGameFn(t.gameArgs, t.matchData, function() {
+									a.leave("join_game_failed"), c.storeGeneric("joinFail", "teamPlay")
 								});
 								break;
 							case "keepAlive":
@@ -20228,14 +19502,15 @@ webpackJsonp([0], {
 				}, {
 					key: "sendMessage",
 					value: function(e, t) {
-						if (this.ws)
-							if (this.ws.readyState === this.ws.OPEN) {
-								var a = JSON.stringify({
+						var a = this.ws;
+						if (a)
+							if (a.readyState === a.OPEN) {
+								var i = JSON.stringify({
 									type: e,
 									data: t
 								});
-								this.ws.send(a)
-							} else this.ws.close()
+								a.send(i)
+							} else a.close()
 					}
 				}, {
 					key: "setRoomProperty",
@@ -20245,20 +19520,23 @@ webpackJsonp([0], {
 				}, {
 					key: "tryStartGame",
 					value: function() {
-						if (this.isLeader && !this.roomData.findingGame) {
-							var e = s.protocolVersion,
-								t = this.roomData.region,
-								a = m.getParameterByName("region");
-							void 0 !== a && a.length > 0 && (t = a);
-							var i = this.pingTest.getZones(t),
-								o = m.getParameterByName("zone");
-							void 0 !== o && o.length > 0 && (i = [o]);
-							var n = {
-								version: e,
-								region: t,
-								zones: i
+						var e = this.pingTest,
+							t = this.roomData;
+						this.players;
+						if (this.isLeader && !t.findingGame) {
+							var a = s.protocolVersion,
+								i = t.region,
+								o = m.getParameterByName("region");
+							void 0 !== o && o.length > 0 && (i = o);
+							var n = e.getZones(i),
+								r = m.getParameterByName("zone");
+							void 0 !== r && r.length > 0 && (n = [r]);
+							var l = {
+								version: a,
+								region: i,
+								zones: n
 							};
-							this.sendMessage("playGame", n), this.roomData.findingGame = !0, this.refreshUi()
+							this.sendMessage("playGame", l), this.roomData.findingGame = !0, this.refreshUi()
 						}
 					}
 				}, {
@@ -20298,27 +19576,27 @@ webpackJsonp([0], {
 							}), r(".btn-team-queue").removeClass("btn-hollow-selected");
 							(2 == f.teamMode ? s : l).addClass("btn-hollow-selected"), r(".btn-team-fill").removeClass("btn-hollow-selected");
 							(f.autoFill ? c : m).addClass("btn-hollow-selected"), f.roomUrl && (r("#team-url").html(window.location.origin + "/" + f.roomUrl), r("#team-code").html(f.roomUrl.substring(1)), window.history && window.history.replaceState("", "", f.roomUrl)), t.html(f.findingGame || h ? '<div class="ui-spinner"></div>' : t.attr("data-label")), x ? (i.addClass("btn-darken"), i.removeClass("btn-disabled"), i.removeClass("btn-opaque")) : (i.addClass("btn-disabled"), r(".team-menu-options-buttons .btn-hollow-selected").removeClass("btn-opaque"), r('.team-menu-options-buttons a:not(".btn-hollow-selected")').addClass("btn-opaque"), i.removeClass("btn-darken")), i.prop("disabled", !x), n.prop("disabled", !x), r("#btn-start-team").css("display", x ? "block" : "none");
-							for (var I = !1, z = 0; z < y.length; z++) y[z].isLeader && (I = y[z].inGame);
-							var A = r("#msg-wait-reason");
-							if (A.css("display", x ? "none" : "block"), f.findingGame || h ? A.html('<div class="ui-spinner" style="margin-right:16px"></div>' + e.translate("index-joining-game") + "<span> ...</span>") : I ? A.html(e.translate("index-game-in-progress") + "<span> ...</span>") : A.html(e.translate("index-waiting-for-leader") + "<span> ...</span>"), x) {
-								var D = y.length <= 2;
-								D || (s.addClass("btn-disabled btn-opaque"), s.removeClass("btn-darken btn-hollow-selected")), s.prop("disabled", !D)
+							for (var z = !1, I = 0; I < y.length; I++) y[I].isLeader && (z = y[I].inGame);
+							var D = r("#msg-wait-reason");
+							if (D.css("display", x ? "none" : "block"), f.findingGame || h ? D.html('<div class="ui-spinner" style="margin-right:16px"></div>' + e.translate("index-joining-game") + "<span> ...</span>") : z ? D.html(e.translate("index-game-in-progress") + "<span> ...</span>") : D.html(e.translate("index-waiting-for-leader") + "<span> ...</span>"), x) {
+								var A = y.length <= 2;
+								A || (s.addClass("btn-disabled btn-opaque"), s.removeClass("btn-darken btn-hollow-selected")), s.prop("disabled", !A)
 							}
 							var O = !0,
 								L = r("#team-menu-member-list");
 							L.empty();
-							for (var E = 0; E < f.teamMode; E++) {
-								var B = {
+							for (var B = 0; B < f.teamMode; B++) {
+								var E = {
 									name: "",
 									isLocal: !1,
 									isLeader: !1,
 									inGame: !1
 								};
-								if (E < y.length) {
-									var F = y[E];
-									B = {
+								if (B < y.length) {
+									var F = y[B];
+									E = {
 										name: F.name,
-										isLocal: E === b,
+										isLocal: B === b,
 										isLeader: F.isLeader,
 										inGame: F.inGame
 									}
@@ -20327,18 +19605,18 @@ webpackJsonp([0], {
 										class: "team-menu-member"
 									}),
 									j = "";
-								B.isLeader && (j = " icon-leader");
+								E.isLeader && (j = " icon-leader");
 								var N = "name-text";
-								B.isLocal && (N += " name-self"), B.inGame && (N += " name-in-game"), R.append(r("<div/>", {
+								E.isLocal && (N += " name-self"), E.inGame && (N += " name-in-game"), R.append(r("<div/>", {
 									class: "icon" + j
 								})), R.append(r("<div/>", {
 									class: "name menu-option"
 								}).append(r("<div/>", {
 									class: N,
-									html: B.name
+									html: E.name
 								}))), R.append(r("<div/>", {
-									class: "icon " + (B.inGame ? "icon-in-game" : "")
-								})), L.append(R), B.isLocal && B.inGame && (O = !1)
+									class: "icon " + (E.inGame ? "icon-in-game" : "")
+								})), L.append(R), E.isLocal && E.inGame && (O = !1)
 							}!document.hasFocus() && this.prevPlayerCount < y.length && y.length > 1 && O && v.playSound("notification_join_01", {
 								channel: "ui"
 							}), this.prevPlayerCount = y.length
@@ -20357,220 +19635,220 @@ webpackJsonp([0], {
 			},
 			"word-order": "svo",
 			"index-slogan": "2d Battle Royale",
-			"index-region": "Vùng",
-			"index-north-america": "Bắc Mỹ",
-			"index-europe": "Châu Âu",
-			"index-asia": "Châu Á",
-			"index-players": "người chơi",
-			"index-play-solo": "Chơi một người",
-			"index-play-duo": "Chơi nhóm hai người",
-			"index-play-squad": "Chơi nhóm bốn người",
-			"index-join-team": "Vào nhóm",
-			"index-create-team": "Tạo nhóm",
-			"index-leave-team": "Rời nhóm",
-			"index-joining-team": "Đang vào nhóm",
-			"index-creating-team": "Đang tạo nhóm",
-			"index-invite-link": "Đường dẫn mời chơi",
-			"index-invite-code": "Mã số mời chơi",
-			"index-solo": "Đơn",
-			"index-duo": "Nhóm hai",
-			"index-squad": "Nhóm bốn",
-			"index-auto-fill": "Tự động điền",
-			"index-no-fill": "Không thêm",
-			"index-waiting-for-leader": "Chờ trưởng nhóm bắt đầu lượt chơi",
-			"index-joining-game": "Tham gia trò chơi",
-			"index-game-in-progress": "Trò chơi đang diễn ra",
-			"index-play": "Chơi",
-			"index-featured-youtuber": "YouTuber khách mời",
-			"index-streaming-live": "Phát trực tiếp!",
-			"index-settings": "Cài đặt",
-			"index-high-resolution": "Độ phân giải cao (đánh dấu để tăng chất lượng hình ảnh)",
-			"index-screen-shake": "Rung màn hình",
-			"index-master-volume": "Âm lượng tổng",
-			"index-sfx-volume": "Âm lượng SFX",
+			"index-region": "VÃ¹ng",
+			"index-north-america": "Báº¯c Má»¹",
+			"index-europe": "ChÃ¢u Ã‚u",
+			"index-asia": "ChÃ¢u Ã?",
+			"index-players": "ngÆ°á»?i chÆ¡i",
+			"index-play-solo": "ChÆ¡i má»™t ngÆ°á»?i",
+			"index-play-duo": "ChÆ¡i nhÃ³m hai ngÆ°á»?i",
+			"index-play-squad": "ChÆ¡i nhÃ³m bá»‘n ngÆ°á»?i",
+			"index-join-team": "VÃ o nhÃ³m",
+			"index-create-team": "Táº¡o nhÃ³m",
+			"index-leave-team": "Rá»?i nhÃ³m",
+			"index-joining-team": "Ä?ang vÃ o nhÃ³m",
+			"index-creating-team": "Ä?ang táº¡o nhÃ³m",
+			"index-invite-link": "Ä?Æ°á»?ng dáº«n má»?i chÆ¡i",
+			"index-invite-code": "MÃ£ sá»‘ má»?i chÆ¡i",
+			"index-solo": "Ä?Æ¡n",
+			"index-duo": "NhÃ³m hai",
+			"index-squad": "NhÃ³m bá»‘n",
+			"index-auto-fill": "Tá»± Ä‘á»™ng Ä‘iá»?n",
+			"index-no-fill": "KhÃ´ng thÃªm",
+			"index-waiting-for-leader": "Chá»? trÆ°á»Ÿng nhÃ³m báº¯t Ä‘áº§u lÆ°á»£t chÆ¡i",
+			"index-joining-game": "Tham gia trÃ² chÆ¡i",
+			"index-game-in-progress": "TrÃ² chÆ¡i Ä‘ang diá»…n ra",
+			"index-play": "ChÆ¡i",
+			"index-featured-youtuber": "YouTuber khÃ¡ch má»?i",
+			"index-streaming-live": "PhÃ¡t trá»±c tiáº¿p!",
+			"index-settings": "CÃ i Ä‘áº·t",
+			"index-high-resolution": "Ä?á»™ phÃ¢n giáº£i cao (Ä‘Ã¡nh dáº¥u Ä‘á»ƒ tÄƒng cháº¥t lÆ°á»£ng hÃ¬nh áº£nh)",
+			"index-screen-shake": "Rung mÃ n hÃ¬nh",
+			"index-master-volume": "Ã‚m lÆ°á»£ng tá»•ng",
+			"index-sfx-volume": "Ã‚m lÆ°á»£ng SFX",
 			"index-music-volume": "Music Volume",
 			"index-mobile-announce": "Now available on mobile!",
 			"index-mobile-tooltip": "Visit <span>surviv.io</span> on your mobile device to play on the go!",
-			"index-team-is-full": "Nhóm đã đủ người!",
-			"index-failed-joining-team": "Không vào được nhóm.",
-			"index-failed-creating-team": "Không tạo được nhóm.",
-			"index-failed-finding-game": "Không tìm được lượt chơi.",
-			"index-failed-joining-game": "Không vào được lượt chơi.",
-			"index-lost-connection": "Mất kết nối với nhóm.",
-			"index-host-closed": "Chủ lượt chơi đã đóng kết nối.",
-			"index-invalid-protocol": "Phiên bản cũ.",
-			"index-view-more": "Xem thêm",
-			"index-back-to-main": "Quay lại Danh mục chính",
-			"index-most-kills": "Tiêu diệt nhiều nhất",
-			"index-total-kills": "Tổng số bị tiêu diệt",
-			"index-total-wins": "Tổng số lần thắng",
-			"index-top-5-percent": "Tốp 5 phần trăm",
-			"index-kill-death-ratio": 'Tỷ lệ "Tiêu diệt-Bị tiêu diệt"',
+			"index-team-is-full": "NhÃ³m Ä‘Ã£ Ä‘á»§ ngÆ°á»?i!",
+			"index-failed-joining-team": "KhÃ´ng vÃ o Ä‘Æ°á»£c nhÃ³m.",
+			"index-failed-creating-team": "KhÃ´ng táº¡o Ä‘Æ°á»£c nhÃ³m.",
+			"index-failed-finding-game": "KhÃ´ng tÃ¬m Ä‘Æ°á»£c lÆ°á»£t chÆ¡i.",
+			"index-failed-joining-game": "KhÃ´ng vÃ o Ä‘Æ°á»£c lÆ°á»£t chÆ¡i.",
+			"index-lost-connection": "Máº¥t káº¿t ná»‘i vá»›i nhÃ³m.",
+			"index-host-closed": "Chá»§ lÆ°á»£t chÆ¡i Ä‘Ã£ Ä‘Ã³ng káº¿t ná»‘i.",
+			"index-invalid-protocol": "PhiÃªn báº£n cÅ©.",
+			"index-view-more": "Xem thÃªm",
+			"index-back-to-main": "Quay láº¡i Danh má»¥c chÃ­nh",
+			"index-most-kills": "TiÃªu diá»‡t nhiá»?u nháº¥t",
+			"index-total-kills": "Tá»•ng sá»‘ bá»‹ tiÃªu diá»‡t",
+			"index-total-wins": "Tá»•ng sá»‘ láº§n tháº¯ng",
+			"index-top-5-percent": "Tá»‘p 5 pháº§n trÄƒm",
+			"index-kill-death-ratio": 'Tá»· lá»‡ "TiÃªu diá»‡t-Bá»‹ tiÃªu diá»‡t"',
 			"index-mode": "Mode",
-			"index-for": "Của",
-			"index-today": "Ngày hôm nay",
-			"index-this-week": "Tuần này",
-			"index-all-time": "Toàn bộ thời gian chơi",
-			"index-top-100": "Tốp 100",
-			"index-rank": "Thứ hạng",
-			"index-player": "Người chơi",
-			"index-total-games": "Tất cả các lượt chơi",
-			"index-controls": "Kiểm soát",
-			"index-movement": "Di chuyển",
+			"index-for": "Cá»§a",
+			"index-today": "NgÃ y hÃ´m nay",
+			"index-this-week": "Tuáº§n nÃ y",
+			"index-all-time": "ToÃ n bá»™ thá»?i gian chÆ¡i",
+			"index-top-100": "Tá»‘p 100",
+			"index-rank": "Thá»© háº¡ng",
+			"index-player": "NgÆ°á»?i chÆ¡i",
+			"index-total-games": "Táº¥t cáº£ cÃ¡c lÆ°á»£t chÆ¡i",
+			"index-controls": "Kiá»ƒm soÃ¡t",
+			"index-movement": "Di chuyá»ƒn",
 			"index-movement-ctrl": "W, A, S, D",
-			"index-aim": "Ngắm",
-			"index-aim-ctrl": "Chuột",
-			"index-punch": "Đấm",
-			"index-shoot": "Bắn",
-			"index-shoot-ctrl": "Bấm chuột trái",
-			"index-change-weapons": "Đổi vũ khí",
-			"index-change-weapons-ctrl": "1 đến 4 hoặc nút cuộn chuột",
+			"index-aim": "Ngáº¯m",
+			"index-aim-ctrl": "Chuá»™t",
+			"index-punch": "Ä?áº¥m",
+			"index-shoot": "Báº¯n",
+			"index-shoot-ctrl": "Báº¥m chuá»™t trÃ¡i",
+			"index-change-weapons": "Ä?á»•i vÅ© khÃ­",
+			"index-change-weapons-ctrl": "1 Ä‘áº¿n 4 hoáº·c nÃºt cuá»™n chuá»™t",
 			"index-stow-weapons": "Stow Weapons (Melee Mode)",
-			"index-stow-weapons-ctrl": "3 hoặc E",
-			"index-swap-weapons": "Đổi về vũ khí trước đó",
+			"index-stow-weapons-ctrl": "3 hoáº·c E",
+			"index-swap-weapons": "Ä?á»•i vá»? vÅ© khÃ­ trÆ°á»›c Ä‘Ã³",
 			"index-swap-weapons-ctrl": "Q",
-			"index-reload": "Nạp đạn",
+			"index-reload": "Náº¡p Ä‘áº¡n",
 			"index-reload-ctrl": "R",
-			"index-scope-zoom": "Phóng to",
-			"index-scope-zoom-ctrl": "Bấm chuột trái để phóng to",
-			"index-pickup": "Nhặt lên",
-			"index-loot": "Vật phẩm",
-			"index-revive": "Hồi phục",
+			"index-scope-zoom": "PhÃ³ng to",
+			"index-scope-zoom-ctrl": "Báº¥m chuá»™t trÃ¡i Ä‘á»ƒ phÃ³ng to",
+			"index-pickup": "Nháº·t lÃªn",
+			"index-loot": "Váº­t pháº©m",
+			"index-revive": "Há»“i phá»¥c",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "Sử dụng vật phẩm cứu thương",
-			"index-use-medical-ctrl": "Bấm chuột trái lệ vật phẩm hoặc ấn 7-0",
-			"index-drop-item": "Bỏ vật phẩm",
-			"index-drop-item-ctrl": "Phải chuột phải vào vật phẩm",
-			"index-cancel-action": "Hủy hành động",
+			"index-use-medical": "Sá»­ dá»¥ng váº­t pháº©m cá»©u thÆ°Æ¡ng",
+			"index-use-medical-ctrl": "Báº¥m chuá»™t trÃ¡i lá»‡ váº­t pháº©m hoáº·c áº¥n 7-0",
+			"index-drop-item": "Bá»? váº­t pháº©m",
+			"index-drop-item-ctrl": "Pháº£i chuá»™t pháº£i vÃ o váº­t pháº©m",
+			"index-cancel-action": "Há»§y hÃ nh Ä‘á»™ng",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "Xem bản đồ",
-			"index-view-map-ctrl": "M hoặc G",
-			"index-toggle-minimap": "Bật bản đồ mini",
+			"index-view-map": "Xem báº£n Ä‘á»“",
+			"index-view-map-ctrl": "M hoáº·c G",
+			"index-toggle-minimap": "Báº­t báº£n Ä‘á»“ mini",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "Sử dụng Cửa sổ Trò chuyện của nhóm",
-			"index-use-ping-ctrl": "Giữ C, rồi giữ chuột phải và rê chuột, rồi thả chuột phải",
-			"index-use-emote": "Dùng Cửa sổ Biểu cảm của nhóm",
-			"index-use-emote-ctrl": "Giữ phải chuột rồi rê chuột, rồi thả phải chuột",
-			"index-how-to-play": "Cách chơi",
-			"index-tips-1-desc": "Mục tiêu của trò surviv.io là thành người cuối cùng còn sống sót. Bạn chỉ có một mạng cho mỗi lượt chơi - không thể tái sinh lại!",
+			"index-use-ping": "Sá»­ dá»¥ng Cá»­a sá»• TrÃ² chuyá»‡n cá»§a nhÃ³m",
+			"index-use-ping-ctrl": "Giá»¯ C, rá»“i giá»¯ chuá»™t pháº£i vÃ  rÃª chuá»™t, rá»“i tháº£ chuá»™t pháº£i",
+			"index-use-emote": "DÃ¹ng Cá»­a sá»• Biá»ƒu cáº£m cá»§a nhÃ³m",
+			"index-use-emote-ctrl": "Giá»¯ pháº£i chuá»™t rá»“i rÃª chuá»™t, rá»“i tháº£ pháº£i chuá»™t",
+			"index-how-to-play": "CÃ¡ch chÆ¡i",
+			"index-tips-1-desc": "Má»¥c tiÃªu cá»§a trÃ² surviv.io lÃ  thÃ nh ngÆ°á»?i cuá»‘i cÃ¹ng cÃ²n sá»‘ng sÃ³t. Báº¡n chá»‰ cÃ³ má»™t máº¡ng cho má»—i lÆ°á»£t chÆ¡i - khÃ´ng thá»ƒ tÃ¡i sinh láº¡i!",
 			"index-tips-2": "2D PUBG",
-			"index-tips-2-desc": "Nếu các bạn đã chơi những trò chơi sinh tồn kiểu PUBG, Fortnite hay H1Z1, thì bạn đã nắm được một nửa trò chơi rồi! Hãy coi trò surviv.io như là trò PUBG 2D.",
-			"index-tips-3": "Kiếm vật phẩm và tiêu diệt",
-			"index-tips-3-desc": "Bạn sẽ bắt đầu trò chơi mà không có vật phẩm gì ngoài một cái balo. Chạy quanh bản đồ để tìm vật phẩm như: vũ khí, đạn, ống ngắm và và vật phẩm cứu thương. Tiêu diệt những người chơi khác và bạn có thể lấy vật phẩm của họ!",
-			"index-tips-4": "Màu đỏ = Không ổn!",
-			"index-tips-4-desc": "Người không chỉ là thứ duy nhất có thể gây sát thương lên bạn. Vùng màu đỏ nguy hiểm sẽ di chuyển và thu nhỏ dần lại theo bản đồ và gây sát thương lớn nếu bạn nằm trong vùng màu đỏ. Hãy để ý tới bản đồ và giữ khoảng cách an toàn.",
-			"index-movement-ctrl-touch": "Núm điều khiển bên trái",
-			"index-aim-ctrl-touch": "Núm điều khiển bên phải",
-			"index-shoot-ctrl-touch": "Kéo nút điều khiển bên phải ra ngoài mép thanh điều khiển",
-			"index-change-weapons-ctrl-touch": "Chạm vào ô vũ khí",
-			"index-reload-ctrl-touch": "Chạm vào bộ đếm đạn được trang bị",
-			"index-scope-zoom-ctrl-touch": "Chạm vào mục thu phóng",
-			"index-pickup-ctrl-touch": "Chạm vào nút tương tác hoặc tên vật phẩm",
-			"index-use-medical-ctrl-touch": "Chạm vào mục y tế",
-			"index-drop-item-ctrl-touch": "Chạm và giữ đồ vật",
-			"index-cancel-action-ctrl-touch": "Chạm vào nút tương tác",
-			"index-view-map-ctrl-touch": "Chạm vào bản đồ mini",
-			"index-use-ping-ctrl-touch": "Hiển thị bản đồ và chạm vào bất kỳ vị trí nào trên bản đồ",
-			"index-use-emote-ctrl-touch": "Chạm vào biểu tượng sống sót",
-			"game-alive": "Còn sống",
-			"game-reloading": "Nạp đạn",
+			"index-tips-2-desc": "Náº¿u cÃ¡c báº¡n Ä‘Ã£ chÆ¡i nhá»¯ng trÃ² chÆ¡i sinh tá»“n kiá»ƒu PUBG, Fortnite hay H1Z1, thÃ¬ báº¡n Ä‘Ã£ náº¯m Ä‘Æ°á»£c má»™t ná»­a trÃ² chÆ¡i rá»“i! HÃ£y coi trÃ² surviv.io nhÆ° lÃ  trÃ² PUBG 2D.",
+			"index-tips-3": "Kiáº¿m váº­t pháº©m vÃ  tiÃªu diá»‡t",
+			"index-tips-3-desc": "Báº¡n sáº½ báº¯t Ä‘áº§u trÃ² chÆ¡i mÃ  khÃ´ng cÃ³ váº­t pháº©m gÃ¬ ngoÃ i má»™t cÃ¡i balo. Cháº¡y quanh báº£n Ä‘á»“ Ä‘á»ƒ tÃ¬m váº­t pháº©m nhÆ°: vÅ© khÃ­, Ä‘áº¡n, á»‘ng ngáº¯m vÃ  vÃ  váº­t pháº©m cá»©u thÆ°Æ¡ng. TiÃªu diá»‡t nhá»¯ng ngÆ°á»?i chÆ¡i khÃ¡c vÃ  báº¡n cÃ³ thá»ƒ láº¥y váº­t pháº©m cá»§a há»?!",
+			"index-tips-4": "MÃ u Ä‘á»? = KhÃ´ng á»•n!",
+			"index-tips-4-desc": "NgÆ°á»?i khÃ´ng chá»‰ lÃ  thá»© duy nháº¥t cÃ³ thá»ƒ gÃ¢y sÃ¡t thÆ°Æ¡ng lÃªn báº¡n. VÃ¹ng mÃ u Ä‘á»? nguy hiá»ƒm sáº½ di chuyá»ƒn vÃ  thu nhá»? dáº§n láº¡i theo báº£n Ä‘á»“ vÃ  gÃ¢y sÃ¡t thÆ°Æ¡ng lá»›n náº¿u báº¡n náº±m trong vÃ¹ng mÃ u Ä‘á»?. HÃ£y Ä‘á»ƒ Ã½ tá»›i báº£n Ä‘á»“ vÃ  giá»¯ khoáº£ng cÃ¡ch an toÃ n.",
+			"index-movement-ctrl-touch": "NÃºm Ä‘iá»?u khiá»ƒn bÃªn trÃ¡i",
+			"index-aim-ctrl-touch": "NÃºm Ä‘iá»?u khiá»ƒn bÃªn pháº£i",
+			"index-shoot-ctrl-touch": "KÃ©o nÃºt Ä‘iá»?u khiá»ƒn bÃªn pháº£i ra ngoÃ i mÃ©p thanh Ä‘iá»?u khiá»ƒn",
+			"index-change-weapons-ctrl-touch": "Cháº¡m vÃ o Ã´ vÅ© khÃ­",
+			"index-reload-ctrl-touch": "Cháº¡m vÃ o bá»™ Ä‘áº¿m Ä‘áº¡n Ä‘Æ°á»£c trang bá»‹",
+			"index-scope-zoom-ctrl-touch": "Cháº¡m vÃ o má»¥c thu phÃ³ng",
+			"index-pickup-ctrl-touch": "Cháº¡m vÃ o nÃºt tÆ°Æ¡ng tÃ¡c hoáº·c tÃªn váº­t pháº©m",
+			"index-use-medical-ctrl-touch": "Cháº¡m vÃ o má»¥c y táº¿",
+			"index-drop-item-ctrl-touch": "Cháº¡m vÃ  giá»¯ Ä‘á»“ váº­t",
+			"index-cancel-action-ctrl-touch": "Cháº¡m vÃ o nÃºt tÆ°Æ¡ng tÃ¡c",
+			"index-view-map-ctrl-touch": "Cháº¡m vÃ o báº£n Ä‘á»“ mini",
+			"index-use-ping-ctrl-touch": "Hiá»ƒn thá»‹ báº£n Ä‘á»“ vÃ  cháº¡m vÃ o báº¥t ká»³ vá»‹ trÃ­ nÃ o trÃªn báº£n Ä‘á»“",
+			"index-use-emote-ctrl-touch": "Cháº¡m vÃ o biá»ƒu tÆ°á»£ng sá»‘ng sÃ³t",
+			"game-alive": "CÃ²n sá»‘ng",
+			"game-reloading": "Náº¡p Ä‘áº¡n",
 			"game-use": "Use",
-			"game-using": "Sử dụng",
-			"game-reviving": "Hồi phục",
-			"game-revive-teammate": "Hồi phục cho đồng đội",
-			"game-equip": "Trang bị",
-			"game-cancel": "Hủy",
-			"game-open-door": "Mở cửa",
-			"game-close-door": "Đóng cửa",
-			"game-You": "Bạn",
-			"game-you": "bạn",
-			"game-themselves": "chính họ",
-			"game-yourself": "chính bạn",
-			"game-you-died": "đã bị tiêu diệt",
-			"game-player-died": "đã bị tiêu diệt",
-			"game-with": "bởi",
-			"game-knocked-out": "hạ gục",
-			"game-killed": "đã bị tiêu diệt",
-			"game-finally-killed": "cuối cùng cũng tiêu diệt được",
-			"game-finally-bled-out": "cuối cùng đã chảy máu",
-			"game-died-outside": "đã bị tiêu diệt ngoài vùng an toàn",
-			"game-the-red-zone": "Vùng màu đỏ",
-			"game-waiting-for-players": "Đợi người chơi khác",
-			"game-spectating": "Quan sát",
-			"game-red-zone-advances": "Vùng màu đỏ thu hẹp dần",
-			"game-red-zone-advancing": "Vùng màu đỏ đang thu hẹp dần, hãy chạy về vùng an toàn!",
-			"game-seconds": "giây",
-			"game-minutes": "phút",
-			"game-minute": "phút",
+			"game-using": "Sá»­ dá»¥ng",
+			"game-reviving": "Há»“i phá»¥c",
+			"game-revive-teammate": "Há»“i phá»¥c cho Ä‘á»“ng Ä‘á»™i",
+			"game-equip": "Trang bá»‹",
+			"game-cancel": "Há»§y",
+			"game-open-door": "Má»Ÿ cá»­a",
+			"game-close-door": "Ä?Ã³ng cá»­a",
+			"game-You": "Báº¡n",
+			"game-you": "báº¡n",
+			"game-themselves": "chÃ­nh há»?",
+			"game-yourself": "chÃ­nh báº¡n",
+			"game-you-died": "Ä‘Ã£ bá»‹ tiÃªu diá»‡t",
+			"game-player-died": "Ä‘Ã£ bá»‹ tiÃªu diá»‡t",
+			"game-with": "bá»Ÿi",
+			"game-knocked-out": "háº¡ gá»¥c",
+			"game-killed": "Ä‘Ã£ bá»‹ tiÃªu diá»‡t",
+			"game-finally-killed": "cuá»‘i cÃ¹ng cÅ©ng tiÃªu diá»‡t Ä‘Æ°á»£c",
+			"game-finally-bled-out": "cuá»‘i cÃ¹ng Ä‘Ã£ cháº£y mÃ¡u",
+			"game-died-outside": "Ä‘Ã£ bá»‹ tiÃªu diá»‡t ngoÃ i vÃ¹ng an toÃ n",
+			"game-the-red-zone": "VÃ¹ng mÃ u Ä‘á»?",
+			"game-waiting-for-players": "Ä?á»£i ngÆ°á»?i chÆ¡i khÃ¡c",
+			"game-spectating": "Quan sÃ¡t",
+			"game-red-zone-advances": "VÃ¹ng mÃ u Ä‘á»? thu háº¹p dáº§n",
+			"game-red-zone-advancing": "VÃ¹ng mÃ u Ä‘á»? Ä‘ang thu háº¹p dáº§n, hÃ£y cháº¡y vá»? vÃ¹ng an toÃ n!",
+			"game-seconds": "giÃ¢y",
+			"game-minutes": "phÃºt",
+			"game-minute": "phÃºt",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "Không đủ chỗ!",
-			"game-item-already-owned": "Đã có vật phẩm này!",
-			"game-item-already-equipped": "Đã trang bị vật phẩm!",
-			"game-better-item-equipped": "Đã trang bị vật phẩm tốt hơn!",
-			"game-play-new-game": "Chơi lượt mới",
-			"game-spectate": "Xem người khác chơi",
-			"game-full-screen": "Toàn màn hình",
-			"game-sound": "Âm thanh",
-			"game-quit-game": "Thoát khỏi lượt chơi",
-			"game-return-to-game": "Trở lại lượt chơi",
-			"game-hide-match-stats": "Ẩn chỉ số trận đấu",
-			"game-view-match-stats": "Xem chỉ số trận đấu",
-			"game-previous-teammate": "Đồng đội trước đó",
-			"game-next-teammate": "Đồng đội kế tiếp",
-			"game-spectate-previous": "Người chơi trước",
+			"game-not-enough-space": "KhÃ´ng Ä‘á»§ chá»—!",
+			"game-item-already-owned": "Ä?Ã£ cÃ³ váº­t pháº©m nÃ y!",
+			"game-item-already-equipped": "Ä?Ã£ trang bá»‹ váº­t pháº©m!",
+			"game-better-item-equipped": "Ä?Ã£ trang bá»‹ váº­t pháº©m tá»‘t hÆ¡n!",
+			"game-play-new-game": "ChÆ¡i lÆ°á»£t má»›i",
+			"game-spectate": "Xem ngÆ°á»?i khÃ¡c chÆ¡i",
+			"game-full-screen": "ToÃ n mÃ n hÃ¬nh",
+			"game-sound": "Ã‚m thanh",
+			"game-quit-game": "ThoÃ¡t khá»?i lÆ°á»£t chÆ¡i",
+			"game-return-to-game": "Trá»Ÿ láº¡i lÆ°á»£t chÆ¡i",
+			"game-hide-match-stats": "áº¨n chá»‰ sá»‘ tráº­n Ä‘áº¥u",
+			"game-view-match-stats": "Xem chá»‰ sá»‘ tráº­n Ä‘áº¥u",
+			"game-previous-teammate": "Ä?á»“ng Ä‘á»™i trÆ°á»›c Ä‘Ã³",
+			"game-next-teammate": "Ä?á»“ng Ä‘á»™i káº¿ tiáº¿p",
+			"game-spectate-previous": "NgÆ°á»?i chÆ¡i trÆ°á»›c",
 			"game-spectate-next": "The next player",
-			"game-leave-game": "Thoát lượt chơi",
-			"game-your-results": "Kết quả của bạn",
-			"game-chicken": "Chiến thắng chiến thắng Cơm gà xả láng!",
-			"game-won-the-game": "đã thắng lượt chơi.",
-			"game-team-eliminated": "Đội của bạn đã bị tiêu diệt.",
-			"game-solo-rank": "Xếp hạng Solo",
-			"game-duo-rank": "Xếp hạng Duo",
-			"game-squad-rank": "Xếp hạng đội hình",
-			"game-rank": "Thứ hạng",
-			"game-team-rank": "Thứ hạng của đội",
-			"game-team-kills": "Số lượt tiêu diệt được của đội",
-			"game-kill": "Tiêu diệt",
-			"game-kills": "Tiêu diệt",
-			"game-damage-dealt": "Sát thương gây ra",
-			"game-damage-taken": "Sát thương nhận",
-			"game-survived": "Đã sống sót",
-			"game-backpack00": "Túi đồ",
-			"game-backpack01": "Balo nhỏ",
-			"game-backpack02": "Balo vừa",
-			"game-backpack03": "Balo quân sự",
-			"game-bandage": "Túi cứu thương",
-			"game-bandage-tooltip": "Bấm chuột trái để hồi 15 máu.",
-			"game-healing-tooltip": "Không thể hồi quá 75 máu.",
-			"game-healthkit": "Bộ kit cứu thương",
-			"game-healthkit-tooltip": "Bấm chuột trái để hồi 100 máu.",
+			"game-leave-game": "ThoÃ¡t lÆ°á»£t chÆ¡i",
+			"game-your-results": "Káº¿t quáº£ cá»§a báº¡n",
+			"game-chicken": "Chiáº¿n tháº¯ng chiáº¿n tháº¯ng CÆ¡m gÃ  xáº£ lÃ¡ng!",
+			"game-won-the-game": "Ä‘Ã£ tháº¯ng lÆ°á»£t chÆ¡i.",
+			"game-team-eliminated": "Ä?á»™i cá»§a báº¡n Ä‘Ã£ bá»‹ tiÃªu diá»‡t.",
+			"game-solo-rank": "Xáº¿p háº¡ng Solo",
+			"game-duo-rank": "Xáº¿p háº¡ng Duo",
+			"game-squad-rank": "Xáº¿p háº¡ng Ä‘á»™i hÃ¬nh",
+			"game-rank": "Thá»© háº¡ng",
+			"game-team-rank": "Thá»© háº¡ng cá»§a Ä‘á»™i",
+			"game-team-kills": "Sá»‘ lÆ°á»£t tiÃªu diá»‡t Ä‘Æ°á»£c cá»§a Ä‘á»™i",
+			"game-kill": "TiÃªu diá»‡t",
+			"game-kills": "TiÃªu diá»‡t",
+			"game-damage-dealt": "SÃ¡t thÆ°Æ¡ng gÃ¢y ra",
+			"game-damage-taken": "SÃ¡t thÆ°Æ¡ng nháº­n",
+			"game-survived": "Ä?Ã£ sá»‘ng sÃ³t",
+			"game-backpack00": "TÃºi Ä‘á»“",
+			"game-backpack01": "Balo nhá»?",
+			"game-backpack02": "Balo vá»«a",
+			"game-backpack03": "Balo quÃ¢n sá»±",
+			"game-bandage": "TÃºi cá»©u thÆ°Æ¡ng",
+			"game-bandage-tooltip": "Báº¥m chuá»™t trÃ¡i Ä‘á»ƒ há»“i 15 mÃ¡u.",
+			"game-healing-tooltip": "KhÃ´ng thá»ƒ há»“i quÃ¡ 75 mÃ¡u.",
+			"game-healthkit": "Bá»™ kit cá»©u thÆ°Æ¡ng",
+			"game-healthkit-tooltip": "Báº¥m chuá»™t trÃ¡i Ä‘á»ƒ há»“i 100 mÃ¡u.",
 			"game-soda": "Soda",
-			"game-soda-tooltip": "Bấm chuột trái để tăng adrenalin lên 25 điểm.",
-			"game-adrenaline-tooltip": "Adrenalin hồi phục máu theo thời gian.",
-			"game-painkiller": "Thuốc",
-			"game-painkiller-tooltip": "Bấm chuột trái để tăng adrenaline lên 50.",
+			"game-soda-tooltip": "Báº¥m chuá»™t trÃ¡i Ä‘á»ƒ tÄƒng adrenalin lÃªn 25 Ä‘iá»ƒm.",
+			"game-adrenaline-tooltip": "Adrenalin há»“i phá»¥c mÃ¡u theo thá»?i gian.",
+			"game-painkiller": "Thuá»‘c",
+			"game-painkiller-tooltip": "Báº¥m chuá»™t trÃ¡i Ä‘á»ƒ tÄƒng adrenaline lÃªn 50.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "Đạn cho súng M9, MP5, MAC-10, UMP9 và Vector.",
-			"game-12gauge": "cỡ 12",
-			"game-12gauge-tooltip": "Đạn cho súng M870, Saiga-12 và MP220.",
+			"game-9mm-tooltip": "Ä?áº¡n cho sÃºng M9, MP5, MAC-10, UMP9 vÃ  Vector.",
+			"game-12gauge": "cá»¡ 12",
+			"game-12gauge-tooltip": "Ä?áº¡n cho sÃºng M870, Saiga-12 vÃ  MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Đạn cho súng AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 và DP-28.",
+			"game-762mm-tooltip": "Ä?áº¡n cho sÃºng AK-47, SCAR-H, M39, Mosin Nagant, OT-38 vÃ  DP-28.",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "Đạn cho súng FAMAS, HK416, Mk 12 và M249.",
+			"game-556mm-tooltip": "Ä?áº¡n cho sÃºng FAMAS, HK416, Mk 12 vÃ  M249.",
 			"game-50AE": ".50 AE",
-			"game-50AE-tooltip": "Đạn cho súng và Desert Eagle.",
-			"game-chest01": "Áo giáp cấp 1",
-			"game-chest02": "Áo giáp cấp 2",
-			"game-chest03": "Áo giáp cấp 3",
-			"game-helmet01": "Mũ cối cấp 1",
-			"game-helmet02": "Mũ cối cấp 2",
-			"game-helmet03": "Mũ cối cấp 3",
-			"game-1xscope": "1x Kính ngắm",
-			"game-2xscope": "2x Kính ngắm",
-			"game-4xscope": "4x Kính ngắm",
-			"game-8xscope": "8x Kính ngắm",
-			"game-15xscope": "15x Kính ngắm",
+			"game-50AE-tooltip": "Ä?áº¡n cho sÃºng vÃ  Desert Eagle.",
+			"game-chest01": "Ã?o giÃ¡p cáº¥p 1",
+			"game-chest02": "Ã?o giÃ¡p cáº¥p 2",
+			"game-chest03": "Ã?o giÃ¡p cáº¥p 3",
+			"game-helmet01": "MÅ© cá»‘i cáº¥p 1",
+			"game-helmet02": "MÅ© cá»‘i cáº¥p 2",
+			"game-helmet03": "MÅ© cá»‘i cáº¥p 3",
+			"game-1xscope": "1x KÃ­nh ngáº¯m",
+			"game-2xscope": "2x KÃ­nh ngáº¯m",
+			"game-4xscope": "4x KÃ­nh ngáº¯m",
+			"game-8xscope": "8x KÃ­nh ngáº¯m",
+			"game-15xscope": "15x KÃ­nh ngáº¯m",
 			"game-level-1": "Lvl. 1",
 			"game-level-2": "Lvl. 2",
 			"game-level-3": "Lvl. 3",
@@ -20589,11 +19867,11 @@ webpackJsonp([0], {
 			"game-outfitPrisoner": "The New Black",
 			"game-outfitCasanova": "Casanova Silks",
 			"game-outfitKhaki": "The Initiative",
-			"game-fists": "Nắm đấm",
+			"game-fists": "Náº¯m Ä‘áº¥m",
 			"game-ak47": "AK-47",
 			"game-scar": "SCAR-H",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -20618,17 +19896,17 @@ webpackJsonp([0], {
 			"game-hk416": "HK416",
 			"game-mk12": "Mk 12 SPR",
 			"game-m249": "M249",
-			"game-frag": "Lựu đạn",
-			"game-hud-frag": "Lựu đạn",
-			"game-smoke": "Lựu đạn khói",
-			"game-hud-smoke": "Lựu đạn cháy",
-			"game-barrel_01": "một khẩu súng",
-			"game-silo_01": "một chiếc xi lô",
-			"game-oven_01": "một chiếc lò nướng",
-			"game-control_panel_01": "Bảng điều khiển",
-			"game-control_panel_02": "Bảng điều khiển",
-			"game-control_panel_03": "một khối đầu cuối máy tính",
-			"game-power_box_01": "một chiếc tủ điện"
+			"game-frag": "Lá»±u Ä‘áº¡n",
+			"game-hud-frag": "Lá»±u Ä‘áº¡n",
+			"game-smoke": "Lá»±u Ä‘áº¡n khÃ³i",
+			"game-hud-smoke": "Lá»±u Ä‘áº¡n chÃ¡y",
+			"game-barrel_01": "má»™t kháº©u sÃºng",
+			"game-silo_01": "má»™t chiáº¿c xi lÃ´",
+			"game-oven_01": "má»™t chiáº¿c lÃ² nÆ°á»›ng",
+			"game-control_panel_01": "Báº£ng Ä‘iá»?u khiá»ƒn",
+			"game-control_panel_02": "Báº£ng Ä‘iá»?u khiá»ƒn",
+			"game-control_panel_03": "má»™t khá»‘i Ä‘áº§u cuá»‘i mÃ¡y tÃ­nh",
+			"game-power_box_01": "má»™t chiáº¿c tá»§ Ä‘iá»‡n"
 		};
 		e.exports = i
 	},
@@ -20674,7 +19952,7 @@ webpackJsonp([0], {
 									layer: m ? m.layer : l.layer,
 									muffled: !0
 								}), m) {
-								if (m.__id == t && "single" == c.fireMode && c.pullDelay) {
+								if (m.__id == t && "single" == c.fireMode && "single" == c.reloadMode) {
 									var d = m.localData.weapons[m.localData.curWeapIdx].ammo,
 										p = d > 0 ? c.sound.cycle : c.sound.pull;
 									r.localActionSoundInstance = r.playSound(p)
@@ -20747,7 +20025,7 @@ webpackJsonp([0], {
 				for (var r = this.deadBodyPool.getPool(), l = 0; l < r.length; l++) {
 					var m = r[l];
 					if (m.active) {
-						m.nameTextSet || (m.nameTextSet = !0, m.nameText.text = c.htmlUnescape(t.getPlayerInfo(m.playerId).name));
+						m.nameTextSet || (m.nameTextSet = !0, m.nameText.text = c.unEntity(t.getPlayerInfo(m.playerId).name));
 						var d = s.createCircle(m.pos, 1),
 							p = i.insideStructureStairs(d),
 							u = m.layer,
@@ -20809,18 +20087,25 @@ webpackJsonp([0], {
 			getObjById: function(e) {
 				return this.idToObj[e]
 			},
-			getTypeById: function(e, t) {
-				var a = this.getObjById(e);
-				if (!a) {
-					var i = {
-						instId: r.instanceId,
+			getTypeById: function(e, t, a, i, o, n, s, l, c) {
+				var m = this.getObjById(e);
+				if (!m) {
+					var d = {
 						id: e,
+						dbgType: t,
+						seenCount: this.seenCount,
 						ids: Object.keys(this.idToObj),
-						stream: t._view._view
+						packet: a,
+						teamMode: i,
+						extFlags: o,
+						delCount: n,
+						fullCount: s,
+						partCount: l,
+						stream: c._view._view
 					};
-					return r.logError("getTypeById" + JSON.stringify(i)), r.storeGeneric("objectPoolErr", "getTypeById"), 0
+					return r.logError("getTypeById" + JSON.stringify(d)), r.storeGeneric("objectPoolErr", "getTypeById"), t
 				}
-				return a.__type
+				return m.__type
 			},
 			updateObjFull: function(e, t, a, i) {
 				var o = this.getObjById(t),
@@ -20849,213 +20134,213 @@ webpackJsonp([0], {
 			},
 			"word-order": "sov",
 			"index-slogan": "2d Battle Royale",
-			"index-region": "Bölge",
+			"index-region": "BÃ¶lge",
 			"index-north-america": "Kuzey Amerika",
 			"index-europe": "Avrupa",
 			"index-asia": "Asya",
 			"index-players": "oyuncular",
 			"index-play-solo": "Tekli oyna",
-			"index-play-duo": "İkili oyna",
-			"index-play-squad": "Takım oyna",
-			"index-create-team": "Takım Oluştur",
-			"index-leave-team": "Takımdan Çık",
-			"index-joining-team": "Takıma Katılınıyor",
-			"index-creating-team": "Takım Oluşturuluyor",
+			"index-play-duo": "Ä°kili oyna",
+			"index-play-squad": "TakÄ±m oyna",
+			"index-create-team": "TakÄ±m OluÅŸtur",
+			"index-leave-team": "TakÄ±mdan Ã‡Ä±k",
+			"index-joining-team": "TakÄ±ma KatÄ±lÄ±nÄ±yor",
+			"index-creating-team": "TakÄ±m OluÅŸturuluyor",
 			"index-invite-link": "Davet linki",
 			"index-solo": "Tekli",
-			"index-duo": "İkili",
-			"index-squad": "Takım",
-			"index-auto-fill": "Otomatik Oyuncu Seç",
-			"index-no-fill": "Otomatik Oyuncu Seçme",
-			"index-waiting-for-leader": "Liderin oyunu başlatması bekleniyor",
+			"index-duo": "Ä°kili",
+			"index-squad": "TakÄ±m",
+			"index-auto-fill": "Otomatik Oyuncu SeÃ§",
+			"index-no-fill": "Otomatik Oyuncu SeÃ§me",
+			"index-waiting-for-leader": "Liderin oyunu baÅŸlatmasÄ± bekleniyor",
 			"index-play": "Oyna",
-			"index-featured-youtuber": "Önerilen Youtuber",
+			"index-featured-youtuber": "Ã–nerilen Youtuber",
 			"index-settings": "Ayarlar",
-			"index-high-resolution": "Yüksek Çözünürlük (görsel kaliteyi artırmak için seç)",
-			"index-screen-shake": "Ekran sallanması",
+			"index-high-resolution": "YÃ¼ksek Ã‡Ã¶zÃ¼nÃ¼rlÃ¼k (gÃ¶rsel kaliteyi artÄ±rmak iÃ§in seÃ§)",
+			"index-screen-shake": "Ekran sallanmasÄ±",
 			"index-master-volume": "Ana Ses",
-			"index-sfx-volume": "Ses Efekti Düzeyi",
-			"index-music-volume": "Müzik Sesi",
-			"index-mobile-announce": "Şimdi mobilde!",
-			"index-mobile-tooltip": "Cihazınızdan <span>surviv.io</span> web sitesine girin!",
-			"index-team-is-full": "Takım dolu!",
-			"index-failed-joining-team": "Takıma katılım başarısız oldu.",
-			"index-failed-creating-team": "Takım oluşturma başarısız oldu.",
-			"index-failed-finding-game": "Oyun bulma başarısız oldu.",
-			"index-failed-joining-game": "Oyuna katılım başarısız oldu.",
-			"index-lost-connection": "Takım bağlantısı koptu.",
-			"index-host-closed": "Host bağlantıyı kapattı.",
-			"index-invalid-protocol": "Eski istemci sürümü.",
-			"index-view-more": "Daha Fazla Gör",
-			"index-back-to-main": "Ana Menüye Geri Dön",
-			"index-most-kills": "En Çok Öldürmeler",
-			"index-total-kills": "Tüm Öldürmeler",
-			"index-total-wins": "Tüm Galibiyetler",
-			"index-top-5-percent": "En Üst Yüzde 5",
-			"index-for": "için",
-			"index-kill-death-ratio": "Öldürme-Ölüm oranı",
-			"index-today": "Bugün",
+			"index-sfx-volume": "Ses Efekti DÃ¼zeyi",
+			"index-music-volume": "MÃ¼zik Sesi",
+			"index-mobile-announce": "Åžimdi mobilde!",
+			"index-mobile-tooltip": "CihazÄ±nÄ±zdan <span>surviv.io</span> web sitesine girin!",
+			"index-team-is-full": "TakÄ±m dolu!",
+			"index-failed-joining-team": "TakÄ±ma katÄ±lÄ±m baÅŸarÄ±sÄ±z oldu.",
+			"index-failed-creating-team": "TakÄ±m oluÅŸturma baÅŸarÄ±sÄ±z oldu.",
+			"index-failed-finding-game": "Oyun bulma baÅŸarÄ±sÄ±z oldu.",
+			"index-failed-joining-game": "Oyuna katÄ±lÄ±m baÅŸarÄ±sÄ±z oldu.",
+			"index-lost-connection": "TakÄ±m baÄŸlantÄ±sÄ± koptu.",
+			"index-host-closed": "Host baÄŸlantÄ±yÄ± kapattÄ±.",
+			"index-invalid-protocol": "Eski istemci sÃ¼rÃ¼mÃ¼.",
+			"index-view-more": "Daha Fazla GÃ¶r",
+			"index-back-to-main": "Ana MenÃ¼ye Geri DÃ¶n",
+			"index-most-kills": "En Ã‡ok Ã–ldÃ¼rmeler",
+			"index-total-kills": "TÃ¼m Ã–ldÃ¼rmeler",
+			"index-total-wins": "TÃ¼m Galibiyetler",
+			"index-top-5-percent": "En Ãœst YÃ¼zde 5",
+			"index-for": "iÃ§in",
+			"index-kill-death-ratio": "Ã–ldÃ¼rme-Ã–lÃ¼m oranÄ±",
+			"index-today": "BugÃ¼n",
 			"index-this-week": "Bu Hafta",
-			"index-all-time": "Tüm Zamanlar",
-			"index-top-100": "En İyi 100",
-			"index-rank": "Sıralama",
+			"index-all-time": "TÃ¼m Zamanlar",
+			"index-top-100": "En Ä°yi 100",
+			"index-rank": "SÄ±ralama",
 			"index-player": "Oyuncu",
-			"index-total-games": "Tüm oyunlar",
+			"index-total-games": "TÃ¼m oyunlar",
 			"index-controls": "Kontroller",
 			"index-movement": "Hareket",
 			"index-movement-ctrl": "W, A, S, D",
-			"index-aim": "Nişan",
+			"index-aim": "NiÅŸan",
 			"index-aim-ctrl": "Fare",
 			"index-punch": "Yumruk",
-			"index-shoot": "Ateş Etme",
-			"index-shoot-ctrl": "Sol-Tık",
-			"index-change-weapons": "Silah Değiştirme",
-			"index-change-weapons-ctrl": "1'den 4'e veya Fare Tekerleği",
-			"index-stow-weapons": "Silahları Koy (Yumruk Modu)",
+			"index-shoot": "AteÅŸ Etme",
+			"index-shoot-ctrl": "Sol-TÄ±k",
+			"index-change-weapons": "Silah DeÄŸiÅŸtirme",
+			"index-change-weapons-ctrl": "1'den 4'e veya Fare TekerleÄŸi",
+			"index-stow-weapons": "SilahlarÄ± Koy (Yumruk Modu)",
 			"index-stow-weapons-ctrl": "3 veya E",
-			"index-swap-weapons": "Önceki Silaha Geç",
+			"index-swap-weapons": "Ã–nceki Silaha GeÃ§",
 			"index-swap-weapons-ctrl": "Q",
 			"index-reload": "Yeniden Doldur",
 			"index-reload-ctrl": "R",
-			"index-scope-zoom": "Yakınlaştırma",
-			"index-scope-zoom-ctrl": "Yakınlaştırma üzerine sol tıkla",
+			"index-scope-zoom": "YakÄ±nlaÅŸtÄ±rma",
+			"index-scope-zoom-ctrl": "YakÄ±nlaÅŸtÄ±rma Ã¼zerine sol tÄ±kla",
 			"index-pickup": "Al",
-			"index-loot": "Yağmala",
-			"index-revive": "İyileştir",
+			"index-loot": "YaÄŸmala",
+			"index-revive": "Ä°yileÅŸtir",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "Tedavi Eşyası Kullan",
-			"index-use-medical-ctrl": "Eşya Üzerine Sol-Tık veya 7'den 0'e kadar",
-			"index-drop-item": "Eşyayı At",
-			"index-drop-item-ctrl": "Sağ-Tık",
+			"index-use-medical": "Tedavi EÅŸyasÄ± Kullan",
+			"index-use-medical-ctrl": "EÅŸya Ãœzerine Sol-TÄ±k veya 7'den 0'e kadar",
+			"index-drop-item": "EÅŸyayÄ± At",
+			"index-drop-item-ctrl": "SaÄŸ-TÄ±k",
 			"index-cancel-action": "Durdur",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "Haritayı Göster",
+			"index-view-map": "HaritayÄ± GÃ¶ster",
 			"index-view-map-ctrl": "M veya G",
-			"index-toggle-minimap": "Mini Haritayı Değiştir",
+			"index-toggle-minimap": "Mini HaritayÄ± DeÄŸiÅŸtir",
 			"index-toggle-minimap-ctrl": "V",
-			"index-use-ping": "Takım Komut Tekerleğini Kullan",
-			"index-use-ping-ctrl": "C'ye basılı tut, sonra Sağ-Tıka basılı tut ve fareyi sürükle, sonra Sağ-Tıkı bırak",
+			"index-use-ping": "TakÄ±m Komut TekerleÄŸini Kullan",
+			"index-use-ping-ctrl": "C'ye basÄ±lÄ± tut, sonra SaÄŸ-TÄ±ka basÄ±lÄ± tut ve fareyi sÃ¼rÃ¼kle, sonra SaÄŸ-TÄ±kÄ± bÄ±rak",
 			"index-use-emote": "Emote Tekerini Kullan",
-			"index-use-emote-ctrl": "Sağ-Tıka basılı tut ve fareyi sürükle, sonra Sağ-Tıkı bırak",
-			"index-how-to-play": "Nasıl Oynanır",
-			"index-tips-1-desc": "surviv.io nun amacı son hayatta kalan olmaktır. Bir oyunda sadece bir kere yaşayabilirsin - yeniden doğmka yok!",
+			"index-use-emote-ctrl": "SaÄŸ-TÄ±ka basÄ±lÄ± tut ve fareyi sÃ¼rÃ¼kle, sonra SaÄŸ-TÄ±kÄ± bÄ±rak",
+			"index-how-to-play": "NasÄ±l OynanÄ±r",
+			"index-tips-1-desc": "surviv.io nun amacÄ± son hayatta kalan olmaktÄ±r. Bir oyunda sadece bir kere yaÅŸayabilirsin - yeniden doÄŸmka yok!",
 			"index-tips-2": "2D PUBG",
-			"index-tips-2-desc": "Eğer daha önce PUBG, Fortnite veya H1Z1 gibi battle royale oyunlar oynadıysan, sen zaten yolu yarılamışsın! surviv.io'yu 2D PUBG gibi düşün.",
-			"index-tips-3": "Yağmala ve Öldür",
-			"index-tips-3-desc": "Oyuna basit bir sırt çantası dışında hiçbir öğeyle başlamayacaksın. Ganimet bulmak için haritanın etrafında dolaş: silahlar, cephane, kapsüller ve tıbbi ürünler. Diğer oyuncuları ele ve onların ganimetlerini alabilirsin!",
-			"index-tips-4": "Kırmızı = Kötü!",
-			"index-tips-4-desc": "Seni incitebilecek tek şey oyuncular değil. Ölümcül kırmızı bölge harita kenarlarından içeri ilerler eğer içene girerseniz giderek daha fazla zarar görürsünüz. Haritaya bakmayı unutma ve güvende kal.",
+			"index-tips-2-desc": "EÄŸer daha Ã¶nce PUBG, Fortnite veya H1Z1 gibi battle royale oyunlar oynadÄ±ysan, sen zaten yolu yarÄ±lamÄ±ÅŸsÄ±n! surviv.io'yu 2D PUBG gibi dÃ¼ÅŸÃ¼n.",
+			"index-tips-3": "YaÄŸmala ve Ã–ldÃ¼r",
+			"index-tips-3-desc": "Oyuna basit bir sÄ±rt Ã§antasÄ± dÄ±ÅŸÄ±nda hiÃ§bir Ã¶ÄŸeyle baÅŸlamayacaksÄ±n. Ganimet bulmak iÃ§in haritanÄ±n etrafÄ±nda dolaÅŸ: silahlar, cephane, kapsÃ¼ller ve tÄ±bbi Ã¼rÃ¼nler. DiÄŸer oyuncularÄ± ele ve onlarÄ±n ganimetlerini alabilirsin!",
+			"index-tips-4": "KÄ±rmÄ±zÄ± = KÃ¶tÃ¼!",
+			"index-tips-4-desc": "Seni incitebilecek tek ÅŸey oyuncular deÄŸil. Ã–lÃ¼mcÃ¼l kÄ±rmÄ±zÄ± bÃ¶lge harita kenarlarÄ±ndan iÃ§eri ilerler eÄŸer iÃ§ene girerseniz giderek daha fazla zarar gÃ¶rÃ¼rsÃ¼nÃ¼z. Haritaya bakmayÄ± unutma ve gÃ¼vende kal.",
 			"game-alive": "Hayatta",
 			"game-reloading": "Yeniden Dolduruluyor",
-			"game-using": "Kullanılıyor",
-			"game-reviving": "İyileştiriliyor",
-			"game-revive-teammate": "Takım Arkadaşını İyileştir",
-			"game-equip": "Kuşan",
-			"game-cancel": "İptal et",
-			"game-open-door": "Kapıyı aç",
-			"game-close-door": "Kapıyı kapat",
+			"game-using": "KullanÄ±lÄ±yor",
+			"game-reviving": "Ä°yileÅŸtiriliyor",
+			"game-revive-teammate": "TakÄ±m ArkadaÅŸÄ±nÄ± Ä°yileÅŸtir",
+			"game-equip": "KuÅŸan",
+			"game-cancel": "Ä°ptal et",
+			"game-open-door": "KapÄ±yÄ± aÃ§",
+			"game-close-door": "KapÄ±yÄ± kapat",
 			"game-You": "Sen",
 			"game-you": "sen",
 			"game-themselves": "kendisini",
 			"game-yourself": "kendini",
-			"game-you-died": "Öldün",
-			"game-player-died": "öldü",
+			"game-you-died": "Ã–ldÃ¼n",
+			"game-player-died": "Ã¶ldÃ¼",
 			"game-with": "ile",
-			"game-knocked-out": "düştü",
-			"game-killed": "öldürdü",
-			"game-finally-killed": "sonunda öldürdü",
-			"game-finally-bled-out": "sonunda kan kaybederek öldü",
-			"game-died-outside": "güvenli bölgenin dışında öldü",
-			"game-the-red-zone": "Kırmızı alan",
+			"game-knocked-out": "dÃ¼ÅŸtÃ¼",
+			"game-killed": "Ã¶ldÃ¼rdÃ¼",
+			"game-finally-killed": "sonunda Ã¶ldÃ¼rdÃ¼",
+			"game-finally-bled-out": "sonunda kan kaybederek Ã¶ldÃ¼",
+			"game-died-outside": "gÃ¼venli bÃ¶lgenin dÄ±ÅŸÄ±nda Ã¶ldÃ¼",
+			"game-the-red-zone": "KÄ±rmÄ±zÄ± alan",
 			"game-waiting-for-players": "Oyuncular bekleniyor",
-			"game-spectating": "İzleniyor",
-			"game-red-zone-advances": "Kırmızı alan -the time- içinde geliyor",
-			"game-red-zone-advancing": "Kırmızı alan geliyor, güvenli bölgeye git!",
+			"game-spectating": "Ä°zleniyor",
+			"game-red-zone-advances": "KÄ±rmÄ±zÄ± alan -the time- iÃ§inde geliyor",
+			"game-red-zone-advancing": "KÄ±rmÄ±zÄ± alan geliyor, gÃ¼venli bÃ¶lgeye git!",
 			"game-seconds": "saniyeler",
 			"game-minutes": "dakikalar",
 			"game-minute": "dakika",
 			"game-m": "dk",
 			"game-s": "sn",
 			"game-not-enough-space": "Yeterli alan yok!",
-			"game-item-already-owned": "Eşyaya zaten sahipsin!",
-			"game-item-already-equipped": "Eşya zaten kuşanılmış!",
-			"game-better-item-equipped": "Daha iyi eşya kuşanıldı!",
+			"game-item-already-owned": "EÅŸyaya zaten sahipsin!",
+			"game-item-already-equipped": "EÅŸya zaten kuÅŸanÄ±lmÄ±ÅŸ!",
+			"game-better-item-equipped": "Daha iyi eÅŸya kuÅŸanÄ±ldÄ±!",
 			"game-play-new-game": "Yeni Oyun Oyna",
 			"game-spectate": "Seyret",
 			"game-full-screen": "Tam Ekran",
 			"game-sound": "Ses",
-			"game-quit-game": "Oyundan Çık",
-			"game-return-to-game": "Oyuna Geri Dön",
-			"game-hide-match-stats": "Oyun İstatistiklerini Gizle",
-			"game-view-match-stats": "Oyun İstatistiklerini Göster",
-			"game-previous-teammate": "Önceki Takım Arkadaşı",
-			"game-next-teammate": "Sonraki Takım Arkadaşı",
+			"game-quit-game": "Oyundan Ã‡Ä±k",
+			"game-return-to-game": "Oyuna Geri DÃ¶n",
+			"game-hide-match-stats": "Oyun Ä°statistiklerini Gizle",
+			"game-view-match-stats": "Oyun Ä°statistiklerini GÃ¶ster",
+			"game-previous-teammate": "Ã–nceki TakÄ±m ArkadaÅŸÄ±",
+			"game-next-teammate": "Sonraki TakÄ±m ArkadaÅŸÄ±",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "Oyundan Ayrıl",
+			"game-leave-game": "Oyundan AyrÄ±l",
 			"game-your-results": "Skorun",
-			"game-chicken": "Hadi yine iyisin akşama tavuk var!",
-			"game-won-the-game": "oyunu kazandı",
-			"game-team-eliminated": "Takımınız yenildi.",
-			"game-rank": "Sıralama",
-			"game-team-rank": "Takım Sırası",
-			"game-team-kills": "Takım Öldürmeleri",
-			"game-kill": "Öldürme",
-			"game-kills": "Öldürme",
+			"game-chicken": "Hadi yine iyisin akÅŸama tavuk var!",
+			"game-won-the-game": "oyunu kazandÄ±",
+			"game-team-eliminated": "TakÄ±mÄ±nÄ±z yenildi.",
+			"game-rank": "SÄ±ralama",
+			"game-team-rank": "TakÄ±m SÄ±rasÄ±",
+			"game-team-kills": "TakÄ±m Ã–ldÃ¼rmeleri",
+			"game-kill": "Ã–ldÃ¼rme",
+			"game-kills": "Ã–ldÃ¼rme",
 			"game-damage-dealt": "Verilen Hasar",
-			"game-damage-taken": "Alınan Hasar",
-			"game-survived": "Hayatta Kaldı",
+			"game-damage-taken": "AlÄ±nan Hasar",
+			"game-survived": "Hayatta KaldÄ±",
 			"game-backpack00": "Torba",
-			"game-backpack01": "Küçük Çanta",
-			"game-backpack02": "Normal Çanta",
-			"game-backpack03": "Askeri Çanta",
+			"game-backpack01": "KÃ¼Ã§Ã¼k Ã‡anta",
+			"game-backpack02": "Normal Ã‡anta",
+			"game-backpack03": "Askeri Ã‡anta",
 			"game-bandage": "Bandaj",
-			"game-bandage-tooltip": "15 sağlık iyileşmek için sol tıkla.",
-			"game-healing-tooltip": "75 sağlıktan sonra iyileştiremez.",
-			"game-healthkit": "İlk Yardım Seti",
-			"game-healthkit-tooltip": "100 sağlık iyileşmek için sol tıkla.",
+			"game-bandage-tooltip": "15 saÄŸlÄ±k iyileÅŸmek iÃ§in sol tÄ±kla.",
+			"game-healing-tooltip": "75 saÄŸlÄ±ktan sonra iyileÅŸtiremez.",
+			"game-healthkit": "Ä°lk YardÄ±m Seti",
+			"game-healthkit-tooltip": "100 saÄŸlÄ±k iyileÅŸmek iÃ§in sol tÄ±kla.",
 			"game-soda": "Soda",
-			"game-soda-tooltip": "25 adrenalin basmak için sol tıkla.",
-			"game-adrenaline-tooltip": "Adrenalin, zamanla sağlığı düzeltir.",
+			"game-soda-tooltip": "25 adrenalin basmak iÃ§in sol tÄ±kla.",
+			"game-adrenaline-tooltip": "Adrenalin, zamanla saÄŸlÄ±ÄŸÄ± dÃ¼zeltir.",
 			"game-painkiller": "Haplar",
-			"game-painkiller-tooltip": "50 adrenalin basmak için sol tıkla.",
+			"game-painkiller-tooltip": "50 adrenalin basmak iÃ§in sol tÄ±kla.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "M9, Glock, MP5, MAC-10, UMP9 ve Vector için cephane.",
+			"game-9mm-tooltip": "M9, Glock, MP5, MAC-10, UMP9 ve Vector iÃ§in cephane.",
 			"game-12gauge": "12 kalibre",
-			"game-12gauge-tooltip": "M870, Saiga-12 ve MP220 için cephane.",
+			"game-12gauge-tooltip": "M870, Saiga-12 ve MP220 iÃ§in cephane.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 ve DP-28 için cephane.",
+			"game-762mm-tooltip": "AK-47, SCAR-H, M39, Mosin Nagant, OT-38 ve DP-28 iÃ§in cephane.",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "FAMAS, HK416, Mk 12 ve M249 için cephane.",
-			"game-chest01": "Seviye 1 Zırh",
-			"game-chest02": "Seviye 2 Zırh",
-			"game-chest03": "Seviye 3 Zırh",
+			"game-556mm-tooltip": "FAMAS, HK416, Mk 12 ve M249 iÃ§in cephane.",
+			"game-chest01": "Seviye 1 ZÄ±rh",
+			"game-chest02": "Seviye 2 ZÄ±rh",
+			"game-chest03": "Seviye 3 ZÄ±rh",
 			"game-helmet01": "Seviye 1 Kask",
 			"game-helmet02": "Seviye 2 Kask",
 			"game-helmet03": "Seviye 3 Kask",
-			"game-1xscope": "1x Dürbün",
-			"game-2xscope": "2x Dürbün",
-			"game-4xscope": "4x Dürbün",
-			"game-8xscope": "8x Dürbün",
-			"game-15xscope": "15x Dürbün",
+			"game-1xscope": "1x DÃ¼rbÃ¼n",
+			"game-2xscope": "2x DÃ¼rbÃ¼n",
+			"game-4xscope": "4x DÃ¼rbÃ¼n",
+			"game-8xscope": "8x DÃ¼rbÃ¼n",
+			"game-15xscope": "15x DÃ¼rbÃ¼n",
 			"game-level-1": "Svy. 1",
 			"game-level-2": "Svy. 2",
 			"game-level-3": "Svy. 3",
-			"game-outfitBase": "Basit Kıyafet",
-			"game-outfitWoodland": "Orman Savaşı",
+			"game-outfitBase": "Basit KÄ±yafet",
+			"game-outfitWoodland": "Orman SavaÅŸÄ±",
 			"game-outfitRoyalFortune": "Asil Servet",
 			"game-outfitKeyLime": "Misket Limonu",
-			"game-outfitCobaltShell": "Kobalt Kabuğu",
+			"game-outfitCobaltShell": "Kobalt KabuÄŸu",
 			"game-outfitCarbonFiber": "Karbonfiber",
 			"game-outfitDarkGloves": "Profosyonel",
 			"game-outfitGhillie": "Komando",
 			"game-outfitCamo": "Kamuflaj",
-			"game-outfitRed": "Atış Talimi",
+			"game-outfitRed": "AtÄ±ÅŸ Talimi",
 			"game-outfitWhite": "Buzul Yenilmezi",
 			"game-fists": "Yumruk",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -21070,10 +20355,10 @@ webpackJsonp([0], {
 			"game-hk416": "HK416",
 			"game-mk12": "Mk 12 SPR",
 			"game-m249": "M249",
-			"game-frag": "El Bombası",
-			"game-hud-frag": "El Bombası",
-			"game-smoke": "Sis Bombası",
-			"game-hud-smoke": "Sis Bombası",
+			"game-frag": "El BombasÄ±",
+			"game-hud-frag": "El BombasÄ±",
+			"game-smoke": "Sis BombasÄ±",
+			"game-hud-smoke": "Sis BombasÄ±",
 			"game-barrel_01": "Varil",
 			"game-silo_01": "Ambar",
 			"game-oven_01": "ocak"
@@ -21123,569 +20408,6 @@ webpackJsonp([0], {
 				})
 			}
 		}, e.exports = i
-	},
-	gaH8: function(e, t) {
-		! function(e) {
-			if (!e.hasInitialised) {
-				var t = {
-					escapeRegExp: function(e) {
-						return e.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
-					},
-					hasClass: function(e, t) {
-						var a = " ";
-						return 1 === e.nodeType && (a + e.className + a).replace(/[\n\t]/g, a).indexOf(a + t + a) >= 0
-					},
-					addClass: function(e, t) {
-						e.className += " " + t
-					},
-					removeClass: function(e, t) {
-						var a = new RegExp("\\b" + this.escapeRegExp(t) + "\\b");
-						e.className = e.className.replace(a, "")
-					},
-					interpolateString: function(e, t) {
-						var a = /{{([a-z][a-z0-9\-_]*)}}/gi;
-						return e.replace(a, function(e) {
-							return t(arguments[1]) || ""
-						})
-					},
-					getCookie: function(e) {
-						var t = "; " + document.cookie,
-							a = t.split("; " + e + "=");
-						return 2 != a.length ? void 0 : a.pop().split(";").shift()
-					},
-					setCookie: function(e, t, a, i, o) {
-						var n = new Date;
-						n.setDate(n.getDate() + (a || 365));
-						var r = [e + "=" + t, "expires=" + n.toUTCString(), "path=" + (o || "/")];
-						i && r.push("domain=" + i), document.cookie = r.join(";")
-					},
-					deepExtend: function(e, t) {
-						for (var a in t) t.hasOwnProperty(a) && (a in e && this.isPlainObject(e[a]) && this.isPlainObject(t[a]) ? this.deepExtend(e[a], t[a]) : e[a] = t[a]);
-						return e
-					},
-					throttle: function(e, t) {
-						var a = !1;
-						return function() {
-							a || (e.apply(this, arguments), a = !0, setTimeout(function() {
-								a = !1
-							}, t))
-						}
-					},
-					hash: function(e) {
-						var t, a, i, o = 0;
-						if (0 === e.length) return o;
-						for (t = 0, i = e.length; t < i; ++t) a = e.charCodeAt(t), o = (o << 5) - o + a, o |= 0;
-						return o
-					},
-					normaliseHex: function(e) {
-						return "#" == e[0] && (e = e.substr(1)), 3 == e.length && (e = e[0] + e[0] + e[1] + e[1] + e[2] + e[2]), e
-					},
-					getContrast: function(e) {
-						return e = this.normaliseHex(e), (299 * parseInt(e.substr(0, 2), 16) + 587 * parseInt(e.substr(2, 2), 16) + 114 * parseInt(e.substr(4, 2), 16)) / 1e3 >= 128 ? "#000" : "#fff"
-					},
-					getLuminance: function(e) {
-						var t = parseInt(this.normaliseHex(e), 16),
-							a = 38 + (t >> 16),
-							i = 38 + (t >> 8 & 255),
-							o = 38 + (255 & t);
-						return "#" + (16777216 + 65536 * (a < 255 ? a < 1 ? 0 : a : 255) + 256 * (i < 255 ? i < 1 ? 0 : i : 255) + (o < 255 ? o < 1 ? 0 : o : 255)).toString(16).slice(1)
-					},
-					isMobile: function() {
-						return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-					},
-					isPlainObject: function(e) {
-						return "object" == typeof e && null !== e && e.constructor == Object
-					}
-				};
-				e.status = {
-					deny: "deny",
-					allow: "allow",
-					dismiss: "dismiss"
-				}, e.transitionEnd = function() {
-					var e = document.createElement("div"),
-						t = {
-							t: "transitionend",
-							OT: "oTransitionEnd",
-							msT: "MSTransitionEnd",
-							MozT: "transitionend",
-							WebkitT: "webkitTransitionEnd"
-						};
-					for (var a in t)
-						if (t.hasOwnProperty(a) && void 0 !== e.style[a + "ransition"]) return t[a];
-					return ""
-				}(), e.hasTransition = !!e.transitionEnd;
-				var a = Object.keys(e.status).map(t.escapeRegExp);
-				e.customStyles = {}, e.Popup = function() {
-					function i() {
-						this.initialise.apply(this, arguments)
-					}
-
-					function o(e) {
-						this.openingTimeout = null, t.removeClass(e, "cc-invisible")
-					}
-
-					function n(t) {
-						t.style.display = "none", t.removeEventListener(e.transitionEnd, this.afterTransition), this.afterTransition = null
-					}
-
-					function r() {
-						var t = this.options.onInitialise.bind(this);
-						if (!window.navigator.cookieEnabled) return t(e.status.deny), !0;
-						if (window.CookiesOK || window.navigator.CookiesOK) return t(e.status.allow), !0;
-						var a = Object.keys(e.status),
-							i = this.getStatus(),
-							o = a.indexOf(i) >= 0;
-						return o && t(i), o
-					}
-
-					function s() {
-						var e = this.options.position.split("-"),
-							t = [];
-						return e.forEach(function(e) {
-							t.push("cc-" + e)
-						}), t
-					}
-
-					function l() {
-						var e = this.options,
-							a = "top" == e.position || "bottom" == e.position ? "banner" : "floating";
-						t.isMobile() && (a = "floating");
-						var i = ["cc-" + a, "cc-type-" + e.type, "cc-theme-" + e.theme];
-						e.static && i.push("cc-static"), i.push.apply(i, s.call(this));
-						p.call(this, this.options.palette);
-						return this.customStyleSelector && i.push(this.customStyleSelector), i
-					}
-
-					function c() {
-						var e = {},
-							a = this.options;
-						a.showLink || (a.elements.link = "", a.elements.messagelink = a.elements.message), Object.keys(a.elements).forEach(function(i) {
-							e[i] = t.interpolateString(a.elements[i], function(e) {
-								var t = a.content[e];
-								return e && "string" == typeof t && t.length ? t : ""
-							})
-						});
-						var i = a.compliance[a.type];
-						i || (i = a.compliance.info), e.compliance = t.interpolateString(i, function(t) {
-							return e[t]
-						});
-						var o = a.layouts[a.layout];
-						return o || (o = a.layouts.basic), t.interpolateString(o, function(t) {
-							return e[t]
-						})
-					}
-
-					function m(a) {
-						var i = this.options,
-							o = document.createElement("div"),
-							n = i.container && 1 === i.container.nodeType ? i.container : document.body;
-						o.innerHTML = a;
-						var r = o.children[0];
-						return r.style.display = "none", t.hasClass(r, "cc-window") && e.hasTransition && t.addClass(r, "cc-invisible"), this.onButtonClick = d.bind(this), r.addEventListener("click", this.onButtonClick), i.autoAttach && (n.firstChild ? n.insertBefore(r, n.firstChild) : n.appendChild(r)), r
-					}
-
-					function d(i) {
-						var o = i.target;
-						if (t.hasClass(o, "cc-btn")) {
-							var n = o.className.match(new RegExp("\\bcc-(" + a.join("|") + ")\\b")),
-								r = n && n[1] || !1;
-							r && (this.setStatus(r), this.close(!0))
-						}
-						t.hasClass(o, "cc-close") && (this.setStatus(e.status.dismiss), this.close(!0)), t.hasClass(o, "cc-revoke") && this.revokeChoice()
-					}
-
-					function p(e) {
-						var a = t.hash(JSON.stringify(e)),
-							i = "cc-color-override-" + a,
-							o = t.isPlainObject(e);
-						return this.customStyleSelector = o ? i : null, o && u(a, e, "." + i), o
-					}
-
-					function u(a, i, o) {
-						if (e.customStyles[a]) return void++e.customStyles[a].references;
-						var n = {},
-							r = i.popup,
-							s = i.button,
-							l = i.highlight;
-						r && (r.text = r.text ? r.text : t.getContrast(r.background), r.link = r.link ? r.link : r.text, n[o + ".cc-window"] = ["color: " + r.text, "background-color: " + r.background], n[o + ".cc-revoke"] = ["color: " + r.text, "background-color: " + r.background], n[o + " .cc-link," + o + " .cc-link:active," + o + " .cc-link:visited"] = ["color: " + r.link], s && (s.text = s.text ? s.text : t.getContrast(s.background), s.border = s.border ? s.border : "transparent", n[o + " .cc-btn"] = ["color: " + s.text, "border-color: " + s.border, "background-color: " + s.background], "transparent" != s.background && (n[o + " .cc-btn:hover, " + o + " .cc-btn:focus"] = ["background-color: " + h(s.background)]), l ? (l.text = l.text ? l.text : t.getContrast(l.background), l.border = l.border ? l.border : "transparent", n[o + " .cc-highlight .cc-btn:first-child"] = ["color: " + l.text, "border-color: " + l.border, "background-color: " + l.background]) : n[o + " .cc-highlight .cc-btn:first-child"] = ["color: " + r.text]));
-						var c = document.createElement("style");
-						document.head.appendChild(c), e.customStyles[a] = {
-							references: 1,
-							element: c.sheet
-						};
-						var m = -1;
-						for (var d in n) n.hasOwnProperty(d) && c.sheet.insertRule(d + "{" + n[d].join(";") + "}", ++m)
-					}
-
-					function h(e) {
-						return e = t.normaliseHex(e), "000000" == e ? "#222" : t.getLuminance(e)
-					}
-
-					function g(a) {
-						if (t.isPlainObject(a)) {
-							var i = t.hash(JSON.stringify(a)),
-								o = e.customStyles[i];
-							if (o && !--o.references) {
-								var n = o.element.ownerNode;
-								n && n.parentNode && n.parentNode.removeChild(n), e.customStyles[i] = null
-							}
-						}
-					}
-
-					function f(e, t) {
-						for (var a = 0, i = e.length; a < i; ++a) {
-							var o = e[a];
-							if (o instanceof RegExp && o.test(t) || "string" == typeof o && o.length && o === t) return !0
-						}
-						return !1
-					}
-
-					function y() {
-						var t = this.setStatus.bind(this),
-							a = this.options.dismissOnTimeout;
-						"number" == typeof a && a >= 0 && (this.dismissTimeout = window.setTimeout(function() {
-							t(e.status.dismiss)
-						}, Math.floor(a)));
-						var i = this.options.dismissOnScroll;
-						if ("number" == typeof i && i >= 0) {
-							var o = function(a) {
-								window.pageYOffset > Math.floor(i) && (t(e.status.dismiss), window.removeEventListener("scroll", o), this.onWindowScroll = null)
-							};
-							this.onWindowScroll = o, window.addEventListener("scroll", o)
-						}
-					}
-					var b = {
-						enabled: !0,
-						container: null,
-						cookie: {
-							name: "cookieconsent_status",
-							path: "/",
-							domain: "",
-							expiryDays: 365
-						},
-						onPopupOpen: function() {},
-						onPopupClose: function() {},
-						onInitialise: function(e) {},
-						onStatusChange: function(e, t) {},
-						onRevokeChoice: function() {},
-						content: {
-							header: "Cookies used on the website!",
-							message: "This website uses cookies to ensure you get the best experience on our website.",
-							dismiss: "Got it!",
-							allow: "Allow cookies",
-							deny: "Decline",
-							link: "Learn more",
-							href: "http://cookiesandyou.com",
-							close: "&#x274c;"
-						},
-						elements: {
-							header: '<span class="cc-header">{{header}}</span>&nbsp;',
-							message: '<span id="cookieconsent:desc" class="cc-message">{{message}}</span>',
-							messagelink: '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="{{href}}" rel="noopener noreferrer nofollow" target="_blank">{{link}}</a></span>',
-							dismiss: '<a aria-label="dismiss cookie message" role=button tabindex="0" class="cc-btn cc-dismiss">{{dismiss}}</a>',
-							allow: '<a aria-label="allow cookies" role=button tabindex="0"  class="cc-btn cc-allow">{{allow}}</a>',
-							deny: '<a aria-label="deny cookies" role=button tabindex="0" class="cc-btn cc-deny">{{deny}}</a>',
-							link: '<a aria-label="learn more about cookies" role=button tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a>',
-							close: '<span aria-label="dismiss cookie message" role=button tabindex="0" class="cc-close">{{close}}</span>'
-						},
-						window: '<div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window {{classes}}">\x3c!--googleoff: all--\x3e{{children}}\x3c!--googleon: all--\x3e</div>',
-						revokeBtn: '<div class="cc-revoke {{classes}}">Cookie Policy</div>',
-						compliance: {
-							info: '<div class="cc-compliance">{{dismiss}}</div>',
-							"opt-in": '<div class="cc-compliance cc-highlight">{{dismiss}}{{allow}}</div>',
-							"opt-out": '<div class="cc-compliance cc-highlight">{{deny}}{{dismiss}}</div>'
-						},
-						type: "info",
-						layouts: {
-							basic: "{{messagelink}}{{compliance}}",
-							"basic-close": "{{messagelink}}{{compliance}}{{close}}",
-							"basic-header": "{{header}}{{message}}{{link}}{{compliance}}"
-						},
-						layout: "basic",
-						position: "bottom",
-						theme: "block",
-						static: !1,
-						palette: null,
-						revokable: !1,
-						animateRevokable: !0,
-						showLink: !0,
-						dismissOnScroll: !1,
-						dismissOnTimeout: !1,
-						autoOpen: !0,
-						autoAttach: !0,
-						whitelistPage: [],
-						blacklistPage: [],
-						overrideHTML: null
-					};
-					return i.prototype.initialise = function(e) {
-						this.options && this.destroy(), t.deepExtend(this.options = {}, b), t.isPlainObject(e) && t.deepExtend(this.options, e), r.call(this) && (this.options.enabled = !1), f(this.options.blacklistPage, location.pathname) && (this.options.enabled = !1), f(this.options.whitelistPage, location.pathname) && (this.options.enabled = !0);
-						var a = this.options.window.replace("{{classes}}", l.call(this).join(" ")).replace("{{children}}", c.call(this)),
-							i = this.options.overrideHTML;
-						if ("string" == typeof i && i.length && (a = i), this.options.static) {
-							var o = m.call(this, '<div class="cc-grower">' + a + "</div>");
-							o.style.display = "", this.element = o.firstChild, this.element.style.display = "none", t.addClass(this.element, "cc-invisible")
-						} else this.element = m.call(this, a);
-						y.call(this), this.options.autoOpen && this.autoOpen()
-					}, i.prototype.destroy = function() {
-						this.onButtonClick && this.element && (this.element.removeEventListener("click", this.onButtonClick), this.onButtonClick = null), this.dismissTimeout && (clearTimeout(this.dismissTimeout), this.dismissTimeout = null), this.onWindowScroll && (window.removeEventListener("scroll", this.onWindowScroll), this.onWindowScroll = null), this.onMouseMove && (window.removeEventListener("mousemove", this.onMouseMove), this.onMouseMove = null), this.element && this.element.parentNode && this.element.parentNode.removeChild(this.element), this.element = null, this.revokeBtn && this.revokeBtn.parentNode && this.revokeBtn.parentNode.removeChild(this.revokeBtn), this.revokeBtn = null, g(this.options.palette), this.options = null
-					}, i.prototype.open = function(t) {
-						if (this.element) return this.isOpen() || (e.hasTransition ? this.fadeIn() : this.element.style.display = "", this.options.revokable && this.toggleRevokeButton(), this.options.onPopupOpen.call(this)), this
-					}, i.prototype.close = function(t) {
-						if (this.element) return this.isOpen() && (e.hasTransition ? this.fadeOut() : this.element.style.display = "none", t && this.options.revokable && this.toggleRevokeButton(!0), this.options.onPopupClose.call(this)), this
-					}, i.prototype.fadeIn = function() {
-						var a = this.element;
-						if (e.hasTransition && a && (this.afterTransition && n.call(this, a), t.hasClass(a, "cc-invisible"))) {
-							if (a.style.display = "", this.options.static) {
-								var i = this.element.clientHeight;
-								this.element.parentNode.style.maxHeight = i + "px"
-							}
-							this.openingTimeout = setTimeout(o.bind(this, a), 20)
-						}
-					}, i.prototype.fadeOut = function() {
-						var a = this.element;
-						e.hasTransition && a && (this.openingTimeout && (clearTimeout(this.openingTimeout), o.bind(this, a)), t.hasClass(a, "cc-invisible") || (this.options.static && (this.element.parentNode.style.maxHeight = ""), this.afterTransition = n.bind(this, a), a.addEventListener(e.transitionEnd, this.afterTransition), t.addClass(a, "cc-invisible")))
-					}, i.prototype.isOpen = function() {
-						return this.element && "" == this.element.style.display && (!e.hasTransition || !t.hasClass(this.element, "cc-invisible"))
-					}, i.prototype.toggleRevokeButton = function(e) {
-						this.revokeBtn && (this.revokeBtn.style.display = e ? "" : "none")
-					}, i.prototype.revokeChoice = function(e) {
-						this.options.enabled = !0, this.clearStatus(), this.options.onRevokeChoice.call(this), e || this.autoOpen()
-					}, i.prototype.hasAnswered = function(t) {
-						return Object.keys(e.status).indexOf(this.getStatus()) >= 0
-					}, i.prototype.hasConsented = function(t) {
-						var a = this.getStatus();
-						return a == e.status.allow || a == e.status.dismiss
-					}, i.prototype.autoOpen = function(e) {
-						!this.hasAnswered() && this.options.enabled && this.open()
-					}, i.prototype.setStatus = function(a) {
-						var i = this.options.cookie,
-							o = t.getCookie(i.name),
-							n = Object.keys(e.status).indexOf(o) >= 0;
-						Object.keys(e.status).indexOf(a) >= 0 ? (t.setCookie(i.name, a, i.expiryDays, i.domain, i.path), this.options.onStatusChange.call(this, a, n)) : this.clearStatus()
-					}, i.prototype.getStatus = function() {
-						return t.getCookie(this.options.cookie.name)
-					}, i.prototype.clearStatus = function() {
-						var e = this.options.cookie;
-						t.setCookie(e.name, "", -1, e.domain, e.path)
-					}, i
-				}(), e.Location = function() {
-					function e(e) {
-						t.deepExtend(this.options = {}, n), t.isPlainObject(e) && t.deepExtend(this.options, e), this.currentServiceIndex = -1
-					}
-
-					function a(e, t, a) {
-						var i, o = document.createElement("script");
-						o.type = "text/" + (e.type || "javascript"), o.src = e.src || e, o.async = !1, o.onreadystatechange = o.onload = function() {
-							var e = o.readyState;
-							clearTimeout(i), t.done || e && !/loaded|complete/.test(e) || (t.done = !0, t(), o.onreadystatechange = o.onload = null)
-						}, document.body.appendChild(o), i = setTimeout(function() {
-							t.done = !0, t(), o.onreadystatechange = o.onload = null
-						}, a)
-					}
-
-					function i(e, t, a, i, o) {
-						var n = new(window.XMLHttpRequest || window.ActiveXObject)("MSXML2.XMLHTTP.3.0");
-						if (n.open(i ? "POST" : "GET", e, 1), n.setRequestHeader("X-Requested-With", "XMLHttpRequest"), n.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), Array.isArray(o))
-							for (var r = 0, s = o.length; r < s; ++r) {
-								var l = o[r].split(":", 2);
-								n.setRequestHeader(l[0].replace(/^\s+|\s+$/g, ""), l[1].replace(/^\s+|\s+$/g, ""))
-							}
-						"function" == typeof t && (n.onreadystatechange = function() {
-							n.readyState > 3 && t(n)
-						}), n.send(i)
-					}
-
-					function o(e) {
-						return new Error("Error [" + (e.code || "UNKNOWN") + "]: " + e.error)
-					}
-					var n = {
-						timeout: 5e3,
-						services: ["freegeoip", "ipinfo", "maxmind"],
-						serviceDefinitions: {
-							freegeoip: function() {
-								return {
-									url: "//freegeoip.net/json/?callback={callback}",
-									isScript: !0,
-									callback: function(e, t) {
-										try {
-											var a = JSON.parse(t);
-											return a.error ? o(a) : {
-												code: a.country_code
-											}
-										} catch (e) {
-											return o({
-												error: "Invalid response (" + e + ")"
-											})
-										}
-									}
-								}
-							},
-							ipinfo: function() {
-								return {
-									url: "//ipinfo.io",
-									headers: ["Accept: application/json"],
-									callback: function(e, t) {
-										try {
-											var a = JSON.parse(t);
-											return a.error ? o(a) : {
-												code: a.country
-											}
-										} catch (e) {
-											return o({
-												error: "Invalid response (" + e + ")"
-											})
-										}
-									}
-								}
-							},
-							ipinfodb: function(e) {
-								return {
-									url: "//api.ipinfodb.com/v3/ip-country/?key={api_key}&format=json&callback={callback}",
-									isScript: !0,
-									callback: function(e, t) {
-										try {
-											var a = JSON.parse(t);
-											return "ERROR" == a.statusCode ? o({
-												error: a.statusMessage
-											}) : {
-												code: a.countryCode
-											}
-										} catch (e) {
-											return o({
-												error: "Invalid response (" + e + ")"
-											})
-										}
-									}
-								}
-							},
-							maxmind: function() {
-								return {
-									url: "//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js",
-									isScript: !0,
-									callback: function(e) {
-										if (!window.geoip2) return void e(new Error("Unexpected response format. The downloaded script should have exported `geoip2` to the global scope"));
-										geoip2.country(function(t) {
-											try {
-												e({
-													code: t.country.iso_code
-												})
-											} catch (t) {
-												e(o(t))
-											}
-										}, function(t) {
-											e(o(t))
-										})
-									}
-								}
-							}
-						}
-					};
-					return e.prototype.getNextService = function() {
-						var e;
-						do {
-							e = this.getServiceByIdx(++this.currentServiceIndex)
-						} while (this.currentServiceIndex < this.options.services.length && !e);
-						return e
-					}, e.prototype.getServiceByIdx = function(e) {
-						var a = this.options.services[e];
-						if ("function" == typeof a) {
-							var i = a();
-							return i.name && t.deepExtend(i, this.options.serviceDefinitions[i.name](i)), i
-						}
-						return "string" == typeof a ? this.options.serviceDefinitions[a]() : t.isPlainObject(a) ? this.options.serviceDefinitions[a.name](a) : null
-					}, e.prototype.locate = function(e, t) {
-						var a = this.getNextService();
-						if (!a) return void t(new Error("No services to run"));
-						this.callbackComplete = e, this.callbackError = t, this.runService(a, this.runNextServiceOnError.bind(this))
-					}, e.prototype.setupUrl = function(e) {
-						var t = this.getCurrentServiceOpts();
-						return e.url.replace(/\{(.*?)\}/g, function(a, i) {
-							if ("callback" === i) {
-								var o = "callback" + Date.now();
-								return window[o] = function(t) {
-									e.__JSONP_DATA = JSON.stringify(t)
-								}, o
-							}
-							if (i in t.interpolateUrl) return t.interpolateUrl[i]
-						})
-					}, e.prototype.runService = function(e, t) {
-						var o = this;
-						if (e && e.url && e.callback) {
-							(e.isScript ? a : i)(this.setupUrl(e), function(a) {
-								var i = a ? a.responseText : "";
-								e.__JSONP_DATA && (i = e.__JSONP_DATA, delete e.__JSONP_DATA), o.runServiceCallback.call(o, t, e, i)
-							}, this.options.timeout, e.data, e.headers)
-						}
-					}, e.prototype.runServiceCallback = function(e, t, a) {
-						var i = this,
-							o = function(t) {
-								n || i.onServiceResult.call(i, e, t)
-							},
-							n = t.callback(o, a);
-						n && this.onServiceResult.call(this, e, n)
-					}, e.prototype.onServiceResult = function(e, t) {
-						t instanceof Error || t && t.error ? e.call(this, t, null) : e.call(this, null, t)
-					}, e.prototype.runNextServiceOnError = function(e, t) {
-						if (e) {
-							this.logError(e);
-							var a = this.getNextService();
-							a ? this.runService(a, this.runNextServiceOnError.bind(this)) : this.completeService.call(this, this.callbackError, new Error("All services failed"))
-						} else this.completeService.call(this, this.callbackComplete, t)
-					}, e.prototype.getCurrentServiceOpts = function() {
-						var e = this.options.services[this.currentServiceIndex];
-						return "string" == typeof e ? {
-							name: e
-						} : "function" == typeof e ? e() : t.isPlainObject(e) ? e : {}
-					}, e.prototype.completeService = function(e, t) {
-						this.currentServiceIndex = -1, e && e(t)
-					}, e.prototype.logError = function(e) {
-						var t = this.currentServiceIndex,
-							a = this.getServiceByIdx(t);
-						console.error("The service[" + t + "] (" + a.url + ") responded with the following error", e)
-					}, e
-				}(), e.Law = function() {
-					function e(e) {
-						this.initialise.apply(this, arguments)
-					}
-					var a = {
-						regionalLaw: !0,
-						hasLaw: ["AT", "BE", "BG", "HR", "CZ", "CY", "DK", "EE", "FI", "FR", "DE", "EL", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "SK", "SI", "ES", "SE", "GB", "UK"],
-						revokable: ["HR", "CY", "DK", "EE", "FR", "DE", "LV", "LT", "NL", "PT", "ES"],
-						explicitAction: ["HR", "IT", "ES"]
-					};
-					return e.prototype.initialise = function(e) {
-						t.deepExtend(this.options = {}, a), t.isPlainObject(e) && t.deepExtend(this.options, e)
-					}, e.prototype.get = function(e) {
-						var t = this.options;
-						return {
-							hasLaw: t.hasLaw.indexOf(e) >= 0,
-							revokable: t.revokable.indexOf(e) >= 0,
-							explicitAction: t.explicitAction.indexOf(e) >= 0
-						}
-					}, e.prototype.applyLaw = function(e, t) {
-						var a = this.get(t);
-						return a.hasLaw || (e.enabled = !1), this.options.regionalLaw && (a.revokable && (e.revokable = !0), a.explicitAction && (e.dismissOnScroll = !1, e.dismissOnTimeout = !1)), e
-					}, e
-				}(), e.initialise = function(t, a, i) {
-					var o = new e.Law(t.law);
-					a || (a = function() {}), i || (i = function() {}), e.getCountryCode(t, function(i) {
-						delete t.law, delete t.location, i.code && (t = o.applyLaw(t, i.code)), a(new e.Popup(t))
-					}, function(a) {
-						delete t.law, delete t.location, i(a, new e.Popup(t))
-					})
-				}, e.getCountryCode = function(t, a, i) {
-					if (t.law && t.law.countryCode) return void a({
-						code: t.law.countryCode
-					});
-					if (t.location) {
-						return void new e.Location(t.location).locate(function(e) {
-							a(e || {})
-						}, i)
-					}
-					a({})
-				}, e.utils = t, e.hasInitialised = !0, window.cookieconsent = e
-			}
-		}(window.cookieconsent || {})
 	},
 	gtMM: function(e, t, a) {
 		"use strict";
@@ -21751,7 +20473,7 @@ webpackJsonp([0], {
 			"index-play-duo": "Spil Duo",
 			"index-play-squad": "Spil Hold",
 			"index-create-team": "Lav Hold",
-			"index-how-to-play": "Sådan spiller du",
+			"index-how-to-play": "SÃ¥dan spiller du",
 			"index-leave-team": "Forlad Hold",
 			"index-joining-team": "Tilslutter Til Hold",
 			"index-creating-team": "Laver Hold",
@@ -21761,31 +20483,31 @@ webpackJsonp([0], {
 			"index-squad": "Hold",
 			"index-auto-fill": "Auto Fyld",
 			"index-no-fill": "Ingen Fyld",
-			"index-waiting-for-leader": "Venter på at lederen starter spillet",
+			"index-waiting-for-leader": "Venter pÃ¥ at lederen starter spillet",
 			"index-play": "Spil",
 			"index-featured-youtuber": "Udvalgt Youtuber",
 			"index-settings": "Indstillinger",
-			"index-high-resolution": "Høj opløsning (Tjek for at øge visuel kvalitet)",
-			"index-screen-shake": "Skærm rystning",
+			"index-high-resolution": "HÃ¸j oplÃ¸sning (Tjek for at Ã¸ge visuel kvalitet)",
+			"index-screen-shake": "SkÃ¦rm rystning",
 			"index-master-volume": "Master Volume",
 			"index-sfx-volume": "SFX Volume",
 			"index-music-volume": "Music Volume",
-			"index-mobile-announce": "Nu tilgængelig på mobil!",
-			"index-mobile-tooltip": "Besøg <span>surviv.io</span> på din mobil for at spille på farten!",
+			"index-mobile-announce": "Nu tilgÃ¦ngelig pÃ¥ mobil!",
+			"index-mobile-tooltip": "BesÃ¸g <span>surviv.io</span> pÃ¥ din mobil for at spille pÃ¥ farten!",
 			"index-team-is-full": "Holdet er fuldt!",
 			"index-failed-joining-team": "Mislykkes at tilslutte til hold.",
 			"index-failed-creating-team": "Mislykkes at oprette et hold.",
 			"index-failed-finding-game": "Mislykkes at finde et spil.",
 			"index-failed-joining-game": "Mislykkes at tilslutte til spil.",
 			"index-lost-connection": "Mistede forbindelse til hold.",
-			"index-host-closed": "Vært lukkede forbindelsen.",
+			"index-host-closed": "VÃ¦rt lukkede forbindelsen.",
 			"index-view-more": "Vis mere",
 			"index-back-to-main": "Tilbage til Hovedmenuen",
 			"index-most-kills": "Flest Drab",
 			"index-total-kills": "Total Drab",
 			"index-total-wins": "Total Kampe Vundet",
 			"index-top-5-percent": "Top 5 procent",
-			"index-kill-death-ratio": "Drab-Død Forhold",
+			"index-kill-death-ratio": "Drab-DÃ¸d Forhold",
 			"index-for": "For",
 			"index-today": "Idag",
 			"index-this-week": "Denne Uge",
@@ -21795,18 +20517,18 @@ webpackJsonp([0], {
 			"index-player": "Spiller",
 			"index-total-games": "Spil tilsammen",
 			"index-controls": "Taster",
-			"index-movement": "Bevægelse",
+			"index-movement": "BevÃ¦gelse",
 			"index-movement-ctrl": "W, A, S, D",
 			"index-aim": "Sigt",
 			"index-aim-ctrl": "Mus",
-			"index-punch": "Slå",
+			"index-punch": "SlÃ¥",
 			"index-shoot": "Skyd",
 			"index-shoot-ctrl": "Venstre-Klik",
-			"index-change-weapons": "Skift Våben",
+			"index-change-weapons": "Skift VÃ¥ben",
 			"index-change-weapons-ctrl": "1 igennem 4 eller musehjul",
-			"index-stow-weapons": "Gem Våben (Slå Tilstand)",
+			"index-stow-weapons": "Gem VÃ¥ben (SlÃ¥ Tilstand)",
 			"index-stow-weapons-ctrl": "3 eller E",
-			"index-swap-weapons": "Skift til Sidst anvendet våben",
+			"index-swap-weapons": "Skift til Sidst anvendet vÃ¥ben",
 			"index-swap-weapons-ctrl": "Q",
 			"index-reload": "Genlad",
 			"index-reload-ctrl": "R",
@@ -21817,14 +20539,14 @@ webpackJsonp([0], {
 			"index-revive": "Genoplev",
 			"index-pickup-ctrl": "F",
 			"index-use-medical": "Brug Medicinsk Genstand",
-			"index-use-medical-ctrl": "Venstre-Klik på Genstand eller 7 igennem 0",
+			"index-use-medical-ctrl": "Venstre-Klik pÃ¥ Genstand eller 7 igennem 0",
 			"index-drop-item": "Smid Bytte",
-			"index-drop-item-ctrl": "Højre-Klik på Bytte",
+			"index-drop-item-ctrl": "HÃ¸jre-Klik pÃ¥ Bytte",
 			"index-cancel-action": "Annuler Handling",
 			"index-cancel-action-ctrl": "X",
 			"index-view-map": "Vis Kort",
 			"index-view-map-ctrl": "M eller G",
-			"index-toggle-minimap": "Slå Kort Til/Fra",
+			"index-toggle-minimap": "SlÃ¥ Kort Til/Fra",
 			"index-toggle-minimap-ctrl": "V",
 			"game-alive": "I Live",
 			"game-reloading": "Genlader",
@@ -21837,19 +20559,19 @@ webpackJsonp([0], {
 			"game-you": "dig",
 			"game-themselves": "dem selv",
 			"game-yourself": "dig selv",
-			"game-you-died": "døde",
-			"game-player-died": "døde",
+			"game-you-died": "dÃ¸de",
+			"game-player-died": "dÃ¸de",
 			"game-with": "med",
 			"game-knocked-out": "slog",
-			"game-killed": "dræbte",
-			"game-finally-killed": "dræbte endeligt",
-			"game-finally-bled-out": "blødte endeligt ud",
-			"game-died-outside": "døde udenfor den sikre zone",
-			"game-the-red-zone": "Den røde zone",
-			"game-waiting-for-players": "Venter på spillere",
+			"game-killed": "drÃ¦bte",
+			"game-finally-killed": "drÃ¦bte endeligt",
+			"game-finally-bled-out": "blÃ¸dte endeligt ud",
+			"game-died-outside": "dÃ¸de udenfor den sikre zone",
+			"game-the-red-zone": "Den rÃ¸de zone",
+			"game-waiting-for-players": "Venter pÃ¥ spillere",
 			"game-spectating": "Tilskuer",
-			"game-red-zone-advances": "Rød zone rykker om",
-			"game-red-zone-advancing": "Rød zone rykker, kom til den sikre zone",
+			"game-red-zone-advances": "RÃ¸d zone rykker om",
+			"game-red-zone-advancing": "RÃ¸d zone rykker, kom til den sikre zone",
 			"game-seconds": "sekunder",
 			"game-minutes": "minutter",
 			"game-minute": "minut",
@@ -21861,21 +20583,21 @@ webpackJsonp([0], {
 			"game-better-item-equipped": "Bedre genstand allerede udstyret!",
 			"game-play-new-game": "Spil Nyt Spil",
 			"game-spectate": "Tilskuer",
-			"game-full-screen": "Fuld Skærm",
+			"game-full-screen": "Fuld SkÃ¦rm",
 			"game-sound": "Lyd",
 			"game-quit-game": "Forlad Spil",
 			"game-return-to-game": "Tilbage Til Spillet",
 			"game-hide-match-stats": "Gem Kamp Statistikken",
 			"game-view-match-stats": "Vis Kamp Statistikken",
 			"game-previous-teammate": "Forrige Holdkammerat",
-			"game-next-teammate": "Næste Holdkammerat",
+			"game-next-teammate": "NÃ¦ste Holdkammerat",
 			"game-spectate-previous": "Forrige",
-			"game-spectate-next": "Næste",
+			"game-spectate-next": "NÃ¦ste",
 			"game-leave-game": "Forlad Spil",
 			"game-your-results": "Dine Resultater",
 			"game-chicken": "Vinder Vinder Kyllinge Middag!",
 			"game-won-the-game": "Vandt Spillet.",
-			"game-team-eliminated": "Din Holdkammerat blev dræbt.",
+			"game-team-eliminated": "Din Holdkammerat blev drÃ¦bt.",
 			"game-rank": "Rang",
 			"game-team-rank": "Hold Rang",
 			"game-team-kills": "Hold Drab",
@@ -21887,23 +20609,23 @@ webpackJsonp([0], {
 			"game-backpack00": "Pose",
 			"game-backpack01": "Lille Taske",
 			"game-backpack02": "Normal Taske",
-			"game-backpack03": "Militær rygsæk",
+			"game-backpack03": "MilitÃ¦r rygsÃ¦k",
 			"game-bandage": "Bandage",
 			"game-bandage-tooltip": "Venstre-Klik for at gendanne 15 Liv.",
 			"game-healing-tooltip": "Kan ikke gendanne mere end 75 Liv.",
-			"game-healthkit": "Førstehjælpskasse",
+			"game-healthkit": "FÃ¸rstehjÃ¦lpskasse",
 			"game-healthkit-tooltip": "Venstre-Klik for at gendanne 100 Liv.",
 			"game-soda": "Sodavand",
-			"game-soda-tooltip": "Venstre-Klik for at løfte adrenalinen med 25.",
+			"game-soda-tooltip": "Venstre-Klik for at lÃ¸fte adrenalinen med 25.",
 			"game-adrenaline-tooltip": "Adrenalinen gendanner liv over tid.",
 			"game-painkiller": "Piller",
-			"game-painkiller-tooltip": "Venstre-klik for at løfte adrenalinen med 50.",
+			"game-painkiller-tooltip": "Venstre-klik for at lÃ¸fte adrenalinen med 50.",
 			"game-9mm": "9mm",
 			"game-9mm-tooltip": "Ammo for M9, Glock, MP5, MAC-10, UMP9 og Vector.",
 			"game-12gauge": "12 gauge",
 			"game-12gauge-tooltip": "Ammo for M870, Saiga-12 og MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Ammo for AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 og DP-28.",
+			"game-762mm-tooltip": "Ammo for AK-47, SCAR-H, M39, Mosin Nagant, OT-38 og DP-28.",
 			"game-556mm": "5.56mm",
 			"game-556mm-tooltip": "Ammo for FAMAS, HK416, Mk 12 og M249.",
 			"game-chest01": "Level 1 Vest",
@@ -21920,19 +20642,19 @@ webpackJsonp([0], {
 			"game-level-1": "Lvl. 1",
 			"game-level-2": "Lvl. 2",
 			"game-level-3": "Lvl. 3",
-			"game-outfitBase": "Basis Tøj",
+			"game-outfitBase": "Basis TÃ¸j",
 			"game-outfitRoyalFortune": "Royal Rigdom",
-			"game-outfitKeyLime": "Nøgle Lime",
+			"game-outfitKeyLime": "NÃ¸gle Lime",
 			"game-outfitCobaltShell": "Kobalt Skal",
 			"game-outfitCarbonFiber": "Kulstof Fiber",
 			"game-outfitDarkGloves": "Den Professionelle",
 			"game-outfitGhillie": "Ghillie Dragt",
 			"game-outfitCamo": "Skov Kamo",
-			"game-outfitRed": "Mål Øvelse",
-			"game-outfitWhite": "Arktisk Hævner",
+			"game-outfitRed": "MÃ¥l Ã˜velse",
+			"game-outfitWhite": "Arktisk HÃ¦vner",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -21943,7 +20665,7 @@ webpackJsonp([0], {
 			"game-m9": "M9",
 			"game-glock": "Glock 18C",
 			"game-ot38": "OT-38",
-			"game-barrel_01": "En Tønde",
+			"game-barrel_01": "En TÃ¸nde",
 			"game-silo_01": "En Silo"
 		};
 		e.exports = i
@@ -21956,97 +20678,97 @@ webpackJsonp([0], {
 				locale: "zh-tw"
 			},
 			"word-order": "svo",
-			"index-slogan": "2d大逃殺",
-			"index-region": "地區",
-			"index-north-america": "北美",
-			"index-europe": "歐洲",
-			"index-asia": "亞洲",
-			"index-players": "玩家",
-			"index-play-solo": "單人",
-			"index-play-duo": "雙人",
-			"index-play-squad": "4人",
-			"index-create-team": "創立隊伍",
-			"index-join-team": "加入隊伍",
-			"index-how-to-play": "如何玩",
-			"index-leave-team": "離開聯隊",
-			"index-joining-team": "加入隊伍中",
-			"index-creating-team": "建立隊伍中",
-			"index-invite-link": "邀請的連結",
-			"index-solo": "單人",
-			"index-duo": "兩人",
-			"index-squad": "聯隊",
-			"index-auto-fill": "自動找玩家加入",
-			"index-no-fill": "不加入隨機玩家",
-			"index-waiting-for-leader": "等待隊長開始遊戲",
-			"index-play": "開始",
-			"index-featured-youtuber": "推薦的YouTube客",
-			"index-settings": "設定",
-			"index-high-resolution": "高解像度(提升畫面質素)",
-			"index-screen-shake": "營幕震動",
-			"index-team-is-full": "團隊已滿!",
-			"index-failed-joining-team": "加入隊伍失敗。",
-			"index-failed-creating-team": "創立隊伍失敗。",
-			"index-failed-finding-game": "尋找隊伍失敗。",
-			"index-failed-joining-game": "加入遊戲失敗。",
-			"index-lost-connection": "和隊伍失去連接。",
-			"index-host-closed": "伺服器關了連接。",
-			"index-invalid-protocol": "舊版客戶端,請按F5更新.",
-			"index-view-more": "查看更多",
-			"index-back-to-main": "回到主畫面",
-			"index-most-kills": "殺敵最多",
-			"index-total-kills": "總殺數",
-			"index-total-wins": "總贏數",
-			"index-top-5-percent": "前5%",
-			"index-kill-death-ratio": "殺敵和生還比例",
+			"index-slogan": "2då¤§é€ƒæ®º",
+			"index-region": "åœ°å?€",
+			"index-north-america": "åŒ—ç¾Ž",
+			"index-europe": "æ­?æ´²",
+			"index-asia": "äºžæ´²",
+			"index-players": "çŽ©å®¶",
+			"index-play-solo": "å–®äºº",
+			"index-play-duo": "é›™äºº",
+			"index-play-squad": "4äºº",
+			"index-create-team": "å‰µç«‹éšŠä¼?",
+			"index-join-team": "åŠ å…¥éšŠä¼?",
+			"index-how-to-play": "å¦‚ä½•çŽ©",
+			"index-leave-team": "é›¢é–‹è?¯éšŠ",
+			"index-joining-team": "åŠ å…¥éšŠä¼?ä¸­",
+			"index-creating-team": "å»ºç«‹éšŠä¼?ä¸­",
+			"index-invite-link": "é‚€è«‹çš„é€£çµ?",
+			"index-solo": "å–®äºº",
+			"index-duo": "å…©äºº",
+			"index-squad": "è?¯éšŠ",
+			"index-auto-fill": "è‡ªå‹•æ‰¾çŽ©å®¶åŠ å…¥",
+			"index-no-fill": "ä¸?åŠ å…¥éš¨æ©ŸçŽ©å®¶",
+			"index-waiting-for-leader": "ç­‰å¾…éšŠé•·é–‹å§‹é?Šæˆ²",
+			"index-play": "é–‹å§‹",
+			"index-featured-youtuber": "æŽ¨è–¦çš„YouTubeå®¢",
+			"index-settings": "è¨­å®š",
+			"index-high-resolution": "é«˜è§£åƒ?åº¦(æ??å?‡ç•«é?¢è³ªç´ )",
+			"index-screen-shake": "ç‡Ÿå¹•éœ‡å‹•",
+			"index-team-is-full": "åœ˜éšŠå·²æ»¿!",
+			"index-failed-joining-team": "åŠ å…¥éšŠä¼?å¤±æ•—ã€‚",
+			"index-failed-creating-team": "å‰µç«‹éšŠä¼?å¤±æ•—ã€‚",
+			"index-failed-finding-game": "å°‹æ‰¾éšŠä¼?å¤±æ•—ã€‚",
+			"index-failed-joining-game": "åŠ å…¥é?Šæˆ²å¤±æ•—ã€‚",
+			"index-lost-connection": "å’ŒéšŠä¼?å¤±åŽ»é€£æŽ¥ã€‚",
+			"index-host-closed": "ä¼ºæœ?å™¨é—œäº†é€£æŽ¥ã€‚",
+			"index-invalid-protocol": "èˆŠç‰ˆå®¢æˆ¶ç«¯,è«‹æŒ‰F5æ›´æ–°.",
+			"index-view-more": "æŸ¥çœ‹æ›´å¤š",
+			"index-back-to-main": "å›žåˆ°ä¸»ç•«é?¢",
+			"index-most-kills": "æ®ºæ•µæœ€å¤š",
+			"index-total-kills": "ç¸½æ®ºæ•¸",
+			"index-total-wins": "ç¸½è´?æ•¸",
+			"index-top-5-percent": "å‰?5%",
+			"index-kill-death-ratio": "æ®ºæ•µå’Œç?Ÿé‚„æ¯?ä¾‹",
 			"index-for": "For",
-			"index-today": "今日",
-			"index-this-week": "這個禮拜",
-			"index-all-time": "所有時間",
-			"index-top-100": "前一百",
-			"index-rank": "排名",
-			"index-player": "玩家",
-			"index-total-games": "總遊戲數",
-			"index-controls": "控制",
-			"index-movement": "運動",
-			"index-movement-ctrl": "W, A, S, D鍵",
-			"index-aim": "瞄準",
-			"index-aim-ctrl": "鼠標",
-			"index-punch": "出拳",
-			"index-shoot": "射擊",
-			"index-shoot-ctrl": "滑鼠左鍵",
-			"index-change-weapons": "更換武器",
-			"index-change-weapons-ctrl": "1 到 4或滾輪",
-			"index-stow-weapons": "收起武器(拳擊模式)",
-			"index-stow-weapons-ctrl": "3或E鍵",
-			"index-swap-weapons": "換到之前的武器",
-			"index-swap-weapons-ctrl": "Q掣",
-			"index-reload": "裝子彈",
-			"index-reload-ctrl": "R掣",
-			"index-scope-zoom": "變焦範圍",
-			"index-scope-zoom-ctrl": "左鍵單擊放大",
-			"index-pickup": "拾起",
-			"index-loot": "戰利品",
-			"index-revive": "恢復",
-			"index-pickup-ctrl": "F鍵",
-			"index-use-medical": "使用醫療物品",
-			"index-use-medical-ctrl": "左鍵單擊物品或7 到 0",
-			"index-drop-item": "丟棄物品",
-			"index-drop-item-ctrl": "右鍵單擊物品",
-			"index-cancel-action": "取消操作",
-			"index-cancel-action-ctrl": "X鍵",
-			"index-view-map": "查看地圖",
-			"index-view-map-ctrl": "M或G鍵",
-			"index-toggle-minimap": "切換小地圖",
-			"index-toggle-minimap-ctrl": "V鍵",
-			"game-alive": "玩家",
-			"game-reloading": "裝彈",
-			"game-using": "使用",
-			"game-reviving": "恢復",
-			"game-revive-teammate": "復活隊友",
-			"game-equip": "裝備",
-			"game-cancel": "撤銷",
-			"game-open-door": "開門",
-			"game-close-door": "關門",
+			"index-today": "ä»Šæ—¥",
+			"index-this-week": "é€™å€‹ç¦®æ‹œ",
+			"index-all-time": "æ‰€æœ‰æ™‚é–“",
+			"index-top-100": "å‰?ä¸€ç™¾",
+			"index-rank": "æŽ’å??",
+			"index-player": "çŽ©å®¶",
+			"index-total-games": "ç¸½é?Šæˆ²æ•¸",
+			"index-controls": "æŽ§åˆ¶",
+			"index-movement": "é?‹å‹•",
+			"index-movement-ctrl": "W, A, S, Dé?µ",
+			"index-aim": "çž„æº–",
+			"index-aim-ctrl": "é¼ æ¨™",
+			"index-punch": "å‡ºæ‹³",
+			"index-shoot": "å°„æ“Š",
+			"index-shoot-ctrl": "æ»‘é¼ å·¦é?µ",
+			"index-change-weapons": "æ›´æ?›æ­¦å™¨",
+			"index-change-weapons-ctrl": "1 åˆ° 4æˆ–æ»¾è¼ª",
+			"index-stow-weapons": "æ?¶èµ·æ­¦å™¨(æ‹³æ“Šæ¨¡å¼?)",
+			"index-stow-weapons-ctrl": "3æˆ–Eé?µ",
+			"index-swap-weapons": "æ?›åˆ°ä¹‹å‰?çš„æ­¦å™¨",
+			"index-swap-weapons-ctrl": "QæŽ£",
+			"index-reload": "è£?å­?å½ˆ",
+			"index-reload-ctrl": "RæŽ£",
+			"index-scope-zoom": "è®Šç„¦ç¯„åœ?",
+			"index-scope-zoom-ctrl": "å·¦é?µå–®æ“Šæ?¾å¤§",
+			"index-pickup": "æ‹¾èµ·",
+			"index-loot": "æˆ°åˆ©å“?",
+			"index-revive": "æ?¢å¾©",
+			"index-pickup-ctrl": "Fé?µ",
+			"index-use-medical": "ä½¿ç?¨é†«ç™‚ç‰©å“?",
+			"index-use-medical-ctrl": "å·¦é?µå–®æ“Šç‰©å“?æˆ–7 åˆ° 0",
+			"index-drop-item": "ä¸Ÿæ£„ç‰©å“?",
+			"index-drop-item-ctrl": "å?³é?µå–®æ“Šç‰©å“?",
+			"index-cancel-action": "å?–æ¶ˆæ“?ä½œ",
+			"index-cancel-action-ctrl": "Xé?µ",
+			"index-view-map": "æŸ¥çœ‹åœ°åœ–",
+			"index-view-map-ctrl": "Mæˆ–Gé?µ",
+			"index-toggle-minimap": "åˆ‡æ?›å°?åœ°åœ–",
+			"index-toggle-minimap-ctrl": "Vé?µ",
+			"game-alive": "çŽ©å®¶",
+			"game-reloading": "è£?å½ˆ",
+			"game-using": "ä½¿ç?¨",
+			"game-reviving": "æ?¢å¾©",
+			"game-revive-teammate": "å¾©æ´»éšŠå?‹",
+			"game-equip": "è£?å‚™",
+			"game-cancel": "æ’¤éŠ·",
+			"game-open-door": "é–‹é–€",
+			"game-close-door": "é—œé–€",
 			"game-You": "You",
 			"game-you": "you",
 			"game-themselves": "themselves",
@@ -22060,80 +20782,80 @@ webpackJsonp([0], {
 			"game-finally-bled-out": "finally bled out",
 			"game-died-outside": "died outside the safe zone",
 			"game-the-red-zone": "The red zone",
-			"game-waiting-for-players": "等待玩家",
-			"game-spectating": "觀看",
-			"game-red-zone-advances": "紅色區域擴大於",
-			"game-red-zone-advancing": "紅色區域擴大中，快到安全區去!",
-			"game-seconds": "秒",
-			"game-minutes": "分",
-			"game-minute": "分",
-			"game-m": "分",
-			"game-s": "秒",
-			"game-not-enough-space": "空間不足!",
-			"game-item-already-owned": "物品已擁有!",
-			"game-item-already-equipped": "物品已裝備!",
-			"game-better-item-equipped": "已裝備更好物品!",
-			"game-play-new-game": "開始新遊戲",
-			"game-spectate": "觀看",
-			"game-full-screen": "全屏",
-			"game-sound": "聲音",
-			"game-quit-game": "離開遊戲",
-			"game-return-to-game": "返回游戲",
-			"game-hide-match-stats": "隱藏比賽數據",
-			"game-view-match-stats": "查看比賽數據",
-			"game-previous-teammate": "上個隊友",
-			"game-next-teammate": "下個隊友",
+			"game-waiting-for-players": "ç­‰å¾…çŽ©å®¶",
+			"game-spectating": "è§€çœ‹",
+			"game-red-zone-advances": "ç´…è‰²å?€åŸŸæ“´å¤§æ–¼",
+			"game-red-zone-advancing": "ç´…è‰²å?€åŸŸæ“´å¤§ä¸­ï¼Œå¿«åˆ°å®‰å…¨å?€åŽ»!",
+			"game-seconds": "ç§’",
+			"game-minutes": "åˆ†",
+			"game-minute": "åˆ†",
+			"game-m": "åˆ†",
+			"game-s": "ç§’",
+			"game-not-enough-space": "ç©ºé–“ä¸?è¶³!",
+			"game-item-already-owned": "ç‰©å“?å·²æ“?æœ‰!",
+			"game-item-already-equipped": "ç‰©å“?å·²è£?å‚™!",
+			"game-better-item-equipped": "å·²è£?å‚™æ›´å¥½ç‰©å“?!",
+			"game-play-new-game": "é–‹å§‹æ–°é?Šæˆ²",
+			"game-spectate": "è§€çœ‹",
+			"game-full-screen": "å…¨å±?",
+			"game-sound": "è?²éŸ³",
+			"game-quit-game": "é›¢é–‹é?Šæˆ²",
+			"game-return-to-game": "è¿?å›žæ¸¸æˆ²",
+			"game-hide-match-stats": "éš±è—?æ¯?è³½æ•¸æ“š",
+			"game-view-match-stats": "æŸ¥çœ‹æ¯?è³½æ•¸æ“š",
+			"game-previous-teammate": "ä¸Šå€‹éšŠå?‹",
+			"game-next-teammate": "ä¸‹å€‹éšŠå?‹",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
-			"game-leave-game": "離開遊戲",
-			"game-your-results": "你的戰績",
-			"game-chicken": "大吉大利，今晚吃雞!",
-			"game-won-the-game": "贏了遊戲。",
-			"game-team-eliminated": "你的隊伍被擊敗了。",
-			"game-rank": "排名",
-			"game-team-rank": "聯隊排名",
-			"game-team-kills": "聯隊殺",
-			"game-kill": "殺",
-			"game-kills": "殺",
-			"game-damage-dealt": "傷害輸出",
-			"game-damage-taken": "受到傷害",
-			"game-survived": "生存",
-			"game-backpack00": "袋子",
-			"game-backpack01": "小包",
-			"game-backpack02": "常規包",
-			"game-backpack03": "軍用包",
-			"game-bandage": "繃帶",
-			"game-bandage-tooltip": "左鍵點擊恢復15生命。",
-			"game-healing-tooltip": "無法治療75點以上的生命。",
-			"game-healthkit": "醫藥箱",
-			"game-healthkit-tooltip": "左鍵點擊恢復100生命。",
-			"game-soda": "汽水",
-			"game-soda-tooltip": "左鍵點擊可以增加25的腎上腺素。",
-			"game-adrenaline-tooltip": "腎上腺素會隨著時間的推移而恢復血量。",
-			"game-painkiller": "藥片",
-			"game-painkiller-tooltip": "左鍵點擊可使腎上腺素增加50。",
-			"game-9mm": "9毫米",
-			"game-9mm-tooltip": "M9, Glock, MP5, Vector, MAC-10和UMP9彈藥。",
-			"game-12gauge": "12計",
-			"game-12gauge-tooltip": "M870, Saiga-12 和 MP220彈藥。",
-			"game-762mm": "7.62毫米",
-			"game-762mm-tooltip": "AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 和 DP-28彈藥。",
+			"game-leave-game": "é›¢é–‹é?Šæˆ²",
+			"game-your-results": "ä½ çš„æˆ°ç¸¾",
+			"game-chicken": "å¤§å?‰å¤§åˆ©ï¼Œä»Šæ™šå?ƒé›ž!",
+			"game-won-the-game": "è´?äº†é?Šæˆ²ã€‚",
+			"game-team-eliminated": "ä½ çš„éšŠä¼?è¢«æ“Šæ•—äº†ã€‚",
+			"game-rank": "æŽ’å??",
+			"game-team-rank": "è?¯éšŠæŽ’å??",
+			"game-team-kills": "è?¯éšŠæ®º",
+			"game-kill": "æ®º",
+			"game-kills": "æ®º",
+			"game-damage-dealt": "å‚·å®³è¼¸å‡º",
+			"game-damage-taken": "å?—åˆ°å‚·å®³",
+			"game-survived": "ç?Ÿå­˜",
+			"game-backpack00": "è¢‹å­?",
+			"game-backpack01": "å°?åŒ…",
+			"game-backpack02": "å¸¸è¦?åŒ…",
+			"game-backpack03": "è»?ç?¨åŒ…",
+			"game-bandage": "ç¹ƒå¸¶",
+			"game-bandage-tooltip": "å·¦é?µé»žæ“Šæ?¢å¾©15ç?Ÿå‘½ã€‚",
+			"game-healing-tooltip": "ç„¡æ³•æ²»ç™‚75é»žä»¥ä¸Šçš„ç?Ÿå‘½ã€‚",
+			"game-healthkit": "é†«è—¥ç®±",
+			"game-healthkit-tooltip": "å·¦é?µé»žæ“Šæ?¢å¾©100ç?Ÿå‘½ã€‚",
+			"game-soda": "æ±½æ°´",
+			"game-soda-tooltip": "å·¦é?µé»žæ“Šå?¯ä»¥å¢žåŠ 25çš„è…Žä¸Šè…ºç´ ã€‚",
+			"game-adrenaline-tooltip": "è…Žä¸Šè…ºç´ æœƒéš¨è‘—æ™‚é–“çš„æŽ¨ç§»è€Œæ?¢å¾©è¡€é‡?ã€‚",
+			"game-painkiller": "è—¥ç‰‡",
+			"game-painkiller-tooltip": "å·¦é?µé»žæ“Šå?¯ä½¿è…Žä¸Šè…ºç´ å¢žåŠ 50ã€‚",
+			"game-9mm": "9æ¯«ç±³",
+			"game-9mm-tooltip": "M9, Glock, MP5, Vector, MAC-10å’ŒUMP9å½ˆè—¥ã€‚",
+			"game-12gauge": "12è¨ˆ",
+			"game-12gauge-tooltip": "M870, Saiga-12 å’Œ MP220å½ˆè—¥ã€‚",
+			"game-762mm": "7.62æ¯«ç±³",
+			"game-762mm-tooltip": "AK-47, SCAR-H, M39, Mosin Nagant, OT-38 å’Œ DP-28å½ˆè—¥ã€‚",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "FAMAS, HK416, Mk 12 和 M249彈藥。",
-			"game-chest01": "一級防彈衣",
-			"game-chest02": "二級防彈衣",
-			"game-chest03": "三級防彈衣",
-			"game-helmet01": "一級頭盔",
-			"game-helmet02": "二級頭盔",
-			"game-helmet03": "三級頭盔",
-			"game-1xscope": "1x 倍鏡",
-			"game-2xscope": "2x 倍鏡",
-			"game-4xscope": "4x 倍鏡",
-			"game-8xscope": "8x 倍鏡",
-			"game-15xscope": "15x 倍鏡",
-			"game-level-1": "一級",
-			"game-level-2": "二級",
-			"game-level-3": "三級",
+			"game-556mm-tooltip": "FAMAS, HK416, Mk 12 å’Œ M249å½ˆè—¥ã€‚",
+			"game-chest01": "ä¸€ç´šé˜²å½ˆè¡£",
+			"game-chest02": "äºŒç´šé˜²å½ˆè¡£",
+			"game-chest03": "ä¸‰ç´šé˜²å½ˆè¡£",
+			"game-helmet01": "ä¸€ç´šé ­ç›?",
+			"game-helmet02": "äºŒç´šé ­ç›?",
+			"game-helmet03": "ä¸‰ç´šé ­ç›?",
+			"game-1xscope": "1x å€?é?¡",
+			"game-2xscope": "2x å€?é?¡",
+			"game-4xscope": "4x å€?é?¡",
+			"game-8xscope": "8x å€?é?¡",
+			"game-15xscope": "15x å€?é?¡",
+			"game-level-1": "ä¸€ç´š",
+			"game-level-2": "äºŒç´š",
+			"game-level-3": "ä¸‰ç´š",
 			"game-outfitBase": "Basic Outfit",
 			"game-outfitRoyalFortune": "Royal Fortune",
 			"game-outfitKeyLime": "Key Lime",
@@ -22146,7 +20868,7 @@ webpackJsonp([0], {
 			"game-outfitWhite": "Arctic Avenger",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -22157,8 +20879,8 @@ webpackJsonp([0], {
 			"game-m9": "M9",
 			"game-glock": "Glock 18C",
 			"game-ot38": "OT-38",
-			"game-frag": "碎片手榴彈",
-			"game-smoke": "煙霧彈",
+			"game-frag": "ç¢Žç‰‡æ‰‹æ¦´å½ˆ",
+			"game-smoke": "ç…™éœ§å½ˆ",
 			"game-barrel_01": "a barrel",
 			"game-silo_01": "a silo"
 		};
@@ -22451,19 +21173,6 @@ webpackJsonp([0], {
 					},
 					mosin_pull_01: {
 						name: "audio/guns/mosin_pull_01.mp3",
-						volume: 1
-					},
-					sv98_01: {
-						name: "audio/guns/sv98_01.mp3",
-						volume: 1,
-						maxInstances: 5
-					},
-					sv98_reload_01: {
-						name: "audio/guns/sv98_reload_01.mp3",
-						volume: 1
-					},
-					sv98_cycle_01: {
-						name: "audio/guns/sv98_cycle_01.mp3",
 						volume: 1
 					},
 					empty_fire_01: {
@@ -23200,32 +21909,32 @@ webpackJsonp([0], {
 			T = a("p/CU"),
 			P = T.Gas,
 			C = a("S40U"),
-			I = a("pI87"),
-			z = a("1JzZ"),
-			A = a("dT1u"),
-			D = a("EZ6M"),
+			z = a("pI87"),
+			I = a("1JzZ"),
+			D = a("dT1u"),
+			A = a("EZ6M"),
 			O = a("/rj8"),
 			L = a("pQi2"),
-			E = a("vIPv"),
-			B = a("xgte"),
-			F = B.Renderer,
+			B = a("vIPv"),
+			E = a("xgte"),
+			F = E.Renderer,
 			R = a("bkPR"),
 			j = a("CVWn"),
 			N = (a("zgif"), a("4glI")),
 			q = a("MWDq"),
-			U = a("09pV");
+			G = a("09pV");
 		o.prototype = {
 			tryJoinGame: function(e, t, a) {
 				var i = this;
 				if (!(this.connecting || this.connected || this.initialized)) {
-					this.ws && (this.ws.onerror = function() {}, this.ws.onopen = function() {}, this.ws.onmessage = function() {}, this.ws.onclose = function() {}, this.ws.close(), this.ws = null), this.connecting = !0, this.connected = !1;
+					y.logDebug() && console.log("Joining game", t, e), this.ws && (this.ws.onerror = function() {}, this.ws.onopen = function() {}, this.ws.onmessage = function() {}, this.ws.onclose = function() {}, this.ws.close(), this.ws = null), this.connecting = !0, this.connected = !1;
 					try {
 						this.ws = new WebSocket(t), this.ws.binaryType = "arraybuffer", this.ws.onerror = function(e) {
 							i.ws && i.ws.close()
 						}, this.ws.onopen = function() {
 							i.connecting = !1, i.connected = !0, i.init();
 							var t = new u.JoinMsg;
-							t.protocol = r.protocolVersion, t.privData = e, t.name = i.name, t.emotes = i.emoteLoadout, t.useTouch = f.touch, t.bot = !1, i.sendMessage(u.Msg.Join, t)
+							t.protocol = r.protocolVersion, t.teamUuid = e.teamUuid, t.teamMode = e.teamMode, t.playerCount = e.playerCount, t.autoFill = e.autoFill, t.name = e.name, t.bot = !1, t.emotes = i.emoteLoadout, t.useTouch = f.touch, i.sendMessage(u.Msg.Join, t)
 						}, this.ws.onmessage = function(e) {
 							for (var t = new u.MsgStream(e.data);;) {
 								var a = t.deserializeMsgType();
@@ -23248,16 +21957,16 @@ webpackJsonp([0], {
 			},
 			init: function() {
 				var e, t = this.pixi.renderer.type == n.RENDERER_TYPE.CANVAS;
-				this.input = new C.InputHandler(this.pixi.view), this.touch = new N.Touch(this.input, this.config), this.camera = new x, this.renderer = new F(t), this.particleBarn = new D.ParticleBarn(this.renderer), this.map = new z, this.playerBarn = new L.PlayerBarn, this.bulletBarn = new b.BulletBarn, this.projectileBarn = new E.ProjectileBarn, this.explosionBarn = new S.ExplosionBarn, this.smokeBarn = new j.SmokeBarn, this.deadBodyBarn = new v.DeadBodyBarn, this.decalBarn = new _.DecalBarn, this.lootBarn = new I.LootBarn, this.gas = new P(t), this.pieTimer = new O.PieTimer, this.uiManager = new q.UiManager(this, this.audioManager, this.pieTimer, this.particleBarn, this.localization, t, this.touch), this.ui2Manager = new U.Ui2Manager(this.localization), this.emoteManager = new w.EmoteManager(this, this.audioManager, this.uiManager, this.playerBarn, this.camera, this.map), this.shotBarn = new R.ShotBarn(this.particleBarn, this.audioManager, this.uiManager);
+				this.input = new C.InputHandler(this.pixi.view), this.touch = new N.Touch(this.input, this.config), this.camera = new x, this.renderer = new F(t), this.particleBarn = new A.ParticleBarn(this.renderer), this.map = new I, this.playerBarn = new L.PlayerBarn, this.bulletBarn = new b.BulletBarn, this.projectileBarn = new B.ProjectileBarn, this.explosionBarn = new S.ExplosionBarn, this.smokeBarn = new j.SmokeBarn, this.deadBodyBarn = new v.DeadBodyBarn, this.decalBarn = new _.DecalBarn, this.lootBarn = new z.LootBarn, this.gas = new P(t), this.pieTimer = new O.PieTimer, this.uiManager = new q.UiManager(this, this.audioManager, this.pieTimer, this.particleBarn, this.localization, t, this.touch), this.ui2Manager = new G.Ui2Manager(this.localization), this.emoteManager = new w.EmoteManager(this, this.audioManager, this.uiManager, this.playerBarn, this.camera, this.map), this.shotBarn = new R.ShotBarn(this.particleBarn, this.audioManager, this.uiManager);
 				var a = (e = {}, i(e, s.Type.Player, this.playerBarn.playerPool), i(e, s.Type.Obstacle, this.map.obstaclePool), i(e, s.Type.Loot, this.lootBarn.lootPool), i(e, s.Type.LootSpawner, this.map.lootSpawnerPool), i(e, s.Type.DeadBody, this.deadBodyBarn.deadBodyPool), i(e, s.Type.Building, this.map.buildingPool), i(e, s.Type.Structure, this.map.structurePool), i(e, s.Type.Decal, this.decalBarn.decalPool), i(e, s.Type.Projectile, this.projectileBarn.projectilePool), i(e, s.Type.Smoke, this.smokeBarn.smokePool), e);
-				this.objectCreator = new A.Creator;
+				this.objectCreator = new D.Creator;
 				for (var o in a) a.hasOwnProperty(o) && this.objectCreator.registerType(o, a[o]);
 				this.debugDisplay = new n.Graphics;
 				for (var r = [this.map.display.water, this.map.display.background, this.renderer.layers[0], this.renderer.ground, this.renderer.layers[1], this.renderer.layers[2], this.renderer.layers[3], this.debugDisplay, this.gas.gasRenderer.display, this.touch.container, this.emoteManager.container, this.uiManager.container, this.emoteManager.indContainer, this.pieTimer.container], l = 0; l < r.length; l++) {
 					var m = r[l];
 					m && (m.interactiveChildren = !1, this.pixi.stage.addChild(m))
 				}
-				this.disconnectMsg = "", this.playing = !1, this.gameOver = !1, this.spectating = !1, this.moveMsgTimeout = 0, this.prevMoveMsg = new u.MoveMsg, this.playingTicker = 0, this.localId = 0, this.activeId = 0, this.activePlayer = null, this.targetZoom = 1, this.debugZoom = 1, this.useDebugZoom = !1, this.seq = 0, this.seqInFlight = !1, this.seqSendTime = 0, this.pings = [], this.debugPingTime = 0, this.camera.setShakeEnabled(this.config.get("screenShake")), this.name = this.config.get("playerName");
+				this.disconnectMsg = "", this.playing = !1, this.gameOver = !1, this.spectating = !1, this.moveMsgTimeout = 0, this.prevMoveMsg = new u.MoveMsg, this.playingTicker = 0, this.localId = 0, this.activeId = 0, this.activePlayer = null, this.targetZoom = 1, this.debugZoom = 1, this.useDebugZoom = !1, this.packet = 0, this.seq = 0, this.seqInFlight = !1, this.seqSendTime = 0, this.pings = [], this.debugPingTime = 0, this.camera.setShakeEnabled(this.config.get("screenShake"));
 				var d = {
 					emoteTop: c.Top,
 					emoteRight: c.Right,
@@ -23271,20 +21980,18 @@ webpackJsonp([0], {
 					var f = h[g],
 						y = parseInt(this.config.get(f)),
 						k = p.clamp(y, 1, 255);
-					this.emoteLoadout[d[f]] = k
+					this.emoteLoadout[d[f]] = k, M.storeGeneric("loadouts", "emoteEquipped/" + k)
 				}
 				this.emoteManager.updateEmoteWheel(this.emoteLoadout), void 0 == this.ambientSounds.wavesInst && (this.ambientSounds.wavesInst = this.audioManager.playSound("ambient_waves_01", {
 					channel: "ambient",
 					startSilent: !0,
 					loop: !0,
 					forceStart: !0
-				})), document.hasFocus() || this.audioManager.playSound("notification_start_01", {
-					channel: "ui"
-				}), M.storeGeneric("language", this.config.get("language")), this.resize(), this.initialized = !0
+				})), this.resize(), this.initialized = !0
 			},
 			free: function() {
 				if (this.ws && (this.ws.onmessage = function() {}, this.ws.close(), this.ws = null), this.connecting = !1, this.connected = !1, this.initialized)
-					for (this.initialized = !1, this.emoteManager.free(), this.ui2Manager.free(), this.uiManager.free(), this.pieTimer.destroy(), this.map.free(), this.input.free(); this.pixi.stage.children.length > 0;) {
+					for (this.initialized = !1, this.input.free(), this.map.free(), this.uiManager.free(), this.ui2Manager.free(), this.emoteManager.free(), this.pieTimer.destroy(); this.pixi.stage.children.length > 0;) {
 						var e = this.pixi.stage.children[0];
 						this.pixi.stage.removeChild(e), e.destroy({
 							children: !0,
@@ -23331,9 +22038,9 @@ webpackJsonp([0], {
 					} else b.toMouseDir = h.copy(y), b.toMouseLen = Math.min(g, u.kMouseMaxLen);
 					b.shootStart = x.mousePressed() || this.touch.shotDetected, b.shootHold = x.mouseDown() || this.touch.shotDetected, b.reload = x.keyPressed(C.Key.R) || v.reloadTouched, b.interaction = x.keyPressed(C.Key.F) || v.interactionTouched, b.cancelAction = x.keyPressed(C.Key.X) || v.interactionTouched, b.equipPrimary = x.keyPressed(C.Key.One) || 0 == k.switchWeaponIdx, b.equipSecondary = x.keyPressed(C.Key.Two) || 1 == k.switchWeaponIdx, b.equipThrowable = x.keyPressed(C.Key.Four) || 3 == k.switchWeaponIdx, b.equipMelee = x.keyPressed(C.Key.Three) || x.keyPressed(C.Key.E) || 2 == k.switchWeaponIdx, b.equipLast = x.keyPressed(C.Key.Q), b.scrollDown = x.mouseWheel() > 0, b.scrollUp = x.mouseWheel() < 0, b.portrait = this.camera.screenWidth < this.camera.screenHeight;
 					for (var P = 0; P < k.uiEvents.length; P++) {
-						var I = k.uiEvents[P];
-						if ("use" == I.action)
-							if ("weapon" == I.type) switch (I.data) {
+						var z = k.uiEvents[P];
+						if ("use" == z.action)
+							if ("weapon" == z.type) switch (z.data) {
 								case 0:
 									b.equipPrimary = !0;
 									break;
@@ -23345,33 +22052,33 @@ webpackJsonp([0], {
 									break;
 								case 3:
 									b.equipThrowable = !0
-							} else "scope" == I.type ? b.useScope = I.data : b.useItem = I.data
+							} else "scope" == z.type ? b.useScope = z.data : b.useItem = z.data
 					}
 					"" === b.useItem && (b.useItem = x.keyPressed(C.Key.Seven) ? "bandage" : x.keyPressed(C.Key.Eight) ? "healthkit" : x.keyPressed(C.Key.Nine) ? "soda" : x.keyPressed(C.Key.Zero) ? "painkiller" : "");
-					for (var z = !1, A = 0; A < k.uiEvents.length; A++) {
-						var D = k.uiEvents[A];
-						if ("drop" == D.action) {
+					for (var I = !1, D = 0; D < k.uiEvents.length; D++) {
+						var A = k.uiEvents[D];
+						if ("drop" == A.action) {
 							var O = new u.DropItemMsg;
-							if ("weapon" == D.type) {
+							if ("weapon" == A.type) {
 								var L = this.activePlayer.localData.weapons;
-								O.item = L[D.data].name, O.weapIdx = D.data
+								O.item = L[A.data].name, O.weapIdx = A.data
 							} else {
-								var E = "";
-								E = "helmet" == D.data ? this.activePlayer.netData.helmet : "chest" == D.data ? this.activePlayer.netData.chest : D.data, O.item = E
+								var B = "";
+								B = "helmet" == A.data ? this.activePlayer.netData.helmet : "chest" == A.data ? this.activePlayer.netData.chest : A.data, O.item = B
 							}
-							"" != O.item && (this.sendMessage(u.Msg.DropItem, O), z = !0)
+							"" != O.item && (this.sendMessage(u.Msg.DropItem, O), I = !0)
 						}
 					}
-					z && this.audioManager.playSound("loot_drop_01", {
+					I && this.audioManager.playSound("loot_drop_01", {
 						channel: "ui"
 					})
 				}
-				var B = this.uiManager.specNext || this.spectating && this.input.keyPressed(C.Key.Right),
+				var E = this.uiManager.specNext || this.spectating && this.input.keyPressed(C.Key.Right),
 					F = this.uiManager.specPrev || this.spectating && this.input.keyPressed(C.Key.Left);
-				if (this.uiManager.beginSpectating || B || F) {
+				if (this.uiManager.beginSpectating || E || F) {
 					this.gameOver = !1;
 					var R = new u.SpectateMsg;
-					R.specNext = B, R.specPrev = F, this.sendMessage(u.Msg.Spectate, R)
+					R.specNext = E, R.specPrev = F, this.sendMessage(u.Msg.Spectate, R)
 				}
 				this.uiManager.beginSpectating = !1, this.uiManager.specNext = !1, this.uiManager.specPrev = !1, this.uiManager.reloadTouched = !1, this.uiManager.interactionTouched = !1;
 				var j = !1;
@@ -23379,14 +22086,14 @@ webpackJsonp([0], {
 					if (b.hasOwnProperty(N)) {
 						if ("toMouseDir" == N) {
 							var q = p.clamp(h.dot(b[N], this.prevMoveMsg[N]), -1, 1),
-								U = p.rad2deg(Math.acos(q));
-							j = U > .4
+								G = p.rad2deg(Math.acos(q));
+							j = G > .4
 						} else "toMouseLen" == N ? j = Math.abs(this.prevMoveMsg[N] - b[N]) > .5 : "shootStart" == N ? j = b[N] || b[N] != this.prevMoveMsg[N] : this.prevMoveMsg[N] != b[N] && (j = !0);
 						if (j) break
 					}
 				this.moveMsgTimeout -= e, (j || this.moveMsgTimeout < 0) && (this.seqInFlight || (this.seq = (this.seq + 1) % 256, this.seqSendTime = (new Date).getTime(), this.seqInFlight = !0, b.seq = this.seq), this.sendMessage(u.Msg.Move, b), this.moveMsgTimeout = 1, this.prevMoveMsg = b), this.ui2Manager.flushInput(), this.map.update(e, this.activePlayer, this.particleBarn, this.audioManager, this.renderer, this.camera), this.lootBarn.update(e, this.activePlayer, this.camera), this.bulletBarn.update(e, this.playerBarn, this.map, this.camera, this.activePlayer, this.renderer, this.particleBarn, this.audioManager), this.projectileBarn.update(e, this.particleBarn, this.audioManager, this.activePlayer, this.map, this.renderer, this.camera), this.explosionBarn.update(e, this.map, this.camera, this.particleBarn, this.audioManager), this.smokeBarn.update(e, this.camera, this.activePlayer, this.map, this.renderer), this.shotBarn.update(e, this.activeId, this.playerBarn, this.particleBarn, this.audioManager), this.particleBarn.update(e, this.camera), this.deadBodyBarn.update(e, this.playerBarn, this.activePlayer, this.map, this.camera, this.renderer), this.decalBarn.update(e, this.map, this.camera), this.pieTimer.update(e, this.activePlayer, this.camera), this.uiManager.update(e, this.activePlayer, this.activeId == this.localId, this.map, this.gas, this.lootBarn, this.playerBarn, this.camera, this.teamMode, this.input), this.ui2Manager.update(e, this.activePlayer, this.spectating, this.playerBarn, this.lootBarn, this.map), this.emoteManager.update(e, this.localId, this.activePlayer, this.input.mousePos, this.teamMode, this.deadBodyBarn, this.renderer), this.touch.updateDisplay(), this.renderer.update(e, this.camera, this.map);
-				for (var G = 0; G < this.emoteManager.newPings.length; G++) {
-					var V = this.emoteManager.newPings[G],
+				for (var U = 0; U < this.emoteManager.newPings.length; U++) {
+					var V = this.emoteManager.newPings[U],
 						H = new u.EmoteMsg;
 					H.type = V.type, H.pos = V.pos, H.useLoadout = !1, H.teamOnly = !0, H.isPing = !0, this.sendMessage(u.Msg.Emote, H)
 				}
@@ -23465,7 +22172,7 @@ webpackJsonp([0], {
 						break;
 					case u.Msg.Update:
 						var l = new u.UpdateMsg;
-						l.deserialize(t, this.objectCreator), this.playing = !0, this.processGameUpdate(l);
+						l.deserialize(t, this.objectCreator, this.packet++, this.teamMode), this.playing = !0, this.processGameUpdate(l);
 						break;
 					case u.Msg.Kill:
 						var c = new u.KillMsg;
@@ -23541,38 +22248,36 @@ webpackJsonp([0], {
 					M.storeGeneric("gameError", "sendMessageException"), this.ws.close()
 				}
 			}
-		}, o.preloadImages = function(e) {
-			var t = ["img/player/circle-base-01.svg", "img/player/player-base-01.svg", "img/player/armor-base-01.svg", "img/player/player-hands-01.svg", "img/player/bullet-trail-02.svg", "img/loot/loot-circle-outer-01.svg", "img/gui/skull.svg", "img/gui/player-map-outer.svg", "img/gui/pad.svg", "img/guns/gun-short-01.svg", "img/guns/gun-med-01.svg", "img/guns/gun-long-01.svg", "img/guns/gun-dp28-top-01.svg", "img/guns/gun-m249-bot-01.svg", "img/proj/frag-proj-nopin-nolever.svg", "img/proj/frag-proj-pin.svg", "img/proj/frag-proj-nopin.svg", "img/proj/frag-pin.svg"],
-				a = function(e) {
-					"none" != e && -1 == t.indexOf(e) && t.push(e)
+		}, o.preloadImages = function() {
+			var e = ["img/player/circle-base-01.svg", "img/player/player-base-01.svg", "img/player/armor-base-01.svg", "img/player/player-hands-01.svg", "img/player/bullet-trail-02.svg", "img/loot/loot-circle-outer-01.svg", "img/gui/skull.svg", "img/gui/player-map-outer.svg", "img/gui/pad.svg", "img/guns/gun-short-01.svg", "img/guns/gun-med-01.svg", "img/guns/gun-long-01.svg", "img/guns/gun-dp28-top-01.svg", "img/guns/gun-m249-bot-01.svg", "img/proj/frag-proj-nopin-nolever.svg", "img/proj/frag-proj-pin.svg", "img/proj/frag-proj-nopin.svg", "img/proj/frag-pin.svg"],
+				t = function(t) {
+					"none" != t && -1 == e.indexOf(t) && e.push(t)
 				};
-			for (var i in d.Defs)
-				if (d.Defs.hasOwnProperty(i)) {
-					var o = d.Defs[i],
-						s = o.img;
-					if (void 0 !== s && (void 0 !== s.sprite && a(s.sprite), void 0 !== s.residue && a(s.residue)), o.button && o.button.useImg && a(o.button.useImg), "building" == o.type) {
-						for (var l = 0; l < o.floor.imgs.length; l++) a(o.floor.imgs[l].sprite);
-						for (var c = 0; c < o.ceiling.imgs.length; c++) a(o.ceiling.imgs[c].sprite)
+			for (var a in d.Defs)
+				if (d.Defs.hasOwnProperty(a)) {
+					var i = d.Defs[a],
+						o = i.img;
+					if (void 0 !== o && (void 0 !== o.sprite && t(o.sprite), void 0 !== o.residue && t(o.residue)), i.button && i.button.useImg && t(i.button.useImg), "building" == i.type) {
+						for (var s = 0; s < i.floor.imgs.length; s++) t(i.floor.imgs[s].sprite);
+						for (var l = 0; l < i.ceiling.imgs.length; l++) t(i.ceiling.imgs[l].sprite)
 					}
 				}
-			for (var p in r.items)
-				if (r.items.hasOwnProperty(p)) {
-					var u = r.items[p];
-					if (void 0 !== u.lootImg && a(u.lootImg.sprite), void 0 !== u.worldImg && a(u.worldImg.sprite), void 0 !== u.handImg)
-						for (var h in u.handImg) void 0 !== u.handImg[h].right && "none" !== u.handImg[h].right && a(u.handImg[h].right.sprite), void 0 !== u.handImg[h].left && "none" !== u.handImg[h].left && a(u.handImg[h].left.sprite)
+			for (var c in r.items)
+				if (r.items.hasOwnProperty(c)) {
+					var p = r.items[c];
+					if (void 0 !== p.lootImg && t(p.lootImg.sprite), void 0 !== p.worldImg && t(p.worldImg.sprite), void 0 !== p.handImg)
+						for (var u in p.handImg) void 0 !== p.handImg[u].right && "none" !== p.handImg[u].right && t(p.handImg[u].right.sprite), void 0 !== p.handImg[u].left && "none" !== p.handImg[u].left && t(p.handImg[u].left.sprite)
 				}
-			for (var g in D.Defs)
-				if (D.Defs.hasOwnProperty(g) && void 0 !== D.Defs[g].image)
-					for (var f = D.Defs[g].image, y = 0; y < f.length; y++) a(f[y]);
-			for (var b in m) m.hasOwnProperty(b) && void 0 !== m[b].texture && a(m[b].texture);
-			var x = Math.max(window.screen.width, window.screen.height),
-				v = Math.min(window.screen.width, window.screen.height);
-			x *= window.devicePixelRatio, v *= window.devicePixelRatio;
-			for (var k = x < 1366 && v < 768, _ = k ? .5 : 1, w = 0; w < t.length; w++) {
-				var S = n.Texture.fromImage(t[w], void 0, void 0, _);
-				S.baseTexture.resolution = _, e.plugins.prepare.upload(S.baseTexture)
+			for (var h in A.Defs)
+				if (A.Defs.hasOwnProperty(h) && void 0 !== A.Defs[h].image)
+					for (var g = A.Defs[h].image, f = 0; f < g.length; f++) t(g[f]);
+			for (var y in m) m.hasOwnProperty(y) && void 0 !== m[y].texture && t(m[y].texture);
+			var b = Math.max(window.screen.width, window.screen.height),
+				x = Math.min(window.screen.width, window.screen.height);
+			b *= window.devicePixelRatio, x *= window.devicePixelRatio;
+			for (var v = b < 1366 && x < 768, k = v ? .5 : 1, _ = 0; _ < e.length; _++) {
+				n.Texture.fromImage(e[_], void 0, void 0, k).baseTexture.resolution = k
 			}
-			e.plugins.prepare.limiter.maxItemsPerFrame = 1
 		}, e.exports = o
 	},
 	moUH: function(e, t, a) {
@@ -23624,16 +22329,16 @@ webpackJsonp([0], {
 			},
 			"word-order": "svo",
 			"index-slogan": "Batalha Real 2D",
-			"index-region": "Região",
-			"index-north-america": "América do Norte",
+			"index-region": "RegiÃ£o",
+			"index-north-america": "AmÃ©rica do Norte",
 			"index-europe": "Europa",
-			"index-asia": "Ásia",
+			"index-asia": "Ã?sia",
 			"index-players": "jogadores",
 			"index-play-solo": "Jogar Sozinho",
 			"index-play-duo": "Jogar em Duplas",
 			"index-play-squad": "Jogar em Tropas",
 			"index-create-team": "Criar Equipe",
-			"index-join-team": "Junte-se à Equipe",
+			"index-join-team": "Junte-se Ã  Equipe",
 			"index-how-to-play": "Como Jogar",
 			"index-leave-team": "Abandonar Equipe",
 			"index-joining-team": "Entrando na Equipe",
@@ -23643,30 +22348,30 @@ webpackJsonp([0], {
 			"index-duo": "Dupla",
 			"index-squad": "Tropa",
 			"index-auto-fill": "Preencher",
-			"index-no-fill": "Não Preencher",
-			"index-waiting-for-leader": "Esperando o líder começar",
+			"index-no-fill": "NÃ£o Preencher",
+			"index-waiting-for-leader": "Esperando o lÃ­der comeÃ§ar",
 			"index-play": "Jogar",
 			"index-featured-youtuber": "YouTuber em Destaque",
-			"index-settings": "Configurações",
-			"index-high-resolution": "Alta resolução (marque para melhorar a qualidade visual)",
+			"index-settings": "ConfiguraÃ§Ãµes",
+			"index-high-resolution": "Alta resoluÃ§Ã£o (marque para melhorar a qualidade visual)",
 			"index-screen-shake": "Tremer a tela",
 			"index-master-volume": "Volume geral",
 			"index-sfx-volume": "Volume de efeitos sonoros",
-			"index-music-volume": "Volume da música",
-			"index-mobile-announce": "Agora disponível no celular!",
-			"index-mobile-tooltip": "Visite <span>surviv.io</span> no seu dispositivo móvel para jogar em qualquer lugar!",
-			"index-team-is-full": "A equipe está cheia!",
+			"index-music-volume": "Volume da mÃºsica",
+			"index-mobile-announce": "Agora disponÃ­vel no celular!",
+			"index-mobile-tooltip": "Visite <span>surviv.io</span> no seu dispositivo mÃ³vel para jogar em qualquer lugar!",
+			"index-team-is-full": "A equipe estÃ¡ cheia!",
 			"index-failed-joining-team": "Falha ao entrar na equipe.",
 			"index-failed-creating-team": "Falha ao criar a equipe.",
 			"index-failed-finding-game": "Falha ao encontrar jogo.",
 			"index-failed-joining-game": "Falha ao entrar no jogo.",
-			"index-lost-connection": "Perda de conexão com a equipe.",
-			"index-host-closed": "Conexão fechada do servidor.",
+			"index-lost-connection": "Perda de conexÃ£o com a equipe.",
+			"index-host-closed": "ConexÃ£o fechada do servidor.",
 			"index-view-more": "Ver Mais",
 			"index-back-to-main": "Voltar ao Menu Principal",
-			"index-most-kills": "Maior Número de Kills",
+			"index-most-kills": "Maior NÃºmero de Kills",
 			"index-total-kills": "Total de Kills",
-			"index-total-wins": "Total de Vitórias",
+			"index-total-wins": "Total de VitÃ³rias",
 			"index-top-5-percent": "Top 5 porcento",
 			"index-kill-death-ratio": "Taxa de assinatados/mortes",
 			"index-for": "para",
@@ -23674,19 +22379,19 @@ webpackJsonp([0], {
 			"index-this-week": "Esta Semana",
 			"index-all-time": "Todos os Tempos",
 			"index-top-100": "TOP 100",
-			"index-rank": "Classificação",
+			"index-rank": "ClassificaÃ§Ã£o",
 			"index-player": "Jogador",
 			"index-total-games": "Total de jogos",
 			"index-controls": "Controles",
-			"index-movement": "Movimentação",
+			"index-movement": "MovimentaÃ§Ã£o",
 			"index-movement-ctrl": "W, A, S, D",
 			"index-aim": "Mira",
 			"index-aim-ctrl": "Mouse",
 			"index-punch": "Soco",
 			"index-shoot": "Atirar",
-			"index-shoot-ctrl": "Clique com botão esquerdo",
+			"index-shoot-ctrl": "Clique com botÃ£o esquerdo",
 			"index-change-weapons": "Trocar de Armas",
-			"index-change-weapons-ctrl": "1 até 4 ou Roda do Mouse",
+			"index-change-weapons-ctrl": "1 atÃ© 4 ou Roda do Mouse",
 			"index-stow-weapons": "Guardar Armas (Modo Soco)",
 			"index-stow-weapons-ctrl": "3 ou E",
 			"index-swap-weapons": "Alternar para a Arma Anterior",
@@ -23694,16 +22399,16 @@ webpackJsonp([0], {
 			"index-reload": "Recarregar",
 			"index-reload-ctrl": "R",
 			"index-scope-zoom": "Alcance do Zoom",
-			"index-scope-zoom-ctrl": "Clique com o botão esquerdo no Zoom",
+			"index-scope-zoom-ctrl": "Clique com o botÃ£o esquerdo no Zoom",
 			"index-pickup": "Pegar",
 			"index-loot": "Saquear",
 			"index-revive": "Reviver",
 			"index-pickup-ctrl": "F",
-			"index-use-medical": "Usar Item Médico",
-			"index-use-medical-ctrl": "Clique com o Botão esquerdo sobre o Item ou pressione 7 até 0",
+			"index-use-medical": "Usar Item MÃ©dico",
+			"index-use-medical-ctrl": "Clique com o BotÃ£o esquerdo sobre o Item ou pressione 7 atÃ© 0",
 			"index-drop-item": "Soltar Item",
-			"index-drop-item-ctrl": "Clique com o Botão direito no Item",
-			"index-cancel-action": "Cancelar Ação",
+			"index-drop-item-ctrl": "Clique com o BotÃ£o direito no Item",
+			"index-cancel-action": "Cancelar AÃ§Ã£o",
 			"index-cancel-action-ctrl": "X",
 			"index-view-map": "Ver Mapa",
 			"index-view-map-ctrl": "M ou G",
@@ -23716,10 +22421,10 @@ webpackJsonp([0], {
 			"game-revive-teammate": "Reviver",
 			"game-equip": "Equipar",
 			"game-cancel": "Cancelar",
-			"game-You": "Você",
-			"game-you": "você",
-			"game-themselves": "a si próprios",
-			"game-yourself": "a si próprio",
+			"game-You": "VocÃª",
+			"game-you": "vocÃª",
+			"game-themselves": "a si prÃ³prios",
+			"game-yourself": "a si prÃ³prio",
 			"game-you-died": "morreu",
 			"game-player-died": "morreu",
 			"game-with": "com",
@@ -23727,20 +22432,20 @@ webpackJsonp([0], {
 			"game-killed": "matou",
 			"game-finally-killed": "finalmente matou",
 			"game-finally-bled-out": "finalmente se libertou",
-			"game-died-outside": "morreu fora da zona de segurança",
+			"game-died-outside": "morreu fora da zona de seguranÃ§a",
 			"game-the-red-zone": "A zona vermelha",
 			"game-waiting-for-players": "Esperando jogadores",
 			"game-spectating": "Assistindo",
-			"game-red-zone-advances": "A zona vermelha avança em",
-			"game-red-zone-advancing": "Zona vermelha avançando, vá para a zona segura!",
+			"game-red-zone-advances": "A zona vermelha avanÃ§a em",
+			"game-red-zone-advancing": "Zona vermelha avanÃ§ando, vÃ¡ para a zona segura!",
 			"game-seconds": "segundos",
 			"game-minutes": "minutos",
 			"game-minute": "minuto",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "Espaço insuficiente!",
-			"game-item-already-owned": "O jogador já possui o item!",
-			"game-item-already-equipped": "Item já equipado!",
+			"game-not-enough-space": "EspaÃ§o insuficiente!",
+			"game-item-already-owned": "O jogador jÃ¡ possui o item!",
+			"game-item-already-equipped": "Item jÃ¡ equipado!",
 			"game-better-item-equipped": "Melhor item equipado!",
 			"game-play-new-game": "Jogar Partida",
 			"game-spectate": "Assistir",
@@ -23748,10 +22453,10 @@ webpackJsonp([0], {
 			"game-sound": "Som",
 			"game-quit-game": "Sair do Jogo",
 			"game-return-to-game": "Voltar ao Jogo",
-			"game-hide-match-stats": "Esconder Estatísticas",
-			"game-view-match-stats": "Visualizar Estatísticas",
+			"game-hide-match-stats": "Esconder EstatÃ­sticas",
+			"game-view-match-stats": "Visualizar EstatÃ­sticas",
 			"game-previous-teammate": "Colega Anterior",
-			"game-next-teammate": "Próximo Colega",
+			"game-next-teammate": "PrÃ³ximo Colega",
 			"game-spectate-previous": "",
 			"game-spectate-next": "",
 			"game-leave-game": "Sair do Jogo",
@@ -23759,8 +22464,8 @@ webpackJsonp([0], {
 			"game-chicken": "Hoje vamos comer frango no jantar!",
 			"game-won-the-game": "ganhou o jogo.",
 			"game-team-eliminated": "Sua equipe foi derrotada.",
-			"game-rank": "Classificação",
-			"game-team-rank": "Classificação da Equipe",
+			"game-rank": "ClassificaÃ§Ã£o",
+			"game-team-rank": "ClassificaÃ§Ã£o da Equipe",
 			"game-team-kills": "Kills da Equipe",
 			"game-kill": "Kill",
 			"game-kills": "Kills",
@@ -23772,29 +22477,29 @@ webpackJsonp([0], {
 			"game-backpack02": "Pacote Regular",
 			"game-backpack03": "Pacote Militar",
 			"game-bandage": "Bandagem",
-			"game-bandage-tooltip": "Clique com o botão esquerdo para restaurar 15 de vida.",
-			"game-healing-tooltip": "Não é possível curar quando a vida é maior que 75.",
-			"game-healthkit": "Kit Médico",
-			"game-healthkit-tooltip": "Clique com o botão esquerdo para restaurar 100 de vida.",
+			"game-bandage-tooltip": "Clique com o botÃ£o esquerdo para restaurar 15 de vida.",
+			"game-healing-tooltip": "NÃ£o Ã© possÃ­vel curar quando a vida Ã© maior que 75.",
+			"game-healthkit": "Kit MÃ©dico",
+			"game-healthkit-tooltip": "Clique com o botÃ£o esquerdo para restaurar 100 de vida.",
 			"game-soda": "Soda",
-			"game-soda-tooltip": "Clique com o botão esquerdo para aumentar a adrenalina em 25.",
+			"game-soda-tooltip": "Clique com o botÃ£o esquerdo para aumentar a adrenalina em 25.",
 			"game-adrenaline-tooltip": "A adrenalina restaura a vida com o passar do tempo.",
-			"game-painkiller": "Pílulas",
-			"game-painkiller-tooltip": "Clique com o botão esquerdo para aumentar a adrenalina em 50.",
+			"game-painkiller": "PÃ­lulas",
+			"game-painkiller-tooltip": "Clique com o botÃ£o esquerdo para aumentar a adrenalina em 50.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "Munição para M9, Glock, MP5, MAC-10, UMP9 e Vector.",
+			"game-9mm-tooltip": "MuniÃ§Ã£o para M9, Glock, MP5, MAC-10, UMP9 e Vector.",
 			"game-12gauge": "Calibre 12",
-			"game-12gauge-tooltip": "Munição para M870, Saiga-12 e MP220.",
+			"game-12gauge-tooltip": "MuniÃ§Ã£o para M870, Saiga-12 e MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Munição para AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 e DP-28.",
+			"game-762mm-tooltip": "MuniÃ§Ã£o para AK-47, SCAR-H, M39, Mosin Nagant, OT-38 e DP-28.",
 			"game-556mm": "5.56mm",
-			"game-556mm-tooltip": "Munição para FAMAS, HK416, Mk 12 e M249.",
-			"game-chest01": "Colete Nível 1",
-			"game-chest02": "Colete Nível 2",
-			"game-chest03": "Colete Nível 3",
-			"game-helmet01": "Capacete Nível 1",
-			"game-helmet02": "Capacete Nível 2",
-			"game-helmet03": "Capacete Nível 3",
+			"game-556mm-tooltip": "MuniÃ§Ã£o para FAMAS, HK416, Mk 12 e M249.",
+			"game-chest01": "Colete NÃ­vel 1",
+			"game-chest02": "Colete NÃ­vel 2",
+			"game-chest03": "Colete NÃ­vel 3",
+			"game-helmet01": "Capacete NÃ­vel 1",
+			"game-helmet02": "Capacete NÃ­vel 2",
+			"game-helmet03": "Capacete NÃ­vel 3",
 			"game-1xscope": "1x Mira",
 			"game-2xscope": "2x Mira",
 			"game-4xscope": "4x Mira",
@@ -23815,7 +22520,7 @@ webpackJsonp([0], {
 			"game-outfitWhite": "Arctic Avenger",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -24115,17 +22820,18 @@ webpackJsonp([0], {
 			M = a("EZ6M"),
 			T = a("xgte"),
 			P = T.RenderType,
-			C = function() {
+			C = .5,
+			z = function() {
 				function e() {
 					o(this, e), this.container = new l.Container, this.gunContainerL = new l.Container, this.gunContainerR = new l.Container, this.skinType = "outfitBase";
 					var t = c.items[this.skinType];
-					this.footSpriteName = "img/player/player-feet-01.svg", this.footLt = g.create(-20, -35), this.footRt = g.create(20, -35), this.foot_left = l.Sprite.fromImage(this.footSpriteName), this.foot_left.anchor.set(.5, .5), this.foot_left.scale.set(.45, .45), this.foot_left.pivot.set(this.footLt.x, this.footLt.y), this.foot_left.tint = t.skinImg.handTint, this.foot_left.visible = !1, this.foot_left_submerge = l.Sprite.fromImage(this.footSpriteName), this.foot_left_submerge.anchor.set(.5, .5), this.foot_left_submerge.tint = x.water, this.foot_left_submerge.visible = !1, this.foot_left_submerge.alpha = 0, this.foot_left.addChild(this.foot_left_submerge), this.container.addChild(this.foot_left), this.foot_right = l.Sprite.fromImage(this.footSpriteName), this.foot_right.anchor.set(.5, .5), this.foot_right.scale.set(.45, .45), this.foot_right.pivot.set(this.footRt.x, this.footRt.y), this.foot_right.tint = t.skinImg.handTint, this.foot_right.visible = !1, this.foot_right_submerge = l.Sprite.fromImage(this.footSpriteName), this.foot_right_submerge.anchor.set(.5, .5), this.foot_right_submerge.tint = x.water, this.foot_right_submerge.visible = !1, this.foot_right_submerge.alpha = 0, this.foot_right.addChild(this.foot_right_submerge), this.container.addChild(this.foot_right), this.backpack = l.Sprite.fromImage("img/player/circle-base-01.svg"), this.backpack.anchor.set(.5, .5), this.backpack.scale.set(.4, .4), this.backpack.tint = t.skinImg.backpackTint, this.container.addChild(this.backpack), this.baseSpriteName = t.skinImg.baseSprite, this.sprite = l.Sprite.fromImage(this.baseSpriteName), this.sprite.anchor.set(.5, .5), this.sprite.scale.set(.5 * t.skinImg.baseScale, .5 * t.skinImg.baseScale), this.sprite.tint = t.skinImg.baseTint, this.container.addChild(this.sprite), this.gunBot = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gunBot.anchor.set(.5, .75), this.gunBot.scale.set(.5, .5), this.gunBot.pivot.set(0, 110), this.gunBot.visible = !1, this.gunContainerL.addChild(this.gunBot), this.gunBotVis = !1, this.gunOffhand = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gunOffhand.anchor.set(.5, .75), this.gunOffhand.scale.set(.5, .5), this.gunOffhand.pivot.set(0, 110), this.gunOffhand.visible = !1, this.gunContainerR.addChild(this.gunOffhand), this.gunOffhandVis = !1, this.gun = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gun.anchor.set(.5, .75), this.gun.scale.set(.5, .5), this.gun.pivot.set(0, 110), this.gunContainerL.addChild(this.gun), this.gunVis = !1, this.chest = l.Sprite.fromImage("img/player/armor-base-01.svg"), this.chest.anchor.set(.5, .5), this.chest.scale.set(.5, .5), this.container.addChild(this.chest), this.submergedMask = l.Sprite.fromImage("img/player/player-base-01.svg"), this.submergedMask.anchor.set(.5, .5), this.submergedMask.scale.set(.6, .6), this.container.addChild(this.submergedMask), this.submerged = l.Sprite.fromImage("img/player/player-wading-01.svg"), this.submerged.anchor.set(.5, .5), this.submerged.scale.set(.9, .9), this.submerged.alpha = 0, this.submerged.tint = 2854052, this.submerged.mask = this.submergedMask, this.submerged.visible = !0, this.container.addChild(this.submerged), this.submersion = 0, this.handSpriteName = t.skinImg.handSprite, this.hand_left = l.Sprite.fromImage(this.handSpriteName), this.hand_left.anchor.set(.5, .5), this.hand_left.scale.set(.35, .35), this.hand_left.pivot.set(35, 40), this.hand_left.tint = t.skinImg.handTint, this.hand_left_submerge = l.Sprite.fromImage(this.handSpriteName), this.hand_left_submerge.anchor.set(.5, .5), this.hand_left_submerge.tint = x.water, this.hand_left_submerge.visible = !1, this.hand_left_submerge.alpha = 0, this.hand_left.addChild(this.hand_left_submerge), this.gunContainerL.addChild(this.hand_left), this.hand_right = l.Sprite.fromImage(this.handSpriteName), this.hand_right.anchor.set(.5, .5), this.hand_right.scale.set(.35, .35), this.hand_right.pivot.set(-35, 40), this.hand_right.tint = t.skinImg.handTint, this.hand_right_submerge = l.Sprite.fromImage(this.handSpriteName), this.hand_right_submerge.anchor.set(.5, .5), this.hand_right_submerge.tint = x.water, this.hand_right_submerge.visible = !1, this.hand_right_submerge.alpha = 0, this.hand_right.addChild(this.hand_right_submerge), this.gunContainerR.addChild(this.hand_right), this.object_left = l.Sprite.from(l.Texture.EMPTY), this.object_left.anchor.set(.5, .5), this.object_left.pivot.set(0, 0), this.object_left.visible = !1, this.hand_left.addChild(this.object_left), this.object_right = l.Sprite.from(l.Texture.EMPTY), this.object_right.anchor.set(.5, .5), this.object_right.visible = !1, this.hand_right.addChild(this.object_right), this.handLt = g.create(35, 40), this.handRt = g.create(-35, 40), this.gunHandLt = g.copy(this.handLt), this.gunHandRt = g.copy(this.handRt), this.objHandLt = g.copy(this.handLt), this.objHandRt = g.copy(this.handRt), this.gunHandLtVis = !0, this.gunHandRtVis = !0, this.objLtVis = !1, this.objRtVis = !1, this.gunTop = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gunTop.anchor.set(.5, 1), this.gunTop.scale.set(.5, .5), this.gunTop.pivot.set(0, 110), this.gunTop.visible = !1, this.gunContainerL.addChild(this.gunTop), this.gunTopVis = !1, this.container.addChild(this.gunContainerL), this.container.addChild(this.gunContainerR), this.helmet = l.Sprite.fromImage("img/player/circle-base-01.svg"), this.helmet.anchor.set(.5, .5), this.helmet.scale.set(.3, .3), this.container.addChild(this.helmet), this.nameText = n(), this.nameText.visible = !1, this.container.addChild(this.nameText), this.anim = {
+					this.footSpriteName = "img/player/player-feet-01.svg", this.footLt = g.create(-20, -35), this.footRt = g.create(20, -35), this.foot_left = l.Sprite.fromImage(this.footSpriteName), this.foot_left.anchor.set(.5, .5), this.foot_left.scale.set(.45, .45), this.foot_left.pivot.set(this.footLt.x, this.footLt.y), this.foot_left.tint = t.skinImg.handTint, this.foot_left.visible = !1, this.foot_left_submerge = l.Sprite.fromImage(this.footSpriteName), this.foot_left_submerge.anchor.set(.5, .5), this.foot_left_submerge.tint = x.water, this.foot_left_submerge.visible = !1, this.foot_left_submerge.alpha = 0, this.foot_left.addChild(this.foot_left_submerge), this.container.addChild(this.foot_left), this.foot_right = l.Sprite.fromImage(this.footSpriteName), this.foot_right.anchor.set(.5, .5), this.foot_right.scale.set(.45, .45), this.foot_right.pivot.set(this.footRt.x, this.footRt.y), this.foot_right.tint = t.skinImg.handTint, this.foot_right.visible = !1, this.foot_right_submerge = l.Sprite.fromImage(this.footSpriteName), this.foot_right_submerge.anchor.set(.5, .5), this.foot_right_submerge.tint = x.water, this.foot_right_submerge.visible = !1, this.foot_right_submerge.alpha = 0, this.foot_right.addChild(this.foot_right_submerge), this.container.addChild(this.foot_right), this.backpack = l.Sprite.fromImage("img/player/circle-base-01.svg"), this.backpack.anchor.set(.5, .5), this.backpack.scale.set(.4, .4), this.backpack.tint = t.skinImg.backpackTint, this.container.addChild(this.backpack), this.baseSpriteName = t.skinImg.baseSprite, this.sprite = l.Sprite.fromImage(this.baseSpriteName), this.sprite.anchor.set(.5, .5), this.sprite.scale.set(.5 * t.skinImg.baseScale, .5 * t.skinImg.baseScale), this.sprite.tint = t.skinImg.baseTint, this.container.addChild(this.sprite), this.gunBot = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gunBot.anchor.set(.5, .75), this.gunBot.scale.set(.5, .5), this.gunBot.pivot.set(0, 110), this.gunBot.visible = !1, this.gunContainerL.addChild(this.gunBot), this.gunBotVis = !1, this.gunOffhand = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gunOffhand.anchor.set(.5, .75), this.gunOffhand.scale.set(.5, .5), this.gunOffhand.pivot.set(0, 110), this.gunOffhand.visible = !1, this.gunContainerR.addChild(this.gunOffhand), this.gunOffhandVis = !1, this.gun = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gun.anchor.set(.5, .75), this.gun.scale.set(.5, .5), this.gun.pivot.set(0, 110), this.gunContainerL.addChild(this.gun), this.gunVis = !1, this.chest = l.Sprite.fromImage("img/player/armor-base-01.svg"), this.chest.anchor.set(.5, .5), this.chest.scale.set(.5, .5), this.container.addChild(this.chest), this.submergedMask = l.Sprite.fromImage("img/player/player-base-01.svg"), this.submergedMask.anchor.set(.5, .5), this.submergedMask.scale.set(.6, .6), this.container.addChild(this.submergedMask), this.submerged = l.Sprite.fromImage("img/player/player-wading-01.svg"), this.submerged.anchor.set(.5, .5), this.submerged.scale.set(.9, .9), this.submerged.alpha = 0, this.submerged.tint = 2854052, this.submerged.mask = this.submergedMask, this.submerged.visible = !0, this.container.addChild(this.submerged), this.submergeTicker = 0, this.rippleTicker = C, this.handSpriteName = t.skinImg.handSprite, this.hand_left = l.Sprite.fromImage(this.handSpriteName), this.hand_left.anchor.set(.5, .5), this.hand_left.scale.set(.35, .35), this.hand_left.pivot.set(35, 40), this.hand_left.tint = t.skinImg.handTint, this.hand_left_submerge = l.Sprite.fromImage(this.handSpriteName), this.hand_left_submerge.anchor.set(.5, .5), this.hand_left_submerge.tint = x.water, this.hand_left_submerge.visible = !1, this.hand_left_submerge.alpha = 0, this.hand_left.addChild(this.hand_left_submerge), this.gunContainerL.addChild(this.hand_left), this.hand_right = l.Sprite.fromImage(this.handSpriteName), this.hand_right.anchor.set(.5, .5), this.hand_right.scale.set(.35, .35), this.hand_right.pivot.set(-35, 40), this.hand_right.tint = t.skinImg.handTint, this.hand_right_submerge = l.Sprite.fromImage(this.handSpriteName), this.hand_right_submerge.anchor.set(.5, .5), this.hand_right_submerge.tint = x.water, this.hand_right_submerge.visible = !1, this.hand_right_submerge.alpha = 0, this.hand_right.addChild(this.hand_right_submerge), this.gunContainerR.addChild(this.hand_right), this.object_left = l.Sprite.from(l.Texture.EMPTY), this.object_left.anchor.set(.5, .5), this.object_left.pivot.set(0, 0), this.object_left.visible = !1, this.hand_left.addChild(this.object_left), this.object_right = l.Sprite.from(l.Texture.EMPTY), this.object_right.anchor.set(.5, .5), this.object_right.visible = !1, this.hand_right.addChild(this.object_right), this.handLt = g.create(35, 40), this.handRt = g.create(-35, 40), this.gunHandLt = g.copy(this.handLt), this.gunHandRt = g.copy(this.handRt), this.objHandLt = g.copy(this.handLt), this.objHandRt = g.copy(this.handRt), this.gunHandLtVis = !0, this.gunHandRtVis = !0, this.objLtVis = !1, this.objRtVis = !1, this.gunTop = l.Sprite.fromImage("img/guns/gun-short-01.svg"), this.gunTop.anchor.set(.5, 1), this.gunTop.scale.set(.5, .5), this.gunTop.pivot.set(0, 110), this.gunTop.visible = !1, this.gunContainerL.addChild(this.gunTop), this.gunTopVis = !1, this.container.addChild(this.gunContainerL), this.container.addChild(this.gunContainerR), this.helmet = l.Sprite.fromImage("img/player/circle-base-01.svg"), this.helmet.anchor.set(.5, .5), this.helmet.scale.set(.3, .3), this.container.addChild(this.helmet), this.nameText = n(), this.nameText.visible = !1, this.container.addChild(this.nameText), this.anim = {
 						type: d.None,
 						seq: 0,
 						frame: 0,
 						timer: 0,
 						duration: 0
-					}, this.isOnBrightSurface = !1, this.weapType = "", this.wasInWater = !1, this.stepDistance = 0, this.zoomFast = !1, this.playedDryFire = !1, this.curAction = {
+					}, this.isOnBrightSurface = !1, this.weapType = "", this.stepTicker = 0, this.zoomFast = !1, this.playedDryFire = !1, this.curAction = {
 						type: m.None
 					}, this.actionSoundInstance = !1, this.soundUpdateThrottle = 0, this.downed = !1, this.bleedTicker = 0, this.lastThrowablePickupSfxTicker = 0, this.isNearDoorError = !1, this.doorErrorTicker = 0, this.noCeilingRevealTicker = 0, this.netData = {}, this.localData = {
 						action: {
@@ -24173,8 +22879,7 @@ webpackJsonp([0], {
 				}, {
 					key: "getScopeZoom",
 					value: function() {
-						var e = this.netData.downed || this.localData.scopedIn ? "1xscope" : this.localData.curScope;
-						return c.scopeZoomRadius[e]
+						return c.scopeZoomRadius[this.localData.curScope]
 					}
 				}, {
 					key: "getBagLevel",
@@ -24376,12 +23081,20 @@ webpackJsonp([0], {
 					}
 				}, {
 					key: "updateSubmersion",
-					value: function(e, t, a) {
-						var i = 0;
-						t && (i = f.remap(a.distanceToShore(this.pos), 0, 16, .6, 1)), this.submersion = f.lerp(4 * e, this.submersion, i);
-						var o = .75 * this.submersion,
-							n = .9 - .4 * this.submersion;
-						this.submerged.alpha = o, this.foot_left_submerge.alpha = o, this.foot_right_submerge.alpha = o, this.hand_left_submerge.alpha = o, this.hand_right_submerge.alpha = o, this.submerged.scale.set(n, n)
+					value: function(e, t, a, i, o, n) {
+						var r = 0;
+						e ? (this.submergeTicker = Math.min(this.submergeTicker + t, 2), r = Math.min(1, a.distanceToShore(o) / 16), this.rippleTicker += t, this.rippleTicker > C && i && (a.addRipple(this.pos, 0), this.rippleTicker = 0, n.audioManager.playGroup("footstep_water", {
+							soundPos: o,
+							fallOff: 3,
+							layer: this.layer,
+							muffled: !0
+						}))) : (this.submergeTicker = Math.max(0, this.submergeTicker - 3 * t * this.submergeTicker), this.rippleTicker = C);
+						var s = Math.min(2, this.submergeTicker) / 2,
+							l = f.lerp(.5, r, s),
+							c = .75 * l;
+						this.submerged.alpha = c, this.foot_left_submerge.alpha = c, this.foot_right_submerge.alpha = c, this.hand_left_submerge.alpha = c, this.hand_right_submerge.alpha = c;
+						var m = .9 - .4 * l;
+						this.submerged.scale.set(m, m)
 					}
 				}, {
 					key: "addRecoil",
@@ -24392,7 +23105,7 @@ webpackJsonp([0], {
 			}(),
 			I = function() {
 				function e() {
-					o(this, e), this.playerPool = new S.Pool(C), this.playerInfo = {}, this.teamInfo = {}, this.teammateData = {}
+					o(this, e), this.playerPool = new S.Pool(z), this.playerInfo = {}, this.teamInfo = {}, this.teammateData = {}
 				}
 				return s(e, [{
 					key: "update",
@@ -24407,32 +23120,32 @@ webpackJsonp([0], {
 							if (T.active) {
 								var C = T.__id == t;
 								if (C) {
-									var I = this.playerPool.getPool()[0];
-									I.sentinel && (I.pos = g.add(T.netData.pos, g.create(4, 3)), I.netData.pos = g.copy(I.pos))
+									var z = this.playerPool.getPool()[0];
+									z.sentinel && (z.pos = g.add(T.netData.pos, g.create(4, 3)), z.netData.pos = g.copy(z.pos))
 								}
-								var z = T.pos;
+								var I = T.pos;
 								T.pos = g.copy(T.netData.pos), T.dir = g.copy(T.netData.dir), T.layer = T.netData.layer, T.lastThrowablePickupSfxTicker -= e;
-								var A = this.playerInfo[t].teamId,
-									D = this.playerInfo[T.__id].teamId == A;
+								var D = this.playerInfo[t].teamId,
+									A = this.playerInfo[T.__id].teamId == D;
 								if (T.isNew) {
 									var O = this.getPlayerInfo(T.__id);
-									T.nameText.text = O.nameUnEntity, T.nameText.visible = !C && D
+									T.nameText.text = O.nameUnEntity, T.nameText.visible = !C && A
 								}
-								for (var L = this.getPlayerById(t), E = null, B = null, F = n.obstaclePool.getPool(), R = 0; R < F.length; R++) {
+								for (var L = this.getPlayerById(t), B = null, E = null, F = n.obstaclePool.getPool(), R = 0; R < F.length; R++) {
 									var j = F[R];
 									if (j.active && !j.dead && j.layer == T.netData.layer)
 										if (j.isBush) {
 											var N = .25 * c.player.radius;
-											b.intersectCircle(j.collider, T.pos, N) && (E = j)
+											b.intersectCircle(j.collider, T.pos, N) && (B = j)
 										} else if (j.isDoor && !j.door.open && j.door.playErrorFx) {
 										var q = c.player.radius + .25,
-											U = g.rotate(g.create(1, 0), j.rot),
-											G = g.sub(j.pos, T.pos);
-										g.dot(G, U) < 0 && b.intersectCircle(j.collider, T.pos, q) && (B = j)
+											G = g.rotate(g.create(1, 0), j.rot),
+											U = g.sub(j.pos, T.pos);
+										g.dot(U, G) < 0 && b.intersectCircle(j.collider, T.pos, q) && (E = j)
 									}
 								}
-								var V = null != E;
-								if (V && (T.insideObstacleType = E.type), T.lastInsideObstacleTime -= e, T.wasInsideObstacle != V && T.lastInsideObstacleTime < 0 && !T.isNew) {
+								var V = null != B;
+								if (V && (T.insideObstacleType = B.type), T.lastInsideObstacleTime -= e, T.wasInsideObstacle != V && T.lastInsideObstacleTime < 0 && !T.isNew) {
 									var H = p.Defs[T.insideObstacleType];
 									T.lastInsideObstacleTime = .2, l.playSound(H.sound.enter, {
 										channel: "sfx",
@@ -24441,16 +23154,16 @@ webpackJsonp([0], {
 										layer: T.layer,
 										muffled: !0
 									});
-									for (var W = g.normalizeSafe(g.sub(z, T.pos), g.create(1, 0)), K = V ? 1 : -1, X = Math.floor(h.random(3, 5)), Y = 0; Y < X; Y++) {
-										var Z = g.mul(g.rotate(g.mul(W, K), (Math.random() - .5) * Math.PI / 1.5), h.random(6, 8));
-										i.addParticle(M.Defs[H.hitParticle], T.layer, T.pos, Z)
+									for (var W = g.normalizeSafe(g.sub(I, T.pos), g.create(1, 0)), K = V ? 1 : -1, X = Math.floor(h.random(3, 5)), Z = 0; Z < X; Z++) {
+										var Y = g.mul(g.rotate(g.mul(W, K), (Math.random() - .5) * Math.PI / 1.5), h.random(6, 8));
+										i.addParticle(M.Defs[H.hitParticle], T.layer, T.pos, Y)
 									}
 								}
 								T.wasInsideObstacle = V;
 								var J = T.isNearDoorError;
-								if (T.isNearDoorError = null != B, T.doorErrorTicker -= e, T.isNearDoorError && !J && T.doorErrorTicker <= 0) {
+								if (T.isNearDoorError = null != E, T.doorErrorTicker -= e, T.isNearDoorError && !J && T.doorErrorTicker <= 0) {
 									T.doorErrorTicker = .5;
-									var Q = p.Defs[B.type],
+									var Q = p.Defs[E.type],
 										$ = Q.door.sound.error;
 									l.playSound($, {
 										channel: "sfx",
@@ -24460,173 +23173,171 @@ webpackJsonp([0], {
 										muffled: !0
 									})
 								}
-								var ee = n.getGroundSurface(T.pos, T.layer);
+								var ee = g.length(g.sub(I, T.pos));
+								T.stepTicker += ee;
+								var te = n.getGroundSurface(T.pos, T.layer);
 								if (C)
 									if (T.soundUpdateThrottle < 0) {
 										T.soundUpdateThrottle = .2;
-										var te = 0,
-											ae = 1;
-										if ("water" !== ee) {
-											var ie = n.distanceToShore(T.pos);
-											ie < 50 && (te = (50 - ie) / 50, ae = 1 - te)
-										} else te = 1, ae = 0;
-										l.setVolume(f.wavesInst, te), l.setVolume(f.windInst, ae)
+										var ae = 0,
+											ie = 1;
+										if ("water" !== te) {
+											var oe = n.distanceToShore(T.pos);
+											oe < 50 && (ae = (50 - oe) / 50, ie = 1 - ae)
+										} else ae = 1, ie = 0;
+										l.setVolume(f.wavesInst, ae), l.setVolume(f.windInst, ie)
 									} else T.soundUpdateThrottle -= e;
-								T.isOnBrightSurface = 1 == T.layer && "tile" == ee;
-								var oe = "water" === ee;
-								T.updateSubmersion(e, oe, n), T.stepDistance += g.length(g.sub(z, T.pos)), T.stepDistance > 5 && oe || oe && !T.wasInWater ? (T.stepDistance = 0, n.addRipple(T.pos, 0), _.audioManager.playGroup("footstep_water", {
+								T.isOnBrightSurface = 1 == T.layer && "tile" == te;
+								var ne = "water" === te,
+									re = ee > 0;
+								T.updateSubmersion(ne, e, n, re, T.pos, _), T.stepTicker > 4 && !ne && (T.stepTicker = 0, l.playGroup("footstep_" + te, {
 									soundPos: T.pos,
 									fallOff: 3,
 									layer: T.layer,
 									muffled: !0
-								})) : T.stepDistance > 4 && !oe && (T.stepDistance = 0, l.playGroup("footstep_" + ee, {
-									soundPos: T.pos,
-									fallOff: 3,
-									layer: T.layer,
-									muffled: !0
-								})), T.wasInWater = oe, T.netData.dead || T.updateDownedState(e, _, L, x);
-								var ne = T.weapType != T.netData.curWeapType;
-								ne && (T.weapType = T.netData.curWeapType, T.updateWeapon());
-								var re = T.gunContainerL.pivot.y,
-									se = T.gunContainerR.pivot.y;
-								if (re = Math.min(0, re - re * e * 5 + e), se = Math.min(0, se - se * e * 5 + e), T.gunContainerL.pivot.y = re, T.gunContainerR.pivot.y = se, C) {
-									var le = T.localData.curWeapIdx,
-										ce = T.localData.weapons[le],
-										me = c.items[ce.name];
-									if (!T.playedDryFire && "gun" == T.equippedWeaponType() && (s.mousePressed() || s.mouseDown() && "auto" == me.fireMode) && 0 === T.localData.action.type && !y) {
-										var de = T.localData.inventory[me.ammo],
-											pe = ce.ammo;
-										0 === de && 0 === pe && (l.playSound(me.sound.empty), T.playedDryFire = !0)
+								})), T.netData.dead || T.updateDownedState(e, _, L, x);
+								var se = T.weapType != T.netData.curWeapType;
+								se && (T.weapType = T.netData.curWeapType, T.updateWeapon());
+								var le = T.gunContainerL.pivot.y,
+									ce = T.gunContainerR.pivot.y;
+								if (le = Math.min(0, le - le * e * 5 + e), ce = Math.min(0, ce - ce * e * 5 + e), T.gunContainerL.pivot.y = le, T.gunContainerR.pivot.y = ce, C) {
+									var me = T.localData.curWeapIdx,
+										de = T.localData.weapons[me],
+										pe = c.items[de.name];
+									if (!T.playedDryFire && "gun" == T.equippedWeaponType() && (s.mousePressed() || s.mouseDown() && "auto" == pe.fireMode) && 0 === T.localData.action.type && !y) {
+										var ue = T.localData.inventory[pe.ammo],
+											he = de.ammo;
+										0 === ue && 0 === he && (l.playSound(pe.sound.empty), T.playedDryFire = !0)
 									}
 									s.mousePressed() || s.mouseDown() || (T.playedDryFire = !1)
 								}
-								var ue = T.netData.actionType;
-								if (!C && T.curAction.type != ue) {
+								var ge = T.netData.actionType;
+								if (!C && T.curAction.type != ge) {
 									l.stopSound(this.actionSoundInstance);
-									var he = null;
-									switch (ue) {
+									var fe = null;
+									switch (ge) {
 										case m.Reload:
-											var ge = T.netData.curWeapType;
-											if ("" != ge) {
-												he = c.items[ge].sound.reload
+											var ye = T.netData.curWeapType;
+											if ("" != ye) {
+												fe = c.items[ye].sound.reload
 											}
 									}
-									he && (this.actionSoundInstance = l.playSound(he, {
+									fe && (this.actionSoundInstance = l.playSound(fe, {
 										channel: "otherPlayers",
 										soundPos: T.pos,
 										fallOff: 2,
 										layer: T.layer,
 										muffled: !0
-									})), T.curAction.type = ue
+									})), T.curAction.type = ge
 								}
-								if (T.gunSwitchCooldown -= e, C && (ne || T.curWeapIdx != T.localData.curWeapIdx)) {
+								if (T.gunSwitchCooldown -= e, C && (se || T.curWeapIdx != T.localData.curWeapIdx)) {
 									T.curWeapIdx = T.localData.curWeapIdx;
-									var fe = c.items[T.weapType];
-									if ("melee" == fe.type || "throwable" == fe.type)("throwable" != fe.type || T.lastThrowablePickupSfxTicker <= 0) && l.playSound(fe.sound.deploy, {
+									var be = c.items[T.weapType];
+									if ("melee" == be.type || "throwable" == be.type)("throwable" != be.type || T.lastThrowablePickupSfxTicker <= 0) && l.playSound(be.sound.deploy, {
 										channel: "sfx",
 										soundPos: T.pos,
 										fallOff: 3
 									});
-									else if ("gun" == fe.type) {
-										var ye = "gun_switch_01";
-										T.gunSwitchCooldown > 0 ? ye = fe.sound.deploy : T.gunSwitchCooldown = c.player.freeSwitchCooldown, l.stopLocalActionSound(), l.playSound(ye, {
+									else if ("gun" == be.type) {
+										var xe = "gun_switch_01";
+										T.gunSwitchCooldown > 0 ? xe = be.sound.deploy : T.gunSwitchCooldown = c.player.freeSwitchCooldown, l.stopLocalActionSound(), l.playSound(xe, {
 											channel: "activePlayer"
 										})
 									}
 								}
 								T.updateAnim(e, _);
-								var be = v[T.anim.type],
-									xe = !be || !be.hideWeapon;
-								(T.netData.downed || T.netData.dead) && (xe = !1), T.gun.visible = !!xe && T.gunVis, T.gunBot.visible = !!xe && T.gunBotVis, T.gunOffhand.visible = !!xe && T.gunOffhandVis, T.gunTop.visible = !!xe && T.gunTopVis, T.hand_left.visible = !xe || T.gunHandLtVis, T.hand_right.visible = !xe || T.gunHandRtVis;
-								var ve = T.anim.type == d.Throw;
-								T.object_right.visible = !(!xe || ve) && T.objRtVis, T.object_left.visible = !!xe && T.objLtVis;
-								var ke = c.items[T.netData.curWeapType].type,
-									_e = T.handLt,
-									we = T.handRt;
-								if (xe && ("gun" == ke ? (_e = T.gunHandLt, we = T.gunHandRt) : T.anim.type == d.None && "throwable" == ke && (_e = T.objHandLt, we = T.objHandRt)), !we) {
-									var Se = {
-										handRt: void 0 !== we ? we : "undefined",
+								var ve = v[T.anim.type],
+									ke = !ve || !ve.hideWeapon;
+								(T.netData.downed || T.netData.dead) && (ke = !1), T.gun.visible = !!ke && T.gunVis, T.gunBot.visible = !!ke && T.gunBotVis, T.gunOffhand.visible = !!ke && T.gunOffhandVis, T.gunTop.visible = !!ke && T.gunTopVis, T.hand_left.visible = !ke || T.gunHandLtVis, T.hand_right.visible = !ke || T.gunHandRtVis;
+								var _e = T.anim.type == d.Throw;
+								T.object_right.visible = !(!ke || _e) && T.objRtVis, T.object_left.visible = !!ke && T.objLtVis;
+								var we = c.items[T.netData.curWeapType].type,
+									Se = T.handLt,
+									Me = T.handRt;
+								if (ke && ("gun" == we ? (Se = T.gunHandLt, Me = T.gunHandRt) : T.anim.type == d.None && "throwable" == we && (Se = T.objHandLt, Me = T.objHandRt)), !Me) {
+									var Te = {
+										handRt: void 0 !== Me ? Me : "undefined",
 										gunHandRt: void 0 !== T.gunHandRt ? T.gunHandRt : "undefined",
 										objHandRt: void 0 !== T.objHandRt ? T.objHandRt : "undefined",
 										pHandRt: void 0 !== T.handRt ? T.handRt : "undefined"
 									};
-									k.logError("hand_err: " + JSON.stringify(Se))
+									k.logError("hand_err: " + JSON.stringify(Te))
 								}
-								T.hand_left.pivot.set(_e.x, _e.y), T.hand_right.pivot.set(we.x, we.y), T.foot_left.pivot.set(T.footLt.x, T.footLt.y), T.foot_right.pivot.set(T.footRt.x, T.footRt.y);
-								var Me = Math.atan2(T.dir.x, T.dir.y);
-								T.foot_left.rotation = Me, T.foot_right.rotation = Me, T.gunContainerL.rotation = Me, T.gunContainerR.rotation = Me;
-								var Te = c.items[T.skinType],
-									Pe = "camo" == Te.subtype;
+								T.hand_left.pivot.set(Se.x, Se.y), T.hand_right.pivot.set(Me.x, Me.y), T.foot_left.pivot.set(T.footLt.x, T.footLt.y), T.foot_right.pivot.set(T.footRt.x, T.footRt.y);
+								var Pe = Math.atan2(T.dir.x, T.dir.y);
+								T.foot_left.rotation = Pe, T.foot_right.rotation = Pe, T.gunContainerL.rotation = Pe, T.gunContainerR.rotation = Pe;
+								var Ce = c.items[T.skinType],
+									ze = "camo" == Ce.subtype;
 								T.skinType != T.netData.skin && (T.skinType = T.netData.skin, T.updateSkin());
-								var Ce = T.getBagLevel();
-								if (Ce > 0 && !Pe && !T.downed) {
-									var Ie = (c.items[T.netData.backpack], Ce > 0 ? .03 * Ce + .4 : 0),
-										ze = .5 * T.backpack.width + 8;
-									T.backpack.scale.set(Ie, Ie), T.backpack.pivot.set(T.dir.x * ze, T.dir.y * -ze), T.backpack.visible = !0
+								var Ie = T.getBagLevel();
+								if (Ie > 0 && !ze && !T.downed) {
+									var De = (c.items[T.netData.backpack], Ie > 0 ? .03 * Ie + .4 : 0),
+										Ae = .5 * T.backpack.width + 8;
+									T.backpack.scale.set(De, De), T.backpack.pivot.set(T.dir.x * Ae, T.dir.y * -Ae), T.backpack.visible = !0
 								} else T.backpack.visible = !1;
-								if ("" == T.netData.chest || Pe) T.chest.visible = !1;
+								if ("" == T.netData.chest || ze) T.chest.visible = !1;
 								else {
-									var Ae = c.items[T.netData.chest];
-									T.chest.tint = Ae.tint, T.chest.visible = !0
+									var Oe = c.items[T.netData.chest];
+									T.chest.tint = Oe.tint, T.chest.visible = !0
 								}
-								if ("" == T.netData.helmet || Pe) T.helmet.visible = !1;
+								if ("" == T.netData.helmet || ze) T.helmet.visible = !1;
 								else {
-									var De = c.items[T.netData.helmet],
-										Oe = .5 * T.helmet.width,
-										Le = T.downed ? -1 : 1;
-									T.helmet.pivot.set(T.dir.x * Oe * Le, T.dir.y * Oe * -Le), T.helmet.tint = De.tint, T.helmet.visible = !0
+									var Le = c.items[T.netData.helmet],
+										Be = .5 * T.helmet.width,
+										Ee = T.downed ? -1 : 1;
+									T.helmet.pivot.set(T.dir.x * Be * Ee, T.dir.y * Be * -Ee), T.helmet.tint = Le.tint, T.helmet.visible = !0
 								}
 								T.noCeilingRevealTicker -= e;
-								for (var Ee = T.layer, Be = b.createCircle(T.pos, c.player.maxVisualRadius), Fe = !1, Re = !1, je = !1, Ne = n.structurePool.getPool(), qe = 0; qe < Ne.length; qe++) {
-									var Ue = Ne[qe];
-									if (Ue.active) {
-										for (var Ge = 0; Ge < Ue.stairs.length; Ge++) {
-											var Ve = Ue.stairs[Ge],
-												He = b.intersect(Ve.collision, Be);
-											if (He) {
-												Re = !0;
-												var We = g.add(Ve.center, g.mul(Ve.downDir, -3)),
-													Ke = g.sub(We, T.pos),
-													Xe = g.length(Ke);
-												Ke = Xe > 1e-4 ? g.div(Ke, Xe) : g.create(1, 0);
-												je = r(n, T.pos, Ke, Xe, .5, T.layer) < Xe
+								for (var Fe = T.layer, Re = b.createCircle(T.pos, c.player.maxVisualRadius), je = !1, Ne = !1, qe = !1, Ge = n.structurePool.getPool(), Ue = 0; Ue < Ge.length; Ue++) {
+									var Ve = Ge[Ue];
+									if (Ve.active) {
+										for (var He = 0; He < Ve.stairs.length; He++) {
+											var We = Ve.stairs[He],
+												Ke = b.intersect(We.collision, Re);
+											if (Ke) {
+												Ne = !0;
+												var Xe = g.add(We.center, g.mul(We.downDir, -3)),
+													Ze = g.sub(Xe, T.pos),
+													Ye = g.length(Ze);
+												Ze = Ye > 1e-4 ? g.div(Ze, Ye) : g.create(1, 0);
+												qe = r(n, T.pos, Ze, Ye, .5, T.layer) < Ye
 											}
-											C && Ve.noCeilingReveal && He && 0 != T.layer && (T.noCeilingRevealTicker = .25)
+											C && We.noCeilingReveal && Ke && 0 != T.layer && (T.noCeilingRevealTicker = .25)
 										}
-										for (var Ye = 0; Ye < Ue.mask.length; Ye++)
-											if (b.intersect(Ue.mask[Ye], Be)) {
-												Fe = !0;
+										for (var Je = 0; Je < Ve.mask.length; Je++)
+											if (b.intersect(Ve.mask[Je], Re)) {
+												je = !0;
 												break
 											}
 									}
 								}
-								var Ze = 18;
-								Re && (1 & Ee && (1 & L.layer || !je) || 2 & L.layer && !Fe) && (Ee |= 2), (1 & Ee) != (1 & L.layer) || !Re || Fe && 0 != L.layer || (Ee |= 2, Ze += 100);
-								var Je = T.__id + (T.netData.downed ? 0 : 131072) + (C ? 65536 : 0);
-								a.addPIXIObj(T.container, P.Player, Ee, Ze, Je), T.isNew = !1
+								var Qe = 18;
+								Ne && (1 & Fe && (1 & L.layer || !qe) || 2 & L.layer && !je) && (Fe |= 2), (1 & Fe) != (1 & L.layer) || !Ne || je && 0 != L.layer || (Fe |= 2, Qe += 100);
+								var $e = T.__id + (T.netData.downed ? 0 : 131072) + (C ? 65536 : 0);
+								a.addPIXIObj(T.container, P.Player, Fe, Qe, $e), T.isNew = !1
 							}
 						}
-						for (var Qe = this.getPlayerInfo(t).teamId, $e = this.getTeamInfo(Qe), et = 0; et < $e.playerIds.length; et++) {
-							var tt = $e.playerIds[et],
-								at = this.getPlayerById(tt);
-							at && tt == t && this.setTeammateData(tt, {
-								pos: g.copy(at.netData.pos),
-								health: at.localData.health,
+						for (var et = this.getPlayerInfo(t).teamId, tt = this.getTeamInfo(et), at = 0; at < tt.playerIds.length; at++) {
+							var it = tt.playerIds[at],
+								ot = this.getPlayerById(it);
+							ot && it == t && this.setTeammateData(it, {
+								pos: g.copy(ot.netData.pos),
+								health: ot.localData.health,
 								disconnected: !1,
-								dead: at.netData.dead,
-								downed: at.netData.downed
+								dead: ot.netData.dead,
+								downed: ot.netData.downed
 							});
-							var it = this.teammateData[tt];
-							if (it)
-								if (at) {
-									var ot = this.teammateData[tt];
-									ot.pos = g.copy(at.netData.pos), ot.posTarget = g.copy(at.netData.pos)
-								} else if (it) {
-								var nt = (c.player.moveSpeed, g.sub(it.posTarget, it.pos)),
-									rt = g.length(nt),
-									st = rt > 1e-4 ? g.div(nt, rt) : g.create(1, 0),
-									lt = Math.min(rt, it.posDelta * e / u.kTeamUpdateRate);
-								it.pos = g.add(it.pos, g.mul(st, lt))
+							var nt = this.teammateData[it];
+							if (nt)
+								if (ot) {
+									var rt = this.teammateData[it];
+									rt.pos = g.copy(ot.netData.pos), rt.posTarget = g.copy(ot.netData.pos)
+								} else if (nt) {
+								var st = (c.player.moveSpeed, g.sub(nt.posTarget, nt.pos)),
+									lt = g.length(st),
+									ct = lt > 1e-4 ? g.div(st, lt) : g.create(1, 0),
+									mt = Math.min(lt, nt.posDelta * e / u.kTeamUpdateRate);
+								nt.pos = g.add(nt.pos, g.mul(ct, mt))
 							}
 						}
 					}
@@ -24658,7 +23369,7 @@ webpackJsonp([0], {
 							a = ((new Date).getTime(), w.truncateString(t, "bold 16px arial", 180));
 						this.playerInfo[e.id] = {
 							name: t,
-							nameUnEntity: w.htmlUnescape(t),
+							nameUnEntity: w.unEntity(t),
 							nameKillFeed: a,
 							teamId: e.teamId
 						}
@@ -24709,13 +23420,13 @@ webpackJsonp([0], {
 			},
 			"word-order": "svo",
 			"index-slogan": "2d Battle Royale",
-			"index-region": "Región",
-			"index-north-america": "Norteamérica",
+			"index-region": "RegiÃ³n",
+			"index-north-america": "NorteamÃ©rica",
 			"index-europe": "Europa",
 			"index-asia": "Asia",
 			"index-players": "Jugadores",
 			"index-play-solo": "Jugar Solo",
-			"index-play-duo": "Jugar Dúo",
+			"index-play-duo": "Jugar DÃºo",
 			"index-play-squad": "Jugar Squad",
 			"index-join-team": "Entrar equipo",
 			"index-create-team": "Crear equipo",
@@ -24723,35 +23434,35 @@ webpackJsonp([0], {
 			"index-leave-team": "Dejar el equipo",
 			"index-joining-team": "Uniendose al equipo",
 			"index-creating-team": "Creando equipo",
-			"index-invite-link": "Enlace de invitación",
+			"index-invite-link": "Enlace de invitaciÃ³n",
 			"index-invite-code": "Codigo de invitacion",
 			"index-join-team-help": "Tienes un enlace de equipo?  Pegalo aqui:",
 			"index-solo": "Solo",
-			"index-duo": "Dúo",
+			"index-duo": "DÃºo",
 			"index-squad": "Squad",
 			"index-auto-fill": "Emparejar",
 			"index-no-fill": "No Emparejar",
-			"index-waiting-for-leader": "Esperando al Líder para comenzar el juego",
+			"index-waiting-for-leader": "Esperando al LÃ­der para comenzar el juego",
 			"index-play": "Jugar",
 			"index-featured-youtuber": "YouTuber Destacado",
-			"index-streaming-live": "¡En Directo!",
-			"index-settings": "Configuración",
-			"index-high-resolution": "Resolución alta (activar para mejorar la calidad visual)",
+			"index-streaming-live": "Â¡En Directo!",
+			"index-settings": "ConfiguraciÃ³n",
+			"index-high-resolution": "ResoluciÃ³n alta (activar para mejorar la calidad visual)",
 			"index-screen-shake": "Temblor de la pantalla",
 			"index-master-volume": "Volumen principal",
 			"index-sfx-volume": "Volumen de efectos de sonido",
-			"index-music-volume": "Volumen de la música",
-			"index-mobile-announce": "Ahora disponible para móvil!",
-			"index-mobile-tooltip": "¡Visita <span>surviv.io</span> en tu dispositivo móvil para jugar en el camino!",
-			"index-team-is-full": "¡El equipo esta lleno!",
+			"index-music-volume": "Volumen de la mÃºsica",
+			"index-mobile-announce": "Ahora disponible para mÃ³vil!",
+			"index-mobile-tooltip": "Â¡Visita <span>surviv.io</span> en tu dispositivo mÃ³vil para jugar en el camino!",
+			"index-team-is-full": "Â¡El equipo esta lleno!",
 			"index-failed-joining-team": "Fallo al unirse al equipo.",
 			"index-failed-creating-team": "Fallo al crear el equipo.",
 			"index-failed-finding-game": "Fallo al encontrar una partida.",
 			"index-failed-joining-game": "Fallo al unirse a la partida.",
-			"index-lost-connection": "Se perdio la conección al equipo.",
+			"index-lost-connection": "Se perdio la conecciÃ³n al equipo.",
 			"index-host-closed": "El servidor cerro la conexion.",
-			"index-view-more": "Ver más",
-			"index-back-to-main": "Volver al menú principal",
+			"index-view-more": "Ver mÃ¡s",
+			"index-back-to-main": "Volver al menÃº principal",
 			"index-most-kills": "Mas Muertes",
 			"index-total-kills": "Total de muertes",
 			"index-total-wins": "Total de Victorias",
@@ -24762,20 +23473,20 @@ webpackJsonp([0], {
 			"index-this-week": "Esta semana",
 			"index-all-time": "Siempre",
 			"index-top-100": "TOP 100",
-			"index-rank": "Posición",
+			"index-rank": "PosiciÃ³n",
 			"index-player": "Jugador",
 			"index-total-games": "Partidas Jugadas",
 			"index-controls": "Controles",
 			"index-movement": "Movimiento",
 			"index-movement-ctrl": "W, A, S, D",
 			"index-aim": "Apuntar",
-			"index-aim-ctrl": "Ratón",
+			"index-aim-ctrl": "RatÃ³n",
 			"index-punch": "Golpear",
 			"index-shoot": "Disparar",
 			"index-shoot-ctrl": "Click Izquierdo",
 			"index-change-weapons": "Cambiar arma",
-			"index-change-weapons-ctrl": "1 hasta 4 ó Rueda del Ratón",
-			"index-stow-weapons": "Guardar arma (Puños)",
+			"index-change-weapons-ctrl": "1 hasta 4 Ã³ Rueda del RatÃ³n",
+			"index-stow-weapons": "Guardar arma (PuÃ±os)",
 			"index-stow-weapons-ctrl": "3 o E",
 			"index-swap-weapons": "Cambiar a arma anterior",
 			"index-swap-weapons-ctrl": "Q",
@@ -24788,13 +23499,13 @@ webpackJsonp([0], {
 			"index-revive": "Revivir",
 			"index-pickup-ctrl": "F",
 			"index-use-medical": "Usar objeto medico",
-			"index-use-medical-ctrl": "Click izquierdo en el objeto ó 7 hasta 0",
+			"index-use-medical-ctrl": "Click izquierdo en el objeto Ã³ 7 hasta 0",
 			"index-drop-item": "Soltar objeto",
 			"index-drop-item-ctrl": "Click derecho en el objeto",
-			"index-cancel-action": "Cancelar acción",
+			"index-cancel-action": "Cancelar acciÃ³n",
 			"index-cancel-action-ctrl": "X",
-			"index-view-map": "Vér el mapa",
-			"index-view-map-ctrl": "M ó G",
+			"index-view-map": "VÃ©r el mapa",
+			"index-view-map-ctrl": "M Ã³ G",
 			"index-toggle-minimap": "Desactivar minimapa",
 			"index-toggle-minimap-ctrl": "V",
 			"index-use-ping": "Usar la rueda comunicacion de equipo",
@@ -24807,7 +23518,7 @@ webpackJsonp([0], {
 			"index-tips-3": "Encuentra suministros y mata",
 			"index-tips-3-desc": "Comenzaras el juego con una bolsa. Muevete por el mapa para encontrar suministros: Armas, municion, mirillas, y objetos medicos. Elimina los otros jugadores y puedes tomar sus suministros!",
 			"index-tips-4": "Rojo-Malo!",
-			"index-tips-4-desc": "Los otros jugadores no son,los unicos que pueden lastimarte. La mortal zona roja se mueve hacia dentro desde los lados del mapa y reparte daño cada vez mas fuerte. Manten un ojo en el mapa y quedate asalvo.",
+			"index-tips-4-desc": "Los otros jugadores no son,los unicos que pueden lastimarte. La mortal zona roja se mueve hacia dentro desde los lados del mapa y reparte daÃ±o cada vez mas fuerte. Manten un ojo en el mapa y quedate asalvo.",
 			"game-alive": "Vivos",
 			"game-reloading": "Recargando",
 			"game-using": "Usando",
@@ -24826,7 +23537,7 @@ webpackJsonp([0], {
 			"game-killed": "mato",
 			"game-finally-killed": "finalmente mato a",
 			"game-finally-bled-out": "se desangro",
-			"game-died-outside": "murió fuera de la zona segura",
+			"game-died-outside": "muriÃ³ fuera de la zona segura",
 			"game-the-red-zone": "la zona roja",
 			"game-waiting-for-players": "Esperando jugadores",
 			"game-spectating": "Espectando a",
@@ -24837,10 +23548,10 @@ webpackJsonp([0], {
 			"game-minute": "minuto",
 			"game-m": "m",
 			"game-s": "s",
-			"game-not-enough-space": "¡No hay sufficiente espacio!",
-			"game-item-already-owned": "¡Objeto ya adquirido!",
-			"game-item-already-equipped": "¡Objeto ya esta equipado!",
-			"game-better-item-equipped": "¡Mejor objeto equipado!",
+			"game-not-enough-space": "Â¡No hay sufficiente espacio!",
+			"game-item-already-owned": "Â¡Objeto ya adquirido!",
+			"game-item-already-equipped": "Â¡Objeto ya esta equipado!",
+			"game-better-item-equipped": "Â¡Mejor objeto equipado!",
 			"game-play-new-game": "Jugar otra partida",
 			"game-spectate": "Espectar",
 			"game-full-screen": "Pantalla completa",
@@ -24855,37 +23566,37 @@ webpackJsonp([0], {
 			"game-spectate-next": "",
 			"game-leave-game": "Salir de la partida",
 			"game-your-results": "Tus resultados",
-			"game-chicken": "¡A ganar a ganar pollo para cenar!",
-			"game-won-the-game": "ganó la partida.",
+			"game-chicken": "Â¡A ganar a ganar pollo para cenar!",
+			"game-won-the-game": "ganÃ³ la partida.",
 			"game-team-eliminated": "Tu equipo ha sido eliminado.",
-			"game-rank": "Posición",
-			"game-team-rank": "Posición del equipo",
+			"game-rank": "PosiciÃ³n",
+			"game-team-rank": "PosiciÃ³n del equipo",
 			"game-team-kills": "Muertes de equipo",
 			"game-kill": "Muerte",
 			"game-kills": "Muertes",
-			"game-damage-dealt": "Daño repartido",
-			"game-damage-taken": "Daño recibido",
+			"game-damage-dealt": "DaÃ±o repartido",
+			"game-damage-taken": "DaÃ±o recibido",
 			"game-survived": "Sobreviviste",
 			"game-backpack00": "Bolsa",
-			"game-backpack01": "Mochila pequeña",
+			"game-backpack01": "Mochila pequeÃ±a",
 			"game-backpack02": "Mochila mediana",
 			"game-backpack03": "Mochila militar",
 			"game-bandage": "Vendas",
 			"game-bandage-tooltip": "Click izquierdo para curar 15 de salud.",
 			"game-healing-tooltip": "No puede curar mas cuando estas a 75 de salud.",
-			"game-healthkit": "Botiquín",
+			"game-healthkit": "BotiquÃ­n",
 			"game-healthkit-tooltip": "Click izquierdo para curar 100 de salud.",
 			"game-soda": "Soda",
 			"game-soda-tooltip": "Click izquierdo para aumentar 25 de adrenalina.",
 			"game-adrenaline-tooltip": "La adrenalina te cura mientras pasa el tiempo.",
-			"game-painkiller": "Píldora",
+			"game-painkiller": "PÃ­ldora",
 			"game-painkiller-tooltip": "Click izquierdo para aumentar 50 de adrenalina.",
 			"game-9mm": "9mm",
-			"game-9mm-tooltip": "Munición para la M9, Glock, MP5, MAC-10, UMP9 y Vector.",
+			"game-9mm-tooltip": "MuniciÃ³n para la M9, Glock, MP5, MAC-10, UMP9 y Vector.",
 			"game-12gauge": "Calibre 12",
-			"game-12gauge-tooltip": "Munición para la M870, Saiga-12 y MP220.",
+			"game-12gauge-tooltip": "MuniciÃ³n para la M870, Saiga-12 y MP220.",
 			"game-762mm": "7,62mm",
-			"game-762mm-tooltip": "Ammo for AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 y DP-28.",
+			"game-762mm-tooltip": "Ammo for AK-47, SCAR-H, M39, Mosin Nagant, OT-38 y DP-28.",
 			"game-556mm": "5,56mm",
 			"game-556mm-tooltip": "Ammo for FAMAS, HK416, Mk 12 y M249.",
 			"game-chest01": "Chaleco de nivel 1",
@@ -24902,7 +23613,7 @@ webpackJsonp([0], {
 			"game-level-1": "Nvl. 1",
 			"game-level-2": "Nvl. 2",
 			"game-level-3": "Nvl. 3",
-			"game-outfitBase": "Traje Básico",
+			"game-outfitBase": "Traje BÃ¡sico",
 			"game-outfitRoyalFortune": "Fortuna Real",
 			"game-outfitKeyLime": "Limero",
 			"game-outfitCobaltShell": "Armadura de Cobalto",
@@ -24910,11 +23621,11 @@ webpackJsonp([0], {
 			"game-outfitDarkGloves": "El Profesional",
 			"game-outfitGhillie": "Traje Ghillie",
 			"game-outfitCamo": "Camuflaje de Bosque ",
-			"game-outfitRed": "Práctica de Tiro",
-			"game-outfitWhite": "Vengador del Ártico",
+			"game-outfitRed": "PrÃ¡ctica de Tiro",
+			"game-outfitWhite": "Vengador del Ã?rtico",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -24933,284 +23644,6 @@ webpackJsonp([0], {
 			"game-silo_01": "un silo"
 		};
 		e.exports = i
-	},
-	po6R: function(e, t, a) {
-		"use strict";
-
-		function i(e, t) {
-			if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-		}
-		var o = function() {
-				function e(e, t) {
-					for (var a = 0; a < t.length; a++) {
-						var i = t[a];
-						i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i)
-					}
-				}
-				return function(t, a, i) {
-					return a && e(t.prototype, a), i && e(t, i), t
-				}
-			}(),
-			n = a("juYr"),
-			r = a("zinx"),
-			s = a("v8aM"),
-			l = (s.EmoteType, s.EmoteData),
-			c = a("Jr6A"),
-			m = a("85i3"),
-			d = a("SEs0"),
-			p = function() {
-				function e(t) {
-					i(this, e), this.selector = t, this.enabled = !0, this.onToggle = function() {}
-				}
-				return o(e, [{
-					key: "onToggle",
-					value: function(e) {
-						this.onToggle = e
-					}
-				}, {
-					key: "isVisible",
-					value: function() {
-						return "none" != this.selector.css("display")
-					}
-				}, {
-					key: "show",
-					value: function() {
-						this.selector.css("display", "block"), this.onToggle(this.isVisible()), d.addModalCloseListener()
-					}
-				}, {
-					key: "hide",
-					value: function() {
-						this.selector.css("display", "none"), this.onToggle(this.isVisible()), d.removeModalCloseListener()
-					}
-				}]), e
-			}(),
-			u = function() {
-				function e(t) {
-					var a = this;
-					i(this, e), this.profile = {}, this.loading = !1, this.nameChangeEnabled = !1, this.setNamePrompt = new p(n("#modal-account-name-change")), this.setNamePrompt.onToggle(function() {
-						n("#modal-body-warning").css("display", "none"), n("#modal-account-name-title").html("Change name"), n("#modal-account-name-input").val("")
-					}), n("#modal-account-name-finish").click(function(e) {
-						e.stopPropagation();
-						var i = n("#modal-account-name-input").val();
-						t.setUsername(i, function(e) {
-							a.onSetUsername(e)
-						})
-					}), n("#modal-account-name-input").on("keypress", function(e) {
-						13 === (e.which || e.keyCode) && n("#modal-account-name-finish").trigger("click")
-					}), this.changeAvatarPrompt = new p(n("#modal-account-avatar")), d.addModalCloseCallback(function(e, a) {
-						if (a.parents("#modal-account-avatar").length > 0) {
-							e.stopPropagation();
-							var i = n("#customize-account-avatar").find(".customize-emote-image").data("id");
-							t.setAvatar(i)
-						}
-					}), this.delAccountPrompt = new p(n("#modal-account-delete")), n("#modal-account-delete-finish").click(function(e) {
-						e.stopPropagation(), "DELETE" == n("#modal-account-delete-input").val() && t.deleteUser(), a.hideModals()
-					}), n("#modal-account-delete-input").on("keypress", function(e) {
-						13 === (e.which || e.keyCode) && n("#modal-account-delete-finish").trigger("click")
-					}), this.modals = [this.setNamePrompt, this.changeAvatarPrompt, this.delAccountPrompt];
-					var o = n(".account-loggedin-stats"),
-						r = n(".account-loggedin-buttons-main"),
-						s = n(".account-loggedin-buttons-settings"),
-						l = n(".account-loggedin-buttons-link-account");
-					n(".account-details-user").click(function(e) {
-						e.stopPropagation(), a.activeMenu != o ? a.setMenu(o) : a.setMenu(r)
-					}), n(".btn-account-settings").click(function(e) {
-						e.stopPropagation(), a.setMenu(s)
-					}), n(".btn-account-link").click(function(e) {
-						e.stopPropagation(), a.setMenu(l)
-					}), n(".btn-account-back").click(function(e) {
-						e.stopPropagation(), a.setMenu(r)
-					}), n(".btn-account-change-name").click(function(e) {
-						e.stopPropagation(), a.profile.usernameChangeTime <= 0 && (a.showModal(a.setNamePrompt), n("#modal-account-name-title").html("Change name"), a.setMenu(o))
-					}), n(".btn-account-change-avatar, .account-avatar").click(function(e) {
-						e.stopPropagation(), void 0 != a.profile.avatar && (a.showModal(a.changeAvatarPrompt), a.setMenu(o))
-					}), n(".btn-account-delete").click(function(e) {
-						e.stopPropagation(), n("#modal-account-delete-input").val(""), a.showModal(a.delAccountPrompt), a.setMenu(o)
-					}), this.menus = [o, r, s, l], this.activeMenu = o, this.statsButtons = o, this.menuListener = function(e) {
-						n(e.target).closest(n(".account-loggedin-block")).length || a.setMenu(o)
-					}
-				}
-				return o(e, [{
-					key: "setMenu",
-					value: function(e) {
-						for (var t = 0; t < this.menus.length; t++) this.menus[t].css("display", "none");
-						e.css("display", "block"), this.activeMenu = e, e != this.statsButtons ? n(document).on("click touchend", this.menuListener) : n(document).off("click touchend", this.menuListener)
-					}
-				}, {
-					key: "showModal",
-					value: function(e) {
-						this.hideModals(), e.show()
-					}
-				}, {
-					key: "hideModals",
-					value: function() {
-						for (var e = 0; e < this.modals.length; e++) this.modals[e].hide()
-					}
-				}, {
-					key: "onSetUsername",
-					value: function(e) {
-						var t = {
-								failed: "Failed setting username.",
-								invalid: "Invalid username.",
-								taken: "Name already taken!",
-								change_time_not_expired: "Username has already been set recently."
-							},
-							a = t[e] || t.failed;
-						n("#modal-body-warning").hide(), n("#modal-body-warning div").html(a), n("#modal-body-warning").fadeIn()
-					}
-				}, {
-					key: "show",
-					value: function(e) {
-						n(".account-loggedin-block").css("display", "block"), this.setMenu(this.statsButtons);
-						var t = c.htmlEscape(this.profile.username);
-						n(".account-player-name").html(t);
-						var a = n(".btn-player-stats-link");
-						this.profile.slug ? (a.attr("href", "/stats/" + this.profile.slug), a.css("display", "block")) : a.css("display", "none");
-						var i = this.profile.avatar,
-							o = l[i],
-							r = o && o.texture ? o.texture : "../img/gui/player.svg";
-						n(".account-details-user .account-avatar").css("background-image", e ? "none" : "url(" + r + ")").addClass(e ? "" : "account-avatar-hover"), n(".account-details-user .account-avatar-loading").css("display", e ? "block" : "none"), this.nameChangeEnabled = this.profile.usernameChangeTime <= 0, this.nameChangeEnabled ? n(".btn-account-change-name").removeClass("btn-account-disabled") : n(".btn-account-change-name").addClass("btn-account-disabled"), n(".btn-account-change-name").html(this.profile.usernameSet ? "Change Account Name" : "Set Account Name"), e || this.profile.usernameSet ? this.setNamePrompt.hide() : (this.showModal(this.setNamePrompt), d.removeModalCloseListener());
-						var s = function(e) {
-							e.addClass("btn-login-linked"), e.find("span.login-button-name").html('<div class="icon"></div>'), e.off("click")
-						};
-						this.profile.linkedFacebook && s(n(".btn-login-facebook")), this.profile.linkedGoogle && s(n(".btn-login-google")), this.profile.linkedTwitch && s(n(".btn-login-twitch")), this.profile.linkedDiscord && s(n(".btn-login-discord"))
-					}
-				}, {
-					key: "hide",
-					value: function() {
-						n(".account-loggedin-block").css("display", "none"), this.setMenu(this.statsButtons), this.hideModals()
-					}
-				}]), e
-			}(),
-			h = function() {
-				function e() {
-					var t = this;
-					i(this, e), this.leaderboard = n(".account-login-leaderboard"), this.loginButtons = n(".account-login-buttons"), this.loginVisible = !1, this.clickListener = function(e) {
-						n(e.target).closest(t.loginButtons).length || t.showLogin(!1)
-					}, n(".account-details-guest").click(function(e) {
-						e.stopPropagation(), t.showLogin(!t.loginVisible)
-					})
-				}
-				return o(e, [{
-					key: "showLogin",
-					value: function(e) {
-						this.loginButtons.css("display", e || r.mobile ? "block" : "none"), this.leaderboard.css("display", e ? "none" : "block"), this.loginVisible = e, e && !r.mobile ? n(document).on("click touchend", this.clickListener) : n(document).off("click touchend", this.clickListener)
-					}
-				}, {
-					key: "show",
-					value: function(e) {
-						n(".account-login-block").css("display", "block");
-						var t = n(".account-login-block");
-						t.find(".account-avatar-loading").css("display", e ? "block" : "none"), t.find(".account-avatar").css("background-image", e ? "none" : 'url("../img/gui/player.svg")'), t.find(".account-name").html(e ? "Logging in..." : "Log in to track your stats!"), this.loginButtons.enabled = !e
-					}
-				}, {
-					key: "hide",
-					value: function() {
-						n(".account-login-block").css("display", "none"), this.showLogin(!1)
-					}
-				}]), e
-			}(),
-			g = function() {
-				function e(t) {
-					var a = this;
-					i(this, e), this.config = t, this.loading = !1, this.loggedIn = !1, this.profile = {}, this.loginMenu = new h, this.profileMenu = new u(this), this.errorModal = new p(n("#modal-notification")), n(".btn-login-facebook").click(function(e) {
-						window.location.href = "/api/user/auth/facebook"
-					}), n(".btn-login-google").click(function(e) {
-						window.location.href = "/api/user/auth/google"
-					}), n(".btn-login-twitch").click(function(e) {
-						window.location.href = "/api/user/auth/twitch"
-					}), n(".btn-login-discord").click(function(e) {
-						window.location.href = "/api/user/auth/discord"
-					}), n(".btn-account-logout").click(function(e) {
-						a.logout()
-					})
-				}
-				return o(e, [{
-					key: "load",
-					value: function() {
-						var e = this;
-						!this.loading && c.getCookie("app-data") && (this.loading = !0, this.render(), n.ajax({
-							type: "GET",
-							url: "/api/user/profile",
-							timeout: 1e4
-						}).done(function(t, a) {
-							if (e.loggedIn = void 0 !== t.profile, e.loggedIn) {
-								e.profile = t.profile;
-								var i = e.config.get("profile") || {};
-								i.slug = t.profile.slug, e.config.set("profile", i)
-							}
-						}).fail(function(e) {
-							m.storeGeneric("account", "load_error")
-						}).always(function() {
-							e.loading = !1, e.render()
-						}))
-					}
-				}, {
-					key: "logout",
-					value: function() {
-						this.config.set("profile", null), window.location.href = "/api/user/logout"
-					}
-				}, {
-					key: "deleteUser",
-					value: function() {
-						this.config.set("profile", null), window.location.href = "/api/user/delete"
-					}
-				}, {
-					key: "setUsername",
-					value: function(e, t) {
-						var a = this;
-						n.ajax({
-							type: "POST",
-							url: "/api/user/username",
-							timeout: 5e3,
-							contentType: "application/json; charset=utf-8",
-							data: JSON.stringify({
-								username: e
-							})
-						}).done(function(e, i) {
-							"success" == e.result ? a.load() : t(e.result)
-						}).fail(function(e) {
-							m.storeGeneric("account", "set_username_error"), t("Failed setting username.")
-						})
-					}
-				}, {
-					key: "setAvatar",
-					value: function(e) {
-						var t = this;
-						this.loggedIn && e != this.profile.avatar && n.ajax({
-							type: "POST",
-							url: "/api/user/avatar",
-							timeout: 1e4,
-							contentType: "application/json; charset=utf-8",
-							data: JSON.stringify({
-								avatar: e
-							})
-						}).done(function(e, a) {
-							t.load()
-						}).fail(function(e) {
-							m.storeGeneric("account", "set_avatar_error"), t.displayError("server_error")
-						})
-					}
-				}, {
-					key: "displayError",
-					value: function(e) {
-						var t = {
-							server_error: "Internal server error, please try again later.",
-							facebook_account_in_use: "Failed linking Facebook account.<br/>Account already in use!",
-							google_account_in_use: "Failed linking Google account.<br/>Account already in use!",
-							twitch_account_in_use: "Failed linking Twitch account.<br/>Account already in use!",
-							discord_account_in_use: "Failed linking Discord account.<br/>Account already in use!"
-						};
-						t[e] && (n("#modal-notification").find(".modal-settings-text").html(t[e]), this.errorModal.show())
-					}
-				}, {
-					key: "render",
-					value: function() {
-						this.profileMenu.profile = this.profile, this.loggedIn ? (this.profileMenu.show(this.loading), this.loginMenu.hide(), this.profile.errorFlash.length > 0 && this.displayError(this.profile.errorFlash[0])) : (this.profileMenu.hide(), this.loginMenu.show(this.loading))
-					}
-				}]), e
-			}();
-		e.exports = g
 	},
 	"qwV+": function(e, t, a) {
 		"use strict";
@@ -25486,7 +23919,7 @@ webpackJsonp([0], {
 		e.exports = d
 	},
 	tPA9: function(e, t, a) {
-		t = e.exports = a("lcwS")(!1), t.push([e.i, 'img{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none}#cvs{-webkit-filter:none;filter:none}.click-through{pointer-events:none}#game-area-wrapper{cursor:crosshair;left:0;position:absolute!important;top:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}#ui-game{-webkit-filter:none;filter:none;height:100%;left:0;position:absolute;top:0;width:100%}#ui-center{color:#fff;pointer-events:all;position:absolute;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%) scale(1);transform:translateX(-50%) translateY(-50%) scale(1);z-index:10}@media (max-width:1200px),screen and (min-width:851px) and (max-height:768px){#ui-center{-webkit-transform:translateX(-50%) translateY(-50%) scale(.85);transform:translateX(-50%) translateY(-50%) scale(.85)}}@media screen and (max-width:850px){#ui-center{pointer-events:all;-webkit-transform:translateX(-50%) translateY(-50%) scale(.85);transform:translateX(-50%) translateY(-50%) scale(.85);z-index:10}}@media (max-width:850px) and (max-height:300px){#ui-center{-webkit-transform:translateX(-50%) translateY(-50%) scale(.775);transform:translateX(-50%) translateY(-50%) scale(.775)}}.btns-game-double-row{display:flex;position:relative}.btns-game-double-row>.btn-game-container{position:relative;width:100%}.btns-game-double-row>.btn-game-container>.btn-double-row{display:inline-block}.btns-game-double-row>div:not(:last-child){margin-right:2px}.game-menu-icon{background-size:22px;background-position:50%;background-repeat:no-repeat;bottom:13px;display:inline-block;height:22px;left:60%;pointer-events:none;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:22px}.btn-game-touch-style{background-color:#50afab;background-position:4px 4px;background-repeat:no-repeat;background-size:20px;border:0;border-bottom:none;border-radius:5px;box-shadow:inset 0 -2px #387c79;box-sizing:border-box;color:#fff;cursor:pointer;display:block;font-size:14px;height:30px;line-height:30px;margin:auto;margin-top:2px;margin-bottom:4px;position:relative;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.25);width:100%}.movement-icon{background-image:url(../img/gui/movement.svg)}.target-icon{background-image:url(../img/gui/target.svg)}#ui-game-menu{background-color:rgba(0,0,0,.5);border-radius:5px;box-sizing:border-box;display:none;margin:10px auto;padding:10px 15px;width:250px}@media screen and (max-width:850px){#ui-game-menu{padding:4px 10px;width:190px}}@media (max-width:850px) and (max-height:300px){#ui-game-menu{margin-top:0}}#ui-game-menu p{bottom:4px;display:inline-block;font-size:14px;position:relative}@media screen and (max-width:850px){#ui-game-menu p{bottom:0;font-size:12px;margin-bottom:8px;margin-top:6px}}#ui-alive-info{position:absolute;color:#fff;width:80px;height:36px;top:174px;left:106px;background:rgba(0,0,0,.4);border-radius:5px}#ui-spec-counter{top:135px;left:60px}#ui-map-expand-mobile{height:190px;width:190px;left:-4px;top:-22px;z-index:0;background-color:transparent}#ui-map-expand img{display:none}#ui-map-minimize{left:124px}.ui-map-wrapper-mobile{bottom:auto;color:#fff;display:block;font-size:16px;left:6px;top:46px}.ui-map-wrapper-mobile .ui-players-alive{left:4px}.ui-map-wrapper-mobile .ui-map-counter{position:relative;display:inline-block;font-size:24px;text-align:center;bottom:9px;left:2px}.ui-map-wrapper-mobile .ui-map-icon{padding:6px;display:inline-block;height:24px;width:24px;margin-left:2px;background-size:24px;background-repeat:no-repeat;background-position:6px 6px}.ui-map-wrapper-mobile #ui-map-info{position:absolute;color:#fff;width:100px;height:36px;top:174px;left:0;background:rgba(0,0,0,.4);border-radius:5px}.ui-map-wrapper-mobile .gas-icon{background-image:url(../img/gui/gas.svg)}.ui-map-wrapper-mobile .danger-icon{background-image:url(../img/gui/danger.svg)}.ui-map-wrapper-mobile .alive-icon{background-image:url(../img/gui/player.svg)}.ui-map-wrapper-mobile .icon-pulse{-webkit-animation:pulse 2s linear infinite;animation:pulse 2s linear infinite}.ui-map-wrapper-mobile .ui-settings-button{position:absolute;color:#fff;border-radius:5px;pointer-events:all}.ui-map-wrapper-mobile .ui-settings-button img{position:absolute;left:6px;top:6px;height:36px;width:36px;background-size:36px;background-repeat:no-repeat;transform:scale(1);-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-map-wrapper-mobile .ui-settings-button .map-img-after{display:none}.ui-map-wrapper-mobile .ui-settings-button:hover{-webkit-transform:scale(1);transform:scale(1)}.ui-map-wrapper-desktop{position:absolute;bottom:12px;left:12px}#ui-map-wrapper{position:absolute;z-index:1}#ui-settings-container-mobile{position:relative}#ui-menu-display{cursor:pointer;left:2px;top:-18px;height:48px;width:48px;opacity:.8;background-color:rgba(0,0,0,.4);background-size:48px;background-repeat:no-repeat;background-position:50%;background-image:url(../img/gui/cog.svg);z-index:1}#big-map{display:none;height:100%;width:100%}#big-map-collision{height:100%;left:50%;margin:auto;pointer-events:all;position:fixed;top:0;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#big-map-close{position:absolute;margin-left:auto;height:64px;width:64px;right:6px;top:6px;border-radius:6px;background-color:rgba(0,0,0,.5);background-repeat:no-repeat;background-size:48px;background-position:50%;background-image:url(../img/gui/close.svg);pointer-events:all}#ui-right-center{position:absolute;color:#fff;opacity:.75;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-right-center-desktop{top:40%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:12px}.ui-right-center-mobile{top:30px;-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:translateY(-50%) scale(.8);transform:translateY(-50%) scale(.8);right:6px}@media (max-height:360px),(max-width:640px){.ui-right-center-mobile{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.85);transform:scale(.85);top:16px}}.ui-right-center-tablet{top:12px!important;-webkit-transform:scale(.8);transform:scale(.8)}@media (max-height:600px){.ui-right-center-tablet{-webkit-transform:scale(.65);transform:scale(.65)}}.ui-bottom-right-tablet{bottom:25%!important;-webkit-transform:scale(.8)!important;transform:scale(.8)!important;-webkit-transform-origin:right!important;transform-origin:right!important}@media (max-height:600px){.ui-bottom-right-tablet{bottom:25%!important;-webkit-transform:scale(.7)!important;transform:scale(.7)!important;-webkit-transform-origin:right!important;transform-origin:right!important}}.ui-bottom-center-right-tablet{left:72%!important;-webkit-transform:scale(.65)!important;transform:scale(.65)!important}#ui-emote-button{background:rgba(0,0,0,.4);background-image:url(../img/gui/emote.svg);background-position:50%;background-repeat:no-repeat;background-size:28px;border-radius:21px;display:none;height:42px;position:absolute;right:108px;top:0;width:42px}@media screen and (max-width:850px){#ui-emote-button{background-size:20px;border-radius:14px;height:28px;right:0;top:50px;width:28px}}.ui-top-left-tablet{left:120px!important}.ui-spectate-options-wrapper-tablet{bottom:12px!important;top:auto!important}.ui-killfeed-wrapper-tablet{top:60px!important}@media (max-width:850px) and (max-height:320px){.ui-slider-container{margin-bottom:0}}@media (max-width:850px) and (max-height:320px){.ui-slider-container>p{width:75px}}@media (max-width:850px) and (max-height:320px){.ui-slider-container>.slider{bottom:3px;width:85px}}@media (max-width:850px) and (max-height:320px){.ui-slider-container>.slider::-webkit-slider-thumb{width:20px;height:20px}}@media (max-width:850px) and (max-height:320px){.ui-slider-container>.slider::-moz-range-thumb{width:20px;height:20px}}.ui-hidden{display:none}.btn-game-menu{text-align:center;line-height:38px;display:block;width:100%;height:40px;border:0;border-radius:5px;box-sizing:border-box;position:relative;margin:auto;margin-top:5px;margin-bottom:5px;color:#fff;font-size:16px;text-shadow:0 1px 2px rgba(0,0,0,.25);background-color:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79;background-repeat:no-repeat;cursor:pointer}#btn-game-fullscreen{background-size:34px;background-position:4px 2px;background-image:url(../img/gui/minimize.svg)}#btn-game-sound{background-size:44px;background-position:2px -3px}#btn-game-quit{margin-top:40px;background-image:url(../img/gui/quit.svg)}#btn-game-quit,#btn-game-resume{background-size:44px;background-position:-2px -3px}#btn-game-resume{margin-top:30px;background-image:url(../img/gui/resume.svg)}#ui-top-center{position:absolute;color:#fff;top:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-top-center .top-center-text{text-align:center;width:100vw;padding:8px}#ui-waiting-text{display:none;color:#fff;text-shadow:2px 2px 0 #000}#ui-waiting-text,#ui-waiting-text span{font-size:32px;font-weight:700}.top-center-text .spectate-text{display:inline-block;text-shadow:2px 2px 0 #000;font-size:24px;font-weight:700;overflow:hidden;height:32px}@media (max-width:1024px){.top-center-text .spectate-text{font-size:18px}}.top-center-text .spectate-desc{color:#fff;margin-right:8px}.ui-spectate-mode{display:none}#ui-spectate-text{position:relative}#spectate-player{max-width:250px;white-space:nowrap;text-overflow:ellipsis;color:cyan}#ui-top-center-scopes-wrapper{position:absolute;color:#fff;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:100%}#ui-top-center-scopes{margin-top:12px;text-align:center}@media (max-height:768px),(max-width:1200px){#ui-top-center-scopes{-webkit-transform:scale(.85);transform:scale(.85)}}.ui-zoom{background:rgba(0,0,0,.3);border-radius:36px;width:64px;height:64px;opacity:.6;display:inline-block}.ui-zoom-hover:hover{opacity:1}.ui-zoom-active{vertical-align:baseline;opacity:1;transform:scale(1);-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-zoom .ui-zoom-image{width:64px;height:64px;opacity:.4;padding:2px}.ui-zoom .ui-zoom-text{margin-top:14px;width:100%}.ui-zoom .ui-zoom-level{font-size:32px;text-align:center;width:100%}.ui-zoom .ui-zoom-append{font-size:24px}.ui-zoom-inactive{display:none;margin-left:-8px;margin-right:-8px;-webkit-transition:all .1s ease-in;-webkit-transform:scale(.5);-ms-transition:all .1s ease-in;-ms-transform:scale(.5);-moz-transition:all .1s ease-in;-moz-transform:scale(.5);transition:all .1s ease-in;transform:scale(.5)}.ui-zoom-inactive:hover{cursor:pointer!important;opacity:1}.ui-emote-wheel{z-index:3;display:none;position:fixed}.ui-emote-parent{opacity:.75}.ui-emote-hl{z-index:2;display:none}.ui-emote{position:fixed;width:256px;height:256px;background-size:256px;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-bg-circle{opacity:.5;background-image:url(../img/gui/ping-part-circle.svg)}.ui-emote-bg-quarter{opacity:.5;background-image:url(../img/gui/ping-part-quarter.svg)}.ui-emote-bg-eighth{opacity:.5;background-image:url(../img/gui/ping-part-eighth.svg)}.ui-emote-middle .ui-emote-image{width:24px!important;height:24px!important;background-size:24px!important;background-image:url(../img/gui/close.svg)}.ui-emote-top .ui-emote-image{margin-top:-78px;background-image:url(../img/gui/ping-team-danger.svg)}.ui-emote-right .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(90deg);transform:translate(-50%,-50%) rotate(90deg)}.ui-emote-right .ui-emote-image{margin-left:78px;background-image:url(../img/gui/ping-team-coming.svg)}.ui-emote-bottom .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}.ui-emote-bottom .ui-emote-image{margin-top:78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(270deg);transform:translate(-50%,-50%) rotate(270deg)}.ui-emote-left .ui-emote-image{margin-left:-78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-top-left .ui-emote-image{margin-left:-80px;margin-top:-30px;background-image:url(../img/loot/loot-ammo-box.svg)}.ui-emote-bottom-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(-45deg);transform:translate(-50%,-50%) rotate(-45deg)}.ui-emote-bottom-left .ui-emote-image{margin-left:-80px;margin-top:30px;background-image:url(../img/loot/loot-medical-healthkit.svg)}.ui-emote-circle .ui-emote-hl{background-image:url(../img/gui/ping-part-circle-highlight.svg)}.ui-emote-quarter .ui-emote-hl{background-image:url(../img/gui/ping-part-quarter-highlight.svg)}.ui-emote-eighth .ui-emote-hl{background-image:url(../img/gui/ping-part-eighth-highlight.svg)}.ui-emote-image{z-index:1;position:fixed;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-image-large{width:64px;height:64px;background-size:64px}.ui-emote-image-small{width:35px;height:35px;background-size:35px}.ui-team-indicator{z-index:2;display:none;position:fixed;top:0;left:0;border-radius:32px;width:64px;height:64px;background-size:64px;background-repeat:no-repeat;background-image:url(../img/gui/indicator.svg)}.ui-team-indicator,.ui-team-indicator-pos{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-team-indicator-pos{opacity:.75;position:relative;border-radius:24px;width:32px;height:32px;top:23px;left:32px}.ui-team-indicator-image{width:32px;height:32px;background-size:32px;background-repeat:no-repeat;background-image:url(../img/gui/ping-team-danger.svg)}.ui-indicator-ping-border{z-index:0;display:none;position:fixed;top:0;left:0;width:160px;height:160px;position:relative;background-size:160px;background-repeat:no-repeat;background-image:url(../img/gui/ping-border.svg);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#ui-top-left{position:absolute;color:#fff;font-size:16px;top:12px;left:12px;display:block}@media (max-height:768px),(max-width:1200px){#ui-top-left{-webkit-transform-origin:top left;transform-origin:top left;-webkit-transform:scale(.85);transform:scale(.85)}}.ui-bg-standard{background:rgba(0,0,0,.24);border-radius:5px}.ui-team-member{display:none;position:relative;width:200px;height:32px;padding:4px;margin-bottom:8px}.ui-team-member-name{font-weight:700;text-shadow:1px 1px 0 #000;font-size:16px;max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-team-member-color{position:absolute;top:5px;right:5px;border-radius:7px;width:14px;height:14px}.ui-background-yellow{background-color:#ff0}.ui-background-blue{background-color:blue}.ui-background-red{background-color:red}.ui-background-purple{background-color:purple}.ui-background-cyan{background-color:cyan}.ui-team-member-status{display:none;position:absolute;top:4px;right:-38px;width:32px;height:32px;background-size:32px;background-repeat:no-repeat}.ui-team-member-status-downed{border-radius:16px;display:block!important;background-image:url(../img/gui/down.svg)!important}.ui-team-member-status-dead{display:block!important;background-image:url(../img/gui/skull-team.svg)!important;opacity:.5!important}.ui-team-member-status-disconnected{display:block!important;background-image:url(../img/gui/close.svg)!important;opacity:.5!important}.ui-team-member-health{margin-top:4px}.ui-team-member-health .ui-bar-inner{background-color:#fff;z-index:1;position:absolute;border-radius:4px;width:200px;height:10px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}.ui-team-member-health .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}.ui-team-member-health .ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}#ui-spectate-options-wrapper{color:#fff;display:block;left:12px;position:absolute;top:12px}@media (max-height:768px),(max-width:1200px){#ui-spectate-options-wrapper{-webkit-transform:scale(.85);transform:scale(.85);-webkit-transform-origin:top left;transform-origin:top left}}#ui-spectate-options{position:relative;pointer-events:all;width:100%}#ui-spectate-buttons{display:inline-block;padding:8px 8px 0;text-align:center;width:192px}#ui-spectate-options a{position:relative;color:#fff;font-size:16px;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79;cursor:pointer}#btn-spectate-prev-player{margin-bottom:24px}#ui-spectate-stats{vertical-align:top;display:none}#ui-spectate-stats-header{text-align:center;font-size:24px;font-weight:700;padding:8px}#ui-spectate-stats-table{width:100%;background-color:transparent;margin:auto;margin-right:0;border-collapse:collapse}#ui-spectate-stats tbody,#ui-spectate-stats td,#ui-spectate-stats th{padding:0 8px 8px 16px;font-size:18px}.ui-spectate-stats-category{width:130px;color:hsla(0,0%,100%,.75)}.ui-spectate-stats-value{width:75px;color:#fff}#ui-leaderboard{position:absolute;color:#fff;font-size:16px;top:12px;right:12px;display:flex;font-weight:700;text-align:center;width:85px;display:inline-block}@media (max-height:768px),(max-width:1200px){#ui-leaderboard{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.85);transform:scale(.85)}}#ui-leaderboard-alive{background:rgba(0,0,0,.4);border-radius:5px;margin-bottom:8px;padding:8px;height:64px;width:72px}.ui-players-alive{position:relative;font-size:54px}.ui-players-alive-pulse{-webkit-animation-name:pulseAlive;animation-name:pulseAlive;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}@-webkit-keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}@keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}.ui-leaderboard-header{font-size:24px;margin-bottom:8px}#ui-killfeed-wrapper{position:absolute;color:#fff;font-size:16px;top:12px;right:12px;display:flex}@media (max-width:1200px),screen and (min-width:851px) and (max-height:768px){#ui-killfeed-wrapper{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.85);transform:scale(.85)}}#ui-killfeed{display:inline-block;margin-left:24px;height:100px}#ui-killfeed-contents{width:800px}#ui-killfeed-contents .killfeed-div{position:absolute;right:100px;background-color:rgba(0,0,0,.4);padding:4px 8px;border-radius:2px;height:22px;line-height:24px}.killfeed-div div{float:left;font-size:16px;font-weight:700;color:#efeeee}#ui-killfeed .killfeed-text{max-width:550px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#ui-right-center:hover{opacity:1}.ui-ammo .ui-loot-image,.ui-ammo .ui-loot-overlay{position:absolute;height:22px;width:22px;right:5px;margin-top:5px;top:0;bottom:0}#ui-medical-interactive{margin-bottom:32px}.ui-medical .ui-loot-image{position:absolute;height:30px;width:30px;background-size:30px;background-repeat:no-repeat;right:5px;margin-top:1px;top:0;bottom:0}.ui-medical:hover{cursor:pointer!important}.ui-loot{background:rgba(0,0,0,.4);border-radius:5px;width:85px;height:32px;margin-left:auto;margin-bottom:5px}.ui-loot:hover{opacity:1!important}.ui-outline-hover{border:2px solid rgba(0,255,0,0)}.ui-outline-hover:hover{-webkit-transition:border .1s ease-out;-moz-transition:border .1s ease-out;-o-transition:border .1s ease-out;border:2px solid #0f0}.ui-scale-hover{transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);-moz-transform:scale(1)}.ui-scale-hover,.ui-scale-hover:hover{-webkit-transition:all .1s ease-in;-ms-transition:all .1s ease-in;-moz-transition:all .1s ease-in;transition:all .1s ease-in}.ui-scale-hover:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);-moz-transform:scale(1.1);transform:scale(1.1)}.ui-loot .ui-loot-count{position:absolute;font-size:24px;font-weight:700;left:10px;top:2px;text-align:center}@media (max-height:864px),(max-width:1024px){.ui-right-center-desktop{top:42%;-webkit-transform-origin:right;transform-origin:right;-webkit-transform:translateY(-50%) scale(.8);transform:translateY(-50%) scale(.8)}#ui-medical-interactive{margin-bottom:8px}}@media (max-height:640px){.ui-right-center-desktop{top:42%;-webkit-transform-origin:right;transform-origin:right;-webkit-transform:translateY(-50%) scale(.7);transform:translateY(-50%) scale(.7)}#ui-medical-interactive{margin-bottom:8px}}#ui-upper-center{position:absolute;display:flex;color:#fff;top:180px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-announcement{display:none;color:#ff0;text-shadow:2px 2px 0 #000;font-size:32px;font-weight:700;text-align:center;width:100vw}#ui-lower-center{position:absolute;color:#fff;bottom:40%;left:50%}@media (max-width:1200px),screen and (min-width:851px) and (max-height:768px){#ui-lower-center{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:scale(.85);transform:scale(.85);bottom:33%}}#ui-interaction{display:flex}#ui-interaction-press{background:rgba(0,0,0,.4);border-radius:5px;margin-left:-24px;width:48px;height:48px;font-size:42px;font-weight:700;text-align:center;background-size:80%;background-position:50%;background-repeat:no-repeat}#ui-interaction-outer{background:rgba(0,0,0,.4);border-radius:5px;margin-left:10px;padding:0 15px;height:48px}#ui-interaction-outer #ui-interaction-description{margin-top:10px;font-size:24px;text-align:center}#ui-map-container{position:absolute;bottom:52px}#ui-map-info{position:absolute;color:#fff;width:100px;height:36px;bottom:218px;left:82px;background:rgba(0,0,0,.4);border-radius:5px}#ui-gas-icon{padding:6px;display:inline-block;height:24px;width:24px;margin-left:2px;background-size:24px;background-repeat:no-repeat;background-position:6px 6px}.gas-icon{background-image:url(../img/gui/gas.svg)}.danger-icon{background-image:url(../img/gui/danger.svg)}.icon-pulse{-webkit-animation:pulse 2s linear infinite;animation:pulse 2s linear infinite}#ui-gas-timer{position:relative;display:inline-block;font-size:24px;text-align:center;bottom:10px;left:2px}#ui-spec-counter{position:absolute;color:#fff;width:68px;height:28px;bottom:218px;left:6px;background:rgba(0,0,0,.4);border-radius:5px}#ui-spec-counter-icon{padding:6px;display:inline-block;height:24px;width:18px;margin-left:2px;background-size:20px;background-repeat:no-repeat;background-position:6px 4px;background-image:url(../img/gui/eye.svg)}#ui-spec-counter-number{position:relative;display:inline-block;font-size:20px;width:24px;text-align:center;bottom:15px;left:0}#ui-settings-container-desktop{position:relative;left:16px;bottom:12px}#ui-settings-container-desktop div{cursor:pointer}.ui-settings-button{position:absolute;color:#fff;border-radius:5px;height:48px;width:48px;pointer-events:all;opacity:.5;background:rgba(0,0,0,.4)}#ui-map-minimize{left:185px}.ui-settings-button img{position:absolute;left:6px;top:6px;height:36px;width:36px;background-size:36px;background-repeat:no-repeat;transform:scale(1);-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-settings-button .map-img-after{display:none}.ui-settings-button:hover{opacity:1;-webkit-transition:all .1s ease-in;-webkit-transform:scale(1.1);-ms-transition:all .1s ease-in;-ms-transform:scale(1.1);-moz-transition:all .1s ease-in;-moz-transform:scale(1.1);transition:all .1s ease-in;transform:scale(1.1)}#ui-bottom-center-0{position:absolute;color:#fff;bottom:12px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}@media (max-height:768px),(max-width:1200px){#ui-bottom-center-0{-webkit-transform-origin:bottom;transform-origin:bottom;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85)}}#ui-equipped-ammo-wrapper{position:absolute;color:#fff;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:62px}#ui-equipped-ammo{margin-bottom:12px;text-align:center;opacity:1}#ui-bullet-counter{display:inline-block;width:175px;height:56px;text-align:center;text-shadow:2px 2px #000}#ui-bullet-counter #ui-current-clip{background:rgba(0,0,0,.4);border-radius:5px;font-size:44px;font-weight:700;width:100px;height:50px;-webkit-transform:translateX(-50%);transform:translateX(-50%);left:50%;position:relative;text-align:center}#ui-bullet-counter #ui-ammo-divider{font-size:22px;left:53%;position:absolute;text-align:center;top:20px}#ui-bullet-counter #ui-remaining-ammo{background:rgba(0,0,0,.4);border-radius:5px;font-size:24px;font-weight:700;line-height:32px;width:65px;height:32px;left:82%;position:absolute;text-align:center;top:18px}#ui-boost-counter{display:inline-flex;width:412px}#ui-boost-counter .ui-boost-base{background:rgba(0,0,0,.4);height:10px;margin-bottom:8px}#ui-boost-counter-0{border-top-left-radius:3px;border-bottom-left-radius:3px;width:100px;margin-right:3px}#ui-boost-counter-0 .ui-bar-inner{background:#ff901a}#ui-boost-counter-1{width:100px;margin-left:3px;margin-right:3px}#ui-boost-counter-1 .ui-bar-inner{background:#ff751a}#ui-boost-counter-2{width:150px;margin-left:3px;margin-right:3px}#ui-boost-counter-2 .ui-bar-inner{background:#ff6616}#ui-boost-counter-3{border-top-right-radius:3px;border-bottom-right-radius:3px;width:50px;margin-left:3px}#ui-boost-counter-3 .ui-bar-inner{background:#ff5600}.ui-boost-base .ui-bar-inner{border-radius:inherit;width:0;height:10px}#ui-health-counter{background:rgba(0,0,0,.4);border-radius:5px;width:400px;height:32px;padding:6px}#ui-health-counter .ui-bar-inner{z-index:1;position:absolute;border-radius:5px;width:100%;height:32px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}#ui-health-container{width:400px;position:relative}#ui-health-counter .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}#ui-health-counter #ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}.health-bar-pulse{-webkit-animation:pulsewhite 1s linear infinite;animation:pulsewhite 1s linear infinite}@-webkit-keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@-webkit-keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}@keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}#ui-bottom-center-1{z-index:3;position:absolute;color:#fff;bottom:220px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}@media (max-height:768px),(max-width:1200px){#ui-bottom-center-1{-webkit-transform-origin:bottom;transform-origin:bottom;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85);bottom:138px}}#ui-kills{display:none;text-align:center;background:rgba(0,0,0,.4);color:#fff;border-radius:5px;padding:8px}#ui-kill-text{font-size:18px}#ui-kill-count{font-weight:700;color:#ff4100;font-size:32px;text-shadow:1px 1px 1px rgba(0,0,0,.3)}#ui-bottom-center-2{position:absolute;color:#fff;bottom:160px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-pickup-message{color:#fff;opacity:0;text-shadow:2px 2px 0 #000;font-size:32px;font-weight:700;text-align:center;width:100vw}#ui-bottom-center-right{position:absolute;color:#fff;bottom:12px;left:75%}@media (max-height:768px),(max-width:1200px){#ui-bottom-center-right{-webkit-transform:scale(.8);transform:scale(.8)}}.ui-armor-counter{position:absolute;bottom:0;display:block;width:48px;height:60px;background:rgba(0,0,0,.4);border-radius:5px;margin-left:4px}#ui-armor-helmet{right:4px}#ui-armor-backpack{left:60px;border:2px solid transparent}.ui-armor-level{position:relative;font-size:16px;font-weight:700;bottom:24px;text-align:center;text-shadow:1px 1px #000}.ui-armor-counter-inner{z-index:1;position:absolute;background:rgba(0,255,0,.5);border-radius:5px;width:100%;height:0;bottom:0;transition:height .5s;transition-property:height;transition-duration:.5s;transition-timing-function:ease-out;transition-delay:0s}.ui-armor-counter .ui-armor-count{z-index:2;text-shadow:2px 2px #000;position:relative;font-size:18px;font-weight:700;margin-top:-28px;text-align:center}.ui-armor-counter .ui-armor-image{margin:auto;left:0;right:0;bottom:0;top:0;z-index:0;position:absolute;height:36px;width:36px}#ui-bottom-right{position:absolute;color:#fff;bottom:12px;right:12px}@media (max-height:768px),(max-width:1200px){#ui-bottom-right{-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transform:scale(.7);transform:scale(.7)}}#ui-weapon-container{width:192px}.ui-weapon-info{margin-bottom:5px}.ui-weapon-info,.ui-weapon-switch{border-radius:5px;border:2px solid transparent}.ui-weapon-switch{position:absolute;right:0;opacity:.6;width:160px;height:60px;margin-left:auto;pointer-events:all;cursor:pointer!important}#ui-weapon-id-1{bottom:210px}#ui-weapon-id-2{bottom:140px}#ui-weapon-id-3{bottom:70px}#ui-weapon-id-4{bottom:0}.ui-weapon-name{font-size:18px;margin-top:38px}.ui-weapon-name,.ui-weapon-number{position:absolute;font-weight:700;right:8px;text-align:center}.ui-weapon-number{font-size:24px}.ui-weapon-exp{display:none;position:absolute;height:32px;width:32px;font-size:18px;font-weight:700;line-height:34px;right:78px;margin-top:26px;text-align:center}.ui-weapon-image{display:none;position:relative;height:60px;width:60px;left:4px;background-size:60px;background-repeat:no-repeat}#ui-weapon-id-4 .ui-weapon-image{height:52px;width:52px;left:4px;top:4px;background-size:52px}#ui-stats{display:none}#ui-stats-bg{display:none;opacity:0;position:absolute;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,.75);pointer-events:none;z-index:2}#ui-stats-contents{position:absolute;width:100%;top:10%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center;color:#fff;border-radius:5px;z-index:3}@media (max-height:860px){#ui-stats-contents{top:3%}}@media (max-width:1024px){#ui-stats-contents{-webkit-transform:translateX(-50%) scale(.8);transform:translateX(-50%) scale(.8);-webkit-transform-origin:top;transform-origin:top}}.ui-stats-header-title{font-weight:700;font-size:48px;margin:20px;color:gold}.ui-stats-header-reason{font-size:24px}.ui-stats-header-overview{display:inline;margin:10px}.ui-stats-header-overview div{display:inline;padding-bottom:12px;border-bottom:2px solid hsla(0,0%,100%,.25)}.ui-stats-header-overview div:not(:first-child){margin-left:100px}span.ui-stats-header-stat{font-size:32px}span.ui-stats-header-value{margin-left:24px;font-size:48px;font-weight:700}#ui-stats-info-box{position:relative;left:50%;margin:auto;margin-top:50px;height:190px;display:flex}@media (max-height:768px),(max-width:1200px){#ui-stats-info-box{margin-top:25px}}@media (max-width:1024px){#ui-stats-info-box{-webkit-transform-origin:left;transform-origin:left;-webkit-transform:scale(.85);transform:scale(.85)}}.ui-stats-info-player{position:relative;width:250px;background-color:rgba(0,0,0,.75);border-radius:4px;border:2px solid #000;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.ui-stats-info-status:after{content:"";display:block;position:absolute;top:15%;left:25%;background-image:url(../img/gui/skull.svg);background-repeat:no-repeat;background-size:128px;width:100%;height:100%;opacity:.1;z-index:-1}.ui-stats-info-player-name{color:gold;font-size:24px;font-weight:700;font-style:italic;margin:8px auto;max-width:240px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-stats-info{display:flex;height:36px;margin:auto}.ui-stats-info>div{padding:8px;font-size:18px;line-height:12px;text-align:left;font-weight:700}.ui-stats-info>div:first-child{width:55%;margin-right:4px;text-align:right;font-weight:400}.ui-stats-reason{display:flex;height:72px;margin:auto}.ui-stats-reason div{padding:8px;margin:auto;width:100%;text-align:center;font-size:16px}.ui-stats-reason .ui-stats-reason-dead{color:red}.ui-stats-reason .ui-stats-reason-alive{color:#7cfc00}#ui-stats-options{position:absolute;left:50%;margin-top:20px;min-height:60px;z-index:1}.ui-stats-restart{width:200px;margin:auto;margin-bottom:20px}#ui-stats-spectate,.ui-stats-restart{position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-stats-spectate{left:102px;width:125px;background:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79}.ui-stats-ad-container{display:none;margin-top:80px}#ui-spec-ad-container{z-index:1;position:absolute;top:0;left:50%}.tooltip{position:relative}.tooltip .tooltip-text{visibility:hidden;width:240px;background-color:#000;color:#fff;text-align:center;padding:5px 0;border-radius:6px;position:absolute;z-index:1;right:110%;opacity:.75;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.tooltip .tooltip-text:after{content:" ";position:absolute;top:50%;left:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent transparent transparent #000}.tooltip-title{font-size:18px;font-weight:700;padding:4px;color:#ff0}.tooltip-description{font-size:16px;padding:4px}.tooltip-description span{font-size:16px}.tooltip:hover .tooltip-text{visibility:visible}#ui-editor-top-center{position:absolute;color:#fff;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-editor-top-right{position:absolute;color:#fff;font-size:16px;top:12px;right:12px}.ui-editor-header{text-align:center;font-weight:700;font-size:16px;padding:8px}.ui-editor-info{background:rgba(0,0,0,.4);border-radius:5px;font-size:36px;margin-bottom:8px;padding:8px}.ui-editor-list{margin:0;padding:0;list-style:none}.ui-editor-list li div{font-family:monospace;font-size:14px}#ui-profiler-top-left{position:absolute;color:#fff;font-size:16px;top:12px;left:12px;text-align:center;display:flex}.ui-profiler-list{background:rgba(0,0,0,.4);border-radius:5px;margin-right:16px;padding:8px}.ui-profiler-list-header{font-size:16px;font-weight:700;margin-bottom:8px}.ui-profiler-list ul{list-style:none;text-align:left;padding:0;margin:0}.ui-profiler-list li{display:flex}.kv{font-family:monospace;font-size:14px;font-weight:400}.kv:last-child{width:100%;text-align:right}#ui-settings-container-mobile{display:none}@media screen and (max-width:850px){*{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ui-touch-down{display:none;position:fixed;background-color:rgba(0,0,0,.5);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-touch-down-landscape{width:112px;height:112px;border-radius:56px}.ui-touch-down-portrait{width:96px;height:96px;border-radius:48px}.ui-touch-pos{display:none;position:fixed;background-color:rgba(0,0,0,.5);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-touch-pos-landscape{width:64px;height:64px;border-radius:32px}.ui-touch-pos-portrait{width:48px;height:48px;border-radius:24px}.btn-game-menu{position:relative;margin:auto;margin-top:2px;margin-bottom:4px;color:#fff;font-size:14px;text-shadow:0 1px 2px rgba(0,0,0,.25);background-color:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79;background-repeat:no-repeat;cursor:pointer;text-align:center;line-height:30px;display:block;width:100%;height:30px;border:0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-sizing:border-box}#btn-game-fullscreen{background-size:22px;background-position:4px 2px;background-image:url(../img/gui/minimize.svg)}#btn-game-sound{background-size:30px;background-position:3px 0;margin-bottom:8px}#btn-game-quit{background-position:-2px -3px;background-image:url(../img/gui/quit.svg)}#btn-game-quit,#btn-game-resume{margin-top:20px;background-size:34px}#btn-game-resume{background-position:-1px -1px;background-image:url(../img/gui/resume.svg)}#ui-top-center{position:absolute;color:#fff;top:15%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-top-center .top-center-text{text-align:center;width:100vw;padding:4px}#ui-waiting-text{display:none;color:#fff;text-shadow:1px 1px 0 #000}#ui-waiting-text,#ui-waiting-text span{font-size:16px;font-weight:700}.top-center-text .spectate-text{display:inline-block;text-shadow:1px 1px 0 #000;font-size:16px;font-weight:700;overflow:hidden;height:32px}.top-center-text .spectate-desc{color:#fff;margin-right:8px}.ui-spectate-mode{display:none}#ui-spectate-text{position:relative}#spectate-player{max-width:250px;white-space:nowrap;text-overflow:ellipsis;color:cyan}#ui-top-center-scopes{margin-top:6px;text-align:center;color:#fff}.ui-zoom{display:inline-block;margin-left:-12px;margin-right:-12px;-webkit-transform:scale(.6);transform:scale(.6);background:rgba(0,0,0,.3);border-radius:32px;width:42px;height:42px;opacity:.6;pointer-events:all}.ui-zoom-active{vertical-align:baseline;opacity:1;margin-left:0;margin-right:0;-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-zoom .ui-zoom-image{width:48px;height:48px;opacity:.4;padding:2px}.ui-zoom .ui-zoom-text{margin-top:14px;width:100%}.ui-zoom .ui-zoom-level{font-size:24px;line-height:16px;text-align:center;width:100%}.ui-zoom .ui-zoom-append{font-size:24px}.ui-zoom-inactive{display:none;margin-left:-8px;margin-right:-8px;transition:all .1s ease-in;-webkit-transform:scale(.6);transform:scale(.6)}.ui-emote-wheel{z-index:3;display:none;position:fixed}.ui-emote-parent{opacity:1}.ui-emote-hl{z-index:2;display:none}.ui-emote{position:fixed;width:256px;height:256px;background-size:256px;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-bg-circle{opacity:.65;background-image:url(../img/gui/ping-part-circle.svg)}.ui-emote-bg-quarter{opacity:.65;background-image:url(../img/gui/ping-part-quarter.svg)}.ui-emote-bg-eighth{opacity:.65;background-image:url(../img/gui/ping-part-eighth.svg)}.ui-emote-middle .ui-emote-image{width:24px!important;height:24px!important;background-size:24px!important;background-image:none!important}.ui-emote-top .ui-emote-image{margin-top:-78px;background-image:url(../img/gui/ping-team-danger.svg)}.ui-emote-right .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(90deg);transform:translate(-50%,-50%) rotate(90deg)}.ui-emote-right .ui-emote-image{margin-left:78px;background-image:url(../img/gui/ping-team-coming.svg)}.ui-emote-bottom .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}.ui-emote-bottom .ui-emote-image{margin-top:78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(270deg);transform:translate(-50%,-50%) rotate(270deg)}.ui-emote-left .ui-emote-image{margin-left:-78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-top-left .ui-emote-image{margin-left:-80px;margin-top:-30px;background-image:url(../img/loot/loot-ammo-box.svg)}.ui-emote-bottom-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(-45deg);transform:translate(-50%,-50%) rotate(-45deg)}.ui-emote-bottom-left .ui-emote-image{margin-left:-80px;margin-top:30px;background-image:url(../img/loot/loot-medical-healthkit.svg)}.ui-emote-circle .ui-emote-hl{background-image:url(../img/gui/ping-part-circle-highlight.svg)}.ui-emote-quarter .ui-emote-hl{background-image:url(../img/gui/ping-part-quarter-highlight.svg)}.ui-emote-eighth .ui-emote-hl{background-image:url(../img/gui/ping-part-eighth-highlight.svg)}.ui-emote-image{z-index:1;position:fixed;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-image-large{width:80px;height:80px;background-size:64px;background-position:50%}.ui-emote-image-small{width:35px;height:35px;background-size:35px}.ui-team-indicator{z-index:2;display:none;position:fixed;top:0;left:0;border-radius:32px;width:64px;height:64px;background-size:64px;background-repeat:no-repeat;background-image:url(../img/gui/indicator.svg)}.ui-team-indicator,.ui-team-indicator-pos{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-team-indicator-pos{opacity:.75;position:relative;border-radius:24px;width:32px;height:32px;top:23px;left:32px}.ui-team-indicator-image{width:32px;height:32px;background-size:32px;background-repeat:no-repeat;background-image:url(../img/gui/ping-team-danger.svg)}.ui-indicator-ping-border{z-index:0;display:none;position:fixed;top:0;left:0;width:160px;height:160px;position:relative;background-size:160px;background-repeat:no-repeat;background-image:url(../img/gui/ping-border.svg);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#ui-top-left{position:absolute;color:#fff;font-size:16px;top:6px;left:6px;display:block}.ui-bg-standard{background:rgba(0,0,0,.24);border-radius:5px}#ui-team{position:fixed;left:128px}.ui-team-member{display:none;position:relative;width:110px;height:20px;padding:4px;margin-bottom:4px}.ui-team-member-name{font-weight:700;text-shadow:1px 1px 0 #000;font-size:10px;max-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-team-member-color{position:absolute;top:4px;right:4px;border-radius:9px;width:9px;height:9px}.ui-background-yellow{background-color:#ff0}.ui-background-blue{background-color:blue}.ui-background-red{background-color:red}.ui-background-purple{background-color:purple}.ui-background-cyan{background-color:cyan}.ui-team-member-status{display:none;position:absolute;top:2px;right:-24px;width:20px;height:20px;background-size:20px;background-repeat:no-repeat}.ui-team-member-status-downed{border-radius:16px;display:block!important;background-image:url(../img/gui/down.svg)!important}.ui-team-member-status-dead{display:block!important;background-image:url(../img/gui/skull-team.svg)!important;opacity:.5!important}.ui-team-member-status-disconnected{display:block!important;background-image:url(../img/gui/close.svg)!important;opacity:.5!important}.ui-team-member-health{margin-top:2px}.ui-team-member-health .ui-bar-inner{background-color:#fff;z-index:1;position:absolute;border-radius:4px;width:110px;height:5px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}.ui-team-member-health .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}.ui-team-member-health .ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}#ui-spectate-options-wrapper{bottom:6px;position:fixed;left:6px;top:auto!important}#ui-spectate-options{bottom:0;z-index:1;position:absolute;pointer-events:all;width:100%}#ui-spectate-buttons{display:inline-block;width:124px;padding:8px 8px 4px;text-align:center}#ui-spectate-options a{position:relative;color:#fff;height:24px;margin-bottom:2px;line-height:22px;font-size:12px;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#50afab;border-bottom:2px solid #387c79;box-shadow:none;cursor:pointer}#btn-spectate-prev-player,#btn-spectate-view-stats{margin-bottom:12px!important}#ui-spectate-stats{position:absolute;top:0;left:146px;width:160px;display:none}#ui-spectate-stats-header{text-align:center;font-size:16px;font-weight:700;padding:6px;color:#fff}#ui-spectate-stats-table{width:100%;background-color:transparent;margin:auto;margin-right:0;margin-bottom:4px;border-collapse:collapse}#ui-spectate-stats tbody,#ui-spectate-stats td,#ui-spectate-stats th{padding:0 2px 2px 14px;font-size:10px}.ui-spectate-stats-category{width:75px;color:hsla(0,0%,100%,.75)}.ui-spectate-stats-value{width:75px;color:#fff}#ui-top-right{position:absolute;color:#fff;font-size:16px;top:6px;left:6px;display:flex}#ui-leaderboard{font-weight:700;text-align:center;width:56px;display:inline-block}#ui-leaderboard-alive{background:rgba(0,0,0,.4);border-radius:5px;margin-bottom:-16px;padding:8px;height:32px;width:40px}.ui-players-alive-pulse{-webkit-animation-name:pulseAlive;animation-name:pulseAlive;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}@-webkit-keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}@keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}.ui-leaderboard-header{font-size:12px}#ui-killfeed-wrapper{top:24px;left:6px;right:auto}#ui-killfeed{position:absolute;margin:initial;top:135px}#ui-killfeed-contents{width:800px}#ui-killfeed-contents .killfeed-div{position:absolute;background-color:rgba(0,0,0,.4);padding:3px;border-radius:2px;height:8px;line-height:8px;right:auto}.killfeed-div div,.killfeed-div span{float:left;font-size:8px;line-height:8px;font-weight:700;color:#efeeee}.killfeed-red div,.killfeed-red span{color:#d1777c!important}.killfeed-blue div,.killfeed-blue span{color:#00bfff!important}#ui-killfeed-contents .killfeed-red{color:#d1777c}#ui-killfeed-contents .killfeed-blue{color:#00bfff}#ui-killfeed .killfeed-name{max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-ammo .ui-loot-image,.ui-ammo .ui-loot-overlay{position:absolute;height:11px;width:11px;right:2px;margin-top:2px}#ui-ammo-interactive{position:absolute;right:0;top:25px}#ui-ammo-interactive .ui-loot{display:inline-block;background:rgba(0,0,0,.4);border-radius:5px;width:38px;height:14px;margin-left:auto;margin-bottom:2px}.ui-ammo .ui-loot-count{position:absolute;font-size:12px;font-weight:700;width:16px;left:3px;margin-top:-1px;text-align:center}#ui-medical-interactive .ui-loot{display:inline-block;background:rgba(0,0,0,.4);border-radius:5px;width:44px;height:16px;margin-left:auto;margin-bottom:2px}.ui-medical .ui-loot-image{position:absolute;height:16px;width:16px;background-size:16px;background-repeat:no-repeat;right:2px;margin-top:0}.ui-medical .ui-loot-count{position:absolute;font-size:16px;font-weight:700;left:4px;width:16px;margin-top:-3px;text-align:center}.ui-loot{background:rgba(0,0,0,.4);border-radius:5px;width:85px;height:32px;margin-left:auto;margin-bottom:5px}.ui-loot:hover{opacity:1!important}.ui-outline-hover,.ui-outline-hover:hover{border:2px solid rgba(0,255,0,0)}.ui-outline-hover:hover{-webkit-transition:border .1s ease-out;-moz-transition:border .1s ease-out;-o-transition:border .1s ease-out}.ui-scale-hover{transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);-moz-transform:scale(1)}.ui-scale-hover,.ui-scale-hover:hover{-webkit-transition:all .1s ease-in;-ms-transition:all .1s ease-in;-moz-transition:all .1s ease-in;transition:all .1s ease-in}.ui-scale-hover:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);-moz-transform:scale(1.1);transform:scale(1.1)}#ui-debug-button{display:none;background:rgba(0,0,0,.4);position:absolute;border-radius:13px;height:26px;width:26px;background-size:18px;bottom:4px;right:4px;background-position:50%;background-image:url(../img/gui/mag-glass.svg);background-repeat:no-repeat;pointer-events:auto;z-index:1}#ui-upper-center{position:absolute;display:flex;color:#fff;top:84px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-announcement{display:none;color:#ff0;text-shadow:1px 1px 0 #000;font-size:16px;font-weight:700;text-align:center;width:100vw}#ui-lower-center{position:absolute;color:#fff;bottom:44%;left:60%}#ui-interaction{display:flex}#ui-interaction-press{background:rgba(0,0,0,.4);border-radius:5px;margin-left:-20px;font-size:34px;width:44px;height:44px;background-size:36px;background-position:50%;background-repeat:no-repeat}#ui-interaction-outer{background:rgba(0,0,0,.4);border-radius:5px;margin-left:6px;padding:0 6px;height:28px}#ui-interaction-outer #ui-interaction-description{margin-top:5px;font-size:16px;text-align:center}#ui-bottom-center-0{bottom:6px}#ui-bottom-center-0,#ui-equipped-ammo-wrapper{position:absolute;color:#fff;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-equipped-ammo-wrapper{bottom:78px}#ui-equipped-ammo{position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center;opacity:1}#ui-bullet-counter{display:inline-block;width:175px;height:28px;text-align:center;text-shadow:1px 1px #000}#ui-bullet-counter #ui-current-clip{background:rgba(0,0,0,.4);border-radius:5px;font-size:28px;font-weight:700;line-height:30px;width:60px;height:32px;-webkit-transform:translateX(-50%);transform:translateX(-50%);left:50%;position:relative;text-align:center}#ui-bullet-counter #ui-ammo-divider{font-size:22px;left:53%;position:absolute;text-align:center;top:20px}#ui-bullet-counter #ui-remaining-ammo{background:rgba(0,0,0,.4);border-radius:5px;font-size:16px;font-weight:700;line-height:22px;width:44px;height:22px;left:122px;position:absolute;text-align:center;top:10px}#ui-bullet-counter #ui-reload-button{background:rgba(0,0,0,.4);position:absolute;border-radius:11px;height:22px;width:22px;background-size:14px;top:10px;left:170px;background-position:4px 3px;background-image:url(../img/gui/bullets.svg);background-repeat:no-repeat}#ui-boost-counter{display:inline-flex;width:206px}#ui-boost-counter .ui-boost-base{background:rgba(0,0,0,.4);height:6px;margin-bottom:0}#ui-boost-counter-0{border-top-left-radius:3px;border-bottom-left-radius:3px;width:50px;margin-right:3px}#ui-boost-counter-0 .ui-bar-inner{background:#ff901a}#ui-boost-counter-1{width:50px;margin-left:3px;margin-right:3px}#ui-boost-counter-1 .ui-bar-inner{background:#ff751a}#ui-boost-counter-2{width:75px;margin-left:3px;margin-right:3px}#ui-boost-counter-2 .ui-bar-inner{background:#ff6616}#ui-boost-counter-3{border-top-right-radius:3px;border-bottom-right-radius:3px;width:25px;margin-left:3px}#ui-boost-counter-3 .ui-bar-inner{background:#ff5600}.ui-boost-base .ui-bar-inner{border-radius:inherit;width:0;height:6px}#ui-health-counter{background:rgba(0,0,0,.4);border-radius:5px;width:200px;height:18px;padding:4px}#ui-health-counter .ui-bar-inner{z-index:1;position:absolute;border-radius:5px;width:100%;height:18px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}#ui-health-container{width:200px;position:relative}#ui-health-counter .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}#ui-health-counter #ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}.health-bar-pulse{-webkit-animation:pulsewhite 1s linear infinite;animation:pulsewhite 1s linear infinite}@-webkit-keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@-webkit-keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}@keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}#ui-bottom-center-1{z-index:3;position:absolute;color:#fff;bottom:23%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-kills{display:none;text-align:center;background:rgba(0,0,0,.4);color:#fff;border-radius:5px;padding:6px}#ui-kill-text{font-size:10px}#ui-kill-count{font-weight:700;color:#ff4100;font-size:18px;margin-bottom:-3px;text-shadow:1px 1px 1px rgba(0,0,0,.3)}#ui-bottom-center-2{position:absolute;color:#fff;bottom:82px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-pickup-message{color:#fff;text-shadow:1px 1px 0 #000;font-size:16px;font-weight:700;text-align:center;width:100vw}#ui-bottom-center-right{position:absolute;color:#fff;bottom:6px;left:75%}.ui-armor-counter{position:absolute;bottom:0;display:block;width:20px;height:24px;background:rgba(0,0,0,.4);border-radius:5px;margin-left:2px}#ui-armor-helmet{right:0}#ui-armor-backpack{left:26px}.ui-armor-level{position:relative;font-size:8px;font-weight:700;bottom:12px;text-align:center;text-shadow:1px 1px #000}.ui-armor-counter-inner{z-index:1;position:absolute;background:rgba(0,255,0,.5);border-radius:5px;width:100%;height:0;bottom:0;transition:height .5s;transition-property:height;transition-duration:.5s;transition-timing-function:ease-out;transition-delay:0s}.ui-armor-counter .ui-armor-count{z-index:2;text-shadow:1px 1px #000;position:relative;font-size:18px;font-weight:700;margin-top:-28px;text-align:center}.ui-armor-counter .ui-armor-image{margin:auto;left:0;right:0;bottom:0;top:0;z-index:0;position:absolute;height:18px;width:18px}#ui-bottom-right{bottom:auto;color:#fff;position:absolute;right:6px;top:55%;-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transform:scale(1);transform:scale(1)}#ui-weapon-container{width:84px}.ui-weapon-info{margin-bottom:5px}.ui-weapon-info,.ui-weapon-switch{border-radius:5px;border:2px solid transparent}.ui-weapon-switch{position:absolute;right:0;opacity:.6;width:68px;height:24px;margin-left:auto;pointer-events:all}#ui-weapon-id-1{bottom:90px}#ui-weapon-id-2{bottom:60px}#ui-weapon-id-3{bottom:30px}#ui-weapon-id-4{bottom:0}.ui-weapon-name{position:absolute;font-size:10px;font-weight:700;right:4px;width:48px;margin-top:12px;text-align:right;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.ui-weapon-number{font-size:24px;right:8px}.ui-weapon-exp,.ui-weapon-number{display:none;position:absolute;font-weight:700;text-align:center}.ui-weapon-exp{height:16px;width:16px;font-size:8px;line-height:18px;right:34px;margin-top:10px}.ui-weapon-image{display:none;position:relative;height:28px;width:28px;left:0;bottom:3px;-webkit-transform:rotate(10deg);transform:rotate(10deg)}#ui-weapon-id-4 .ui-weapon-image{height:24px;width:24px;left:0;top:0;background-size:24px}#ui-stats-contents{position:absolute;width:100%;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center;color:#fff;border-radius:5px}#ui-stats-header{margin-top:14px}.ui-stats-header-title{font-weight:700;font-size:24px;margin:6px;color:gold}.ui-stats-header-reason{font-size:12px}.ui-stats-header-overview{position:fixed;top:4px;right:12px;margin:5px}.ui-stats-header-overview div{display:block;padding-bottom:6px;border-bottom:2px solid hsla(0,0%,100%,.25)}.ui-stats-header-overview div:not(:first-child){margin:initial}span.ui-stats-header-stat{font-size:22px}span.ui-stats-header-value{margin-left:12px;font-size:28px;font-weight:700}#ui-stats-info-box{position:relative;left:50%;margin:auto;margin-top:0;height:100px;display:flex}.ui-stats-info-player{position:relative;width:125px;background-color:rgba(0,0,0,.75);border-radius:4px;border:2px solid #000;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.ui-stats-info-status:after{background-image:url(../img/gui/skull.svg);background-position:50%;background-repeat:no-repeat;background-size:70px;content:"";display:block;height:100%;left:auto;opacity:.1;position:absolute;top:0;width:100%;z-index:-1}.ui-stats-info-player-name{color:gold;font-size:12px;font-weight:700;font-style:italic;margin:4px auto;max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-stats-info{display:flex;height:18px;margin:auto}.ui-stats-info>div{padding:4px;font-size:9px;line-height:6px;text-align:left;font-weight:700}.ui-stats-info>div:first-child{width:55%;margin-right:4px;text-align:right;font-weight:400}.ui-stats-reason{display:flex;height:72px;margin:auto}.ui-stats-reason div{padding:8px;margin:auto;width:100%;text-align:center;font-size:16px}.ui-stats-reason .ui-stats-reason-dead{color:red}.ui-stats-reason .ui-stats-reason-alive{color:#7cfc00}#ui-stats-options{position:absolute;left:50%;margin-top:10px;min-height:30px;z-index:1}.ui-stats-restart{width:130px;margin:auto;margin-bottom:20px}#ui-stats-spectate,.ui-stats-restart{position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-stats-spectate{left:68px;width:88px;background:#50afab;border-bottom:2px solid #387c79;box-shadow:none}.ui-stats-ad-container{display:none;margin-top:8px;-webkit-transform:scale(.7);transform:scale(.7)}#ui-spec-ad-container{z-index:1;position:absolute;top:0;left:50%}#ad-block-stats-bottom{-webkit-transform:scale(.6);transform:scale(.6);-webkit-transform-origin:center;transform-origin:center;position:static}.tooltip{position:relative}.tooltip .tooltip-text{visibility:hidden!important;width:240px;background-color:#000;color:#fff;text-align:center;padding:5px 0;border-radius:6px;position:absolute;z-index:1;right:110%;opacity:.75;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.tooltip .tooltip-text:after{content:" ";position:absolute;top:50%;left:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent transparent transparent #000}.tooltip-title{font-size:18px;font-weight:700;padding:4px;color:#ff0}.tooltip-description{font-size:16px;padding:4px}.tooltip-description span{font-size:16px}#ui-editor-top-center{position:absolute;color:#fff;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-editor-top-right{position:absolute;color:#fff;font-size:16px;top:6px;right:6px}.ui-editor-header{text-align:center;font-weight:700;font-size:16px;padding:8px}.ui-editor-info{background:rgba(0,0,0,.4);border-radius:5px;font-size:36px;margin-bottom:8px;padding:8px}.ui-editor-list{margin:0;padding:0;list-style:none}.ui-editor-list li div{font-family:monospace;font-size:14px}#ui-profiler-top-left{position:absolute;color:#fff;font-size:16px;top:6px;left:6px;text-align:center;display:flex}.ui-profiler-list{background:rgba(0,0,0,.4);border-radius:5px;margin-right:16px;padding:8px}.ui-profiler-list-header{font-size:16px;font-weight:700;margin-bottom:8px}.ui-profiler-list ul{list-style:none;text-align:left;padding:0;margin:0}.ui-profiler-list li{display:flex}.kv{font-family:monospace;font-size:14px;font-weight:400}.kv:last-child{width:100%;text-align:right}#ui-leaderboard-wrapper,#ui-settings-container-desktop{display:none}#ui-settings-container-mobile{display:block}}@media screen and (max-width:850px) and (max-height:360px),screen and (max-width:850px) and (max-width:640px){#ui-top-center{-webkit-transform-origin:top;transform-origin:top;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85)}}@media screen and (max-width:850px) and screen and (max-width:850px){#ui-lower-center{-webkit-transform:scale(1);transform:scale(1)}}@media screen and (max-width:850px) and (max-height:360px),screen and (max-width:850px) and (max-width:640px){#ui-bottom-center-0{-webkit-transform-origin:bottom;transform-origin:bottom;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85)}}@media screen and (max-width:850px) and (max-height:360px),screen and (max-width:850px) and (max-width:640px){#ui-bottom-right{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.8);transform:scale(.8)}}@media screen and (max-width:850px) and (max-width:850px) and (orientation:landscape){.ui-stats-header-overview .ui-stats-header-left{position:fixed;top:6px;left:12px}.ui-stats-header-overview .ui-stats-header-right{position:fixed;top:6px;right:12px}}@media screen and (max-width:850px) and (max-height:360px) and (max-width:640px){.ui-stats-ad-container{margin-top:0;-webkit-transform:scale(.6);transform:scale(.6)}}@media screen and (max-width:850px) and (max-width:850px) and (max-height:320px){.ui-stats-ad-container{position:fixed;right:10px;top:24px;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:bottom right;transform-origin:bottom right}}@media screen and (max-width:850px) and (orientation:portrait){#ui-stats-contents{margin-top:32px;margin-bottom:16px}#ui-stats-header-overview{position:static}#ui-stats-info-box{display:inline-block;left:auto;-webkit-transform:scale(.9);transform:scale(.9);-webkit-transform-origin:initial;transform-origin:initial;margin-top:2px;width:100%}.ui-stats-ad-container{width:100%}.ui-stats-info-player{display:inline-block;left:auto!important;margin:8px;-webkit-transform:none;transform:none}.ui-stats-header-overview{display:inline-block;position:static;width:175px}.ui-stats-header-overview div{position:static;margin-bottom:8px}#ui-top-center{top:134px;left:50%}#ui-top-center-scopes-wrapper{display:none;bottom:42px;top:auto}#ui-team{top:40px}.ui-team-member{height:18px;margin-bottom:4px}#ui-upper-center{top:180px}#ui-bottom-center-0{top:-15px;bottom:auto;left:100px;-webkit-transform:scale(.85);transform:scale(.85)}#ui-bottom-center-1{bottom:28%}#ui-bottom-center-2{bottom:218px}#ui-lower-center{bottom:38%;left:38%}#ui-boost-counter{position:relative;top:40px;left:2px}#ui-bottom-right{bottom:20px;right:6px;top:auto}#ui-weapon-id-1{right:240px;bottom:auto}#ui-weapon-id-2{right:160px;bottom:auto}#ui-weapon-id-3{right:80px;bottom:auto}#ui-weapon-id-4{bottom:auto}.ui-weapon-info{display:inline-block}#ui-bottom-center-right{bottom:9px;left:30px}.ui-right-center-mobile{top:6px}#ui-emote-button{top:200px}#ui-debug-button{top:210px}#ui-ammo-interactive{left:8px;margin-top:4px;top:88px}#ui-ammo-interactive .ui-loot,#ui-medical-interactive .ui-loot{display:block}#ui-equipped-ammo{position:static}#ui-equipped-ammo,#ui-equipped-ammo-wrapper{left:auto;-webkit-transform:none;transform:none}#ui-equipped-ammo-wrapper{bottom:auto;color:#fff;position:absolute;right:6px;top:44%}#ui-bullet-counter{width:auto}#ui-bullet-counter #ui-current-clip{left:50%}#ui-bullet-counter #ui-remaining-ammo{left:auto;right:0;top:36px}#ui-bullet-counter #ui-reload-button{left:auto;right:0;top:62px}#big-map-collision{left:auto;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}#big-map-close{bottom:auto;top:12px}#ui-spectate-options-wrapper{bottom:42px;-webkit-transform:scale(.7);transform:scale(.7)}#ui-spectate-options{position:absolute;bottom:12px}#ui-spectate-stats{bottom:0;top:auto}}@media screen and (max-width:850px) and (orientation:portrait) and (min-height:668px){#ui-stats-contents{margin-top:32px}#ui-stats-info-box,.ui-stats-ad-container{-webkit-transform:scale(1);transform:scale(1)}.ui-stats-ad-container{margin-top:20px}#ui-stats-options{display:block;left:auto;position:static;margin:auto;margin-top:24px;width:100%}.ui-stats-restart{margin-bottom:0}#ui-stats-spectate,.ui-stats-restart{display:block;position:static;-webkit-transform:initial;transform:none}#ui-stats-spectate{margin:auto;margin-top:6px}}@media screen and (max-width:850px) and (orientation:portrait) and (max-height:667px){#ui-stats-contents{margin-top:0;-webkit-transform:translateX(-50%) scale(.9);transform:translateX(-50%) scale(.9);-webkit-transform-origin:top;transform-origin:top}.ui-stats-ad-container{margin-top:20px}}@media screen and (max-width:850px) and (orientation:portrait) and (max-height:568px) and (max-width:375px){#ui-bottom-center-right{left:22px;-webkit-transform:scale(.8);transform:scale(.8)}#ui-bottom-right{right:0}#ui-bottom-center-0{top:-20px;left:84px;-webkit-transform:scale(.7);transform:scale(.7)}}', ""])
+		t = e.exports = a("lcwS")(!1), t.push([e.i, 'img{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none}#cvs{-webkit-filter:none;filter:none}.click-through{pointer-events:none}#game-area-wrapper{cursor:crosshair;left:0;position:absolute!important;top:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}#ui-game{-webkit-filter:none;filter:none;height:100%;left:0;position:absolute;top:0;width:100%}#ui-center{color:#fff;pointer-events:all;position:absolute;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%) scale(1);transform:translateX(-50%) translateY(-50%) scale(1);z-index:10}@media (max-width:1200px),screen and (min-width:851px) and (max-height:768px){#ui-center{-webkit-transform:translateX(-50%) translateY(-50%) scale(.85);transform:translateX(-50%) translateY(-50%) scale(.85)}}@media screen and (max-width:850px){#ui-center{pointer-events:all;-webkit-transform:translateX(-50%) translateY(-50%) scale(.85);transform:translateX(-50%) translateY(-50%) scale(.85);z-index:10}}@media (max-width:850px) and (max-height:300px){#ui-center{-webkit-transform:translateX(-50%) translateY(-50%) scale(.775);transform:translateX(-50%) translateY(-50%) scale(.775)}}#ui-center .movement-icon{background-image:url(../img/gui/movement.svg)}#ui-center .target-icon{background-image:url(../img/gui/target.svg)}#ui-center .btns-game-double-row{display:flex;position:relative}#ui-center .btns-game-double-row a{display:inline-block}#ui-center .btns-game-double-row div{display:inline-block;position:relative;width:100%}#ui-center .btns-game-double-row div:not(:last-child){margin-right:2px}#ui-center .btns-game-double-row .game-menu-icon{background-size:22px;background-position:50%;background-repeat:no-repeat;bottom:13px;display:inline-block;height:22px;left:55%;pointer-events:none;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:22px}#ui-center .btn-game-touch-style{background-color:#50afab;background-position:4px 4px;background-repeat:no-repeat;background-size:20px;border:0;border-bottom:none;border-radius:5px;box-shadow:inset 0 -2px #387c79;box-sizing:border-box;color:#fff;cursor:pointer;display:block;font-size:14px;height:30px;line-height:30px;margin:auto;margin-top:2px;margin-bottom:4px;position:relative;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.25);width:100%}#ui-game-menu{background-color:rgba(0,0,0,.5);border-radius:5px;box-sizing:border-box;display:none;margin:10px auto;padding:10px 15px;width:250px}@media screen and (max-width:850px){#ui-game-menu{padding:4px 10px;width:190px}}@media (max-width:850px) and (max-height:300px){#ui-game-menu{margin-top:0}}#ui-game-menu p{bottom:4px;display:inline-block;font-size:14px;position:relative}@media screen and (max-width:850px){#ui-game-menu p{bottom:0;font-size:12px;margin-bottom:8px;margin-top:6px}}.ui-map-wrapper-mobile{bottom:auto;color:#fff;display:block;font-size:16px;left:6px;top:46px}.ui-map-wrapper-mobile #ui-map-container{position:absolute;bottom:52px}.ui-map-wrapper-mobile #ui-map-info{width:100px;left:0}.ui-map-wrapper-mobile #ui-alive-info,.ui-map-wrapper-mobile #ui-map-info{position:absolute;color:#fff;height:36px;top:174px;background:rgba(0,0,0,.4);border-radius:5px}.ui-map-wrapper-mobile #ui-alive-info{width:80px;left:106px}.ui-map-wrapper-mobile .ui-players-alive{left:4px}.ui-map-wrapper-mobile .ui-map-counter{position:relative;display:inline-block;font-size:24px;text-align:center;bottom:9px;left:2px}.ui-map-wrapper-mobile .ui-map-icon{padding:6px;display:inline-block;height:24px;width:24px;margin-left:2px;background-size:24px;background-repeat:no-repeat;background-position:6px 6px}.ui-map-wrapper-mobile .gas-icon{background-image:url(../img/gui/gas.svg)}.ui-map-wrapper-mobile .danger-icon{background-image:url(../img/gui/danger.svg)}.ui-map-wrapper-mobile .alive-icon{background-image:url(../img/gui/player.svg)}.ui-map-wrapper-mobile .icon-pulse{-webkit-animation:pulse 2s linear infinite;animation:pulse 2s linear infinite}.ui-map-wrapper-mobile #ui-spec-counter{position:absolute;color:#fff;width:68px;height:28px;top:135px;left:60px;background:rgba(0,0,0,.4);border-radius:5px}.ui-map-wrapper-mobile #ui-spec-counter-icon{padding:6px;display:inline-block;height:24px;width:18px;margin-left:2px;background-size:20px;background-repeat:no-repeat;background-position:6px 4px;background-image:url(../img/gui/eye.svg)}.ui-map-wrapper-mobile #ui-spec-counter-number{position:relative;display:inline-block;font-size:20px;width:24px;text-align:center;bottom:15px;left:0}.ui-map-wrapper-mobile .ui-settings-button{position:absolute;color:#fff;border-radius:5px;pointer-events:all}.ui-map-wrapper-mobile #ui-map-expand-mobile{height:190px;width:190px;left:-4px;top:-22px;z-index:0;background-color:transparent}.ui-map-wrapper-mobile #ui-map-expand img{display:none}.ui-map-wrapper-mobile #ui-map-minimize{left:124px}.ui-map-wrapper-mobile .ui-settings-button img{position:absolute;left:6px;top:6px;height:36px;width:36px;background-size:36px;background-repeat:no-repeat;transform:scale(1);-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-map-wrapper-mobile .ui-settings-button .map-img-after{display:none}.ui-map-wrapper-mobile .ui-settings-button:hover{-webkit-transform:scale(1);transform:scale(1)}.ui-map-wrapper-desktop{position:absolute;bottom:12px;left:12px}#ui-map-wrapper{position:absolute;z-index:1}#ui-map-wrapper #ui-settings-container-mobile{position:relative}#ui-map-wrapper #ui-menu-display{cursor:pointer;left:2px;top:-18px;height:48px;width:48px;opacity:.8;background-color:rgba(0,0,0,.4);background-size:48px;background-repeat:no-repeat;background-position:50%;background-image:url(../img/gui/cog.svg);z-index:1}#big-map{display:none;height:100%;width:100%}#big-map-collision{height:100%;left:50%;margin:auto;pointer-events:all;position:fixed;top:0;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#big-map-close{position:absolute;margin-left:auto;height:64px;width:64px;right:6px;top:6px;border-radius:6px;background-color:rgba(0,0,0,.5);background-repeat:no-repeat;background-size:48px;background-position:50%;background-image:url(../img/gui/close.svg);pointer-events:all}#ui-right-center{position:absolute;color:#fff;opacity:.75;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-right-center-desktop{top:40%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:12px}.ui-right-center-mobile{top:30px;-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:translateY(-50%) scale(.8);transform:translateY(-50%) scale(.8);right:6px}.ui-right-center-tablet{top:12px!important;-webkit-transform:scale(.85);transform:scale(.85)}@media (max-height:360px),(max-width:640px){.ui-right-center-mobile{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.85);transform:scale(.85);top:16px}}.ui-bottom-right-tablet{bottom:25%!important;-webkit-transform:scale(.8)!important;transform:scale(.8)!important;-webkit-transform-origin:right!important;transform-origin:right!important}.ui-bottom-center-right-tablet{left:72%!important;-webkit-transform:scale(.65)!important;transform:scale(.65)!important}#ui-emote-button{background:rgba(0,0,0,.4);background-image:url(../img/gui/emote.svg);background-position:50%;background-repeat:no-repeat;background-size:28px;border-radius:21px;display:none;height:42px;position:absolute;right:108px;top:0;width:42px}@media screen and (max-width:850px){#ui-emote-button{background-size:20px;border-radius:14px;height:28px;right:0;top:50px;width:28px}}.ui-top-left-tablet{left:120px!important}.ui-spectate-options-wrapper-tablet{bottom:12px!important;top:auto!important}.ui-killfeed-wrapper-tablet{top:60px!important}@media (max-width:850px) and (max-height:320px){.ui-slider-container{margin-bottom:0}}@media (max-width:850px) and (max-height:320px){.ui-slider-container p{width:75px}}@media (max-width:850px) and (max-height:320px){.ui-slider-container .slider{bottom:3px;width:85px}}@media (max-width:850px) and (max-height:320px){.ui-slider-container .slider::-webkit-slider-thumb{width:20px;height:20px}}@media (max-width:850px) and (max-height:320px){.ui-slider-container .slider::-moz-range-thumb{width:20px;height:20px}}.ui-hidden{display:none}.btn-game-menu{text-align:center;line-height:38px;display:block;width:100%;height:40px;border:0;border-radius:5px;box-sizing:border-box;position:relative;margin:auto;margin-top:5px;margin-bottom:5px;color:#fff;font-size:16px;text-shadow:0 1px 2px rgba(0,0,0,.25);background-color:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79;background-repeat:no-repeat;cursor:pointer}#btn-game-fullscreen{background-size:34px;background-position:4px 2px;background-image:url(../img/gui/minimize.svg)}#btn-game-sound{background-size:44px;background-position:2px -3px}#btn-game-quit{margin-top:40px;background-image:url(../img/gui/quit.svg)}#btn-game-quit,#btn-game-resume{background-size:44px;background-position:-2px -3px}#btn-game-resume{margin-top:30px;background-image:url(../img/gui/resume.svg)}#ui-top-center{position:absolute;color:#fff;top:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-top-center .top-center-text{text-align:center;width:100vw;padding:8px}#ui-waiting-text{display:none;color:#fff;text-shadow:2px 2px 0 #000}#ui-waiting-text,#ui-waiting-text span{font-size:32px;font-weight:700}.top-center-text .spectate-text{display:inline-block;text-shadow:2px 2px 0 #000;font-size:24px;font-weight:700;overflow:hidden;height:32px}@media (max-width:1024px){.top-center-text .spectate-text{font-size:18px}}.top-center-text .spectate-desc{color:#fff;margin-right:8px}.ui-spectate-mode{display:none}#ui-spectate-text{position:relative}#spectate-player{max-width:250px;white-space:nowrap;text-overflow:ellipsis;color:cyan}#ui-top-center-scopes-wrapper{position:absolute;color:#fff;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:100%}#ui-top-center-scopes{margin-top:12px;text-align:center}@media (max-height:768px),(max-width:1200px){#ui-top-center-scopes{-webkit-transform:scale(.85);transform:scale(.85)}}.ui-zoom{background:rgba(0,0,0,.3);border-radius:36px;width:64px;height:64px;opacity:.6;display:inline-block}.ui-zoom-hover:hover{opacity:1}.ui-zoom-active{vertical-align:baseline;opacity:1;transform:scale(1);-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-zoom .ui-zoom-image{width:64px;height:64px;opacity:.4;padding:2px}.ui-zoom .ui-zoom-text{margin-top:14px;width:100%}.ui-zoom .ui-zoom-level{font-size:32px;text-align:center;width:100%}.ui-zoom .ui-zoom-append{font-size:24px}.ui-zoom-inactive{display:none;margin-left:-8px;margin-right:-8px;-webkit-transition:all .1s ease-in;-webkit-transform:scale(.5);-ms-transition:all .1s ease-in;-ms-transform:scale(.5);-moz-transition:all .1s ease-in;-moz-transform:scale(.5);transition:all .1s ease-in;transform:scale(.5)}.ui-zoom-inactive:hover{cursor:pointer!important;opacity:1}.ui-emote-wheel{z-index:3;display:none;position:fixed}.ui-emote-parent{opacity:.75}.ui-emote-hl{z-index:2;display:none}.ui-emote{position:fixed;width:256px;height:256px;background-size:256px;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-bg-circle{opacity:.5;background-image:url(../img/gui/ping-part-circle.svg)}.ui-emote-bg-quarter{opacity:.5;background-image:url(../img/gui/ping-part-quarter.svg)}.ui-emote-bg-eighth{opacity:.5;background-image:url(../img/gui/ping-part-eighth.svg)}.ui-emote-middle .ui-emote-image{width:24px!important;height:24px!important;background-size:24px!important;background-image:url(../img/gui/close.svg)}.ui-emote-top .ui-emote-image{margin-top:-78px;background-image:url(../img/gui/ping-team-danger.svg)}.ui-emote-right .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(90deg);transform:translate(-50%,-50%) rotate(90deg)}.ui-emote-right .ui-emote-image{margin-left:78px;background-image:url(../img/gui/ping-team-coming.svg)}.ui-emote-bottom .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}.ui-emote-bottom .ui-emote-image{margin-top:78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(270deg);transform:translate(-50%,-50%) rotate(270deg)}.ui-emote-left .ui-emote-image{margin-left:-78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-top-left .ui-emote-image{margin-left:-80px;margin-top:-30px;background-image:url(../img/loot/loot-ammo-box.svg)}.ui-emote-bottom-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(-45deg);transform:translate(-50%,-50%) rotate(-45deg)}.ui-emote-bottom-left .ui-emote-image{margin-left:-80px;margin-top:30px;background-image:url(../img/loot/loot-medical-healthkit.svg)}.ui-emote-circle .ui-emote-hl{background-image:url(../img/gui/ping-part-circle-highlight.svg)}.ui-emote-quarter .ui-emote-hl{background-image:url(../img/gui/ping-part-quarter-highlight.svg)}.ui-emote-eighth .ui-emote-hl{background-image:url(../img/gui/ping-part-eighth-highlight.svg)}.ui-emote-image{z-index:1;position:fixed;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-image-large{width:64px;height:64px;background-size:64px}.ui-emote-image-small{width:35px;height:35px;background-size:35px}.ui-team-indicator{z-index:2;display:none;position:fixed;top:0;left:0;border-radius:32px;width:64px;height:64px;background-size:64px;background-repeat:no-repeat;background-image:url(../img/gui/indicator.svg)}.ui-team-indicator,.ui-team-indicator-pos{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-team-indicator-pos{opacity:.75;position:relative;border-radius:24px;width:32px;height:32px;top:23px;left:32px}.ui-team-indicator-image{width:32px;height:32px;background-size:32px;background-repeat:no-repeat;background-image:url(../img/gui/ping-team-danger.svg)}.ui-indicator-ping-border{z-index:0;display:none;position:fixed;top:0;left:0;width:160px;height:160px;position:relative;background-size:160px;background-repeat:no-repeat;background-image:url(../img/gui/ping-border.svg);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#ui-top-left{position:absolute;color:#fff;font-size:16px;top:12px;left:12px;display:block}@media (max-height:768px),(max-width:1200px){#ui-top-left{-webkit-transform-origin:top left;transform-origin:top left;-webkit-transform:scale(.85);transform:scale(.85)}}.ui-bg-standard{background:rgba(0,0,0,.24);border-radius:5px}.ui-team-member{display:none;position:relative;width:200px;height:32px;padding:4px;margin-bottom:8px}.ui-team-member-name{font-weight:700;text-shadow:1px 1px 0 #000;font-size:16px;max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-team-member-color{position:absolute;top:5px;right:5px;border-radius:7px;width:14px;height:14px}.ui-background-yellow{background-color:#ff0}.ui-background-blue{background-color:blue}.ui-background-red{background-color:red}.ui-background-purple{background-color:purple}.ui-background-cyan{background-color:cyan}.ui-team-member-status{display:none;position:absolute;top:4px;right:-38px;width:32px;height:32px;background-size:32px;background-repeat:no-repeat}.ui-team-member-status-downed{border-radius:16px;display:block!important;background-image:url(../img/gui/down.svg)!important}.ui-team-member-status-dead{display:block!important;background-image:url(../img/gui/skull-team.svg)!important;opacity:.5!important}.ui-team-member-status-disconnected{display:block!important;background-image:url(../img/gui/close.svg)!important;opacity:.5!important}.ui-team-member-health{margin-top:4px}.ui-team-member-health .ui-bar-inner{background-color:#fff;z-index:1;position:absolute;border-radius:4px;width:200px;height:10px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}.ui-team-member-health .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}.ui-team-member-health .ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}#ui-spectate-options-wrapper{color:#fff;display:block;left:12px;position:absolute;top:12px}@media (max-height:768px),(max-width:1200px){#ui-spectate-options-wrapper{-webkit-transform:scale(.85);transform:scale(.85);-webkit-transform-origin:top left;transform-origin:top left}}#ui-spectate-options{position:relative;pointer-events:all;width:100%}#ui-spectate-buttons{display:inline-block;padding:8px 8px 0;text-align:center;width:192px}#ui-spectate-options a{position:relative;color:#fff;font-size:16px;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79;cursor:pointer}#btn-spectate-prev-player{margin-bottom:24px}#ui-spectate-stats{vertical-align:top;display:none}#ui-spectate-stats-header{text-align:center;font-size:24px;font-weight:700;padding:8px}#ui-spectate-stats-table{width:100%;background-color:transparent;margin:auto;margin-right:0;border-collapse:collapse}#ui-spectate-stats tbody,#ui-spectate-stats td,#ui-spectate-stats th{padding:0 8px 8px 16px;font-size:18px}.ui-spectate-stats-category{width:130px;color:hsla(0,0%,100%,.75)}.ui-spectate-stats-value{width:75px;color:#fff}#ui-leaderboard{position:absolute;color:#fff;font-size:16px;top:12px;right:12px;display:flex;font-weight:700;text-align:center;width:85px;display:inline-block}@media (max-height:768px),(max-width:1200px){#ui-leaderboard{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.85);transform:scale(.85)}}#ui-leaderboard-alive{background:rgba(0,0,0,.4);border-radius:5px;margin-bottom:8px;padding:8px;height:64px;width:72px}.ui-players-alive{position:relative;font-size:54px}.ui-players-alive-pulse{-webkit-animation-name:pulseAlive;animation-name:pulseAlive;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}@-webkit-keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}@keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}.ui-leaderboard-header{font-size:24px;margin-bottom:8px}#ui-killfeed-wrapper{position:absolute;color:#fff;font-size:16px;top:12px;right:12px;display:flex}@media (max-width:1200px),screen and (min-width:851px) and (max-height:768px){#ui-killfeed-wrapper{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.85);transform:scale(.85)}}#ui-killfeed{display:inline-block;margin-left:24px;height:100px}#ui-killfeed-contents{width:800px}#ui-killfeed-contents .killfeed-div{position:absolute;right:100px;background-color:rgba(0,0,0,.4);padding:4px 8px;border-radius:2px;height:22px;line-height:24px}.killfeed-div div{float:left;font-size:16px;font-weight:700;color:#efeeee}#ui-killfeed .killfeed-text{max-width:550px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#ui-right-center:hover{opacity:1}.ui-ammo .ui-loot-image,.ui-ammo .ui-loot-overlay{position:absolute;height:22px;width:22px;right:5px;margin-top:5px;top:0;bottom:0}#ui-medical-interactive{margin-bottom:32px}.ui-medical .ui-loot-image{position:absolute;height:30px;width:30px;background-size:30px;background-repeat:no-repeat;right:5px;margin-top:1px;top:0;bottom:0}.ui-medical:hover{cursor:pointer!important}.ui-loot{background:rgba(0,0,0,.4);border-radius:5px;width:85px;height:32px;margin-left:auto;margin-bottom:5px}.ui-loot:hover{opacity:1!important}.ui-outline-hover{border:2px solid rgba(0,255,0,0)}.ui-outline-hover:hover{-webkit-transition:border .1s ease-out;-moz-transition:border .1s ease-out;-o-transition:border .1s ease-out;border:2px solid #0f0}.ui-scale-hover{transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);-moz-transform:scale(1)}.ui-scale-hover,.ui-scale-hover:hover{-webkit-transition:all .1s ease-in;-ms-transition:all .1s ease-in;-moz-transition:all .1s ease-in;transition:all .1s ease-in}.ui-scale-hover:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);-moz-transform:scale(1.1);transform:scale(1.1)}.ui-loot .ui-loot-count{position:absolute;font-size:24px;font-weight:700;left:10px;top:2px;text-align:center}@media (max-height:768px),(max-width:1200px){.ui-right-center-desktop{top:42%;-webkit-transform-origin:right;transform-origin:right;-webkit-transform:translateY(-50%) scale(.8);transform:translateY(-50%) scale(.8)}#ui-medical-interactive{margin-bottom:8px}}#ui-upper-center{position:absolute;display:flex;color:#fff;top:180px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-announcement{display:none;color:#ff0;text-shadow:2px 2px 0 #000;font-size:32px;font-weight:700;text-align:center;width:100vw}#ui-lower-center{position:absolute;color:#fff;bottom:40%;left:50%}@media (max-width:1200px),screen and (min-width:851px) and (max-height:768px){#ui-lower-center{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:scale(.85);transform:scale(.85);bottom:33%}}#ui-interaction{display:flex}#ui-interaction-press{background:rgba(0,0,0,.4);border-radius:5px;margin-left:-24px;width:48px;height:48px;font-size:42px;font-weight:700;text-align:center;background-size:80%;background-position:50%;background-repeat:no-repeat}#ui-interaction-outer{background:rgba(0,0,0,.4);border-radius:5px;margin-left:10px;padding:0 15px;height:48px}#ui-interaction-outer #ui-interaction-description{margin-top:10px;font-size:24px;text-align:center}#ui-map-container{position:absolute;bottom:52px}#ui-map-info{position:absolute;color:#fff;width:100px;height:36px;bottom:218px;left:82px;background:rgba(0,0,0,.4);border-radius:5px}#ui-gas-icon{padding:6px;display:inline-block;height:24px;width:24px;margin-left:2px;background-size:24px;background-repeat:no-repeat;background-position:6px 6px}.gas-icon{background-image:url(../img/gui/gas.svg)}.danger-icon{background-image:url(../img/gui/danger.svg)}.icon-pulse{-webkit-animation:pulse 2s linear infinite;animation:pulse 2s linear infinite}#ui-gas-timer{position:relative;display:inline-block;font-size:24px;text-align:center;bottom:10px;left:2px}#ui-spec-counter{position:absolute;color:#fff;width:68px;height:28px;bottom:218px;left:6px;background:rgba(0,0,0,.4);border-radius:5px}#ui-spec-counter-icon{padding:6px;display:inline-block;height:24px;width:18px;margin-left:2px;background-size:20px;background-repeat:no-repeat;background-position:6px 4px;background-image:url(../img/gui/eye.svg)}#ui-spec-counter-number{position:relative;display:inline-block;font-size:20px;width:24px;text-align:center;bottom:15px;left:0}#ui-settings-container-desktop{position:relative;left:16px;bottom:12px}#ui-settings-container-desktop div{cursor:pointer}.ui-settings-button{position:absolute;color:#fff;border-radius:5px;height:48px;width:48px;pointer-events:all;opacity:.5;background:rgba(0,0,0,.4)}#ui-map-minimize{left:185px}.ui-settings-button img{position:absolute;left:6px;top:6px;height:36px;width:36px;background-size:36px;background-repeat:no-repeat;transform:scale(1);-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-settings-button .map-img-after{display:none}.ui-settings-button:hover{opacity:1;-webkit-transition:all .1s ease-in;-webkit-transform:scale(1.1);-ms-transition:all .1s ease-in;-ms-transform:scale(1.1);-moz-transition:all .1s ease-in;-moz-transform:scale(1.1);transition:all .1s ease-in;transform:scale(1.1)}#ui-bottom-center-0{position:absolute;color:#fff;bottom:12px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}@media (max-height:768px),(max-width:1200px){#ui-bottom-center-0{-webkit-transform-origin:bottom;transform-origin:bottom;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85)}}#ui-equipped-ammo-wrapper{position:absolute;color:#fff;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);bottom:62px}#ui-equipped-ammo{margin-bottom:12px;text-align:center;opacity:1}#ui-bullet-counter{display:inline-block;width:175px;height:56px;text-align:center;text-shadow:2px 2px #000}#ui-bullet-counter #ui-current-clip{background:rgba(0,0,0,.4);border-radius:5px;font-size:44px;font-weight:700;width:100px;height:50px;-webkit-transform:translateX(-50%);transform:translateX(-50%);left:50%;position:relative;text-align:center}#ui-bullet-counter #ui-ammo-divider{font-size:22px;left:53%;position:absolute;text-align:center;top:20px}#ui-bullet-counter #ui-remaining-ammo{background:rgba(0,0,0,.4);border-radius:5px;font-size:24px;font-weight:700;line-height:32px;width:65px;height:32px;left:82%;position:absolute;text-align:center;top:18px}#ui-boost-counter{display:inline-flex;width:412px}#ui-boost-counter .ui-boost-base{background:rgba(0,0,0,.4);height:10px;margin-bottom:8px}#ui-boost-counter-0{border-top-left-radius:3px;border-bottom-left-radius:3px;width:100px;margin-right:3px}#ui-boost-counter-0 .ui-bar-inner{background:#ff901a}#ui-boost-counter-1{width:100px;margin-left:3px;margin-right:3px}#ui-boost-counter-1 .ui-bar-inner{background:#ff751a}#ui-boost-counter-2{width:150px;margin-left:3px;margin-right:3px}#ui-boost-counter-2 .ui-bar-inner{background:#ff6616}#ui-boost-counter-3{border-top-right-radius:3px;border-bottom-right-radius:3px;width:50px;margin-left:3px}#ui-boost-counter-3 .ui-bar-inner{background:#ff5600}.ui-boost-base .ui-bar-inner{border-radius:inherit;width:0;height:10px}#ui-health-counter{background:rgba(0,0,0,.4);border-radius:5px;width:400px;height:32px;padding:6px}#ui-health-counter .ui-bar-inner{z-index:1;position:absolute;border-radius:5px;width:100%;height:32px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}#ui-health-container{width:400px;position:relative}#ui-health-counter .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}#ui-health-counter #ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}.health-bar-pulse{-webkit-animation:pulsewhite 1s linear infinite;animation:pulsewhite 1s linear infinite}@-webkit-keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@-webkit-keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}@keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}#ui-bottom-center-1{z-index:3;position:absolute;color:#fff;bottom:220px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}@media (max-height:768px),(max-width:1200px){#ui-bottom-center-1{-webkit-transform-origin:bottom;transform-origin:bottom;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85);bottom:138px}}#ui-kills{display:none;text-align:center;background:rgba(0,0,0,.4);color:#fff;border-radius:5px;padding:8px}#ui-kill-text{font-size:18px}#ui-kill-count{font-weight:700;color:#ff4100;font-size:32px;text-shadow:1px 1px 1px rgba(0,0,0,.3)}#ui-bottom-center-2{position:absolute;color:#fff;bottom:160px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-pickup-message{color:#fff;opacity:0;text-shadow:2px 2px 0 #000;font-size:32px;font-weight:700;text-align:center;width:100vw}#ui-bottom-center-right{position:absolute;color:#fff;bottom:12px;left:75%}@media (max-height:768px),(max-width:1200px){#ui-bottom-center-right{-webkit-transform:scale(.8);transform:scale(.8)}}.ui-armor-counter{position:absolute;bottom:0;display:block;width:48px;height:60px;background:rgba(0,0,0,.4);border-radius:5px;margin-left:4px}#ui-armor-helmet{right:4px}#ui-armor-backpack{left:60px;border:2px solid transparent}.ui-armor-level{position:relative;font-size:16px;font-weight:700;bottom:24px;text-align:center;text-shadow:1px 1px #000}.ui-armor-counter-inner{z-index:1;position:absolute;background:rgba(0,255,0,.5);border-radius:5px;width:100%;height:0;bottom:0;transition:height .5s;transition-property:height;transition-duration:.5s;transition-timing-function:ease-out;transition-delay:0s}.ui-armor-counter .ui-armor-count{z-index:2;text-shadow:2px 2px #000;position:relative;font-size:18px;font-weight:700;margin-top:-28px;text-align:center}.ui-armor-counter .ui-armor-image{margin:auto;left:0;right:0;bottom:0;top:0;z-index:0;position:absolute;height:36px;width:36px}#ui-bottom-right{position:absolute;color:#fff;bottom:12px;right:12px}@media (max-height:768px),(max-width:1200px){#ui-bottom-right{-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transform:scale(.7);transform:scale(.7)}}#ui-weapon-container{width:192px}.ui-weapon-info{margin-bottom:5px}.ui-weapon-info,.ui-weapon-switch{border-radius:5px;border:2px solid transparent}.ui-weapon-switch{position:absolute;right:0;opacity:.6;width:160px;height:60px;margin-left:auto;pointer-events:all;cursor:pointer!important}#ui-weapon-id-1{bottom:210px}#ui-weapon-id-2{bottom:140px}#ui-weapon-id-3{bottom:70px}#ui-weapon-id-4{bottom:0}.ui-weapon-name{font-size:18px;margin-top:38px}.ui-weapon-name,.ui-weapon-number{position:absolute;font-weight:700;right:8px;text-align:center}.ui-weapon-number{font-size:24px}.ui-weapon-exp{display:none;position:absolute;height:32px;width:32px;font-size:18px;font-weight:700;line-height:34px;right:78px;margin-top:26px;text-align:center}.ui-weapon-image{display:none;position:relative;height:60px;width:60px;left:4px;background-size:60px;background-repeat:no-repeat}#ui-weapon-id-4 .ui-weapon-image{height:52px;width:52px;left:4px;top:4px;background-size:52px}#ui-stats{display:none}#ui-stats-bg{display:none;opacity:0;position:absolute;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,.75);pointer-events:none;z-index:2}#ui-stats-contents{position:absolute;width:100%;top:10%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center;color:#fff;border-radius:5px;z-index:3}@media (max-height:860px){#ui-stats-contents{top:3%}}@media (max-width:1024px){#ui-stats-contents{-webkit-transform:translateX(-50%) scale(.8);transform:translateX(-50%) scale(.8);-webkit-transform-origin:top;transform-origin:top}}.ui-stats-header-title{font-weight:700;font-size:48px;margin:20px;color:gold}.ui-stats-header-reason{font-size:24px}.ui-stats-header-overview{display:inline;margin:10px}.ui-stats-header-overview div{display:inline;padding-bottom:12px;border-bottom:2px solid hsla(0,0%,100%,.25)}.ui-stats-header-overview div:not(:first-child){margin-left:100px}span.ui-stats-header-stat{font-size:32px}span.ui-stats-header-value{margin-left:24px;font-size:48px;font-weight:700}#ui-stats-info-box{position:relative;left:50%;margin:auto;margin-top:50px;height:190px;display:flex}@media (max-height:768px),(max-width:1200px){#ui-stats-info-box{margin-top:25px}}@media (max-width:1024px){#ui-stats-info-box{-webkit-transform-origin:left;transform-origin:left;-webkit-transform:scale(.85);transform:scale(.85)}}.ui-stats-info-player{position:relative;width:250px;background-color:rgba(0,0,0,.75);border-radius:4px;border:2px solid #000;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.ui-stats-info-status:after{content:"";display:block;position:absolute;top:15%;left:25%;background-image:url(../img/gui/skull.svg);background-repeat:no-repeat;background-size:128px;width:100%;height:100%;opacity:.1;z-index:-1}.ui-stats-info-player-name{color:gold;font-size:24px;font-weight:700;font-style:italic;margin:8px auto;max-width:240px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-stats-info{display:flex;height:36px;margin:auto}.ui-stats-info>div{padding:8px;font-size:18px;line-height:12px;text-align:left;font-weight:700}.ui-stats-info>div:first-child{width:55%;margin-right:4px;text-align:right;font-weight:400}.ui-stats-reason{display:flex;height:72px;margin:auto}.ui-stats-reason div{padding:8px;margin:auto;width:100%;text-align:center;font-size:16px}.ui-stats-reason .ui-stats-reason-dead{color:red}.ui-stats-reason .ui-stats-reason-alive{color:#7cfc00}#ui-stats-options{position:absolute;left:50%;margin-top:20px;min-height:60px;z-index:1}.ui-stats-restart{width:200px;margin:auto;margin-bottom:20px}#ui-stats-spectate,.ui-stats-restart{position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-stats-spectate{left:102px;width:125px;background:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79}.ui-stats-ad-container{display:none;margin-top:80px}#ui-spec-ad-container{z-index:1;position:absolute;top:0;left:50%}.tooltip{position:relative}.tooltip .tooltip-text{visibility:hidden;width:240px;background-color:#000;color:#fff;text-align:center;padding:5px 0;border-radius:6px;position:absolute;z-index:1;right:110%;opacity:.75;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.tooltip .tooltip-text:after{content:" ";position:absolute;top:50%;left:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent transparent transparent #000}.tooltip-title{font-size:18px;font-weight:700;padding:4px;color:#ff0}.tooltip-description{font-size:16px;padding:4px}.tooltip-description span{font-size:16px}.tooltip:hover .tooltip-text{visibility:visible}#ui-editor-top-center{position:absolute;color:#fff;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-editor-top-right{position:absolute;color:#fff;font-size:16px;top:12px;right:12px}.ui-editor-header{text-align:center;font-weight:700;font-size:16px;padding:8px}.ui-editor-info{background:rgba(0,0,0,.4);border-radius:5px;font-size:36px;margin-bottom:8px;padding:8px}.ui-editor-list{margin:0;padding:0;list-style:none}.ui-editor-list li div{font-family:monospace;font-size:14px}#ui-profiler-top-left{position:absolute;color:#fff;font-size:16px;top:12px;left:12px;text-align:center;display:flex}.ui-profiler-list{background:rgba(0,0,0,.4);border-radius:5px;margin-right:16px;padding:8px}.ui-profiler-list-header{font-size:16px;font-weight:700;margin-bottom:8px}.ui-profiler-list ul{list-style:none;text-align:left;padding:0;margin:0}.ui-profiler-list li{display:flex}.kv{font-family:monospace;font-size:14px;font-weight:400}.kv:last-child{width:100%;text-align:right}#ui-settings-container-mobile{display:none}@media screen and (max-width:850px){*{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ui-touch-down{display:none;position:fixed;background-color:rgba(0,0,0,.5);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-touch-down-landscape{width:112px;height:112px;border-radius:56px}.ui-touch-down-portrait{width:96px;height:96px;border-radius:48px}.ui-touch-pos{display:none;position:fixed;background-color:rgba(0,0,0,.5);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-touch-pos-landscape{width:64px;height:64px;border-radius:32px}.ui-touch-pos-portrait{width:48px;height:48px;border-radius:24px}.btn-game-menu{position:relative;margin:auto;margin-top:2px;margin-bottom:4px;color:#fff;font-size:14px;text-shadow:0 1px 2px rgba(0,0,0,.25);background-color:#50afab;border-bottom:2px solid #387c79;box-shadow:inset 0 -2px #387c79;background-repeat:no-repeat;cursor:pointer;text-align:center;line-height:30px;display:block;width:100%;height:30px;border:0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-sizing:border-box}#btn-game-fullscreen{background-size:22px;background-position:4px 2px;background-image:url(../img/gui/minimize.svg)}#btn-game-sound{background-size:30px;background-position:3px 0;margin-bottom:8px}#btn-game-quit{background-position:-2px -3px;background-image:url(../img/gui/quit.svg)}#btn-game-quit,#btn-game-resume{margin-top:20px;background-size:34px}#btn-game-resume{background-position:-1px -1px;background-image:url(../img/gui/resume.svg)}#ui-top-center{position:absolute;color:#fff;top:15%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-top-center .top-center-text{text-align:center;width:100vw;padding:4px}#ui-waiting-text{display:none;color:#fff;text-shadow:1px 1px 0 #000}#ui-waiting-text,#ui-waiting-text span{font-size:16px;font-weight:700}.top-center-text .spectate-text{display:inline-block;text-shadow:1px 1px 0 #000;font-size:16px;font-weight:700;overflow:hidden;height:32px}.top-center-text .spectate-desc{color:#fff;margin-right:8px}.ui-spectate-mode{display:none}#ui-spectate-text{position:relative}#spectate-player{max-width:250px;white-space:nowrap;text-overflow:ellipsis;color:cyan}#ui-top-center-scopes{margin-top:6px;text-align:center;color:#fff}.ui-zoom{display:inline-block;margin-left:-12px;margin-right:-12px;-webkit-transform:scale(.6);transform:scale(.6);background:rgba(0,0,0,.3);border-radius:32px;width:42px;height:42px;opacity:.6;pointer-events:all}.ui-zoom-active{vertical-align:baseline;opacity:1;margin-left:0;margin-right:0;-webkit-transition:all .1s ease-in;-webkit-transform:scale(1);-ms-transition:all .1s ease-in;-ms-transform:scale(1);-moz-transition:all .1s ease-in;-moz-transform:scale(1);transition:all .1s ease-in;transition:opacity .25s ease-out;-moz-transition:opacity .25s ease-out;-webkit-transition:opacity .25s ease-out;-o-transition:opacity .25s ease-out}.ui-zoom .ui-zoom-image{width:48px;height:48px;opacity:.4;padding:2px}.ui-zoom .ui-zoom-text{margin-top:14px;width:100%}.ui-zoom .ui-zoom-level{font-size:24px;line-height:16px;text-align:center;width:100%}.ui-zoom .ui-zoom-append{font-size:24px}.ui-zoom-inactive{display:none;margin-left:-8px;margin-right:-8px;transition:all .1s ease-in;-webkit-transform:scale(.6);transform:scale(.6)}.ui-emote-wheel{z-index:3;display:none;position:fixed}.ui-emote-parent{opacity:1}.ui-emote-hl{z-index:2;display:none}.ui-emote{position:fixed;width:256px;height:256px;background-size:256px;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-bg-circle{opacity:.65;background-image:url(../img/gui/ping-part-circle.svg)}.ui-emote-bg-quarter{opacity:.65;background-image:url(../img/gui/ping-part-quarter.svg)}.ui-emote-bg-eighth{opacity:.65;background-image:url(../img/gui/ping-part-eighth.svg)}.ui-emote-middle .ui-emote-image{width:24px!important;height:24px!important;background-size:24px!important;background-image:none!important}.ui-emote-top .ui-emote-image{margin-top:-78px;background-image:url(../img/gui/ping-team-danger.svg)}.ui-emote-right .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(90deg);transform:translate(-50%,-50%) rotate(90deg)}.ui-emote-right .ui-emote-image{margin-left:78px;background-image:url(../img/gui/ping-team-coming.svg)}.ui-emote-bottom .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}.ui-emote-bottom .ui-emote-image{margin-top:78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(270deg);transform:translate(-50%,-50%) rotate(270deg)}.ui-emote-left .ui-emote-image{margin-left:-78px;background-image:url(../img/gui/ping-team-help.svg)}.ui-emote-top-left .ui-emote-image{margin-left:-80px;margin-top:-30px;background-image:url(../img/loot/loot-ammo-box.svg)}.ui-emote-bottom-left .ui-emote{-webkit-transform:translate(-50%,-50%) rotate(-45deg);transform:translate(-50%,-50%) rotate(-45deg)}.ui-emote-bottom-left .ui-emote-image{margin-left:-80px;margin-top:30px;background-image:url(../img/loot/loot-medical-healthkit.svg)}.ui-emote-circle .ui-emote-hl{background-image:url(../img/gui/ping-part-circle-highlight.svg)}.ui-emote-quarter .ui-emote-hl{background-image:url(../img/gui/ping-part-quarter-highlight.svg)}.ui-emote-eighth .ui-emote-hl{background-image:url(../img/gui/ping-part-eighth-highlight.svg)}.ui-emote-image{z-index:1;position:fixed;background-repeat:no-repeat;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-emote-image-large{width:80px;height:80px;background-size:64px;background-position:50%}.ui-emote-image-small{width:35px;height:35px;background-size:35px}.ui-team-indicator{z-index:2;display:none;position:fixed;top:0;left:0;border-radius:32px;width:64px;height:64px;background-size:64px;background-repeat:no-repeat;background-image:url(../img/gui/indicator.svg)}.ui-team-indicator,.ui-team-indicator-pos{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ui-team-indicator-pos{opacity:.75;position:relative;border-radius:24px;width:32px;height:32px;top:23px;left:32px}.ui-team-indicator-image{width:32px;height:32px;background-size:32px;background-repeat:no-repeat;background-image:url(../img/gui/ping-team-danger.svg)}.ui-indicator-ping-border{z-index:0;display:none;position:fixed;top:0;left:0;width:160px;height:160px;position:relative;background-size:160px;background-repeat:no-repeat;background-image:url(../img/gui/ping-border.svg);-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#ui-top-left{position:absolute;color:#fff;font-size:16px;top:6px;left:6px;display:block}.ui-bg-standard{background:rgba(0,0,0,.24);border-radius:5px}#ui-team{position:fixed;left:128px}.ui-team-member{display:none;position:relative;width:110px;height:20px;padding:4px;margin-bottom:4px}.ui-team-member-name{font-weight:700;text-shadow:1px 1px 0 #000;font-size:10px;max-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-team-member-color{position:absolute;top:4px;right:4px;border-radius:9px;width:9px;height:9px}.ui-background-yellow{background-color:#ff0}.ui-background-blue{background-color:blue}.ui-background-red{background-color:red}.ui-background-purple{background-color:purple}.ui-background-cyan{background-color:cyan}.ui-team-member-status{display:none;position:absolute;top:2px;right:-24px;width:20px;height:20px;background-size:20px;background-repeat:no-repeat}.ui-team-member-status-downed{border-radius:16px;display:block!important;background-image:url(../img/gui/down.svg)!important}.ui-team-member-status-dead{display:block!important;background-image:url(../img/gui/skull-team.svg)!important;opacity:.5!important}.ui-team-member-status-disconnected{display:block!important;background-image:url(../img/gui/close.svg)!important;opacity:.5!important}.ui-team-member-health{margin-top:2px}.ui-team-member-health .ui-bar-inner{background-color:#fff;z-index:1;position:absolute;border-radius:4px;width:110px;height:5px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}.ui-team-member-health .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}.ui-team-member-health .ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}#ui-spectate-options-wrapper{bottom:6px;position:fixed;left:6px;top:auto!important}#ui-spectate-options{bottom:0;z-index:1;position:absolute;pointer-events:all;width:100%}#ui-spectate-buttons{display:inline-block;width:124px;padding:8px 8px 4px;text-align:center}#ui-spectate-options a{position:relative;color:#fff;height:24px;margin-bottom:2px;line-height:22px;font-size:12px;text-shadow:0 1px 2px rgba(0,0,0,.25);background:#50afab;border-bottom:2px solid #387c79;box-shadow:none;cursor:pointer}#btn-spectate-prev-player,#btn-spectate-view-stats{margin-bottom:12px!important}#ui-spectate-stats{position:absolute;top:0;left:146px;width:160px;display:none}#ui-spectate-stats-header{text-align:center;font-size:16px;font-weight:700;padding:6px;color:#fff}#ui-spectate-stats-table{width:100%;background-color:transparent;margin:auto;margin-right:0;margin-bottom:4px;border-collapse:collapse}#ui-spectate-stats tbody,#ui-spectate-stats td,#ui-spectate-stats th{padding:0 2px 2px 14px;font-size:10px}.ui-spectate-stats-category{width:75px;color:hsla(0,0%,100%,.75)}.ui-spectate-stats-value{width:75px;color:#fff}#ui-top-right{position:absolute;color:#fff;font-size:16px;top:6px;left:6px;display:flex}#ui-leaderboard{font-weight:700;text-align:center;width:56px;display:inline-block}#ui-leaderboard-alive{background:rgba(0,0,0,.4);border-radius:5px;margin-bottom:-16px;padding:8px;height:32px;width:40px}.ui-players-alive-pulse{-webkit-animation-name:pulseAlive;animation-name:pulseAlive;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0s;animation-delay:0s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}@-webkit-keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}@keyframes pulseAlive{0%{color:#fff}20%{color:red}40%{color:#fff}to{color:#fff}}.ui-leaderboard-header{font-size:12px}#ui-killfeed-wrapper{top:24px;left:6px;right:auto}#ui-killfeed{position:absolute;margin:initial;top:135px}#ui-killfeed-contents{width:800px}#ui-killfeed-contents .killfeed-div{position:absolute;background-color:rgba(0,0,0,.4);padding:3px;border-radius:2px;height:8px;line-height:8px;right:auto}.killfeed-div div,.killfeed-div span{float:left;font-size:8px;line-height:8px;font-weight:700;color:#efeeee}.killfeed-red div,.killfeed-red span{color:#d1777c!important}.killfeed-blue div,.killfeed-blue span{color:#00bfff!important}#ui-killfeed-contents .killfeed-red{color:#d1777c}#ui-killfeed-contents .killfeed-blue{color:#00bfff}#ui-killfeed .killfeed-name{max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-ammo .ui-loot-image,.ui-ammo .ui-loot-overlay{position:absolute;height:11px;width:11px;right:2px;margin-top:2px}#ui-ammo-interactive{position:absolute;right:0;top:25px}#ui-ammo-interactive .ui-loot{display:inline-block;background:rgba(0,0,0,.4);border-radius:5px;width:38px;height:14px;margin-left:auto;margin-bottom:2px}.ui-ammo .ui-loot-count{position:absolute;font-size:12px;font-weight:700;width:16px;left:3px;margin-top:-1px;text-align:center}#ui-medical-interactive .ui-loot{display:inline-block;background:rgba(0,0,0,.4);border-radius:5px;width:44px;height:16px;margin-left:auto;margin-bottom:2px}.ui-medical .ui-loot-image{position:absolute;height:16px;width:16px;background-size:16px;background-repeat:no-repeat;right:2px;margin-top:0}.ui-medical .ui-loot-count{position:absolute;font-size:16px;font-weight:700;left:4px;width:16px;margin-top:-3px;text-align:center}.ui-loot{background:rgba(0,0,0,.4);border-radius:5px;width:85px;height:32px;margin-left:auto;margin-bottom:5px}.ui-loot:hover{opacity:1!important}.ui-outline-hover,.ui-outline-hover:hover{border:2px solid rgba(0,255,0,0)}.ui-outline-hover:hover{-webkit-transition:border .1s ease-out;-moz-transition:border .1s ease-out;-o-transition:border .1s ease-out}.ui-scale-hover{transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);-moz-transform:scale(1)}.ui-scale-hover,.ui-scale-hover:hover{-webkit-transition:all .1s ease-in;-ms-transition:all .1s ease-in;-moz-transition:all .1s ease-in;transition:all .1s ease-in}.ui-scale-hover:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);-moz-transform:scale(1.1);transform:scale(1.1)}#ui-debug-button{display:none;background:rgba(0,0,0,.4);position:absolute;border-radius:13px;height:26px;width:26px;background-size:18px;bottom:4px;right:4px;background-position:50%;background-image:url(../img/gui/mag-glass.svg);background-repeat:no-repeat;pointer-events:auto;z-index:1}#ui-upper-center{position:absolute;display:flex;color:#fff;top:84px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-announcement{display:none;color:#ff0;text-shadow:1px 1px 0 #000;font-size:16px;font-weight:700;text-align:center;width:100vw}#ui-lower-center{position:absolute;color:#fff;bottom:44%;left:60%}#ui-interaction{display:flex}#ui-interaction-press{background:rgba(0,0,0,.4);border-radius:5px;margin-left:-20px;font-size:34px;width:44px;height:44px;background-size:36px;background-position:50%;background-repeat:no-repeat}#ui-interaction-outer{background:rgba(0,0,0,.4);border-radius:5px;margin-left:6px;padding:0 6px;height:28px}#ui-interaction-outer #ui-interaction-description{margin-top:5px;font-size:16px;text-align:center}#ui-bottom-center-0{bottom:6px}#ui-bottom-center-0,#ui-equipped-ammo-wrapper{position:absolute;color:#fff;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-equipped-ammo-wrapper{bottom:78px}#ui-equipped-ammo{position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center;opacity:1}#ui-bullet-counter{display:inline-block;width:175px;height:28px;text-align:center;text-shadow:1px 1px #000}#ui-bullet-counter #ui-current-clip{background:rgba(0,0,0,.4);border-radius:5px;font-size:28px;font-weight:700;line-height:30px;width:60px;height:32px;-webkit-transform:translateX(-50%);transform:translateX(-50%);left:50%;position:relative;text-align:center}#ui-bullet-counter #ui-ammo-divider{font-size:22px;left:53%;position:absolute;text-align:center;top:20px}#ui-bullet-counter #ui-remaining-ammo{background:rgba(0,0,0,.4);border-radius:5px;font-size:16px;font-weight:700;line-height:22px;width:44px;height:22px;left:122px;position:absolute;text-align:center;top:10px}#ui-bullet-counter #ui-reload-button{background:rgba(0,0,0,.4);position:absolute;border-radius:11px;height:22px;width:22px;background-size:14px;top:10px;left:170px;background-position:4px 3px;background-image:url(../img/gui/bullets.svg);background-repeat:no-repeat}#ui-boost-counter{display:inline-flex;width:206px}#ui-boost-counter .ui-boost-base{background:rgba(0,0,0,.4);height:6px;margin-bottom:0}#ui-boost-counter-0{border-top-left-radius:3px;border-bottom-left-radius:3px;width:50px;margin-right:3px}#ui-boost-counter-0 .ui-bar-inner{background:#ff901a}#ui-boost-counter-1{width:50px;margin-left:3px;margin-right:3px}#ui-boost-counter-1 .ui-bar-inner{background:#ff751a}#ui-boost-counter-2{width:75px;margin-left:3px;margin-right:3px}#ui-boost-counter-2 .ui-bar-inner{background:#ff6616}#ui-boost-counter-3{border-top-right-radius:3px;border-bottom-right-radius:3px;width:25px;margin-left:3px}#ui-boost-counter-3 .ui-bar-inner{background:#ff5600}.ui-boost-base .ui-bar-inner{border-radius:inherit;width:0;height:6px}#ui-health-counter{background:rgba(0,0,0,.4);border-radius:5px;width:200px;height:18px;padding:4px}#ui-health-counter .ui-bar-inner{z-index:1;position:absolute;border-radius:5px;width:100%;height:18px;transition:width 0s;transition-property:width;transition-duration:0s;transition-timing-function:ease-out;transition-delay:0s}#ui-health-container{width:200px;position:relative}#ui-health-counter .ui-bar-danger{background:rgba(255,0,0,.8);-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-play-state:running;animation-play-state:running}#ui-health-counter #ui-health-depleted{z-index:0;background:#fff;transition:width 1s;transition-property:width;transition-duration:1s;transition-timing-function:ease-out;transition-delay:0s}.health-bar-pulse{-webkit-animation:pulsewhite 1s linear infinite;animation:pulsewhite 1s linear infinite}@-webkit-keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@keyframes pulsewhite{0%{background-color:rgba(0,0,0,.6)}50%{background-color:hsla(0,0%,100%,.6)}to{background-color:rgba(0,0,0,.6)}}@-webkit-keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}@keyframes pulse{0%{background-color:rgba(0,0,0,.8)}50%{background-color:rgba(255,0,0,.8)}to{background-color:rgba(0,0,0,.8)}}#ui-bottom-center-1{z-index:3;position:absolute;color:#fff;bottom:23%;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-kills{display:none;text-align:center;background:rgba(0,0,0,.4);color:#fff;border-radius:5px;padding:6px}#ui-kill-text{font-size:10px}#ui-kill-count{font-weight:700;color:#ff4100;font-size:18px;margin-bottom:-3px;text-shadow:1px 1px 1px rgba(0,0,0,.3)}#ui-bottom-center-2{position:absolute;color:#fff;bottom:82px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-pickup-message{color:#fff;text-shadow:1px 1px 0 #000;font-size:16px;font-weight:700;text-align:center;width:100vw}#ui-bottom-center-right{position:absolute;color:#fff;bottom:6px;left:75%}.ui-armor-counter{position:absolute;bottom:0;display:block;width:20px;height:24px;background:rgba(0,0,0,.4);border-radius:5px;margin-left:2px}#ui-armor-helmet{right:0}#ui-armor-backpack{left:26px}.ui-armor-level{position:relative;font-size:8px;font-weight:700;bottom:12px;text-align:center;text-shadow:1px 1px #000}.ui-armor-counter-inner{z-index:1;position:absolute;background:rgba(0,255,0,.5);border-radius:5px;width:100%;height:0;bottom:0;transition:height .5s;transition-property:height;transition-duration:.5s;transition-timing-function:ease-out;transition-delay:0s}.ui-armor-counter .ui-armor-count{z-index:2;text-shadow:1px 1px #000;position:relative;font-size:18px;font-weight:700;margin-top:-28px;text-align:center}.ui-armor-counter .ui-armor-image{margin:auto;left:0;right:0;bottom:0;top:0;z-index:0;position:absolute;height:18px;width:18px}#ui-bottom-right{bottom:auto;color:#fff;position:absolute;right:6px;top:55%;-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transform:scale(1);transform:scale(1)}#ui-weapon-container{width:84px}.ui-weapon-info{margin-bottom:5px}.ui-weapon-info,.ui-weapon-switch{border-radius:5px;border:2px solid transparent}.ui-weapon-switch{position:absolute;right:0;opacity:.6;width:68px;height:24px;margin-left:auto;pointer-events:all}#ui-weapon-id-1{bottom:90px}#ui-weapon-id-2{bottom:60px}#ui-weapon-id-3{bottom:30px}#ui-weapon-id-4{bottom:0}.ui-weapon-name{position:absolute;font-size:10px;font-weight:700;right:4px;width:48px;margin-top:12px;text-align:right;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.ui-weapon-number{font-size:24px;right:8px}.ui-weapon-exp,.ui-weapon-number{display:none;position:absolute;font-weight:700;text-align:center}.ui-weapon-exp{height:16px;width:16px;font-size:8px;line-height:18px;right:34px;margin-top:10px}.ui-weapon-image{display:none;position:relative;height:28px;width:28px;left:0;bottom:3px;-webkit-transform:rotate(10deg);transform:rotate(10deg)}#ui-weapon-id-4 .ui-weapon-image{height:24px;width:24px;left:0;top:0;background-size:24px}#ui-stats-contents{position:absolute;width:100%;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center;color:#fff;border-radius:5px}#ui-stats-header{margin-top:14px}.ui-stats-header-title{font-weight:700;font-size:24px;margin:6px;color:gold}.ui-stats-header-reason{font-size:12px}.ui-stats-header-overview{position:fixed;top:4px;right:12px;margin:5px}.ui-stats-header-overview div{display:block;padding-bottom:6px;border-bottom:2px solid hsla(0,0%,100%,.25)}.ui-stats-header-overview div:not(:first-child){margin:initial}span.ui-stats-header-stat{font-size:22px}span.ui-stats-header-value{margin-left:12px;font-size:28px;font-weight:700}#ui-stats-info-box{position:relative;left:50%;margin:auto;margin-top:0;height:100px;display:flex}.ui-stats-info-player{position:relative;width:125px;background-color:rgba(0,0,0,.75);border-radius:4px;border:2px solid #000;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.ui-stats-info-status:after{background-image:url(../img/gui/skull.svg);background-position:50%;background-repeat:no-repeat;background-size:70px;content:"";display:block;height:100%;left:auto;opacity:.1;position:absolute;top:0;width:100%;z-index:-1}.ui-stats-info-player-name{color:gold;font-size:12px;font-weight:700;font-style:italic;margin:4px auto;max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ui-stats-info{display:flex;height:18px;margin:auto}.ui-stats-info>div{padding:4px;font-size:9px;line-height:6px;text-align:left;font-weight:700}.ui-stats-info>div:first-child{width:55%;margin-right:4px;text-align:right;font-weight:400}.ui-stats-reason{display:flex;height:72px;margin:auto}.ui-stats-reason div{padding:8px;margin:auto;width:100%;text-align:center;font-size:16px}.ui-stats-reason .ui-stats-reason-dead{color:red}.ui-stats-reason .ui-stats-reason-alive{color:#7cfc00}#ui-stats-options{position:absolute;left:50%;margin-top:10px;min-height:30px;z-index:1}.ui-stats-restart{width:130px;margin:auto;margin-bottom:20px}#ui-stats-spectate,.ui-stats-restart{position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-stats-spectate{left:68px;width:88px;background:#50afab;border-bottom:2px solid #387c79;box-shadow:none}.ui-stats-ad-container{display:none;margin-top:8px;-webkit-transform:scale(.7);transform:scale(.7)}#ui-spec-ad-container{z-index:1;position:absolute;top:0;left:50%}#ad-block-stats-bottom{-webkit-transform:scale(.6);transform:scale(.6);-webkit-transform-origin:center;transform-origin:center;position:static}.tooltip{position:relative}.tooltip .tooltip-text{visibility:hidden!important;width:240px;background-color:#000;color:#fff;text-align:center;padding:5px 0;border-radius:6px;position:absolute;z-index:1;right:110%;opacity:.75;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.tooltip .tooltip-text:after{content:" ";position:absolute;top:50%;left:100%;margin-top:-5px;border-width:5px;border-style:solid;border-color:transparent transparent transparent #000}.tooltip-title{font-size:18px;font-weight:700;padding:4px;color:#ff0}.tooltip-description{font-size:16px;padding:4px}.tooltip-description span{font-size:16px}#ui-editor-top-center{position:absolute;color:#fff;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}#ui-editor-top-right{position:absolute;color:#fff;font-size:16px;top:6px;right:6px}.ui-editor-header{text-align:center;font-weight:700;font-size:16px;padding:8px}.ui-editor-info{background:rgba(0,0,0,.4);border-radius:5px;font-size:36px;margin-bottom:8px;padding:8px}.ui-editor-list{margin:0;padding:0;list-style:none}.ui-editor-list li div{font-family:monospace;font-size:14px}#ui-profiler-top-left{position:absolute;color:#fff;font-size:16px;top:6px;left:6px;text-align:center;display:flex}.ui-profiler-list{background:rgba(0,0,0,.4);border-radius:5px;margin-right:16px;padding:8px}.ui-profiler-list-header{font-size:16px;font-weight:700;margin-bottom:8px}.ui-profiler-list ul{list-style:none;text-align:left;padding:0;margin:0}.ui-profiler-list li{display:flex}.kv{font-family:monospace;font-size:14px;font-weight:400}.kv:last-child{width:100%;text-align:right}#ui-leaderboard-wrapper,#ui-settings-container-desktop{display:none}#ui-settings-container-mobile{display:block}}@media screen and (max-width:850px) and (max-height:360px),screen and (max-width:850px) and (max-width:640px){#ui-top-center{-webkit-transform-origin:top;transform-origin:top;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85)}}@media screen and (max-width:850px) and screen and (max-width:850px){#ui-lower-center{-webkit-transform:scale(1);transform:scale(1)}}@media screen and (max-width:850px) and (max-height:360px),screen and (max-width:850px) and (max-width:640px){#ui-bottom-center-0{-webkit-transform-origin:bottom;transform-origin:bottom;-webkit-transform:translateX(-50%) scale(.85);transform:translateX(-50%) scale(.85)}}@media screen and (max-width:850px) and (max-height:360px),screen and (max-width:850px) and (max-width:640px){#ui-bottom-right{-webkit-transform-origin:top right;transform-origin:top right;-webkit-transform:scale(.8);transform:scale(.8)}}@media screen and (max-width:850px) and (max-width:850px) and (orientation:landscape){.ui-stats-header-overview .ui-stats-header-left{position:fixed;top:6px;left:12px}.ui-stats-header-overview .ui-stats-header-right{position:fixed;top:6px;right:12px}}@media screen and (max-width:850px) and (max-height:360px) and (max-width:640px){.ui-stats-ad-container{margin-top:0;-webkit-transform:scale(.6);transform:scale(.6)}}@media screen and (max-width:850px) and (max-width:850px) and (max-height:320px){.ui-stats-ad-container{position:fixed;right:10px;top:24px;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:bottom right;transform-origin:bottom right}}@media screen and (max-width:850px) and (orientation:portrait){#ui-stats-contents{margin-top:32px;margin-bottom:16px}#ui-stats-header-overview{position:static}#ui-stats-info-box{display:inline-block;left:auto;-webkit-transform:scale(.9);transform:scale(.9);-webkit-transform-origin:initial;transform-origin:initial;margin-top:2px;width:100%}.ui-stats-ad-container{width:100%}.ui-stats-info-player{display:inline-block;left:auto!important;margin:8px;-webkit-transform:none;transform:none}.ui-stats-header-overview{display:inline-block;position:static;width:175px}.ui-stats-header-overview div{position:static;margin-bottom:8px}#ui-top-center{top:134px;left:50%}#ui-top-center-scopes-wrapper{display:none;bottom:42px;top:auto}#ui-team{top:40px}.ui-team-member{height:18px;margin-bottom:4px}#ui-upper-center{top:180px}#ui-bottom-center-0{top:-15px;bottom:auto;left:100px;-webkit-transform:scale(.85);transform:scale(.85)}#ui-bottom-center-1{bottom:28%}#ui-bottom-center-2{bottom:218px}#ui-lower-center{bottom:38%;left:38%}#ui-boost-counter{position:relative;top:40px;left:2px}#ui-bottom-right{bottom:20px;right:6px;top:auto}#ui-weapon-id-1{right:240px;bottom:auto}#ui-weapon-id-2{right:160px;bottom:auto}#ui-weapon-id-3{right:80px;bottom:auto}#ui-weapon-id-4{bottom:auto}.ui-weapon-info{display:inline-block}#ui-bottom-center-right{bottom:9px;left:30px}.ui-right-center-mobile{top:6px}#ui-emote-button{top:175px}#ui-debug-button{top:190px}#ui-ammo-interactive{left:8px;margin-top:4px;top:88px}#ui-ammo-interactive .ui-loot,#ui-medical-interactive .ui-loot{display:block}#ui-equipped-ammo{position:static}#ui-equipped-ammo,#ui-equipped-ammo-wrapper{left:auto;-webkit-transform:none;transform:none}#ui-equipped-ammo-wrapper{bottom:auto;color:#fff;position:absolute;right:6px;top:44%}#ui-bullet-counter{width:auto}#ui-bullet-counter #ui-current-clip{left:50%}#ui-bullet-counter #ui-remaining-ammo{left:auto;right:0;top:36px}#ui-bullet-counter #ui-reload-button{left:auto;right:0;top:62px}#big-map-collision{left:auto;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}#big-map-close{bottom:auto;top:12px}#ui-spectate-options-wrapper{bottom:42px;-webkit-transform:scale(.7);transform:scale(.7)}#ui-spectate-options{position:absolute;bottom:12px}#ui-spectate-stats{bottom:0;top:auto}}@media screen and (max-width:850px) and (orientation:portrait) and (min-height:668px){#ui-stats-contents{margin-top:32px}#ui-stats-info-box,.ui-stats-ad-container{-webkit-transform:scale(1);transform:scale(1)}.ui-stats-ad-container{margin-top:20px}#ui-stats-options{display:block;left:auto;position:static;margin:auto;margin-top:24px;width:100%}.ui-stats-restart{margin-bottom:0}#ui-stats-spectate,.ui-stats-restart{display:block;position:static;-webkit-transform:initial;transform:none}#ui-stats-spectate{margin:auto;margin-top:6px}}@media screen and (max-width:850px) and (orientation:portrait) and (max-height:667px){#ui-stats-contents{margin-top:0;-webkit-transform:translateX(-50%) scale(.9);transform:translateX(-50%) scale(.9);-webkit-transform-origin:top;transform-origin:top}.ui-stats-ad-container{margin-top:20px}}@media screen and (max-width:850px) and (orientation:portrait) and (max-height:568px) and (max-width:360px){#ui-bottom-center-right{left:22px;-webkit-transform:scale(.8);transform:scale(.8)}#ui-bottom-right{right:0}#ui-bottom-center-0{top:-20px;left:84px;-webkit-transform:scale(.7);transform:scale(.7)}}', ""])
 	},
 	v8aM: function(e, t, a) {
 		"use strict";
@@ -25512,10 +23945,9 @@ webpackJsonp([0], {
 			r = {
 				Locked: 0,
 				Default: 1,
-				Account: 5,
-				Twitter: 6,
-				YouTube: 7,
-				Facebook: 8
+				Twitter: 2,
+				YouTube: 3,
+				Facebook: 4
 			},
 			s = {
 				None: 0,
@@ -25596,20 +24028,14 @@ webpackJsonp([0], {
 				LogoSwine: 75,
 				LogoHydra: 76,
 				LogoStorm: 77,
-				FlagHonduras: 78,
-				LogoCaduceus: 79,
-				ImpFace: 80,
-				MonocleFace: 81,
-				SunglassFace: 82,
-				HeadshotFace: 83,
-				Potato: 84,
-				Leek: 85,
-				Eggplant: 86,
-				Baguette: 87,
-				Chick: 88,
-				Ammo50AE: 89
+				FlagHonduras: 78
 			},
 			l = (o = {}, i(o, s.None, {
+				texture: "img/gui/close.svg",
+				teamOnly: !1,
+				noCustom: !0,
+				category: r.Locked
+			}), i(o, s.Empty, {
 				texture: "",
 				teamOnly: !1,
 				noCustom: !0,
@@ -26060,71 +24486,6 @@ webpackJsonp([0], {
 				teamOnly: !1,
 				facebookLike: !0,
 				category: r.Facebook
-			}), i(o, s.LogoCaduceus, {
-				texture: "img/emotes/logo-caduceus.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.ImpFace, {
-				texture: "img/emotes/imp-face.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.MonocleFace, {
-				texture: "img/emotes/monocle-face.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.SunglassFace, {
-				texture: "img/emotes/sunglass-face.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.HeadshotFace, {
-				texture: "img/emotes/headshot-face.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.Potato, {
-				texture: "img/emotes/potato.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.Leek, {
-				texture: "img/emotes/leek.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.Eggplant, {
-				texture: "img/emotes/eggplant.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.Baguette, {
-				texture: "img/emotes/baguette.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.Chick, {
-				texture: "img/emotes/chick.svg",
-				sound: "emote_01",
-				teamOnly: !1,
-				accountLogin: !0,
-				category: r.Account
-			}), i(o, s.Ammo50AE, {
-				texture: "img/emotes/ammo-50AE.svg",
-				sound: "emote_01",
-				teamOnly: !0,
-				category: r.Locked
 			}), o);
 		e.exports = {
 			EmoteSlot: n,
@@ -26224,14 +24585,14 @@ webpackJsonp([0], {
 									C = d.length(P);
 								if (x.obj && x.obj.__id != y.lastSoundObjId && C > 7.5) {
 									y.lastSoundObjId = x.obj.__id;
-									var I = d.mul(d.normalizeSafe(P, d.create(1, 0)), -1);
-									x.obj.playHitFx(y.pos, I, y.layer, t, a)
+									var z = d.mul(d.normalizeSafe(P, d.create(1, 0)), -1);
+									x.obj.playHitFx(y.pos, z, y.layer, t, a)
 								}
-								var z = o.getGroundSurface(y.pos, y.layer);
-								y.posZ <= .01 && !y.inWater && "water" == z && (o.addRipple(y.pos, 0), y.inWater = !0);
-								var A = y.velZ;
-								if (y.velZ = (y.posZ - y.posZOld) / e, !y.isNew && !y.grounded && y.velZ >= 0 && A < 0) {
-									var D = {
+								var I = o.getGroundSurface(y.pos, y.layer);
+								y.posZ <= .01 && !y.inWater && "water" == I && (o.addRipple(y.pos, 0), y.inWater = !0);
+								var D = y.velZ;
+								if (y.velZ = (y.posZ - y.posZOld) / e, !y.isNew && !y.grounded && y.velZ >= 0 && D < 0) {
+									var A = {
 										fn: "playGroup",
 										channel: "hits",
 										name: ""
@@ -26240,22 +24601,22 @@ webpackJsonp([0], {
 										if (y.lastSoundObjId != v.obj.__id) {
 											y.lastSoundObjId = v.obj.__id;
 											var O = s.Defs[v.obj.type];
-											D.name = O.sound.bullet
+											A.name = O.sound.bullet
 										}
-									} else y.grounded = !0, D.name = g[z], void 0 === D.name && (D.name = "footstep_" + z, D.fn = "playGroup", D.channel = "sfx");
-									"" != D.name && a[D.fn](D.name, {
-										channel: D.channel,
+									} else y.grounded = !0, A.name = g[I], void 0 === A.name && (A.name = "footstep_" + I, A.fn = "playGroup", A.channel = "sfx");
+									"" != A.name && a[A.fn](A.name, {
+										channel: A.channel,
 										soundPos: y.pos,
 										layer: y.layer,
 										muffled: !0
 									})
 								}
 								var L = y.layer,
-									E = y.posZ < .25 ? 14 : 25,
-									B = l.createCircle(y.pos, 3 * y.rad),
-									F = o.insideStructureStairs(B),
-									R = o.insideStructureMask(B);
-								!(y.posZ >= .25 && F && (1 & y.layer) == (1 & i.layer)) || R && 2 & i.layer || (L |= 2, E += 100), n.addPIXIObj(y.sprite, h.World, L, E);
+									B = y.posZ < .25 ? 14 : 25,
+									E = l.createCircle(y.pos, 3 * y.rad),
+									F = o.insideStructureStairs(E),
+									R = o.insideStructureMask(E);
+								!(y.posZ >= .25 && F && (1 & y.layer) == (1 & i.layer)) || R && 2 & i.layer || (L |= 2, B += 100), n.addPIXIObj(y.sprite, h.World, L, B);
 								var j = y.imgScale * c.remap(y.posZ, 0, r.projectile.maxHeight, 1, 2.5),
 									N = p.pointToScreen(y.pos),
 									q = p.pixels(j);
@@ -26281,7 +24642,7 @@ webpackJsonp([0], {
 			"index-region": "Regio",
 			"index-north-america": "Noord-Amerika",
 			"index-europe": "Europa",
-			"index-asia": "Azië",
+			"index-asia": "AziÃ«",
 			"index-players": "spelers",
 			"index-play-solo": "Speel Alleen",
 			"index-play-duo": "Team van 2",
@@ -26446,7 +24807,7 @@ webpackJsonp([0], {
 			"game-12gauge": "12 gauge",
 			"game-12gauge-tooltip": "Ammunitie voor M870, Saiga-12 en MP220.",
 			"game-762mm": "7.62mm",
-			"game-762mm-tooltip": "Ammunitie voor AK-47, SCAR-H, M39, Mosin-Nagant, OT-38 en DP-28.",
+			"game-762mm-tooltip": "Ammunitie voor AK-47, SCAR-H, M39, Mosin Nagant, OT-38 en DP-28.",
 			"game-556mm": "5.56mm",
 			"game-556mm-tooltip": "Ammunitie voor FAMAS, HK416, Mk 12 en M249.",
 			"game-chest01": "Level 1 Armor",
@@ -26476,7 +24837,7 @@ webpackJsonp([0], {
 			"game-fists": "Punch",
 			"game-ak47": "AK-47",
 			"game-dp28": "DP-28",
-			"game-mosin": "Mosin-Nagant",
+			"game-mosin": "Mosin Nagant",
 			"game-m39": "M39 EMR",
 			"game-mp5": "MP5",
 			"game-mac10": "MAC-10",
@@ -27003,31 +25364,31 @@ webpackJsonp([0], {
 								})
 							}
 						}
-						for (var I = 0; I < y.length; I++) {
-							var z = y[I];
-							if (z.active && !z.netData.dead && (m.sameLayer(z.netData.layer, x.layer) || 2 & z.netData.layer) && (z.__id != x.playerId || x.damageSelf)) {
-								var A = s.intersectSegmentCircle(_, x.pos, z.pos, n.player.radius);
-								A && S.push({
+						for (var z = 0; z < y.length; z++) {
+							var I = y[z];
+							if (I.active && !I.netData.dead && (m.sameLayer(I.netData.layer, x.layer) || 2 & I.netData.layer) && (I.__id != x.playerId || x.damageSelf)) {
+								var D = s.intersectSegmentCircle(_, x.pos, I.pos, n.player.radius);
+								D && S.push({
 									type: r.Type.Player,
-									obj: z,
-									res: A
+									obj: I,
+									res: D
 								})
 							}
 						}
-						for (var D = 0; D < S.length; D++) {
-							var O = S[D];
+						for (var A = 0; A < S.length; A++) {
+							var O = S[A];
 							O.dist = d.length(d.sub(O.res.point, _))
 						}
 						S.sort(function(e, t) {
 							return e.dist - t.dist
 						});
 						var L = !1,
-							E = t.getPlayerById(x.playerId);
-						E && (E.netData.dead || E.netData.downed) && (L = !0);
-						for (var B = !1, F = 0; F < S.length; F++) {
+							B = t.getPlayerById(x.playerId);
+						B && (B.netData.dead || B.netData.downed) && (L = !0);
+						for (var E = !1, F = 0; F < S.length; F++) {
 							var R = S[F],
 								j = R.res;
-							if (R.type == r.Type.Obstacle) R.obj.playHitFx(j.point, j.normal, x.layer, g, f), B = R.obj.collidable;
+							if (R.type == r.Type.Obstacle) R.obj.playHitFx(j.point, j.normal, x.layer, g, f), E = R.obj.collidable;
 							else if (R.type == r.Type.Player) {
 								if (!L) {
 									var N = R.obj,
@@ -27039,32 +25400,32 @@ webpackJsonp([0], {
 										muffled: !0
 									})
 								}
-								B = !0
+								E = !0
 							}
-							if (B) {
+							if (E) {
 								x.pos = j.point;
 								break
 							}
 						}
 						if (!(2 & x.layer)) {
-							for (var U = a.structurePool.getPool(), G = x.layer, V = 0; V < U.length; V++) {
-								var H = U[V];
+							for (var G = a.structurePool.getPool(), U = x.layer, V = 0; V < G.length; V++) {
+								var H = G[V];
 								if (H.active) {
 									for (var W = !1, K = !1, X = 0; X < H.stairs.length; X++)
 										if (l.intersectSegment(H.stairs[X].collision, x.pos, _)) {
 											W = !0;
 											break
 										}
-									for (var Y = 0; Y < H.mask.length; Y++)
-										if (l.intersectSegment(H.mask[Y], x.pos, _)) {
+									for (var Z = 0; Z < H.mask.length; Z++)
+										if (l.intersectSegment(H.mask[Z], x.pos, _)) {
 											K = !0;
 											break
 										}
-									W && !K && (G |= 2)
+									W && !K && (U |= 2)
 								}
 							}
-							G != x.layer && (x.layer = G, u.addPIXIObj(x.container, h.Bullet, x.layer, 19))
-						}(B || c.eqAbs(v, k)) && (x.collided = !0, x.alive = !1), x.isNew = !1
+							U != x.layer && (x.layer = U, u.addPIXIObj(x.container, h.Bullet, x.layer, 19))
+						}(E || c.eqAbs(v, k)) && (x.collided = !0, x.alive = !1), x.isNew = !1
 					}
 				}
 			},
@@ -27124,18 +25485,17 @@ webpackJsonp([0], {
 		var l = a("+0OL"),
 			c = a("0od3"),
 			m = a("yp2f"),
-			d = a("po6R"),
-			p = a("S1KI"),
-			u = a("zinx"),
-			h = (a("5dFr"), a("85i3")),
-			g = a("m1+W"),
-			f = a("Jr6A"),
+			d = a("S1KI"),
+			p = a("zinx"),
+			u = (a("5dFr"), a("85i3")),
+			h = a("m1+W"),
+			g = a("Jr6A"),
+			f = a("LLDW"),
 			y = a("FT2U"),
 			b = a("fWTV"),
 			x = (a("SEs0"), a("xGI0")),
-			v = a("2Ex0"),
-			k = a("YfyY"),
-			_ = function() {
+			v = a("YfyY"),
+			k = function() {
 				function e() {
 					i(this, e), this.useLocalStorage = !0, this.config = {}, this.onModified = []
 				}
@@ -27148,7 +25508,7 @@ webpackJsonp([0], {
 						} catch (e) {
 							this.useLocalStorage = !1
 						}
-						var t = f.detectLanguage();
+						var t = g.detectLanguage();
 						this.config = o({
 							muteAudio: !1,
 							masterVolume: 1,
@@ -27158,7 +25518,6 @@ webpackJsonp([0], {
 							screenShake: !0,
 							touchMoveStyle: "locked",
 							touchAimStyle: "locked",
-							profile: null,
 							playerName: "",
 							region: "na",
 							teamMode: 4,
@@ -27172,8 +25531,7 @@ webpackJsonp([0], {
 							emoteDeath: 1,
 							twitterFollow: !1,
 							youtubeSubscribe: !1,
-							facebookLike: !1,
-							cookiesConsented: !0
+							facebookLike: !1
 						}, e), this.config.teamAutoFill = !0, this.onModified && this.onModified()
 					}
 				}, {
@@ -27195,48 +25553,50 @@ webpackJsonp([0], {
 					}
 				}]), e
 			}(),
-			w = function() {
+			_ = function() {
 				function e() {
 					var t = this;
-					i(this, e), this.gameCanvas = r("#cvs"), this.nameInput = r("#player-name-input-solo"), this.serverSelect = r("#server-select-main"), this.playSoloBtn = r("#btn-start-solo"), this.playDuoBtn = r("#btn-start-duo"), this.playSquadBtn = r("#btn-start-squad"), this.createTeamBtn = r("#btn-create-team"), this.joinTeamBtn = r("#btn-team-mobile-link-join"), this.leaveTeamBtn = r("#btn-team-leave"), this.muteBtns = r(".btn-sound-toggle"), this.masterSliders = r(".sl-master-volume"), this.soundSliders = r(".sl-sound-volume"), this.musicSliders = r(".sl-music-volume"), this.fullscreenBtn = r(".btn-fullscreen-toggle"), this.serverWarning = r("#server-warning"), this.languageSelect = r(".language-select"), this.startMenuWrapper = r("#start-menu-wrapper"), this.gameAreaWrapper = r("#game-area-wrapper"), this.config = new _, this.config.onModified = function() {
+					i(this, e), this.gameCanvas = r("#cvs"), this.nameInput = r("#player-name-input-solo"), this.serverSelect = r("#server-select-main"), this.playSoloBtn = r("#btn-start-solo"), this.playDuoBtn = r("#btn-start-duo"), this.playSquadBtn = r("#btn-start-squad"), this.createTeamBtn = r("#btn-create-team"), this.joinTeamBtn = r("#btn-team-mobile-link-join"), this.leaveTeamBtn = r("#btn-team-leave"), this.muteBtns = r(".btn-sound-toggle"), this.masterSliders = r(".sl-master-volume"), this.soundSliders = r(".sl-sound-volume"), this.musicSliders = r(".sl-music-volume"), this.fullscreenBtn = r(".btn-fullscreen-toggle"), this.serverWarning = r("#server-warning"), this.languageSelect = r(".language-select"), this.startMenuWrapper = r("#start-menu-wrapper"), this.gameAreaWrapper = r("#game-area-wrapper"), this.config = new k, this.config.onModified = function() {
 						t.onConfigModified()
-					}, this.siteInfo = {}, this.privacy = new v(this.config), this.privacy.init(), this.account = new d(this.config), this.localization = new b, this.localization.setLocale("en"), this.localization.localizeIndex(), this.loadoutMenu = new y(this.config), this.pingTest = new x, this.audioManager = new p, this.teamMenu = new k(this.config, this.pingTest, this.localization, this.joinGame.bind(this), this.audioManager), this.teamMenu.onLeave = this.onTeamMenuLeave.bind(this), this.pixi = null, this.game = null, this.initialized = !1, this.active = !1, this.contextListener = function(e) {
+					}, this.siteInfo = {}, this.localization = new b, this.localization.setLocale("en"), this.localization.localizeIndex(), this.leaderboard = new f(this.localization), this.pingTest = new x, this.audioManager = new d, this.teamMenu = new v(this.config, this.pingTest, this.localization, this.joinGame.bind(this), this.audioManager), this.teamMenu.onLeave = this.onTeamMenuLeave.bind(this), this.loadoutMenu = new y(this.config), this.pixi = null, this.game = null, this.initialized = !1, this.active = !1, this.contextListener = function(e) {
 						e.preventDefault()
-					}, this.errorMessage = "", this.errorCount = 0, this.playEnabled = !1, this.quickPlayPendingMode = 0, this.findGameTimeout = 0, this.playTimeout = 0, this.menuMusicIdx = 0, this.config.load(), this.pingTest.start(this.config.get("region"))
+					}, this.errorMessage = "", this.errorCount = 0, this.playEnabled = !1, this.quickPlayPendingMode = 0, this.findGameTimeout = 0, this.playTimeout = 0, this.menuMusicIdx = 0, this.config.load(), this.pingTest.start(this.config.get("region")), this.loadoutMenu.init()
 				}
 				return n(e, [{
 					key: "init",
 					value: function() {
 						var e = this,
-							t = this.audioManager,
-							a = this.config,
-							i = this.createTeamBtn,
-							o = this.fullscreenBtn,
-							n = this.joinTeamBtn,
-							l = this.leaveTeamBtn,
-							c = this.languageSelect,
-							d = (this.loadoutMenu, this.localization),
-							p = this.muteBtns,
-							y = this.masterSliders,
-							b = this.musicSliders,
-							x = this.nameInput,
-							v = this.playSoloBtn,
-							k = this.playDuoBtn,
-							_ = this.playSquadBtn,
-							w = this.serverSelect,
-							S = this.soundSliders,
-							M = this.teamMenu;
+							t = this.nameInput,
+							a = this.playSoloBtn,
+							i = this.playDuoBtn,
+							o = this.playSquadBtn,
+							n = this.serverSelect,
+							l = this.createTeamBtn,
+							c = this.joinTeamBtn,
+							d = this.leaveTeamBtn,
+							f = this.config,
+							y = this.leaderboard,
+							b = this.teamMenu,
+							x = this.muteBtns,
+							v = this.masterSliders,
+							k = this.soundSliders,
+							_ = this.musicSliders,
+							w = this.fullscreenBtn,
+							S = this.audioManager,
+							M = this.localization,
+							T = this.languageSelect;
 						if (!this.initialized) {
-							if (x.maxLength = m.kNameMaxLen, v.on("click", function() {
-									e.tryQuickStartGame(1)
-								}), k.on("click", function() {
-									e.tryQuickStartGame(2)
-								}), _.on("click", function() {
-									e.tryQuickStartGame(4)
-								}), w.change(function() {
-									var t = w.find(":selected").val();
-									e.pingTest.start(t)
-								}), r.ajax("/api/site_info?language=" + this.localization.getLocale()).done(function(t, a) {
+							t.maxLength = m.kNameMaxLen, a.on("click", function() {
+								e.tryQuickStartGame(1)
+							}), i.on("click", function() {
+								e.tryQuickStartGame(2)
+							}), o.on("click", function() {
+								e.tryQuickStartGame(4)
+							}), n.change(function() {
+								var t = n.find(":selected").val();
+								e.pingTest.start(t)
+							});
+							if (r.ajax("/site_info?language=" + this.localization.getLocale()).done(function(t, a) {
 									e.siteInfo = t, e.teamMenu.siteInfo = t;
 									var i = t.pops;
 									if (i)
@@ -27248,85 +25608,89 @@ webpackJsonp([0], {
 										}
 									var m = !1,
 										d = r("#featured-streamers"),
-										p = r(".streamer-list");
-									if (!u.mobile && t.twitch)
+										u = r(".streamer-list");
+									if (!p.mobile && t.twitch)
 										for (var h = 0; h < t.twitch.length; h++) {
 											var g = t.twitch[h],
 												f = r("#featured-streamer-template").clone();
 											f.attr("class", "featured-streamer streamer-tooltip").attr("id", "");
 											var y = f.find("a");
-											y.html(g.name + " <span>" + g.viewers + " " + (1 != g.viewers ? "viewers" : "viewer") + "</span>"), y.css("background-image", "url(" + g.img + ")"), y.attr("href", g.url), p.append(f), m = !0
+											y.html(g.name + " <span>" + g.viewers + " " + (1 != g.viewers ? "viewers" : "viewer") + "</span>"), y.css("background-image", "url(" + g.img + ")"), y.attr("href", g.url), u.append(f), m = !0
 										}
 									d.css("display", m ? "block" : "none");
 									var b = r("#featured-youtuber"),
 										x = t.youtube && !m;
 									x && r(".btn-youtuber").attr("href", t.youtube.link).html(t.youtube.name), b.css("display", x ? "block" : "none")
-								}), x.on("blur", function(t) {
+								}), p.mobile && !p.tablet || y.startLeaderboardRotation(), r(".btn-youtuber").on("click", function() {
+									u.storeGeneric("navOut", "youtube")
+								}), r("#btn-more").on("click", function() {
+									u.storeGeneric("navOut", "iogamesspace")
+								}), t.on("blur", function(t) {
 									e.setConfigFromDOM()
-								}), p.on("click", function() {
-									a.set("muteAudio", !a.get("muteAudio"))
-								}), y.on("input", function() {
+								}), x.on("click", function() {
+									f.set("muteAudio", !f.get("muteAudio"))
+								}), v.on("input", function() {
 									var e = r(this).val() / 100;
-									t.setMasterVolume(e), a.set("masterVolume", e)
-								}), S.on("input", function() {
+									S.setMasterVolume(e), f.set("masterVolume", e)
+								}), k.on("input", function() {
 									var e = r(this).val() / 100;
-									t.setSoundVolume(e), a.set("soundVolume", e)
-								}), b.on("input", function() {
+									S.setSoundVolume(e), f.set("soundVolume", e)
+								}), _.on("input", function() {
 									var e = r(this).val() / 100;
-									t.setMusicVolume(e), a.set("musicVolume", e)
+									S.setMusicVolume(e), f.set("musicVolume", e)
 								}), r(".modal-settings-item").children("input").each(function(e, t) {
-									var i = r(t);
-									i.prop("checked", a.get(i.prop("id")))
+									var a = r(t);
+									a.prop("checked", f.get(a.prop("id")))
 								}), r(".modal-settings-item > input:checkbox").change(function(e) {
 									var t = r(e.target);
-									a.set(t.prop("id"), t.is(":checked"))
-								}), o.on("click", function() {
-									f.toggleFullScreen()
-								}), c.on("change", function() {
-									this.value && a.set("language", this.value)
-								}), i.on("click", function() {
+									f.set(t.prop("id"), t.is(":checked"))
+								}), w.on("click", function() {
+									g.toggleFullScreen()
+								}), T.on("change", function() {
+									this.value && f.set("language", this.value)
+								}), l.on("click", function() {
 									e.tryJoinTeam(!0)
-								}), n.on("click", function() {
+								}), c.on("click", function() {
 									var t = r("#team-link-input").val(),
 										a = t.indexOf("#");
 									a >= 0 && (t = t.slice(a + 1)), t.length > 0 ? (r("#team-mobile-link").css("display", "none"), e.tryJoinTeam(!1, t)) : (r("#team-mobile-link-desc").css("display", "none"), r("#team-mobile-link-warning").css("display", "none").fadeIn(100))
-								}), l.on("click", function() {
-									window.history && window.history.replaceState("", "", "/"), e.game && e.game.free(), M.leave()
+								}), d.on("click", function() {
+									window.history && window.history.replaceState("", "", "/"), e.game && e.game.free(), b.leave()
 								}), "WebSocket" in window)
-								if (f.authLocation()) {
-									if (f.detectIE()) {
-										var T = 'Please use the <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">Chrome browser</a> for a better playing experience!';
-										T += '<br><br>¡Usa el <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">navegador Chrome</a> para una mejor experiencia de juego!', T += '<br><br><a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">구글 크롬</a> 브라우저로이 게임을 즐겨보세요.';
-										var P = r("#modal-notification");
-										P.find(".modal-settings-text").html(T), P.fadeIn(200)
+								if (g.authLocation()) {
+									if (g.detectIE()) {
+										var P = 'Please use the <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">Chrome browser</a> for a better playing experience!';
+										P += '<br><br>Â¡Usa el <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">navegador Chrome</a> para una mejor experiencia de juego!', P += '<br><br><a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">êµ¬ê¸€ í?¬ë¡¬</a> ë¸Œë?¼ìš°ì €ë¡œì?´ ê²Œìž„ì?„ ì¦?ê²¨ë³´ì„¸ìš?.';
+										var C = r("#modal-notification");
+										C.find(".modal-settings-text").html(P), C.fadeIn(200)
 									}
 								} else {
-									h.storeGeneric("proxy", "used"), h.logProxy(window.location.hostname);
-									var C = r("#modal-notification");
-									C.find(".modal-settings-text").html('Please use the <a href="https://surviv.io" target="_blank">official surviv.io site</a> for a better playing experience!'), C.fadeIn(200)
+									u.storeGeneric("proxy", "used"), u.logProxy(window.location.hostname);
+									var z = r("#modal-notification");
+									z.find(".modal-settings-text").html('Please use the <a href="https://surviv.io" target="_blank">official surviv.io site</a> for a better playing experience!'), z.find(".modal-footer").remove(), r(document).off("click"), z.fadeIn(200)
 								}
 							else {
-								h.storeGeneric("compatibility", "no_websocket");
+								u.storeGeneric("compatibility", "no_websocket");
 								var I = r("#modal-notification");
-								I.find(".modal-settings-text").html('WebSockets are required to play.<br><br>Please use the <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">Chrome browser</a> for a better playing experience!'), I.fadeIn(200)
+								I.find(".modal-settings-text").html('WebSockets are required to play.<br><br>Please use the <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">Chrome browser</a> for a better playing experience!'), I.find(".modal-footer").remove(), r(document).off("click"), I.fadeIn(200)
 							}
-							this.account.load(), this.loadoutMenu.init(this.account), this.playEnabled = !0, this.setDOMFromConfig(), this.setAppActive(!0);
-							var z = this.getConfigResolution(),
+							this.playEnabled = !0, this.setDOMFromConfig(), this.setAppActive(!0);
+							var D = this.getConfigResolution(),
 								A = new s.Application({
 									width: window.innerWidth,
 									height: window.innerHeight,
 									view: this.gameCanvas[0],
 									antialias: !1,
-									resolution: z
+									resolution: D
 								});
-							A.renderer.plugins.interaction.destroy(), A.ticker.add(this.update, this), this.pixi = A, g.preloadImages(A.renderer);
-							var D = function() {
+							A.renderer.plugins.interaction.destroy(), A.ticker.add(this.update, this), this.pixi = A, h.preloadImages();
+							var O = function() {
 									e.setAppActive(!1)
 								},
-								O = function(t) {
+								L = function(t) {
 									e.game.free(), e.errorMessage = t || "", e.teamMenu.onGameComplete(), e.setAppActive(!0)
 								};
-							this.game = new g(A, t, d, a, D, O), this.onResize(), this.tryJoinTeam(!1), this.audioManager.preloadSounds(), this.menuMusicIdx = t.queueSound("menu_music", {
+							this.game = new h(A, S, M, f, O, L), this.onResize(), this.tryJoinTeam(!1), this.audioManager.preloadSounds(), this.menuMusicIdx = S.queueSound("menu_music", {
 								channel: "music",
 								fadeIn: !0,
 								loop: !1,
@@ -27339,25 +25703,28 @@ webpackJsonp([0], {
 					value: function() {
 						var e = this.pixi,
 							t = this.game;
-						if (f.detectMobileSafari())
+						if (g.detectMobileSafari())
 							if (window.navigator.standalone) r("#ui-game").css({
 								height: "95%"
 							});
 							else {
-								var a = f.isLandscape() || f.detectiPhoneX() ? "86%" : "82%";
-								u.tablet && (a = "90%"), r("#ui-game").css({
+								var a = g.isLandscape() || g.detectiPhoneX() ? "86%" : "82%";
+								p.tablet && (a = "90%"), r("#ui-game").css({
 									height: a
 								});
 								var i = r("#ui-right-center, #ui-top-center-scopes-wrapper, #ui-top-center, #ui-menu-display");
 								i.css({
 									"margin-top": "6px"
-								}), f.isLandscape() || f.detectiPhoneX() ? (r("#start-main-center").attr("style", ""), r("#modal-customize .modal-content").attr("style", "")) : r("#modal-customize .modal-content").css({
+								}), g.isLandscape() || g.detectiPhoneX() ? (r("#start-main-center").attr("style", ""), r("#modal-customize .modal-content").attr("style", "")) : (r("#start-main-center").css({
+									transform: "scale(0.8)",
+									"transform-origin": "top"
+								}), r("#modal-customize .modal-content").css({
 									transform: "translate(-50%, -50%) scale(0.45)",
 									top: "38%"
-								})
+								}))
 							}
 						if (e) {
-							var o = f.getScreenDimensions();
+							var o = g.getScreenDimensions();
 							e.renderer.resize(o.width, o.height)
 						}
 						t && t.initialized && t.resize(), this.refreshUi(!1)
@@ -27378,7 +25745,7 @@ webpackJsonp([0], {
 						var e = this.config,
 							t = this.nameInput,
 							a = this.serverSelect,
-							i = f.sanitizeNameInput(t.val());
+							i = g.sanitizeNameInput(t.val());
 						e.set("playerName", i);
 						var o = a.find(":selected").val();
 						e.set("region", o)
@@ -27400,59 +25767,61 @@ webpackJsonp([0], {
 						var e = this.config,
 							t = this.audioManager,
 							a = this.localization,
-							i = this.muteBtns,
-							o = this.masterSliders,
-							n = this.soundSliders,
-							r = this.musicSliders,
-							s = this.pixi,
-							l = e.get("muteAudio");
-						l != t.mute && (i.removeClass(l ? "audio-on-icon" : "audio-off-icon"), i.addClass(l ? "audio-off-icon" : "audio-on-icon"), t.setMute(l));
-						var c = e.get("masterVolume");
-						o.val(100 * c), t.setMasterVolume(c);
-						var m = e.get("soundVolume");
-						n.val(100 * m), t.setSoundVolume(m);
-						var d = e.get("musicVolume");
-						r.val(100 * d), t.setMusicVolume(d);
-						var p = e.get("language");
-						p != a.getLocale() && (a.setLocale(p), a.localizeIndex());
-						var u = this.getConfigResolution();
-						s && s.renderer.resolution != u && location.reload()
+							i = this.leaderboard,
+							o = this.muteBtns,
+							n = this.masterSliders,
+							r = this.soundSliders,
+							s = this.musicSliders,
+							l = this.pixi,
+							c = e.get("muteAudio");
+						c != t.mute && (o.removeClass(c ? "audio-on-icon" : "audio-off-icon"), o.addClass(c ? "audio-off-icon" : "audio-on-icon"), t.setMute(c));
+						var m = e.get("masterVolume");
+						n.val(100 * m), t.setMasterVolume(m);
+						var d = e.get("soundVolume");
+						r.val(100 * d), t.setSoundVolume(d);
+						var p = e.get("musicVolume");
+						s.val(100 * p), t.setMusicVolume(p);
+						var u = e.get("language");
+						a.setLocale(u), a.localizeIndex(), i.setLanguage();
+						var h = this.getConfigResolution();
+						l && l.renderer.resolution != h && location.reload()
 					}
 				}, {
 					key: "getConfigResolution",
 					value: function() {
-						return this.config.get("highRes") || u.pixelRatio > 1 ? 2 : 1
+						return this.config.get("highRes") || p.pixelRatio > 1 ? 2 : 1
 					}
 				}, {
 					key: "refreshUi",
 					value: function() {
-						var e = (!(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0], this.nameInput, this.serverSelect, this.playSoloBtn),
-							t = this.playDuoBtn,
-							a = this.playSquadBtn,
-							i = this.startMenuWrapper,
-							o = this.gameAreaWrapper,
-							n = this.serverWarning,
-							s = this.active,
-							l = this.quickPlayPendingMode,
-							c = (this.playArgs, this.errorMessage),
-							m = this.teamMenu;
-						i.css("display", s ? "flex" : "none"), o.css({
+						var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0],
+							t = (this.nameInput, this.serverSelect, this.playSoloBtn),
+							a = this.playDuoBtn,
+							i = this.playSquadBtn,
+							o = this.startMenuWrapper,
+							n = this.gameAreaWrapper,
+							s = this.serverWarning,
+							l = this.active,
+							c = this.quickPlayPendingMode,
+							m = (this.playArgs, this.errorMessage),
+							d = this.teamMenu;
+						o.css("display", l ? "flex" : "none"), n.css({
 							display: "block",
-							opacity: s ? 0 : 1
-						}), s ? (r("body").removeClass("user-select-none"), document.removeEventListener("contextmenu", this.contextListener)) : (r("body").addClass("user-select-none"), r("#start-main").stop(!0), document.addEventListener("contextmenu", this.contextListener)), r("#ad-block-left").css("display", !f.isLandscape() && m.active ? "none" : "block");
-						var d = s && "" != c;
-						n.css({
+							opacity: l ? 0 : 1
+						}), l ? (r("body").removeClass("user-select-none"), document.removeEventListener("contextmenu", this.contextListener)) : (r("body").addClass("user-select-none"), r("#start-main").stop(!0), r(".leaderboard").stop(!0), r("#btn-leaderboard-to-front").trigger("click"), document.addEventListener("contextmenu", this.contextListener)), r("#ad-block-left").css("display", !g.isLandscape() && d.active ? "none" : "block"), e && r("#btn-leaderboard-to-front").trigger("click");
+						var p = l && "" != m;
+						s.css({
 							display: "block",
-							opacity: d ? 1 : 0
-						}), n.html(c), e.html(1 == l ? '<div class="ui-spinner"></div>' : e.attr("data-label")), t.html(2 == l ? '<div class="ui-spinner"></div>' : t.attr("data-label")), a.html(4 == l ? '<div class="ui-spinner"></div>' : a.attr("data-label"));
-						var p = m.active,
-							u = window.innerHeight <= 768,
-							h = {
-								x: p && u ? "-60px" : 0,
-								y: p ? u ? 0 : "40px" : 0
+							opacity: p ? 1 : 0
+						}), s.html(m), t.html(1 == c ? '<div class="ui-spinner"></div>' : t.attr("data-label")), a.html(2 == c ? '<div class="ui-spinner"></div>' : a.attr("data-label")), i.html(4 == c ? '<div class="ui-spinner"></div>' : i.attr("data-label"));
+						var u = d.active,
+							h = window.innerHeight <= 768,
+							f = {
+								x: u && h ? "-60px" : 0,
+								y: u ? h ? 0 : "40px" : 0
 							};
 						r("#surviv-io_728x90").css({
-							transform: "translate(" + h.x + ", " + h.y + ")"
+							transform: "translate(" + f.x + ", " + f.y + ")"
 						})
 					}
 				}, {
@@ -27479,10 +25848,10 @@ webpackJsonp([0], {
 							this.playTimeout = r + 1e3, this.errorMessage = "", this.quickPlayPendingMode = e, this.setConfigFromDOM(), this.refreshUi();
 							var s = l.protocolVersion,
 								c = a.get("region"),
-								m = f.getParameterByName("region");
+								m = g.getParameterByName("region");
 							void 0 !== m && m.length > 0 && (c = m);
 							var d = this.pingTest.getZones(c),
-								p = f.getParameterByName("zone");
+								p = g.getParameterByName("zone");
 							void 0 !== p && p.length > 0 && (d = [p]);
 							var u = {
 									version: s,
@@ -27493,42 +25862,57 @@ webpackJsonp([0], {
 									autoFill: !0
 								},
 								h = (new Date).getTime(),
-								g = Math.max(0, this.findGameTimeout - h),
+								f = Math.max(0, this.findGameTimeout - h),
 								y = Math.min(3500, 1e3 + 500 * this.errorCount);
-							this.findGameTimeout = h + g + y, setTimeout(function() {
+							this.findGameTimeout = h + f + y, setTimeout(function() {
 								t.findGame(u)
-							}, g)
+							}, f)
 						}
 					}
 				}, {
 					key: "findGame",
 					value: function(e) {
 						var t = this,
-							a = this.localization;
-						this.config;
-						f.findGame(e, function(e, i) {
-							if (e) {
-								var o = {
+							a = this.localization,
+							i = this.config;
+						g.findGame(e, function(o, n) {
+							if (o) {
+								var s = {
 									full: a.translate("index-failed-finding-game"),
 									invalid_protocol: a.translate("index-invalid-protocol")
 								};
-								if ("invalid_protocol" == e) {
-									r("#modal-refresh").fadeIn(200)
+								if ("invalid_protocol" == o) {
+									var l = r("#modal-refresh");
+									r(document).off("click"), l.fadeIn(200)
 								}
-								t.errorMessage = o[e] || o.full, t.errorCount++, t.quickPlayPendingMode = 0, t.refreshUi()
-							} else t.errorCount = 0, t.joinGame(i, function() {
-								t.errorMessage = a.translate("index-failed-joining-game"), t.quickPlayPendingMode = 0, t.refreshUi()
-							})
+								t.errorMessage = s[o] || s.full, t.errorCount++, t.quickPlayPendingMode = 0, t.refreshUi()
+							} else {
+								var c = {
+									name: i.get("playerName"),
+									teamUuid: n.teamUuid,
+									teamMode: e.teamMode,
+									playerCount: e.playerCount,
+									autoFill: e.autoFill
+								};
+								t.errorCount = 0, t.joinGame(c, n, function() {
+									t.errorMessage = a.translate("index-failed-joining-game"), t.quickPlayPendingMode = 0, t.refreshUi(), u.storeGeneric("joinFail", "quickPlay_" + c.teamMode)
+								})
+							}
 						})
 					}
 				}, {
 					key: "joinGame",
-					value: function(e, t) {
-						var a = this;
-						if (!this.game) return void setTimeout(function() {
-							a.joinGame(e, t)
+					value: function(e, t, a) {
+						var i = this,
+							o = this.config,
+							n = this.game;
+						this.audioManager;
+						if (!n) return void setTimeout(function() {
+							i.joinGame(e, t, a)
 						}, 250);
-						f.joinGame(this.game, e, t)
+						document.hasFocus() || this.audioManager.playSound("notification_start_01", {
+							channel: "ui"
+						}), u.storeGeneric("language", o.get("language")), g.joinGame(n, e, t, a)
 					}
 				}, {
 					key: "update",
@@ -27548,7 +25932,7 @@ webpackJsonp([0], {
 								fadeIn: !0,
 								loop: !0,
 								forceStart: !0
-							}), a.ambientSounds.windInst = this.windInst), i.isSoundPlaying(l) && a.playing && i.stopSound(l), a.initialized && a.playing ? a.update(s) : t.renderer.backgroundColor = 7378501, window.survivSpecOk) {
+							}), a.ambientSounds.windInst = this.windInst), i.isSoundPlaying(l) && a.playing && i.stopSound(l), a.initialized && a.playing ? a.update(s) : t.renderer.backgroundColor = 7378501, window.specOk) {
 							var m = document.body;
 							a.ws && a.ws.close(), m && m.parentNode && m.parentNode.removeChild(m)
 						}
@@ -27563,29 +25947,28 @@ webpackJsonp([0], {
 				t.innerHTML = e.toString(), document.body.appendChild(t)
 			}(e)
 		}();
-		var S = new w;
+		var w = new _;
 		document.addEventListener("DOMContentLoaded", function(e) {
 			setTimeout(function() {
-				S.init()
+				w.init()
 			}, 0)
 		}), window.addEventListener("load", function() {
 			setTimeout(function() {
-				S.init()
+				w.init()
 			}, 0)
-		}), "#_=_" == window.location.hash && (window.location.hash = "", history.pushState("", document.title, window.location.pathname)), window.addEventListener("resize", function() {
-			S.onResize()
+		}), window.addEventListener("resize", function() {
+			w.onResize()
 		}), window.addEventListener("hashchange", function() {
-			S.tryJoinTeam(!1)
+			w.tryJoinTeam(!1)
 		}), window.addEventListener("beforeunload", function(e) {
-			if (S.game && S.game.warnPageReload()) {
+			if (w.game && w.game.warnPageReload()) {
 				var t = "Do you want to reload the game?";
 				return e.returnValue = t, t
 			}
 		}), window.onerror = function(e, t, a, i, o) {
-			if (window.survivSpecOk = -1 != e.indexOf("getElementById('ui-stats-spectate').innerText"), window.survivSpecOk) return h.storeGeneric("error", "specOk"), void(h.enabled = !1);
+			if (window.specOk = e.indexOf("getElementById('ui-stats-spectate').innerText"), window.specOk) return u.storeGeneric("error", "specOk"), void(u.enabled = !1);
 			var n = {
 					msg: e,
-					id: h.instanceId,
 					url: t,
 					line: a,
 					column: i,
@@ -27593,7 +25976,7 @@ webpackJsonp([0], {
 					browser: navigator.userAgent
 				},
 				r = JSON.stringify(n);
-			/surviv\.io\/js\/.*\.js/.test(r) ? h.logWindowOnAppError(r) : h.logWindowOnError(r)
+			/surviv\.io\/js\/.*\.js/.test(r) ? u.logWindowOnAppError(r) : u.logWindowOnError(r)
 		}
 	},
 	yp2f: function(e, t, a) {
@@ -27780,7 +26163,7 @@ webpackJsonp([0], {
 				}, {
 					key: "deserializeMsgType",
 					value: function() {
-						return this.stream.length - 8 * this.stream.byteIndex >= 1 ? this.stream.readUint8() : I.None
+						return this.stream.length - 8 * this.stream.byteIndex >= 1 ? this.stream.readUint8() : z.None
 					}
 				}]), e
 			}(),
@@ -27850,7 +26233,7 @@ webpackJsonp([0], {
 		}, function(e, t) {
 			t.layer = e.readUint8()
 		});
-		var I = {
+		var z = {
 				None: 0,
 				Join: 1,
 				Disconnect: 2,
@@ -27868,30 +26251,30 @@ webpackJsonp([0], {
 				Emote: 14,
 				PlayerStats: 15
 			},
-			z = function() {
+			I = function() {
 				function e() {
-					i(this, e), this.protocol = 0, this.privData = "", this.name = "", this.emotes = [], this.useTouch = !1, this.bot = !1
+					i(this, e), this.protocol = 0, this.teamUuid = "", this.teamMode = 0, this.playerCount = 1, this.autoFill = !1, this.bot = !1, this.name = "", this.emotes = [], this.useTouch = !1
 				}
 				return h(e, [{
 					key: "serialize",
 					value: function(e) {
-						e.writeUint32(this.protocol), e.writeString(this.privData), e.writeString(this.name, 16);
+						e.writeUint32(this.protocol), e.writeString(this.teamUuid, 32), e.writeUint8(this.teamMode), e.writeUint8(this.playerCount), e.writeUint8(this.autoFill), e.writeUint8(this.bot), e.writeString(this.name, 16);
 						for (var t = 0; t < y.Count; t++) e.writeUint8(this.emotes[t]);
-						e.writeUint8(this.useTouch), e.writeUint8(this.bot)
+						e.writeUint8(this.useTouch)
 					}
 				}, {
 					key: "deserialize",
 					value: function(e) {
-						this.protocol = e.readUint32(), this.privData = e.readString(), this.name = e.readString(16);
+						this.protocol = e.readUint32(), this.teamUuid = e.readString(32), this.teamMode = e.readUint8(), this.playerCount = e.readUint8(), this.autoFill = e.readUint8(), this.bot = e.readUint8(), this.name = e.readString(16);
 						for (var t = 0; t < y.Count; t++) {
 							var a = e.readUint8();
 							this.emotes.push(a)
 						}
-						this.useTouch = e.readUint8(), this.bot = e.readUint8()
+						this.useTouch = e.readUint8()
 					}
 				}]), e
 			}(),
-			A = function() {
+			D = function() {
 				function e() {
 					i(this, e), this.reason = ""
 				}
@@ -27907,7 +26290,7 @@ webpackJsonp([0], {
 					}
 				}]), e
 			}(),
-			D = function() {
+			A = function() {
 				function e() {
 					i(this, e), this.seq = 0, this.moveLeft = !1, this.moveRight = !1, this.moveUp = !1, this.moveDown = !1, this.shootStart = !1, this.shootHold = !1, this.reload = !1, this.interaction = !1, this.equipPrimary = !1, this.equipSecondary = !1, this.equipThrowable = !1, this.equipMelee = !1, this.equipLast = !1, this.cancelAction = !1, this.scrollDown = !1, this.scrollUp = !1, this.useItem = "", this.useScope = "", this.toMouseDir = _.create(1, 0), this.toMouseLen = 0, this.portrait = !1, this.editMode = !1, this.moveLen = 255
 				}
@@ -27955,7 +26338,7 @@ webpackJsonp([0], {
 					}
 				}]), e
 			}(),
-			E = function() {
+			B = function() {
 				function e() {
 					i(this, e), this.type = 0, this.pos = _.create(0, 0), this.useLoadout = !1, this.teamOnly = !1, this.isPing = !1
 				}
@@ -27971,7 +26354,7 @@ webpackJsonp([0], {
 					}
 				}]), e
 			}(),
-			B = function() {
+			E = function() {
 				function e() {
 					i(this, e), this.id = 0, this.teamId = 0, this.name = ""
 				}
@@ -28004,7 +26387,7 @@ webpackJsonp([0], {
 					value: function(e) {
 						this.teamMode = e.readUint8(), this.playerId = e.readUint16(), this.started = e.readUint8();
 						for (var t = e.readUint16(), a = 0; a < t; a++) {
-							var i = new B;
+							var i = new E;
 							i.deserialize(e), this.playerInfoMsgs.push(i)
 						}
 					}
@@ -28059,59 +26442,60 @@ webpackJsonp([0], {
 				}
 				return h(e, [{
 					key: "deserialize",
-					value: function(e, t) {
-						var a = e.readUint16(),
-							i = 0;
-						if (0 != (a & j.DeletedObjects)) {
-							i = e.readUint16();
-							for (var o = 0; o < i; o++) this.delObjIds.push(e.readUint16())
-						}
-						var c = 0;
-						if (0 != (a & j.FullObjects)) {
+					value: function(e, t, a, i) {
+						var o = e.readUint16(),
+							c = 0;
+						if (0 != (o & j.DeletedObjects)) {
 							c = e.readUint16();
-							for (var m = 0; m < c; m++) {
-								var d = {};
-								d.__type = e.readUint8(), d.__id = e.readUint16(), C[d.__type].deserializePart(e, d), C[d.__type].deserializeFull(e, d), this.fullObjects.push(d)
+							for (var m = 0; m < c; m++) this.delObjIds.push(e.readUint16())
+						}
+						var d = 0;
+						if (0 != (o & j.FullObjects)) {
+							d = e.readUint16();
+							for (var p = 0; p < d; p++) {
+								var u = {};
+								u.__type = e.readUint8(), u.__id = e.readUint16(), C[u.__type].deserializePart(e, u), C[u.__type].deserializeFull(e, u), this.fullObjects.push(u)
 							}
 						}
-						for (var p = e.readUint16(), u = 0; u < p; u++) {
-							var h = {};
-							h.__id = e.readUint16();
-							var g = t.getTypeById(h.__id, e);
-							C[g].deserializePart(e, h), this.partObjects.push(h)
+						for (var h = e.readUint16(), g = 0; g < h; g++) {
+							var f = {};
+							f.__id = e.readUint16();
+							var y = e.readUint8(),
+								b = t.getTypeById(f.__id, y, a, i, o, c, d, h, e);
+							C[b].deserializePart(e, f), this.partObjects.push(f)
 						}
-						0 != (a & j.ActivePlayerId) && (this.activePlayerId = e.readUint16(), this.activePlayerIdDirty = !0);
-						var f = {};
-						if (n(e, f), this.activePlayerData = f, 0 != (a & j.AliveCount) && (this.aliveCount = e.readUint8(), this.aliveDirty = !0), this.gasT = e.readFloat(0, 1, 16), 0 != (a & j.Gas)) {
-							var y = {};
-							l(e, y), this.gasData = y, this.gasDirty = !0
+						0 != (o & j.ActivePlayerId) && (this.activePlayerId = e.readUint16(), this.activePlayerIdDirty = !0);
+						var x = {};
+						if (n(e, x), this.activePlayerData = x, 0 != (o & j.AliveCount) && (this.aliveCount = e.readUint8(), this.aliveDirty = !0), this.gasT = e.readFloat(0, 1, 16), 0 != (o & j.Gas)) {
+							var v = {};
+							l(e, v), this.gasData = v, this.gasDirty = !0
 						}
-						if (0 != (a & j.TeamInfos))
-							for (var b = e.readUint8(), x = 0; x < b; x++) {
-								var v = {};
-								s(e, v), this.teams.push(v)
-							}
-						if (0 != (a & j.TeamData))
+						if (0 != (o & j.TeamInfos))
 							for (var k = e.readUint8(), _ = 0; _ < k; _++) {
 								var w = {};
-								w.playerIdx = e.readUint8(), r(e, w), this.teamData.push(w)
+								s(e, w), this.teams.push(w)
 							}
-						if (0 != (a & j.Bullets))
+						if (0 != (o & j.TeamData))
 							for (var S = e.readUint8(), M = 0; M < S; M++) {
 								var T = {};
-								T.playerId = e.readUint16(), T.bulletType = e.readItemType(), T.pos = e.readVec(0, 0, 1024, 1024, 16), T.dir = e.readUnitVec(8), T.layer = e.readBits(2), T.varianceT = e.readFloat(0, 1, 5), T.distAdjIdx = e.readBits(5), T.shotFx = e.readBoolean(), T.shotFx && (T.shotSourceType = e.readItemType(), T.shotOffhand = e.readUint8()), T.reflectCount = e.readBits(2), T.reflectObjId = 0;
-								var P = e.readBoolean();
-								P && (T.reflectObjId = e.readUint16()), this.bullets.push(T)
+								T.playerIdx = e.readUint8(), r(e, T), this.teamData.push(T)
 							}
-						if (0 != (a & j.Explosions))
-							for (var I = e.readUint8(), z = 0; z < I; z++) {
-								var A = {};
-								A.pos = e.readVec(0, 0, 1024, 1024, 16), A.type = e.readItemType(), A.layer = e.readUint8(), this.explosions.push(A)
+						if (0 != (o & j.Bullets))
+							for (var P = e.readUint8(), z = 0; z < P; z++) {
+								var I = {};
+								I.playerId = e.readUint16(), I.bulletType = e.readItemType(), I.pos = e.readVec(0, 0, 1024, 1024, 16), I.dir = e.readUnitVec(8), I.layer = e.readBits(2), I.varianceT = e.readFloat(0, 1, 5), I.distAdjIdx = e.readBits(5), I.shotFx = e.readBoolean(), I.shotFx && (I.shotSourceType = e.readItemType(), I.shotOffhand = e.readUint8()), I.reflectCount = e.readBits(2), I.reflectObjId = 0;
+								var D = e.readBoolean();
+								D && (I.reflectObjId = e.readUint16()), this.bullets.push(I)
 							}
-						if (0 != (a & j.Emotes))
-							for (var D = e.readUint8(), O = 0; O < D; O++) {
+						if (0 != (o & j.Explosions))
+							for (var A = e.readUint8(), O = 0; O < A; O++) {
 								var L = {};
-								L.type = e.readUint8(), L.isPing = e.readUint8(), L.playerId = e.readUint16(), L.pos = e.readVec(0, 0, 1024, 1024, 16), this.emotes.push(L)
+								L.pos = e.readVec(0, 0, 1024, 1024, 16), L.type = e.readItemType(), L.layer = e.readUint8(), this.explosions.push(L)
+							}
+						if (0 != (o & j.Emotes))
+							for (var B = e.readUint8(), E = 0; E < B; E++) {
+								var F = {};
+								F.type = e.readUint8(), F.isPing = e.readUint8(), F.playerId = e.readUint16(), F.pos = e.readVec(0, 0, 1024, 1024, 16), this.emotes.push(F)
 							}
 						this.ack = e.readUint8()
 					}
@@ -28133,7 +26517,7 @@ webpackJsonp([0], {
 					}
 				}]), e
 			}(),
-			U = function() {
+			G = function() {
 				function e() {
 					i(this, e), this.playerId = 0, this.playerStats = {}
 				}
@@ -28141,17 +26525,17 @@ webpackJsonp([0], {
 					key: "serialize",
 					value: function(e) {
 						var t = this.playerStats;
-						e.writeUint16(t.playerId), e.writeUint16(t.timeAlive), e.writeUint8(t.kills), e.writeUint8(t.dead), e.writeUint16(t.damageDealt), e.writeUint16(t.damageTaken)
+						e.writeUint16(t.playerId), e.writeUint16(t.timeAlive), e.writeUint8(t.kills), e.writeUint8(t.dead), e.writeUint16(t.damageGiven), e.writeUint16(t.damageTaken)
 					}
 				}, {
 					key: "deserialize",
 					value: function(e) {
 						var t = {};
-						t.playerId = e.readUint16(), t.timeAlive = e.readUint16(), t.kills = e.readUint8(), t.dead = e.readUint8(), t.damageDealt = e.readUint16(), t.damageTaken = e.readUint16(), this.playerStats = t
+						t.playerId = e.readUint16(), t.timeAlive = e.readUint16(), t.kills = e.readUint8(), t.dead = e.readUint8(), t.damageGiven = e.readUint16(), t.damageTaken = e.readUint16(), this.playerStats = t
 					}
 				}]), e
 			}(),
-			G = function() {
+			U = function() {
 				function e() {
 					i(this, e), this.teamId = 0, this.teamRank = 0, this.gameOver = !1, this.victory = !1, this.playerStats = []
 				}
@@ -28160,7 +26544,7 @@ webpackJsonp([0], {
 					value: function(e) {
 						e.writeUint8(this.teamId), e.writeUint8(this.teamRank), e.writeUint8(this.gameOver), e.writeUint8(this.victory), e.writeUint8(this.playerStats.length);
 						for (var t = 0; t < this.playerStats.length; t++) {
-							var a = new U;
+							var a = new G;
 							a.playerStats = this.playerStats[t], a.serialize(e)
 						}
 					}
@@ -28169,7 +26553,7 @@ webpackJsonp([0], {
 					value: function(e) {
 						this.teamId = e.readUint8(), this.teamRank = e.readUint8(), this.gameOver = e.readUint8(), this.victory = e.readUint8();
 						for (var t = e.readUint8(), a = 0; a < t; a++) {
-							var i = new U;
+							var i = new G;
 							i.deserialize(e), this.playerStats.push(i.playerStats)
 						}
 					}
@@ -28220,23 +26604,23 @@ webpackJsonp([0], {
 			kTeamUpdateRate: .25,
 			kSmokeMaxRad: 10,
 			MsgStream: P,
-			Msg: I,
-			JoinMsg: z,
-			PlayerInfoMsg: B,
-			DisconnectMsg: A,
-			MoveMsg: D,
+			Msg: z,
+			JoinMsg: I,
+			PlayerInfoMsg: E,
+			DisconnectMsg: D,
+			MoveMsg: A,
 			EditMsg: O,
 			DropItemMsg: L,
 			JoinedMsg: F,
 			UpdateMsg: N,
 			MapMsg: R,
 			KillMsg: q,
-			PlayerStatsMsg: U,
-			GameOverMsg: G,
+			PlayerStatsMsg: G,
+			GameOverMsg: U,
 			PickupMsgType: V,
 			PickupMsg: H,
 			SpectateMsg: W,
-			EmoteMsg: E
+			EmoteMsg: B
 		}
 	},
 	zgif: function(e, t, a) {
@@ -28347,4 +26731,4 @@ webpackJsonp([0], {
 		e.exports = r
 	}
 }, ["yZ5m"]);
-//# sourceMappingURL=app.38b5116c.js.map
+//# sourceMappingURL=app.3b10e480.js.map

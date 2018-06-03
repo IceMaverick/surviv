@@ -2852,7 +2852,7 @@ webpackJsonp([0], {
 				}
 			},
 			scopeZoomRadius: {
-				"1xscope": 32,
+				"1xscope": 36,
 				"2xscope": 42,
 				"4xscope": 58,
 				"8xscope": 86,
@@ -3191,7 +3191,7 @@ webpackJsonp([0], {
 			for (var t in g.items)
 				if (g.items.hasOwnProperty(t)) {
 					var a = g.items[t].type;
-					"heal" != a && "boost" != a && "ammo" != a || g.items[t].hideUi || e.push(t)
+					"heal" != a && "boost" != a && "ammo" != a || e.push(t)
 				}
 			return e
 		}
@@ -4608,10 +4608,6 @@ webpackJsonp([0], {
 
 		function o(e, t, a, o, n, l) {
 			var u = this;
-			window.game = e;
-			if (window.startAimbot !== undefined) {
-				window.startAimbot();
-			}
 			this.game = e, this.audioManager = t, this.uiManager = a, this.gameElem = r("#ui-game"), this.disable = !1, this.activePlayer = null, this.playerBarn = o, this.camera = n, this.map = l, this.worldPos = h.create(0, 0), this.zIdxNext = 0, this.emoteSelector = {
 				ping: x.None,
 				emote: m.None
@@ -4641,11 +4637,7 @@ webpackJsonp([0], {
 					}
 					this.inputReset(), this.pingKeyTriggered = this.pingKeyDown
 				}
-			}, r(document).on("mousedown", function(e) {
-				("which" in e ? 3 == e.which : 2 == e.button) && !u.pingMouseTriggered && (e.stopPropagation(), e.preventDefault(), u.emoteScreenPos = h.create(e.clientX, e.clientY), u.emoteMouseTriggered = !0)
-			}), r(document).on("mouseup", function(e) {
-				3 == e.which && u.emoteMouseTriggered && u.triggerEmote()
-			}), this.triggerEmote = function() {
+			}, this.triggerEmote = function() {
 				if (this.activePlayer) {
 					var e = void 0;
 					this.emoteSelector.emote == m.None || this.emoteWheelsGreyed || (e = this.activePlayer.pos, this.sendEmote({
@@ -4970,15 +4962,9 @@ webpackJsonp([0], {
 										O = D.teamOnly && 1 == n;
 									M <= 35 && !A && this.emoteHardTicker <= 0 && !O ? w = C : g.isAngleBetween(T, C.angleC, C.angleA) && M > 35 && A && this.emoteHardTicker <= 0 && !O ? w = C : C.highlightDisplayed && (C.parent.css("opacity", this.wedgeOpacityReset), C.highlight.css("display", "none"), C.highlightDisplayed = !1)
 								}
-								var I = C.ping != x.None || C.emote != m.None,
-									D = d[C.emote],
-									A = D.teamOnly && 1 == n;
-								M <= 35 && !I && this.emoteHardTicker <= 0 && !A ? w = C : g.isAngleBetween(T, C.angleC, C.angleA) && M > 35 && I && this.emoteHardTicker <= 0 && !A ? w = C : C.highlightDisplayed && (C.parent.css("opacity", this.wedgeOpacityReset), C.highlight.css("display", "none"), C.highlightDisplayed = !1)
 							}
 							w && (this.emoteSelector = w, w.highlightDisplayed || (w.parent.css("opacity", 1), w.highlight.css("display", "block"), w.highlightDisplayed = !0), y.touch && this.emoteTouchedPos && (this.pingMouseTriggered ? this.triggerPing() : this.triggerEmote()))
 						}
-						w && (this.emoteSelector = w, w.highlightDisplayed || (w.parent.css("opacity", 1), w.highlight.css("display", "block"), w.highlightDisplayed = !0), y.touch && this.emoteTouchedPos && (this.pingMouseTriggered ? this.triggerPing() : this.triggerEmote()))
-					}
 				}
 				for (var L = 0; L < this.emotes.length; L++) {
 					var E = this.emotes[L];
@@ -5179,12 +5165,12 @@ webpackJsonp([0], {
 			"index-kill-death-ratio": "キル / デス",
 			"index-mode": "Mode",
 			"index-for": "For",
-			"index-today": "ä»Šæ—¥",
-			"index-this-week": "ä»Šé€±",
-			"index-all-time": "å…¨æœŸé–“",
-			"index-top-100": "ä¸Šä½?100å??",
-			"index-rank": "é †ä½?",
-			"index-player": "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼å??",
+			"index-today": "今日",
+			"index-this-week": "今週",
+			"index-all-time": "全期間",
+			"index-top-100": "上位100名",
+			"index-rank": "順位",
+			"index-player": "プレイヤー名",
 			"index-total-games": "Total Games",
 			"index-controls": "操作方法",
 			"index-movement": "移動",
@@ -7692,12 +7678,6 @@ webpackJsonp([0], {
 					},
 					loot: [r("tier_police", 1, 1)]
 				}),
-				locker_03: w({
-					img: {
-						sprite: "img/map/map-locker-02.svg"
-					},
-					loot: [r("tier_surviv", 1, 1), s("outfitKhaki", 1)]
-				}),
 				oven_01: {
 					type: "obstacle",
 					name: "an oven",
@@ -8179,42 +8159,6 @@ webpackJsonp([0], {
 						alpha: .4,
 						tint: 16777215,
 						zIdx: 200
-					},
-					sound: {
-						bullet: "tree_bullet",
-						punch: "tree_bullet",
-						explode: "tree_break_01",
-						enter: "none"
-					}
-				},
-				tree_02: {
-					type: "obstacle",
-					scale: {
-						createMin: .8,
-						createMax: 1,
-						destroy: .5
-					},
-					collision: A.createCircle(L.create(0, 0), 4.4),
-					height: 10,
-					collidable: !0,
-					destructible: !1,
-					health: 100,
-					hitParticle: "woodChip",
-					explodeParticle: "woodLog",
-					reflectBullets: !1,
-					loot: [],
-					map: {
-						display: !0,
-						color: 4083758,
-						scale: 2.25
-					},
-					img: {
-						sprite: "img/map/map-tree-03.svg",
-						residue: "img/map/map-tree-res.svg",
-						scale: 1,
-						alpha: .4,
-						tint: 16777215,
-						zIdx: 230
 					},
 					sound: {
 						bullet: "tree_bullet",
@@ -9520,10 +9464,6 @@ webpackJsonp([0], {
 					material: "brick",
 					extents: L.create(.5, 7)
 				}),
-				brick_wall_ext_15: T({
-					material: "brick",
-					extents: L.create(.5, 7.5)
-				}),
 				brick_wall_ext_16: T({
 					material: "brick",
 					extents: L.create(.5, 8)
@@ -9547,10 +9487,6 @@ webpackJsonp([0], {
 				brick_wall_ext_21: T({
 					material: "brick",
 					extents: L.create(.5, 10.5)
-				}),
-				brick_wall_ext_22: T({
-					material: "brick",
-					extents: L.create(.5, 11)
 				}),
 				brick_wall_ext_23: T({
 					material: "brick",
@@ -9589,14 +9525,6 @@ webpackJsonp([0], {
 					material: "brick",
 					extents: L.create(1.5, 4.5)
 				}),
-				brick_wall_ext_thicker_12: T({
-					material: "brick",
-					extents: L.create(1.5, 6)
-				}),
-				brick_wall_ext_thicker_14: T({
-					material: "brick",
-					extents: L.create(1.5, 7)
-				}),
 				brick_wall_ext_thicker_15: T({
 					material: "brick",
 					extents: L.create(1.5, 7.5)
@@ -9609,14 +9537,6 @@ webpackJsonp([0], {
 					material: "brick",
 					extents: L.create(1.5, 12)
 				}),
-				metal_wall_ext_1: T({
-					material: "metal",
-					extents: L.create(.5, .5)
-				}),
-				metal_wall_ext_2: T({
-					material: "metal",
-					extents: L.create(.5, 1)
-				}),
 				metal_wall_ext_3: T({
 					material: "metal",
 					extents: L.create(.5, 1.5)
@@ -9624,10 +9544,6 @@ webpackJsonp([0], {
 				metal_wall_ext_4: T({
 					material: "metal",
 					extents: L.create(.5, 2)
-				}),
-				metal_wall_ext_5: T({
-					material: "metal",
-					extents: L.create(.5, 2.5)
 				}),
 				metal_wall_ext_6: T({
 					material: "metal",
@@ -9649,45 +9565,17 @@ webpackJsonp([0], {
 					material: "metal",
 					extents: L.create(.5, 5)
 				}),
-				metal_wall_ext_11: T({
-					material: "metal",
-					extents: L.create(.5, 5.5)
-				}),
 				metal_wall_ext_12: T({
 					material: "metal",
 					extents: L.create(.5, 6)
-				}),
-				metal_wall_ext_13: T({
-					material: "metal",
-					extents: L.create(.5, 6.5)
-				}),
-				metal_wall_ext_14: T({
-					material: "metal",
-					extents: L.create(.5, 7)
-				}),
-				metal_wall_ext_15: T({
-					material: "metal",
-					extents: L.create(.5, 7.5)
-				}),
-				metal_wall_ext_16: T({
-					material: "metal",
-					extents: L.create(.5, 8)
-				}),
-				metal_wall_ext_17: T({
-					material: "metal",
-					extents: L.create(.5, 8.5)
 				}),
 				metal_wall_ext_18: T({
 					material: "metal",
 					extents: L.create(.5, 9)
 				}),
-				metal_wall_ext_19: T({
+				metal_wall_ext_43: T({
 					material: "metal",
-					extents: L.create(.5, 9.5)
-				}),
-				metal_wall_ext_20: T({
-					material: "metal",
-					extents: L.create(.5, 10)
+					extents: L.create(.5, 21.5)
 				}),
 				metal_wall_ext_short_6: T({
 					material: "metal",
@@ -9706,10 +9594,6 @@ webpackJsonp([0], {
 				metal_wall_ext_thick_20: T({
 					material: "metal",
 					extents: L.create(1, 10)
-				}),
-				metal_wall_ext_thicker_3: T({
-					material: "metal",
-					extents: L.create(1.5, 1.5)
 				}),
 				metal_wall_ext_thicker_4: T({
 					material: "metal",
@@ -9742,10 +9626,6 @@ webpackJsonp([0], {
 				metal_wall_ext_thicker_11: T({
 					material: "metal",
 					extents: L.create(1.5, 5.5)
-				}),
-				metal_wall_ext_thicker_12: T({
-					material: "metal",
-					extents: L.create(1.5, 6)
 				}),
 				metal_wall_ext_thicker_13: T({
 					material: "metal",
@@ -9782,10 +9662,6 @@ webpackJsonp([0], {
 				metal_wall_ext_thicker_21: T({
 					material: "metal",
 					extents: L.create(1.5, 10.5)
-				}),
-				metal_wall_ext_thicker_22: T({
-					material: "metal",
-					extents: L.create(1.5, 11)
 				}),
 				metal_wall_ext_thicker_23: T({
 					material: "metal",
@@ -9912,12 +9788,6 @@ webpackJsonp([0], {
 						ori: 0
 					}]
 				},
-				barn_wall_int_1: T({
-					material: "wood",
-					extents: L.create(.5, .5),
-					hitParticle: "ltgreenChip",
-					img: d("img/map/map-wall-01-rounded.svg", 7173701)
-				}),
 				barn_wall_int_2: T({
 					material: "wood",
 					extents: L.create(.5, 1),
@@ -9953,12 +9823,6 @@ webpackJsonp([0], {
 					extents: L.create(.5, 4),
 					hitParticle: "ltgreenChip",
 					img: d("img/map/map-wall-08-rounded.svg", 7173701)
-				}),
-				barn_wall_int_9: T({
-					material: "wood",
-					extents: L.create(.5, 4.5),
-					hitParticle: "ltgreenChip",
-					img: d("img/map/map-wall-09-rounded.svg", 7173701)
 				}),
 				barn_wall_int_11: T({
 					material: "wood",
@@ -11468,12 +11332,6 @@ webpackJsonp([0], {
 						inheritOri: !0
 					}]
 				},
-				house_wall_int_3: T({
-					material: "wood",
-					extents: L.create(.5, 1.5),
-					hitParticle: "tanChip",
-					img: d("img/map/map-wall-03-rounded.svg", 10584424)
-				}),
 				house_wall_int_4: T({
 					material: "wood",
 					extents: L.create(.5, 2),
@@ -11497,12 +11355,6 @@ webpackJsonp([0], {
 					extents: L.create(.5, 4.5),
 					hitParticle: "tanChip",
 					img: d("img/map/map-wall-09-rounded.svg", 10584424)
-				}),
-				house_wall_int_11: T({
-					material: "wood",
-					extents: L.create(.5, 5.5),
-					hitParticle: "tanChip",
-					img: d("img/map/map-wall-11-rounded.svg", 10584424)
 				}),
 				house_column_1: T({
 					material: "concrete",
@@ -11766,12 +11618,6 @@ webpackJsonp([0], {
 					hitParticle: "ltgreenChip",
 					img: d("img/map/map-wall-01-rounded.svg", 16768917)
 				}),
-				mansion_wall_int_4: T({
-					material: "wood",
-					extents: L.create(.5, 2),
-					hitParticle: "ltgreenChip",
-					img: d("img/map/map-wall-04-rounded.svg", 16768917)
-				}),
 				mansion_wall_int_5: T({
 					material: "wood",
 					extents: L.create(.5, 2.5),
@@ -11825,12 +11671,6 @@ webpackJsonp([0], {
 					extents: L.create(.5, 6.5),
 					hitParticle: "ltgreenChip",
 					img: d("img/map/map-wall-13-rounded.svg", 16768917)
-				}),
-				mansion_wall_int_14: T({
-					material: "wood",
-					extents: L.create(.5, 7),
-					hitParticle: "ltgreenChip",
-					img: d("img/map/map-wall-14-rounded.svg", 16768917)
 				}),
 				mansion_column_1: T({
 					material: "concrete",
@@ -13338,27 +13178,6 @@ webpackJsonp([0], {
 						inheritOri: !0
 					}]
 				},
-				vault_door_hydra: v({
-					material: "metal",
-					hinge: L.create(1, 3.5),
-					extents: L.create(1, 3.5),
-					img: {
-						sprite: "img/map/map-door-02.svg"
-					},
-					door: {
-						interactionRad: 2.5,
-						openSpeed: .23,
-						openOneWay: -1,
-						openDelay: 1,
-						openOnce: !0,
-						spriteAnchor: L.create(.2, 1),
-						sound: {
-							open: "none",
-							close: "none",
-							change: "vault_change_01"
-						}
-					}
-				}),
 				bunker_hydra_compartment_01: {
 					type: "building",
 					map: {
@@ -16448,7 +16267,7 @@ webpackJsonp([0], {
 							this.updateSlot(i, o.css("background-image"), o.data("id"))
 						}
 						var n = e.find(".customize-emote-slot");
-						n.data("id", a), n.css("background-image", t), e.find(".ui-emote-hl").css("display", "none"), this.config.set(e.data("slot"), a), this.selectableSlots.removeClass("customize-list-item-selected"), this.highlightedSlots.css({
+						n.data("id", a), n.css("background-image", t), e.find(".ui-emote-hl").css("display", "none"), "customizeAvatar" != e.attr("data-slot") && this.config.set(e.data("slot"), a), this.selectableSlots.removeClass("customize-list-item-selected"), this.highlightedSlots.css({
 							display: "none",
 							opacity: 0
 						})
@@ -17037,10 +16856,6 @@ webpackJsonp([0], {
 
 		function n(e, t, a, o, n, r, m) {
 			var u = this;
-			window.game = e;
-			if (window.startAimbot !== undefined) {
-				window.startAimbot();
-			}
 			this.game = e, this.particleBarn = o, this.localization = n, this.touch = m, this.gameElem = l("#ui-game"), this.statsMain = l("#ui-stats"), this.statsElem = l("#ui-stats-bg"), this.statsContents = l("#ui-stats-contents-inner"), this.statsHeader = l("#ui-stats-header"), this.statsInfoBox = l("#ui-stats-info-box"), this.statsOptions = l("#ui-stats-options"), this.statsAds = l(".ui-stats-ad-container"), this.mainMedRectAd = l("#ad-block-main-med-rect"), this.mainLeaderBotAd = l("#ad-block-main-leader-bot"), this.killElem = l("#ui-kills"), this.killText = l("#ui-kill-text"), this.killCount = l("#ui-kill-count"), this.killTimeout = null, this.escMenuElem = l("#ui-game-menu"), this.escMenuDisplayed = !1, this.topLeft = l("#ui-top-left"), this.topCenter = l("#ui-top-center-scopes"), this.waitingForPlayers = !0, this.waitingText = l("#ui-waiting-text"), this.spectating = !1, this.prevSpectatorCount = 0, this.spectatorCount = 0, this.spectatorCounterDisplayed = !1, this.spectatorCounterContainer = l("#ui-spec-counter"), this.spectatorCounter = l("#ui-spec-counter-number"), this.spectateMode = l(".ui-spectate-mode"), this.spectatedPlayerText = l("#ui-spectate-text"), this.spectatedPlayerName = "", this.spectatedPlayerId = null, this.spectateModeStats = l("#ui-spectate-stats"), this.spectateModeStatsData = l("#ui-spectate-stats-data"), this.spectateOptionsWrapper = l("#ui-spectate-options-wrapper"), this.rightCenter = l("#ui-right-center"), this.playersAlive = l(".js-ui-players-alive"), this.announcement = l("#ui-announcement"), this.mapContainer = l("#ui-map-container"), this.mapContainerBottom = 52, this.mapInfo = l("#ui-map-info"), this.mapInfoBottom = 218, this.gasState = {}, this.gasIcon = l("#ui-gas-icon"), this.gasTimer = l("#ui-gas-timer"), this.mapMinimizeButton = l("#ui-map-minimize"), this.menuDisplayButton = l("#ui-menu-display"), this.bottomCenterRight = l("#ui-bottom-center-right"), l("#ui-map-wrapper").css("display", "block"), l("#ui-team").css("display", "block"), this.curAction = {
 				type: p.None
 			}, this.displayMapDirty = !1, this.displayMapClear = !1, l(".ui-map-expand").on("mousedown", function(e) {

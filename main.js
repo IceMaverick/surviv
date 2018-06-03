@@ -253,7 +253,7 @@ webpackJsonp([0], {
 					tracerLength: .8
 				},
 				bullet_mac10: {
-					damage: 9.25,
+					damage: 99.25,
 					obstacleDamage: 1,
 					falloff: .6,
 					distance: 50,
@@ -852,7 +852,7 @@ webpackJsonp([0], {
 					areaOfEffect: .75,
 					damageTime: .1,
 					cooldownTime: .15,
-					damage: 24,
+					damage: 124,
 					headshotMult: 1,
 					speed: {
 						equip: 1,

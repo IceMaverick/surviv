@@ -253,7 +253,7 @@ webpackJsonp([0], {
 					tracerLength: .8
 				},
 				bullet_mac10: {
-					damage: 99.25,
+					damage: 9.25,
 					obstacleDamage: 1,
 					falloff: .6,
 					distance: 50,
@@ -852,7 +852,7 @@ webpackJsonp([0], {
 					areaOfEffect: .75,
 					damageTime: .1,
 					cooldownTime: .15,
-					damage: 124,
+					damage: 24,
 					headshotMult: 1,
 					speed: {
 						equip: 1,
@@ -2853,9 +2853,9 @@ webpackJsonp([0], {
 			},
 			scopeZoomRadius: {
 				"1xscope": 36,
-				"2xscope": 42,
-				"4xscope": 58,
-				"8xscope": 86,
+				"2xscope": 46,
+				"4xscope": 60,
+				"8xscope": 90,
 				"15xscope": 104
 			},
 			bagSizes: {
@@ -14405,7 +14405,7 @@ webpackJsonp([0], {
 								!(l.sameLayer(d.layer, a.layer) || 2 & a.layer) || 1 != d.layer && 2 & a.layer && i.insideStructureMask(r.createCircle(d.pos, 1)) || (h |= 2), o.addPIXIObj(d.sprite, p.World, h, 500, d.zIdx);
 								var g = t.pointToScreen(d.pos),
 									f = t.pixels(2 * d.rad / t.ppu);
-								d.sprite.position.set(g.x, g.y), d.sprite.scale.set(f, f), d.sprite.rotation = d.rot, d.sprite.tint = d.tint, d.sprite.alpha = u, d.sprite.visible = d.active
+								d.sprite.position.set(g.x, g.y), d.sprite.scale.set(f, f), d.sprite.rotation = d.rot, d.sprite.tint = d.tint, d.sprite.alpha = .2 * u, d.sprite.visible = d.active
 							}
 						}
 					}

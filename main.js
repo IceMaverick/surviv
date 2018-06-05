@@ -6810,7 +6810,7 @@ webpackJsonp([0], {
 					imgs: [{
 						sprite: "img/map/" + e.ceilingSprite,
 						scale: .5,
-						alpha: .8,
+						alpha: .4,
 						tint: e.tint
 					}]
 				},
@@ -7838,7 +7838,7 @@ webpackJsonp([0], {
 						imgs: [{
 							sprite: "img/map/map-building-container-ceiling-05.svg",
 							scale: .5,
-							alpha: 0.8,
+							alpha: 0.4,
 							tint: 11485762
 						}]
 					},

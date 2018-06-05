@@ -6808,9 +6808,9 @@ webpackJsonp([0], {
 					scopeIn: [e.open ? D.createAabbExtents(L.create(0, 0), L.create(2.5, 5.75)) : D.createAabbExtents(L.create(0, 2.25), L.create(2.5, 5.5))],
 					scopeOut: [e.open ? D.createAabbExtents(L.create(0, 0), L.create(2.5, 11)) : D.createAabbExtents(L.create(0, -.5), L.create(2.5, 8.75))],
 					imgs: [{
-						sprite: "",
+						sprite: "img/map/" + e.ceilingSprite,
 						scale: .5,
-						alpha: 1,
+						alpha: .8,
 						tint: e.tint
 					}]
 				},
@@ -7836,9 +7836,9 @@ webpackJsonp([0], {
 						scopeIn: [D.createAabbExtents(L.create(0, 2.4), L.create(2.5, 5.75))],
 						scopeOut: [D.createAabbExtents(L.create(0, 2.4), L.create(2.5, 5.75))],
 						imgs: [{
-							sprite: "",
+							sprite: "img/map/map-building-container-ceiling-05.svg",
 							scale: .5,
-							alpha: 1,
+							alpha: 0.8,
 							tint: 11485762
 						}]
 					},
